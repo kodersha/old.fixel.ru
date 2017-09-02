@@ -1,0 +1,21 @@
+<article class="post">
+	<div class="maintenance single short">
+		<h1 class="title">
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		</h1>
+		{% if post.subtitle %}
+			<p class="subtitle">{{ post.subtitle }}</p>
+		{% endif %}
+		<div class="entry">
+			{{ post.content }}
+		</div>
+		<div class="actions">	
+			<div class="tags">
+				<span class="date" title="{% include date.html date=post.date %}">{{ post.date | date: "%Y" }}</span>
+				{% if post.tags %}
+					{{ post | tags }}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</article>

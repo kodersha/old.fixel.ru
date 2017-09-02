@@ -1,0 +1,24 @@
+<nav>
+	<div class="common full">
+		<div class="wrapper">
+			<div class="navigation">
+				<div class="avatar">
+					<a href="{{ site.baseurl }}/">
+						<img src="{{ site.url }}/assets/images/userpic.png" />
+					</a>
+				</div>
+				<div class="frame">
+					<div class="menu">
+						<a {% if page.url == "/blog/" %}class="active"{% endif %}
+						   {% if page.layout == 'post' %}class="active"{% endif %}
+						   href="{{ site.baseurl }}/blog/">Блог</a>
+						<a {% if page.url == "/about/" %}class="active"{% endif %} href="{{ site.baseurl }}/about/">Об авторе</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			{% include search.html %}
+		</div>
+	</div>
+</nav>

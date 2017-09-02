@@ -1,0 +1,36 @@
+---
+layout: default
+title: Категории
+description: Рубрики блога
+---
+
+{% include menu.html %}
+
+<div class="content">
+	<div class="common">
+		<div class="post-list tags">
+			<h1 class="title">{{ page.title }}</h1>
+			<div class="tags-list">
+				{% for tag in site.categories %}
+				<div class="tag">
+					<a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="tags-section">
+				{% for tag in site.categories %}
+				<div class="tags-block">
+					<h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+					<div reversed class="posts">
+						{% for post in tag[1] %}
+							{% include _preview/list.html %}
+						{% endfor %}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include submenu.html %}

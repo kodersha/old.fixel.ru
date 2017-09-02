@@ -1,0 +1,41 @@
+---
+layout: main
+paginate:
+  limit: false
+  per_page: 8
+  permalink: /page-:num/
+tags:
+- Блог
+- Обзоры игр
+- Прохождения
+- Статьи
+- Новости
+- Дизайн
+- Сайты
+- CMS
+- Шаблоны
+- Гайды
+- Заметки
+- Geek
+---
+
+{% if page.url == "/" %}
+	{% include _main/header.html %}
+{% else %}
+	{% include menu.html %}
+{% endif %}
+
+<div class="content">
+	<div class="common">
+		<div class="post-list full">
+			{% for post in paginator.posts %}
+				{% include _preview/full.html %}
+			{% endfor %}
+		</div>
+	</div>
+	<div class="common full">
+		{% include pagination.html %}
+	</div>
+</div>
+
+{% include submenu.html %}

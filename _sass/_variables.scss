@@ -1,0 +1,34 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$blue: #4183C4;
+$darkBlue: #487bad;
+$main: #292929;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #81868e;
+$gray: #a0a0a0;
+$lightGray: #ddd;
+$white: #fff;
+
+// Actions
+$action: #f1f3f4;
+$actionHover: #e2e5e6;
+$actionColor: #b1bcdc;
+
+// Font stacks
+$merriweather: Merriweather, serif;
+$gilroy: Gilroy-ExtraBold, sans-serif;
+$roboto: Roboto, sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

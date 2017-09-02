@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+{% include menu.html %}
+
+<div class="content">
+	<div class="post-single">
+		<article class="post">
+			<div class="common">
+				<div class="header">
+					<h1 class="title">{{ page.title }}</h1>
+					{% if page.subtitle %}
+						<p class="subtitle">{{ page.subtitle }}</p>
+					{% endif %}
+				</div>
+			</div>
+
+			{% include _post/cover.html %}
+
+			<div class="common">
+				<div class="maintenance single">
+					{% if page.contents == "true" %}
+						<div class="toc js-toc"></div>
+					{% endif %}
+					
+					<div class="entry js-toc-content">
+						{{ content }}
+					</div>
+				</div>
+					
+				<div class="actions">	
+					<div class="tags">
+						<span class="date">{% include date.html date=page.date %}</span>
+
+						{% if page.tags %}
+							{{ page | tags }}
+						{% endif %}	
+					</div>
+				</div>
+			</div>
+			
+			<div class="common">
+				{% include _post/disqus.html %}
+			</div>
+		</article>
+	</div>
+</div>
+
+{% include submenu.html %}
+
+{% if page.background %}
+	<style type="text/css">
+		body {
+			background-image: url('{{ page.background }}');
+			background-position: center center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+{% endif %}
