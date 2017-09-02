@@ -9,10 +9,8 @@
 				</div>
 				<div class="frame">
 					<div class="menu">
-						<a {% if page.url == "/blog/" %}class="active"{% endif %}
-						   {% if page.layout == 'post' %}class="active"{% endif %}
-						   href="{{ site.baseurl }}/blog/">Блог</a>
-						<a {% if page.url == "/about/" %}class="active"{% endif %} href="{{ site.baseurl }}/about/">Об авторе</a>
+						<a href="{{ site.baseurl }}/blog/" {% if page.url == "/blog/" %}class="active"{% endif %}{% if page.layout == 'post' %}class="active"{% endif %}>Блог</a>
+						<a href="{{ site.baseurl }}/about/" {% if page.url == "/about/" %}class="active"{% endif %}>Об авторе</a>
 					</div>	
 				</div>
 			</div>
