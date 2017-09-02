@@ -12,11 +12,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-    padding-left: -webkit-calc(100vw - 100%);
-    padding-left: -moz-calc(100vw - 100%);
-    padding-left: calc(100vw - 100%);
-    margin-left: -17px;
     overflow-x: hidden;
+	width: 100vw;
 }
 
 body {
@@ -839,10 +836,15 @@ nav {
 	
 	p {
 		margin: 0;
-		padding: 40px 0 20px;
+		padding-top: 40px;
+		padding-bottom: 20px;
 		
 		&:last-of-type {
-			padding: 40px 0 0;
+			padding-bottom: 0;
+		}
+		
+		&:first-of-type {
+			padding-bottom: 20px;
 		}
 	}
 	

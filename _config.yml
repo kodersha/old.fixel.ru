@@ -82,7 +82,9 @@ sitemap:
   priority_name: "priority"
   
 jekyll-press:
-  exclude: 'feed.xml'
+  exclude:
+    - "feed.xml"
+    - "sitemap.xml"
   js_options: {}
   css_options: {}
   html_options: {}
