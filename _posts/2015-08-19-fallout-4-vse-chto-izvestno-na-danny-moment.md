@@ -2,7 +2,7 @@
 layout: post
 permalink: /blog/fallout-4-vse-chto-izvestno-na-danny-moment/
 redirect_from: /blog/all/fallout-4-vse-chto-izvestno-na-danny-moment/
-contents: "true"
+toc: "true"
 title: "Fallout 4"
 subtitle: "Все что известно на данный момент"
 description: "Все что известно на данный момент"

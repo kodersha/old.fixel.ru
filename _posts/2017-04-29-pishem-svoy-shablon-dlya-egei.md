@@ -4,7 +4,7 @@ permalink: /blog/pishem-svoy-shablon-dlya-egei/
 redirect_from: /blog/all/pishem-svoy-shablon-dlya-egei/
 title: "Пишем свой шаблон для Эгеи"
 category: "IT"
-contents: "true"
+toc: "true"
 tags:
 - CMS
 - Эгея

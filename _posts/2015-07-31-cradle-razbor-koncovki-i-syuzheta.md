@@ -2,7 +2,7 @@
 layout: post
 permalink: /blog/cradle-razbor-koncovki-i-syuzheta/
 redirect_from: /blog/all/cradle-razbor-koncovki-i-syuzheta/
-contents: "true"
+toc: "true"
 title: "Cradle"
 subtitle: "Разбор концовки и сюжета"
 description: "Разбор концовки и сюжета"
