@@ -4,13 +4,20 @@
 			<div class="navigation">
 				<div class="avatar">
 					<a href="{{ site.baseurl }}/">
-						<img src="{{ site.url }}/assets/images/userpic.png" />
+						<img src="{{ site.url }}{{ site.userpic }}" />
 					</a>
 				</div>
 				<div class="frame">
-					<div class="menu">
-						<a href="{{ site.baseurl }}/blog/" {% if page.url == "/blog/" %}class="active"{% endif %}{% if page.layout == 'post' %}class="active"{% endif %}>Блог</a>
-						<a href="{{ site.baseurl }}/about/" {% if page.url == "/about/" %}class="active"{% endif %}>Об авторе</a>
+					<div class="menu">	
+					  {% for item in site.navigation %}
+						  {% assign class = nil %}
+						  {% if page.url contains item.url %}
+							  {% assign class = 'active' %}
+						  {% endif %}
+						  <a href="{{ item.url }}" class="{{ class }}">
+							  {{ item.title }}
+						  </a>
+					  {% endfor %}
 					</div>	
 				</div>
 			</div>

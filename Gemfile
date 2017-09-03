@@ -26,10 +26,10 @@ group :jekyll_plugins do
    gem "jekyll-tagging"
    gem "jekyll-sitemap"
    gem "jekyll-press"
+   gem "jekyll-admin"
    gem "therubyracer"
    gem "execjs"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-

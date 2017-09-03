@@ -7,10 +7,19 @@ url: http://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
 disqus: milkleaks-ru
+
 image: /assets/images/cat.png
+avatar: /assets/images/avatar.png
+userpic: /assets/images/userpic.png
 
 version: v3.5.2
 safe: false
+  
+navigation:
+  - title: Блог
+    url: /blog/
+  - title: Об авторе
+    url: /about/
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -52,6 +61,7 @@ sitemap:
   file: "/sitemap.xml"
   exclude:
     - "/atom.xml"
+    - "/feed.xml"
   include_posts:
     - "/index.html"
   change_frequency_name: "change_frequency"

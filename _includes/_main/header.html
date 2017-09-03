@@ -7,13 +7,20 @@
 					<div class="navigation">
 						<div class="avatar">
 							<a href="{{ site.baseurl }}/">
-								<img src="{{ site.url }}/assets/images/avatar.png" />
+								<img src="{{ site.url }}{{ site.avatar }}" />
 							</a>
 						</div>
 						<div class="frame">
 							<div class="menu">
-								<a href="{{ site.baseurl }}/blog/">Блог</a>
-								<a href="{{ site.baseurl }}/about/">Об авторе</a>
+							  {% for item in site.navigation %}
+								  {% assign class = nil %}
+								  {% if page.url contains item.url %}
+									  {% assign class = 'active' %}
+								  {% endif %}
+								  <a href="{{ item.url }}" class="{{ class }}">
+									  {{ item.title }}
+								  </a>
+							  {% endfor %}
 							</div>
 						</div>
 					</div>
