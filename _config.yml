@@ -59,6 +59,8 @@ exclude:
 tag_permalink_style: pretty
 tag_page_layout: tag
 tag_page_dir: tag
+tag_page_data:
+  sitemap: false
 
 ## Collections
 
