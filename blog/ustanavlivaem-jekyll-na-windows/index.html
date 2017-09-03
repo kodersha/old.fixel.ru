@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Устанавливаем Jekyll на Windows</title>
+
+			<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="robots" content="index, follow" />
+	
+	<meta name="description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать..."/>
+	<meta name="keywords" content="Заметки, IT, Гайд, Jekyll, " />
+	
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Milkleaks">	
+	<meta property="og:title" content="Устанавливаем Jekyll на Windows" />
+	<meta property="og:description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать..."/>
+	<meta property="og:url" content="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/">
+    <meta property="og:locale" content="ru">
+	<meta property="og:image" content="https://i.imgur.com/NgKO6eb.png" />
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Устанавливаем Jekyll на Windows">
+	<meta name="twitter:description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать...">
+	<meta name="twitter:image:src" content="https://i.imgur.com/NgKO6eb.png">
+	<meta name="twitter:url" content="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/">
+	<meta name="twitter:domain" content="http://milkleaks.ru">
+	
+	<link rel="canonical" href="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/">
+	<link rel="alternate" type="application/rss+xml" title="Milkleaks: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." href="http://milkleaks.ru/feed.xml" />
+	
+	<meta name="yandex-verification" content="74c3b5c777ee0ba1" />
+	<meta name="google-site-verification" content="jqmtruexSTI1O_HYicSlVMgM4nNh_Di_7zlyTbYlMc8" />
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link href="/assets/css/style.css?1504480980702682000" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Merriweather:300,300i,400,400i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+
+		<script type="text/javascript" src="https://use.fontawesome.com/d72823af97.js"></script>
+		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
+	</head>
+
+	<body>
+<nav>
+	<div class="common full">
+		<div class="wrapper">
+			<div class="navigation">
+				<div class="avatar">
+					<a href="/">
+						<img src="http://milkleaks.ru/assets/images/userpic.png" />
+					</a>
+				</div>
+				<div class="frame">
+					<div class="menu">	
+					  
+						  
+						  
+						  <a href="/blog/" class="active">
+							  Блог
+						  </a>
+					  
+						  
+						  
+						  <a href="/about/" class="">
+							  Об авторе
+						  </a>
+					  
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="search-base">
+	<div class="frame">
+		<div class="search">
+			<div class="search-form">
+				<input type="text" id="search-input" class="search-box" />
+				<span class="search-button">
+					<i class="fa fa-search open" aria-hidden="true"></i>
+					<i class="fa fa-times close" aria-hidden="true"></i>
+				</span>
+			</div>
+			<ul id="results-container" class="dropdown"></ul>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</nav>
+
+<div class="content">
+	<div class="post-single">
+		<article class="post">
+			<div class="common">
+				<div class="header">
+					<h1 class="title">Устанавливаем Jekyll на Windows</h1>
+					
+				</div>
+			</div>
+
+			
+
+			<div class="common">
+				<div class="maintenance single">
+					
+					
+					<div class="entry js-toc-content">
+						<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранится еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+
+<hr />
+
+<p>Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 “Anniversary Update”. Чтобы узнать версию своей операционной системы откройте <strong>Параметры</strong> - <strong>Система</strong> - <strong>О системе</strong>. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и введите:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Enable</span><span class="o">-</span><span class="no">WindowsOptionalFeature</span> <span class="o">-</span><span class="no">Online</span> <span class="o">-</span><span class="no">FeatureName</span> <span class="no">Microsoft</span><span class="o">-</span><span class="no">Windows</span><span class="o">-</span><span class="no">Subsystem</span><span class="o">-</span><span class="no">Linux</span></code></pre></figure>
+
+<p>Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте <strong>Параметры</strong> - <strong>Обновление и безопасность</strong> - <strong>Для разработчиков</strong> и включите “Режим разработчика”. Откройте <mark>cmd</mark> от администратора и введите:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bash</span></code></pre></figure>
+
+<p><img src="https://i.imgur.com/NgKO6eb.png" alt="Устанавливаем Jekyll на Windows" /></p>
+
+<p>Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.</p>
+
+<p>Приступим к установке Jekyll. Но для начала обновим пакеты:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">-</span><span class="n">y</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">upgrade</span> <span class="o">-</span><span class="n">y</span></code></pre></figure>
+
+<p>Теперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий <a href="https://www.brightbox.com/docs/ruby/ubuntu/">BrightBox</a> оптимизированный для Ubuntu. Вводим команды:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">add</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="ss">:brightbox</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="n">ng</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">ruby2</span><span class="o">.</span><span class="mi">3</span> <span class="n">ruby2</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="n">dev</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span></code></pre></figure>
+
+<p>Обновляем RubyGems.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">gem</span> <span class="n">update</span></code></pre></figure>
+
+<p>Теперь осталось установить сам Jekyll.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span> <span class="n">bundler</span></code></pre></figure>
+
+<p>Проверить правильность установки можно командой:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+
+<p>Jekyll установлен. Теперь создайте свой блог.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="kp">new</span> <span class="n">my_blog</span></code></pre></figure>
+
+<p>По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="n">my_blog</span></code></pre></figure>
+
+<p>Теперь можно запустить Jekyll.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<p>Блог станет доступен по локальному адресу <a href="http://localhost:4000">localhost:4000</a></p>
+
+<h2 id="Использованы-материалы">Использованы материалы</h2>
+
+<ul>
+  <li><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a></li>
+  <li><a href="https://jekyllrb.com/docs/windows/">Официальная документация Jekyll</a></li>
+</ul>
+
+					</div>
+				</div>
+					
+				<div class="actions">	
+					<div class="tags">
+						<span class="date"> 4 сентября 2017</span>
+
+						
+							<a href="/tag/it/" rel="tag">IT</a>, <a href="/tag/%D0%93%D0%B0%D0%B9%D0%B4/" rel="tag">Гайд</a>, <a href="/tag/jekyll/" rel="tag">Jekyll</a>
+							
+					</div>
+				</div>
+			</div>
+			
+			<div class="common">
+				<div class="comments wrapper">
+	<div class="control">
+		
+			<button 
+				
+					id="show-comments" data-disqus-url="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/" data-disqus-identifier="/blog/ustanavlivaem-jekyll-na-windows"
+				
+					class="disqus-comment-count slider show-comments">
+				
+					Комментировать
+				
+			</button>
+			<span class="hint">или</span>
+		
+		<button class="share-button social-toggle slider">Поделиться</button>
+		<div class="social-networks">
+			<div class="likely-share">
+	<div class="likely">
+		<div class="vkontakte"></div>
+		<div class="telegram"></div>
+		<div class="twitter"></div>
+		<div class="facebook"></div>
+		<div class="gplus"></div>
+		<div class="linkedin"></div>
+	</div>
+</div>
+		</div>
+	</div>
+	
+		
+			<div id="disqus_thread" class="frame"></div>
+			<script type="text/javascript">		
+				var disqus_shortname = 'milkleaks-ru',
+				  disqus_url = 'http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/',
+				  disqus_identifier = '/blog/ustanavlivaem-jekyll-na-windows',
+				  disqus_title = 'Устанавливаем Jekyll на Windows';
+
+				function loadDisqusOnDemand() {
+					var script = document.createElement('script');
+
+					script.type = 'text/javascript';
+					script.async = true;
+					script.src = '//go.disqus.com/embed.js';
+
+					(document.getElementsByTagName('head')[0]
+					  || document.getElementsByTagName('body')[0]).appendChild(script);
+
+					//hides the button and remove event listeners
+					this.removeEventListener('click', loadDisqusOnDemand);
+					this.style.display = 'none';
+				}
+
+				document
+				  .getElementById('show-comments')
+				  .addEventListener('click', loadDisqusOnDemand);
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		
+	
+</div>
+			</div>
+		</article>
+	</div>
+</div>
+
+<footer>
+	<div class="common full">
+		<div class="wrapper">
+			<div class="copyright">
+				Александра Травкина &copy; 2015 - 2017 <a target="_blank" href="/feed">RSS</a><br />
+				Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.
+			</div>
+		</div>
+		<div class="aside">
+			
+		</div>
+	</div>
+</footer>
+
+
+		<script type="text/javascript" src="/assets/js/jquery.js"></script>
+		<script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
+		<script type="text/javascript" src="/assets/js/lazyload.js"></script>
+		<script type="text/javascript" src="/assets/js/likely.js"></script>
+		<script type="text/javascript" src="/assets/js/fotorama.js"></script>
+		<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+		<script type="text/javascript" src="/assets/js/readmore.js"></script>
+		<script type="text/javascript" src="/assets/js/tocbot.js"></script>
+		<script type="text/javascript" src="//milkleaks-ru.disqus.com/count.js" id="dsq-count-scr" async></script>
+		<script type="text/javascript" src="/assets/js/main.js"></script>
+	</body>
+</html>
