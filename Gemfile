@@ -26,7 +26,6 @@ group :jekyll_plugins do
    gem "jekyll-tagging"
    gem "jekyll-sitemap"
    gem "jekyll-press"
-   gem "jekyll-admin"
    gem "therubyracer"
    gem "execjs"
 end
