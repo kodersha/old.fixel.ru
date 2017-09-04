@@ -3,7 +3,6 @@ layout: post
 title: "Уютный Jekyll"
 category: "Заметки"
 tags:
-  - Эгея
   - Jekyll
 ---
 

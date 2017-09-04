@@ -1,9 +1,9 @@
 ---
 title: Устанавливаем Jekyll на Windows
 layout: post
-category: Заметки
+category: IT
 tags:
-- IT
+- CMS
 - Гайд
 - Jekyll
 ---

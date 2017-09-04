@@ -45,6 +45,20 @@ tag_page_layout: tag
 tag_page_dir: tag
 tag_page_data:
   sitemap: false
+  
+jekyll-archives:
+  enabled:
+    - categories
+    - year
+    - month
+  layouts:
+    category: category
+    year: year
+    month: month
+  permalinks:
+    category: "/category/:name/"
+    year: "/:year/"
+    month: "/:year/:month/"
 
 ## Collections
 
@@ -53,6 +67,7 @@ plugins:
   - octopress-paginate
   - jekyll-redirect-from
   - jekyll-auto-image
+  - jekyll-archives
   - jekyll-sitemap
   - jekyll-feed
 

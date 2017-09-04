@@ -23,6 +23,7 @@ group :jekyll_plugins do
    gem "jekyll-redirect-from"
    gem "octopress-paginate"
    gem "jekyll-auto-image"
+   gem "jekyll-archives"
    gem "jekyll-tagging"
    gem "jekyll-sitemap"
    gem "jekyll-press"

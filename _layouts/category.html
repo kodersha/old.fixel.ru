@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include menu.html %}
+	
+<div class="content">
+	<div class="common">
+		<div class="wrapper">
+			<div class="post-list tags">
+				<h1 class="title">Категория {{ page.title }}</h1>
+				<div class="posts">
+					{% for post in page.posts %}
+						{% include _preview/blog.html %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+{% include submenu.html %}

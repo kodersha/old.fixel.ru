@@ -1,2 +1,4 @@
-require 'jekyll-press'
+require "rubygems"
+require "bundler/setup"
+Bundler.require(:default)
 @@mtimes = {}
