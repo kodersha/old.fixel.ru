@@ -691,14 +691,20 @@ nav {
 }
 
 .post-list {
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	
 	h1 {
 		&.title {
 			font: 300 4.3em/1 $gilroy;
 			padding-bottom: 50px;
 			padding-top: 0;
+		}
+		
+		&.big {
+			font: 300 6em/1 $gilroy;
+			padding-bottom: 150px;
+			padding-top: 0;		
 		}
 	}
 
@@ -740,11 +746,9 @@ nav {
 	}
 	
 	&.full {
-		padding-bottom: 0;
-
 		.post {		
-			padding-top: 5em;
-			padding-bottom: 5em;
+			padding-top: 100px;
+			padding-bottom: 100px;
 		
 			h1 {
 				&.title {
@@ -1585,7 +1589,6 @@ button {
 //
 
 .pagination {
-	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
 	

@@ -39,37 +39,45 @@ exclude:
   - LICENSE
   - README.md
   
+## Plugins
+plugins:
+  - jekyll-redirect-from
+  - jekyll-auto-image
+  - jekyll-sitemap
+  - jekyll-feed
+  
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: "/page-:num/"
+  title: ":title"
+  sort_reverse: true
+  collection: "posts"
+  category: "posts"
+  limit: 0
+  
+autopages:
+  enabled: true
+  categories:
+    layouts: 
+      - "category.html"
+    permalink: "/category/:cat"
+    title: ":cat"
+  tags:
+    layouts: 
+      - "tags.html"
+    permalink: "/tag/:tag"
+    title: "#:tag"
+  collections:
+    layouts: 
+      - "collection.html"
+      
 # Tags and categories
 tag_permalink_style: pretty
 tag_page_layout: tag
 tag_page_dir: tag
 tag_page_data:
   sitemap: false
-  
-jekyll-archives:
-  enabled:
-    - categories
-    - year
-    - month
-  layouts:
-    category: category
-    year: year
-    month: month
-  permalinks:
-    category: "/category/:name/"
-    year: "/:year/"
-    month: "/:year/:month/"
-
-## Collections
-
-## Plugins
-plugins:
-  - octopress-paginate
-  - jekyll-redirect-from
-  - jekyll-auto-image
-  - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-feed
 
 # Config for sitemap_generator.rb
 sitemap:

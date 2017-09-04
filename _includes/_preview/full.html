@@ -11,10 +11,12 @@
 		</div>
 		<div class="actions">	
 			<div class="tags">
-				<span class="date" title="{% include date.html date=post.date %}">{{ post.date | date: "%Y" }}</span>
-				{% for category in post.categories %}								
-					<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}" class="category">{{ category }}</a> -
-				{% endfor %}
+				<span class="date" title="{% include date.html date=post.date %}">{{ post.date | date: "%Y" }}</span>	
+				{% if post.categories %}
+					{% for category in post.categories %}								
+						<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}" class="category">{{ category }}</a> -
+					{% endfor %}
+				{% endif %}
 				{% if post.tags %}
 					{{ post | tags }}
 				{% endif %}

@@ -1,9 +1,7 @@
 ---
 layout: main
-paginate:
-  limit: false
-  per_page: 8
-  permalink: /page-:num/
+pagination: 
+  enabled: true
 tags:
 - Блог
 - Обзоры игр
@@ -19,7 +17,7 @@ tags:
 - Geek
 ---
 
-{% if page.url == "/" %}
+{% if page.url == "/index.html" %}
 	{% include _main/header.html %}
 {% else %}
 	{% include menu.html %}
