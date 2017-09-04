@@ -34,11 +34,11 @@ layout: default
 						<span class="date">{% include date.html date=page.date %}</span>
 						{% if page.categories %}
 							{% for category in page.categories %}								
-								<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}" class="category">{{ category }}</a> -
+								<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}" class="category">{{ category }}</a>
 							{% endfor %}
 						{% endif %}
 						{% if page.tags %}
-							{{ page | tags }}
+							- {{ page | tags }}
 						{% endif %}	
 					</div>
 				</div>
