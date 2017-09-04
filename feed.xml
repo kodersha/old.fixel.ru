@@ -5,8 +5,8 @@
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <link>http://milkleaks.ru/</link>
     <atom:link href="http://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Sep 2017 07:36:49 +0700</pubDate>
-    <lastBuildDate>Mon, 04 Sep 2017 07:36:49 +0700</lastBuildDate>
+    <pubDate>Mon, 04 Sep 2017 22:29:02 +0700</pubDate>
+    <lastBuildDate>Mon, 04 Sep 2017 22:29:02 +0700</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -74,10 +74,10 @@
         <link>http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/</link>
         <guid isPermaLink="true">http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/</guid>
         
-        <category>Заметки</category>
-        
-        
         <category>IT</category>
+        
+        
+        <category>CMS</category>
         
         <category>Гайд</category>
         
@@ -171,8 +171,6 @@
         
         <category>Заметки</category>
         
-        
-        <category>Эгея</category>
         
         <category>Jekyll</category>
         
