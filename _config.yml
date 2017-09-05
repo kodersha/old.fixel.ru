@@ -8,6 +8,7 @@ baseurl:
 permalink: /blog/:title/
 disqus: milkleaks-ru
 
+logo: /assets/images/logo.png
 image: /assets/images/cat.png
 avatar: /assets/images/avatar.png
 userpic: /assets/images/userpic.png
@@ -62,12 +63,12 @@ autopages:
     layouts: 
       - "category.html"
     permalink: "/category/:cat"
-    title: ":cat"
+    title: "Записи в категории :cat"
   tags:
     layouts: 
       - "tags.html"
     permalink: "/tag/:tag"
-    title: "#:tag"
+    title: "Записи с тегом #:tag"
   collections:
     layouts: 
       - "collection.html"

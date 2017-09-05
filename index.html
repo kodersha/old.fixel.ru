@@ -5,11 +5,7 @@ pagination:
   enabled: true
 ---
 
-{% if page.url == "/index.html" %}
-	{% include _main/header.html %}
-{% else %}
-	{% include menu.html %}
-{% endif %}
+{% include menu.html %}
 
 <div class="content">
 	<div class="common">

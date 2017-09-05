@@ -8,7 +8,6 @@ title: {{ page.title }}
 <div class="content">
 	<div class="common">
 		<div class="post-list full">
-			<h1 class="big">{{ page.title }}</h1>
 			{% for post in paginator.posts %}
 				{% include _preview/full.html %}
 			{% endfor %}
@@ -19,4 +18,5 @@ title: {{ page.title }}
 	</div>
 </div>
 	
+{% include breadcrumbs.html %}
 {% include submenu.html %}

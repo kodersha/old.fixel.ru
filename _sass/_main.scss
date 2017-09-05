@@ -359,28 +359,16 @@ nav {
 	
 	.navigation {
 		display: table;
+	    height: 48px;
 		
 		.avatar {
-			float: left;
-			margin-right: 20px;
+			display: table-cell;
+			vertical-align: middle;
 			position: relative;
-			background-color: #eeedec;
-			-webkit-border-radius: 50%;
-			-moz-border-radius: 50%;
-			border-radius: 50%;
 			
 			a {
 				border-bottom: 0;
 				display: grid;
-			}
-			
-			img {
-				-webkit-border-radius: 50%;
-				-moz-border-radius: 50%;
-				border-radius: 50%;
-				padding: 4px;
-				height: 64px;
-				width: 64px;
 			}
 		}
 		
@@ -398,6 +386,8 @@ nav {
 		}
 		
 		.menu {
+		    margin-left: 22px;
+			
 			a {
 				margin-left: 5px;
 				
@@ -435,7 +425,6 @@ nav {
 	.search-base {
 		display: table;
 		float: right;
-		height: 64px;
 		width: 100%;
 		
 		.frame {
@@ -450,7 +439,6 @@ nav {
 				width: 48px;
 				height: 48px;
 				margin: 0 0 0 auto;
-				background-color: #f1f3f4;
 				-webkit-transition: all 0.5s ease;
 				-moz-transition: all 0.5s ease;
 				transition: all 0.5s ease;
@@ -527,6 +515,7 @@ nav {
 				
 				.search-form {
 					width: 100%;
+					background-color: #f1f3f4;
 					
 					&::before {
 						height: 60px;
@@ -565,10 +554,9 @@ nav {
 			
 			.avatar {
 				float: none;
-				width: 64px;
-				height: 64px;
 				margin-right: auto;
 				margin-left: auto;
+				display: table;
 			}
 			
 			.frame {
@@ -589,6 +577,11 @@ nav {
 				
 				.search-form {
 					width: 100%;
+					background-color: #f1f3f4;
+					
+					.search-button {
+						display: none;
+					}
 				}
 				
 				.dropdown {
@@ -649,7 +642,17 @@ nav {
 			}
 		}
 	}
-
+	
+	&.breadcrumbs {
+		.common {
+			padding-top: 50px;
+			padding-bottom: 0;
+		}
+		
+		i {
+			margin: 0 5px;
+		}
+	}
 }
 
 //
