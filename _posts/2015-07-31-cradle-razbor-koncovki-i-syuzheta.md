@@ -6,7 +6,7 @@ toc: "true"
 title: "Cradle"
 subtitle: "Разбор концовки и сюжета"
 description: "Разбор концовки и сюжета"
-category: "Статьи"
+category: "Игры"
 thumbnail: "http://i.imgur.com/ITmlupGl.jpg"
 tags:
 - Квест

@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/life-is-strange-obzor/
 redirect_from: /blog/all/life-is-strange-obzor/
 title: "Life Is Strange"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/v3c9cZXl.jpg"
 tags:
 - Интерактивный фильм

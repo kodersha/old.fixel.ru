@@ -4,7 +4,7 @@ permalink: /blog/vampyr-novaya-igra-ot-dontnod/
 redirect_from: /blog/all/vampyr-novaya-igra-ot-dontnod/
 title: "Vampyr"
 subtitle: "Новая игра от Dontnod"
-category: "Статьи"
+category: "Игры"
 thumbnail: "http://i.imgur.com/GXMpRPhl.jpg"
 tags:
 - Интервью

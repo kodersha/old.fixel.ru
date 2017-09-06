@@ -4,7 +4,7 @@ permalink: /blog/call-of-duty-advanced-warfare/
 redirect_from: /blog/all/call-of-duty-advanced-warfare/
 title: "Call Of Duty: Advanced Warfare"
 description: "Очередная часть небезизвестного шутера"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/4NzEfAh.jpg"
 thumbnail: "http://i.imgur.com/4NzEfAhl.jpg"
 tags:

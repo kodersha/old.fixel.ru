@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/ustanovka-flarum-na-centos-7/
 redirect_from: /blog/all/ustanovka-flarum-na-centos-7/
 title: "Установка flarum на centOS"
-category: "IT"
+category: "Веб"
 tags:
 - Гайд
 - CMS

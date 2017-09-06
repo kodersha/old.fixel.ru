@@ -5,7 +5,7 @@ redirect_from: /blog/all/state-of-deacy-yose/
 title: "State Of Decay: YOSE"
 subtitle: "Переиздание"
 description: "Обзор бессмысленного переиздания"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/wwWQzDo.jpg"
 thumbnail: "http://i.imgur.com/wwWQzDol.jpg"
 tags:

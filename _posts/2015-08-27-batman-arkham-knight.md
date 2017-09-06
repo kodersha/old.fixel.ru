@@ -4,7 +4,7 @@ permalink: /blog/batman-arkham-knight/
 redirect_from: /blog/all/batman-arkham-knight/
 title: "Batman: Arkham Knight"
 description: "Последняя часть приключений Темного Рыцаря"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/DQQvUFhl.png"
 tags:
 - Открытый мир

@@ -4,7 +4,7 @@ permalink: /blog/mass-effect-andromeda-official-video/
 redirect_from: /blog/all/mass-effect-andromeda-official-video/
 title: "Mass Effect Andromeda — Official Video"
 subtitle: "N7 Day 2015"
-category: "Видео"
+category: "Игры"
 thumbnail: "http://i.imgur.com/xNSlfO3l.jpg"
 tags:
 - Трейлер

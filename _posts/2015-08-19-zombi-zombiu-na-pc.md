@@ -5,7 +5,7 @@ redirect_from: /blog/all/zombi-zombiu-na-pc/
 title: "Zombi"
 subtitle: "ZombiU на PC"
 description: "ZombiU на PC"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/Euakagkl.jpg"
 tags:
 - Выживание

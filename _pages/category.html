@@ -9,7 +9,11 @@ description: Список тегов блога
 <div class="content">
 	<div class="common full">
 		<div class="tag-cloud">
-			{{ site | tag_cloud }}
+			{% assign categories_list = site.categories %}
+			{% for category in categories_list %}
+				<a href="{{ category[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
+			{% endfor %}
+			{% assign categories_list = nil %}
 		</div>
 	</div>
 </div>

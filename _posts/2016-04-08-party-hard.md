@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/party-hard/
 redirect_from: /blog/all/party-hard/
 title: "Party Hard"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Пиксельная графика
 - Изометрия

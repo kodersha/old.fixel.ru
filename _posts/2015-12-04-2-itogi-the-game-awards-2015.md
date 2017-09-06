@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/itogi-the-game-awards-2015/
 redirect_from: /blog/all/itogi-the-game-awards-2015/
 title: "Итоги The Game Awards 2015"
-category: "Новости"
+category: "Игры"
 thumbnail: "http://i.imgur.com/Spf4yQRl.jpg"
 ---
 

@@ -5,7 +5,7 @@ redirect_from: /blog/all/project-zomboid-istoriya-vashey-smerti/
 title: "Project Zomboid"
 subtitle: "История вашей смерти"
 description: "История вашей смерти"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/Ykm5SkHl.jpg"
 tags:
 - Выживание

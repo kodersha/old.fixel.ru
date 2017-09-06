@@ -4,7 +4,7 @@ permalink: /blog/soma-transmission/
 redirect_from: /blog/all/soma-transmission/
 title: "SOMA: Transmission"
 description: "Фильм по мотивам научно-фантастического хоррора SOMA"
-category: "Видео"
+category: "Фильмы"
 thumbnail: "http://i.imgur.com/jMCfRr4l.jpg"
 tags:
 - Фильм

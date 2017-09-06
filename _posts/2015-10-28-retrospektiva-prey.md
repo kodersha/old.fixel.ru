@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/retrospektiva-prey/
 redirect_from: /blog/all/retrospektiva-prey/
 title: "Ретроспектива: Prey"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/EuDQ5c2l.jpg"
 tags:
 - Ретроспектива

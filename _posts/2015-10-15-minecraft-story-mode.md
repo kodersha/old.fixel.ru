@@ -4,7 +4,7 @@ permalink: /blog/minecraft-story-mode/
 redirect_from: /blog/all/minecraft-story-mode/
 title: "Minecraft: Story Mode"
 subtitle: "Впечатления от первого эпизода"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/V0urCnT.png"
 thumbnail: "http://i.imgur.com/V0urCnTl.png"
 tags:

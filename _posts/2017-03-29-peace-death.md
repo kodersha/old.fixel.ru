@@ -4,7 +4,7 @@ permalink: /blog/peace-death/
 redirect_from: /blog/all/peace-death/
 title: "Peace, Death!"
 subtitle: "Спокойно, Смерть!"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Пиксельная графика
 - Платформер

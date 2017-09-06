@@ -5,7 +5,7 @@ redirect_from: /blog/all/fallout-shelter-zdes-vy-rodilis-zdes-vy-i-umrete/
 title: "Fallout Shelter"
 subtitle: "Здесь вы родились, здесь вы и умрете"
 description: "Здесь вы родились, здесь вы и умрете"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/hbaXatll.jpg"
 tags:
 - Выживание

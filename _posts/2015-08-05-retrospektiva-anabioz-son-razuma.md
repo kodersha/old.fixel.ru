@@ -4,7 +4,7 @@ permalink: /blog/retrospektiva-anabioz-son-razuma/
 redirect_from: /blog/all/retrospektiva-anabioz-son-razuma/
 title: "Ретроспектива: Анабиоз — Сон разума"
 description: "Старая, но очень атмосферная компьютерная игра в жанре survival horror изданная 5 декабря 2008 года от уже не существующей Украинской студии “Action Forms”."
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/YtIJAb5l.jpg"
 tags:
 - Ретроспектива

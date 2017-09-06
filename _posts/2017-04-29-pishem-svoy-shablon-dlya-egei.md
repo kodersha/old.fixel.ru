@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/pishem-svoy-shablon-dlya-egei/
 redirect_from: /blog/all/pishem-svoy-shablon-dlya-egei/
 title: "Пишем свой шаблон для Эгеи"
-category: "IT"
+category: "Веб"
 toc: "true"
 tags:
 - CMS

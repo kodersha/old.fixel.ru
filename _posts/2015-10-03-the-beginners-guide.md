@@ -4,7 +4,7 @@ permalink: /blog/the-beginners-guide/
 redirect_from: /blog/all/the-beginners-guide/
 title: "The Beginner’s Guide"
 subtitle: "История одного разработчика"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/pTAK37fl.jpg"
 tags:
 - Квест

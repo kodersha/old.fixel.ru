@@ -4,7 +4,7 @@ permalink: /blog/the-escapists/
 redirect_from: /blog/all/the-escapists/
 title: "The Escapists"
 subtitle: "Побег из Шоушенка"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/sLQWgNVl.png"
 tags:
 - Квест

@@ -4,7 +4,7 @@ permalink: /blog/ne-vse-tak-idealno-v-cradle/
 redirect_from: /blog/all/ne-vse-tak-idealno-v-cradle/
 title: "Не все так идеально в Cradle"
 description: "Разбор недостатков игры"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/rHdJRpxl.jpg"
 tags:
 - Квест

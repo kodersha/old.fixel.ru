@@ -5,7 +5,7 @@ redirect_from: /blog/all/knock-knock-pryatki-v-temnote/
 title: "Knock-Knock"
 subtitle: "Прятки в темноте"
 description: "Прятки в темноте"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/Z3TlyRv.jpg"
 thumbnail: "http://i.imgur.com/Z3TlyRvl.jpg"
 tags:

@@ -4,7 +4,7 @@ permalink: /blog/resident-evil-7/
 redirect_from: /blog/all/resident-evil-7/
 title: "Resident Evil 7: Biohazard"
 subtitle: "Добро пожаловать в семью"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Выживание
 - Хоррор

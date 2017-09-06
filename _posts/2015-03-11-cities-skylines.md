@@ -5,7 +5,7 @@ redirect_from: /blog/all/cities-skylines/
 title: "Cities Skylines"
 subtitle: "Новый градостроительный симулятор"
 description: "Еще один самый лучший градостроительный симулятор?"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/F3wqtYI.jpg"
 thumbnail:  "http://i.imgur.com/F3wqtYIl.jpg"
 tags:

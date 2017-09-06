@@ -4,7 +4,7 @@ permalink: /blog/fallout-4-vse-i-srazu/
 redirect_from: /blog/all/fallout-4-vse-i-srazu/
 title: "Fallout 4 — Все и сразу"
 subtitle: "Обзор Fallout 4"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/48M48q5l.jpg"
 tags:
 - Крафтинг

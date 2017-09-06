@@ -4,7 +4,7 @@ permalink: /blog/dont-starve/
 redirect_from: /blog/all/dont-starve/
 title: "Don’t Starve"
 description: "Стильное выживание"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/WVhfxpPl.jpg"
 tags:
 - Открытый мир

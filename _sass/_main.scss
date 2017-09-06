@@ -198,6 +198,7 @@ select[multiple=multiple] {
 	color: $black;
 	background: $lightGray;
 }
+
 ::selection {
 	color: $black;
 	background: $lightGray;
@@ -592,57 +593,6 @@ nav {
 		}
 	}
 	
-	&.header {
-		background-color: transparent;
-		position: absolute;
-		z-index: 10;
-		width: 100%;
-
-		.common {
-			padding-top: 0;
-			padding-bottom: 0;
-		}
-		
-		.navigation {
-			.avatar {
-				background-color: transparent;
-				
-				img {
-					-webkit-box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-					-moz-box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-					box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-					padding: 0;
-					height: 96px;
-					width: 96px;
-				}
-			}
-			
-			.menu, .submenu {
-				a {
-					color: $white;
-					
-					&:hover {
-						border-color: $gray;
-					}
-				}
-			}
-		}
-		
-		@media (max-width : $mq-mobile) {
-			.common {
-				padding-top: 50px;
-				padding-bottom: 50px;
-			}
-
-			.navigation {
-				.avatar {
-					height: 96px;
-					width: 96px;
-				}
-			}
-		}
-	}
-	
 	&.breadcrumbs {
 		.common {
 			padding-top: 50px;
@@ -702,12 +652,6 @@ nav {
 			font: 300 4.3em/1 $gilroy;
 			padding-bottom: 50px;
 			padding-top: 0;
-		}
-		
-		&.big {
-			font: 300 6em/1 $gilroy;
-			padding-bottom: 150px;
-			padding-top: 0;		
 		}
 	}
 
@@ -822,13 +766,13 @@ nav {
 	}
 }
 
-.post-single {
-	padding-top: 5em;
-}
-
 //
 // .post
 //
+
+.post-single {
+	padding-top: 100px;
+}
 
 .post {
 	font: 400 1.15em/1.9 $merriweather;
@@ -866,9 +810,9 @@ nav {
 	
 	.subtitle {
 		font: 400 1.2em/1 $merriweather;
+		padding: 0 0 20px !important;
 		display: inline-block;
 		font-style: italic;
-		padding: 0 0 20px !important;
 	}
 	
 	h1 {
@@ -1220,30 +1164,6 @@ nav {
 			
 			a {
 				text-align: right;
-			}
-		}
-	}
-	
-	.related {
-		h2 {
-			font: 300 2em/1 $gilroy;
-		}
-		
-		ul {
-			list-style: none;
-			padding: 40px 0 0;
-		
-			.post-related {
-				padding-bottom: 20px;
-				
-				p {
-					color: #000;
-					padding: 0;
-				}
-				
-				&:last-of-type {
-					padding-bottom: 0;
-				}
 			}
 		}
 	}

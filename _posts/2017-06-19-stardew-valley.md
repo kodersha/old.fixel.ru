@@ -4,7 +4,7 @@ permalink: /blog/stardew-valley/
 redirect_from: /blog/all/stardew-valley/
 title: "Stardew Valley"
 subtitle: "Долгая, счастливая жизнь"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/UCEFuMq.png"
 tags:
 - Пиксельная графика

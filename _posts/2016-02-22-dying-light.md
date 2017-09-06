@@ -4,7 +4,7 @@ permalink: /blog/dying-light/
 redirect_from: /blog/all/dying-light/
 title: "Dying Light"
 subtitle: "Good Night, Good Luck"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Выживание
 - Зомби

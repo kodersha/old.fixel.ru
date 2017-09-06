@@ -5,7 +5,7 @@ redirect_from: /blog/all/sheltered-pikselnoe-vyzhivanie/
 title: "Sheltered"
 subtitle: "Пиксельное выживание"
 description: "Пиксельное выживание"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/MzXkLVo.jpg"
 thumbnail: "http://i.imgur.com/MzXkLVol.jpg"
 tags:

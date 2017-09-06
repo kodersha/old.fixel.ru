@@ -4,7 +4,7 @@ permalink: /blog/this-war-of-mine/
 redirect_from: /blog/all/this-war-of-mine/
 title: "This War of Mine"
 description: "О войне глазами мирных жителей"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/zdn1mGQl.jpg"
 tags:
 - Платформер

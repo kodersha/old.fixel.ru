@@ -4,9 +4,8 @@ permalink: /blog/marsianin/
 redirect_from: /blog/all/marsianin/
 title: "Марсианин"
 subtitle: "Мужик, у тебя изолента есть?"
-category: "Рецензии"
+category: "Фильмы"
 tags:
-- Фильм
 - Научная фантастика
 ---
 

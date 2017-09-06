@@ -4,7 +4,7 @@ permalink: /blog/the-long-dark-wintermute/
 redirect_from: /blog/all/the-long-dark-wintermute/
 title: "The Long Dark: Wintermute"
 subtitle: "Первые впечатления"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Постапокалипсис
 - Открытый мир

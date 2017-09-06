@@ -4,7 +4,7 @@ permalink: /blog/what-remains-of-edith-finch/
 redirect_from: /blog/all/what-remains-of-edith-finch/
 title: "What Remains of Edith Finch"
 subtitle: "Игра как искусство"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/4iNlL68.jpg"
 tags:
 - Интерактивный фильм

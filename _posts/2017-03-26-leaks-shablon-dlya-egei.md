@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/leaks-shablon-dlya-egei/
 redirect_from: /blog/all/leaks-shablon-dlya-egei/
 title: "Leaks - Шаблон для Эгеи"
-category: "IT"
+category: "Веб"
 tags:
 - CMS
 - Эгея

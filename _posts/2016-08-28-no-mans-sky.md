@@ -4,7 +4,7 @@ permalink: /blog/no-mans-sky/
 redirect_from: /blog/all/no-mans-sky/
 title: "No Man’s Sky"
 subtitle: "Мертвый космос"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Научная фантастика
 - Открытый мир

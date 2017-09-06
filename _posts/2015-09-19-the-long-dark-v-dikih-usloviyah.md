@@ -5,7 +5,7 @@ redirect_from: /blog/all/the-long-dark-v-dikih-usloviyah/
 title: "The Long Dark"
 subtitle: "В диких условиях"
 description: "В диких условиях"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/LGBogO4l.jpg"
 tags:
 - Открытый мир

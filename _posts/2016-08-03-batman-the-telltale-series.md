@@ -4,7 +4,7 @@ permalink: /blog/batman-the-telltale-series/
 redirect_from: /blog/all/batman-the-telltale-series/
 title: "Batman: The Telltale Series"
 subtitle: "Эпизод первый"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Интерактивный фильм
 - История

@@ -5,7 +5,7 @@ redirect_from: /blog/all/soma-strah-v-glubine/
 title: "SOMA"
 subtitle: "Страх в глубине"
 description: "Страх в глубине"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/C7XDMGcl.jpg"
 tags:
 - Квест

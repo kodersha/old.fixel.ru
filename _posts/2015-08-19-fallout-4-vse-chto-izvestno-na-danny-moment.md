@@ -6,7 +6,7 @@ toc: "true"
 title: "Fallout 4"
 subtitle: "Все что известно на данный момент"
 description: "Все что известно на данный момент"
-category: "Статьи"
+category: "Игры"
 cover: "http://i.imgur.com/GL3veCi.jpg"
 thumbnail: "http://i.imgur.com/GL3veCil.jpg"
 tags:

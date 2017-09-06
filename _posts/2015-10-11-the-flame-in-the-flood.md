@@ -4,7 +4,7 @@ permalink: /blog/the-flame-in-the-flood/
 redirect_from: /blog/all/the-flame-in-the-flood/
 title: "The Flame in the Flood"
 subtitle: "Обзор ранней версии"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/dWswtHgl.png"
 tags:
 - Выживание

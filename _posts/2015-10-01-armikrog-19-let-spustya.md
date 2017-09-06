@@ -5,7 +5,7 @@ redirect_from: /blog/all/armikrog-19-let-spustya/
 title: "Armikrog"
 subtitle: "19 лет спустя"
 description: "19 лет спустя"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/hWqVVEjl.jpg"
 tags:
 - Квест

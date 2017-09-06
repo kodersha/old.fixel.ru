@@ -4,7 +4,7 @@ permalink: /blog/homefront-the-revolution/
 redirect_from: /blog/all/homefront-the-revolution/
 title: "Homefront: The Revolution"
 subtitle: "Провал революции"
-category: "Обзоры"
+category: "Игры"
 tags:
 - Открытый мир
 - Экшен

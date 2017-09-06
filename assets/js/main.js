@@ -57,7 +57,6 @@ $( document ).ready(function() {
 
 $(document).ready(function() {$('.post .maintenance p a').attr('target','_blank');});
 
-
 /* Поиск */
 
 $('.search-button').click(function(){

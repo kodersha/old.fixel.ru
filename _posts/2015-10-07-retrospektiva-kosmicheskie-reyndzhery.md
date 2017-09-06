@@ -3,7 +3,7 @@ layout: post
 permalink: /blog/retrospektiva-kosmicheskie-reyndzhery/
 redirect_from: /blog/all/retrospektiva-kosmicheskie-reyndzhery/
 title: "Ретроспектива: Космические рейнджеры"
-category: "Обзоры"
+category: "Игры"
 thumbnail: "http://i.imgur.com/qDd8V82l.jpg"
 tags:
 - Ретроспектива

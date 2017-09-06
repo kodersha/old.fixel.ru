@@ -4,7 +4,7 @@ permalink: /blog/life-is-strange/
 redirect_from: /blog/all/life-is-strange/
 title: "Life Is Strange"
 description: "Обзор первых эпизодов увлекательной интеркатвной истории"
-category: "Обзоры"
+category: "Игры"
 cover: "http://i.imgur.com/wWEho3Q.jpg"
 thumbnail: "http://i.imgur.com/wWEho3Ql.jpg"
 tags:
