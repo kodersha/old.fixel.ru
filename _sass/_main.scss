@@ -304,7 +304,7 @@ header {
 	height: 40vh;
 	
 	.bg {
-		background: #f1f3f4 url(/assets/images/cover.jpg) bottom center no-repeat;
+		background: #f1f3f4 url('/assets/images/cover.jpg') bottom center no-repeat;
 		background-size: cover;
 		-webkit-transition: 0.1s;
 		-moz-transition: 0.1s;
