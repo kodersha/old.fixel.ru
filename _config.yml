@@ -69,9 +69,7 @@ autopages:
       - "tags.html"
     permalink: "/tag/:tag"
     title: "Записи с тегом #:tag"
-  collections:
-    layouts: 
-      - "collection.html"
+  collections: ""
       
 # Tags and categories
 tag_permalink_style: pretty

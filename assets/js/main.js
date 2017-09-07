@@ -19,15 +19,10 @@ lightbox.option({
 /* Добавляем lazy к изображениям */
 
 $(".post .maintenance p img").each(function() {
-	$(this).addClass('lazy');
-	$(this).attr('data-original', $(this).attr('src'));
+	$(this).addClass('lazyload');
+	$(this).attr('data-sizes', 'auto');
+	$(this).attr('data-src', $(this).attr('src'));
 })
-
-$(function() {
-	$(".post .maintenance img.lazy").lazyload({
-		effect : "fadeIn"
-	});
-});
 
 /* Выводим содержаение поста */
 
@@ -97,7 +92,7 @@ $(".post .maintenance iframe").wrap("<div class='video'><div class='frame'/></di
 
 $(function() {
     $(".post .maintenance .youtube").each(function() {
-        $(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg', 'class': 'lazy', 'data-original': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg'}));
+        $(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg', 'class': 'lazyload', 'data-src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg'}));
 
         $(this).append($('<div/>', {'class': 'play'}));
 
