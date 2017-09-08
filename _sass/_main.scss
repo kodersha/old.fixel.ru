@@ -29,17 +29,6 @@ body {
 	color: $black;
 }
 
-@font-face {
-	font-family: 'Gilroy-ExtraBold';
-	src: url('/assets/fonts/gilroy/346790_0_0.eot');
-	src: url('/assets/fonts/gilroy/346790_0_0.eot?#iefix') format('embedded-opentype'),
-		 url('/assets/fonts/gilroy/346790_0_0.woff2') format('woff2'),
-		 url('/assets/fonts/gilroy/346790_0_0.woff') format('woff'),
-		 url('/assets/fonts/gilroy/346790_0_0.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
