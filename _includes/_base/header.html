@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+
+		{% include _base/meta.html %}		
+		<script type="text/javascript">base_url = "{{ site.url }}";</script>
+		
+		<!--[ CSS ]-->
+		{% include_cached _base/style.html %}		
+		
+	</head>
+
+	<body>

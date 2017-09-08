@@ -3,7 +3,7 @@ layout: default
 title: {{ page.title }}
 ---
 
-{% include logo.html %}
+{% include_cached header.html %}
 	
 <div class="content">
 	<div class="common">
@@ -19,4 +19,4 @@ title: {{ page.title }}
 </div>
 	
 {% include breadcrumbs.html %}
-{% include submenu.html %}
+{% include_cached footer.html %}

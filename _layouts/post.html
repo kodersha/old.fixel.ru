@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include logo.html %}
+{% include_cached header.html %}
 
 <div class="content">
 	<div class="post-single">
@@ -52,7 +52,7 @@ layout: default
 </div>
 
 {% include breadcrumbs.html %}
-{% include submenu.html %}
+{% include_cached footer.html %}
 
 {% if page.background %}
 	<style type="text/css">

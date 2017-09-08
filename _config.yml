@@ -43,7 +43,9 @@ exclude:
 ## Plugins
 plugins:
   - jekyll-redirect-from
+  - jekyll-include-cache
   - jekyll-auto-image
+  - jekyll-postfiles
   - jekyll-sitemap
   - jekyll-feed
   
