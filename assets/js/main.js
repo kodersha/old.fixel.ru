@@ -19,9 +19,15 @@ lightbox.option({
 /* Добавляем lazy к изображениям */
 
 $(".post .maintenance p img").each(function() {
-	$(this).addClass('lazyload');
-	$(this).attr('data-sizes', 'auto');
-	$(this).attr('data-src', $(this).attr('src'));
+	$(this).addClass('lazyload');;
+	$(this).attr({
+		'data-src': $(this).attr('src'),
+		'data-sizes': 'auto',
+		'ondrag': 'return false',
+		'ondragdrop': 'return false',
+		'ondragstart': 'return false'
+	});
+	
 })
 
 /* Выводим содержаение поста */

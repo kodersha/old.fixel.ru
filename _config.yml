@@ -68,17 +68,10 @@ autopages:
     title: "Записи в категории :cat"
   tags:
     layouts: 
-      - "tags.html"
+      - "tag.html"
     permalink: "/tag/:tag"
     title: "Записи с тегом #:tag"
   collections: ""
-      
-# Tags and categories
-tag_permalink_style: pretty
-tag_page_layout: tag
-tag_page_dir: tag
-tag_page_data:
-  sitemap: false
 
 # Config for sitemap_generator.rb
 sitemap:

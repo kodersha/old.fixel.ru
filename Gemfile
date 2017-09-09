@@ -25,7 +25,6 @@ group :jekyll_plugins do
    gem "jekyll-paginate-v2"
    gem "jekyll-auto-image"
    gem "jekyll-postfiles"
-   gem "jekyll-tagging"
    gem "jekyll-sitemap"
    gem "jekyll-press"
    gem "therubyracer"
