@@ -1,12 +1,11 @@
 name: Milkleaks
-subname: Блог
 description: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.
 author: Александра Травкина
+disqus: milkleaks-ru
 
 url: http://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
-disqus: milkleaks-ru
 
 logo-black: /assets/images/logo-black.png
 logo-white: /assets/images/logo-white.png
@@ -63,16 +62,15 @@ autopages:
   categories:
     layouts: 
       - "category.html"
-    permalink: "/category/:cat"
+    permalink: "/category/:cat/"
     title: "Записи в категории :cat"
   tags:
     layouts: 
       - "tag.html"
-    permalink: "/tag/:tag"
+    permalink: "/tag/:tag/"
     title: "Записи с тегом #:tag"
   collections: ""
 
-# Config for sitemap_generator.rb
 sitemap:
   file: "/sitemap.xml"
   exclude:
@@ -85,8 +83,9 @@ sitemap:
   
 jekyll-press:
   exclude:
-    - "feed.xml"
-    - "sitemap.xml"
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/sitemap.xml"
   js_options: {}
   css_options: {}
   html_options: {}
