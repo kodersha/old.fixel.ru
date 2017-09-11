@@ -25,6 +25,7 @@ group :jekyll_plugins do
    gem "jekyll-sitemap"
    gem "jekyll-press"
    gem "therubyracer"
+   gem "kramdown"
    gem "execjs"
 end
 
