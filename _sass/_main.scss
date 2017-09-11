@@ -1630,19 +1630,26 @@ footer {
 		height: 60px;
 		width: 100%;
 		
-		a {
-			-webkit-transition: opacity 0.3s ease-in-out;
-			-moz-transition: opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			-o-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
+		p {
+			margin: 0;
+		}
+		
+		.metrika {
 			vertical-align: middle;
 			display: table-cell;
-			border-bottom: 0;
-			opacity: 0.2;
-			
-			&:hover {
-				opacity: 0.9;
+
+			a {
+				-webkit-transition: opacity 0.3s ease-in-out;
+				-moz-transition: opacity 0.3s ease-in-out;
+				-ms-transition: opacity 0.3s ease-in-out;
+				-o-transition: opacity 0.3s ease-in-out;
+				transition: opacity 0.3s ease-in-out;
+				border-bottom: 0;
+				opacity: 0.2;
+				
+				&:hover {
+					opacity: 0.9;
+				}
 			}
 		}
 	}
