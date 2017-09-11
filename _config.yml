@@ -8,10 +8,9 @@ baseurl:
 permalink: /blog/:title/
 disqus: milkleaks-ru
 
-logo: /assets/images/logo.png
+logo-black: /assets/images/logo-black.png
+logo-white: /assets/images/logo-white.png
 image: /assets/images/cat.png
-avatar: /assets/images/avatar.png
-userpic: /assets/images/userpic.png
 
 version: v3.5.2
 safe: false

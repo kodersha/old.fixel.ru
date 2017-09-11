@@ -4,7 +4,7 @@
 			<div class="navigation">
 				<div class="avatar">
 					<a href="{{ site.baseurl }}/">
-						<img src="{{ site.url }}{{ site.logo }}" />
+						<img src="{{ site.url }}{% if page.black == 'true' %}{{ site.logo-white }}{% else %}{{ site.logo-black }}{% endif %}" />
 					</a>
 				</div>
 				<div class="frame">

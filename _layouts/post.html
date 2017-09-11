@@ -2,12 +2,16 @@
 layout: default
 ---
 
-{% include _post/header.html %}
-{% include_cached header.html %}
+{% if page.header == "true" %}
+	{% include _post/header.html %}
+{% else %}
+	{% include_cached header.html %}
+{% endif %}
 
 <div class="content">
 	<div class="post-single">
 		<article class="post">
+			{% unless page.header == "true" %}
 			<div class="common">
 				<div class="header">
 					<h1 class="title">{{ page.title }}</h1>
@@ -16,6 +20,7 @@ layout: default
 					{% endif %}
 				</div>
 			</div>
+			{% endunless %}
 
 			{% include _post/cover.html %}
 
@@ -61,15 +66,3 @@ layout: default
 
 {% include breadcrumbs.html %}
 {% include_cached footer.html %}
-
-{% if page.background %}
-	<style type="text/css">
-		body {
-			background-image: url('{{ page.background }}');
-			background-position: center center;
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-	</style>
-{% endif %}
