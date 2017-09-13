@@ -49,6 +49,9 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    jgd (1.11)
+      jekyll (>= 1.5.1)
+      trollop (= 2.1.2)
     json (2.1.0)
     kramdown (1.15.0)
     libv8 (3.16.14.19)
@@ -78,6 +81,7 @@ GEM
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
+    trollop (2.1.2)
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -96,6 +100,8 @@ DEPENDENCIES
   jekyll-press
   jekyll-redirect-from
   jekyll-sitemap
+  jgd
+  kramdown
   therubyracer
   tzinfo-data
 

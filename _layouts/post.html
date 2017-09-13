@@ -37,7 +37,7 @@ layout: default
 					
 				<div class="actions">	
 					<div class="tags">
-						<span class="date">{% include date.html date=page.date %}</span>
+						<span class="date">{{ page.date | russian_date }}</span>
 						{% if page.categories %}
 							{% for category in page.categories %}								
 								<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>

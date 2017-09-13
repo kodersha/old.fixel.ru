@@ -4,7 +4,7 @@
 			{% if post.title %}
 				{{ post.title }}
 			{% endif %}
-			<span class="date">{% include date.html date=post.date %}</span>
+			<span class="date">{{ post.date | russian_date }}</span>
 			{% if post.subtitle %}
 				<p>{{ post.subtitle }}</p>
 			{% endif %}

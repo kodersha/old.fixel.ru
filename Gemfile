@@ -27,6 +27,7 @@ group :jekyll_plugins do
    gem "therubyracer"
    gem "kramdown"
    gem "execjs"
+   gem "jgd"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
