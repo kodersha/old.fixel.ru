@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Устанавливаем Jekyll на Mac OS</title>
+
+			<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="robots" content="index, follow" />
+	
+	<meta name="title" content="Устанавливаем Jekyll на Mac OS" />
+	<meta name="description" content="В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика Xcode из AppStore, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:
+
+"/>
+	<meta name="keywords" content="Веб, CMS, Гайд, Jekyll, " />
+	
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Milkleaks">	
+	<meta property="og:title" content="Устанавливаем Jekyll на Mac OS" />
+	<meta property="og:description" content="В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика Xcode из AppStore, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:
+
+"/>
+	<meta property="og:url" content="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/">
+    <meta property="og:locale" content="ru">
+	<meta property="og:image" content="/assets/images/cat.png" />
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Устанавливаем Jekyll на Mac OS">
+	<meta name="twitter:description" content="В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика Xcode из AppStore, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:
+
+">
+	<meta name="twitter:image:src" content="/assets/images/cat.png">
+	<meta name="twitter:url" content="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/">
+	<meta name="twitter:domain" content="http://milkleaks.ru">
+	
+	<meta name="yandex-verification" content="74c3b5c777ee0ba1" />
+	<meta name="google-site-verification" content="jqmtruexSTI1O_HYicSlVMgM4nNh_Di_7zlyTbYlMc8" />
+	
+	<link rel="canonical" href="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/">
+	<link rel="alternate" type="application/rss+xml" title="Milkleaks: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." href="http://milkleaks.ru/feed.xml" />		
+		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
+		
+		<!--[ CSS ]-->
+		<link href="/assets/css/style.css?1505570819196950800" rel="stylesheet" type="text/css">		
+		
+	</head>
+
+	<body >
+
+	
+	<nav>
+	<div class="common full">
+		<div class="wrapper">
+			<div class="navigation">
+				<div class="avatar">
+					<a href="/">
+						<img src="http://milkleaks.ru/assets/images/logo-black.png" />
+					</a>
+				</div>
+				<div class="frame">
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="search-base">
+	<div class="frame">
+		<div class="search">
+			<div class="search-form">
+				<input type="text" id="search-input" class="search-box" />
+				<span class="search-button">
+					<i class="fa fa-search open" aria-hidden="true"></i>
+					<i class="fa fa-times close" aria-hidden="true"></i>
+				</span>
+			</div>
+			<ul id="results-container" class="dropdown"></ul>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</nav>
+
+
+<div class="content">
+	<div class="post-single">
+		<article class="post">
+			
+			<div class="common">
+				<div class="header">
+					<h1 class="title">Устанавливаем Jekyll на Mac OS</h1>
+					
+				</div>
+			</div>
+			
+
+			
+	
+
+
+			<div class="common">
+				<div class="maintenance single">
+					
+					
+					<div class="entry js-toc-content">
+						<p>В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика <a href="https://itunes.apple.com/ru/app/xcode/id497799835?mt=12">Xcode из AppStore</a>, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">xcode</span><span class="o">-</span><span class="nb">select</span> <span class="o">--</span><span class="n">install</span></code></pre></figure>
+
+<p>Далее, установим менеджер недостающих пакетов <a href="https://brew.sh/index_ru.html">Homebrew</a>, для этого вводим в терминал:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">ruby</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></code></pre></figure>
+
+<p>Теперь установим Ruby.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">brew</span> <span class="n">install</span> <span class="n">ruby</span></code></pre></figure>
+
+<p>Проверим установку.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ruby</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+
+<p>Установим bundler.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span></code></pre></figure>
+
+<p>Теперь установим сам Jekyll.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span></code></pre></figure>
+
+<p>Проверим установленную версию.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+
+<p>Теперь можно создать папку для Jekyll блога, например по пути <mark>~/Documents/Jekyll</mark>. Переходим в нее:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="o">~</span><span class="sr">/Documents/</span><span class="no">Jekyll</span><span class="o">/</span></code></pre></figure>
+
+<p>Устанавливаем сам блог, <mark>site-name</mark> можно заменить на свое.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="kp">new</span> <span class="n">site</span><span class="o">-</span><span class="nb">name</span></code></pre></figure>
+
+<p>Перейдём в каталог с созданным блогом.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="o">~</span><span class="sr">/Documents/</span><span class="no">Jekyll</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="nb">name</span><span class="o">/</span></code></pre></figure>
+
+<p>Запустим:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<p>Теперь ваш сайт доступен по локальному адресу <a href="http://localhost:4000">locaclhost:4000</a>.</p>
+
+					</div>
+				</div>
+					
+				<div class="actions">	
+					<div class="tags">
+						<span class="date">16 сентября 2017</span>
+						
+															
+								<a href="/category/Веб/" class="category">Веб</a>
+							
+						
+
+						
+						-
+							
+							
+								<a href="/tag/cms/">
+									CMS
+								</a>,
+							
+								<a href="/tag/jekyll/">
+									Jekyll
+								</a>,
+							
+								<a href="/tag/Гайд/">
+									Гайд
+								</a>
+							
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="common">
+				<div class="comments wrapper">
+	<div class="control">
+		
+			<button 
+				
+					id="show-comments" data-disqus-url="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/" data-disqus-identifier="/blog/ustanavlivaem-jekyll-na-mac"
+				
+					class="disqus-comment-count slider show-comments">
+				
+					Комментировать
+				
+			</button>
+			<span class="hint">или</span>
+		
+		<button class="share-button social-toggle slider">Поделиться</button>
+		<div class="social-networks">
+			<div class="likely-share">
+	<div class="likely">
+		<div class="vkontakte"></div>
+		<div class="telegram"></div>
+		<div class="twitter"></div>
+		<div class="facebook"></div>
+		<div class="gplus"></div>
+		<div class="linkedin"></div>
+	</div>
+</div>
+		</div>
+	</div>
+	
+		
+			<div id="disqus_thread" class="frame"></div>
+			<script type="text/javascript">		
+				var disqus_shortname = 'milkleaks-ru',
+				  disqus_url = 'http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/',
+				  disqus_identifier = '/blog/ustanavlivaem-jekyll-na-mac',
+				  disqus_title = 'Устанавливаем Jekyll на Mac OS';
+
+				function loadDisqusOnDemand() {
+					var script = document.createElement('script');
+
+					script.type = 'text/javascript';
+					script.async = true;
+					script.src = '//go.disqus.com/embed.js';
+
+					(document.getElementsByTagName('head')[0]
+					  || document.getElementsByTagName('body')[0]).appendChild(script);
+
+					//hides the button and remove event listeners
+					this.removeEventListener('click', loadDisqusOnDemand);
+					this.style.display = 'none';
+				}
+
+				document
+				  .getElementById('show-comments')
+				  .addEventListener('click', loadDisqusOnDemand);
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		
+	
+</div>
+			</div>
+		</article>
+	</div>
+</div>
+
+<nav class="breadcrumbs">
+	<div class="common">
+		<a href="/">Главная</a> <i class="fa fa-angle-left" aria-hidden="true"></i> <a href="/blog/">Блог</a> <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Устанавливаем Jekyll на Mac OS</span>
+	</div>
+</nav>
+<footer>
+	<div class="common full">
+		<div class="wrapper">
+			<div class="copyright">
+				<a href="/about">Александра Травкина</a> &copy; 2015 - 2017 <a target="_blank" href="/feed">RSS</a><br />
+				Блог о <a href="/category/Игры/">компьютерных играх</a>, <a href="/category/Фильмы/">фильмах</a>, <a href="/category/Книги/">книгах</a>, <a href="/category/Веб/">вебе</a> и <a href="/category/Заметки/">всем прочем</a>.
+			</div>
+		</div>
+		<div class="aside">
+			<div class="counter">
+			</div>
+		</div>
+	</div>
+</footer>
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!--[ JS ]-->
+		<script type="text/javascript" src="/assets/js/jquery.js"></script>
+<script type="text/javascript" src="/assets/js/lazysizes.js" async></script>
+<script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
+<script type="text/javascript" src="/assets/js/fotorama.js"></script>
+<script type="text/javascript" src="/assets/js/lightbox.js"></script>
+<script type="text/javascript" src="/assets/js/base.js"></script>
+		
+		
+			<script type="text/javascript" src="/assets/js/likely.js"></script>
+<script type="text/javascript" src="/assets/js/tocbot.js"></script>
+<script type="text/javascript" src="/assets/js/post.js"></script>
+		
+		
+		<!--[ Other ]-->
+		<script type="text/javascript" src="https://milkleaks-ru.disqus.com/count.js" id="dsq-count-scr" async></script>
+	</body>
+</html>
