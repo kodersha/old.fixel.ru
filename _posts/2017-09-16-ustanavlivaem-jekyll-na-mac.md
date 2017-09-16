@@ -74,4 +74,4 @@ cd ~/Documents/Jekyll/site-name/
 bundle exec jekyll serve
 {% endhighlight %}
 
-Теперь ваш сайт доступен по локальному адресу [locaclhost:4000](http://localhost:4000).
+Теперь ваш сайт доступен по локальному адресу [localhost:4000](http://localhost:4000).
