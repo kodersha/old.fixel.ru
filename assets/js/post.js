@@ -13,7 +13,7 @@ $('.social-toggle').on('click', function() {
 });
 
 $('.show-comments').on('click', function() {
-	$(".comments span").toggleClass('hide');
+	$(".comments .hint").toggleClass('hide');
 });
 
 /* Parallax */
