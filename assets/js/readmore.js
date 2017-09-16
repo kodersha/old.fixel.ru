@@ -1,13 +1,213 @@
-/*!
- * @preserve
- *
- * Readmore.js jQuery plugin
- * Author: @jed_foster
- * Project home: http://jedfoster.github.io/Readmore.js
- * Licensed under the MIT license
- *
- * Debounce function from http://davidwalsh.name/javascript-debounce-function
- */
+(function() {
 
-/* global jQuery */
-!function(t){"function"==typeof define&&define.amd?define(["jquery"],t):"object"==typeof exports?module.exports=t(require("jquery")):t(jQuery)}(function(t){"use strict";function e(t){var e=++d;return String(null==t?"rmjs-":t)+e}function i(t){var e=t.clone().css({height:"auto",width:t.width(),maxHeight:"none",overflow:"hidden"}).insertAfter(t),i=e.outerHeight(),o=parseInt(e.css({maxHeight:""}).css("max-height").replace(/[^-\d\.]/g,""),10),n=t.data("defaultHeight");e.remove();var a=o||t.data("collapsedHeight")||n;t.data({expandedHeight:i,maxHeight:o,collapsedHeight:a}).css({maxHeight:"none"})}function o(t){if(!r[t.selector]){var e=" ";t.embedCSS&&""!==t.blockCSS&&(e+=t.selector+" + [data-readmore-toggle], "+t.selector+"[data-readmore]{"+t.blockCSS+"}"),e+=t.selector+"[data-readmore]{transition: height "+t.speed+"ms;overflow: hidden;}",function(t,e){var i=t.createElement("style");i.type="text/css",i.styleSheet?i.styleSheet.cssText=e:i.appendChild(t.createTextNode(e)),t.getElementsByTagName("head")[0].appendChild(i)}(document,e),r[t.selector]=!0}}function n(e,i){this.element=e,this.options=t.extend({},s,i),o(this.options),this._defaults=s,this._name=a,this.init(),window.addEventListener?(window.addEventListener("load",h),window.addEventListener("resize",h)):(window.attachEvent("load",h),window.attachEvent("resize",h))}var a="readmore",s={speed:100,collapsedHeight:200,heightMargin:16,moreLink:'<a href="#">Read More</a>',lessLink:'<a href="#">Close</a>',embedCSS:!0,blockCSS:"display: block; width: 100%;",startOpen:!1,blockProcessed:function(){},beforeToggle:function(){},afterToggle:function(){}},r={},d=0,h=function(t,e,i){var o;return function(){var n=this,a=arguments,s=function(){o=null,i||t.apply(n,a)},r=i&&!o;clearTimeout(o),o=setTimeout(s,e),r&&t.apply(n,a)}}(function(){t("[data-readmore]").each(function(){var e=t(this),o="true"===e.attr("aria-expanded");i(e),e.css({height:e.data(o?"expandedHeight":"collapsedHeight")})})},100);n.prototype={init:function(){var o=t(this.element);o.data({defaultHeight:this.options.collapsedHeight,heightMargin:this.options.heightMargin}),i(o);var n=o.data("collapsedHeight"),a=o.data("heightMargin");if(o.outerHeight(!0)<=n+a)return this.options.blockProcessed&&"function"==typeof this.options.blockProcessed&&this.options.blockProcessed(o,!1),!0;var s=o.attr("id")||e(),r=this.options.startOpen?this.options.lessLink:this.options.moreLink;o.attr({"data-readmore":"","aria-expanded":this.options.startOpen,id:s}),o.after(t(r).on("click",function(t){return function(e){t.toggle(this,o[0],e)}}(this)).attr({"data-readmore-toggle":s,"aria-controls":s})),this.options.startOpen||o.css({height:n}),this.options.blockProcessed&&"function"==typeof this.options.blockProcessed&&this.options.blockProcessed(o,!0)},toggle:function(e,i,o){o&&o.preventDefault(),e||(e=t('[aria-controls="'+this.element.id+'"]')[0]),i||(i=this.element);var n=t(i),a="",s="",r=!1,d=n.data("collapsedHeight");n.height()<=d?(a=n.data("expandedHeight")+"px",s="lessLink",r=!0):(a=d,s="moreLink"),this.options.beforeToggle&&"function"==typeof this.options.beforeToggle&&this.options.beforeToggle(e,n,!r),n.css({height:a}),n.on("transitionend",function(i){return function(){i.options.afterToggle&&"function"==typeof i.options.afterToggle&&i.options.afterToggle(e,n,r),t(this).attr({"aria-expanded":r}).off("transitionend")}}(this)),t(e).replaceWith(t(this.options[s]).on("click",function(t){return function(e){t.toggle(this,i,e)}}(this)).attr({"data-readmore-toggle":n.attr("id"),"aria-controls":n.attr("id")}))},destroy:function(){t(this.element).each(function(){var e=t(this);e.attr({"data-readmore":null,"aria-expanded":null}).css({maxHeight:"",height:""}).next("[data-readmore-toggle]").remove(),e.removeData()})}},t.fn.readmore=function(e){var i=arguments,o=this.selector;return e=e||{},"object"==typeof e?this.each(function(){if(t.data(this,"plugin_"+a)){var i=t.data(this,"plugin_"+a);i.destroy.apply(i)}e.selector=o,t.data(this,"plugin_"+a,new n(this,e))}):"string"==typeof e&&"_"!==e[0]&&"init"!==e?this.each(function(){var o=t.data(this,"plugin_"+a);o instanceof n&&"function"==typeof o[e]&&o[e].apply(o,Array.prototype.slice.call(i,1))}):void 0}});
+	var pluginName = 'readmore',
+		defaults = {
+		lineHeight: 24,
+		size: 12,
+		addClass: 'readmore',
+		wrapClass: 'readmore-wrap',
+		wrapClassOpen: 'readmore-wrap--open',
+		buttonClass: 'slider',
+		linkClassHidden: 'link--hidden',
+		addLinkClass: null,
+		linkClass: 'more link',
+		linkClassOpen: 'link--hidden',
+		linkText: 'Показать полностью',
+		linkTextOpen: 'Показать полностью',
+		hideIcon: true,
+		iconClass: 'readmore-icon',
+		iconClassOpen: 'readmore-icon--hidden',
+		onWindowResize: function () {
+			this.updateState();
+		}
+	};
+
+	function Plugin(el, options) {
+		this.el = el;
+		this.$el = $(el);
+		this.settings = $.extend({}, defaults, options || {});
+
+		if (this.$el.data('readmore-text')) {
+			this.settings.linkText = this.$el.data('readmore-text');
+		}
+
+		if (this.$el.data('readmore-text-open')) {
+			this.settings.linkTextOpen = this.$el.data('readmore-text-open');
+		}
+
+		this._defaults = defaults;
+		this._name = pluginName;    
+		this.init();
+	}
+
+	$.extend(Plugin.prototype, {
+
+		init: function () {
+			this.initWrap();
+			this.initLink();
+
+			if (this.settings.addClass) {
+				this.$el.addClass(this.settings.addClass);
+			}
+
+			if (typeof this.settings.onWindowResize === "function") {
+				$(window).on('resize.readmore orientationchange', $.proxy(this.settings.onWindowResize, this));
+			}
+
+			this.updateState();
+		},
+
+		initWrap: function () {
+			this.$el.wrapInner('<div class="' + this.settings.wrapClass + '"></div>');
+			this.$wrap = this.$el.find("> :first");
+			this.wrapTextNodes();
+		},
+
+		wrapTextNodes: function () {
+			this.$wrap.contents()
+			.filter(function() {
+				return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
+			})
+			.wrap('<p></p>')
+			.end()
+			.filter('br')
+			.remove();
+		},
+
+		initLink: function () {
+			this.$linkText = $('<button>', {
+				class: this.settings.buttonClass,
+				text: this.settings.linkText
+			});
+			this.$link = $('<a>', {
+				class: this.settings.linkClass
+			});
+
+			if (this.settings.addLinkClass) {
+				this.$link.addClass(this.settings.addLinkClass);
+			}
+
+			this.$link.append(this.$linkText);
+
+			if (!this.settings.hideIcon) {
+				this.$icon = $('<i>', {class: this.settings.iconClass});
+				this.$link.append(this.$icon);
+			}
+
+			this.$link.on('click', $.proxy(function (e) {
+				e.preventDefault();
+				this.toggleState();
+			}, this));
+
+			this.$el.append(this.$link);
+		},
+
+		calculateHeightClose: function () {
+			var that = this;
+			var lines = [];
+			var i = 0;
+
+			this.$wrap.find(' > *').each(function() {
+				var mTop = parseInt($(this).css('marginTop'), 10);
+				var pTop = parseInt($(this).css('paddingTop'), 10);
+				var top = $(this).position().top;
+				var height = $(this).height();
+				var countLine = Math.ceil(height/that.settings.lineHeight);
+
+				for (i = 0; i < countLine; i++) {
+					lines.push({
+						top: top + mTop + pTop + that.settings.lineHeight * i,
+						height: that.settings.lineHeight
+					});
+				}
+			});
+
+			var showAllLines = (lines.length <= this.settings.size);
+
+			if (showAllLines) {
+				return this.$wrap[0].scrollHeight;        
+			}
+
+			return lines[this.settings.size - 1].top + lines[this.settings.size - 1].height;
+		},
+
+		recalculateHeight: function () {
+			this.heightClosed = this.calculateHeightClose();
+			this.heightOpen = this.$wrap[0].scrollHeight;
+		},
+
+		updateState: function(size) {
+			this.recalculateHeight();
+
+			var showAllLines = this.heightClosed == this.heightOpen;
+			this.$link.toggleClass(this.settings.linkClassHidden, showAllLines);
+			this.$wrap.toggleClass(this.settings.wrapClassOpen, showAllLines);
+
+			if (showAllLines) {
+				this.$wrap.css('height', 'auto');
+			} else {
+				this.$wrap.css('height', this.heightClosed + 'px');
+			}
+		},
+
+		toggleState: function () {
+			this.$link.toggleClass(this.settings.linkClassOpen);
+			this.$wrap.toggleClass(this.settings.wrapClassOpen);
+
+			if (!this.settings.hideIcon) {
+				this.$icon.toggleClass(this.settings.iconClassOpen);
+			}
+
+			if (this.$link.hasClass(this.settings.linkClassOpen)) {
+				this.$wrap.css('height', 'auto');
+				this.$linkText.html(this.settings.linkTextOpen);
+			} else {
+				this.$wrap.css('height', this.heightClosed);
+				this.$linkText.html(this.settings.linkText);
+			}
+		}
+	});
+
+	$.fn.readMore = function(options) {
+		this.each(function() {
+			if (!$.data(this, "plugin_" + pluginName)) {
+				$.data(this, "plugin_" + pluginName, new Plugin(this, options));
+			}
+		});
+	};
+}());
+
+function responsiveParams() {
+	var MAX_MOBILE_WIDTH = 640;
+	var MAX_TABLET_WIDTH = 1024;
+	var windowWidth = $(window).width();
+	var params = {
+		small: {
+			size: 10,
+			lineHeight: 24   
+		},
+		medium: {
+			size: 11,
+			lineHeight: 28
+		},
+		large: {
+			size: 12,
+			lineHeight: 34
+		}
+	};
+
+	if (windowWidth <= MAX_MOBILE_WIDTH) {
+		return params.small;
+	} 
+	if (windowWidth > MAX_MOBILE_WIDTH && windowWidth <= MAX_TABLET_WIDTH) {
+		return params.medium;
+	}
+
+	return params.large;
+}
+
+var params = responsiveParams();
+params.onWindowResize = function() {
+	$.extend(this.settings, responsiveParams());
+	this.updateState();
+};

@@ -5,6 +5,12 @@
 		<!--[ JS ]-->
 		{% include_cached _base/script.html %}
 		
+		{% if page.layout == 'post' %}
+			{% include_cached _post/script.html %}
+		{% else %}
+			{% include_cached script.html %}
+		{% endif %}
+		
 		<!--[ Other ]-->
 		<script type="text/javascript" src="https://{{ site.disqus }}.disqus.com/count.js" id="dsq-count-scr" async></script>
 	</body>

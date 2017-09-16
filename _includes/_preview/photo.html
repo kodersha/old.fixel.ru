@@ -1,0 +1,16 @@
+<div class="post">
+	<a class="image" href="{{ post.image }}" data-lightbox="image">
+		<img class="lazyload" src="{{ post.thumb }}" data-src="{{ post.thumb }}" data-sizes="auto" ondrag="return false" ondragdrop="return false" ondragstart="return false" />
+	</a>
+	{% if post.description %}
+		<div class="maintenance single">
+			<p>{{ post.description }}</p>
+		</div>
+	{% endif %}
+	
+	<div class="actions">
+		<span class="date" title="{{ post.date | russian_date }}">{{ post.date | date: "%Y" }}</span>
+		<a href="{{ post.url }}">Открыть на странице</a>
+		<a href="{{ post.image }}" download="{{ post.image }}">Сохранить</a>
+	</div>
+</div>

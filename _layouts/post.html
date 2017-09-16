@@ -44,7 +44,7 @@ layout: default
 							{% endfor %}
 						{% endif %}
 
-						{% if page.tags %}
+						{% if page.tags.size > 0 %}
 						-
 							{% assign tags = page.tags | sort %}
 							{% for tag in tags %}

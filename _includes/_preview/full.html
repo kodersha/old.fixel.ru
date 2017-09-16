@@ -1,12 +1,12 @@
 <article class="post">
-	<div class="maintenance single short">
+	<div class="maintenance single">
 		<h1 class="title">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		</h1>
 		{% if post.subtitle %}
 			<p class="subtitle">{{ post.subtitle }}</p>
 		{% endif %}
-		<div class="entry">
+		<div class="entry" data-component="readmore">
 			{{ post.content }}
 		</div>
 		<div class="actions">	
@@ -18,7 +18,7 @@
 					{% endfor %}
 				{% endif %}
 				
-				{% if post.tags %}
+				{% if post.tags.size > 0 %}
 				-
 					{% assign tags = post.tags | sort %}
 					{% for tag in tags %}

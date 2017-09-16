@@ -64,6 +64,10 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
+    octopress-hooks (2.6.2)
+      jekyll (>= 2.0)
+    octopress-paginate (1.2.0)
+      octopress-hooks
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.0)
@@ -102,8 +106,9 @@ DEPENDENCIES
   jekyll-sitemap
   jgd
   kramdown
+  octopress-paginate
   therubyracer
   tzinfo-data
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.2

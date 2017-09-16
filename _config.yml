@@ -13,12 +13,29 @@ image: /assets/images/cat.png
 
 version: v3.5.2
 safe: false
-  
+
 navigation:
   - title: Блог
     url: /blog/
   - title: Об авторе
     url: /about/
+
+defaults:
+  - scope:
+      path: ""
+      type: photos
+    values:
+      layout: image
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      
+collections:
+  photos:
+    output: true
+    permalink: /photo/:year/:month/:day/:slug/
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -53,8 +70,6 @@ pagination:
   permalink: "/page-:num/"
   title: ":title"
   sort_reverse: true
-  collection: "posts"
-  category: "posts"
   limit: 0
   
 autopages:

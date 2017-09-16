@@ -17,6 +17,7 @@ html {
 }
 
 body {
+    -webkit-overflow-scrolling: touch;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -713,8 +714,8 @@ nav {
 }
 
 .post-list {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	
 	h1 {
 		&.title {
@@ -737,6 +738,18 @@ nav {
 			&.title {
 				font-size: 3em;
 			}
+		}
+	}
+	
+	.pagination {
+		&.top {
+			padding-top: 0;
+			padding-bottom: 100px;
+		}
+	
+		&.bottom {
+			padding-top: 100px;
+			padding-bottom: 0;
 		}
 	}
 	
@@ -778,8 +791,8 @@ nav {
 			}
 			
 			@media (max-width : $mq-mobile) {
-				padding-top: 5em;
-				padding-bottom: 5em;				
+				padding-top: 50px;
+				padding-bottom: 50px;				
 			}
 		}
 		
@@ -833,6 +846,72 @@ nav {
 			}
 		}
 	}
+	
+	&.gallery {
+		-webkit-animation: fadeUpIn 1s;
+		-moz-animation: fadeUpIn 1s;
+		animation: fadeUpIn 1s;
+		
+		.album {
+			float: left;
+			width: 33.333%;
+			
+			@media (max-width : $mq-mobile) {
+				float: none;
+				width: 100%;
+			}
+			
+			.frame {
+				margin-right: 20px;
+				
+				.thumbnail {
+					display: flex;
+					border: 0;
+					
+					img {
+						-webkit-border-radius: 2px;
+						-moz-border-radius: 2px;
+						border-radius: 2px;
+						width: 100%;
+					}
+				}
+				
+				h1.title {
+					font: 400 1.15em/1.9 $merriweather;
+					padding-bottom: 0;
+					padding-top: 10px;
+					
+					.hint {
+					    font: 400 14px/1.4 $roboto;
+						padding-left: 5px;
+						color: $lightGray;
+					}
+				}
+				
+				.subtitle {
+					font: 400 italic 1.15em/1.9 $merriweather;
+					color: $black;
+					padding: 0;
+					margin: 0;
+				}
+		
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+		
+		.post {
+			.actions {
+				max-width: 100%;
+				padding-top: 30px;
+				
+				.date, a {
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+	}
 }
 
 //
@@ -840,7 +919,7 @@ nav {
 //
 
 .post-single {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .post {
@@ -859,12 +938,12 @@ nav {
 		padding-top: 40px;
 		padding-bottom: 20px;
 		
-		&:last-of-type {
-			padding-bottom: 0;
-		}
-		
 		&:first-of-type {
 			padding-bottom: 20px;
+		}
+		
+		&:last-of-type {
+			padding-bottom: 0;
 		}
 	}
 	
@@ -1001,9 +1080,9 @@ nav {
 		[main]+[aside] {
 			float: none;
 			max-width: 100%;
-			font-size: 0.9em;
+			font-size: 1em;
 			display: inline-block;
-			text-align: center;
+			text-align: left;
 			width: 100%;
 			padding: 20px 0 0;
 			margin: 0;
@@ -1393,34 +1472,6 @@ nav {
 		overflow: hidden;
 	}
 	
-	.more {
-		background-color: $white;
-		position: relative;
-		padding-top: 60px;
-		
-		&::before {
-			content: "";
-			z-index: 10;
-			position: absolute;
-			height: 70px;
-			border: none;
-			background-image: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
-			background-image: -moz-linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
-			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
-			width: 100%;
-			top: -70px;
-		}
-		
-		a.morelink {
-			display: table;
-			border-bottom: 0;
-			
-			&.less {
-				display: none;
-			}
-		}
-	}
-	
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
 		line-height: 1.7;
@@ -1582,8 +1633,8 @@ button {
 //
 
 .pagination {
-	padding-bottom: 50px;
-	text-align: center;
+	padding-bottom: 100px;
+	padding-top: 100px;
 	
 	.previous {
 		float: right;
@@ -1591,6 +1642,10 @@ button {
 	
 	.next {
 		float: left;
+	}
+	
+	.infinite {
+		text-align: left;
 	}
 }
 
@@ -1751,4 +1806,75 @@ footer {
 @-webkit-keyframes fadeUpIn {
 	from { opacity: 0; margin-top: 50px; }
 	to { opacity: 1; margin-top: 0; }
+}
+
+.readmore {
+
+	&-wrap {
+		overflow: hidden;
+		position: relative;
+		-moz-transition: height 0.2s ease-in-out;
+		-o-transition: height 0.2s ease-in-out;
+		-webkit-transition: height 0.2s ease-in-out;
+		transition: height 0.2s ease-in-out;
+	}
+	
+	.more {
+		background-color: $white;
+		position: relative;
+		padding-top: 60px;
+		width: 100%;
+		
+		&::before {
+			content: "";
+			z-index: 10;
+			position: absolute;
+			height: 70px;
+			border: none;
+			background-image: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
+			background-image: -moz-linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
+			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
+			width: 100%;
+			top: -70px;
+		}
+		
+		&.link {
+		    cursor: default;
+			display: table;
+			border-bottom: 0;
+			pointer-events: none;
+
+			&--hidden {
+				display: none !important;
+			}
+			
+			button {
+			    pointer-events: auto;
+			}
+		}
+
+		&.icon {
+			display: inline-block;
+			font-family: FontAwesome !important;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		
+			&:before {
+				content: '\f107';
+				padding-left: 10px;
+				font-weight: bold;
+			}
+			&--open {
+				&:before {
+					content: '\f106';
+					padding-left: 10px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
 }
