@@ -713,8 +713,16 @@ nav {
 }
 
 .post-list {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+	&.next {
+		padding-bottom: 50px;
+	}
+	
+	&.previous {
+		padding-top: 50px;
+	}
 	
 	h1 {
 		&.title {
@@ -918,7 +926,7 @@ nav {
 //
 
 .post-single {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 .post {
