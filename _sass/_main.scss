@@ -628,11 +628,9 @@ nav {
 	}
 	
 	@media (max-width : $mq-mobile) {
-		width: initial;
-		display: block;
-	
 		.navigation {
-		    display: initial;
+			display: table;
+			width: 100%;
 			
 			.avatar {
 				float: none;
@@ -1957,7 +1955,8 @@ footer {
     background: #f1f3f4;
     height: 50px;
     width: 50px;
-    margin: 0;
+	margin: 0;
+	z-index: 100;
     border-radius: 50%;
 	
 	&:hover {
@@ -2004,7 +2003,10 @@ footer {
 			background-image: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
 			background-image: -moz-linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
 			background-image: linear-gradient(to top, rgba(255, 255, 255, 0.95) 20%, rgba(255, 255, 255, 0.85) 20%, rgba(255, 255, 255, 0.75) 40%, rgba(255, 255, 255, 0.65) 40%, rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.45) 60%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.2) 80%);
-			width: 100%;
+			width: -webkit-calc(100% + 20px);
+			width: -moz-calc(100% + 20px);
+			width: calc(100% + 20px);
+			margin: 0 -20px;
 			top: -70px;
 		}
 		
