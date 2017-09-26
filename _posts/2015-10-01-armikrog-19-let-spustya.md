@@ -4,10 +4,10 @@ permalink: /blog/armikrog-19-let-spustya/
 redirect_from: /blog/all/armikrog-19-let-spustya/
 title: "Armikrog"
 subtitle: "19 лет спустя"
-category: "Архив"
 thumbnail: "http://i.imgur.com/hWqVVEjl.jpg"
 description: "Наверное все непременно должны помнить такую старую и замечательную point-and-click игру, выполненную из пластеина, как The Neverhood. И вот, спустя девятнадцать лет, выходит её долгожданное, идейное продолжение под названием Armikrog. Однако получилось ли новое пластилиновое приключение таким же замечательным как The Neverhood?"
 old: "true"
+hidden: true
 ---
 
 Наверное все непременно должны помнить такую старую и замечательную point-and-click игру, выполненную из пластеина, как The Neverhood. И вот, спустя девятнадцать лет, выходит её долгожданное, идейное продолжение под названием Armikrog. Однако получилось ли новое пластилиновое приключение таким же замечательным как The Neverhood?

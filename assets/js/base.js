@@ -1,3 +1,5 @@
+$('[data-component="readmore"]').readMore(params);
+
 /* Добавляем lightbox к изображениям */
 
 $( ".post .maintenance p img" ).wrap(function() {
@@ -104,7 +106,7 @@ jQuery.extend(jQuery.fn, {
 });
 
 jQuery(function($){
-	var topLink = $('.top');
+	var topLink = $('.scroll-to-top');
 	$(window).scroll(function() {
 		if($(window).scrollTop() >= 900 && topLink.toplinkwidth()) {
 			topLink.fadeIn(300);

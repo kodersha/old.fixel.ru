@@ -4,11 +4,11 @@ permalink: /blog/sheltered-pikselnoe-vyzhivanie/
 redirect_from: /blog/all/sheltered-pikselnoe-vyzhivanie/
 title: "Sheltered"
 subtitle: "Пиксельное выживание"
-category: "Архив"
 cover: "http://i.imgur.com/MzXkLVo.jpg"
 thumbnail: "http://i.imgur.com/MzXkLVol.jpg"
 description: "Продолжая тенденцию обзоров на инди игры, знакомлю вас с очередной игрой раннего доступа о выживании в постапокалиптическом мире. Вышла Sheltered совсем недавно — 4 августа 2015, создана студией Unicube. Игра выполнена в 2D пиксельной графике, а главная ваша задача, конечно же, выжить."
 old: "true"
+hidden: true
 ---
 
 Продолжая тенденцию обзоров на инди игры, знакомлю вас с очередной игрой раннего доступа о выживании в постапокалиптическом мире. Вышла Sheltered совсем недавно — 4 августа 2015, создана студией Unicube. Игра выполнена в 2D пиксельной графике, а главная ваша задача, конечно же, выжить.

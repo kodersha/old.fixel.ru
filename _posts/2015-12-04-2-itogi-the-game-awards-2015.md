@@ -3,10 +3,10 @@ layout: post
 permalink: /blog/itogi-the-game-awards-2015/
 redirect_from: /blog/all/itogi-the-game-awards-2015/
 title: "Итоги The Game Awards 2015"
-category: "Архив"
 thumbnail: "http://i.imgur.com/Spf4yQRl.jpg"
 description: "Вот и завершился The Game Awards 2015. За почти два с половиной часа YouTube эфира было анонсировано и показано множество игр, а так же представлены награды в различных номинациях."
 old: "true"
+hidden: true
 ---
 
 Вот и завершился The Game Awards 2015. За почти два с половиной часа YouTube эфира было анонсировано и показано множество игр, а так же представлены награды в различных номинациях…

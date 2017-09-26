@@ -1695,6 +1695,13 @@ button {
 .pagination {
 	padding-bottom: 100px;
 	padding-top: 100px;
+    display: table;
+	width: 100%;
+	
+	.previous, .next {
+		position: relative;
+		z-index: 10;
+	}
 	
 	.previous {
 		float: right;
@@ -1706,6 +1713,13 @@ button {
 	
 	.infinite {
 		text-align: left;
+	}
+
+	.page_number {
+		text-align: center;
+		position: absolute;
+		right: 0;
+		left: 0;
 	}
 }
 
@@ -1910,7 +1924,7 @@ footer {
 		}
 	}
 	
-	.top {
+	.scroll-to-top {
 		background: #111;
 		
 		&:hover {
@@ -1931,9 +1945,10 @@ footer {
     padding: 15px 20px;
 	margin-top: 20px;
 	color: #000;
+	display: table;
 }
 
-.top {
+.scroll-to-top {
     transition: all 0.2s linear;
     cursor: pointer;
     display: none;

@@ -8,10 +8,9 @@ var ias = jQuery.ias({
 	negativeMargin: 1250
 });
 
-/*
 ias.extension(new IASSpinnerExtension({
 	src: "/assets/images/loader.gif",
-    html: "<div class='pagination'><div class='spinner'><img src='{src}'/></div></div>"
+    html: "<div class='spinner'><img src='{src}'/></div>"
 }));
 
 ias.extension(new IASTriggerExtension({
@@ -24,7 +23,6 @@ ias.extension(new IASPagingExtension());
 ias.extension(new IASHistoryExtension({
     prev: '.previous',
 }));
-*/
 
 /* Кат длинных постов  */
 
