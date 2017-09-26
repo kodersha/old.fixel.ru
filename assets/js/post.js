@@ -29,15 +29,19 @@ function parallax(){
 	$('header .maintenance').css('top',50+(scrolled*0.1)+'%');
 };
 
-/* Шапка поста */
+/* Шапка поста
 
-function inViewport($el) {
-    var H = $(window).height(),
-        r = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
-    return Math.max(0, t>0? H-t : (b<H?b:H));  
-}
+$(document).ready(function(){
+	function inViewport($el) {
+		var H = $(window).height(),
+			r = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+		return Math.max(0, t>0? H-t : (b<H?b:H));  
+	}
+});
 $(window).on("scroll resize", function(){
 	var window_offset = inViewport($('.intro')); 
 	$(".overlay").height(window_offset);
 	$(".caption").css("bottom", (window_offset / 4) );
 });
+
+*/

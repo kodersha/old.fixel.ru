@@ -4,10 +4,10 @@ permalink: /blog/vampyr-novaya-igra-ot-dontnod/
 redirect_from: /blog/all/vampyr-novaya-igra-ot-dontnod/
 title: "Vampyr"
 subtitle: "Новая игра от Dontnod"
-category: "Игры"
+category: "Архив"
 thumbnail: "http://i.imgur.com/GXMpRPhl.jpg"
-tags:
-- Интервью
+description: "Разработчики полюбившейся многим интерактивной истории Life is Strange, студия Dontnod Entertainment, поделились некоторыми подробностями своей будущей игры, которая пока что находится на стадии ранней разработки. В своем блоге на сайте PlayStation Филипп Моро, гейм-директор Vampyr, любезно ответил на несколько важных вопросов."
+old: "true"
 ---
 
 Разработчики полюбившейся многим интерактивной истории Life is Strange, студия Dontnod Entertainment, поделились некоторыми подробностями своей будущей игры, которая пока что находится на стадии ранней разработки. В своем блоге на сайте PlayStation Филипп Моро, гейм-директор Vampyr, любезно ответил на несколько важных вопросов.

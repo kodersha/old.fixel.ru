@@ -10,9 +10,11 @@ permalink: /
 
 <div class="content">
 	<div class="common">
-		<div class="post-list full infinite {% if paginator.next_page %}next{% endif %} {% if paginator.previous_page %}previous{% endif %}">
+		<div class="post-list full infinite {% if paginator.next_page %}next{% endif %} {% if paginator.previous_page %}previous{% endif %}">	
 			{% for post in paginator.posts %}
-				{% include _preview/full.html %}
+				{% if post.old != 'true' %}
+					{% include _preview/full.html %}
+				{% endif %}
 			{% endfor %}
 		</div>
 	</div>

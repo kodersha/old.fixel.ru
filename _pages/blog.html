@@ -7,12 +7,14 @@ dscription: Список записей за все время
 {% include_cached header.html %}
 
 <div class="content">
-	<div class="common">
-		<div class="wrapper">
-			<div class="post-list numbers">
-				<div class="posts" style="counter-reset: pony-counter {{ site.posts | size }};">		
+	<div class="post-list numbers">
+		<div class="posts" style="counter-reset: pony-counter {{ site.posts | size }};">
+			<div class="common">
+				<div class="wrapper">
 					{% for post in site.posts %}
-						{% include _preview/blog.html %}
+						{% if post.old != 'true' %}
+							{% include _preview/blog.html %}
+						{% endif %}
 					{% endfor %}
 				</div>
 			</div>

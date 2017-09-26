@@ -5,13 +5,13 @@
 	<meta name="robots" content="index, follow" />
 	
 	<meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
-	<meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% elsif page.description %}{{ page.description }}{% elsif page.layout == 'post' %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{site.description }}{% endif %}"/>
+	<meta name="description" content="{% if page.subtitle %}{{ page.subtitle | strip_html }}{% elsif page.description %}{{ page.description | strip_html }}{% elsif page.layout == 'post' %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{site.description }}{% endif %}"/>
 	<meta name="keywords" content="{% for category in page.categories %}{{ category }}, {% endfor %}{% for tag in page.tags %}{{ tag }}, {% endfor %}" />
 	
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="{{ site.name }}">	
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}" />
-	<meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle }}{% elsif page.description %}{{ page.description }}{% elsif page.layout == 'post' %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{site.description }}{% endif %}"/>
+	<meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle | strip_html }}{% elsif page.description %}{{ page.description | strip_html }}{% elsif page.layout == 'post' %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{site.description }}{% endif %}"/>
 	<meta property="og:url" content="{{ site.url }}{{ page.url | beautify_url }}">
     <meta property="og:locale" content="ru">
 	<meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.image }}{% endif %}" />
@@ -20,7 +20,7 @@
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-	<meta name="twitter:description" content="{% if page.subtitle %}{{ page.subtitle }}{% elsif page.description %}{{ page.description }}{% elsif page.layout == 'post' %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{site.description }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.subtitle %}{{ page.subtitle | strip_html }}{% elsif page.description %}{{ page.description | strip_html }}{% elsif page.layout == 'post' %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}{{site.description }}{% endif %}">
 	<meta name="twitter:image:src" content="{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.image }}{% endif %}">
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url | beautify_url }}">
 	<meta name="twitter:domain" content="{{ site.url }}">

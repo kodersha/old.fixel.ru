@@ -35,7 +35,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-paginate-v2 (1.8.1)
       jekyll (~> 3.0)
-    jekyll-postfiles (2.1.1)
     jekyll-press (0.2.1)
       html_press (>= 0.8.2)
       jekyll
@@ -64,10 +63,6 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
-    octopress-hooks (2.6.2)
-      jekyll (>= 2.0)
-    octopress-paginate (1.2.0)
-      octopress-hooks
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.0)
@@ -100,13 +95,11 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-include-cache
   jekyll-paginate-v2
-  jekyll-postfiles
   jekyll-press
   jekyll-redirect-from
   jekyll-sitemap
   jgd
   kramdown
-  octopress-paginate
   therubyracer
   tzinfo-data
 

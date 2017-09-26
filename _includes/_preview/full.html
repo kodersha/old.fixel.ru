@@ -7,7 +7,7 @@
 			<p class="subtitle">{{ post.subtitle }}</p>
 		{% endif %}
 		<div class="entry" data-component="readmore">
-			{{ post.content }}
+			{{ post.content | split:'<!--more-->' }}
 		</div>
 		<div class="actions">	
 			<div class="tags">

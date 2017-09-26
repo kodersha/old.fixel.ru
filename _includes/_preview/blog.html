@@ -1,13 +1,23 @@
+{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% capture postDate %}{{ post.date | date: '%s' }}{% endcapture %}
+{% assign difference = now | minus: postDate %}
+
 <div class="post">
 	<div class="entry">
+		{% if post.description or post.subtitle %}
+		<div class="maintenance" onclick="javascript:location.href='{{ site.baseurl }}{{ post.url }}'">
+			{% if post.description %}
+				<p>{{ post.description }}</p>
+			{% elsif post.subtitle %}
+				<p>{{ post.subtitle }}</p>
+			{% endif %}
+		</div>
+		{% endif %}
 		<a href="{{ site.baseurl }}{{ post.url }}">
 			{% if post.title %}
 				{{ post.title }}
 			{% endif %}
 			<span class="date">{{ post.date | russian_date }}</span>
-			{% if post.subtitle %}
-				<p>{{ post.subtitle }}</p>
-			{% endif %}
 		</a>
 	</div>
 </div>

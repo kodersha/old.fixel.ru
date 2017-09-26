@@ -7,8 +7,6 @@ url: http://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
 
-logo-black: /assets/images/logo-black.png
-logo-white: /assets/images/logo-white.png
 image: /assets/images/cat.png
 
 version: v3.5.2
@@ -60,7 +58,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-include-cache
   - jekyll-auto-image
-  - jekyll-postfiles
   - jekyll-sitemap
   - jekyll-feed
   

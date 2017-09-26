@@ -84,6 +84,40 @@ $(document).ready(function() {
 	});
 });
 
+/* Кнопка вверх */
+
+jQuery.extend(jQuery.fn, {
+	toplinkwidth: function(){
+		var totalContentWidth = jQuery('').outerWidth();
+		var totalTopLinkWidth = jQuery(this).children('a').outerWidth(true);
+		var h = jQuery(window).width()/2-totalContentWidth/2-totalTopLinkWidth;
+		if(h<0){
+			jQuery(this).hide();
+			return false;
+		} else {
+			if(jQuery(window).scrollTop() >= 900){
+				jQuery(this).show();
+			}
+			return true;
+		}
+	}
+});
+
+jQuery(function($){
+	var topLink = $('.top');
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 900 && topLink.toplinkwidth()) {
+			topLink.fadeIn(300);
+		} else {
+			topLink.fadeOut(300);
+		}
+	});
+	topLink.click(function(e) {
+		$("body,html").animate({scrollTop: 0}, 1000);
+		return false;
+	});
+});
+
 /* Yandex */
 
 (function (d, w, c) {

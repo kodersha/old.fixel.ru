@@ -4,7 +4,8 @@ var ias = jQuery.ias({
 	container:  '.post-list.infinite',
 	item:       '.post',
 	pagination: '.pagination',
-	next:       '.next'
+	next:       '.next',
+	negativeMargin: 1250
 });
 
 ias.extension(new IASSpinnerExtension({
@@ -23,15 +24,15 @@ ias.extension(new IASHistoryExtension({
     prev: '.previous',
 }));
 
-/* Кат длинных постов */
+/* Кат длинных постов  */
 
-$('[data-component="readmore"]').readMore(params);
+/* $('[data-component="readmore"]').readMore(params); */
 
 /* Подгрузка постов и скриптов */
 
 ias.on('rendered', function(items) {
 	
-	$('[data-component="readmore"]').readMore(params);
+	/* $('[data-component="readmore"]').readMore(params); */
 	
 	/* Добавляем lightbox к изображениям */
 	
