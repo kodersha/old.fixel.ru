@@ -1822,6 +1822,7 @@ footer {
 //
 
 .black {
+	-webkit-font-smoothing: antialiased;
 	background-color: $black;
 	color: $white;
 	
