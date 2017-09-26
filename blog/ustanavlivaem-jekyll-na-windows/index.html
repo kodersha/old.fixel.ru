@@ -10,13 +10,13 @@
 	<meta name="robots" content="index, follow" />
 	
 	<meta name="title" content="Устанавливаем Jekyll на Windows" />
-	<meta name="description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать..."/>
+	<meta name="description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows."/>
 	<meta name="keywords" content="Веб, CMS, Гайд, Jekyll, " />
 	
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:title" content="Устанавливаем Jekyll на Windows" />
-	<meta property="og:description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать..."/>
+	<meta property="og:description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows."/>
 	<meta property="og:url" content="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/">
     <meta property="og:locale" content="ru">
 	<meta property="og:image" content="https://i.imgur.com/NgKO6eb.png" />
@@ -25,7 +25,7 @@
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Устанавливаем Jekyll на Windows">
-	<meta name="twitter:description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать...">
+	<meta name="twitter:description" content="По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.">
 	<meta name="twitter:image:src" content="https://i.imgur.com/NgKO6eb.png">
 	<meta name="twitter:url" content="http://milkleaks.ru/blog/ustanavlivaem-jekyll-na-windows/">
 	<meta name="twitter:domain" content="http://milkleaks.ru">
@@ -38,11 +38,13 @@
 		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link href="/assets/css/style.css?1505582904521343900" rel="stylesheet" type="text/css">		
+		<link href="/assets/css/style.css?1506443759011553000" rel="stylesheet" type="text/css">		
 		
 	</head>
 
-	<body >
+	<body class="
+		
+	">
 
 	
 	<nav>
@@ -51,7 +53,7 @@
 			<div class="navigation">
 				<div class="avatar">
 					<a href="/">
-						<img src="http://milkleaks.ru/assets/images/logo-black.png" />
+						<div class="logo"></div>
 					</a>
 				</div>
 				<div class="frame">
@@ -85,6 +87,7 @@
 			<div class="common">
 				<div class="header">
 					<h1 class="title">Устанавливаем Jekyll на Windows</h1>
+					
 					
 				</div>
 			</div>
@@ -139,7 +142,7 @@
 
 <p>Jekyll установлен. Теперь создайте свой блог.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="kp">new</span> <span class="n">my_blog</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="n">my_blog</span></code></pre></figure>
 
 <p>По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:</p>
 
@@ -151,7 +154,7 @@
 
 <p>Блог станет доступен по локальному адресу <a href="http://localhost:4000">localhost:4000</a></p>
 
-<h2 id="Использованы-материалы">Использованы материалы</h2>
+<h2 id="использованы-материалы">Использованы материалы</h2>
 
 <ul>
   <li><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a></li>
@@ -166,7 +169,7 @@
 						<span class="date"> 4 сентября 2017</span>
 						
 															
-								<a href="/category/Веб/" class="category">Веб</a>
+								<a href="/category/веб/" class="category">Веб</a>
 							
 						
 
@@ -182,7 +185,7 @@
 									Jekyll
 								</a>,
 							
-								<a href="/tag/Гайд/">
+								<a href="/tag/гайд/">
 									Гайд
 								</a>
 							
@@ -277,6 +280,10 @@
 	</div>
 </footer>
 
+		<div class="top">
+			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
+		
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->

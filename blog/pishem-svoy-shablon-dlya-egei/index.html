@@ -10,13 +10,13 @@
 	<meta name="robots" content="index, follow" />
 	
 	<meta name="title" content="Пишем свой шаблон для Эгеи" />
-	<meta name="description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры. Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» — ../themes/ghost...."/>
+	<meta name="description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры."/>
 	<meta name="keywords" content="Веб, CMS, Эгея, Гайд, " />
 	
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:title" content="Пишем свой шаблон для Эгеи" />
-	<meta property="og:description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры. Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» — ../themes/ghost...."/>
+	<meta property="og:description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры."/>
 	<meta property="og:url" content="http://milkleaks.ru/blog/pishem-svoy-shablon-dlya-egei/">
     <meta property="og:locale" content="ru">
 	<meta property="og:image" content="http://i.imgur.com/Xixlisq.png" />
@@ -25,7 +25,7 @@
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Пишем свой шаблон для Эгеи">
-	<meta name="twitter:description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры. Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» — ../themes/ghost....">
+	<meta name="twitter:description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.">
 	<meta name="twitter:image:src" content="http://i.imgur.com/Xixlisq.png">
 	<meta name="twitter:url" content="http://milkleaks.ru/blog/pishem-svoy-shablon-dlya-egei/">
 	<meta name="twitter:domain" content="http://milkleaks.ru">
@@ -38,11 +38,13 @@
 		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link href="/assets/css/style.css?1505582904521343900" rel="stylesheet" type="text/css">		
+		<link href="/assets/css/style.css?1506443759011553000" rel="stylesheet" type="text/css">		
 		
 	</head>
 
-	<body >
+	<body class="
+		
+	">
 
 	
 	<nav>
@@ -51,7 +53,7 @@
 			<div class="navigation">
 				<div class="avatar">
 					<a href="/">
-						<img src="http://milkleaks.ru/assets/images/logo-black.png" />
+						<div class="logo"></div>
 					</a>
 				</div>
 				<div class="frame">
@@ -86,6 +88,7 @@
 				<div class="header">
 					<h1 class="title">Пишем свой шаблон для Эгеи</h1>
 					
+					
 				</div>
 			</div>
 			
@@ -118,7 +121,7 @@
 
 <p>Называем свою тему для русской и английской версии для отображения в <del>админке</del> настройках сайта.</p>
 
-<h2 id="Структура-папок">Структура папок</h2>
+<h2 id="структура-папок">Структура папок</h2>
 
 <div block="">
 <p><mark>../themes/ghost/images</mark> — Папка с изображениями темы.</p>
@@ -129,7 +132,7 @@
 
 <p>Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути <mark>../system/theme</mark>.</p>
 
-<h2 id="Шаблоны">Шаблоны</h2>
+<h2 id="шаблоны">Шаблоны</h2>
 
 <p>Теперь стоит подробнее разобрать содержимое папки <mark>../system/theme/templates</mark> стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты, наводите мышью на заголовки для их отображения.</p>
 
@@ -193,7 +196,7 @@
 
 <p>Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы <mark>../system/theme/templates</mark> в папку <mark>templates</mark> вашего шаблона и уже там производите все изменения.</p>
 
-<h2 id="Подключение-частей-шаблона">Подключение частей шаблона</h2>
+<h2 id="подключение-частей-шаблона">Подключение частей шаблона</h2>
 
 <p>Официальная <a href="https://docs.google.com/document/d/1yn7KCHq47oli7IH--skhymjjj2OSlXjcyGOxZ2ZEPeA/edit#heading=h.j2h2wr6xhlie">документация</a> по шаблонам Эгеи сообщает:</p>
 
@@ -227,32 +230,32 @@ _X () — вставляет дополнительный блок (не заб�
 
 <p>Теперь достаточно открыть <mark>layout.tmpl.php</mark> и где-нибудь перед footer’ом добавить вывод шаблона <mark>quote.tmpl.php</mark> средством специального макроса.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="sc">?&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
 
 <p>Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим параметром:</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="k">if</span> <span class="p">(</span><span class="vg">$content</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'frontpage'</span><span class="p">)</span> <span class="p">{</span> <span class="sc">?&gt;</span>
-    <span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="sc">?&gt;</span>
-<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="p">}</span> <span class="sc">?&gt;</span></code></pre></figure>
+    <span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="p">}</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
 
 <p>Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный &lt;p&gt;layout.tmpl.php&lt;/p&gt; с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.</p>
 
-<h2 id="Подключение-собственных-js-и-css">Подключение собственных JS и CSS</h2>
+<h2 id="подключение-собственных-js-и-css">Подключение собственных JS и CSS</h2>
 
 <p>Для подключения JS и CSS в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <mark>main.tmpl.php</mark> и посмотрите в конец файла, после закрывающегося тега <mark>body</mark>:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="sc">?&gt;</span>
-<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="sc">?&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
 
 <p>Здесь подхватываются <mark>../js/main.js</mark> и <mark>../styles/main.css</mark> из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью <a href="https://github.com/matthieua/WOW">wow.js</a>. Скачайте сам wow.js и положите в папку <mark>js</mark> вашего шаблона. Также скачайте <a href="https://github.com/daneden/animate.css">animate.css</a> и разместите в папке <mark>styles</mark>. Откройте <mark>main.tmpl.php</mark> и подключите их:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_CSS</span> <span class="p">(</span><span class="s1">'animate'</span><span class="p">)</span> <span class="sc">?&gt;</span>
-<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_JS</span> <span class="p">(</span><span class="s1">'wow'</span><span class="p">)</span> <span class="sc">?&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_CSS</span> <span class="p">(</span><span class="s1">'animate'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_JS</span> <span class="p">(</span><span class="s1">'wow'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
 
 <p>Далее в файл <mark>init-script.tmpl.php</mark> понадобится добавить следующий код с настройками wow.js:</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s2">"text/javascript"</span><span class="o">&gt;</span>
-    <span class="n">var</span> <span class="n">wow</span> <span class="o">=</span> <span class="kp">new</span> <span class="no">WOW</span><span class="p">(</span>
+    <span class="n">var</span> <span class="n">wow</span> <span class="o">=</span> <span class="n">new</span> <span class="no">WOW</span><span class="p">(</span>
         <span class="p">{</span>
             <span class="ss">boxClass: </span><span class="s1">'wow'</span><span class="p">,</span>
             <span class="ss">animateClass: </span><span class="s1">'animated'</span><span class="p">,</span>
@@ -277,7 +280,7 @@ _X () — вставляет дополнительный блок (не заб�
 						<span class="date">29 апреля 2017</span>
 						
 															
-								<a href="/category/Веб/" class="category">Веб</a>
+								<a href="/category/веб/" class="category">Веб</a>
 							
 						
 
@@ -289,11 +292,11 @@ _X () — вставляет дополнительный блок (не заб�
 									CMS
 								</a>,
 							
-								<a href="/tag/Гайд/">
+								<a href="/tag/гайд/">
 									Гайд
 								</a>,
 							
-								<a href="/tag/Эгея/">
+								<a href="/tag/эгея/">
 									Эгея
 								</a>
 							
@@ -388,6 +391,10 @@ _X () — вставляет дополнительный блок (не заб�
 	</div>
 </footer>
 
+		<div class="top">
+			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
+		
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
