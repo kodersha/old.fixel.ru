@@ -6,7 +6,7 @@
 		{% if post.subtitle %}
 			<p class="subtitle">{{ post.subtitle }}</p>
 		{% endif %}
-		<div class="entry" data-component="readmore">
+		<div class="entry">
 			{{ post.content | split:'<!--more-->' }}
 		</div>
 		<div class="actions">	

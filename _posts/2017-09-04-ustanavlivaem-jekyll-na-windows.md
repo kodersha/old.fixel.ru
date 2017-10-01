@@ -25,8 +25,6 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 bash
 {% endhighlight %}
 
-![Устанавливаем Jekyll на Windows](https://i.imgur.com/NgKO6eb.png)
-
 Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.
 
 Приступим к установке Jekyll. Но для начала обновим пакеты:

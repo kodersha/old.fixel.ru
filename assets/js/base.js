@@ -1,5 +1,3 @@
-$('[data-component="readmore"]').readMore(params);
-
 /* Добавляем lightbox к изображениям */
 
 $( ".post .maintenance p img" ).wrap(function() {

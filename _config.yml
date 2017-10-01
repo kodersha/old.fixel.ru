@@ -57,6 +57,7 @@ exclude:
 plugins:
   - jekyll-redirect-from
   - jekyll-include-cache
+  - jekyll-paginate-v2
   - jekyll-auto-image
   - jekyll-sitemap
   - jekyll-feed

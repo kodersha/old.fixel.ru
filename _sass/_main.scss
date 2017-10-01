@@ -340,7 +340,7 @@ header {
 			}
 			
 			.subtitle {
-				font: 400 1.2em/1 $merriweather;
+				font: 400 1.2em/1 $vollkorn;
 				font-style: italic;
 			}
 		}
@@ -577,7 +577,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.7 $merriweather;
+					font: 400 16px/1.7 $vollkorn;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -929,7 +929,7 @@ nav {
 				}
 				
 				h1.title {
-					font: 400 1.15em/1.9 $merriweather;
+					font: 400 1.15em/1.9 $vollkorn;
 					padding-bottom: 0;
 					padding-top: 10px;
 					
@@ -941,7 +941,7 @@ nav {
 				}
 				
 				.subtitle {
-					font: 400 italic 1.15em/1.9 $merriweather;
+					font: 400 italic 1.15em/1.9 $vollkorn;
 					color: $black;
 					padding: 0;
 					margin: 0;
@@ -975,7 +975,7 @@ nav {
 }
 
 .post {
-	font: 400 1.15em/1.9 $merriweather;
+	font: 400 1.4em/1.6 $vollkorn;
   
 	.header {
 		max-width: 75%;
@@ -1009,18 +1009,18 @@ nav {
 	}
 	
 	.subtitle {
-		font: 400 1.2em/1 $merriweather;
+		font: 400 1.2em/1 $vollkorn;
 		padding: 0 0 20px !important;
 		display: inline-block;
 		font-style: italic;
 	}
 	
 	h1 {
-	    font: 400 1.8em/1.4 $merriweather;
+	    font: 400 1.8em/1.4 $vollkorn;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.7em/1 $gilroy;
+			font: 300 3em/1 $gilroy;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1032,11 +1032,11 @@ nav {
 	}
 	
 	h2 {
-	    font: 400 1.5em/1.4 $merriweather;
+	    font: 400 1.5em/1.4 $vollkorn;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.7em/1 $gilroy;
+			font: 300 3em/1 $gilroy;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1050,7 +1050,7 @@ nav {
 	mark {
 		background-color: #f1f3f4;
 		word-wrap: break-word;
-		padding: 1px 5px;
+		padding: 4px 5px 0;
 		border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
@@ -1073,9 +1073,56 @@ nav {
 		}
 	}
 	
+	[left] {
+		font: 400 16px/1.3 $vollkorn;
+		color: $gray;
+		float: right;
+		clear: left;
+		width: 100%;
+		max-width: 25% !important;
+		padding-left: 40px;
+		text-align: left;
+		position: relative;
+		
+		img {
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			margin: 0 0 20px;
+			cursor: pointer;
+		}
+		
+		a {
+			border-bottom: 0;
+		}
+		
+		p {
+			padding: 0;
+			
+			&:first-of-type {
+				padding: 40px 0 0;
+			}
+		}
+		
+		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+			max-width: 100% !important;
+		}
+		
+		@media (max-width : $mq-mobile) {
+			float: none;
+			clear: none;
+			max-width: 100%;
+			font-size: 1em;
+			display: inline-block;
+			text-align: left;
+			width: 100%;
+			padding: 20px 0 0;
+			margin: 0;
+		}
+	}
+	
 	[aside] {
-		font: 400 0.8em/1.4 $merriweather;
-		font-style: italic;
+		font: 400 16px/1.3 $vollkorn;
 		color: $gray;
 		
 		img {
@@ -1084,6 +1131,10 @@ nav {
 			border-radius: 2px;
 			margin: 0 0 20px;
 			cursor: pointer;
+		}
+		
+		a {
+			border-bottom: 0;
 		}
 		
 		p {
@@ -1142,16 +1193,16 @@ nav {
 	}
 	
 	[caption] {
-		font: 400 0.9em/1.6 $merriweather;
-		font-style: italic;
-		margin: 10px 0 0;
+		font: 400 18px/1.4 $vollkorn;
 		padding: 0;
 		color: $gray;
+		
+		a {
+			border-bottom: 0;
+		}
 	}
 	
 	[quote] {
-		font: 400 1em/1.6 $merriweather;
-		font-style: italic;
 		text-align: center;
 		color: $gray;
 	}
@@ -1481,15 +1532,13 @@ nav {
 		
 		.entry {
 			a {
-				text-decoration: underline;
-				text-decoration-skip: ink;
-				border-bottom: 0;
+
 			}
 			
 			hr {
 				background-color: transparent;
 				background-image: none;
-				height: 8px;
+				height: 10px;
 				
 				&::before {
 					display: block;
@@ -1500,7 +1549,7 @@ nav {
 					margin-left: -17px;
 					box-shadow: none;
 					width: 100%;
-					top: -13px;
+					top: -12px;
 					border: 0;
 					left: 50%;
 				}
@@ -1529,8 +1578,8 @@ nav {
 	}
 	
 	@media (max-width : $mq-mobile) {
-		font-size: 1em;
-		line-height: 1.7;
+		font-size: 1.2em;
+		line-height: 1.5;
 		
 		p {
 			padding: 20px 0 10px;
@@ -1540,8 +1589,7 @@ nav {
 			padding: 30px 0 0;
 			
 			&.title {
-				padding-bottom: 0;
-				font-size: 2.7em;
+				font-size: 2.4em;
 			}
 		}
 		
@@ -1582,7 +1630,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 3.7em/1 $gilroy;
+			font: 300 3em/1 $gilroy;
 			padding-bottom: 20px;
 			margin: 0;
 			
@@ -1734,10 +1782,15 @@ footer {
 	}
 	
 	.copyright {
-		color: $lightGray;
+		color: $gray;
 		
 		a {
-			color: $lightGray;
+			color: $gray;
+			border-color: $lightGray;
+			
+			&:hover {
+				border-color: $gray;
+			}
 		}
 	}
 	
@@ -1805,7 +1858,7 @@ footer {
 
 .tag-cloud {
     padding-top: 50px;
-    font: 400 1.15em/1.9 $merriweather;
+    font: 400 1.15em/1.9 $vollkorn;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -1917,6 +1970,11 @@ footer {
 			
 			a {
 				color: #333;
+				border-color: #333;
+				
+				&:hover {
+					border-color: #222;
+				}
 			}
 		}
 	}

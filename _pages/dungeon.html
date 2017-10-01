@@ -1,0 +1,28 @@
+---
+layout: default
+title: Старые записи
+dscription: Список устаревших записей за все время
+black: "true"
+---
+
+{% include_cached header.html %}
+
+<div class="content">
+	<div class="post-list numbers">
+		<div class="posts">
+			<div class="old">
+				<div class="common">
+					<div class="wrapper">
+						{% for post in site.posts reversed %}
+							{% if post.old == 'true' %}
+								{% include _preview/blog.html %}
+							{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include_cached footer.html %}

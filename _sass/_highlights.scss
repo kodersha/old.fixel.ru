@@ -1,21 +1,10 @@
 
 .highlight {
-    background-color: #f1f3f4;
-    border: 1px solid #e7eef2;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    padding: 10px 20px;
 	display: grid;
 	
 	pre {
 	    width: auto;
 		overflow: auto;
-	
-		code {
-			font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-			
-		}
 	}
 }
 
