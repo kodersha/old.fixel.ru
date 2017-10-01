@@ -33,7 +33,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-include-cache (0.1.0)
       jekyll (~> 3.3)
-    jekyll-paginate-v2 (1.8.1)
+    jekyll-paginate-v2 (1.9.0)
       jekyll (~> 3.0)
     jekyll-press (0.2.1)
       html_press (>= 0.8.2)
