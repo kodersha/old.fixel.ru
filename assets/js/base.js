@@ -44,7 +44,7 @@ $('.post .maintenance .fotorama').fotorama({
 /* Подменяем youtube плеер картинкой */
 
 $(".post .maintenance .youtube").each(function() {
-	$(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg', 'class': 'lazyload', 'data-src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg'}));
+	$(this).append($('<img/>', {'src': 'http://img.youtube.com/vi/' + this.id + '/hqdefault.jpg', 'class': 'lazyload', 'data-src': 'http://img.youtube.com/vi/' + this.id + '/hqdefault.jpg'}));
 
 	$(this).append($('<div/>', {'class': 'play'}));
 
