@@ -1628,6 +1628,24 @@ nav {
 		}
 	}
 	
+	.cover {
+		width: 100vw;
+		height: 60vh;
+		opacity: 0.9;
+		margin-top: 30px;
+		min-height: 350px;
+		position: relative;
+		background-size: cover;
+		background-color: $action;
+		background-repeat: no-repeat;
+		background-position: center center;
+		
+		@media (max-width : $mq-mobile) {
+			height: 100vh;
+			min-height: initial;
+		}
+	}
+	
 }
 
 //
@@ -1648,28 +1666,6 @@ nav {
 				font-size: 2.7em;
 			}
 		}
-	}
-}
-
-//
-// .cover
-//
-
-.cover {
-    width: 100vw;
-    height: 60vh;
-	opacity: 0.9;
-	margin-top: 30px;
-	min-height: 350px;
-	position: relative;
-    background-size: cover;
-	background-color: $action;
-	background-repeat: no-repeat;
-    background-position: center center;
-	
-	@media (max-width : $mq-mobile) {
-		height: 100vh;
-		min-height: initial;
 	}
 }
 
@@ -1945,6 +1941,10 @@ footer {
 	}
 	
 	.post {
+		.cover {
+			background-color: #111;
+		}
+		
 		.actions {
 			.tags {
 				color: $white;
@@ -2026,7 +2026,7 @@ footer {
 	}
 	
 	@media (max-width : $mq-mobile) {
-		right: 25px;
+		display: none;
 	}
 }
 
