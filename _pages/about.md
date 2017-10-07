@@ -17,12 +17,11 @@ permalink: /about/
 <div block>
 	<p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter: <a href="https://twitter.com/sasha_travkina">@sasha_travkina</a></p>
 	<p><i class="fa fa-telegram" aria-hidden="true"></i> Telegram: <a href="https://t.me/sashatravkina">@sashatravkina</a></p>
-	<p><i class="fa fa-deviantart" aria-hidden="true"></i> DeviantArt: <a href="https://sasha-travkina.deviantart.com/">@sasha-travkina</a></p>
 	<p><i class="fa fa-github" aria-hidden="true"></i> GitHub: <a href="https://github.com/sasha-travkina/">@sasha-travkina</a></p>
 	<p><i class="fa fa-steam" aria-hidden="true"></i> Steam: <a href="https://steamcommunity.com/id/sasha_travkina">@sasha_travkina</a></p>
 	<p><i class="fa fa-tumblr" aria-hidden="true"></i> Tumblr: <a href="http://sasha-travkina.tumblr.com/">@sasha-travkina</a></p>
 	<p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram: <a href="https://www.instagram.com/sasha_travkina/">@sasha_travkina</a></p>
-	<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Почта: <a href="mailto:mrs.cuteshy@gmail.com">mrs.cuteshy@gmail.com</a></p>
+	<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Почта: <a href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a></p>
 	<p><i class="fa fa-rss" aria-hidden="true"></i> RSS блога: <a href="{{site.baseurl}}/feed">milkleaks.ru/feed</a></p>
 </div>
 
