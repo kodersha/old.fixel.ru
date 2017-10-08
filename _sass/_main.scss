@@ -65,8 +65,10 @@ a {
     transition: color 500ms, border-color 250ms;
 	border-bottom: 1px solid #f1f3f4;
 	text-decoration: none;
+	position: relative;
 	cursor: pointer;
 	color: $blue;
+	z-index: 1;
 	
 	&:hover, &:active, &.active {
 		border-color: $blue;
