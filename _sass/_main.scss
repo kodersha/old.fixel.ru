@@ -18,7 +18,7 @@ html {
 
 body {
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
@@ -1867,7 +1867,6 @@ footer {
 //
 
 .black {
-	-webkit-font-smoothing: antialiased;
 	background-color: $black;
 	color: $white;
 	
