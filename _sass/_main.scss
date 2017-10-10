@@ -18,7 +18,7 @@ html {
 
 body {
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: auto;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
@@ -343,7 +343,7 @@ header {
 			}
 			
 			.subtitle {
-				font: 400 1.2em/1 $vollkorn;
+				font: 400 1.2em/1 $notoserif;
 				font-style: italic;
 			}
 		}
@@ -578,7 +578,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.7 $vollkorn;
+					font: 400 16px/1.7 $notoserif;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -930,7 +930,7 @@ nav {
 				}
 				
 				h1.title {
-					font: 400 1.15em/1.9 $vollkorn;
+					font: 400 1.15em/1.9 $notoserif;
 					padding-bottom: 0;
 					padding-top: 10px;
 					
@@ -942,7 +942,7 @@ nav {
 				}
 				
 				.subtitle {
-					font: 400 italic 1.15em/1.9 $vollkorn;
+					font: 400 italic 1.15em/1.9 $notoserif;
 					color: $black;
 					padding: 0;
 					margin: 0;
@@ -976,7 +976,7 @@ nav {
 }
 
 .post {
-	font: 400 1.4em/1.6 $vollkorn;
+	font: 400 1.3em/1.8 $notoserif;
   
 	.header {
 		max-width: 75%;
@@ -1010,18 +1010,18 @@ nav {
 	}
 	
 	.subtitle {
-		font: 400 1.2em/1 $vollkorn;
+		font: 400 1.2em/1 $notoserif;
 		padding: 0 0 20px !important;
 		display: inline-block;
 		font-style: italic;
 	}
 	
 	h1 {
-	    font: 400 1.8em/1.4 $vollkorn;
+	    font: 400 1.8em/1.4 $notoserif;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3em/1 $gilroy;
+			font: 300 3.2em/1 $gilroy;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1033,7 +1033,7 @@ nav {
 	}
 	
 	h2 {
-	    font: 400 1.5em/1.4 $vollkorn;
+	    font: 400 1.3em/1.4 $notoserif;
 		padding: 60px 0 0;
 		
 		&.title {
@@ -1051,7 +1051,7 @@ nav {
 	mark {
 		background-color: #f1f3f4;
 		word-wrap: break-word;
-		padding: 4px 5px 0;
+		padding: 0 5px;
 		border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
@@ -1063,7 +1063,7 @@ nav {
 	}
 	
 	[left] {
-		font: 300 italic 16px/1.4 $vollkorn;
+		font: 300 italic 14px/1.45 $notoserif;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1121,7 +1121,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 400 italic 16px/1.4 $vollkorn;
+		font: 400 italic 14px/1.45 $notoserif;
 		color: $gray;
 		
 		img {
@@ -1193,7 +1193,7 @@ nav {
 	}
 	
 	[caption] {
-		font: 400 18px/1.4 $vollkorn;
+		font: 400 18px/1.4 $notoserif;
 		padding: 0;
 		color: $gray;
 		
@@ -1657,7 +1657,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 3em/1 $gilroy;
+			font: 300 3.2em/1 $gilroy;
 			padding-bottom: 20px;
 			margin: 0;
 			
@@ -1849,7 +1849,7 @@ footer {
 
 .tag-cloud {
     padding-top: 50px;
-    font: 400 1.15em/1.9 $vollkorn;
+    font: 400 1.15em/1.9 $notoserif;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
