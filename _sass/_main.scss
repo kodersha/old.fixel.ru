@@ -1063,7 +1063,7 @@ nav {
 	}
 	
 	[left] {
-		font: 300 italic 14px/1.45 $merriweather;
+		font: 300 italic 14px/1.6 $merriweather;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1079,10 +1079,6 @@ nav {
 			border-radius: 2px;
 			margin: 0 0 20px;
 			cursor: pointer;
-		}
-		
-		a {
-			border-bottom: 0;
 		}
 		
 		p {
@@ -1121,7 +1117,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 300 italic 14px/1.45 $merriweather;
+		font: 300 italic 14px/1.6 $merriweather;
 		color: $gray;
 		
 		img {
@@ -1130,10 +1126,6 @@ nav {
 			border-radius: 2px;
 			margin: 0 0 20px;
 			cursor: pointer;
-		}
-		
-		a {
-			border-bottom: 0;
 		}
 		
 		p {
@@ -1347,10 +1339,10 @@ nav {
 			
 			a {
 				display: inline-block;
-				margin: 0 0 5px 5px;
+				margin: 0 5px 5px 0;
 				
-				&:first-of-type {
-					margin: 0 0 5px 0;
+				&:nth-of-type(2) {
+					margin: 0 5px 5px 5px !important;
 				}
 				
 				&.category {
