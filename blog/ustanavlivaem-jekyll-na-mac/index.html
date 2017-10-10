@@ -38,8 +38,7 @@
 		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link href="/assets/css/style.css?1507642016227583000" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+		<link href="/assets/css/style.css?1507645049450348000" rel="stylesheet" type="text/css">
 		
 	</head>
 
@@ -103,47 +102,47 @@
 					<div class="entry js-toc-content">
 						<p>В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика <a href="https://itunes.apple.com/ru/app/xcode/id497799835?mt=12">Xcode из AppStore</a>, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">xcode</span><span class="o">-</span><span class="nb">select</span> <span class="o">--</span><span class="n">install</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">xcode-select <span class="nt">--install</span></code></pre></figure>
 
 <p>Далее, установим менеджер недостающих пакетов <a href="https://brew.sh/index_ru.html">Homebrew</a>, для этого вводим в терминал:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="sr">/usr/</span><span class="n">bin</span><span class="o">/</span><span class="n">ruby</span> <span class="o">-</span><span class="n">e</span> <span class="s2">"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">/usr/bin/ruby <span class="nt">-e</span> <span class="s2">"</span><span class="k">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span></code></pre></figure>
 
 <p>Теперь установим Ruby.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">brew</span> <span class="n">install</span> <span class="n">ruby</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">brew install ruby</code></pre></figure>
 
 <p>Проверим установку.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">ruby</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">ruby <span class="nt">-v</span></code></pre></figure>
 
 <p>Установим bundler.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">gem install bundler</code></pre></figure>
 
 <p>Теперь установим сам Jekyll.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">gem install jekyll</code></pre></figure>
 
 <p>Проверим установленную версию.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll <span class="nt">-v</span></code></pre></figure>
 
 <p>Теперь можно создать папку для Jekyll блога, например по пути <mark>~/Documents/Jekyll</mark>. Переходим в нее:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="o">~</span><span class="sr">/Documents/</span><span class="no">Jekyll</span><span class="o">/</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/Documents/Jekyll/</code></pre></figure>
 
 <p>Устанавливаем сам блог, <mark>site-name</mark> можно заменить на свое.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> <span class="n">site</span><span class="o">-</span><span class="nb">name</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll new site-name</code></pre></figure>
 
 <p>Перейдём в каталог с созданным блогом.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="o">~</span><span class="sr">/Documents/</span><span class="no">Jekyll</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="nb">name</span><span class="o">/</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/Documents/Jekyll/site-name/</code></pre></figure>
 
 <p>Запустим:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
 
 <p>Теперь ваш сайт доступен по локальному адресу <a href="http://localhost:4000">localhost:4000</a>.</p>
 

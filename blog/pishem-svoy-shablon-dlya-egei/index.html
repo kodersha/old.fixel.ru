@@ -38,8 +38,7 @@
 		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link href="/assets/css/style.css?1507642016227583000" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+		<link href="/assets/css/style.css?1507645049450348000" rel="stylesheet" type="text/css">
 		
 	</head>
 
@@ -111,12 +110,12 @@
   <li>Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в себе:</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="k">return</span> <span class="n">array</span> <span class="p">(</span>
-    <span class="s1">'display_name'</span> <span class="o">=&gt;</span> <span class="n">array</span> <span class="p">(</span>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">return</span> <span class="k">array</span> <span class="p">(</span>
+    <span class="s1">'display_name'</span> <span class="o">=&gt;</span> <span class="k">array</span> <span class="p">(</span>
         <span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'Ghost'</span><span class="p">,</span>
         <span class="s1">'ru'</span> <span class="o">=&gt;</span> <span class="s1">'Призрак'</span><span class="p">,</span>
     <span class="p">),</span>
-<span class="p">);</span> <span class="sc">?&gt;</span></code></pre></figure>
+<span class="p">);</span> <span class="cp">?&gt;</span></code></pre></figure>
 
 <p>Называем свою тему для русской и английской версии для отображения в <del>админке</del> настройках сайта.</p>
 
@@ -209,33 +208,33 @@ _X () — вставляет дополнительный блок (не заб�
 
 <p>Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл <mark>quote.tmpl.php</mark> в <mark>../themes/ghost/templates</mark> со следующим несложным кодом:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">div</span> <span class="k">class</span><span class="o">=</span><span class="s2">"e2-quote"</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="p">?</span><span class="n">php</span>
-        <span class="vg">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e2-quote"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php</span>
+        <span class="nv">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
         &lt;p&gt;Ибо здесь, похоже, мы не найдем ничего, кроме, как сказала бы Мильва, ремонтизма.&lt;/p&gt;
         &lt;span&gt;Анджей Сапковский - Владычица Озера&lt;/span&gt;'</span><span class="p">;</span>
-        <span class="vg">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
+        <span class="nv">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
         &lt;p&gt;Цири громко чертыхнулась, повторив любимое выражение Весемира, значение которого было ей не вполне ясно. Потом добавила еще несколько слов, услышанных от Ярпена Зигрина, значение которых было для нее вообще полнейшей загадкой.&lt;/p&gt;
         &lt;span&gt;Анджей Сапковский - Кровь Эльфов&lt;/span&gt;'</span><span class="p">;</span>
-        <span class="vg">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
+        <span class="nv">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
         &lt;p&gt;Весемир кивал, время от времени вставляя замечания, из которых следовало только то, что «в его времена» все было лучше, логичнее, приличнее и здоровее.&lt;/p&gt;
         &lt;span&gt;Анджей Сапковский - Последнее Желание&lt;/span&gt;'</span><span class="p">;</span>
 
-        <span class="nb">srand</span> <span class="p">((</span><span class="n">double</span><span class="p">)</span> <span class="n">microtime</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000000</span><span class="p">);</span>
-        <span class="vg">$random_number</span> <span class="o">=</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">count</span><span class="p">(</span><span class="vg">$quotes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
-        <span class="n">echo</span> <span class="p">(</span><span class="vg">$quotes</span><span class="p">[</span><span class="vg">$random_number</span><span class="p">]);</span>
-    <span class="sc">?&gt;</span>
-<span class="o">&lt;</span><span class="sr">/div&gt;</span></code></pre></figure>
+        <span class="nb">srand</span> <span class="p">((</span><span class="nx">double</span><span class="p">)</span> <span class="nb">microtime</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000000</span><span class="p">);</span>
+        <span class="nv">$random_number</span> <span class="o">=</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">count</span><span class="p">(</span><span class="nv">$quotes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+        <span class="k">echo</span> <span class="p">(</span><span class="nv">$quotes</span><span class="p">[</span><span class="nv">$random_number</span><span class="p">]);</span>
+    <span class="cp">?&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <p>Теперь достаточно открыть <mark>layout.tmpl.php</mark> и где-нибудь перед footer’ом добавить вывод шаблона <mark>quote.tmpl.php</mark> средством специального макроса.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
 <p>Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим параметром:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="k">if</span> <span class="p">(</span><span class="vg">$content</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'frontpage'</span><span class="p">)</span> <span class="p">{</span> <span class="sc">?&gt;</span>
-    <span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="p">}</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$content</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'frontpage'</span><span class="p">)</span> <span class="p">{</span> <span class="cp">?&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span></code></pre></figure>
 
 <p>Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный &lt;p&gt;layout.tmpl.php&lt;/p&gt; с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.</p>
 
@@ -243,31 +242,31 @@ _X () — вставляет дополнительный блок (не заб�
 
 <p>Для подключения JS и CSS в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <mark>main.tmpl.php</mark> и посмотрите в конец файла, после закрывающегося тега <mark>body</mark>:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
 <p>Здесь подхватываются <mark>../js/main.js</mark> и <mark>../styles/main.css</mark> из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью <a href="https://github.com/matthieua/WOW">wow.js</a>. Скачайте сам wow.js и положите в папку <mark>js</mark> вашего шаблона. Также скачайте <a href="https://github.com/daneden/animate.css">animate.css</a> и разместите в папке <mark>styles</mark>. Откройте <mark>main.tmpl.php</mark> и подключите их:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_CSS</span> <span class="p">(</span><span class="s1">'animate'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="p">?</span><span class="n">php</span> <span class="n">_JS</span> <span class="p">(</span><span class="s1">'wow'</span><span class="p">)</span> <span class="p">?</span><span class="o">&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'animate'</span><span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'wow'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
 <p>Далее в файл <mark>init-script.tmpl.php</mark> понадобится добавить следующий код с настройками wow.js:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">&lt;</span><span class="n">script</span> <span class="n">type</span><span class="o">=</span><span class="s2">"text/javascript"</span><span class="o">&gt;</span>
-    <span class="n">var</span> <span class="n">wow</span> <span class="o">=</span> <span class="n">new</span> <span class="no">WOW</span><span class="p">(</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="kd">var</span> <span class="nx">wow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WOW</span><span class="p">(</span>
         <span class="p">{</span>
-            <span class="ss">boxClass: </span><span class="s1">'wow'</span><span class="p">,</span>
-            <span class="ss">animateClass: </span><span class="s1">'animated'</span><span class="p">,</span>
-            <span class="ss">offset: </span><span class="mi">0</span><span class="p">,</span>
-            <span class="ss">mobile: </span><span class="kp">true</span><span class="p">,</span>
-            <span class="ss">live: </span><span class="kp">true</span><span class="p">,</span>
-            <span class="ss">callback: </span><span class="n">function</span><span class="p">(</span><span class="n">box</span><span class="p">)</span> <span class="p">{</span>
+            <span class="na">boxClass</span><span class="p">:</span> <span class="s1">'wow'</span><span class="p">,</span>
+            <span class="na">animateClass</span><span class="p">:</span> <span class="s1">'animated'</span><span class="p">,</span>
+            <span class="na">offset</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="na">mobile</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">live</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">callback</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">box</span><span class="p">)</span> <span class="p">{</span>
             <span class="p">},</span>
-            <span class="ss">scrollContainer: </span><span class="n">null</span>
+            <span class="na">scrollContainer</span><span class="p">:</span> <span class="kc">null</span>
         <span class="p">}</span>
     <span class="p">);</span>
-    <span class="n">wow</span><span class="p">.</span><span class="nf">init</span><span class="p">();</span>
-<span class="o">&lt;</span><span class="sr">/script&gt;</span></code></pre></figure>
+    <span class="nx">wow</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
 <p>Теперь остается открыть шаблон <mark>notes.tmpl.php</mark> и к основному div’у поста (18 строка) добавить класс <mark>wow fadeIn</mark>, а в <mark>main.css</mark> добавить <mark>.wow { visibility: hidden; }</mark>. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.</p>
 

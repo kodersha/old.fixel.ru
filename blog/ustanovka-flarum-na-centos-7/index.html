@@ -38,8 +38,7 @@
 		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link href="/assets/css/style.css?1507642016227583000" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+		<link href="/assets/css/style.css?1507645049450348000" rel="stylesheet" type="text/css">
 		
 	</head>
 
@@ -109,86 +108,84 @@
 
 <p>Так как на сервере стоял PHP версии 5.4 нам придется его обновить. Открываем консоль и добавляем репозиторий:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">rpm</span> <span class="o">-</span><span class="no">Uvh</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">rpms</span><span class="p">.</span><span class="nf">famillecollet</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">enterprise</span><span class="o">/</span><span class="n">remi</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="mi">7</span><span class="p">.</span><span class="nf">rpm</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">rpm <span class="nt">-Uvh</span> http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</code></pre></figure>
 
 <p>После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем секцию:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">remi</span><span class="o">-</span><span class="n">php56</span><span class="p">]</span>
-<span class="nb">name</span><span class="o">=</span><span class="no">Les</span> <span class="no">RPM</span> <span class="n">de</span> <span class="n">remi</span> <span class="n">de</span> <span class="no">PHP</span> <span class="mf">5.6</span> <span class="n">pour</span> <span class="no">Enterprise</span> <span class="no">Linux</span> <span class="mi">6</span> <span class="o">-</span> <span class="vg">$basearch</span><span class="o">&amp;</span><span class="n">nbsp</span>
-<span class="c1">#baseurl=http://rpms.famillecollet.com/enterprise/6/php56/$basearch/
-</span>
-<span class="n">mirrorlist</span><span class="o">=</span><span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">rpms</span><span class="p">.</span><span class="nf">famillecollet</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">enterprise</span><span class="o">/</span><span class="mi">6</span><span class="o">/</span><span class="n">php56</span><span class="o">/</span><span class="n">mirror</span>
-<span class="c1">#WARNING: If you enable this repository, you must also enable "remi" 
-</span>
-<span class="n">enabled</span><span class="o">=</span><span class="mi">0</span> 
-<span class="n">gpgcheck</span><span class="o">=</span><span class="mi">1</span> 
-<span class="n">gpgkey</span><span class="o">=</span><span class="n">file</span><span class="ss">:/</span><span class="o">/</span><span class="sr">/etc/</span><span class="n">pki</span><span class="o">/</span><span class="n">rpm</span><span class="o">-</span><span class="n">gpg</span><span class="o">/</span><span class="no">RPM</span><span class="o">-</span><span class="no">GPG</span><span class="o">-</span><span class="no">KEY</span><span class="o">-</span><span class="n">remi</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-conf" data-lang="conf">[<span class="n">remi</span>-<span class="n">php56</span>]
+<span class="n">name</span>=<span class="n">Les</span> <span class="n">RPM</span> <span class="n">de</span> <span class="n">remi</span> <span class="n">de</span> <span class="n">PHP</span> <span class="m">5</span>.<span class="m">6</span> <span class="n">pour</span> <span class="n">Enterprise</span> <span class="n">Linux</span> <span class="m">6</span> - $<span class="n">basearch</span>&amp;<span class="n">nbsp</span>
+<span class="c">#baseurl=http://rpms.famillecollet.com/enterprise/6/php56/$basearch/
+</span><span class="n">mirrorlist</span>=<span class="n">http</span>://<span class="n">rpms</span>.<span class="n">famillecollet</span>.<span class="n">com</span>/<span class="n">enterprise</span>/<span class="m">6</span>/<span class="n">php56</span>/<span class="n">mirror</span>
+<span class="c">#WARNING: If you enable this repository, you must also enable "remi" 
+</span><span class="n">enabled</span>=<span class="m">0</span> 
+<span class="n">gpgcheck</span>=<span class="m">1</span> 
+<span class="n">gpgkey</span>=<span class="n">file</span>:///<span class="n">etc</span>/<span class="n">pki</span>/<span class="n">rpm</span>-<span class="n">gpg</span>/<span class="n">RPM</span>-<span class="n">GPG</span>-<span class="n">KEY</span>-<span class="n">remi</span></code></pre></figure>
 
 <p>И меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с PHP версии 5.4 до 5.5 в соответствующей секции remi-php55.</p>
 
 <p>Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится следующее:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">php_admin_value</span> <span class="n">open_basedir</span> <span class="s2">"/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/phpMyAdmin/:/tmp/:/usr/share/php/:/var/lib/php/session/:/usr/share/doc/"</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-conf" data-lang="conf"><span class="n">php_admin_value</span> <span class="n">open_basedir</span> <span class="s2">"/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/phpMyAdmin/:/tmp/:/usr/share/php/:/var/lib/php/session/:/usr/share/doc/"</span></code></pre></figure>
 
 <p>Делается это для того, что бы не возникло проблем при обновлении phpmyadmin.</p>
 
 <p>Теперь в консоль можно ввести следующее:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">yum</span> <span class="n">install</span> <span class="n">php</span> <span class="o">-</span><span class="n">y</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">yum install php <span class="nt">-y</span></code></pre></figure>
 
 <p>И PHP обновится до 5.6 версии, соответственно. Проверяем:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">php</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">php <span class="nt">-v</span></code></pre></figure>
 
 <h2 id="обновляем-остальные-пакеты">Обновляем остальные пакеты</h2>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">у</span><span class="n">um</span> <span class="n">update</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">уum update</code></pre></figure>
 
 <h2 id="устанавливаем-lighttpd">Устанавливаем Lighttpd</h2>
 
 <p>Ставим wget:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">wget</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum install wget</code></pre></figure>
 
 <p>Обновляем репозитории:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">rpm</span> <span class="o">--</span><span class="n">import</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">fedoraproject</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span><span class="n">static</span><span class="o">/</span><span class="mo">060</span><span class="mi">8</span><span class="no">B895</span><span class="p">.</span><span class="nf">txt</span>
-<span class="n">sudo</span> <span class="n">wget</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">dl</span><span class="p">.</span><span class="nf">fedoraproject</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span><span class="n">pub</span><span class="o">/</span><span class="n">epel</span><span class="o">/</span><span class="mi">6</span><span class="o">/</span><span class="n">x86_64</span><span class="o">/</span><span class="n">epel</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">8</span><span class="p">.</span><span class="nf">noarch</span><span class="p">.</span><span class="nf">rpm</span>
-<span class="n">sudo</span> <span class="n">rpm</span> <span class="o">-</span><span class="n">ivh</span> <span class="n">epel</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">8</span><span class="p">.</span><span class="nf">noarch</span><span class="p">.</span><span class="nf">rpm</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>rpm <span class="nt">--import</span> https://fedoraproject.org/static/0608B895.txt
+<span class="nb">sudo </span>wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+<span class="nb">sudo </span>rpm <span class="nt">-ivh</span> epel-release-6-8.noarch.rpm</code></pre></figure>
 
 <p>Устанавливаем lighttpd:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">lighttpd</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum install lighttpd</code></pre></figure>
 
 <p>Прописываем автостарт:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">chkconfig</span> <span class="o">--</span><span class="n">levels</span> <span class="mi">235</span> <span class="n">lighttpd</span> <span class="n">on</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>chkconfig <span class="nt">--levels</span> 235 lighttpd on</code></pre></figure>
 
 <p>Запускаем и проверяем:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">sudo</span> <span class="n">service</span> <span class="n">lighttpd</span> <span class="n">start</span>
-<span class="n">sudo</span> <span class="n">service</span> <span class="n">lighttpd</span> <span class="n">status</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>service lighttpd start
+<span class="nb">sudo </span>service lighttpd status</code></pre></figure>
 
 <h2 id="устанавливаем-composer">Устанавливаем Composer</h2>
 
 <p>Установка composer предельно проста:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">curl</span> <span class="o">-</span><span class="n">sS</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">getcomposer</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span><span class="n">installer</span> <span class="o">|</span> <span class="n">php</span>
-<span class="n">mv</span> <span class="n">composer</span><span class="p">.</span><span class="nf">phar</span> <span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">composer</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl <span class="nt">-sS</span> https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer</code></pre></figure>
 
 <p>Проверяем:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">composer</span> <span class="o">-</span><span class="n">v</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer <span class="nt">-v</span></code></pre></figure>
 
 <h2 id="устанавливаем-flarum">Устанавливаем Flarum</h2>
 
 <p>Если все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с сайтом:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">cd</span> <span class="sr">/var/</span><span class="n">www</span><span class="o">/</span><span class="err">имя</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="err">домен</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/имя/data/www/домен</code></pre></figure>
 
 <p>Папка домена должна быть пуста. Вводим:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">composer</span> <span class="n">create</span><span class="o">-</span><span class="n">project</span> <span class="n">flarum</span><span class="o">/</span><span class="n">flarum</span> <span class="p">.</span> <span class="nf">-</span><span class="o">-</span><span class="n">stability</span><span class="o">=</span><span class="n">beta</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer create-project flarum/flarum <span class="nb">.</span> <span class="nt">--stability</span><span class="o">=</span>beta</code></pre></figure>
 
 <p>Начнется установка flarum. После завершения установки откройте сайт в браузере и завершите установку flarum.</p>
 
