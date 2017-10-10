@@ -18,7 +18,7 @@ html {
 
 body {
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
@@ -976,7 +976,7 @@ nav {
 }
 
 .post {
-	font: 400 1.3em/1.7 $merriweather;
+	font: 400 1.2em/1.7 $merriweather;
   
 	.header {
 		max-width: 75%;
@@ -1063,7 +1063,7 @@ nav {
 	}
 	
 	[left] {
-		font: 300 italic 14px/1.6 $merriweather;
+		font: 400 italic 14px/1.6 $merriweather;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1117,7 +1117,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 300 italic 14px/1.6 $merriweather;
+		font: 400 italic 14px/1.6 $merriweather;
 		color: $gray;
 		
 		img {
