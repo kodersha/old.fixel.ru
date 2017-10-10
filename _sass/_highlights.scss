@@ -1,11 +1,14 @@
 
 .highlight {
 	display: grid;
-	font-size: 0.9em;
 	
 	pre {
 	    width: auto;
 		overflow: auto;
+
+		code {
+			font: 400 0.9em/1.4 $robotoMono;
+		}
 	}
 }
 

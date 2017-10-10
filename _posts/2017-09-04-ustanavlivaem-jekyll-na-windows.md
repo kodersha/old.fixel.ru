@@ -14,13 +14,13 @@ tags:
 
 Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 "Anniversary Update". Чтобы узнать версию своей операционной системы откройте **Параметры** - **Система** - **О системе**. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и введите:
 
-{% highlight ruby %}
+{% highlight shell %}
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 {% endhighlight %}
 
 Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте **Параметры** - **Обновление и безопасность** - **Для разработчиков** и включите "Режим разработчика". Откройте <mark>cmd</mark> от администратора и введите:
 
-{% highlight ruby %}
+{% highlight shell %}
 bash
 {% endhighlight %}
 
@@ -28,13 +28,13 @@ bash
 
 Приступим к установке Jekyll. Но для начала обновим пакеты:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo apt-get update -y && sudo apt-get upgrade -y
 {% endhighlight %}
 
 Теперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий [BrightBox](https://www.brightbox.com/docs/ruby/ubuntu/) оптимизированный для Ubuntu. Вводим команды:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
 sudo apt-get install ruby2.3 ruby2.3-dev build-essential
@@ -42,37 +42,37 @@ sudo apt-get install ruby2.3 ruby2.3-dev build-essential
 
 Обновляем RubyGems.
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo gem update
 {% endhighlight %}
 
 Теперь осталось установить сам Jekyll.
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo gem install jekyll bundler
 {% endhighlight %}
 
 Проверить правильность установки можно командой:
 
-{% highlight ruby %}
+{% highlight shell %}
 jekyll -v
 {% endhighlight %}
 
 Jekyll установлен. Теперь создайте свой блог.
 
-{% highlight ruby %}
+{% highlight shell %}
 jekyll new my_blog
 {% endhighlight %}
 
 По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox'a. Далее переходим в папку с блогом:
 
-{% highlight ruby %}
+{% highlight shell %}
 cd my_blog
 {% endhighlight %}
 
 Теперь можно запустить Jekyll.
 
-{% highlight ruby %}
+{% highlight shell %}
 bundle exec jekyll serve
 {% endhighlight %}
 

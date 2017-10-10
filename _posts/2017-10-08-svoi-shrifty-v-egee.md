@@ -11,7 +11,7 @@ tags:
 
 Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно [скачать у автора][1], а бесплатную <mark>webfont</mark> версию, которую я использую в примере, можно скачать [отсюда][2]. После, откроем каталог шаблона:
 
-{% highlight html %}
+{% highlight shell %}
 .../themes/plain/styles/
 {% endhighlight %}
 
@@ -32,13 +32,13 @@ tags:
 
 К слову, подробнее о @font-face можно почитать [здесь][3]. Чтобы подключить <mark>fonts.css</mark> с вашими шрифтами к шаблону, внесем изменения в <mark>main.tmpl.php</mark>, для этого скопируем его из:
 
-{% highlight html %}
+{% highlight shell %}
 ../system/theme/templates/
 {% endhighlight %}
 
 И вставим в:
 
-{% highlight html %}
+{% highlight shell %}
 ../themes/plain/templates/
 {% endhighlight %}
 

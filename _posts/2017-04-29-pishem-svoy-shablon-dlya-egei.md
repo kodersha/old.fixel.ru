@@ -17,7 +17,7 @@ tags:
 * Файл с каринкой-превьюшкой вашего шаблона должен называться preview@2x.png и находится в корне шаблона.
 * Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в себе:
 
-{% highlight ruby %}
+{% highlight php %}
 <?php return array (
     'display_name' => array (
         'en' => 'Ghost',
@@ -115,7 +115,7 @@ tags:
 
 Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл <mark>quote.tmpl.php</mark> в <mark>../themes/ghost/templates</mark> со следующим несложным кодом:
 
-{% highlight ruby %}
+{% highlight php %}
 <div class="e2-quote">
     <?php
         $quotes[] = '
@@ -137,13 +137,13 @@ tags:
 
 Теперь достаточно открыть <mark>layout.tmpl.php</mark> и где-нибудь перед footer’ом добавить вывод шаблона <mark>quote.tmpl.php</mark> средством специального макроса.
 
-{% highlight ruby %}
+{% highlight php %}
 <?php _T ('quote') ?>
 {% endhighlight %}
 
 Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим параметром:
 
-{% highlight ruby %}
+{% highlight php %}
 <?php if ($content['class'] == 'frontpage') { ?>
     <?php _T ('quote') ?>
 <?php } ?>
@@ -155,21 +155,21 @@ tags:
 
 Для подключения JS и CSS в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <mark>main.tmpl.php</mark> и посмотрите в конец файла, после закрывающегося тега <mark>body</mark>:
 
-{% highlight ruby %}
+{% highlight php %}
 <?php _CSS ('main') ?>
 <?php _JS ('main') ?>
 {% endhighlight %}
 
 Здесь подхватываются <mark>../js/main.js</mark> и <mark>../styles/main.css</mark> из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью [wow.js](https://github.com/matthieua/WOW). Скачайте сам wow.js и положите в папку <mark>js</mark> вашего шаблона. Также скачайте [animate.css](https://github.com/daneden/animate.css) и разместите в папке <mark>styles</mark>. Откройте <mark>main.tmpl.php</mark> и подключите их:
 
-{% highlight ruby %}
+{% highlight php %}
 <?php _CSS ('animate') ?>
 <?php _JS ('wow') ?>
 {% endhighlight %}
 
 Далее в файл <mark>init-script.tmpl.php</mark> понадобится добавить следующий код с настройками wow.js:
 
-{% highlight ruby %}
+{% highlight html %}
 <script type="text/javascript">
     var wow = new WOW(
         {

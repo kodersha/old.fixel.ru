@@ -343,7 +343,7 @@ header {
 			}
 			
 			.subtitle {
-				font: 400 1.2em/1 $notoserif;
+				font: 400 1.2em/1 $merriweather;
 				font-style: italic;
 			}
 		}
@@ -578,7 +578,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.7 $notoserif;
+					font: 400 16px/1.7 $merriweather;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -930,7 +930,7 @@ nav {
 				}
 				
 				h1.title {
-					font: 400 1.15em/1.9 $notoserif;
+					font: 400 1.15em/1.9 $merriweather;
 					padding-bottom: 0;
 					padding-top: 10px;
 					
@@ -942,7 +942,7 @@ nav {
 				}
 				
 				.subtitle {
-					font: 400 italic 1.15em/1.9 $notoserif;
+					font: 400 italic 1.15em/1.9 $merriweather;
 					color: $black;
 					padding: 0;
 					margin: 0;
@@ -976,7 +976,7 @@ nav {
 }
 
 .post {
-	font: 400 1.3em/1.8 $notoserif;
+	font: 300 1.2em/1.8 $merriweather;
   
 	.header {
 		max-width: 75%;
@@ -1010,14 +1010,14 @@ nav {
 	}
 	
 	.subtitle {
-		font: 400 1.2em/1 $notoserif;
+		font: 400 1.2em/1 $merriweather;
 		padding: 0 0 20px !important;
 		display: inline-block;
 		font-style: italic;
 	}
 	
 	h1 {
-	    font: 400 1.8em/1.4 $notoserif;
+	    font: 300 1.8em/1.4 $merriweather;
 		padding: 60px 0 0;
 		
 		&.title {
@@ -1033,7 +1033,7 @@ nav {
 	}
 	
 	h2 {
-	    font: 400 1.3em/1.4 $notoserif;
+	    font: 300 1.3em/1.4 $merriweather;
 		padding: 60px 0 0;
 		
 		&.title {
@@ -1063,7 +1063,7 @@ nav {
 	}
 	
 	[left] {
-		font: 300 italic 14px/1.45 $notoserif;
+		font: 300 italic 14px/1.45 $merriweather;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1121,7 +1121,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 400 italic 14px/1.45 $notoserif;
+		font: 300 italic 14px/1.45 $merriweather;
 		color: $gray;
 		
 		img {
@@ -1193,7 +1193,7 @@ nav {
 	}
 	
 	[caption] {
-		font: 400 18px/1.4 $notoserif;
+		font: 300 18px/1.4 $merriweather;
 		padding: 0;
 		color: $gray;
 		
@@ -1549,7 +1549,7 @@ nav {
 					margin-left: -17px;
 					box-shadow: none;
 					width: 100%;
-					top: -15px;
+					top: -13px;
 					border: 0;
 					left: 50%;
 				}
@@ -1849,7 +1849,7 @@ footer {
 
 .tag-cloud {
     padding-top: 50px;
-    font: 400 1.15em/1.9 $notoserif;
+    font: 400 1.15em/1.9 $merriweather;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;

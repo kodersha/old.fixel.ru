@@ -17,13 +17,13 @@ tags:
 
 Так как на сервере стоял PHP версии 5.4 нам придется его обновить. Открываем консоль и добавляем репозиторий:
 
-{% highlight ruby %}
+{% highlight shell %}
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 {% endhighlight %}
 
 После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем секцию:
 
-{% highlight ruby %}
+{% highlight conf %}
 [remi-php56]
 name=Les RPM de remi de PHP 5.6 pour Enterprise Linux 6 - $basearch&nbsp
 #baseurl=http://rpms.famillecollet.com/enterprise/6/php56/$basearch/
@@ -38,7 +38,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
 
 Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится следующее:
 
-{% highlight ruby %}
+{% highlight conf %}
 php_admin_value open_basedir "/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/phpMyAdmin/:/tmp/:/usr/share/php/:/var/lib/php/session/:/usr/share/doc/"
 {% endhighlight %}
 
@@ -46,19 +46,19 @@ php_admin_value open_basedir "/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/p
 
 Теперь в консоль можно ввести следующее:
 
-{% highlight ruby %}
+{% highlight shell %}
 yum install php -y
 {% endhighlight %}
 
 И PHP обновится до 5.6 версии, соответственно. Проверяем:
 
-{% highlight ruby %}
+{% highlight shell %}
 php -v
 {% endhighlight %}
 
 ## Обновляем остальные пакеты
 
-{% highlight ruby %}
+{% highlight shell %}
 уum update
 {% endhighlight %}
 
@@ -66,13 +66,13 @@ php -v
 
 Ставим wget:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo yum install wget
 {% endhighlight %}
 
 Обновляем репозитории:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo rpm --import https://fedoraproject.org/static/0608B895.txt
 sudo wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 sudo rpm -ivh epel-release-6-8.noarch.rpm
@@ -80,19 +80,19 @@ sudo rpm -ivh epel-release-6-8.noarch.rpm
 
 Устанавливаем lighttpd:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo yum install lighttpd
 {% endhighlight %}
 
 Прописываем автостарт:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo chkconfig --levels 235 lighttpd on
 {% endhighlight %}
 
 Запускаем и проверяем:
 
-{% highlight ruby %}
+{% highlight shell %}
 sudo service lighttpd start
 sudo service lighttpd status
 {% endhighlight %}
@@ -101,14 +101,14 @@ sudo service lighttpd status
 
 Установка composer предельно проста:
 
-{% highlight ruby %}
+{% highlight shell %}
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 {% endhighlight %}
 
 Проверяем:
 
-{% highlight ruby %}
+{% highlight shell %}
 composer -v
 {% endhighlight %}
 
@@ -116,13 +116,13 @@ composer -v
 
 Если все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с сайтом:
 
-{% highlight ruby %}
+{% highlight shell %}
 cd /var/www/имя/data/www/домен
 {% endhighlight %}
 
 Папка домена должна быть пуста. Вводим:
 
-{% highlight ruby %}
+{% highlight shell %}
 composer create-project flarum/flarum . --stability=beta
 {% endhighlight %}
 
