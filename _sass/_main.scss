@@ -343,7 +343,7 @@ header {
 			}
 			
 			.subtitle {
-				font: 400 1.2em/1.6 $merriweather;
+				font: 400 1.4em/1.4 $vollkorn;
 				font-style: italic;
 			}
 		}
@@ -578,7 +578,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.7 $merriweather;
+					font: 400 16px/1.7 $vollkorn;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -930,7 +930,7 @@ nav {
 				}
 				
 				h1.title {
-					font: 400 1.15em/1.9 $merriweather;
+					font: 400 1.15em/1.9 $vollkorn;
 					padding-bottom: 0;
 					padding-top: 10px;
 					
@@ -942,7 +942,7 @@ nav {
 				}
 				
 				.subtitle {
-					font: 400 italic 1.15em/1.9 $merriweather;
+					font: 400 italic 1.15em/1.9 $vollkorn;
 					color: $black;
 					padding: 0;
 					margin: 0;
@@ -976,7 +976,7 @@ nav {
 }
 
 .post {
-	font: 400 1.2em/1.7 $merriweather;
+	font: 400 1.4em/1.5 $vollkorn;
   
 	.header {
 		max-width: 75%;
@@ -1010,14 +1010,14 @@ nav {
 	}
 	
 	.subtitle {
-		font: 400 1.2em/1.6 $merriweather;
+		font: 400 1.4em/1.4 $vollkorn;
 		padding: 0 0 20px !important;
 		display: inline-block;
 		font-style: italic;
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $merriweather;
+	    font: 400 1.5em/1.4 $vollkorn;
 		padding: 60px 0 0;
 		
 		&.title {
@@ -1033,7 +1033,7 @@ nav {
 	}
 	
 	h2 {
-	    font: 400 1.4em/1.4 $merriweather;
+	    font: 400 1.4em/1.4 $vollkorn;
 		padding: 60px 0 0;
 		
 		&.title {
@@ -1063,7 +1063,7 @@ nav {
 	}
 	
 	[left] {
-		font: 400 14px/1.4 $roboto;
+		font: 400 16px/1.4 $roboto;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1117,7 +1117,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 400 14px/1.4 $roboto;
+		font: 400 16px/1.4 $roboto;
 		color: $gray;
 		
 		img {
@@ -1526,7 +1526,7 @@ nav {
 			hr {
 				background-color: transparent;
 				background-image: none;
-				height: 9px;
+				height: 10px;
 				
 				&::before {
 					display: block;
@@ -1537,7 +1537,7 @@ nav {
 					margin-left: -17px;
 					box-shadow: none;
 					width: 100%;
-					top: -13px;
+					top: -11px;
 					border: 0;
 					left: 50%;
 				}
@@ -1595,7 +1595,7 @@ nav {
 		}
 		
 		.subtitle {
-			font-size: 1.2em;
+			font-size: 1.4em;
 			padding: 10px 0 0 !important;
 		}
 		
@@ -1837,7 +1837,7 @@ footer {
 
 .tag-cloud {
     padding-top: 50px;
-    font: 400 1.15em/1.9 $merriweather;
+    font: 400 1.15em/1.9 $vollkorn;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
