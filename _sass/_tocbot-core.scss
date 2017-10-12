@@ -34,7 +34,7 @@
 
 	li {
 		list-style: none;
-		line-height: normal;
+		line-height: 1.2;
 		padding-left: 1.5em;
 		padding-right: 1.5em;
 	}
@@ -59,7 +59,7 @@
 }
 
 a.toc-link {
-    font: 400 0.8em/1.4 Merriweather,serif;
+    font: 400 16px/1.4 $roboto;
 	border-bottom: 0;
 	color: $gray;
     height: 100%;
