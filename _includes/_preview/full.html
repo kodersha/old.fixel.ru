@@ -1,6 +1,6 @@
 <article class="post">
 	<div class="maintenance single">
-		<h1 class="title">
+		<h1 class="title {% if post.subtitle %}with-subtitle{% endif %}">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		</h1>
 		{% if post.subtitle %}

@@ -22,10 +22,11 @@ $actionHover: #e2e5e6;
 $actionColor: #b1bcdc;
 
 // Font stacks
-$gilroy: Gilroy-ExtraBold, sans-serif;
-$roboto: Roboto, sans-serif;
+$latoMedium: LatoWebMedium, sans-serif;
+$latoBlack: LatoWebBlack, sans-serif;
+$lato: LatoWeb, sans-serif;
 $robotoMono: Roboto Mono, monospace;
-$vollkorn: Vollkorn, serif;
+$ptSerif: PT Serif, serif;
 
 // Mobile breakpoints
 @mixin mobile {

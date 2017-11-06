@@ -22,7 +22,7 @@ body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-	font: 400 16px/1.4 $roboto;
+	font: 400 16px/1.4 $latoMedium;
 	letter-spacing: -.003em;
 	overflow-x: hidden;
 	cursor: default;
@@ -235,9 +235,9 @@ select[multiple=multiple] {
 }
 
 .common {
-	max-width: -webkit-calc(1275px + 16%);
-	max-width: -moz-calc(1275px + 16%);
-	max-width: calc(1275px + 16%);
+	max-width: -webkit-calc(1201px + 16%);
+	max-width: -moz-calc(1201px + 16%);
+	max-width: calc(1201px + 16%);
 	padding: 0 8%;
 	height: 100%;
 	width: 100%;
@@ -338,13 +338,12 @@ header {
 			color: $white;
 
 			h1.title {
-				font: 300 6em/1 $gilroy;
+				font: 300 6em/1 $latoBlack;
 				display: inline-block;
 			}
 			
 			.subtitle {
-				font: 400 1.4em/1.4 $vollkorn;
-				font-style: italic;
+				font: 400 italic 1.3em/1.4 $ptSerif;
 			}
 		}
 		
@@ -578,7 +577,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.4 $roboto;
+					font: 400 16px/1.4 $latoMedium;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -706,10 +705,10 @@ nav {
 			}
 			
 			span {
-				font: 400 14px/1.4 $roboto;
+				font: 400 14px/1.4 $latoMedium;
 				margin-top: 5px;
 				display: initial;
-				color: $lightGray;
+				color: $gray;
 			}
 		}
 		
@@ -736,14 +735,14 @@ nav {
 	
 	h1 {
 		&.title {
-			font: 300 4.3em/1 $gilroy;
+			font: 300 4.3em/1 $latoBlack;
 			padding-bottom: 50px;
 			padding-top: 0;
 		}
 	}
 
 	h2 {
-		font: 300 2.7em/1 $gilroy;
+		font: 300 1.3em/1 $ptSerif;
 		padding-bottom: 50px;
 		padding-top: 50px;
 	}
@@ -753,7 +752,7 @@ nav {
 		
 		h1 {
 			&.title {
-				font-size: 3em;
+				font-size: 3.2em;
 			}
 		}
 	}
@@ -842,7 +841,7 @@ nav {
 				counter-increment: pony-counter -1;
 				
 				&::before {
-					font: 400 14px/1.4 $roboto;
+					font: 400 14px/1.4 $latoBlack;
 					content: counter(pony-counter);
 					top: -webkit-calc(50% - 9.5px);
 					top: -moz-calc(50% - 9.5px);
@@ -930,19 +929,19 @@ nav {
 				}
 				
 				h1.title {
-					font: 400 1.15em/1.9 $vollkorn;
+					font: 400 1.15em/1.9 $ptSerif;
 					padding-bottom: 0;
 					padding-top: 10px;
 					
 					.hint {
-					    font: 400 14px/1.4 $roboto;
+					    font: 400 14px/1.4 $latoMedium;
 						padding-left: 5px;
 						color: $lightGray;
 					}
 				}
 				
 				.subtitle {
-					font: 400 italic 1.15em/1.9 $vollkorn;
+					font: 400 italic 1.15em/1.9 $ptSerif;
 					color: $black;
 					padding: 0;
 					margin: 0;
@@ -976,7 +975,7 @@ nav {
 }
 
 .post {
-	font: 400 1.4em/1.5 $vollkorn;
+	font: 400 1.3em/1.5 $ptSerif;
   
 	.header {
 		max-width: 75%;
@@ -1010,18 +1009,17 @@ nav {
 	}
 	
 	.subtitle {
-		font: 400 1.4em/1.4 $vollkorn;
+		font: 400 italic 1.3em/1.4 $ptSerif;
 		padding: 0 0 20px !important;
 		display: inline-block;
-		font-style: italic;
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $vollkorn;
+	    font: 400 1.5em/1.4 $ptSerif;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.2em/1 $gilroy;
+			font: 300 3.2em/1 $latoBlack;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1029,15 +1027,19 @@ nav {
 				color: $black;
 				border-bottom: 0;
 			}
+
+			&.with-subtitle {
+				padding-bottom: 10px;
+			}
 		}
 	}
 	
 	h2 {
-	    font: 400 1.4em/1.4 $vollkorn;
+	    font: 400 1.3em/1.4 $ptSerif;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3em/1 $gilroy;
+			font: 300 3.2em/1 $latoBlack;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1063,7 +1065,7 @@ nav {
 	}
 	
 	[left] {
-		font: 400 14px/1.4 $roboto;
+		font: 400 14px/1.4 $latoMedium;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1117,14 +1119,14 @@ nav {
 	}
 	
 	[aside] {
-		font: 400 14px/1.4 $roboto;
+		font: 400 14px/1.4 $latoMedium;
 		color: $gray;
 		
 		img {
 			-webkit-border-radius: 2px;
 			-moz-border-radius: 2px;
 			border-radius: 2px;
-			margin: 0 0 20px;
+			margin: 0 0 10px;
 			cursor: pointer;
 		}
 		
@@ -1185,14 +1187,14 @@ nav {
 	}
 	
 	[caption] {
-		font: 400 16px/1.4 $roboto;
+		font: 400 16px/1.4 $latoMedium;
 		color: $gray;
 		padding: 0;
 	}
 	
 	[quote] {
+		font: 400 16px/1.4 $latoMedium;
 		text-align: center;
-		color: $gray;
 	}
 	
 	[block] {
@@ -1321,7 +1323,7 @@ nav {
 	}
 	
 	.actions {
-		font: 400 16px/1.4 $roboto;
+		font: 400 16px/1.4 $latoMedium;
 		padding-top: 60px;
 		padding-bottom: 80px;
 		max-width: 75%;
@@ -1526,7 +1528,7 @@ nav {
 			hr {
 				background-color: transparent;
 				background-image: none;
-				height: 10px;
+				height: 11px;
 				
 				&::before {
 					display: block;
@@ -1537,7 +1539,7 @@ nav {
 					margin-left: -17px;
 					box-shadow: none;
 					width: 100%;
-					top: -11px;
+					top: -10px;
 					border: 0;
 					left: 50%;
 				}
@@ -1594,7 +1596,6 @@ nav {
 		}
 		
 		.subtitle {
-			font-size: 1.4em;
 			padding: 10px 0 0 !important;
 		}
 		
@@ -1644,7 +1645,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 3.2em/1 $gilroy;
+			font: 300 3.2em/1 $latoBlack;
 			padding-bottom: 20px;
 			margin: 0;
 			
@@ -1670,7 +1671,7 @@ button {
     vertical-align: middle;
     position: relative;
     z-index: 1;
-	font: 400 14px/1.4 Roboto,sans-serif;
+	font: 400 14px/1.4 $latoMedium;
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
 	cursor: pointer;
@@ -1836,7 +1837,7 @@ footer {
 
 .tag-cloud {
     padding-top: 50px;
-    font: 400 1.15em/1.9 $vollkorn;
+    font: 400 1.15em/1.9 $ptSerif;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -1978,7 +1979,7 @@ footer {
 }
 
 .help {
-    font: 400 16px/1.4 $roboto;
+    font: 400 16px/1.4 $latoMedium;
     border-radius: 2px;
     background: #fff4a5;
     padding: 15px 20px;
