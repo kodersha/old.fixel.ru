@@ -16,7 +16,7 @@ GEM
       multi_css (>= 0.1.0)
       multi_js (>= 0.1.0)
     htmlentities (4.3.4)
-    jekyll (3.6.0)
+    jekyll (3.6.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -90,7 +90,7 @@ PLATFORMS
 
 DEPENDENCIES
   execjs
-  jekyll (= 3.6.0)
+  jekyll (= 3.6.2)
   jekyll-auto-image
   jekyll-feed (~> 0.6)
   jekyll-include-cache
