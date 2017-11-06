@@ -841,7 +841,7 @@ nav {
 				counter-increment: pony-counter -1;
 				
 				&::before {
-					font: 400 14px/1.4 $latoBlack;
+					font: 400 14px/1.4 $latoMedium;
 					content: counter(pony-counter);
 					top: -webkit-calc(50% - 9.5px);
 					top: -moz-calc(50% - 9.5px);
