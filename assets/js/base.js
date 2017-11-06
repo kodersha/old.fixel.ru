@@ -149,9 +149,12 @@ jQuery(function($){
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	
-	$('.entry p').attr('class','hyphenate');
+	$('.entry p').attr({
+		'class': 'hyphenate',
+		'style': 'text-align: justify !important;'
+	});
 	
-	$('.entry [left], .entry [aside], .entry [quote], .entry [caption]').attr('class','donthyphenate');
+	$('.entry [quote]').attr('class','donthyphenate');
 	
 	function selectorFunction() {
 		return window.document.getElementsByClassName("hyphenate");
