@@ -144,3 +144,16 @@ jQuery(function($){
 		d.addEventListener("DOMContentLoaded", f, false);
 	} else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+
+/* Расстановка переносов на мобильных устройствах */
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	
+	$('.entry p').attr('class','hyphenate');
+	
+	$('.entry [left], .entry [aside], .entry [quote], .entry [caption]').attr('class','donthyphenate');
+	
+	function selectorFunction() {
+		return window.document.getElementsByClassName("hyphenate");
+	}
+}
