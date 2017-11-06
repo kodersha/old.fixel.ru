@@ -343,7 +343,7 @@ header {
 			}
 			
 			.subtitle {
-				font: 400 italic 1.3em/1.4 $ptSerif;
+				font: 400 italic 1.5em/1.4 $merriweather;
 			}
 		}
 		
@@ -742,7 +742,7 @@ nav {
 	}
 
 	h2 {
-		font: 300 1.3em/1 $ptSerif;
+		font: 300 1.5em/1 $merriweather;
 		padding-bottom: 50px;
 		padding-top: 50px;
 	}
@@ -752,7 +752,7 @@ nav {
 		
 		h1 {
 			&.title {
-				font-size: 3.2em;
+				font-size: 3.5em;
 			}
 		}
 	}
@@ -929,7 +929,7 @@ nav {
 				}
 				
 				h1.title {
-					font: 400 1.15em/1.9 $ptSerif;
+					font: 400 1.15em/1.9 $merriweather;
 					padding-bottom: 0;
 					padding-top: 10px;
 					
@@ -941,7 +941,7 @@ nav {
 				}
 				
 				.subtitle {
-					font: 400 italic 1.15em/1.9 $ptSerif;
+					font: 400 italic 1.15em/1.9 $merriweather;
 					color: $black;
 					padding: 0;
 					margin: 0;
@@ -975,7 +975,7 @@ nav {
 }
 
 .post {
-	font: 400 1.3em/1.5 $ptSerif;
+	font: 400 1.1em/1.7 $merriweather;
   
 	.header {
 		max-width: 75%;
@@ -1009,17 +1009,17 @@ nav {
 	}
 	
 	.subtitle {
-		font: 400 italic 1.3em/1.4 $ptSerif;
+		font: 400 italic 1.5em/1.4 $merriweather;
 		padding: 0 0 20px !important;
 		display: inline-block;
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $ptSerif;
+	    font: 400 1.5em/1.4 $merriweather;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.2em/1 $latoBlack;
+			font: 300 3.5em/1 $latoBlack;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1035,11 +1035,11 @@ nav {
 	}
 	
 	h2 {
-	    font: 400 1.3em/1.4 $ptSerif;
+	    font: 400 1.5em/1.4 $merriweather;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.2em/1 $latoBlack;
+			font: 300 3.5em/1 $latoBlack;
 			padding-bottom: 20px;
 			padding-top: 0; 
 			
@@ -1102,7 +1102,6 @@ nav {
 			padding-top: 20px;
 			padding-left: 0;
 			padding-bottom: 10px;
-			font-size: 1em;
 		}
 	}
 	
@@ -1177,7 +1176,6 @@ nav {
 		[main]+[aside] {
 			float: none;
 			max-width: 100%;
-			font-size: 1em;
 			display: inline-block;
 			text-align: left;
 			width: 100%;
@@ -1528,7 +1526,7 @@ nav {
 			hr {
 				background-color: transparent;
 				background-image: none;
-				height: 11px;
+				height: 8px;
 				
 				&::before {
 					display: block;
@@ -1539,7 +1537,7 @@ nav {
 					margin-left: -17px;
 					box-shadow: none;
 					width: 100%;
-					top: -10px;
+					top: -11px;
 					border: 0;
 					left: 50%;
 				}
@@ -1645,7 +1643,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 3.2em/1 $latoBlack;
+			font: 300 3.5em/1 $latoBlack;
 			padding-bottom: 20px;
 			margin: 0;
 			
@@ -1837,7 +1835,7 @@ footer {
 
 .tag-cloud {
     padding-top: 50px;
-    font: 400 1.15em/1.9 $ptSerif;
+    font: 400 1.15em/1.9 $merriweather;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
