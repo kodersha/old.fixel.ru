@@ -18,11 +18,10 @@ html {
 
 body {
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-	font: 400 16px/1.4 $latoMedium;
+	font: 400 16px/1.4 $lato;
 	letter-spacing: -.003em;
 	overflow-x: hidden;
 	cursor: default;
@@ -577,7 +576,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.4 $latoMedium;
+					font: 400 16px/1.4 $lato;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -705,7 +704,7 @@ nav {
 			}
 			
 			span {
-				font: 400 14px/1.4 $latoMedium;
+				font: 400 14px/1.4 $lato;
 				margin-top: 5px;
 				display: initial;
 				color: $gray;
@@ -841,7 +840,7 @@ nav {
 				counter-increment: pony-counter -1;
 				
 				&::before {
-					font: 400 14px/1.4 $latoMedium;
+					font: 400 14px/1.4 $lato;
 					content: counter(pony-counter);
 					top: -webkit-calc(50% - 9.5px);
 					top: -moz-calc(50% - 9.5px);
@@ -934,7 +933,7 @@ nav {
 					padding-top: 10px;
 					
 					.hint {
-					    font: 400 14px/1.4 $latoMedium;
+					    font: 400 14px/1.4 $lato;
 						padding-left: 5px;
 						color: $lightGray;
 					}
@@ -1065,7 +1064,7 @@ nav {
 	}
 	
 	[left] {
-		font: 400 14px/1.4 $latoMedium;
+		font: 400 14px/1.4 $lato;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -1118,7 +1117,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 400 14px/1.4 $latoMedium;
+		font: 400 14px/1.4 $lato;
 		color: $gray;
 		
 		img {
@@ -1185,13 +1184,13 @@ nav {
 	}
 	
 	[caption] {
-		font: 400 16px/1.4 $latoMedium;
+		font: 400 16px/1.4 $lato;
 		color: $gray;
 		padding: 0;
 	}
 	
 	[quote] {
-		font: 400 16px/1.4 $latoMedium;
+		font: 400 16px/1.4 $lato;
 		text-align: center;
 	}
 	
@@ -1321,7 +1320,7 @@ nav {
 	}
 	
 	.actions {
-		font: 400 16px/1.4 $latoMedium;
+		font: 400 16px/1.4 $lato;
 		padding-top: 60px;
 		padding-bottom: 80px;
 		max-width: 75%;
@@ -1977,7 +1976,7 @@ footer {
 }
 
 .help {
-    font: 400 16px/1.4 $latoMedium;
+    font: 400 16px/1.4 $lato;
     border-radius: 2px;
     background: #fff4a5;
     padding: 15px 20px;
