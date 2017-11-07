@@ -62,13 +62,10 @@ tags:
 }
 {% endhighlight %}
 
-Чтобы разминимизировать <mark>main.css</mark>, для более удобного внесения правок, стоит воспользоваться полезным [сервисом][4]. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.
+<p main>Чтобы разминимизировать <mark>main.css</mark>, для более удобного внесения правок, стоит воспользоваться полезным <a href="http://unminify.com/">сервисом</a>. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.</p>
 
-## Статьи по теме
-
-[Пишем свой шаблон для Эгеи]({{ site.baseurl }}/blog/pishem-svoy-shablon-dlya-egei/)
+<p aside>Смотрите ещё: <a href="{{ site.baseurl }}/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></p>
 
 [1]:	https://www.tinkov.info/gilroy.html
 [2]:	https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/
 [3]:	http://htmlbook.ru/css/font-face
-[4]:	http://unminify.com/

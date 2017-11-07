@@ -8,7 +8,9 @@ tags:
 - Jekyll
 ---
 
-По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на [Jekyll](http://jekyllrb.com/), а значит ограничиваться [GitHub Pages](https://pages.github.com/) стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.
+<p main>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+
+<p aside>Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/">Официальная документация Jekyll</a></p>
 
 <hr>
 
@@ -18,11 +20,13 @@ tags:
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 {% endhighlight %}
 
-Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте **Параметры** - **Обновление и безопасность** - **Для разработчиков** и включите "Режим разработчика". Откройте <mark>cmd</mark> от администратора и введите:
+Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте **Параметры** - **Обновление и безопасность** - **Для разработчиков** и включите "Режим разработчика". Откройте <mark>cmd</mark> от администратора и введите: 
 
 {% highlight shell %}
 bash
 {% endhighlight %}
+
+<p left>Начиная с обновления 1709 (Fall Creators Update) среду Ubuntu можно установить напрямую из <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6">Windows маркета</a> пропустив предыдущие шаги.</p>
 
 Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.
 
@@ -37,7 +41,7 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 {% highlight shell %}
 sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
-sudo apt-get install ruby2.3 ruby2.3-dev build-essential
+sudo apt-get install ruby2.4 ruby2.4-dev build-essential
 {% endhighlight %}
 
 Обновляем RubyGems.
@@ -76,9 +80,4 @@ cd my_blog
 bundle exec jekyll serve
 {% endhighlight %}
 
-Блог станет доступен по локальному адресу [localhost:4000](http://localhost:4000)
-
-## Использованы материалы
-
-* [Инструкция с сайта Microsoft](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun)
-* [Официальная документация Jekyll](https://jekyllrb.com/docs/windows/)
+Блог станет доступен по локальному адресу [localhost:4000](http://localhost:4000).

@@ -1536,7 +1536,9 @@ nav {
 					margin-left: -17px;
 					box-shadow: none;
 					width: 100%;
-					top: -11px;
+					top: -webkit-calc(50% - 7px);
+					top: -moz-calc(50% - 7px);
+					top: calc(50% - 7px);
 					border: 0;
 					left: 50%;
 				}
@@ -1556,7 +1558,7 @@ nav {
 		}
 		
 		hr {
-			margin: 40px 0 10px;
+			padding: 40px 0 10px;
 		}
 	}
 	
