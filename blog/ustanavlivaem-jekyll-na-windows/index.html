@@ -38,7 +38,7 @@
 		<script type="text/javascript">base_url = "http://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link href="/assets/css/style.css?1510069251475671600" rel="stylesheet" type="text/css">
+		<link href="/assets/css/style.css?1510071949809136000" rel="stylesheet" type="text/css">
 		
 	</head>
 
@@ -100,7 +100,9 @@
 					
 					
 					<div class="entry js-toc-content">
-						<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+						<p main="">По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+
+<p aside="">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/">Официальная документация Jekyll</a></p>
 
 <hr />
 
@@ -112,6 +114,8 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">bash</code></pre></figure>
 
+<p left="">Начиная с обновления 1709 (Fall Creators Update) среду Ubuntu можно установить напрямую из <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6">Windows маркета</a> пропустив предыдущие шаги.</p>
+
 <p>Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.</p>
 
 <p>Приступим к установке Jekyll. Но для начала обновим пакеты:</p>
@@ -122,7 +126,7 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-add-repository ppa:brightbox/ruby-ng
 <span class="nb">sudo </span>apt-get update
-<span class="nb">sudo </span>apt-get install ruby2.3 ruby2.3-dev build-essential</code></pre></figure>
+<span class="nb">sudo </span>apt-get install ruby2.4 ruby2.4-dev build-essential</code></pre></figure>
 
 <p>Обновляем RubyGems.</p>
 
@@ -148,14 +152,7 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
 
-<p>Блог станет доступен по локальному адресу <a href="http://localhost:4000">localhost:4000</a></p>
-
-<h2 id="Использованы-материалы">Использованы материалы</h2>
-
-<ul>
-  <li><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a></li>
-  <li><a href="https://jekyllrb.com/docs/windows/">Официальная документация Jekyll</a></li>
-</ul>
+<p>Блог станет доступен по локальному адресу <a href="http://localhost:4000">localhost:4000</a>.</p>
 
 					</div>
 				</div>
