@@ -25,8 +25,11 @@ $actionColor: #b1bcdc;
 $latoMedium: LatoWebMedium, sans-serif;
 $latoBlack: LatoWebBlack, sans-serif;
 $lato: LatoWeb, sans-serif;
-$robotoMono: Roboto Mono, monospace;
-$merriweather: Merriweather, serif;
+$firaCode: Fira Code, monospace;
+$gregor: Gregor, serif;
+
+$mq-mobile: 900px !default;
+$mq-notebook: 1336px !default;
 
 // Mobile breakpoints
 @mixin mobile {

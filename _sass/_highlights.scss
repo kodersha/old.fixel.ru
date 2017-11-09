@@ -7,7 +7,11 @@
 		overflow: auto;
 
 		code {
-			font: 400 1em/1.4 $lato;
+			font: 400 16px/1.4 $firaCode;
+
+			@media (max-width : $mq-mobile) {
+				font-size: 1em;
+			}
 		}
 	}
 }
