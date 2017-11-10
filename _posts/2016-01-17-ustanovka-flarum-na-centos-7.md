@@ -131,7 +131,7 @@ composer create-project flarum/flarum . --stability=beta
 ## Возникающие ошибки
 
 <div block>
-<p><b>Q</b>: Нет доступа к сайту, в логах ссылается на “Option Multiviews not allowed here”.</p>
+<p><b>Q</b>: Нет доступа к сайту, в логах ссылается на «Option Multiviews not allowed here».</p>
 <p><b>A</b>: Править /etc/httpd/conf.d/z1_home.conf, изменить значение параметра AllowOverride на All.</p>
 <p><b>Q</b>: При установке flarum composer выдает ошибку: PHP Fatal error: Uncaught exception ‘ErrorException’ with message ’proc_open(): fork failed — Cannot allocate memory’ in phar</p>
 <p><b>A</b>: Смотрите заметку на <a href="https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors">getcomposer.org</a></p>

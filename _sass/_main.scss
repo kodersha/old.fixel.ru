@@ -750,13 +750,6 @@ nav {
 						color: $lightGray;
 					}
 				}
-				
-				.subtitle {
-					font: 400 italic 1.15em/1.9 $gregor;
-					color: $black;
-					padding: 0;
-					margin: 0;
-				}
 		
 				&:nth-child(2n) {
 					margin-right: 0;
@@ -819,12 +812,6 @@ nav {
 		margin: 0 auto;
 	}
 	
-	.subtitle {
-		font: 400 1.5em/1.4 $gregor;
-		padding: 0 0 20px !important;
-		display: inline-block;
-	}
-	
 	h1 {
 	    font: 400 1.5em/1.4 $gregor;
 		padding: 60px 0 0;
@@ -842,10 +829,6 @@ nav {
 			a {
 				color: $black;
 				border-bottom: 0;
-			}
-
-			&.with-subtitle {
-				padding-bottom: 10px;
 			}
 		}
 	}
@@ -1417,10 +1400,6 @@ nav {
 		
 		h2 {
 		    padding: 30px 0 0;
-			font-size: 1.3em;
-		}
-		
-		.subtitle {
 			font-size: 1.3em;
 		}
 		

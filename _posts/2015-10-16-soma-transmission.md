@@ -2,7 +2,7 @@
 layout: post
 permalink: /blog/soma-transmission/
 redirect_from: /blog/all/soma-transmission/
-title: "SOMA: Transmission"
+title: "SOMA · Transmission"
 description: "Полнометражный фильм SOMA: Transmission, собранный из восьми серий и дополненный русскими субтитрами. Фильм повествует о событиях происходящих на научной, подводной станции PATHOS-ll спустя год, после того как Земля подверглась падению астероида. Сами же события разворачиваются до событий оригинальной игры и в частности рассказывают историю инженера Имоджен Рид роль которой исполнила Трин Миллер."
 category: "Фильмы"
 thumbnail: "http://i.imgur.com/jMCfRr4l.jpg"
