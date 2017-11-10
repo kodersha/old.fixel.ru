@@ -14,7 +14,7 @@ tags:
 
 <hr>
 
-Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 «Anniversary Update». Чтобы узнать версию своей операционной системы откройте **Параметры** - **Система** - **О системе**. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и введите:
+Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте **Параметры** - **Система** - **О системе**. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и введите:
 
 {% highlight shell %}
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
