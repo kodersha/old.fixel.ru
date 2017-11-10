@@ -14,10 +14,7 @@ layout: default
 			{% unless page.header == "true" %}
 			<div class="common">
 				<div class="header">
-					<h1 class="title {% if page.subtitle %}with-subtitle{% endif %}">{{ page.title }}</h1>
-					{% if page.subtitle %}
-						<p class="subtitle">{{ page.subtitle }}</p>
-					{% endif %}
+					<h1 class="title">{{ page.title }}</h1>
 					{% include _post/old.html %}
 				</div>
 			</div>

@@ -564,28 +564,8 @@ nav {
 		padding-bottom: 50px;
 	}
 	
-	h1 {
-		&.title {
-			font: 300 4.3em/1 $latoBlack;
-			padding-bottom: 50px;
-			padding-top: 0;
-		}
-	}
-
-	h2 {
-		font: 400 1.5em/1.4 $gregor;;
-		padding-bottom: 50px;
-		padding-top: 50px;
-	}
-	
 	@media (max-width : $mq-mobile) {
 		padding-bottom: 30px;
-		
-		h1 {
-			&.title {
-				font-size: 3em;
-			}
-		}
 	}
 	
 	.pagination {
@@ -850,9 +830,14 @@ nav {
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.3em/1 $latoBlack;
+			font: 300 3em/1 $latoBlack;
+			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			padding-top: 0; 
+
+			@media (max-width : $mq-mobile) {
+				font-size: 2em;
+			}
 			
 			a {
 				color: $black;
@@ -870,9 +855,14 @@ nav {
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3.3em/1 $latoBlack;
+			font: 300 3em/1 $latoBlack;
+			letter-spacing: -.01em;
 			padding-bottom: 20px;
-			padding-top: 0; 
+			padding-top: 0;
+		
+			@media (max-width : $mq-mobile) {
+				font-size: 2em;
+			}
 			
 			a {
 				color: $black;
@@ -1421,7 +1411,7 @@ nav {
 			padding: 30px 0 0;
 			
 			&.title {
-				font-size: 3.3em;
+				font-size: 3em;
 			}
 		}
 		
@@ -1480,13 +1470,14 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 3.3em/1 $latoBlack;
+			font: 300 3em/1 $latoBlack;
+			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			margin: 0;
 			
 			@media (max-width : $mq-mobile) {
 				padding-bottom: 0;
-				font-size: 2.7em;
+				font-size: 2em;
 			}
 		}
 	}
