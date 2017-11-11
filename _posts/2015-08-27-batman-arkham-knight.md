@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/batman-arkham-knight/
-redirect_from: /blog/all/batman-arkham-knight/
 title: "Batman: Arkham Knight"
 thumbnail: "http://i.imgur.com/DQQvUFhl.png"
-description: "Заключительная и четвертая часть игр серии от студии Rocksteady. Arkham Knight вышла 23 июня 2015 года и стала доступна на новое поколение консолей и PC. Сюжет повествует о событиях происходящих спустя год после Arkham City. На этот раз главными антагонистами выступают Пугало, который уже встречался в первой части Arkham Asylum, и Рыцарь Аркхема — по словам Rocksteady, новый, доселе не встречавшийся в комиксах персонаж."
 old: "true"
 hidden: true
 ---

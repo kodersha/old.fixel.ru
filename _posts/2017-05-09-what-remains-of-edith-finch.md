@@ -1,11 +1,8 @@
 ---
-layout: post
-permalink: /blog/what-remains-of-edith-finch/
-redirect_from: /blog/all/what-remains-of-edith-finch/
 title: "What Remains of Edith Finch"
-category: "Игры"
 cover: "http://i.imgur.com/4iNlL68.jpg"
-description: "Приключенческая игра от небольшой студии Giant Sparrow которая погрузит вас в красивейшую историю, рассказывающую о загадочной судьбе семейства Финчей. Приняв на себя роль Эдит Финч, последней представительницы рода — игрок вернется в фамильный особняк, дом ее детства, дабы раскрыть секреты родственников живших тут не одно поколение."
+thumbnail: "http://i.imgur.com/4iNlL68l.jpg"
+category: "Игры"
 tags:
 - Интерактивный фильм
 - Приключение

@@ -1,10 +1,7 @@
 ---
-layout: post
-permalink: /blog/batman-the-telltale-series/
-redirect_from: /blog/all/batman-the-telltale-series/
 title: "Batman: The Telltale Series"
+thumbnail: "http://i.imgur.com/6kzc8IOl.jpg"
 category: "Игры"
-description: "Вот и вышел первый эпизод интерактивной истории о Бэтмене от Telltale Games. Где, как очевидно, игроку предстоит примерить на себя костюм Темного Рыцаря, распутать клубок преступных заговоров и, непременно, покарать всех злодеев."
 tags:
 - Интерактивный фильм
 - История

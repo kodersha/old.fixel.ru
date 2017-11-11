@@ -1,8 +1,6 @@
 ---
-layout: post
-permalink: /blog/bethesda-bethesda-nikogda-ne-menyaetsya/
-redirect_from: /blog/all/bethesda-bethesda-nikogda-ne-menyaetsya/
 title: "Bethesda, Bethesda никогда не меняется"
+thumbnail: "http://i.imgur.com/5QzYjxFl.jpg"
 category: "Заметки"
 ---
 

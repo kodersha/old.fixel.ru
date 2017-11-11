@@ -1,7 +1,4 @@
 ---
-layout: post
-permalink: /blog/roskomnadzor-i-obhod-blokirovok/
-redirect_from: /blog/all/roskomnadzor-i-obhod-blokirovok/
 title: "«Роскомнадзор» и обход блокировок"
 category: "Веб"
 tags:

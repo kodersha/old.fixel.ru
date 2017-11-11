@@ -1,7 +1,4 @@
 ---
-layout: post
-permalink: /blog/o-koshkah-i-allergii/
-redirect_from: /blog/all/o-koshkah-i-allergii/
 title: "О кошках и аллергии"
 category: "Заметки"
 ---

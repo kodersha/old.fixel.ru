@@ -1,7 +1,4 @@
 ---
-layout: post
-permalink: /blog/kak-windows-10-videokarty-ubival/
-redirect_from: /blog/all/kak-windows-10-videokarty-ubival/
 title: "Как Windows 10 видеокарты убивал"
 category: "Заметки"
 ---

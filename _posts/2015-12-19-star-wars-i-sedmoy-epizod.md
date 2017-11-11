@@ -1,7 +1,4 @@
 ---
-layout: post
-permalink: /blog/star-wars-i-sedmoy-epizod/
-redirect_from: /blog/all/star-wars-i-sedmoy-epizod/
 title: "Star Wars и седьмой эпизод"
 category: "Фильмы"
 ---

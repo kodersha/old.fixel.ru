@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/the-flame-in-the-flood/
-redirect_from: /blog/all/the-flame-in-the-flood/
 title: "The Flame in the Flood"
 thumbnail: "http://i.imgur.com/dWswtHgl.png"
-description: "Наверняка вы уже сталкивались с выживанием в условиях Канадской зимы или постоянного голода в загадочном мире Максвелла, но доводилось ли вам выживать в условиях всемирного потопа? The Flame in the Flood непринужденно погружает в уютную атмосферу американской глубинки, ночных посиделок у костра, путешествий по стремительным, необузданным рекам на импровизированном плоту в компании четвероногого друга, ну и конечно же выживания."
 old: "true"
 hidden: true
 ---

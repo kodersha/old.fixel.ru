@@ -1,7 +1,4 @@
 ---
-layout: post
-permalink: /blog/vozobnovlenie-aktivnosti/
-redirect_from: /blog/all/vozobnovlenie-aktivnosti/
 title: "Возобновление активности"
 category: "Заметки"
 ---

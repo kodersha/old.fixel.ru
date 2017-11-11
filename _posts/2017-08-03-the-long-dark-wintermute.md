@@ -1,10 +1,7 @@
 ---
-layout: post
-permalink: /blog/the-long-dark-wintermute/
-redirect_from: /blog/all/the-long-dark-wintermute/
 title: "The Long Dark: Wintermute"
+thumbnail: "http://i.imgur.com/8F0eOXdl.jpg"
 category: "Игры"
-description: "Первого августа наконец таки вышел долгожданный сюжетный режим для The Long Dark — симулятора выживания в диких условиях холодной Канады. Напомню, что игра разрабатывалась с двадцать второго сентября 2014 года и лишь первого августа 2017 вышла из стадии альфа-тестирования привнеся в себя сюжетный режим, новый игровой интерфейс и прочие мелочи."
 tags:
 - Постапокалипсис
 - Открытый мир

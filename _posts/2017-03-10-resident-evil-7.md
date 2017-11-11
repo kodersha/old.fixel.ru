@@ -1,10 +1,7 @@
 ---
-layout: post
-permalink: /blog/resident-evil-7/
-redirect_from: /blog/all/resident-evil-7/
 title: "Resident Evil 7: Biohazard"
+thumbnail: "http://i.imgur.com/zr5splml.jpg"
 category: "Игры"
-description: "Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений и всяческих обзоров предыдущих частей, разумеется. А потому, мое мнение в целом не будет основываться на предыдущих частях и станет по возможности максимально объективным, как об отдельно взятой игре."
 tags:
 - Выживание
 - Хоррор

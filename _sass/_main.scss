@@ -657,6 +657,7 @@ nav {
 			
 			.post {
 				counter-increment: pony-counter -1;
+				margin-bottom: 10px;
 				
 				&::before {
 					font: 400 14px/1.4 $lato;
@@ -672,15 +673,11 @@ nav {
 				a {
 					color: $black;
 				}
-				
-				.maintenance {
-					margin-bottom: 10px;
-			
-					p {
-						padding: 0;
-						color: $black;
-						cursor: pointer;
-					}
+
+				.category {
+					font: 400 14px/1.4 $lato;
+					padding-bottom: 2px;
+					color: $gray;
 				}
 			}
 			
@@ -1149,7 +1146,7 @@ nav {
 		
 		.tags {
 			margin-bottom: -5px;
-			color: $blue;
+			color: $gray;
 			
 			a {
 				display: inline-block;
@@ -1162,6 +1159,11 @@ nav {
 				&.category {
 					margin: 0 5px 5px 0;
 				}
+			}
+
+			.point {
+				font-size: 1.25em;
+				line-height: 0;
 			}
 		}
 		

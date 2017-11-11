@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/dont-starve/
-redirect_from: /blog/all/dont-starve/
 title: "Don’t Starve"
 thumbnail: "http://i.imgur.com/WVhfxpPl.jpg"
-description: "Приключенческая, изометрическая игра в жанре выживания. Don’t Starve создавалась независимой студией Klei Entertainment и вышла в релиз уже довольно давно, а именно, 23 апреля 2013. Игра имеет открытый, случайно генерируемый мир, а также roguelike составляющую. А в общем, является довольно милой, но сложной выживалкой."
 old: "true"
 hidden: true
 ---

@@ -1,15 +1,7 @@
 ---
 layout: post
-permalink: /blog/ne-vse-tak-idealno-v-cradle/
-redirect_from: /blog/all/ne-vse-tak-idealno-v-cradle/
 title: "Не все так идеально в Cradle"
 thumbnail: "http://i.imgur.com/rHdJRpxl.jpg"
-description: "О достоинствах инди-квеста Cradle я уже рассказывала в предыдущей статье, теперь, после полного её прохождения, стоило бы рассказать о её недостатках. Не смотря на многочисленные положительные отзывы в Steam игра имеет свои минусы."
-tags:
-- Квест
-- Приключение
-- Открытый мир
-- Научная фантастика
 old: "true"
 hidden: true
 ---

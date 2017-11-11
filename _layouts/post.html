@@ -43,7 +43,7 @@ layout: default
 						{% endif %}
 
 						{% if page.tags.size > 0 %}
-						-
+						<span class="point">·</span>
 							{% assign tags = page.tags | sort %}
 							{% for tag in tags %}
 								<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase }}/">

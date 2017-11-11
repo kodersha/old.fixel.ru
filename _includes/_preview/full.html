@@ -16,7 +16,7 @@
 				{% endif %}
 				
 				{% if post.tags.size > 0 %}
-				-
+				<span class="point">·</span>
 					{% assign tags = post.tags | sort %}
 					{% for tag in tags %}
 						<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase }}/">

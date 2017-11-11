@@ -1,11 +1,7 @@
 ---
-layout: post
-permalink: /blog/pishem-svoy-shablon-dlya-egei/
-redirect_from: /blog/all/pishem-svoy-shablon-dlya-egei/
 title: "Пишем свой шаблон для Эгеи"
-category: "Веб"
 toc: "true"
-description: "Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры."
+category: "Веб"
 tags:
 - Эгея
 - Гайд

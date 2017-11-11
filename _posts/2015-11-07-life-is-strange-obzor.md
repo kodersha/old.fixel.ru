@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/life-is-strange-obzor/
-redirect_from: /blog/all/life-is-strange-obzor/
 title: "Life Is Strange"
 thumbnail: "http://i.imgur.com/v3c9cZXl.jpg"
-description: "Вот и подошла к концу полюбившаяся многим приключенческая история от французской студии Dontnod Entertainment. Life is Strange детально проработанное, качественно поставленное интерактивное кино с запоминающимися персонажами, местами и событиями. С выходом последнего, пятого эпизода, хотелось бы рассмотреть все аспекты этого уникального игрового произведения."
 old: "true"
 hidden: true
 ---

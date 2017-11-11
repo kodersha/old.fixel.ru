@@ -1,11 +1,8 @@
 ---
-layout: post
-permalink: /blog/stardew-valley/
-redirect_from: /blog/all/stardew-valley/
 title: "Stardew Valley"
-category: "Игры"
 cover: "http://i.imgur.com/UCEFuMq.png"
-description: "Еще одна ламповая пиксельная игра на просторах Steam в жанре ролевой игры и крафтинга. В Stardew Valley игроку предстоит примерить на себя роль фермера — забросив тяготы городской жизни и рутинную работу в корпорации Joja, вы переезжаете на старую дедушкину ферму в долине Стардью, где вооружившись инструментами и терпением вам предстоит создать из заросшего пустыря процветающую ферму."
+thumbnail: "http://i.imgur.com/UCEFuMql.png"
+category: "Игры"
 tags:
 - Пиксельная графика
 - Открытый мир

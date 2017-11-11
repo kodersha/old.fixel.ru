@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/the-beginners-guide/
-redirect_from: /blog/all/the-beginners-guide/
 title: "The Beginner’s Guide"
 thumbnail: "http://i.imgur.com/pTAK37fl.jpg"
-description: "Это одна из тех необычных игр в которой не будет разнообразных монстров, множества видов оружия и спасения Америки. Не будет и красивейшей графики, эффектных взрывов и пейзажей разрушенных городов. Зато будет интересная история рассказанная Дэйви Риденом, создателем не менее необычной игры The Stanley Parable."
 old: "true"
 hidden: true
 ---

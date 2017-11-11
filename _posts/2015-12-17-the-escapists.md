@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/the-escapists/
-redirect_from: /blog/all/the-escapists/
 title: "The Escapists"
 thumbnail: "http://i.imgur.com/sLQWgNVl.png"
-description: "В The Escapists вам предстоит примерить на себя роль не героя, но обычного заключенного, а что хочет заключенный? Верно, свободы. А потому, вашей задачей будет спланировать и совершить побег, день ото дня изучая обстановку, взаимодействуя с другими заключенными и окружающим миром. The Escapists это приключенческая, квестовая игра от Mouldy Toof Studios и Team17 Digital Ltd вышедшая 13 февраля 2015."
 old: "true"
 hidden: true
 ---

@@ -1,11 +1,7 @@
 ---
-layout: post
-permalink: /blog/call-of-duty-advanced-warfare/
-redirect_from: /blog/all/call-of-duty-advanced-warfare/
 title: "Call Of Duty: Advanced Warfare"
 cover: "http://i.imgur.com/4NzEfAh.jpg"
 thumbnail: "http://i.imgur.com/4NzEfAhl.jpg"
-description: "Очередная и одиннадцатая часть всем известного шутера от первого лица, за издательством Activision и разработкой студии Sledgehammer Games, что занимались в свое время Modern Warfare 3, совместно со студией High Moon Studios, что занимались Deadpool’ом и различными частями Transformers. Вышла игра не столь давно — 4 ноября 2014 года и в разработке пробыла аж целых три года, что само по себе обещает хорошее качество исполнения. Что касательно «трансформеров», их в Call of Duty: Advanced Warfare достаточно, ведь «Advanced Warfare» это война будущего, где на полях битвы взрывают друг друга войны в силовых костюмах, где каждый солдат гордо носит на своих плечах экзоскелет, а каждый второй двойным прыжком взмывает в небо посредством «бустеров»."
 old: "true"
 hidden: true
 ---

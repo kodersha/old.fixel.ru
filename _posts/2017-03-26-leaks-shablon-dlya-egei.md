@@ -1,10 +1,7 @@
 ---
-layout: post
-permalink: /blog/leaks-shablon-dlya-egei/
-redirect_from: /blog/all/leaks-shablon-dlya-egei/
 title: "Leaks · Шаблон для Эгеи"
+thumbnail: "http://i.imgur.com/P3Awuwil.png"
 category: "Веб"
-description: "Собственно говоря шаблонов для Эгеи мало, точнее их вовсе нет. А потому, я любезно выкладываю на github шаблон Leaks который сваяла для своего блога на Эгее 2.6."
 tags:
 - CMS
 - Эгея

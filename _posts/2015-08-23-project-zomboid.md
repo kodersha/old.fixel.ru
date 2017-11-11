@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/project-zomboid/
-redirect_from: /blog/all/project-zomboid-istoriya-vashey-smerti/
 title: "Project Zomboid"
 thumbnail: "http://i.imgur.com/Ykm5SkHl.jpg"
-description: "Пиксельно-изометрическая ролевая игра в жанре выживания в условиях зомби-апокалипсиса. С 2011 года и по сей день разрабатывается независимой студией The Indie Stone. На игровой площадке Steam доступна с 8 ноября 2013 года и все еще прибывает в раннем доступе. Концепция игры заключается, как можно догадаться, в выживании, однако, основную роль в Project Zomboid играет упор на реализм и широкие возможности для выживания."
 old: "true"
 hidden: true
 ---

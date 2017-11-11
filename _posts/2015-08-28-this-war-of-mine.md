@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/this-war-of-mine/
-redirect_from: /blog/all/this-war-of-mine/
 title: "This War of Mine"
 thumbnail: "http://i.imgur.com/zdn1mGQl.jpg"
-description: "Еще один survival симулятор, но в нем выживать предстоит не в условиях ядерного или зомби апокалипсиса, а в реалиях самой обычной войны. Смотря насколько война может быть обычной, конечно. This War of Mine ставит цель показать игроку все психологические и моральные перипетии военных событий от лица нескольких выживших."
 old: "true"
 hidden: true
 ---

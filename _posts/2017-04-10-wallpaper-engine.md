@@ -1,9 +1,6 @@
 ---
-layout: post
-permalink: /blog/wallpaper-engine/
-redirect_from: /blog/all/wallpaper-engine/
 title: "Wallpaper Engine · Нескучные обои"
-description: "Наткнулась тут в Steam на программу для Windows — Wallpaper Engine, которая возвращает во времена Rainmeter и позволяет устанавливать в качестве фона рабочего стола зацикленные видео и прочие интерактивные вещи с возможностью тонкой настройки каждого валлпапера. "
+thumbnail: "http://i.imgur.com/pPY99zo.png"
 category: "Заметки"
 tags:
 - Программа

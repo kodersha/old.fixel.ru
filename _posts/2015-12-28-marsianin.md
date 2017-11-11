@@ -1,10 +1,7 @@
 ---
-layout: post
-permalink: /blog/marsianin/
-redirect_from: /blog/all/marsianin/
 title: "Марсианин · Мужик, у тебя изолента есть?"
+thumbnail: "http://i.imgur.com/r4bqcfvl.jpg"
 category: "Фильмы"
-description: "Я с особым трепетом отношусь к научной фантастике, будь то к книгам или их экранизациям, а потому не могла пропустить фильм Ридли Скотта «Марсианин» по мотивам одноименной книги Энди Вейера."
 tags:
 - Научная фантастика
 ---

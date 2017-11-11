@@ -1,8 +1,6 @@
 ---
-layout: post
-permalink: /blog/pervy-opyt-v-creation-kit/
-redirect_from: /blog/all/pervy-opyt-v-creation-kit/
 title: "Первый опыт в Creation Kit"
+thumbnail: "http://i.imgur.com/0JIbRvzl.png"
 category: "Заметки"
 ---
 

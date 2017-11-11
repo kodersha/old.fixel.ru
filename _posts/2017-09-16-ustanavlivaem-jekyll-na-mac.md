@@ -1,8 +1,6 @@
 ---
 title: "Устанавливаем Jekyll на Mac OS"
-layout: post
 category: "Веб"
-description: "В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS."
 tags:
 - Гайд
 - Jekyll

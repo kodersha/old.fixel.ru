@@ -1,10 +1,6 @@
 ---
-layout: post
-permalink: /blog/the-long-dark/
-redirect_from: /blog/all/the-long-dark-v-dikih-usloviyah/
 title: "The Long Dark"
 thumbnail: "http://i.imgur.com/LGBogO4l.jpg"
-description: "Атмосфера одиночества и пронизывающего, стылого ветра. Опасность переохлаждения, голода и жажды. Страх перед дикими хозяевами леса. Разведение костра с последней спички. The Long Dark — симулятор выживания в суровых, холодных условиях Северной Канады. Игра от независимой канадской студии Hinterland Inc, ранний доступ которой стал доступен 22 сентября 2014. Релиз запланирован на конец этого года."
 old: "true"
 hidden: true
 ---
