@@ -307,16 +307,23 @@ nav {
 			}
 			
 			.logo {
-				background-image: url('/assets/images/logo-black.png');
+				background-image: url('/assets/images/logo-black.svg');
 				background-repeat: no-repeat;
+				background-size: 30px 40px;
 				position: absolute;
 				margin: 0 auto;
 				height: 40px;
-				width: 22px;
+				width: 30px;
 				z-index: 2;
 				right: 0;
-				left: 0;
-				top: 4px;			
+				left: -4px;
+				top: 4px;
+				
+				@media (max-width : $mq-mobile) {
+					background-size: 60px 70px;
+					height: 70px;
+					width: 60px;
+				}
 			}
 		}
 		
@@ -460,14 +467,14 @@ nav {
 	
 	@media (max-width : $mq-mobile) {
 		.navigation {
-			display: table;
+			height: 75px;
 			width: 100%;
 			
 			.avatar {
 				float: none;
 				margin-right: auto;
 				margin-left: auto;
-				display: table;
+				display: block;
 			}
 			
 			.frame {
@@ -1688,7 +1695,7 @@ footer {
 		.navigation {
 			.avatar {
 				.logo {
-					background-image: url('/assets/images/logo-white.png');
+					background-image: url('/assets/images/logo-white.svg');
 				}
 			}
 		}
