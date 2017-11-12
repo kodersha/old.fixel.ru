@@ -509,17 +509,6 @@ nav {
 			}
 		}
 	}
-	
-	&.breadcrumbs {
-		.common {
-			padding-top: 50px;
-			padding-bottom: 0;
-		}
-		
-		i {
-			margin: 0 5px;
-		}
-	}
 }
 
 //
@@ -1540,6 +1529,42 @@ button {
 		position: absolute;
 		right: 0;
 		left: 0;
+	}
+}
+
+//
+// .breadcrumbs
+//
+
+.breadcrumbs {
+
+	.common {
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
+
+	.breadcrumb {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+		&::after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+		&-item {
+			float: left;
+		}
+	}
+
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: inline-block;
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+		content: "/";
+		color: $gray;
 	}
 }
 

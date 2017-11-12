@@ -1,5 +1,29 @@
-<nav class="breadcrumbs">
+<nav class="breadcrumbs hidden-sm-down">
 	<div class="common">
-		<a href="{{ site.baseurl }}/">Главная</a> <i class="fa fa-angle-left" aria-hidden="true"></i> <a href="{{ site.baseurl }}/blog/">Блог</a> <i class="fa fa-angle-left" aria-hidden="true"></i> <span>{{ page.title }}</span>
+		<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+		{% assign position = 0 %}
+		{% for crumbitem in breadcrumbs %}
+			{% assign position = position  | plus: 1 %}
+
+			{% if forloop.first %}
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">{{ site.name }}</span><meta property="position" content="{{ position }}" /></a>
+				</li>
+				{% continue %}
+			{% endif %}
+
+			{% if forloop.last %}
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" />
+				</li>
+				{% continue %}
+			{% endif %}
+
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
+			</li>
+		{% endfor %}
+
+		</ol>
 	</div>
 </nav>
