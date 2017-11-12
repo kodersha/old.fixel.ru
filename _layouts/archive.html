@@ -1,0 +1,22 @@
+---
+layout: default
+title: {{ page.title }}
+---
+
+{% include_cached header.html %}
+
+<div class="content">
+	<div class="post-list numbers">
+		<div class="posts" style="counter-reset: pony-counter {{ page.posts | size }};">
+			<div class="common">
+				<div class="wrapper">
+					{% for post in page.posts %}
+						{% include _preview/archive.html %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include_cached footer.html %}

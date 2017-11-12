@@ -57,32 +57,26 @@ exclude:
 plugins:
   - jekyll-redirect-from
   - jekyll-include-cache
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-auto-image
+  - jekyll-archives
   - jekyll-sitemap
   - jekyll-feed
   
-pagination:
-  enabled: true
-  per_page: 8
-  permalink: "/page-:num/"
-  title: "Страница :num"
-  sort_reverse: true
-  limit: 0
-  
-autopages:
-  enabled: true
-  categories:
-    layouts: 
-      - "category.html"
-    permalink: "/category/:cat/"
-    title: "Записи в категории :cat"
-  tags:
-    layouts: 
-      - "tag.html"
-    permalink: "/tag/:tag/"
-    title: "Записи с тегом #:tag"
-  collections: ""
+paginate: 8
+paginate_path: "/page-:num/"
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: "archive"
+  permalinks:
+    year: "/:year/"
+    month: "/:year/:month/"
+    day: "/:year/:month/:day/"
+    tag: "/tag/:name/"
+    category: "/category/:name/"
 
 sitemap:
   file: "/sitemap.xml"
