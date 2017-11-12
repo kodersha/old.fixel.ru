@@ -7,9 +7,10 @@ title: {{ page.title }}
 
 <div class="content">
 	<div class="post-list numbers">
-		<div class="posts" style="counter-reset: pony-counter {{ page.posts | size }};">
+		<div class="posts">
 			<div class="common">
 				<div class="wrapper">
+					<h1 class="title">{{ page.title }}</h1>
 					{% for post in page.posts %}
 						{% include _preview/archive.html %}
 					{% endfor %}

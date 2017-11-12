@@ -655,22 +655,15 @@ nav {
 		padding-bottom: 0;
 	
 		.posts {
-			counter-reset: pony-counter;
+			h1.title {
+				font: 300 3em/1 $latoBlack;
+				letter-spacing: -.01em;
+				padding-bottom: 60px;
+				color: $black;
+			}
 			
 			.post {
-				counter-increment: pony-counter -1;
 				margin-bottom: 10px;
-				
-				&::before {
-					font: 400 14px/1.4 $lato;
-					content: counter(pony-counter);
-					top: -webkit-calc(50% - 9.5px);
-					top: -moz-calc(50% - 9.5px);
-					top: calc(50% - 9.5px);
-					position: absolute;
-					left: -40px;
-					color: $lightGray;
-				}
 				
 				a {
 					color: $black;
@@ -686,32 +679,6 @@ nav {
 			.help {
 				margin-top: 50px;
 				margin-bottom: 50px;
-			}
-			
-			.old {
-				.background {
-					background-color: $black;
-					
-					.post {
-						a {
-							color: $white;
-							border-color: #2d2d2d;
-							
-							&:hover {
-								border-color: $blue;
-							}
-						}
-						
-						p {
-							color: $white;
-						}
-					}
-					
-					.common {
-						padding-top: 50px;
-						padding-bottom: 50px;
-					}
-				}
 			}
 		}
 	}
@@ -1744,6 +1711,12 @@ footer {
 					p {
 						color: $white;
 					}
+				}
+			}
+			
+			.old {
+				h1.title {
+					color: $white;
 				}
 			}
 		}

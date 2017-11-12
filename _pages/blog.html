@@ -8,9 +8,10 @@ dscription: Список записей за все время
 
 <div class="content">
 	<div class="post-list numbers">
-		<div class="posts" style="counter-reset: pony-counter {{ site.posts | size }};">
+		<div class="posts">
 			<div class="common">
 				<div class="wrapper">
+					<h1 class="title">{{ page.title }}</h1>
 					{% for post in site.posts %}
 						{% if post.old != 'true' %}
 							{% include _preview/blog.html %}
