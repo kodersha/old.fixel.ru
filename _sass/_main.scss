@@ -831,7 +831,7 @@ nav {
 	}
 	
 	[left] {
-		font: 400 14px/1.4 $lato;
+		font: 400 14px/1.25 $lato;
 		color: $gray;
 		float: right;
 		clear: left;
@@ -885,7 +885,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 400 14px/1.4 $lato;
+		font: 400 14px/1.25 $lato;
 		color: $gray;
 		
 		img {
@@ -1538,11 +1538,6 @@ button {
 
 .breadcrumbs {
 
-	.common {
-		padding-top: 50px;
-		padding-bottom: 0;
-	}
-
 	.breadcrumb {
 		list-style: none;
 		padding: 0;
@@ -1653,6 +1648,12 @@ footer {
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
+	
+	@media (max-width : $mq-mobile) {
+		-webkit-column-count: auto;
+		-moz-column-count: auto;
+		column-count: auto;		
+	}
 	
 	a {
 		display: block;
