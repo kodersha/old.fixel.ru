@@ -1,7 +1,7 @@
 ---
 title: "elementaryOS"
 category: "Заметки"
-thumbnail: "https://i.imgur.com/Sdrss77.png"
+thumbnail: "https://i.imgur.com/Sdrss77l.png"
 tags:
 - OS
 ---
