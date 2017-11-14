@@ -1,0 +1,30 @@
+$blue: #4183C4;
+$darkBlue: #487bad;
+$main: #292929;
+
+$black: #000;
+$darkerGray: #222;
+$darkGray: #81868e;
+$gray: #a0a0a0;
+$lightGray: #ddd;
+$whiteGray: #fafafa;
+$white: #fff;
+
+$action: #f1f3f4;
+$actionHover: #e2e5e6;
+$actionColor: #b1bcdc;
+
+$latoMedium: 'LatoWebMedium', sans-serif;
+$latoBlack: 'LatoWebBlack', sans-serif;
+$lato: 'LatoWeb', sans-serif;
+$firaCode: 'Fira Code', monospace;
+$gregor: 'Gregor', serif;
+
+$mq-mobile: 900px !default;
+$mq-notebook: 1336px !default;
+
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

@@ -2,11 +2,7 @@
 layout: default
 ---
 
-{% if page.header == "true" %}
-	{% include _post/header.html %}
-{% else %}
-	{% include_cached header.html %}
-{% endif %}
+{% include_cached header.html %}
 
 <div class="content">
 	<div class="post-single">

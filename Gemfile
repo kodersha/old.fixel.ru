@@ -16,17 +16,19 @@ gem "jekyll", "3.6.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+   gem "font-awesome-sass"
    gem "jekyll-feed", "~> 0.6"
    gem "jekyll-include-cache"
    gem "jekyll-redirect-from"
-   gem "jekyll-paginate"
    gem "jekyll-auto-image"
+   gem "jekyll-paginate"
    gem "jekyll-archives"
    gem "jekyll-sitemap"
+   gem "jekyll-assets"
    gem "therubyracer"
-   gem "jekyll-press"
+   gem "uglifier"
    gem "kramdown"
-   gem "execjs"
+   gem "json"
    gem "jgd"
 end
 

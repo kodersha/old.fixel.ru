@@ -7,7 +7,7 @@ url: http://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
 
-image: /assets/images/cat.png
+image:
 
 version: v3.6.2
 safe: false
@@ -52,16 +52,20 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - .asset-cache
   
 ## Plugins
 plugins:
+  - font-awesome-sass
   - jekyll-redirect-from
   - jekyll-include-cache
-  - jekyll-paginate
   - jekyll-auto-image
+  - jekyll-paginate
   - jekyll-archives
   - jekyll-sitemap
+  - jekyll-assets
   - jekyll-feed
+  - uglifier
   
 paginate: 8
 paginate_path: "/page-:num/"
@@ -88,11 +92,16 @@ sitemap:
   change_frequency_name: "change_frequency"
   priority_name: "priority"
   
-jekyll-press:
-  exclude:
-    - "/atom.xml"
-    - "/feed.xml"
-    - "/sitemap.xml"
-  js_options: {}
-  css_options: {}
-  html_options: {}
+assets:
+  compress:
+    css: true
+    js: true
+  prefix: "/assets"
+  assets:
+    - "*."
+  digest: true
+  sources:
+    - "_assets/css"
+    - "_assets/fonts"
+    - "_assets/images"
+    - "_assets/js"
