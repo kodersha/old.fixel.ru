@@ -96,6 +96,7 @@ assets:
   compress:
     css: true
     js: true
+  cache: false
   prefix: "/assets"
   assets:
     - "*."
