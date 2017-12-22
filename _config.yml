@@ -2,7 +2,7 @@ name: Milkleaks
 description: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.
 author: Александра Травкина
 
-url: http://milkleaks.ru
+url: https://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
 
