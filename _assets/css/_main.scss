@@ -1132,11 +1132,6 @@ nav {
 			}
 		}
 		
-		.disqus-comment-count {
-			display: table !important;
-			color: $gray;
-		}
-		
 		.date {
 			margin: 0 5px 5px 0;
 			
@@ -1191,109 +1186,6 @@ nav {
 		}
 	}
 	
-	.comments {
-		padding-bottom: 30px;
-		display: table;
-		width: 100%;
-		
-		.control {
-			display: table;
-			width: 100%;
-
-			.hint {
-				float: left;
-				padding: 0 1em;
-				height: 47px;
-				line-height: 47px;
-				font-size: 0.8em;
-				font-style: italic;
-				
-				&.hide {
-					display: none;
-				}
-			}
-
-			.share-button {
-				position: relative;
-				float: left;
-			}
-			
-			.social-networks {
-				-webkit-transform: translateX(-20px);
-				-moz-transform: translateX(-20px);
-				transform: translateX(-20px);				
-				-webkit-transition: all .4s ease;
-				-moz-transition: all .4s ease;
-				transition: all .4s ease;
-				-webkit-border-radius: 0 50px 50px 0;
-				-moz-border-radius: 0 50px 50px 0;
-				border-radius: 0 50px 50px 0;
-				background-color: $whiteGray;
-				position: relative;
-				padding-left: 30px;
-				margin-left: -20px;
-				overflow: hidden;
-				height: 47px;
-				float: left;
-				opacity: 0;
-				
-				&.open-menu {
-					-webkit-transform: translateX(0);
-					-moz-transform: translateX(0);
-					transform: translateX(0);
-					opacity: 1;
-				}
-			}		
-		}
-		
-		.frame {		
-			iframe {
-				margin-top: 30px;
-				background: #f1f3f4;
-				padding: 1em 1.5em;
-				border-radius: 2px;
-				min-height: 321px !important;
-				display: block;
-			}
-		}
-		
-		@media (max-width : $mq-mobile) {
-		
-			.control {
-				text-align: center;
-				
-				.show-comments,
-				.share-button,
-				.hint {
-					float: none;
-					margin: 0 auto;
-				}
-				
-				.social-networks {
-				    float: none;
-					padding-left: 0;
-					margin-top: 20px;
-					margin-left: auto;
-					margin-right: auto;
-					background-color: transparent;
-					-webkit-transform: translateY(-20px);
-					-moz-transform: translateY(-20px);
-					transform: translateY(-20px);
-
-					&.open-menu {
-						-webkit-transform: translateY(0);
-						-moz-transform: translateY(0);
-						transform: translateY(0);
-					}
-					
-					.likely-share {
-						margin: 0 auto;
-					}
-				}
-			}
-		}
-	}
-	
 	.single {
 		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, .highlight, [block] {
 			max-width: 75%;
@@ -1344,10 +1236,6 @@ nav {
 		}
 	}
 	
-	.short {
-		overflow: hidden;
-	}
-	
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
 		
@@ -1387,10 +1275,6 @@ nav {
 		
 		.actions {
 			max-width: 100%;
-			
-			.disqus-comment-count {
-				margin: 5px 0 0 0 !important;
-			}
 		}
 	}
 	
