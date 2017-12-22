@@ -5,9 +5,67 @@
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <link>http://milkleaks.ru/</link>
     <atom:link href="http://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Dec 2017 00:17:05 +0700</pubDate>
-    <lastBuildDate>Thu, 21 Dec 2017 00:17:05 +0700</lastBuildDate>
+    <pubDate>Fri, 22 Dec 2017 20:07:06 +0700</pubDate>
+    <lastBuildDate>Fri, 22 Dec 2017 20:07:06 +0700</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Упрощаем получение карточек на распродаже Steam</title>
+        <description>&lt;p&gt;Как известно, каждый год в Steam стартуют две крупные распродажи - летняя и зимняя, где за просмотр списка рекомендаций можно получить по три карточки в день которые, в свою очередь, можно продать или потратить на создание значка распродажи. Дабы упростить и ускорить процесс просмотра скучного списка рекомендаций участник GitHub &lt;a href=&quot;https://github.com/AceLewis/&quot;&gt;AceLewis&lt;/a&gt; написал небольшой скрипт для браузера который автоматически просматривает список за несколько секунд прошествии которых и выпадают заветные три карточки. Способ безопасен и работает уже несколько лет, бана Steam аккаунта вы не получите, а вот чтобы получить карточки достаточно выполнить несколько незаурядных шагов без регистрации и смс.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Открыть свой любимый браузер и авторизоваться в Steam аккаунте на &lt;a href=&quot;http://steampowered.com/&quot;&gt;steampowered.com&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Открыть страницу рекомендаций: &lt;a href=&quot;http://store.steampowered.com/explore/&quot;&gt;store.steampowered.com/explore&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Открыть консоль разработчика.
+    &lt;ul&gt;
+      &lt;li&gt;В Google Chrome сочетанием клавиш &lt;mark&gt;Ctrl + Shift + J&lt;/mark&gt; или &lt;mark&gt;Cmd + Option + J&lt;/mark&gt; на устройствах Mac.&lt;/li&gt;
+      &lt;li&gt;В Firefox &lt;mark&gt;Ctrl + Shift + I&lt;/mark&gt; или &lt;mark&gt;Cmd + Option + I&lt;/mark&gt;.&lt;/li&gt;
+      &lt;li&gt;В Safari &lt;mark&gt;Cmd + Option + C&lt;/mark&gt;, предварительно включив режим разработчика &lt;mark&gt;Настройки - Дополнения - Показывать меню «Разработка» в строке меню&lt;/mark&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Скопировать и вставить скрипт в консоль, нажать &lt;mark&gt;Enter&lt;/mark&gt; и немного подождать до обновления страницы.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;GenerateQueue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Queue #'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://store.steampowered.com/explore/generatenewdiscoveryqueue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sessionid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;g_sessionID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;queuetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	        &lt;span class=&quot;nx&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://store.steampowered.com/app/10'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;appid_to_clear_from_queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sessionid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;g_sessionID&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	    &lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requests&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	            &lt;span class=&quot;nx&quot;&gt;GenerateQueue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	            &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;GenerateQueue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Собственно говоря, таким нехитрым образом можно получать все три распродажные карточки за считаные секунды, что ещё более актуально при наличии нескольких Steam аккаунтов.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 22 Dec 2017 00:00:00 +0700</pubDate>
+        <link>http://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</link>
+        <guid isPermaLink="true">http://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</guid>
+        
+        <category>Заметки</category>
+        
+        
+        <category>Steam</category>
+        
+        <category>Гайд</category>
+        
+      </item>
     
       <item>
         <title>elementaryOS</title>
@@ -405,27 +463,6 @@
         <category>Программа</category>
         
         <category>Рисование</category>
-        
-      </item>
-    
-      <item>
-        <title>Уютный Jekyll</title>
-        <description>&lt;p&gt;Внезапно, но блог сменил движок с &lt;a href=&quot;/blog/egeya/&quot;&gt;Эгеи&lt;/a&gt; на Jekyll и тому было несколько причин. Во-первых, в блог я пишу не так часто, иногда и вовсе раз в несколько месяцев, поэтому нет смысла содержать полноценный хостинг. Во-вторых, Jekyll представляет собой статический сайт без какого-либо php и mysql, соответственно страницы загружаются если не моментально, то явно гораздо быстрее, в отличие от сайта на хостинге который, ко всему прочему, был не очень то быстр. В-третьих, Jekyll базируется на GitHub Pages, следовательно, не придется беспокоится об оплате хостинга, а сайт всегда будет доступен из репозитория.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/yfBC1VR.png&quot; alt=&quot;Уютный Jekyll&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Что же касается удобства пользования, Jekyll довольно прост в обращении. Установить его можно просто создав аккаунт на GitHub и сделав форк репозитория &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll now&lt;/a&gt;. Для написания заметки в блог, достаточно создать файл с markdown разметкой, написать и оформить саму заметку, отправить ее на github. Админ-панели у Jekyll нет, но всегда можно воспользоваться &lt;a href=&quot;http://prose.io&quot;&gt;prose.io&lt;/a&gt; или брутально написать пост прямо в notepad++. Если чукча дизайнер, а не программист и нет желания возиться с консолью и командами, то взаимодействовать с файлами блога можно через приложение &lt;a href=&quot;https://desktop.github.com/&quot;&gt;GitHub Desktop&lt;/a&gt;. К слову, верстать шаблон для Jekyll гораздо легче чем для Эгеи, при том, что Jekyll дает куда большую свободу для оформления поста и самого сайта.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 24 Aug 2017 00:00:00 +0700</pubDate>
-        <link>http://milkleaks.ru/blog/ujutnyj-jekyll/</link>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/ujutnyj-jekyll/</guid>
-        
-        <category>Заметки</category>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>CMS</category>
         
       </item>
     

@@ -257,8 +257,8 @@ a {
     border-color: #4183C4; }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px; }
+  margin: 40px 20px;
+  padding-left: 0; }
 
 ul {
   list-style-type: disc; }
@@ -266,11 +266,15 @@ ul {
 ol {
   list-style-type: decimal; }
 
+li ul {
+  padding: 10px 0 10px 25px !important;
+  max-width: 100% !important; }
+
 ol ul, ul ol, ul ul, ol ol {
   margin: 0; }
 
 ul ul, ol ul {
-  list-style-type: circle; }
+  list-style-type: disc; }
 
 em, i {
   font-style: italic; }
@@ -641,7 +645,7 @@ nav {
     animation: fadeUpIn 1s;
     padding-bottom: 0; }
     .post-list.numbers .posts h1.title {
-      font: 300 3em/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5em/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 60px;
       color: #000; }
@@ -722,7 +726,7 @@ nav {
     font: 400 1.5em/1.4 "Gregor", serif;
     padding: 60px 0 0; }
     .post h1.title {
-      font: 300 3em/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5em/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -736,7 +740,7 @@ nav {
     font: 400 1.5em/1.4 "Gregor", serif;
     padding: 60px 0 0; }
     .post h2.title {
-      font: 300 3em/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5em/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -747,9 +751,9 @@ nav {
         color: #000;
         border-bottom: 0; }
   .post mark {
-    background-color: #f1f3f4;
+    background-color: #ddd;
     word-wrap: break-word;
-    padding: 0 5px;
+    padding: 5px 5px 0;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
@@ -1062,10 +1066,10 @@ nav {
             transform: translateY(0); }
           .post .comments .control .social-networks .likely-share {
             margin: 0 auto; } }
-  .post .single p, .post .single h1, .post .single h2, .post .single h3, .post .single h4, .post .single blockquote, .post .single hr, .post .single ul, .post .single .video, .post .single .youtube, .post .single .fotorama, .post .single .highlight, .post .single [block] {
+  .post .single p, .post .single h1, .post .single h2, .post .single h3, .post .single h4, .post .single blockquote, .post .single hr, .post .single ul, .post .single ol, .post .single .video, .post .single .youtube, .post .single .fotorama, .post .single .highlight, .post .single [block] {
     max-width: 75%; }
     @media (max-width: 900px) {
-      .post .single p, .post .single h1, .post .single h2, .post .single h3, .post .single h4, .post .single blockquote, .post .single hr, .post .single ul, .post .single .video, .post .single .youtube, .post .single .fotorama, .post .single .highlight, .post .single [block] {
+      .post .single p, .post .single h1, .post .single h2, .post .single h3, .post .single h4, .post .single blockquote, .post .single hr, .post .single ul, .post .single ol, .post .single .video, .post .single .youtube, .post .single .fotorama, .post .single .highlight, .post .single [block] {
         max-width: 100%; } }
   .post .single .entry hr {
     background-color: transparent;
@@ -1106,7 +1110,7 @@ nav {
       .post h1 {
         padding: 30px 0 0; }
         .post h1.title {
-          font-size: 3em; }
+          font-size: 2.5em; }
       .post h2 {
         padding: 30px 0 0;
         font-size: 1.3em; }
@@ -1137,7 +1141,7 @@ nav {
 .page {
   padding-top: 100px; }
   .page h1.title {
-    font: 300 3em/1 "LatoWebBlack", sans-serif;
+    font: 300 2.5em/1 "LatoWebBlack", sans-serif;
     letter-spacing: -.01em;
     padding-bottom: 20px;
     margin: 0; }

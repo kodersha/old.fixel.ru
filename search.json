@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Упрощаем получение карточек на распродаже Steam",
+      "category" : "Заметки",
+      "tags"     : "Steam and Гайд",
+      "url"      : "/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/",
+      "date"     : "2017-12-22 00:00:00 +0700"
+    } ,
+  
+    {
       "title"    : "elementaryOS",
       "category" : "Заметки",
       "tags"     : "OS",
