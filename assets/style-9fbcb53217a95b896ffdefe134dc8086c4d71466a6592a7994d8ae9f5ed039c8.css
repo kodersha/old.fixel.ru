@@ -507,7 +507,8 @@ nav {
         list-style: none;
         display: none;
         z-index: 10;
-        padding: 0; }
+        padding: 0;
+        margin: 0; }
         nav .search-base .search .dropdown li {
           font: 400 16px/1.4 "LatoWeb", sans-serif;
           padding-top: 5px;
