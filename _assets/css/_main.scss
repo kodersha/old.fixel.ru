@@ -222,20 +222,6 @@ select[multiple=multiple] {
 	min-height: calc(100vh - 120px - 164px);
 	background-color: $white;
 	height: 100%;
-	
-	article {
-		&:first-of-type {
-			-webkit-animation: fadeUpIn 1s;
-			-moz-animation: fadeUpIn 1s;
-			animation: fadeUpIn 1s;
-			
-			@media (max-width : $mq-mobile) {
-				-webkit-animation: none;
-				-moz-animation: none;
-				animation: none;	
-			}
-		}
-	}
 }
 
 .common {
@@ -583,11 +569,7 @@ nav {
 		}
 	}
 	
-	&.tags {
-		-webkit-animation: fadeUpIn 1s;
-		-moz-animation: fadeUpIn 1s;
-		animation: fadeUpIn 1s;
-	
+	&.tags {	
 		.posts {		
 			.post {
 			
@@ -645,9 +627,6 @@ nav {
 	}
 	
 	&.numbers {
-		-webkit-animation: fadeUpIn 1s;
-		-moz-animation: fadeUpIn 1s;
-		animation: fadeUpIn 1s;
 		padding-bottom: 0;
 	
 		.posts {
@@ -679,11 +658,7 @@ nav {
 		}
 	}
 	
-	&.gallery {
-		-webkit-animation: fadeUpIn 1s;
-		-moz-animation: fadeUpIn 1s;
-		animation: fadeUpIn 1s;
-		
+	&.gallery {	
 		.album {
 			float: left;
 			width: 33.333%;

@@ -41,60 +41,60 @@ tags:
 
 <div base>
 <p pic><mark>author-menu.tmpl.php</mark> — Меню автора.
-<img src="http://i.imgur.com/Xixlisq.png"/></p>
+<img src="https://i.imgur.com/Xixlisq.png"/></p>
 <p pic><mark>comments-heading.tmpl.php</mark> — Заголовок списка комментариев с счетчиком их количества.
-<img src="http://i.imgur.com/j4FJTYb.png"/></p>
+<img src="https://i.imgur.com/j4FJTYb.png"/></p>
 <p pic><mark>comments.tmpl.php</mark> — Список комментариев.
-<img src="http://i.imgur.com/aBRjPgN.png"/></p>
+<img src="https://i.imgur.com/aBRjPgN.png"/></p>
 <p pic><mark>drafts.tmpl.php</mark> — Список черновиков.
-<img src="http://i.imgur.com/y5rRFnl.png"/></p>
+<img src="https://i.imgur.com/y5rRFnl.png"/></p>
 <p pic><mark>form-comment.tmpl.php</mark> — Форма комментирования.
-<img src="http://i.imgur.com/k9i1Fiq.png"/></p>
+<img src="https://i.imgur.com/k9i1Fiq.png"/></p>
 <p pic><mark>form-database.tmpl.php</mark> — Форма подключения к базе данных.
-<img src="http://i.imgur.com/yLs600v.png"/></p>
+<img src="https://i.imgur.com/yLs600v.png"/></p>
 <p pic><mark>form-install.tmpl.php</mark> — Форма установки Эгеи.</p>
 <p pic><mark>form-login.tmpl.php</mark> — Форма авторизации.
-<img src="http://i.imgur.com/s25cnt0.png"/></p>
+<img src="https://i.imgur.com/s25cnt0.png"/></p>
 <p pic><mark>form-note-delete.tmpl.php</mark> — Форма удаления поста.
-<img src="http://i.imgur.com/9odhCTC.png"/></p>
+<img src="https://i.imgur.com/9odhCTC.png"/></p>
 <p pic><mark>form-note-publish.tmpl.php</mark> — Кнопка публикации поста.
-<img src="http://i.imgur.com/Oteslpu.png"/></p>
+<img src="https://i.imgur.com/Oteslpu.png"/></p>
 <p pic><mark>form-note.tmpl.php</mark> — Форма публикации поста.
-<img src="http://i.imgur.com/YibeAcF.png"/></p>
+<img src="https://i.imgur.com/YibeAcF.png"/></p>
 <p pic><mark>form-password.tmpl.php</mark> — Форма смены админ-пароля.
-<img src="http://i.imgur.com/E6Y6Hdk.png"/></p>
+<img src="https://i.imgur.com/E6Y6Hdk.png"/></p>
 <p pic><mark>form-preferences.tmpl.php</mark> — Форма общих настроек блога.
-<img src="http://i.imgur.com/TT6aEAI.png"/></p>
+<img src="https://i.imgur.com/TT6aEAI.png"/></p>
 <p pic><mark>form-tag-delete.tmpl.php</mark> — Форма удаления тега.
-<img src="http://i.imgur.com/qnX41i4.png"/></p>
+<img src="https://i.imgur.com/qnX41i4.png"/></p>
 <p pic><mark>form-tag.tmpl.php</mark> — Форма редактирования тега.
-<img src="http://i.imgur.com/hSugesE.png"/></p>
+<img src="https://i.imgur.com/hSugesE.png"/></p>
 <p pic><mark>head.tmpl.php</mark> — Метатеги в head.</p>
 <p pic><mark>heading.tmpl.php</mark> — Заголовки.
-<img src="http://i.imgur.com/ErKitlN.png"/></p>
+<img src="https://i.imgur.com/ErKitlN.png"/></p>
 <p pic><mark>init-script.tmpl.php</mark> — Подключение дополнительных скриптов.</p>
 <p pic><mark>layout.tmpl.php</mark> — Основная разметка шаблона внтури body.</p>
 <p pic><mark>login-element.tmpl.php</mark> — Кнопка авторизации.
-<img src="http://i.imgur.com/n6AasoE.png"/></p>
+<img src="https://i.imgur.com/n6AasoE.png"/></p>
 <p pic><mark>main.tmpl.php</mark> — Общая разметка, подключение скриптов.</p>
 <p pic><mark>notes-list.tmpl.php</mark> — Список избранных постов.</p>
 <p pic><mark>notes.tmpl.php</mark> — Шаблон поста. Заголовок, текст, дата, теги, ссылка на комментарии.</p>
 <p pic><mark>pages-earlier.tmpl.php</mark> — Кнопка к постам «Ранее».
-<img src="http://i.imgur.com/Wjgz62o.png"/></p>
+<img src="https://i.imgur.com/Wjgz62o.png"/></p>
 <p pic><mark>pages-later.tmpl.php</mark> — Кнопка к постам «Позднее».
-<img src="http://i.imgur.com/g0uovmp.png"/></p>
+<img src="https://i.imgur.com/g0uovmp.png"/></p>
 <p pic><mark>pages.tmpl.php</mark> — Навигация между постами.
-<img src="http://i.imgur.com/wFFluuo.png"/></p>
+<img src="https://i.imgur.com/wFFluuo.png"/></p>
 <p pic><mark>popular.tmpl.php</mark> — Блок популярных постов.
-<img src="http://i.imgur.com/ZEmPi29.png"/></p>
+<img src="https://i.imgur.com/ZEmPi29.png"/></p>
 <p pic><mark>search.tmpl.php</mark> — Форма поиска и теги.
-<img src="http://i.imgur.com/P7mrga1.png"/></p>
+<img src="https://i.imgur.com/P7mrga1.png"/></p>
 <p pic><mark>tags-menu.tmpl.php</mark> — Список избранных тегов.
-<img src="http://i.imgur.com/RHERlFp.png"/></p>
+<img src="https://i.imgur.com/RHERlFp.png"/></p>
 <p pic><mark>tags.tmpl.php</mark> — Страница тегов.
-<img src="http://i.imgur.com/t5bEc9V.png"/></p>
+<img src="https://i.imgur.com/t5bEc9V.png"/></p>
 <p pic><mark>user-picture.tmpl.php</mark> — Аватар блога.
-<img src="http://i.imgur.com/e65kuj9.png"/></p>
+<img src="https://i.imgur.com/e65kuj9.png"/></p>
 </div>
 
 Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы <mark>../system/theme/templates</mark> в папку <mark>templates</mark> вашего шаблона и уже там производите все изменения.

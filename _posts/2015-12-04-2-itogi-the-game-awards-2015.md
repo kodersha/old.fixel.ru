@@ -1,6 +1,6 @@
 ---
 title: "Итоги The Game Awards 2015"
-thumbnail: "http://i.imgur.com/Spf4yQRl.jpg"
+thumbnail: "https://i.imgur.com/Spf4yQRl.jpg"
 old: "true"
 hidden: true
 ---
@@ -28,7 +28,7 @@ hidden: true
 <p><b>Победитель:</b> CD Projekt Red.</p>
 </div>
 
-![Итоги The Game Awards 2015](http://i.imgur.com/gbzEpgo.jpg)
+![Итоги The Game Awards 2015](https://i.imgur.com/gbzEpgo.jpg)
 
 ## Лучшая инди
 
@@ -51,7 +51,7 @@ hidden: true
 <p><b>Победитель:</b> Metal Gear Solid V: The Phantom Pain.</p>
 </div>
 
-![Итоги The Game Awards 2015](http://i.imgur.com/kknWJDG.jpg)
+![Итоги The Game Awards 2015](https://i.imgur.com/kknWJDG.jpg)
 
 ## Лучшая роль
 
@@ -74,7 +74,7 @@ hidden: true
 <p><b>Победитель:</b> Ori and the Blind Forest.</p>
 </div>
 
-![Итоги The Game Awards 2015](http://i.imgur.com/K6NJtXZ.jpg)
+![Итоги The Game Awards 2015](https://i.imgur.com/K6NJtXZ.jpg)
 
 ## Лучший саундтрек
 
@@ -97,7 +97,7 @@ hidden: true
 <p><b>Победитель:</b> Life is Strange.</p>
 </div>
 
-![Итоги The Game Awards 2015](http://i.imgur.com/taWsuVJ.png)
+![Итоги The Game Awards 2015](https://i.imgur.com/taWsuVJ.png)
 
 ## Лучший файтинг
 
@@ -120,7 +120,7 @@ hidden: true
 <p><b>Победитель:</b> No Man’s Sky.</p>
 </div>
 
-![Итоги The Game Awards 2015](http://i.imgur.com/T6mHlNV.png)
+![Итоги The Game Awards 2015](https://i.imgur.com/T6mHlNV.png)
 
 ## Лучший мультиплеер
 
@@ -143,7 +143,7 @@ hidden: true
 <p><b>Победитель:</b> Rocket League.</p>
 </div>
 
-![Итоги The Game Awards 2015](http://i.imgur.com/TcEZfat.jpg)
+![Итоги The Game Awards 2015](https://i.imgur.com/TcEZfat.jpg)
 
 ## Лучшая игра для мобильных
 

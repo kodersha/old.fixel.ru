@@ -1,6 +1,6 @@
 ---
 title: "Wallpaper Engine · Нескучные обои"
-thumbnail: "http://i.imgur.com/pPY99zo.png"
+thumbnail: "https://i.imgur.com/pPY99zo.png"
 category: "Заметки"
 tags:
 - Программа
@@ -10,7 +10,7 @@ tags:
 
 <p aside>К слову, аналогом данной программы для MacOS является — <a href="http://tracesof.net/uebersicht/">Ubersicht</a>. Он, также как и Wallpaper Engine, позволяет устанавливать анимированные обои и прочие виджеты рабочего стола.</p>
 
-![Wallpaper Engine](http://i.imgur.com/pPY99zo.png)
+![Wallpaper Engine](https://i.imgur.com/pPY99zo.png)
 
 <p caption>Обоина <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=863568819">Audio Eclipse</a> реагирующая на проигрываемую музыку разноцветными вспышками.</p>
 

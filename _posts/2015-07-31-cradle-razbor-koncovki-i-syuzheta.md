@@ -1,7 +1,7 @@
 ---
 title: "Cradle · Разбор концовки и сюжета"
 category: "Игры"
-thumbnail: "http://i.imgur.com/ITmlupGl.jpg"
+thumbnail: "https://i.imgur.com/ITmlupGl.jpg"
 tags:
 - Квест
 - Приключение
