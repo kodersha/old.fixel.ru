@@ -73,8 +73,8 @@ a {
 }
 
 ul, ol {
-	margin: 15px 0;
-	padding-left: 30px;
+    margin: 40px 20px;
+    padding-left: 0;
 }
 
 ul {
@@ -85,12 +85,19 @@ ol {
 	list-style-type: decimal;
 }
 
+li {
+	ul {
+		padding: 10px 0 10px 25px !important;
+		max-width: 100% !important;
+	}
+}
+
 ol ul, ul ol, ul ul, ol ol {
 	margin: 0;
 }
 
 ul ul, ol ul {
-	list-style-type: circle;
+	list-style-type: disc;
 }
 
 em, i {
@@ -645,7 +652,7 @@ nav {
 	
 		.posts {
 			h1.title {
-				font: 300 3em/1 $latoBlack;
+				font: 300 2.5em/1 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 60px;
 				color: $black;
@@ -779,7 +786,7 @@ nav {
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3em/1 $latoBlack;
+			font: 300 2.5em/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			padding-top: 0; 
@@ -800,7 +807,7 @@ nav {
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 3em/1 $latoBlack;
+			font: 300 2.5em/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			padding-top: 0;
@@ -817,9 +824,9 @@ nav {
 	}
 	
 	mark {
-		background-color: #f1f3f4;
+		background-color: $lightGray;
 		word-wrap: break-word;
-		padding: 0 5px;
+		padding: 5px 5px 0;
 		border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
@@ -1288,7 +1295,7 @@ nav {
 	}
 	
 	.single {
-		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, .highlight, [block] {
 			max-width: 75%;
 
 			@media (max-width : $mq-mobile) {
@@ -1361,7 +1368,7 @@ nav {
 			padding: 30px 0 0;
 			
 			&.title {
-				font-size: 3em;
+				font-size: 2.5em;
 			}
 		}
 		
@@ -1416,7 +1423,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 3em/1 $latoBlack;
+			font: 300 2.5em/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			margin: 0;
