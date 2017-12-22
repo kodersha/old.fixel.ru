@@ -1,16 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Gregor';
-  src: url("/assets/gregor/Gregor-a608c20f939163a92b6efafc3318bce93782b31ace32b1557b8dd73e952cb59e.eot");
-  src: local("Gregor"), url("/assets/gregor/Gregor-e9f956aa45235a2b94d1d462ca3d67ce82ac451301e891471b90b9756a69b40a.woff") format("woff"), url("/assets/gregor/Gregor-46741c07fe7b8d636f6f26e67849d15408f2469054523e0f22d263a1c9b69ca3.ttf") format("truetype"), url("/assets/gregor/Gregor-df066dbe0461f8d037c75f660722e77816e874c58f61536c10d6f8e1ddf3b0b9.svg") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'GregorIT';
-  src: url("/assets/gregor/GregorIT-8ad0930bb0f7fa84720f2390507b7e1c7d8ff2d551a6bf03b174812bbb3e5c9a.eot");
-  src: local("Gregor"), url("/assets/gregor/GregorIT-7009111bf30ed300689f1df5dbbbe2254c78afbc3a344976d5d17de4cfaa4965.woff") format("woff"), url("/assets/gregor/GregorIT-83ce6e84be28fbd2e87bc0552a3b21d18e29650862097d9fa01ea0b1119a57eb.ttf") format("truetype"), url("/assets/gregor/GregorIT-07ab0b87d942e2d7fc9e9e5f234ed61ca1d32a74b60893913361e95c9a5bdb7a.svg") format("svg");
-  font-weight: normal;
-  font-style: italic; }
 /* Webfont: Lato-Black */
 @font-face {
   font-family: 'LatoWebBlack';
@@ -173,6 +161,18 @@
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'Gregor';
+  src: url("/assets/gregor/Gregor-a608c20f939163a92b6efafc3318bce93782b31ace32b1557b8dd73e952cb59e.eot");
+  src: local("Gregor"), url("/assets/gregor/Gregor-e9f956aa45235a2b94d1d462ca3d67ce82ac451301e891471b90b9756a69b40a.woff") format("woff"), url("/assets/gregor/Gregor-46741c07fe7b8d636f6f26e67849d15408f2469054523e0f22d263a1c9b69ca3.ttf") format("truetype"), url("/assets/gregor/Gregor-df066dbe0461f8d037c75f660722e77816e874c58f61536c10d6f8e1ddf3b0b9.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'GregorIT';
+  src: url("/assets/gregor/GregorIT-8ad0930bb0f7fa84720f2390507b7e1c7d8ff2d551a6bf03b174812bbb3e5c9a.eot");
+  src: local("Gregor"), url("/assets/gregor/GregorIT-7009111bf30ed300689f1df5dbbbe2254c78afbc3a344976d5d17de4cfaa4965.woff") format("woff"), url("/assets/gregor/GregorIT-83ce6e84be28fbd2e87bc0552a3b21d18e29650862097d9fa01ea0b1119a57eb.ttf") format("truetype"), url("/assets/gregor/GregorIT-07ab0b87d942e2d7fc9e9e5f234ed61ca1d32a74b60893913361e95c9a5bdb7a.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
 @font-face {
   font-family: 'Fira Code';
   src: url("/assets/fira-code/eot/FiraCode-Light-c98183e31441d101b8c584a61a825a5f804edca08da96121c7da833a7457e558.eot");
@@ -374,15 +374,6 @@ select[multiple=multiple] {
   min-height: calc(100vh - 120px - 164px);
   background-color: #fff;
   height: 100%; }
-  .content article:first-of-type {
-    -webkit-animation: fadeUpIn 1s;
-    -moz-animation: fadeUpIn 1s;
-    animation: fadeUpIn 1s; }
-    @media (max-width: 900px) {
-      .content article:first-of-type {
-        -webkit-animation: none;
-        -moz-animation: none;
-        animation: none; } }
 
 .common {
   max-width: -webkit-calc(1200px + 16%);
@@ -608,16 +599,12 @@ nav {
   .post-list .pagination.bottom {
     padding-top: 100px;
     padding-bottom: 0; }
-  .post-list.tags {
-    -webkit-animation: fadeUpIn 1s;
-    -moz-animation: fadeUpIn 1s;
-    animation: fadeUpIn 1s; }
-    .post-list.tags .posts .post a {
-      color: #000; }
-    .post-list.tags .posts .post p {
-      padding: 0;
-      color: #000;
-      font-style: italic; }
+  .post-list.tags .posts .post a {
+    color: #000; }
+  .post-list.tags .posts .post p {
+    padding: 0;
+    color: #000;
+    font-style: italic; }
   .post-list.full {
     padding-bottom: 50px; }
     .post-list.full .post {
@@ -640,9 +627,6 @@ nav {
       .post-list.full {
         padding-bottom: 0; } }
   .post-list.numbers {
-    -webkit-animation: fadeUpIn 1s;
-    -moz-animation: fadeUpIn 1s;
-    animation: fadeUpIn 1s;
     padding-bottom: 0; }
     .post-list.numbers .posts h1.title {
       font: 300 2.5em/1 "LatoWebBlack", sans-serif;
@@ -660,42 +644,38 @@ nav {
     .post-list.numbers .posts .help {
       margin-top: 50px;
       margin-bottom: 50px; }
-  .post-list.gallery {
-    -webkit-animation: fadeUpIn 1s;
-    -moz-animation: fadeUpIn 1s;
-    animation: fadeUpIn 1s; }
-    .post-list.gallery .album {
-      float: left;
-      width: 33.333%; }
-      @media (max-width: 900px) {
-        .post-list.gallery .album {
-          float: none;
-          width: 100%; } }
-      .post-list.gallery .album .frame {
-        margin-right: 20px; }
-        .post-list.gallery .album .frame .thumbnail {
-          display: flex;
-          border: 0; }
-          .post-list.gallery .album .frame .thumbnail img {
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 2px;
-            width: 100%; }
-        .post-list.gallery .album .frame h1.title {
-          font: 400 1.15em/1.9 "Gregor", serif;
-          padding-bottom: 0;
-          padding-top: 10px; }
-          .post-list.gallery .album .frame h1.title .hint {
-            font: 400 14px/1.4 "LatoWeb", sans-serif;
-            padding-left: 5px;
-            color: #ddd; }
-        .post-list.gallery .album .frame:nth-child(2n) {
-          margin-right: 0; }
-    .post-list.gallery .post .actions {
-      max-width: 100%;
-      padding-top: 30px; }
-      .post-list.gallery .post .actions .date, .post-list.gallery .post .actions a {
-        margin: 0 10px 0 0; }
+  .post-list.gallery .album {
+    float: left;
+    width: 33.333%; }
+    @media (max-width: 900px) {
+      .post-list.gallery .album {
+        float: none;
+        width: 100%; } }
+    .post-list.gallery .album .frame {
+      margin-right: 20px; }
+      .post-list.gallery .album .frame .thumbnail {
+        display: flex;
+        border: 0; }
+        .post-list.gallery .album .frame .thumbnail img {
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          width: 100%; }
+      .post-list.gallery .album .frame h1.title {
+        font: 400 1.15em/1.9 "Gregor", serif;
+        padding-bottom: 0;
+        padding-top: 10px; }
+        .post-list.gallery .album .frame h1.title .hint {
+          font: 400 14px/1.4 "LatoWeb", sans-serif;
+          padding-left: 5px;
+          color: #ddd; }
+      .post-list.gallery .album .frame:nth-child(2n) {
+        margin-right: 0; }
+  .post-list.gallery .post .actions {
+    max-width: 100%;
+    padding-top: 30px; }
+    .post-list.gallery .post .actions .date, .post-list.gallery .post .actions a {
+      margin: 0 10px 0 0; }
 
 .post-single {
   padding-top: 100px; }
