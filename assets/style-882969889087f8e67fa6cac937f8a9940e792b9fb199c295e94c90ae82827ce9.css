@@ -266,7 +266,7 @@ ol {
   list-style-type: decimal; }
 
 li ul {
-  padding: 10px 0 10px 25px !important;
+  padding: 10px 0 10px 20px !important;
   max-width: 100% !important; }
 
 ol ul, ul ol, ul ul, ol ol {

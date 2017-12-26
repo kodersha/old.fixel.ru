@@ -292,7 +292,7 @@
       "title"    : "Firewatch",
       "category" : "Игры",
       "tags"     : "Приключение and Квест",
-      "url"      : "/blog/2-firewatch/",
+      "url"      : "/blog/firewatch/",
       "date"     : "2016-02-12 00:00:00 +0600"
     } ,
   
@@ -369,18 +369,18 @@
     } ,
   
     {
-      "title"    : "Итоги The Game Awards 2015",
+      "title"    : "Vampyr · Новая игра от Dontnod",
       "category" : "",
       "tags"     : "",
-      "url"      : "/blog/2-itogi-the-game-awards-2015/",
+      "url"      : "/blog/vampyr-novaya-igra-ot-dontnod/",
       "date"     : "2015-12-04 00:00:00 +0600"
     } ,
   
     {
-      "title"    : "Vampyr · Новая игра от Dontnod",
+      "title"    : "Итоги The Game Awards 2015",
       "category" : "",
       "tags"     : "",
-      "url"      : "/blog/1-vampyr-novaya-igra-ot-dontnod/",
+      "url"      : "/blog/itogi-the-game-awards-2015/",
       "date"     : "2015-12-04 00:00:00 +0600"
     } ,
   
