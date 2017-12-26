@@ -735,7 +735,7 @@ nav {
     -webkit-border-radius: 2px; }
   .post ul {
     margin: 0;
-    padding: 40px 0 20px 30px; }
+    padding: 40px 0 20px 20px; }
   .post [left] {
     font: 400 14px/1.25 "LatoWeb", sans-serif;
     color: #a0a0a0;
@@ -2086,7 +2086,8 @@ body.lb-disable-scrolling {
   display: grid; }
   .highlight pre {
     width: auto;
-    overflow: auto; }
+    overflow: auto;
+    padding-bottom: 20px; }
     .highlight pre code {
       font: 400 16px/1.4 "Fira Code", monospace;
       display: block; }
