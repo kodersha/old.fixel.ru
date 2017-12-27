@@ -980,7 +980,7 @@ nav {
     margin: 0; }
     .post .single .entry hr::before {
       position: relative;
-      content: "● ● ●"; }
+      content: "⌘ ⌘ ⌘"; }
   .post .single [full] {
     max-width: 100%; }
     .post .single [full] p, .post .single [full] h1, .post .single [full] h2, .post .single [full] h3, .post .single [full] h4, .post .single [full] blockquote, .post .single [full] hr, .post .single [full] ul, .post .single [full] .video, .post .single [full] .youtube, .post .single [full] .fotorama, .post .single [full] .highlight, .post .single [full] [block] {
