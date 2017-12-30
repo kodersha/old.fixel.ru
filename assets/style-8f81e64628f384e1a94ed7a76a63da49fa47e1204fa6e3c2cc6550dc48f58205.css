@@ -1231,14 +1231,14 @@ footer {
     background-color: #111; }
   .black nav, .black .content, .black footer {
     background-color: #000; }
-  .black .post-list.numbers .posts .post a {
+  .black .post-list.archive .posts .post a {
     color: #fff;
     border-color: #2d2d2d; }
-    .black .post-list.numbers .posts .post a:hover {
+    .black .post-list.archive .posts .post a:hover {
       border-color: #4183C4; }
-  .black .post-list.numbers .posts .post p {
+  .black .post-list.archive .posts .post p {
     color: #fff; }
-  .black .post-list.numbers .old h1.title {
+  .black .post-list.archive .old h1.title {
     color: #fff; }
   .black .post .cover {
     background-color: #111; }
