@@ -4,4 +4,4 @@
 User-agent: *
 Disallow: 
 Host: milkleaks.ru
-Sitemap: http://milkleaks.ru/sitemap.xml
+Sitemap: https://milkleaks.ru/sitemap.xml

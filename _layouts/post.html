@@ -7,26 +7,25 @@ layout: default
 <div class="content">
 	<div class="post-single">
 		<article class="post">
-			{% unless page.header == "true" %}
 			<div class="common">
 				<div class="header">
 					<h1 class="title">{{ page.title }}</h1>
 					{% include _post/old.html %}
 				</div>
 			</div>
-			{% endunless %}
 
 			{% include _post/cover.html %}
 
 			<div class="common">
-				<div class="maintenance single">
+				<div class="entry">
 					{% if page.toc == "true" %}
 						<div class="toc js-toc"></div>
-					{% endif %}
-					
-					<div class="entry js-toc-content">
+						<div class="js-toc-content">
+							{{ content }}
+						</div>
+					{% else %}
 						{{ content }}
-					</div>
+					{% endif %}
 				</div>
 					
 				<div class="actions">	

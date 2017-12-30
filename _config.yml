@@ -22,7 +22,12 @@ defaults:
       path: ""
       type: photos
     values:
-      layout: image
+      layout: photo
+  - scope:
+      path: ""
+      type: works
+    values:
+      layout: work
   - scope:
       path: ""
       type: posts
@@ -32,7 +37,10 @@ defaults:
 collections:
   photos:
     output: true
-    permalink: /photo/:year/:month/:day/:slug/
+    permalink: /photo/:title/
+  works:
+    output: true
+    permalink: /work/:title/
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:

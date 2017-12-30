@@ -1,14 +1,9 @@
-<div class="post">
-	<a class="image" href="{{ post.image }}" data-lightbox="image">
-		<img class="lazyload" src="{{ post.thumb }}" data-src="{{ post.thumb }}" data-sizes="auto" ondrag="return false" ondragdrop="return false" ondragstart="return false" />
-	</a>
-	{% if post.description %}
-		<div class="maintenance single">
-			<p>{{ post.description }}</p>
-		</div>
-	{% endif %}
-	
+<article class="post">
+	<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')" onclick="location.href='{{ post.url }}'"></div>
 	<div class="actions">
-		<span class="date" title="{{ post.date | russian_date }}"><a href="{{ post.url }}">{{ post.date | date: "%Y" }}</a></span>
+		<div class="tags">
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<div class="date">{{ post.date | russian_date }}</div>
+		</div>
 	</div>
-</div>
+</article>

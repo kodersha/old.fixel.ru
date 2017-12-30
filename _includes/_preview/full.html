@@ -1,11 +1,9 @@
 <article class="post">
-	<div class="maintenance single">
+	<div class="entry">
 		<h1 class="title">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 		</h1>
-		<div class="entry">
-			{{ post.content | split:'<!--more-->' }}
-		</div>
+		{{ post.content | split:'<!--more-->' }}
 		<div class="actions">	
 			<div class="tags">
 				<span class="date" title="{{ post.date | russian_date }}">{{ post.date | date: "%Y" }}</span>	
