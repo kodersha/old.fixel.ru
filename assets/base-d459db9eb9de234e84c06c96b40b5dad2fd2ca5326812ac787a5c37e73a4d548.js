@@ -1,7 +1,7 @@
 /* Добавляем lightbox к изображениям */
 
 
-$( ".post .maintenance p img" ).wrap(function() {
+$( ".post .entry p img" ).wrap(function() {
 	return "<div class='picture'><a href='" + $( this ).attr("src") + "' data-lightbox='image' class='image'></a></div>";
 });
 
@@ -15,28 +15,13 @@ lightbox.option({
 	'showImageNumberLabel': false
 });
 
-/* Добавляем lazy и прочие классы к изображениям
-
-$(".post .maintenance p img").each(function() {
-	$(this).addClass('lazyload');;
-	$(this).attr({
-		'data-src': $(this).attr('src'),
-		'data-sizes': 'auto',
-		'ondrag': 'return false',
-		'ondragdrop': 'return false',
-		'ondragstart': 'return false'
-	});
-});
-
-*/
-
 /* Открываем ссылки в новой вкладке */
 
-$('.post .maintenance p a').attr('target','_blank');
+$('.post .entry p a').attr('target','_blank');
 
 /* Настраиваем fotorama */
 
-$('.post .maintenance .fotorama').fotorama({
+$('.post .entry .fotorama').fotorama({
 	width: '100%',
 	maxwidth: '100%',
 	ratio: 16/9,
@@ -46,7 +31,7 @@ $('.post .maintenance .fotorama').fotorama({
 
 /* Подменяем youtube плеер картинкой */
 
-$(".post .maintenance .youtube").each(function() {
+$(".post .entry .youtube").each(function() {
 	$(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg', 'class': 'lazyload', 'data-src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg'}));
 
 	$(this).append($('<div/>', {'class': 'play'}));
