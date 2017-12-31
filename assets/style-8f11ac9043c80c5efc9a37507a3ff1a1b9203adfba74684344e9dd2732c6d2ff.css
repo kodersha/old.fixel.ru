@@ -1019,7 +1019,7 @@ nav {
     width: 100%; }
     @media (max-width: 900px) {
       .post .actions {
-        padding-top: 40px;
+        padding-top: 30px;
         max-width: 100%; } }
     .post .actions .tags {
       margin-bottom: -5px;
@@ -1053,7 +1053,9 @@ nav {
     @media (max-width: 900px) {
       .post .cover {
         height: 100vh;
-        min-height: initial; } }
+        min-height: initial;
+        margin-top: 20px;
+        margin-bottom: 10px; } }
     .post .cover.top {
       background-position: center top; }
     .post .cover.bottom {
