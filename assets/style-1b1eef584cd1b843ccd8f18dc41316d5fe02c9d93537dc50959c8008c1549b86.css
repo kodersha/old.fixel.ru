@@ -995,6 +995,9 @@ nav {
     .post hr::before {
       position: relative;
       content: "⌘ ⌘ ⌘"; }
+    @media (max-width: 900px) {
+      .post hr {
+        padding-top: 10px; } }
   .post blockquote {
     position: relative;
     padding-left: 65px;
