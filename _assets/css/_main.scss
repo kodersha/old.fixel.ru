@@ -523,10 +523,6 @@ nav {
 			margin-bottom: 0;
 		}
 	}
-	
-	@media (max-width : $mq-mobile) {
-		padding-top: 30px;
-	}
 }
 
 .post-list {
@@ -610,6 +606,11 @@ nav {
 				letter-spacing: -.01em;
 				padding-bottom: 60px;
 				color: $black;
+
+				@media (max-width : $mq-mobile) {
+					font-size: 2rem;
+					padding-bottom: 30px;
+				}
 			}
 			
 			.post {
@@ -644,6 +645,11 @@ nav {
 				letter-spacing: -.01em;
 				padding-bottom: 60px;
 				color: $black;
+
+				@media (max-width : $mq-mobile) {
+					font-size: 2rem;
+					padding-bottom: 30px;
+				}				
 			}
 
 			article {
@@ -990,6 +996,14 @@ nav {
 					padding-top: 20px;
 				}
 			}
+
+			&:last-of-type {
+				padding-bottom: 20px;
+
+				@media (max-width : $mq-mobile) {
+					padding-bottom: 10px;
+				}
+			}
 		}
 
 		&.no-padding {
@@ -1246,7 +1260,8 @@ nav {
 		width: 100vw;
 		height: 60vh;
 		opacity: 0.9;
-		margin-top: 30px;
+		margin-top: 40px;
+		margin-bottom: 20px;
 		min-height: 350px;
 		position: relative;
 		background-size: cover;
