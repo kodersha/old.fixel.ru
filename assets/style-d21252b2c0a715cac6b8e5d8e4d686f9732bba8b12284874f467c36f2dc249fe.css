@@ -564,9 +564,6 @@ nav {
       color: #a0a0a0; }
     .posts .post:last-child {
       margin-bottom: 0; }
-  @media (max-width: 900px) {
-    .posts {
-      padding-top: 30px; } }
 
 .post-list {
   padding-top: 100px;
@@ -615,6 +612,10 @@ nav {
       letter-spacing: -.01em;
       padding-bottom: 60px;
       color: #000; }
+      @media (max-width: 900px) {
+        .post-list.archive .posts h1.title {
+          font-size: 2rem;
+          padding-bottom: 30px; } }
     .post-list.archive .posts .post {
       margin-bottom: 10px; }
       .post-list.archive .posts .post a {
@@ -635,6 +636,10 @@ nav {
       letter-spacing: -.01em;
       padding-bottom: 60px;
       color: #000; }
+      @media (max-width: 900px) {
+        .post-list.gallery .posts h1.title {
+          font-size: 2rem;
+          padding-bottom: 30px; } }
     .post-list.gallery .posts article {
       float: left;
       clear: right;
@@ -859,6 +864,11 @@ nav {
       @media (max-width: 900px) {
         .post [block] p:first-of-type {
           padding-top: 20px; } }
+    .post [block] p:last-of-type {
+      padding-bottom: 20px; }
+      @media (max-width: 900px) {
+        .post [block] p:last-of-type {
+          padding-bottom: 10px; } }
   .post [block].no-padding p {
     padding: 0 !important; }
     .post [block].no-padding p:first-of-type {
@@ -1031,7 +1041,8 @@ nav {
     width: 100vw;
     height: 60vh;
     opacity: 0.9;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     min-height: 350px;
     position: relative;
     background-size: cover;
