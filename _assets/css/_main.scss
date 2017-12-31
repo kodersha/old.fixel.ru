@@ -1220,7 +1220,7 @@ nav {
 		width: 100%;
 		
 		@media (max-width : $mq-mobile) {
-			padding-top: 40px;
+			padding-top: 30px;
 			max-width: 100%;
 		}
 		
@@ -1273,6 +1273,8 @@ nav {
 		@media (max-width : $mq-mobile) {
 			height: 100vh;
 			min-height: initial;
+			margin-top: 20px;
+			margin-bottom: 10px;
 		}
 
 		&.top {
