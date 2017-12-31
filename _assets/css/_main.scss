@@ -1188,6 +1188,10 @@ nav {
 			position: relative;
 			content: "⌘ ⌘ ⌘";
 		}
+
+		@media (max-width : $mq-mobile) {
+			padding-top: 10px;
+		}
 	}
 		
 	blockquote {
