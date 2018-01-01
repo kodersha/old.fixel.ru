@@ -7,6 +7,10 @@
 		overflow: auto;
 		padding-bottom: 20px;
 
+		@media (max-width : $mq-mobile) {
+			padding-bottom: 10px;
+		}
+
 		code {
 			font: 400 16px/1.4 $firaCode;
 			display: block;

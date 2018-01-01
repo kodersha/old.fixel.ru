@@ -71,26 +71,6 @@ a {
 	}
 }
 
-ul, ol {
-    margin: 40px 0 20px 20px;
-    padding-left: 0;
-}
-
-ul {
-	list-style-type: disc;
-}
-
-ol {
-	list-style-type: decimal;
-}
-
-li {
-	ul {
-		padding: 10px 0 10px 20px !important;
-		max-width: 100% !important;
-	}
-}
-
 ol ul, ul ol, ul ul, ol ol {
 	margin: 0;
 }
@@ -779,6 +759,30 @@ nav {
 			&:last-of-type {
 				padding-bottom: 0;
 			}
+		}
+	}
+
+	ul, ol {
+		margin: 40px 0 20px 20px;
+		padding-left: 0;
+		
+		@media (max-width : $mq-mobile) {
+			margin: 20px 0 10px 20px;
+		}
+	}
+	
+	ul {
+		list-style-type: disc;
+	}
+	
+	ol {
+		list-style-type: decimal;
+	}
+	
+	li {
+		ul {
+			padding: 10px 0 10px 20px !important;
+			max-width: 100% !important;
 		}
 	}
 	
