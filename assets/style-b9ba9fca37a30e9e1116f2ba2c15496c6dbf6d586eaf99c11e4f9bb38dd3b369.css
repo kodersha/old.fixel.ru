@@ -255,20 +255,6 @@ a {
   a:hover, a:active, a.active {
     border-color: #4183C4; }
 
-ul, ol {
-  margin: 40px 0 20px 20px;
-  padding-left: 0; }
-
-ul {
-  list-style-type: disc; }
-
-ol {
-  list-style-type: decimal; }
-
-li ul {
-  padding: 10px 0 10px 20px !important;
-  max-width: 100% !important; }
-
 ol ul, ul ol, ul ul, ol ol {
   margin: 0; }
 
@@ -719,6 +705,19 @@ nav {
           padding-bottom: 10px; }
         .post p:last-of-type {
           padding-bottom: 0; } }
+  .post ul, .post ol {
+    margin: 40px 0 20px 20px;
+    padding-left: 0; }
+    @media (max-width: 900px) {
+      .post ul, .post ol {
+        margin: 20px 0 10px 20px; } }
+  .post ul {
+    list-style-type: disc; }
+  .post ol {
+    list-style-type: decimal; }
+  .post li ul {
+    padding: 10px 0 10px 20px !important;
+    max-width: 100% !important; }
   .post img {
     position: relative;
     -webkit-border-radius: 2px;
@@ -2128,6 +2127,9 @@ body.lb-disable-scrolling {
     width: auto;
     overflow: auto;
     padding-bottom: 20px; }
+    @media (max-width: 900px) {
+      .highlight pre {
+        padding-bottom: 10px; } }
     .highlight pre code {
       font: 400 16px/1.4 "Fira Code", monospace;
       display: block; }
