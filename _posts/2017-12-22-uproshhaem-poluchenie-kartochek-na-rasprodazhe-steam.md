@@ -1,7 +1,6 @@
 ---
 title: "Упрощаем получение карточек на распродаже Steam"
 category: "Заметки"
-thumbnail: "https://i.imgur.com/LURxN1pl.png"
 tags:
 - Steam
 - Гайд
