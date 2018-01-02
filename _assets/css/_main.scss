@@ -250,8 +250,8 @@ nav {
     position: relative;
 	
 	.common {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	
 	.navigation {
@@ -477,8 +477,6 @@ nav {
 //
 
 .posts {
-    margin-bottom: 0;
-    margin-top: 0;
 	color: $gray;
 	
 	.post {
@@ -500,14 +498,14 @@ nav {
 		}
 		
 		&:last-child {
-			margin-bottom: 0;
+			margin-bottom: 0 !important;
 		}
 	}
 }
 
 .post-list {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 60px;
 	
 	@media (max-width : $mq-mobile) {
 		padding-bottom: 30px;
@@ -534,9 +532,7 @@ nav {
 		}
 	}
 	
-	&.full {
-		padding-bottom: 50px;
-	
+	&.full {	
 		.post {		
 			padding-top: 100px;
 			padding-bottom: 100px;
@@ -578,7 +574,6 @@ nav {
 		-webkit-animation: fadeUpIn 1s;
 		-moz-animation: fadeUpIn 1s;
 		animation: fadeUpIn 1s;
-		padding-bottom: 0;
 	
 		.posts {
 			h1.title {
@@ -1221,7 +1216,7 @@ nav {
 	.actions {
 		font: 400 16px/1.4 $lato;
 		padding-top: 60px;
-		padding-bottom: 80px;
+		padding-bottom: 60px;
 		max-width: 75%;
 		display: table;
 		height: 100%;
@@ -1301,7 +1296,7 @@ nav {
 //
 
 .page {
-	padding-top: 100px;
+	padding-top: 60px;
 
 	h1 {	
 		&.title {
@@ -1391,8 +1386,8 @@ button {
 //
 
 .pagination {
-	padding-bottom: 100px;
-	padding-top: 100px;
+	padding-bottom: 60px;
+	padding-top: 60px;
     display: table;
 	width: 100%;
 	
@@ -1463,10 +1458,9 @@ footer {
 	
 	.common {
 		padding-bottom: 10px;
-		padding-top: 50px;
 		
 		@media (max-width : $mq-mobile) {
-			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 	
