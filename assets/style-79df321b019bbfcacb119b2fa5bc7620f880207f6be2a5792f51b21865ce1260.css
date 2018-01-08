@@ -174,12 +174,6 @@
   font-weight: normal;
   font-style: italic; }
 @font-face {
-  font-family: 'Gilroy-ExtraBold';
-  src: url("/assets/gilroy/358235_0_0-d5df8b8f778600872d1889496e2a7d8b44363b8b62a315faaeba9bd418965177.eot");
-  src: local("Gilroy-ExtraBold"), url("/assets/gilroy/358235_0_0-d5df8b8f778600872d1889496e2a7d8b44363b8b62a315faaeba9bd418965177.eot") format("embedded-opentype"), url("/assets/gilroy/358235_0_0-9b800e1bf340ed80e63ceaba55e6dd5afea597af54b24659fa440ad989a130b5.woff2") format("woff2"), url("/assets/gilroy/358235_0_0-db4d72aff85fe017024c19d0784926a348efaa7f13edb69bbd88ff46cf65355e.woff") format("woff"), url("/assets/gilroy/358235_0_0-9e7583bec480b317ef305e55f35df85cb2bd2d747405cb05f095311cdbe32223.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
   font-family: 'Fira Code';
   src: url("/assets/fira-code/eot/FiraCode-Light-c98183e31441d101b8c584a61a825a5f804edca08da96121c7da833a7457e558.eot");
   src: local("Fira Code"), url("/assets/fira-code/eot/FiraCode-Light-c98183e31441d101b8c584a61a825a5f804edca08da96121c7da833a7457e558.eot") format("embedded-opentype"), url("/assets/fira-code/woff2/FiraCode-Light-74403b50c46269d1a50157a59bcf8ff7c18952990406653cb3eaa98060e113a1.woff2") format("woff2"), url("/assets/fira-code/woff/FiraCode-Light-cbd2329f5df5c460a2a266aa43c2289daa097c2b727d0419ba58f16f6ac60d5e.woff") format("woff"), url("/assets/fira-code/ttf/FiraCode-Light-fc95081cb8ee7082a1a8886947c2bbd09eaa573b6480f2eb7b3a36795d3c7285.ttf") format("truetype");
@@ -592,7 +586,7 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.archive .posts h1.title {
-      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
+      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 40px;
       color: #000; }
@@ -615,7 +609,7 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.gallery .posts h1.title {
-      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
+      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 40px;
       color: #000; }
@@ -704,7 +698,7 @@ nav {
     font: 400 1.5em/1.4 "Gregor", serif;
     padding: 60px 0 0; }
     .post h1.title {
-      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
+      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -719,7 +713,7 @@ nav {
     padding-bottom: 10px;
     padding-top: 30px; }
     .post h2.title {
-      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
+      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -1046,7 +1040,7 @@ nav {
 .page {
   padding-top: 60px; }
   .page h1.title {
-    font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
+    font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
     letter-spacing: -.01em;
     padding-bottom: 20px;
     margin: 0; }
