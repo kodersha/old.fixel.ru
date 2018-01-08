@@ -775,11 +775,15 @@ nav {
       .post [left] {
         float: none;
         clear: none;
-        font-size: 16px;
+        font-size: 14px;
         max-width: 100% !important;
         padding-top: 20px;
         padding-left: 0;
-        padding-bottom: 10px; } }
+        padding-bottom: 10px; }
+        .post [left] p {
+          padding: 0; }
+          .post [left] p:first-of-type {
+            padding: 0; } }
   .post [main] {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -820,7 +824,7 @@ nav {
       float: none;
       clear: none; }
     .post [aside] {
-      font-size: 1em; }
+      font-size: 14px; }
       .post [aside] p:first-of-type {
         padding: 0; }
     .post [main] + [aside] {
@@ -833,13 +837,19 @@ nav {
       padding-left: 0;
       margin: 0; } }
   .post [caption] {
-    font: 300 1rem/1.4 "LatoWeb", sans-serif;
+    font: 300 1rem/1.25 "LatoWeb", sans-serif;
     color: #81868e;
     padding-top: 0;
     padding-bottom: 10px; }
+    @media (max-width: 900px) {
+      .post [caption] {
+        font-size: 14px; } }
   .post [quote] {
-    font: 300 1rem/1.4 "LatoWeb", sans-serif;
+    font: 300 1rem/1.25 "LatoWeb", sans-serif;
     text-align: center; }
+    @media (max-width: 900px) {
+      .post [quote] {
+        font-size: 14px; } }
   .post [block] p {
     padding-top: 0;
     padding-bottom: 0;
