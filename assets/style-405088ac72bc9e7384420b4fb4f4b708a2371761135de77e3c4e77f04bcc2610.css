@@ -174,6 +174,12 @@
   font-weight: normal;
   font-style: italic; }
 @font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url("/assets/gilroy/358235_0_0-d5df8b8f778600872d1889496e2a7d8b44363b8b62a315faaeba9bd418965177.eot");
+  src: local("Gilroy-ExtraBold"), url("/assets/gilroy/358235_0_0-d5df8b8f778600872d1889496e2a7d8b44363b8b62a315faaeba9bd418965177.eot") format("embedded-opentype"), url("/assets/gilroy/358235_0_0-9b800e1bf340ed80e63ceaba55e6dd5afea597af54b24659fa440ad989a130b5.woff2") format("woff2"), url("/assets/gilroy/358235_0_0-db4d72aff85fe017024c19d0784926a348efaa7f13edb69bbd88ff46cf65355e.woff") format("woff"), url("/assets/gilroy/358235_0_0-9e7583bec480b317ef305e55f35df85cb2bd2d747405cb05f095311cdbe32223.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
   font-family: 'Fira Code';
   src: url("/assets/fira-code/eot/FiraCode-Light-c98183e31441d101b8c584a61a825a5f804edca08da96121c7da833a7457e558.eot");
   src: local("Fira Code"), url("/assets/fira-code/eot/FiraCode-Light-c98183e31441d101b8c584a61a825a5f804edca08da96121c7da833a7457e558.eot") format("embedded-opentype"), url("/assets/fira-code/woff2/FiraCode-Light-74403b50c46269d1a50157a59bcf8ff7c18952990406653cb3eaa98060e113a1.woff2") format("woff2"), url("/assets/fira-code/woff/FiraCode-Light-cbd2329f5df5c460a2a266aa43c2289daa097c2b727d0419ba58f16f6ac60d5e.woff") format("woff"), url("/assets/fira-code/ttf/FiraCode-Light-fc95081cb8ee7082a1a8886947c2bbd09eaa573b6480f2eb7b3a36795d3c7285.ttf") format("truetype");
@@ -307,9 +313,6 @@ select[multiple=multiple] {
 
 .gmnoprint img {
   max-width: none; }
-
-.date {
-  color: #a0a0a0; }
 
 ::-moz-selection {
   color: #000;
@@ -447,8 +450,8 @@ nav {
         box-shadow: none;
         border: none;
         background: transparent;
-        padding: 0px 100px 0 25px;
-        font-size: 16px; }
+        padding: 0 100px 0 25px;
+        font-size: 14px; }
         nav .search-base .search .search-box:focus {
           outline: none; }
       nav .search-base .search .search-button {
@@ -589,14 +592,13 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.archive .posts h1.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
       letter-spacing: -.01em;
-      padding-bottom: 60px;
+      padding-bottom: 40px;
       color: #000; }
       @media (max-width: 900px) {
         .post-list.archive .posts h1.title {
-          font-size: 2rem;
-          padding-bottom: 30px; } }
+          font-size: 2rem; } }
     .post-list.archive .posts .post {
       margin-bottom: 10px; }
       .post-list.archive .posts .post a {
@@ -613,14 +615,13 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.gallery .posts h1.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
       letter-spacing: -.01em;
-      padding-bottom: 60px;
+      padding-bottom: 40px;
       color: #000; }
       @media (max-width: 900px) {
         .post-list.gallery .posts h1.title {
-          font-size: 2rem;
-          padding-bottom: 30px; } }
+          font-size: 2rem; } }
     .post-list.gallery .posts article {
       float: left;
       clear: right;
@@ -669,7 +670,7 @@ nav {
   font: 400 1.25em/1.4 "Gregor", serif; }
   @media (max-width: 900px) {
     .post {
-      font-size: 1.1em; } }
+      font-size: 1em; } }
   .post .header {
     max-width: 75%; }
     @media (max-width: 900px) {
@@ -686,33 +687,12 @@ nav {
       max-width: 100%; }
   .post p {
     margin: 0;
-    padding-top: 40px;
-    padding-bottom: 20px; }
+    padding-top: 20px;
+    padding-bottom: 10px; }
     .post p:first-of-type {
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
     .post p:last-of-type {
       padding-bottom: 0; }
-    @media (max-width: 900px) {
-      .post p {
-        padding-top: 20px;
-        padding-bottom: 10px; }
-        .post p:first-of-type {
-          padding-bottom: 10px; }
-        .post p:last-of-type {
-          padding-bottom: 0; } }
-  .post ul, .post ol {
-    margin: 40px 0 20px 20px;
-    padding-left: 0; }
-    @media (max-width: 900px) {
-      .post ul, .post ol {
-        margin: 20px 0 10px 20px; } }
-  .post ul {
-    list-style-type: disc; }
-  .post ol {
-    list-style-type: decimal; }
-  .post li ul {
-    padding: 10px 0 10px 20px !important;
-    max-width: 100% !important; }
   .post img {
     position: relative;
     -webkit-border-radius: 2px;
@@ -724,22 +704,22 @@ nav {
     font: 400 1.5em/1.4 "Gregor", serif;
     padding: 60px 0 0; }
     .post h1.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
       @media (max-width: 900px) {
         .post h1.title {
-          font-size: 2rem;
-          padding-bottom: 10px; } }
+          font-size: 2rem; } }
       .post h1.title a {
         color: #000;
         border-bottom: 0; }
   .post h2 {
-    font: 400 1.5em/1.4 "Gregor", serif;
-    padding: 60px 0 0; }
+    font: 400 1.3em/1.4 "LatoWebBlack", sans-serif;
+    padding-bottom: 10px;
+    padding-top: 30px; }
     .post h2.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -755,12 +735,29 @@ nav {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
+  .post ul, .post ol {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 10px; }
   .post ul {
     margin: 0;
-    padding: 40px 0 20px 20px; }
+    list-style-type: disc;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 10px; }
+  .post ol {
+    list-style-type: decimal; }
+  .post li ul {
+    padding-top: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px !important;
+    max-width: 100% !important; }
   .post [left] {
-    font: 400 14px/1.25 "LatoWeb", sans-serif;
-    color: #a0a0a0;
+    font: 300 14px/1.25 "LatoWeb", sans-serif;
+    color: #81868e;
     float: right;
     clear: left;
     width: 100%;
@@ -777,7 +774,7 @@ nav {
     .post [left] p {
       padding: 0; }
       .post [left] p:first-of-type {
-        padding-top: 40px; }
+        padding-top: 20px; }
     .post [left] p, .post [left] h1, .post [left] h2, .post [left] h3, .post [left] h4, .post [left] blockquote, .post [left] hr, .post [left] ul, .post [left] .video, .post [left] .youtube, .post [left] .fotorama, .post [left] .highlight, .post [left] [block] {
       max-width: 100% !important; }
     @media (max-width: 900px) {
@@ -790,7 +787,8 @@ nav {
         padding-left: 0;
         padding-bottom: 10px; } }
   .post [main] {
-    padding: 40px 0 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     max-width: 75%;
     width: 100%;
     float: left;
@@ -798,18 +796,18 @@ nav {
     .post [main] p, .post [main] h1, .post [main] h2, .post [main] h3, .post [main] h4, .post [main] blockquote, .post [main] hr, .post [main] ul, .post [main] .video, .post [main] .youtube, .post [main] .fotorama, .post [main] .highlight, .post [main] [block] {
       max-width: 100% !important; }
   .post [aside] {
-    font: 400 14px/1.25 "LatoWeb", sans-serif;
-    color: #a0a0a0; }
+    font: 300 14px/1.25 "LatoWeb", sans-serif;
+    color: #81868e; }
     .post [aside] img {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
-      margin: 0 0 20px;
+      margin: 0 0 10px;
       cursor: pointer; }
     .post [aside] p {
       padding: 0; }
       .post [aside] p:first-of-type {
-        padding: 40px 0 0; }
+        padding-top: 20px; }
     .post [aside] p, .post [aside] h1, .post [aside] h2, .post [aside] h3, .post [aside] h4, .post [aside] blockquote, .post [aside] hr, .post [aside] ul, .post [aside] .video, .post [aside] .youtube, .post [aside] .fotorama, .post [aside] .highlight, .post [aside] [block] {
       max-width: 100% !important; }
   .post [main] + [aside] {
@@ -824,13 +822,11 @@ nav {
     clear: left; }
   @media (max-width: 900px) {
     .post [main] {
-      padding-top: 20px;
-      padding-bottom: 10px;
       max-width: 100%;
       float: none;
       clear: none; }
     .post [aside] {
-      font-size: 16px; }
+      font-size: 1em; }
       .post [aside] p:first-of-type {
         padding: 0; }
     .post [main] + [aside] {
@@ -839,35 +835,25 @@ nav {
       display: inline-block;
       text-align: left;
       width: 100%;
-      padding: 20px 0 0;
+      padding-top: 20px;
+      padding-left: 0;
       margin: 0; } }
   .post [caption] {
-    font: 400 16px/1.4 "LatoWeb", sans-serif;
-    color: #a0a0a0;
-    padding: 0; }
-    @media (max-width: 900px) {
-      .post [caption] {
-        margin: 0; } }
+    font: 300 1rem/1.4 "LatoWeb", sans-serif;
+    color: #81868e;
+    padding-top: 0;
+    padding-bottom: 10px; }
   .post [quote] {
-    font: 400 16px/1.4 "LatoWeb", sans-serif;
+    font: 300 1rem/1.4 "LatoWeb", sans-serif;
     text-align: center; }
   .post [block] p {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     max-width: 100% !important; }
     .post [block] p:first-of-type {
-      padding-top: 40px; }
-      @media (max-width: 900px) {
-        .post [block] p:first-of-type {
-          padding-top: 20px; } }
+      padding-top: 20px; }
     .post [block] p:last-of-type {
-      padding-bottom: 20px; }
-      @media (max-width: 900px) {
-        .post [block] p:last-of-type {
-          padding-bottom: 10px; } }
-  .post [block].no-padding p {
-    padding: 0 !important; }
-    .post [block].no-padding p:first-of-type {
-      padding-top: 0 !important; }
+      padding-bottom: 10px; }
   .post [pic] {
     padding: 0 !important; }
     .post [pic] img {
@@ -932,7 +918,8 @@ nav {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    margin: 40px 0 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
     width: 100%; }
     .post .youtube img {
       width: 100%;
@@ -978,49 +965,47 @@ nav {
   .post .picture a {
     border-bottom: 0; }
   .post .fotorama {
-    padding: 40px 0 20px; }
+    padding-top: 20px;
+    padding-bottom: 10px; }
   .post hr {
     line-height: normal;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     display: block;
     border: none;
     margin: 0; }
     .post hr::before {
       position: relative;
-      content: "⌘ ⌘ ⌘"; }
-    @media (max-width: 900px) {
-      .post hr {
-        padding-top: 10px; } }
+      content: "× × ×"; }
   .post blockquote {
     position: relative;
     padding-left: 65px;
-    padding-top: 40px;
-    padding-bottom: 20px; }
+    padding-top: 20px;
+    padding-bottom: 10px; }
     .post blockquote::after {
       content: "\201C";
       font-size: 4em;
       position: absolute;
-      top: 25px;
-      left: -7px; }
+      top: 5px;
+      left: 0; }
     .post blockquote p {
-      padding: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
       max-width: 100% !important; }
   .post .actions {
-    font: 400 16px/1.4 "LatoWeb", sans-serif;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    font: 300 16px/1.4 "LatoWeb", sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #81868e;
     max-width: 75%;
     display: table;
     height: 100%;
     width: 100%; }
     @media (max-width: 900px) {
       .post .actions {
-        padding-top: 30px;
         max-width: 100%; } }
     .post .actions .tags {
-      margin-bottom: -5px;
-      color: #a0a0a0; }
+      margin-bottom: -5px; }
       .post .actions .tags a {
         display: inline-block;
         margin: 0 5px 5px 0; }
@@ -1030,17 +1015,19 @@ nav {
           margin: 0 5px 5px 0; }
       .post .actions .tags .point {
         font-size: 1.25em;
-        line-height: 0; }
+        line-height: 0;
+        color: #81868e; }
     .post .actions .date {
       margin: 0 5px 5px 0; }
       .post .actions .date a {
-        color: #a0a0a0; }
+        color: #000;
+        opacity: .5; }
   .post .cover {
     width: 100vw;
     height: 60vh;
     opacity: 0.9;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     min-height: 350px;
     position: relative;
     background-size: cover;
@@ -1050,9 +1037,7 @@ nav {
     @media (max-width: 900px) {
       .post .cover {
         height: 100vh;
-        min-height: initial;
-        margin-top: 20px;
-        margin-bottom: 10px; } }
+        min-height: initial; } }
     .post .cover.top {
       background-position: center top; }
     .post .cover.bottom {
@@ -1061,14 +1046,14 @@ nav {
 .page {
   padding-top: 60px; }
   .page h1.title {
-    font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+    font: 300 2.5rem/1 "Gilroy-ExtraBold", sans-serif;
     letter-spacing: -.01em;
     padding-bottom: 20px;
     margin: 0; }
     @media (max-width: 900px) {
       .page h1.title {
         padding-bottom: 10px;
-        font-size: 2em; } }
+        font-size: 2rem; } }
 
 button {
   float: left;
@@ -1167,16 +1152,12 @@ footer {
       footer .common {
         padding-bottom: 0; } }
   footer .copyright {
-    color: #a0a0a0; }
+    color: #81868e; }
     footer .copyright a {
-      color: #a0a0a0;
+      color: #81868e;
       border-color: #ddd; }
       footer .copyright a:hover {
         border-color: #a0a0a0; }
-  footer .engine {
-    color: #ddd; }
-    footer .engine a {
-      color: #ddd; }
   footer .counter {
     text-align: right;
     display: table;
@@ -2539,12 +2520,10 @@ body.lb-disable-scrolling {
   .highlight pre {
     width: auto;
     overflow: auto;
-    padding-bottom: 20px; }
-    @media (max-width: 900px) {
-      .highlight pre {
-        padding-bottom: 10px; } }
+    padding-top: 20px;
+    padding-bottom: 10px; }
     .highlight pre code {
-      font: 400 16px/1.4 "Fira Code", monospace;
+      font: 400 1rem/1.4 "Fira Code", monospace;
       display: block; }
       @media (max-width: 900px) {
         .highlight pre code {
@@ -2829,7 +2808,7 @@ body.lb-disable-scrolling {
   position: relative;
   overflow-y: auto;
   background: #f1f3f4;
-  margin: 30px 0 0 20px;
+  margin: 20px 0 0 20px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -2840,7 +2819,7 @@ body.lb-disable-scrolling {
   clear: left; }
   @media (max-width: 900px) {
     .toc {
-      margin: 30px 0 0;
+      margin: 20px 0 0;
       position: relative;
       max-width: 100%;
       width: 100%;
