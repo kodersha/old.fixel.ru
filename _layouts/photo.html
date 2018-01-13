@@ -20,7 +20,8 @@ layout: default
 					{{ content }}
 				</div>
 					
-				<div class="actions">	
+				<div class="actions">
+					{% include likely.html %}
 					<div class="tags">
 						<span class="date">{{ page.date | russian_date }}</span>
 					</div>
@@ -31,5 +32,4 @@ layout: default
 </div>
 
 {% include breadcrumbs.html %}
-{% include likely.html %}
 {% include_cached footer.html %}

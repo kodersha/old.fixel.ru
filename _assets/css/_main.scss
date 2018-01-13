@@ -15,6 +15,7 @@ html {
 
 body {
 	-webkit-font-smoothing: subpixel-antialiased;
+	text-rendering: optimizeLegibility;
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
@@ -177,12 +178,6 @@ select[multiple=multiple] {
 			-webkit-animation: fadeUpIn 1s;
 			-moz-animation: fadeUpIn 1s;
 			animation: fadeUpIn 1s;
-			
-			@media (max-width : $mq-mobile) {
-				-webkit-animation: none;
-				-moz-animation: none;
-				animation: none;	
-			}
 		}
 	}
 }
@@ -246,8 +241,8 @@ nav {
     position: relative;
 	
 	.common {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	
 	.navigation {
@@ -286,16 +281,9 @@ nav {
 		.frame {
 			display: table-cell;
 			vertical-align: middle;
-			transform: translateX(-20px);
-			transition: all .2s ease;
-			opacity: 0;
+			position: relative;
+			left: 50px;
 		}
-		
-		&:hover .frame {
-			transform: translateX(0);
-			opacity: 1;
-		}
-
 	}
 	
 	.search-base {
@@ -501,10 +489,20 @@ nav {
 
 .post-list {
 	padding-top: 100px;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 	
 	@media (max-width : $mq-mobile) {
-		padding-bottom: 30px;
+		padding-bottom: 50px;
+	}
+
+	.posts {
+		h1 {
+			&.title {
+				a {
+					border-bottom: 0;
+				}
+			}
+		}
 	}
 	
 	&.tags {
@@ -532,21 +530,10 @@ nav {
 		.post {		
 			padding-top: 100px;
 			padding-bottom: 100px;
-		
-			h1 {
-				&.title {
-					padding-top: 0;
-					margin-left: 0;
-				}
-			}
-			
-			.actions {
-				padding-bottom: 0;
-			}
-			
+
 			@media (max-width : $mq-mobile) {
 				padding-top: 50px;
-				padding-bottom: 50px;				
+				padding-bottom: 50px;
 			}
 		}
 		
@@ -559,11 +546,6 @@ nav {
 				padding-bottom: 0;
 			}
 		}
-		
-		@media (max-width : $mq-mobile) {
-			padding-bottom: 0;
-		}
-		
 	}
 	
 	&.archive {
@@ -573,7 +555,7 @@ nav {
 	
 		.posts {
 			h1.title {
-				font: 300 2.25rem/1 $latoBlack;
+				font: 300 2.5rem/1 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -603,15 +585,15 @@ nav {
 			}
 		}
 	}
-	
-	&.gallery {
+
+	&.work, &.photo {
 		-webkit-animation: fadeUpIn 1s;
 		-moz-animation: fadeUpIn 1s;
 		animation: fadeUpIn 1s;
 
 		.posts {
 			h1.title {
-				font: 300 2.25rem/1 $latoBlack;
+				font: 300 2.5rem/1 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -621,48 +603,49 @@ nav {
 				}				
 			}
 
+			.grid {
+				position: relative;
+				margin-left: -10px;
+				margin-right: -10px;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+
+				article {
+					margin-left: 10px;
+					margin-right: 10px;
+					margin-bottom: 20px;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					-ms-flex: 1 1 300px;
+					flex: 1 1 300px;
+				}
+			}
+
 			article {
 				float: left;
-				clear: right;
-				width: 33.333%;
-				padding-left: 10px;
-				padding-right: 10px;
-				padding-bottom: 20px;
 				position: relative;
-				
-				&:nth-of-type(3n) {
-					padding-right: 0;
-				}
-	
-				&:nth-of-type(3n+1) {
-					padding-left: 0;
-				}
-	
-				@media (max-width : $mq-mobile) {
-					width: 100%;
-					float: none;
-					clear: none;
-					padding-right: 0;
-					padding-left: 0;
+
+				&:first-of-type {
+					-webkit-animation: none;
+					-moz-animation: none;
+					animation: none;
 				}
 
 				&.post {
 					.thumbnail {
 						width: 100%;
-						height: 200px;
 						cursor: pointer;
 						background-size: cover;
 						background-color: $lightGray;
 						background-position: center center;
-						-webkit-border-radius: 2px;
-						-moz-border-radius: 2px;
-						border-radius: 2px;
 					}
 		
 					.actions {
-						max-width: 100%;
-						padding-bottom: 0;
 						padding-top: 20px;
+						padding-bottom: 0;
+						line-height: 1.25;
 
 						.tags {
 							a {
@@ -673,10 +656,51 @@ nav {
 							}
 
 							.date {
-								margin: 0;
+								margin: 0 0 5px 0;
+								font-size: 14px;
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+
+	&.work {
+		article {
+			&.post {
+				&:before {
+					content: '● ● ●';
+					display: block;
+					font-size: 18px;
+					padding: 2px 10px;
+					line-height: 20px;
+					color: #999;
+					width: 100%;
+					text-align: left;
+					background-color: #bbb;
+					border-top-left-radius: 2px;
+					border-top-right-radius: 2px;
+					font-family: "Helvetica", sans-serif;
+				}
+
+				.thumbnail {
+					height: 261px;
+					border-bottom-left-radius: 2px;
+					border-bottom-right-radius: 2px;
+				}
+			}
+		}
+	}
+
+	&.photo {
+		article {
+			&.post {
+				.thumbnail {
+					-webkit-border-radius: 2px;
+					-moz-border-radius: 2px;
+					border-radius: 2px;
+					height: 285px;
 				}
 			}
 		}
@@ -689,10 +713,11 @@ nav {
 
 .post-single {
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .post {
-	font: 400 1.25em/1.4 $gregor;
+	font: 400 1.2rem/1.5 $droidSerif;
 
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
@@ -748,11 +773,11 @@ nav {
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $gregor;
+	    font: 400 1.5em/1.4 $droidSerif;
 		padding: 60px 0 0;
 		
 		&.title {
-			font: 300 2.25rem/1 $latoBlack;
+			font: 300 2.5rem/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			padding-top: 0; 
@@ -769,12 +794,12 @@ nav {
 	}
 	
 	h2 {
-	    font: 400 1.3em/1.4 $latoBlack;
+	    font: 600 1.2rem/1.4 $droidSerif;
 		padding-bottom: 10px;
 		padding-top: 30px;
 		
 		&.title {
-			font: 300 2.25rem/1 $latoBlack;
+			font: 300 2.5rem/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			padding-top: 0;
@@ -1041,7 +1066,6 @@ nav {
 			float: none;
 			clear: none;
 			padding-right: 0;
-			padding-bottom: 10px;
 		}
 	}
 
@@ -1167,7 +1191,7 @@ nav {
 		
 		&::before {
 			position: relative;
-			content: "× × ×";
+			content: "● ● ●";
 		}
 	}
 		
@@ -1195,11 +1219,9 @@ nav {
 	.actions {
 		font: 300 16px/1.4 $lato;
 		padding-top: 40px;
-		padding-bottom: 40px;
 		color: $darkGray;
 		max-width: 75%;
 		display: table;
-		height: 100%;
 		width: 100%;
 		
 		@media (max-width : $mq-mobile) {
@@ -1233,8 +1255,7 @@ nav {
 			margin: 0 5px 5px 0;
 			
 			a {
-				color: $black;
-				opacity: .5;
+				color: $darkGray;
 			}
 		}
 	
@@ -1278,7 +1299,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 2.25rem/1 $latoBlack;
+			font: 300 2.5rem/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			margin: 0;
@@ -1286,6 +1307,76 @@ nav {
 			@media (max-width : $mq-mobile) {
 				padding-bottom: 10px;
 				font-size: 2rem;
+			}
+		}
+	}
+}
+
+.about {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	.post {
+		h1 {
+			&.title {
+				@media (max-width : $mq-mobile) {
+					font-size: 1.25rem;
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		[block] {
+			p {
+				&:first-of-type {
+					@media (max-width : $mq-mobile) {
+						padding-top: 10px;
+					}
+				}
+			}
+		}
+
+		.cover {
+			&.bottom {
+				@media (max-width : $mq-mobile) {
+					background-position: left bottom;
+				}
+			}
+		}
+	}
+
+	.post-list {
+		&.work, &.photo {
+			padding-top: 40px;
+			padding-bottom: 20px;
+			-webkit-animation: none;
+			-moz-animation: none;
+			animation: none;
+
+			.posts {
+				article {
+					&.hint {
+						-webkit-border-radius: 2px;
+						-moz-border-radius: 2px;
+						border-radius: 2px;
+						background-color: #f2f3f4;
+						padding: 20px;
+					}
+				}
+			}
+		}
+
+		&.photo {
+			.posts {
+				article {
+					&.post {
+						.thumbnail {
+							filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+							filter: gray;
+							-webkit-filter: grayscale(100%);			
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1364,8 +1455,8 @@ button {
 //
 
 .pagination {
-	padding-bottom: 60px;
-	padding-top: 60px;
+	padding-bottom: 50px;
+	padding-top: 50px;
     display: table;
 	width: 100%;
 	
@@ -1496,8 +1587,9 @@ footer {
 }
 
 .tag-cloud {
-    padding-top: 50px;
-    font: 400 1.15em/1.9 $gregor;
+	padding-top: 100px;
+	padding-bottom: 100px;
+    font: 400 1.15em/1.9 $droidSerif;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -1574,28 +1666,44 @@ footer {
 		background-color: $black;
 	}
 	
-	.post-list {
-		&.archive {
-			.posts {
-				.post {
+	.post-list, &.post-list {
+		.posts {
+			h1 {
+				color: $white !important;
+
+				&.title {
+					color: $white !important;
+
 					a {
-						color: $white;
-						border-color: #2d2d2d;
-						
-						&:hover {
-							border-color: $blue;
-						}
-					}
-					
-					p {
-						color: $white;
+						color: $white !important;
 					}
 				}
 			}
-			
-			.old {
-				h1.title {
-					color: $white;
+
+			h2 {
+				color: $white !important;
+
+				a {
+					color: $white !important;
+				}
+			}
+
+			p {
+				color: $white !important;
+			}
+
+			.post {
+				a {
+					color: $white !important;
+					border-color: #2d2d2d !important;
+					
+					&:hover {
+						border-color: $blue !important;
+					}
+				}
+				
+				p {
+					color: $white !important;
 				}
 			}
 		}
@@ -1603,14 +1711,19 @@ footer {
 	
 	.post {
 		.cover {
-			background-color: #111;
+			background-color: #111 !important;
 		}
 		
 		.actions {
 			.tags {
-				color: $white;
+				color: $white !important;
 			}
 		}
+	}
+
+	.hint {
+		background-color: #111 !important;
+		color: $white !important;
 	}
 	
 	button {
@@ -1630,20 +1743,17 @@ footer {
 	
 	footer {
 		.copyright {
-			color: #333;
+			color: #333 !important;
 			
 			a {
-				color: #333;
-				border-color: #333;
+				color: #333 !important;
+				border-color: #333 !important;
 				
 				&:hover {
-					border-color: #222;
+					border-color: #222 !important;
 				}
 			}
 		}
-	}
-	
-	.scroll-to-top {
 	}
 }
 
@@ -1657,7 +1767,8 @@ footer {
     border-radius: 2px;
     background: #fff4a5;
     padding: 15px 20px;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #000;
 	display: table;
 }
@@ -1665,19 +1776,14 @@ footer {
 .scroll-to-top {
     transition: all 0.2s linear;
     cursor: pointer;
-    display: none;
-    position: absolute;
-    right: 0;
-    bottom: 5px;
-    margin: 0;
-    z-index: 100;
+    display: block;
+    position: relative;
 	
 	a {
 		display: block;
 		font-size: 1.5em;
 		color: #a9b1b5;
-		text-align: center;
-		vertical-align: middle;
+		text-align: right;
 		line-height: 48px;
 		border-bottom: 0;
 		

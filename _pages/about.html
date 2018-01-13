@@ -1,25 +1,27 @@
 ---
 layout: default
-title: Блог Александры Травкиной
-description: Об авторе
+title: "Блог Александры Травкиной"
+description: "Об авторе"
+thumbnail: "https://i.imgur.com/2wItOsSl.png"
+cover: "https://i.imgur.com/2wItOsS.png"
 ---
 
 {% include_cached header.html %}
 
 <div class="content">
-	<div class="post-single">
+	<div class="about">
 		<article class="post">
 			<div class="common">
 				<div class="left w65">
-					<h1 class="title">Об авторе</h1>
+					<h1 class="title">Привет,</h1>
 
 					<div block>
-						<p>Привет, меня зовут Александра Травкина.</p>
+						<p>меня зовут Александра Травкина.</p>
 						<p>Я веб-дизайнер. Блоггер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. Верстаю шаблоны и придумываю дизайны. Пишу обзоры и статьи о играх.</p>
 						<p>Прокрастинирую.</p>
 					</div>
 				</div>
-				
+
 				<div class="right w35">
 					<h1 class="title">В соцсетях</h1>
 					
@@ -32,11 +34,40 @@ description: Об авторе
 					</div>
 				</div>
 			</div>
-			<div class="cover frame bottom" style="background-image: url('https://i.imgur.com/2wItOsS.png')"></div>
+			<div class="cover frame bottom" style="background-image: url('{{ page.cover }}'); margin-bottom: 0;"></div>
 		</article>
+
+		<div class="post-list work">
+			<div class="posts">
+				<div class="common">
+					<div class="grid">
+						<article class="hint">
+							Верстаю шаблоны для различных движков и сайтов. <a href="{{site.baseurl}}/work">Здесь</a> можно увидеть, что из этого выходит.
+						</article>
+						{% for post in site.works reversed limit:4 %}
+							{% include _preview/work.html %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="post-list photo black">
+			<div class="posts">
+				<div class="common">
+					<div class="grid">
+						<article class="hint">
+							Иногда фотографирую во время редких путешествий. <a href="{{site.baseurl}}/photo">Здесь</a> можно посмотреть и почитать об этом.
+						</article>
+						{% for post in site.photos reversed limit:2 %}
+							{% include _preview/photo.html %}
+						{% endfor %}
+					</div>				
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
 {% include breadcrumbs.html %}
-{% include likely.html %}
 {% include_cached footer.html %}

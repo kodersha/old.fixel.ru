@@ -6,7 +6,9 @@
 		{{ post.content | split:'<!--more-->' }}
 		<div class="actions">	
 			<div class="tags">
-				<span class="date" title="{{ post.date | russian_date }}">{{ post.date | date: "%Y" }}</span>	
+				<span class="date" title="{{ post.date | russian_date }}">
+					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y" }}</a>
+				</span>	
 				{% if post.categories %}
 					{% for category in post.categories %}								
 						<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase | uri_escape }}/" class="category">{{ category }}</a>

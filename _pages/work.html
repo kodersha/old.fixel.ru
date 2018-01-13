@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Фотографии
+title: Работы
 ---
 
 {% include_cached header.html %}
 
 <div class="content">
-	<div class="post-list photo">
+	<div class="post-list work">
 		<div class="posts">
 			<div class="common">
 				<div class="grid">
-					{% for post in site.photos reversed %}
-						{% include _preview/photo.html %}
+					{% for post in site.works reversed %}
+						{% include _preview/work.html %}
 					{% endfor %}
 				</div>
 			</div>
