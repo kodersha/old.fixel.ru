@@ -717,7 +717,7 @@ nav {
 }
 
 .post {
-	font: 400 1.2rem/1.6 $droidSerif;
+	font: 400 1.2rem/1.5 $gregor;
 
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
@@ -774,7 +774,7 @@ nav {
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $droidSerif;
+	    font: 400 1.5em/1.4 $gregor;
 		padding: 60px 0 0;
 		color: $black;
 		
@@ -796,7 +796,7 @@ nav {
 	}
 	
 	h2 {
-	    font: 600 1.2rem/1.4 $droidSerif;
+	    font: 600 1.2rem/1.4 $gregor;
 		padding-bottom: 10px;
 		padding-top: 30px;
 		
@@ -1592,7 +1592,7 @@ footer {
 .tag-cloud {
 	padding-top: 100px;
 	padding-bottom: 100px;
-    font: 400 1.15em/1.9 $droidSerif;
+    font: 400 1.15em/1.9 $gregor;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
