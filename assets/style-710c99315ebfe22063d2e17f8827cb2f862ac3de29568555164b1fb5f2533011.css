@@ -596,7 +596,7 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.archive .posts h1.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 40px;
       color: #000; }
@@ -619,7 +619,7 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.work .posts h1.title, .post-list.photo .posts h1.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 40px;
       color: #000; }
@@ -733,7 +733,7 @@ nav {
     font: 400 1.5em/1.4 "Droid Serif", serif;
     padding: 60px 0 0; }
     .post h1.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -748,7 +748,7 @@ nav {
     padding-bottom: 10px;
     padding-top: 30px; }
     .post h2.title {
-      font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 20px;
       padding-top: 0; }
@@ -1083,7 +1083,7 @@ nav {
 .page {
   padding-top: 60px; }
   .page h1.title {
-    font: 300 2.5rem/1 "LatoWebBlack", sans-serif;
+    font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
     letter-spacing: -.01em;
     padding-bottom: 20px;
     margin: 0; }
