@@ -555,7 +555,7 @@ nav {
 	
 		.posts {
 			h1.title {
-				font: 300 2rem/1 $latoHeavy;
+				font: 300 2rem/1 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -593,7 +593,7 @@ nav {
 
 		.posts {
 			h1.title {
-				font: 300 2rem/1 $latoHeavy;
+				font: 300 2rem/1 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -718,7 +718,6 @@ nav {
 
 .post {
 	font: 400 1.2rem/1.6 $droidSerif;
-	color: $blackText;
 
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
@@ -780,7 +779,7 @@ nav {
 		color: $black;
 		
 		&.title {
-			font: 300 2rem/1 $latoHeavy;
+			font: 300 2rem/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 10px;
 			padding-top: 0; 
@@ -802,7 +801,7 @@ nav {
 		padding-top: 30px;
 		
 		&.title {
-			font: 300 2rem/1 $latoHeavy;
+			font: 300 2rem/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 10px;
 			padding-top: 0;
@@ -1303,7 +1302,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 2rem/1 $latoHeavy;
+			font: 300 2rem/1 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			margin: 0;
@@ -1714,8 +1713,6 @@ footer {
 	}
 	
 	.post {
-		color: $whiteText;
-
 		h1 {
 			color: $white;
 		}
