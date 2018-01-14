@@ -698,7 +698,8 @@ nav {
   font: 400 1.2rem/1.6 "Droid Serif", serif; }
   @media (max-width: 900px) {
     .post {
-      font-size: 1em; } }
+      font-size: 1em;
+      line-height: 1.4; } }
   .post .header {
     max-width: 75%; }
     @media (max-width: 900px) {
