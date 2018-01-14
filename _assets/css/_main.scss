@@ -19,7 +19,7 @@ body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-	font: 400 16px/1.4 $lato;
+	font: 400 16px/1.4 $ptSans;
 	letter-spacing: -.003em;
 	overflow-x: hidden;
 	cursor: default;
@@ -360,7 +360,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.4 $lato;
+					font: 400 16px/1.4 $ptSans;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -474,7 +474,7 @@ nav {
 			}
 			
 			span {
-				font: 400 14px/1.4 $lato;
+				font: 400 14px/1.4 $ptSans;
 				margin-top: 5px;
 				display: initial;
 				color: $gray;
@@ -555,7 +555,7 @@ nav {
 	
 		.posts {
 			h1.title {
-				font: 300 2rem/1 $latoBlack;
+				font: 300 2.5rem/1.2 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -573,7 +573,7 @@ nav {
 				}
 
 				.category {
-					font: 400 14px/1.4 $lato;
+					font: 400 14px/1.4 $ptSans;
 					padding-bottom: 2px;
 					color: $gray;
 				}
@@ -593,7 +593,7 @@ nav {
 
 		.posts {
 			h1.title {
-				font: 300 2rem/1 $latoBlack;
+				font: 300 2.5rem/1.2 $latoBlack;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -717,7 +717,7 @@ nav {
 }
 
 .post {
-	font: 400 1.2rem/1.5 $gregor;
+	font: 400 1.3rem/1.5 $ptSerif;
 
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
@@ -774,12 +774,12 @@ nav {
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $gregor;
+	    font: 400 1.5em/1.4 $ptSerif;
 		padding: 60px 0 0;
 		color: $black;
 		
 		&.title {
-			font: 300 2rem/1 $latoBlack;
+			font: 300 2.5rem/1.2 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 10px;
 			padding-top: 0; 
@@ -796,12 +796,12 @@ nav {
 	}
 	
 	h2 {
-	    font: 600 1.2rem/1.4 $gregor;
+	    font: 600 1.3rem/1.4 $ptSerif;
 		padding-bottom: 10px;
 		padding-top: 30px;
 		
 		&.title {
-			font: 300 2rem/1 $latoBlack;
+			font: 300 2.5rem/1.2 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 10px;
 			padding-top: 0;
@@ -856,7 +856,7 @@ nav {
 	}
 	
 	[left] {
-		font: 300 14px/1.25 $lato;
+		font: 300 1rem/1.25 $ptSans;
 		color: $darkGray;
 		float: right;
 		clear: left;
@@ -919,7 +919,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 300 14px/1.25 $lato;
+		font: 300 1rem/1.25 $ptSans;
 		color: $darkGray;
 		
 		img {
@@ -987,7 +987,7 @@ nav {
 	}
 	
 	[caption] {
-		font: 300 1rem/1.25 $lato;
+		font: 300 1rem/1.25 $ptSans;
 		color: $darkGray;
 		padding-top: 0;
 		padding-bottom: 10px;
@@ -998,7 +998,7 @@ nav {
 	}
 	
 	[quote] {
-		font: 300 1rem/1.25 $lato;
+		font: 300 1rem/1.25 $ptSans;
 		text-align: center;
 
 		@media (max-width : $mq-mobile) {
@@ -1220,7 +1220,7 @@ nav {
 	}
 	
 	.actions {
-		font: 300 16px/1.4 $lato;
+		font: 300 16px/1.4 $ptSans;
 		padding-top: 30px;
 		color: $darkGray;
 		max-width: 75%;
@@ -1302,7 +1302,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 2rem/1 $latoBlack;
+			font: 300 2.5rem/1.2 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			margin: 0;
@@ -1592,7 +1592,7 @@ footer {
 .tag-cloud {
 	padding-top: 100px;
 	padding-bottom: 100px;
-    font: 400 1.15em/1.9 $gregor;
+    font: 400 1.15em/1.9 $ptSerif;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -1768,7 +1768,7 @@ footer {
 }
 
 .help {
-    font: 400 16px/1.4 $lato;
+    font: 400 16px/1.4 $ptSans;
     border-radius: 2px;
     background: #fff4a5;
     padding: 15px 20px;
