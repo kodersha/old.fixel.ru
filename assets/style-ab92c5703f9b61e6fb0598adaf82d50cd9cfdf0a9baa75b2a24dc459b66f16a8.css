@@ -695,7 +695,7 @@ nav {
   padding-bottom: 100px; }
 
 .post {
-  font: 400 1.2rem/1.6 "Droid Serif", serif; }
+  font: 400 1.2rem/1.5 "Gregor", serif; }
   @media (max-width: 900px) {
     .post {
       font-size: 1em;
@@ -730,7 +730,7 @@ nav {
     display: block;
     margin: 0 auto; }
   .post h1 {
-    font: 400 1.5em/1.4 "Droid Serif", serif;
+    font: 400 1.5em/1.4 "Gregor", serif;
     padding: 60px 0 0;
     color: #000; }
     .post h1.title {
@@ -745,7 +745,7 @@ nav {
         color: #000;
         border-bottom: 0; }
   .post h2 {
-    font: 600 1.2rem/1.4 "Droid Serif", serif;
+    font: 600 1.2rem/1.4 "Gregor", serif;
     padding-bottom: 10px;
     padding-top: 30px; }
     .post h2.title {
@@ -1257,7 +1257,7 @@ footer {
 .tag-cloud {
   padding-top: 100px;
   padding-bottom: 100px;
-  font: 400 1.15em/1.9 "Droid Serif", serif;
+  font: 400 1.15em/1.9 "Gregor", serif;
   -webkit-column-count: 5;
   -moz-column-count: 5;
   column-count: 5; }
