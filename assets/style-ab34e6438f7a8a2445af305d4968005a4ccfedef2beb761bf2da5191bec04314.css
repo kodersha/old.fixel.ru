@@ -596,7 +596,7 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.archive .posts h1.title {
-      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2rem/1 "LatoWebHeavy", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 40px;
       color: #000; }
@@ -619,7 +619,7 @@ nav {
     -moz-animation: fadeUpIn 1s;
     animation: fadeUpIn 1s; }
     .post-list.work .posts h1.title, .post-list.photo .posts h1.title {
-      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2rem/1 "LatoWebHeavy", sans-serif;
       letter-spacing: -.01em;
       padding-bottom: 40px;
       color: #000; }
@@ -695,7 +695,8 @@ nav {
   padding-bottom: 100px; }
 
 .post {
-  font: 400 1.2rem/1.6 "Droid Serif", serif; }
+  font: 400 1.2rem/1.6 "Droid Serif", serif;
+  color: rgba(0, 0, 0, 0.84); }
   @media (max-width: 900px) {
     .post {
       font-size: 1em;
@@ -731,11 +732,12 @@ nav {
     margin: 0 auto; }
   .post h1 {
     font: 400 1.5em/1.4 "Droid Serif", serif;
-    padding: 60px 0 0; }
+    padding: 60px 0 0;
+    color: #000; }
     .post h1.title {
-      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2rem/1 "LatoWebHeavy", sans-serif;
       letter-spacing: -.01em;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       padding-top: 0; }
       @media (max-width: 900px) {
         .post h1.title {
@@ -748,9 +750,9 @@ nav {
     padding-bottom: 10px;
     padding-top: 30px; }
     .post h2.title {
-      font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
+      font: 300 2rem/1 "LatoWebHeavy", sans-serif;
       letter-spacing: -.01em;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       padding-top: 0; }
       @media (max-width: 900px) {
         .post h2.title {
@@ -759,7 +761,7 @@ nav {
         color: #000;
         border-bottom: 0; }
   .post mark {
-    background-color: #fff4a5;
+    background-color: #fff9db;
     word-wrap: break-word;
     border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1007,16 +1009,17 @@ nav {
     padding-top: 20px;
     padding-bottom: 10px; }
   .post hr {
-    line-height: normal;
+    font: 400 1.4rem/1 "Helvetica", sans-serif;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
+    letter-spacing: 1rem;
     display: block;
     border: none;
     margin: 0; }
     .post hr::before {
       position: relative;
-      content: "● ● ●"; }
+      content: "· · ·"; }
   .post blockquote {
     position: relative;
     padding-left: 60px;
@@ -1034,7 +1037,7 @@ nav {
       max-width: 100% !important; }
   .post .actions {
     font: 300 16px/1.4 "LatoWeb", sans-serif;
-    padding-top: 40px;
+    padding-top: 30px;
     color: #81868e;
     max-width: 75%;
     display: table;
@@ -1083,7 +1086,7 @@ nav {
 .page {
   padding-top: 60px; }
   .page h1.title {
-    font: 300 2.25rem/1 "LatoWebBlack", sans-serif;
+    font: 300 2rem/1 "LatoWebHeavy", sans-serif;
     letter-spacing: -.01em;
     padding-bottom: 20px;
     margin: 0; }
@@ -1309,10 +1312,14 @@ footer {
       border-color: #4183C4 !important; }
   .black .post-list .posts .post p, .black.post-list .posts .post p {
     color: #fff !important; }
-  .black .post .cover {
-    background-color: #111 !important; }
-  .black .post .actions .tags {
-    color: #fff !important; }
+  .black .post {
+    color: rgba(255, 255, 255, 0.84); }
+    .black .post h1 {
+      color: #fff; }
+    .black .post .cover {
+      background-color: #111 !important; }
+    .black .post .actions .tags {
+      color: #fff !important; }
   .black .hint {
     background-color: #111 !important;
     color: #fff !important; }
@@ -1323,13 +1330,10 @@ footer {
       background: #131313; }
     .black button.slider::after {
       background: #151515; }
-  .black footer .copyright {
-    color: #333 !important; }
-    .black footer .copyright a {
-      color: #333 !important;
-      border-color: #333 !important; }
-      .black footer .copyright a:hover {
-        border-color: #222 !important; }
+  .black footer .copyright a {
+    border-color: #333 !important; }
+    .black footer .copyright a:hover {
+      border-color: #81868e !important; }
 
 @-webkit-keyframes fadeUpIn {
   from {
