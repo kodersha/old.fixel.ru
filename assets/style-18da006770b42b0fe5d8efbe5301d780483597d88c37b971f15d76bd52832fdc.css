@@ -695,7 +695,7 @@ nav {
   padding-bottom: 100px; }
 
 .post {
-  font: 400 1.2rem/1.5 "Droid Serif", serif; }
+  font: 400 1.2rem/1.6 "Droid Serif", serif; }
   @media (max-width: 900px) {
     .post {
       font-size: 1em; } }
