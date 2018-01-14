@@ -3,24 +3,29 @@ $darkBlue: #487bad;
 $main: #292929;
 
 $black: #000;
-$darkerGray: #222;
+$lightBlack: #111;
+$darkerGray: #333;
 $darkGray: #81868e;
 $gray: #a0a0a0;
 $lightGray: #ddd;
 $whiteGray: #fafafa;
 $white: #fff;
-$mark: #fff4a5;
+$mark: #fff9db;
+
+$blackText: rgba(0,0,0,.84);
+$whiteText: rgba(255,255,255,.84);
 
 $action: #f1f3f4;
 $actionHover: #e2e5e6;
 $actionColor: #b1bcdc;
 
+$helvetica: 'Helvetica', sans-serif;
 $latoMedium: 'LatoWebMedium', sans-serif;
+$latoHeavy: 'LatoWebHeavy', sans-serif;
 $latoBlack: 'LatoWebBlack', sans-serif;
 $lato: 'LatoWeb', sans-serif;
 $firaCode: 'Fira Code', monospace;
 $droidSerif: 'Droid Serif', serif;
-$gregor: 'Gregor', serif;
 
 $mq-mobile: 900px !default;
 $mq-notebook: 1336px !default;

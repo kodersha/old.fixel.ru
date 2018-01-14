@@ -29,7 +29,6 @@ layout: default
 				</div>
 					
 				<div class="actions">
-					{% include likely.html %}
 					<div class="tags">
 						<span class="date">{{ page.date | russian_date }}</span>
 						{% if page.categories %}
@@ -55,4 +54,5 @@ layout: default
 </div>
 
 {% include breadcrumbs.html %}
+{% include likely.html %}
 {% include_cached footer.html %}

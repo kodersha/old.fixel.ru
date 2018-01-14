@@ -555,7 +555,7 @@ nav {
 	
 		.posts {
 			h1.title {
-				font: 300 2.25rem/1 $latoBlack;
+				font: 300 2rem/1 $latoHeavy;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -593,7 +593,7 @@ nav {
 
 		.posts {
 			h1.title {
-				font: 300 2.25rem/1 $latoBlack;
+				font: 300 2rem/1 $latoHeavy;
 				letter-spacing: -.01em;
 				padding-bottom: 40px;
 				color: $black;
@@ -681,7 +681,7 @@ nav {
 					background-color: #bbb;
 					border-top-left-radius: 2px;
 					border-top-right-radius: 2px;
-					font-family: "Helvetica", sans-serif;
+					font-family: $helvetica;
 				}
 
 				.thumbnail {
@@ -718,6 +718,7 @@ nav {
 
 .post {
 	font: 400 1.2rem/1.6 $droidSerif;
+	color: $blackText;
 
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
@@ -776,11 +777,12 @@ nav {
 	h1 {
 	    font: 400 1.5em/1.4 $droidSerif;
 		padding: 60px 0 0;
+		color: $black;
 		
 		&.title {
-			font: 300 2.25rem/1 $latoBlack;
+			font: 300 2rem/1 $latoHeavy;
 			letter-spacing: -.01em;
-			padding-bottom: 20px;
+			padding-bottom: 10px;
 			padding-top: 0; 
 
 			@media (max-width : $mq-mobile) {
@@ -800,9 +802,9 @@ nav {
 		padding-top: 30px;
 		
 		&.title {
-			font: 300 2.25rem/1 $latoBlack;
+			font: 300 2rem/1 $latoHeavy;
 			letter-spacing: -.01em;
-			padding-bottom: 20px;
+			padding-bottom: 10px;
 			padding-top: 0;
 		
 			@media (max-width : $mq-mobile) {
@@ -1182,17 +1184,18 @@ nav {
 	}
 
 	hr {
-		line-height: normal;
+		font: 400 1.4rem/1 $helvetica;
 		text-align: center;
 		padding-top: 20px;
 		padding-bottom: 10px;
+		letter-spacing: 1rem;
 		display: block;
 		border: none;
 		margin: 0;
 		
 		&::before {
 			position: relative;
-			content: "● ● ●";
+			content: "· · ·";
 		}
 	}
 		
@@ -1219,7 +1222,7 @@ nav {
 	
 	.actions {
 		font: 300 16px/1.4 $lato;
-		padding-top: 40px;
+		padding-top: 30px;
 		color: $darkGray;
 		max-width: 75%;
 		display: table;
@@ -1300,7 +1303,7 @@ nav {
 
 	h1 {	
 		&.title {
-			font: 300 2.25rem/1 $latoBlack;
+			font: 300 2rem/1 $latoHeavy;
 			letter-spacing: -.01em;
 			padding-bottom: 20px;
 			margin: 0;
@@ -1628,7 +1631,7 @@ footer {
 		.intro {
 			.overlay {
 				svg path {
-					fill: #000 !important;
+					fill: $black !important;
 				}
 			}
 		}
@@ -1652,12 +1655,12 @@ footer {
 				
 				&.open {
 					.search-form {
-						background-color: #111;
+						background-color: $lightBlack;
 					}
 				}
 				
 				.dropdown {
-					background-color: #111;
+					background-color: $lightBlack;
 				}
 			}
 		}
@@ -1711,8 +1714,14 @@ footer {
 	}
 	
 	.post {
+		color: $whiteText;
+
+		h1 {
+			color: $white;
+		}
+
 		.cover {
-			background-color: #111 !important;
+			background-color: $lightBlack !important;
 		}
 		
 		.actions {
@@ -1723,13 +1732,13 @@ footer {
 	}
 
 	.hint {
-		background-color: #111 !important;
+		background-color: $lightBlack !important;
 		color: $white !important;
 	}
 	
 	button {
 		&.slider {
-			background: #111;
+			background: $lightBlack;
 			color: #f1f3f4;
 			
 			&::before {
@@ -1744,14 +1753,12 @@ footer {
 	
 	footer {
 		.copyright {
-			color: #333 !important;
 			
 			a {
-				color: #333 !important;
-				border-color: #333 !important;
+				border-color: $darkerGray !important;
 				
 				&:hover {
-					border-color: #222 !important;
+					border-color: $darkGray !important;
 				}
 			}
 		}
