@@ -19,7 +19,7 @@ body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     text-size-adjust: none;
-	font: 400 16px/1.4 $ptSans;
+	font: 400 16px/1.4 $lato;
 	letter-spacing: -.003em;
 	overflow-x: hidden;
 	cursor: default;
@@ -183,9 +183,9 @@ select[multiple=multiple] {
 }
 
 .common {
-	max-width: -webkit-calc(1148px + 16%);
-	max-width: -moz-calc(1148px + 16%);
-	max-width: calc(1148px + 16%);
+	max-width: -webkit-calc(1147px + 16%);
+	max-width: -moz-calc(1147px + 16%);
+	max-width: calc(1147px + 16%);
 	padding: 0 8%;
 	height: 100%;
 	width: 100%;
@@ -360,7 +360,7 @@ nav {
 				padding: 0;
 				
 				li {
-					font: 400 16px/1.4 $ptSans;
+					font: 400 16px/1.4 $lato;
 					padding-top: 5px;
 					padding-bottom: 5px;
 					padding-right: 20px;
@@ -474,7 +474,7 @@ nav {
 			}
 			
 			span {
-				font: 400 14px/1.4 $ptSans;
+				font: 400 14px/1.4 $lato;
 				margin-top: 5px;
 				display: initial;
 				color: $gray;
@@ -573,7 +573,7 @@ nav {
 				}
 
 				.category {
-					font: 400 14px/1.4 $ptSans;
+					font: 400 14px/1.4 $lato;
 					padding-bottom: 2px;
 					color: $gray;
 				}
@@ -717,7 +717,7 @@ nav {
 }
 
 .post {
-	font: 400 1.3rem/1.5 $ptSerif;
+	font: 400 1.3rem/1.5 $gregor;
 
 	@media (max-width : $mq-mobile) {
 		font-size: 1em;
@@ -774,7 +774,7 @@ nav {
 	}
 	
 	h1 {
-	    font: 400 1.5em/1.4 $ptSerif;
+	    font: 400 1.5em/1.4 $gregor;
 		padding: 60px 0 0;
 		color: $black;
 		
@@ -856,7 +856,7 @@ nav {
 	}
 	
 	[left] {
-		font: 300 1rem/1.25 $ptSans;
+		font: 300 1rem/1.25 $lato;
 		color: $darkGray;
 		float: right;
 		clear: left;
@@ -919,7 +919,7 @@ nav {
 	}
 	
 	[aside] {
-		font: 300 1rem/1.25 $ptSans;
+		font: 300 1rem/1.25 $lato;
 		color: $darkGray;
 		
 		img {
@@ -987,7 +987,7 @@ nav {
 	}
 	
 	[caption] {
-		font: 300 1rem/1.25 $ptSans;
+		font: 300 1rem/1.25 $lato;
 		color: $darkGray;
 		padding-top: 0;
 		padding-bottom: 10px;
@@ -998,12 +998,8 @@ nav {
 	}
 	
 	[quote] {
-		font: 300 1rem/1.25 $ptSans;
+		font-family: $gregorIt;
 		text-align: center;
-
-		@media (max-width : $mq-mobile) {
-			font-size: 14px;
-		}
 	}
 	
 	[block] {
@@ -1220,7 +1216,7 @@ nav {
 	}
 	
 	.actions {
-		font: 300 16px/1.4 $ptSans;
+		font: 300 16px/1.4 $lato;
 		padding-top: 30px;
 		color: $darkGray;
 		max-width: 75%;
@@ -1592,7 +1588,7 @@ footer {
 .tag-cloud {
 	padding-top: 100px;
 	padding-bottom: 100px;
-    font: 400 1.15em/1.9 $ptSerif;
+    font: 400 1.15em/1.9 $gregor;
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -1768,7 +1764,7 @@ footer {
 }
 
 .help {
-    font: 400 16px/1.4 $ptSans;
+    font: 400 16px/1.4 $lato;
     border-radius: 2px;
     background: #fff4a5;
     padding: 15px 20px;
