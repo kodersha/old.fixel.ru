@@ -282,12 +282,12 @@ html {
   width: 100vw; }
 
 body {
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
-  font: 400 16px/1.4 "LatoWeb", sans-serif;
+  font: 400 16px/1.4 "LatoWebMedium", sans-serif;
   letter-spacing: -.003em;
   overflow-x: hidden;
   cursor: default;
@@ -412,12 +412,21 @@ select[multiple=multiple] {
     animation: fadeUpIn 1s; }
 
 .common {
-  max-width: -webkit-calc(1147px + 16%);
-  max-width: -moz-calc(1147px + 16%);
-  max-width: calc(1147px + 16%);
+  max-width: -webkit-calc(1230px + 16%);
+  max-width: -moz-calc(1230px + 16%);
+  max-width: calc(1230px + 16%);
   padding: 0 8%;
   height: 100%;
   width: 100%; }
+  @media (max-width: 1366px) {
+    .common {
+      max-width: -webkit-calc(1148px + 16%);
+      max-width: -moz-calc(1148px + 16%);
+      max-width: calc(1148px + 16%); } }
+  @media (max-width: 900px) {
+    .common {
+      max-width: 100%;
+      padding: 0 25px; } }
   .common::after {
     content: "";
     clear: both;
@@ -426,26 +435,28 @@ select[multiple=multiple] {
     max-width: 100%; }
   .common .wrapper {
     position: relative;
-    max-width: 75%;
+    max-width: 70%;
     width: 100%;
     float: left; }
+    @media (max-width: 1366px) {
+      .common .wrapper {
+        max-width: 75%; } }
+    @media (max-width: 900px) {
+      .common .wrapper {
+        max-width: 100%;
+        float: none; } }
   .common .aside {
     position: relative;
-    max-width: 25%;
+    max-width: 30%;
     width: 100%;
     float: left; }
-  @media (max-width: 900px) {
-    .common {
-      max-width: 100%;
-      padding: 0 25px; }
-      .common .wrapper {
-        float: none;
-        width: 100%;
-        max-width: 100%; }
+    @media (max-width: 1366px) {
       .common .aside {
-        float: none;
-        width: 100%;
-        max-width: 100%; } }
+        max-width: 25%; } }
+    @media (max-width: 900px) {
+      .common .aside {
+        max-width: 100%;
+        float: none; } }
 
 nav {
   background-color: #fff;
@@ -542,7 +553,7 @@ nav {
         z-index: 10;
         padding: 0; }
         nav .search-base .search .dropdown li {
-          font: 400 16px/1.4 "LatoWeb", sans-serif;
+          font: 400 16px/1.4 "LatoWebMedium", sans-serif;
           padding-top: 5px;
           padding-bottom: 5px;
           padding-right: 20px;
@@ -603,7 +614,7 @@ nav {
       padding: 0;
       color: #000; }
     .posts .post .entry span {
-      font: 400 14px/1.4 "LatoWeb", sans-serif;
+      font: 400 14px/1.4 "LatoWebMedium", sans-serif;
       margin-top: 5px;
       display: initial;
       color: #a0a0a0; }
@@ -656,7 +667,7 @@ nav {
       .post-list.archive .posts .post a {
         color: #000; }
       .post-list.archive .posts .post .category {
-        font: 400 14px/1.4 "LatoWeb", sans-serif;
+        font: 400 14px/1.4 "LatoWebMedium", sans-serif;
         padding-bottom: 2px;
         color: #a0a0a0; }
     .post-list.archive .posts .help {
@@ -702,7 +713,10 @@ nav {
         cursor: pointer;
         background-size: cover;
         background-color: #ddd;
-        background-position: center center; }
+        background-position: center center;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
       .post-list.work .posts article.post .actions, .post-list.photo .posts article.post .actions {
         padding-top: 20px;
         padding-bottom: 0;
@@ -749,12 +763,18 @@ nav {
       font-size: 1em;
       line-height: 1.4; } }
   .post .header {
-    max-width: 75%; }
+    max-width: 70%; }
+    @media (max-width: 1366px) {
+      .post .header {
+        max-width: 75%; } }
     @media (max-width: 900px) {
       .post .header {
         max-width: 100%; } }
   .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
-    max-width: 75%; }
+    max-width: 70%; }
+    @media (max-width: 1366px) {
+      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
+        max-width: 75%; } }
     @media (max-width: 900px) {
       .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
         max-width: 100%; } }
@@ -834,12 +854,12 @@ nav {
     padding-bottom: 10px !important;
     max-width: 100% !important; }
   .post [left] {
-    font: 300 1rem/1.25 "LatoWeb", sans-serif;
+    font: 300 1rem/1.25 "LatoWebMedium", sans-serif;
     color: #81868e;
     float: right;
     clear: left;
     width: 100%;
-    max-width: 25% !important;
+    max-width: 30% !important;
     padding-left: 40px;
     text-align: left;
     position: relative; }
@@ -855,6 +875,9 @@ nav {
         padding-top: 20px; }
     .post [left] p, .post [left] h1, .post [left] h2, .post [left] h3, .post [left] h4, .post [left] blockquote, .post [left] hr, .post [left] ul, .post [left] .video, .post [left] .youtube, .post [left] .fotorama, .post [left] .highlight, .post [left] [block] {
       max-width: 100% !important; }
+    @media (max-width: 1366px) {
+      .post [left] {
+        max-width: 25%; } }
     @media (max-width: 900px) {
       .post [left] {
         float: none;
@@ -871,14 +894,22 @@ nav {
   .post [main] {
     padding-top: 20px;
     padding-bottom: 10px;
-    max-width: 75%;
+    max-width: 70%;
     width: 100%;
     float: left;
     clear: left; }
     .post [main] p, .post [main] h1, .post [main] h2, .post [main] h3, .post [main] h4, .post [main] blockquote, .post [main] hr, .post [main] ul, .post [main] .video, .post [main] .youtube, .post [main] .fotorama, .post [main] .highlight, .post [main] [block] {
       max-width: 100% !important; }
+    @media (max-width: 1366px) {
+      .post [main] {
+        max-width: 75%; } }
+    @media (max-width: 900px) {
+      .post [main] {
+        max-width: 100%;
+        float: none;
+        clear: none; } }
   .post [aside] {
-    font: 300 1rem/1.25 "LatoWeb", sans-serif;
+    font: 300 1rem/1.25 "LatoWebMedium", sans-serif;
     color: #81868e; }
     .post [aside] img {
       -webkit-border-radius: 2px;
@@ -892,36 +923,36 @@ nav {
         padding-top: 20px; }
     .post [aside] p, .post [aside] h1, .post [aside] h2, .post [aside] h3, .post [aside] h4, .post [aside] blockquote, .post [aside] hr, .post [aside] ul, .post [aside] .video, .post [aside] .youtube, .post [aside] .fotorama, .post [aside] .highlight, .post [aside] [block] {
       max-width: 100% !important; }
+    @media (max-width: 900px) {
+      .post [aside] {
+        font-size: 14px; }
+        .post [aside] p:first-of-type {
+          padding: 0; } }
   .post [main] + [aside] {
     float: left;
     clear: right;
     width: 100%;
-    max-width: 25%;
+    max-width: 30%;
     padding-left: 40px;
     text-align: left;
     position: relative; }
+    @media (max-width: 1366px) {
+      .post [main] + [aside] {
+        max-width: 25%; } }
+    @media (max-width: 900px) {
+      .post [main] + [aside] {
+        float: none;
+        max-width: 100%;
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 0;
+        margin: 0; } }
   .post [main] + [aside] + * {
     clear: left; }
-  @media (max-width: 900px) {
-    .post [main] {
-      max-width: 100%;
-      float: none;
-      clear: none; }
-    .post [aside] {
-      font-size: 14px; }
-      .post [aside] p:first-of-type {
-        padding: 0; }
-    .post [main] + [aside] {
-      float: none;
-      max-width: 100%;
-      display: inline-block;
-      text-align: left;
-      width: 100%;
-      padding-top: 20px;
-      padding-left: 0;
-      margin: 0; } }
   .post [caption] {
-    font: 300 1rem/1.25 "LatoWeb", sans-serif;
+    font: 300 1rem/1.25 "LatoWebMedium", sans-serif;
     color: #81868e;
     padding-top: 0;
     padding-bottom: 10px; }
@@ -953,20 +984,24 @@ nav {
       opacity: 1;
       margin: 0.5em 0 1em;
       height: auto; }
+  .post .left.w25, .post .right.w25 {
+    width: 25%; }
+  .post .left.w30, .post .right.w30 {
+    width: 30%; }
+  .post .left.w35, .post .right.w35 {
+    width: 35%; }
+  .post .left.w50, .post .right.w50 {
+    width: 50%; }
+  .post .left.w65, .post .right.w65 {
+    width: 65%; }
+  .post .left.w70, .post .right.w70 {
+    width: 70%; }
+  .post .left.w75, .post .right.w75 {
+    width: 75%; }
   .post .left {
     float: left;
     clear: left;
     padding-right: 20px; }
-    .post .left.w25 {
-      width: 25%; }
-    .post .left.w35 {
-      width: 35%; }
-    .post .left.w50 {
-      width: 50%; }
-    .post .left.w65 {
-      width: 65%; }
-    .post .left.w75 {
-      width: 75%; }
     @media (max-width: 900px) {
       .post .left {
         width: 100% !important;
@@ -977,16 +1012,6 @@ nav {
     float: right;
     clear: right;
     padding-left: 20px; }
-    .post .right.w25 {
-      width: 25%; }
-    .post .right.w35 {
-      width: 35%; }
-    .post .right.w50 {
-      width: 50%; }
-    .post .right.w65 {
-      width: 65%; }
-    .post .right.w75 {
-      width: 75%; }
     @media (max-width: 900px) {
       .post .right {
         width: 100% !important;
@@ -1057,13 +1082,12 @@ nav {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    letter-spacing: 1rem;
     display: block;
     border: none;
     margin: 0; }
     .post hr::before {
       position: relative;
-      content: "· · ·"; }
+      content: "● ● ●"; }
   .post blockquote {
     position: relative;
     padding-left: 60px;
@@ -1080,12 +1104,15 @@ nav {
       padding-bottom: 0 !important;
       max-width: 100% !important; }
   .post .actions {
-    font: 300 16px/1.4 "LatoWeb", sans-serif;
+    font: 300 16px/1.4 "LatoWebMedium", sans-serif;
     padding-top: 30px;
     color: #81868e;
-    max-width: 75%;
+    max-width: 70%;
     display: table;
     width: 100%; }
+    @media (max-width: 1366px) {
+      .post .actions {
+        max-width: 75%; } }
     @media (max-width: 900px) {
       .post .actions {
         max-width: 100%; } }
@@ -1385,7 +1412,7 @@ footer {
     opacity: 1;
     margin-top: 0; } }
 .help {
-  font: 400 16px/1.4 "LatoWeb", sans-serif;
+  font: 400 16px/1.4 "LatoWebMedium", sans-serif;
   border-radius: 2px;
   background: #fff4a5;
   padding: 15px 20px;
@@ -2972,7 +2999,7 @@ body.lb-disable-scrolling {
       text-align: left; } }
 
 a.toc-link {
-  font: 400 16px/1.4 "LatoWeb", sans-serif;
+  font: 400 16px/1.4 "LatoWebMedium", sans-serif;
   border-bottom: 0;
   color: #a0a0a0;
   height: 100%; }

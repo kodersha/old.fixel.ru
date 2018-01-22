@@ -5,9 +5,9 @@
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <link>https://milkleaks.ru/</link>
     <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Jan 2018 18:41:52 +0700</pubDate>
-    <lastBuildDate>Sun, 21 Jan 2018 18:41:52 +0700</lastBuildDate>
-    <generator>Jekyll v3.6.2</generator>
+    <pubDate>Mon, 22 Jan 2018 20:06:41 +0700</pubDate>
+    <lastBuildDate>Mon, 22 Jan 2018 20:06:41 +0700</lastBuildDate>
+    <generator>Jekyll v3.7.0</generator>
     
       <item>
         <title>Beat Cop</title>
@@ -332,7 +332,7 @@
 
 &lt;p&gt;Теперь установим Ruby.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;brew install ruby&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Проверим установку.&lt;/p&gt;
 
@@ -340,11 +340,11 @@
 
 &lt;p&gt;Установим bundler.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;gem install bundler&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Теперь установим сам Jekyll.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Проверим установленную версию.&lt;/p&gt;
 
@@ -409,7 +409,7 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-add-repository ppa:brightbox/ruby-ng
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install ruby2.4 ruby2.4-dev build-essential&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby2.4 ruby2.4-dev build-essential&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Обновляем RubyGems.&lt;/p&gt;
 
@@ -417,7 +417,7 @@
 
 &lt;p&gt;Теперь осталось установить сам Jekyll.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gem install jekyll bundler&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll bundler&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Проверить правильность установки можно командой:&lt;/p&gt;
 
