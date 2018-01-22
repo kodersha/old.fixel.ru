@@ -8,7 +8,7 @@ permalink: /blog/:title/
 
 image:
 
-version: v3.6.2
+version: v3.7.0
 safe: false
 
 navigation:

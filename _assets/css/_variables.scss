@@ -31,7 +31,7 @@ $gregor: 'Gregor', serif;
 $gregorIt: 'GregorIT', serif;
 
 $mq-mobile: 900px !default;
-$mq-notebook: 1336px !default;
+$mq-notebook: 1366px !default;
 
 @mixin mobile {
   @media screen and (max-width: 640px) {
