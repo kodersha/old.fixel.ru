@@ -5,13 +5,13 @@
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <link>https://milkleaks.ru/</link>
     <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jan 2018 19:38:43 +0700</pubDate>
-    <lastBuildDate>Tue, 23 Jan 2018 19:38:43 +0700</lastBuildDate>
+    <pubDate>Wed, 24 Jan 2018 01:05:43 +0700</pubDate>
+    <lastBuildDate>Wed, 24 Jan 2018 01:05:43 +0700</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
     
       <item>
         <title>Кат в Эгее</title>
-        <description>&lt;p&gt;Как известно &lt;a href=&quot;https://blogengine.ru&quot;&gt;Эгея&lt;/a&gt; не имеет функции скрытия длинных постов под катом, в этой &lt;a href=&quot;https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/&quot;&gt;статье&lt;/a&gt; Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов под катом, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта &lt;a href=&quot;http://jedfoster.com/Readmore.js/&quot;&gt;readmore.js&lt;/a&gt;. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.&lt;/p&gt;
+        <description>&lt;p&gt;Как известно &lt;a href=&quot;https://blogengine.ru&quot;&gt;Эгея&lt;/a&gt; не имеет функции скрытия длинных постов под катом, в этой &lt;a href=&quot;https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/&quot;&gt;статье&lt;/a&gt; Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта &lt;a href=&quot;http://jedfoster.com/Readmore.js/&quot;&gt;readmore.js&lt;/a&gt;. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.&lt;/p&gt;
 
 &lt;p&gt;Скачаем сам скрипт &lt;a href=&quot;https://github.com/jedfoster/Readmore.js&quot;&gt;readmore.js&lt;/a&gt; с GitHub и поместим файл &lt;mark&gt;readmore.min.js&lt;/mark&gt; в заранее созданную папку &lt;mark&gt;js&lt;/mark&gt; в корне вашего шаблона.&lt;/p&gt;
 
