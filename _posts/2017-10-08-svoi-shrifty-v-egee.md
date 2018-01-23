@@ -11,7 +11,7 @@ tags:
 Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно [скачать у автора][1], а бесплатную <mark>webfont</mark> версию, которую я использую в примере, можно скачать [отсюда][2]. После, откроем каталог шаблона:
 
 {% highlight shell %}
-.../themes/plain/styles/
+../themes/plain/styles/
 {% endhighlight %}
 
 И создадим в нем папки <mark>../fonts/gilroy</mark>, куда положим скачанные файлы шрифта в форматах <mark>eot</mark>, <mark>ttf</mark>, <mark>woff</mark> и <mark>woff2</mark>. В папке <mark>styles</mark> шаблона создадим файл <mark>fonts.css</mark> где подключаем шрифт:
@@ -63,7 +63,7 @@ tags:
 
 <p main>Чтобы разминимизировать <mark>main.css</mark>, для более удобного внесения правок, стоит воспользоваться полезным <a href="http://unminify.com/">сервисом</a>. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.</p>
 
-<p aside>Смотрите ещё: <a href="{{ site.baseurl }}/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></p>
+<p aside>Смотрите ещё: <a href="{{ site.baseurl }}/blog/kat-v-egee">Кат в Эгее</a> и <a href="{{ site.baseurl }}/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a>.</p>
 
 [1]:	https://www.tinkov.info/gilroy.html
 [2]:	https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/

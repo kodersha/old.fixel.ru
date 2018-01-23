@@ -19,6 +19,20 @@
 	}
 }
 
+.highlighter-rouge {
+    font: 400 1.3rem/1.5 $gregor;
+    background-color: $mark;
+    word-wrap: break-word;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	
+	@media (max-width : $mq-mobile) {
+		font-size: 1em;
+		line-height: 1.4;
+	}
+}
+
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
