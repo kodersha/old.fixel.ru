@@ -2679,6 +2679,18 @@ body.lb-disable-scrolling {
         .highlight pre code {
           font-size: 1em; } }
 
+.highlighter-rouge {
+  font: 400 1.3rem/1.5 "Gregor", serif;
+  background-color: #fff9db;
+  word-wrap: break-word;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px; }
+  @media (max-width: 900px) {
+    .highlighter-rouge {
+      font-size: 1em;
+      line-height: 1.4; } }
+
 .highlight .c {
   color: #586E75; }
 

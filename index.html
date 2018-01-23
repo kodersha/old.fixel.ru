@@ -38,7 +38,7 @@
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link rel="stylesheet" type="text/css" href="/assets/style-350b4f83ebf1230e51b6b31bf93a16c93185815c8b88ee5ae8cce0612bd9e630.css">
+		<link rel="stylesheet" type="text/css" href="/assets/style-a431167ed2febd72520a337437d18b3f8079b7514345ddbbfae1077e32e9c2a5.css">
 
 	</head>
 
@@ -80,6 +80,145 @@
 <div class="content">
 	<div class="common">
 		<div class="post-list full">	
+			
+				<article class="post">
+	<div class="entry">
+		<h1 class="title">
+			<a href="/blog/kat-v-egee/">Кат в Эгее</a>
+		</h1>
+		<p>Как известно <a href="https://blogengine.ru">Эгея</a> не имеет функции скрытия длинных постов под катом, в этой <a href="https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/">статье</a> Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов под катом, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта <a href="http://jedfoster.com/Readmore.js/">readmore.js</a>. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.</p>
+
+<p>Скачаем сам скрипт <a href="https://github.com/jedfoster/Readmore.js">readmore.js</a> с GitHub и поместим файл <mark>readmore.min.js</mark> в заранее созданную папку <mark>js</mark> в корне вашего шаблона.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/js/readmore.min.js</code></pre></figure>
+
+<p>Затем создадим файл <mark>script.tmpl.php</mark> в папке <mark>templates</mark> шаблона, в нём мы будем подключать и настраивать сам скрипт.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/templates/script.tmpl.php</code></pre></figure>
+
+<p>Добавим в созданный файл немного настроек, полный список которых можно посмотреть на странице скрипта на GitHub.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.e2-note-short'</span><span class="p">).</span><span class="nx">readmore</span><span class="p">({</span>
+        <span class="na">speed</span><span class="p">:</span> <span class="mi">75</span><span class="p">,</span> <span class="c1">// Скорость раскрытия ката</span>
+        <span class="na">collapsedHeight</span><span class="p">:</span> <span class="mi">1250</span><span class="p">,</span> <span class="c1">// Длинна заметки после которой будет добавлен кат</span>
+        <span class="na">moreLink</span><span class="p">:</span> <span class="s1">'&lt;div class="more"&gt;&lt;a class="morelink" href="#"&gt;Показать полностью&lt;/a&gt;&lt;/div&gt;'</span><span class="p">,</span> <span class="c1">// Классы кнокпи раскрытия ката</span>
+        <span class="na">lessLink</span><span class="p">:</span> <span class="s1">''</span> <span class="c1">// Классы кнокпи скрытия ката</span>
+    <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>Теперь добавим класс <mark>.e2-note-short</mark> на основании которого будет добавляться кат к вашим записям, для этого нужно скопировать файл:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../system/theme/templates/notes.tmpl.php</code></pre></figure>
+
+<p>И поместить в папку <mark>templates</mark> вашего шаблона.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/templates/notes.tmpl.php</code></pre></figure>
+
+<p>Затем откроем <mark>notes.tmpl.php</mark> где на 27 строке добавим к <code class="highlighter-rouge">&lt;article&gt;</code> класс <mark>e2-note-short</mark> обернув его <mark>php</mark> параметром, чтобы кат не работал на отдельной странице с записью.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$content</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'note'</span><span class="p">)</span> <span class="p">{</span> <span class="cp">?&gt;</span><span class="s">e2-note-short</span><span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Теперь в папке <mark>styles</mark> шаблона создадим файл <mark>style.css</mark> со стилями кнопки ката. В дальнейшем в этот <mark>css</mark> можно добавлять любые собственные стили без конфликта с основным файлом стилей шаблона Эгеи.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/styles/style.css</code></pre></figure>
+
+<p>Добавим стилей. Их можно отредактировать на свой вкус.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.more</span> <span class="p">{</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.more</span><span class="nd">::before</span> <span class="p">{</span>
+    <span class="nl">content</span><span class="p">:</span> <span class="s1">""</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="n">-moz-linear-gradient</span><span class="p">(</span><span class="nb">top</span><span class="p">,</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="m">40%</span><span class="p">,</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="m">80%</span><span class="p">);</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="n">-webkit-linear-gradient</span><span class="p">(</span><span class="nb">top</span><span class="p">,</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="m">40%</span><span class="p">,</span><span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="m">80%</span><span class="p">);</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">bottom</span><span class="p">,</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">0</span><span class="p">)</span> <span class="m">40%</span><span class="p">,</span><span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">1</span><span class="p">)</span> <span class="m">80%</span><span class="p">);</span>
+    <span class="nl">filter</span><span class="p">:</span> <span class="n">progid</span><span class="p">:</span><span class="n">DXImageTransform</span><span class="p">.</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">gradient</span><span class="p">(</span> <span class="n">startColorstr</span><span class="err">=</span><span class="s2">'#00ffffff'</span><span class="p">,</span> <span class="n">endColorstr</span><span class="err">=</span><span class="s2">'#ffffff'</span><span class="p">,</span><span class="n">GradientType</span><span class="err">=</span><span class="m">0</span> <span class="p">);</span> 
+    <span class="nl">pointer-events</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">top</span><span class="p">:</span> <span class="m">-150px</span><span class="p">;</span>
+    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nc">.morelink</span> <span class="p">{</span>
+    <span class="nl">-webkit-border-radius</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="nl">-moz-border-radius</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#f1f3f4</span><span class="p">;</span>
+    <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">max-width</span><span class="p">:</span> <span class="m">720px</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#8890a7</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nc">.morelink</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="m">#e2e5e6</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#8890a7</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Далее, необходимо подключить все созданные файлы, для этого копируем <mark>main.tmpl.php</mark>.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../system/theme/templates/main.tmpl.php</code></pre></figure>
+
+<p>И вставляем в папку <mark>templates</mark> вашего шаблона.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/templates/main.tmpl.php</code></pre></figure>
+
+<p>Теперь отредактируем <mark>main.tmpl.php</mark> добавив стили после основных стилей <code class="highlighter-rouge"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span></code> в конце файла.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'style'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>А после основных скриптов шаблона <code class="highlighter-rouge"><span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span></code> добавим сам <mark>readmore.js</mark>.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'readmore.min'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Также перед закрывающимся тегом <code class="highlighter-rouge">&lt;/html&gt;</code> добавим файл с настройками скрипта.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'script'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Таким образом мы добавили кат в Эгею.</p>
+
+<p><img src="https://i.imgur.com/KcpY7yg.png" alt="Кат в Эгее" /></p>
+
+<p main="">Возможно где-то придется отредактировать стили по ситуации, подобрать оптимальную длину заметки после которой кат будет скрывать запись и тому подобное. Стандартный шаблон <mark>plain</mark> здесь используется в качестве примера, но намного лучше сделать его копию и переименовать на свой лад, дабы при последующих обновлениях Эгеи ничего лишнего не перезаписалось.</p>
+
+<p aside="">Смотрите также: <a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a> и <a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a>.</p>
+
+
+		<div class="actions">	
+			<div class="tags">
+				<span class="date" title="23 января 2018">
+					<a href="/blog/kat-v-egee/">2018</a>
+				</span>	
+				
+													
+						<a href="/category/%D0%B2%D0%B5%D0%B1/" class="category">Веб</a>
+					
+				
+				
+				
+				<span class="point">·</span>
+					
+					
+						<a href="/tag/%D0%B3%D0%B0%D0%B9%D0%B4/">
+							Гайд,
+						</a>
+					
+						<a href="/tag/%D1%8D%D0%B3%D0%B5%D1%8F/">
+							Эгея
+						</a>
+					
+				
+			</div>
+		</div>
+	</div>
+</article>
 			
 				<article class="post">
 	<div class="entry">
@@ -353,7 +492,7 @@
 
 <p>Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно <a href="https://www.tinkov.info/gilroy.html">скачать у автора</a>, а бесплатную <mark>webfont</mark> версию, которую я использую в примере, можно скачать <a href="https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/">отсюда</a>. После, откроем каталог шаблона:</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">.../themes/plain/styles/</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/styles/</code></pre></figure>
 
 <p>И создадим в нем папки <mark>../fonts/gilroy</mark>, куда положим скачанные файлы шрифта в форматах <mark>eot</mark>, <mark>ttf</mark>, <mark>woff</mark> и <mark>woff2</mark>. В папке <mark>styles</mark> шаблона создадим файл <mark>fonts.css</mark> где подключаем шрифт:</p>
 
@@ -394,7 +533,7 @@
 
 <p main="">Чтобы разминимизировать <mark>main.css</mark>, для более удобного внесения правок, стоит воспользоваться полезным <a href="http://unminify.com/">сервисом</a>. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.</p>
 
-<p aside="">Смотрите ещё: <a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></p>
+<p aside="">Смотрите ещё: <a href="/blog/kat-v-egee">Кат в Эгее</a> и <a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a>.</p>
 
 
 		<div class="actions">	
@@ -492,54 +631,6 @@
 					
 						<a href="/tag/%D1%85%D0%BE%D1%80%D1%80%D0%BE%D1%80/">
 							Хоррор
-						</a>
-					
-				
-			</div>
-		</div>
-	</div>
-</article>
-			
-				<article class="post">
-	<div class="entry">
-		<h1 class="title">
-			<a href="/blog/uiljam-zinser-kak-pisat-horosho/">Уильям Зинсер «Как писать хорошо»</a>
-		</h1>
-		<p>Читая различных блогеров так или иначе стала сталкиваться с упоминаниями книги Уиляма Зинсера «Как писать хорошо», как практическое руководство к написанию самых лучших статей, заметок, репортажей и прочих нехудожественных текстов. А потому, тоже не смогла обойти её стороной. В своей книге, впервые появившейся на свет еще в эпоху печатных машинок, в далеком 1976 году, переизданной и дополненной около тридцати раз, Уильям Зинсер рассказывает и приводит примеры правильного текста, дает советы о том как писать интересно и избавится от «воды». В целом, «Как писать хорошо» сама по себе является примером того, как стоит писать нехудожественную литературу - она написана понятным и простым языком в форме непринужденной беседы автора с читателем. На протяжении всей книги автор дает множество полезных советов и примеров, которые могут помочь сделать текст лучше.</p>
-
-<p><b>«Упрощайте же, упрощайте.»</b></p>
-
-<p>Писать ясно излагая свои мысли, избавляться от словесного мусора, сложных слов и конструкций. Постоянно вычитывать написанное, пользоваться словарями, тщательно подбирать слова, разбивать текст на абзацы, - советует Зинсер. Не забывать о стилистике, стержне повествования, начале и концовке текста.</p>
-
-<p><b>«Писать учатся, когда пишут.»</b></p>
-
-<p>Однако, говорит автор, даже следуя этим советам нельзя научиться писать хорошо сразу. Как и в любом ремесле мастерство приходит с опытом, со всеми его пробами, ошибками и поисками себя. Зинсер считает, что только работая над своими текстами, вычитывая, перерабатывая и переписывая можно научиться писать хорошо. Писательство - кропотливая работа требующая усердия, ни один известный писатель не обходился без множества исправлений прежде чем текст обретал окончательный вариант.</p>
-
-<p><b>«Писать - это тяжелая работа. Ясная фраза - не случайность. Очень редко фразы выходят ясными с первого и даже с третьего раза. Помните это в минуты отчаяния. Если вы обнаружите, что писать трудно, не удивляйтесь. Так оно и есть.»</b></p>
-
-<p>Зинсер дает советы не только о том как правильно строить предложения, но и как правильно писать в целом, как заинтересовать читателя, как относиться к собственному тексту и критике. Избавляться от обезличенного «журналистского жаргона», ясно излагать свою точку зрения, уважать читателя, но между тем не пытаться подстроится под желания аудитории. Писать от своего имени своего мнения даже когда в тексте нет конкретно выраженного авторского «Я» - именно тогда текст станет индивидуальным, а значит - интересным.</p>
-
-<p><b>«В конечном счёте главный продукт, предлагаемый писателем читателю, - это не тема, о которой он пишет, а он сам.»</b></p>
-
-<p>«Как писать хорошо» стоит порекомендовать всем тем, кто так или иначе увлекается, или только начал увлекаться ремеслом писательства. Даже если ваши публикации, это простые заметки из повседневной жизни. Конечно, некоторые советы и примеры приведенные в этой книге в некотором роде сугубо узконаправленные, ведь написаны американским писателем для американской публики, тем не менее даже из них можно почерпнуть что-то полезное. Надеюсь что кто-то, так же как и я, откроет для себя эту книгу и почерпнет, если не все, то хотя бы парочку полезных советов.</p>
-
-		<div class="actions">	
-			<div class="tags">
-				<span class="date" title=" 1 октября 2017">
-					<a href="/blog/uiljam-zinser-kak-pisat-horosho/">2017</a>
-				</span>	
-				
-													
-						<a href="/category/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/" class="category">Книги</a>
-					
-				
-				
-				
-				<span class="point">·</span>
-					
-					
-						<a href="/tag/%D1%81%D0%B0%D0%BC%D0%BE%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5/">
-							Саморазвитие
 						</a>
 					
 				
