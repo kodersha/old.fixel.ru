@@ -11,7 +11,7 @@ description: Список категорй блога
 		<div class="tag-cloud">
 			{% assign categories_list = site.categories %}
 			{% for category in categories_list %}
-				<a href="{{ category[0] | replace:' ', '-' | downcase | uri_escape }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
+				<a href="{{ site.baseurl }}/category/{{ category | first | slugify }}/">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
 			{% endfor %}
 			{% assign categories_list = nil %}
 		</div>
