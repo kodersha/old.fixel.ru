@@ -610,14 +610,6 @@ nav {
   color: #a0a0a0; }
   .posts .post {
     position: relative; }
-    .posts .post .entry p {
-      padding: 0;
-      color: #000; }
-    .posts .post .entry span {
-      font: 400 14px/1.4 "LatoWebMedium", sans-serif;
-      margin-top: 5px;
-      display: initial;
-      color: #a0a0a0; }
     .posts .post:last-child {
       margin-bottom: 0 !important; }
 
@@ -664,12 +656,15 @@ nav {
           font-size: 2rem; } }
     .post-list.archive .posts .post {
       margin-bottom: 10px; }
-      .post-list.archive .posts .post a {
-        color: #000; }
-      .post-list.archive .posts .post .category {
-        font: 400 14px/1.4 "LatoWebMedium", sans-serif;
+      .post-list.archive .posts .post .entry span {
+        font: 400 16px/1.4 "LatoWebMedium", sans-serif;
+        margin-top: 5px;
+        display: initial;
+        color: #81868e; }
+      .post-list.archive .posts .post .entry .category {
+        font: 400 16px/1.4 "LatoWebMedium", sans-serif;
         padding-bottom: 2px;
-        color: #a0a0a0; }
+        color: #81868e; }
     .post-list.archive .posts .help {
       margin-top: 50px;
       margin-bottom: 50px; }
@@ -760,8 +755,7 @@ nav {
   font: 400 1.3rem/1.5 "Gregor", serif; }
   @media (max-width: 900px) {
     .post {
-      font-size: 1em;
-      line-height: 1.4; } }
+      font-size: 1.1rem; } }
   .post .header {
     max-width: 70%; }
     @media (max-width: 1366px) {
@@ -814,7 +808,7 @@ nav {
         border-bottom: 0; }
   .post h2 {
     font: 600 1.5rem/1.4 "LatoWebHeavy", sans-serif;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     padding-top: 30px; }
     .post h2.title {
       font: 300 2.5rem/1.2 "LatoWebBlack", sans-serif;
@@ -1133,6 +1127,25 @@ nav {
       margin: 0 5px 5px 0; }
       .post .actions .date a {
         color: #81868e; }
+  .post .related {
+    padding-top: 150px; }
+    .post .related h3 {
+      font: 600 1.5rem/1.4 "LatoWebHeavy", sans-serif;
+      padding-bottom: 20px; }
+    .post .related ul {
+      list-style: none;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3; }
+      @media (max-width: 900px) {
+        .post .related ul {
+          -webkit-column-count: auto;
+          -moz-column-count: auto;
+          column-count: auto; } }
   .post .cover {
     width: 100vw;
     height: 60vh;
@@ -1328,19 +1341,20 @@ footer {
 
 .tag-cloud {
   padding-top: 100px;
-  padding-bottom: 100px;
-  font: 400 1.15em/1.9 "Gregor", serif;
-  -webkit-column-count: 5;
-  -moz-column-count: 5;
-  column-count: 5; }
-  @media (max-width: 900px) {
-    .tag-cloud {
-      -webkit-column-count: auto;
-      -moz-column-count: auto;
-      column-count: auto; } }
-  .tag-cloud a {
-    display: block;
-    border-bottom: 0; }
+  padding-bottom: 100px; }
+  .tag-cloud ul {
+    list-style: none;
+    font: 400 1.3rem/1.5 "Gregor", serif;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4; }
+    @media (max-width: 900px) {
+      .tag-cloud ul {
+        -webkit-column-count: auto;
+        -moz-column-count: auto;
+        column-count: auto; } }
+    .tag-cloud ul li {
+      margin-bottom: 10px; }
 
 .black {
   background-color: #000;
