@@ -66,6 +66,7 @@ exclude:
 ## Plugins
 plugins:
   - font-awesome-sass
+  - jekyll-tagging-related_posts
   - jekyll-redirect-from
   - jekyll-include-cache
   - jekyll-auto-image

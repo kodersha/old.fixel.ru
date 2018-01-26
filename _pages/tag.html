@@ -9,12 +9,12 @@ description: Список тегов блога
 <div class="content">
 	<div class="common full">
 		<div class="tag-cloud">
+			<ul>
 			{% assign tags = site.tags | sort %}
 			{% for tag in tags %}
-				<a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">
-					{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-				</a>
+				<li><a href="{{ site.baseurl }}/tag/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a></li>
 			{% endfor %}
+			</ul>
 		</div>
 	</div>
 </div>

@@ -478,21 +478,6 @@ nav {
 	.post {
 		position: relative;
 		
-		.entry {
-		
-			p {
-				padding: 0;
-				color: $black;
-			}
-			
-			span {
-				font: 400 14px/1.4 $latoMedium;
-				margin-top: 5px;
-				display: initial;
-				color: $gray;
-			}
-		}
-		
 		&:last-child {
 			margin-bottom: 0 !important;
 		}
@@ -579,15 +564,20 @@ nav {
 			
 			.post {
 				margin-bottom: 10px;
-				
-				a {
-					color: $black;
-				}
 
-				.category {
-					font: 400 14px/1.4 $latoMedium;
-					padding-bottom: 2px;
-					color: $gray;
+				.entry {		
+					span {
+						font: 400 16px/1.4 $latoMedium;
+						margin-top: 5px;
+						display: initial;
+						color: $darkGray;
+					}
+
+					.category {
+						font: 400 16px/1.4 $latoMedium;
+						padding-bottom: 2px;
+						color: $darkGray;
+					}
 				}
 			}
 			
@@ -735,8 +725,7 @@ nav {
 	font: 400 1.3rem/1.5 $gregor;
 
 	@media (max-width : $mq-mobile) {
-		font-size: 1em;
-		line-height: 1.4;
+		font-size: 1.1rem;
 	}
   
 	.header {
@@ -820,7 +809,7 @@ nav {
 	
 	h2 {
 	    font: 600 1.5rem/1.4 $latoHeavy;
-		padding-bottom: 10px;
+		padding-bottom: 0;
 		padding-top: 30px;
 		
 		&.title {
@@ -1287,6 +1276,32 @@ nav {
 		}
 	
 	}
+
+	.related {
+		padding-top: 150px;
+
+		h3 {
+			font: 600 1.5rem/1.4 $latoHeavy;
+			padding-bottom: 20px;
+		}
+
+		ul {
+			list-style: none;
+			padding-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+
+			@media (max-width : $mq-mobile) {
+				-webkit-column-count: auto;
+				-moz-column-count: auto;
+				column-count: auto;
+			}
+		}
+	}
  	
 	.cover {
 		width: 100vw;
@@ -1616,20 +1631,23 @@ footer {
 .tag-cloud {
 	padding-top: 100px;
 	padding-bottom: 100px;
-    font: 400 1.15em/1.9 $gregor;
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
+
+	ul {
+		list-style: none;
+		font: 400 1.3rem/1.5 $gregor;
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
 	
-	@media (max-width : $mq-mobile) {
-		-webkit-column-count: auto;
-		-moz-column-count: auto;
-		column-count: auto;		
-	}
-	
-	a {
-		display: block;
-		border-bottom: 0;
+		@media (max-width : $mq-mobile) {
+			-webkit-column-count: auto;
+			-moz-column-count: auto;
+			column-count: auto;		
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
 	}
 }
 

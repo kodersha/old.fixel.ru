@@ -3,7 +3,7 @@
 		{% if paginator.next_page %}
 			<a class="next" href="{{ paginator.next_page_path | beautify_url }}">Ранее</a>
 		{% endif %}
-		<span class="page_number ">Страниц: {{ paginator.page }} из {{ paginator.total_pages }}</span>
+		<span class="page_number ">Страниа: {{ paginator.page }} из {{ paginator.total_pages }}</span>
 		{% if paginator.previous_page %}
 			<a href="{{ paginator.previous_page_path | beautify_url }}" class="previous">Позднее</a>
 		{% endif %}

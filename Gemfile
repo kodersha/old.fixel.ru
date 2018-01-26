@@ -18,6 +18,7 @@ gem "jekyll", "3.7.0"
 group :jekyll_plugins do
    gem "font-awesome-sass"
    gem "jekyll-feed", "~> 0.6"
+   gem "jekyll-tagging-related_posts"
    gem "jekyll-include-cache"
    gem "jekyll-redirect-from"
    gem "jekyll-auto-image"

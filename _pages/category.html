@@ -9,11 +9,13 @@ description: Список категорй блога
 <div class="content">
 	<div class="common full">
 		<div class="tag-cloud">
+			<ul>
 			{% assign categories_list = site.categories %}
 			{% for category in categories_list %}
-				<a href="{{ site.baseurl }}/category/{{ category | first | slugify }}/">{{ category[0] | capitalize }} ({{ category[1].size }})</a>
+				<li><a href="{{ site.baseurl }}/category/{{ category | first | slugify }}/">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
 			{% endfor %}
 			{% assign categories_list = nil %}
+			</ul>
 		</div>
 	</div>
 </div>

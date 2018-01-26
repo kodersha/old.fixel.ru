@@ -1,0 +1,10 @@
+{% if site.related_posts.size >= 3 %}
+	<div class="related">
+		<h3>Похожие записи</h3>
+		<ul>
+			{% for related_post in site.related_posts limit: 9 %}
+				<li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endif %}
