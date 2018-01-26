@@ -764,17 +764,17 @@ nav {
     @media (max-width: 900px) {
       .post .header {
         max-width: 100%; } }
-  .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
+  .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
     max-width: 70%; }
     @media (max-width: 1366px) {
-      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
+      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
         max-width: 75%; } }
     @media (max-width: 900px) {
-      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
+      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
         max-width: 100%; } }
   .post .entry [full] {
     max-width: 100%; }
-    .post .entry [full] p, .post .entry [full] h1, .post .entry [full] h2, .post .entry [full] h3, .post .entry [full] h4, .post .entry [full] blockquote, .post .entry [full] hr, .post .entry [full] ul, .post .entry [full] .video, .post .entry [full] .youtube, .post .entry [full] .fotorama, .post .entry [full] .highlight, .post .entry [full] [block] {
+    .post .entry [full] p, .post .entry [full] h1, .post .entry [full] h2, .post .entry [full] h3, .post .entry [full] h4, .post .entry [full] blockquote, .post .entry [full] hr, .post .entry [full] ul, .post .entry [full] .video, .post .entry [full] .youtube, .post .entry [full] .fotorama, .post .entry [full] [block] {
       max-width: 100%; }
   .post p {
     margin: 0;
@@ -2680,18 +2680,35 @@ body.lb-disable-scrolling {
   color: #999; }
 
 .highlight {
+  position: relative;
   display: grid; }
   .highlight pre {
     width: auto;
     overflow: auto;
     padding-top: 20px;
-    padding-bottom: 10px; }
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    z-index: 20;
+    position: relative; }
     .highlight pre code {
       font: 400 1rem/1.4 "Fira Code", monospace;
       display: block; }
       @media (max-width: 900px) {
         .highlight pre code {
           font-size: 1em; } }
+  .highlight:before {
+    content: '';
+    background-color: #f8f8f8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 10px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+    margin-left: -9999px;
+    margin-right: -9999px; }
 
 .highlighter-rouge {
   font: 400 1.3rem/1.5 "Gregor", serif;
