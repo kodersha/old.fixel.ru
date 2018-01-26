@@ -1,12 +1,17 @@
 
 .highlight {
+	position: relative;
 	display: grid;
 	
 	pre {
-	    width: auto;
+		width: auto;
 		overflow: auto;
 		padding-top: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		z-index: 20;
+		position: relative;
 
 		code {
 			font: 400 1rem/1.4 $firaCode;
@@ -16,6 +21,20 @@
 				font-size: 1em;
 			}
 		}
+	}
+	
+	&:before {
+		content: '';
+		background-color: #f8f8f8;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 20px;
+		bottom: 10px;
+		padding-left: 9999px;
+		padding-right: 9999px;
+		margin-left: -9999px;
+		margin-right: -9999px;
 	}
 }
 

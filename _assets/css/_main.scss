@@ -741,7 +741,7 @@ nav {
 	}
 
 	.entry {
-		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, .highlight, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, [block] {
 			max-width: 70%;
 
 			@media (max-width : $mq-notebook) {
@@ -756,7 +756,7 @@ nav {
 		[full] {
 			max-width: 100%;
 		
-			p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+			p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, [block] {
 				max-width: 100%;
 			}
 		}
