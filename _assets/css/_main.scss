@@ -741,7 +741,7 @@ nav {
 	}
 
 	.entry {
-		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, .highlight, [block] {
 			max-width: 70%;
 
 			@media (max-width : $mq-notebook) {
@@ -757,7 +757,7 @@ nav {
 			position: relative;
 			max-width: 100%;
 		
-			p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, [block] {
+			p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
 				max-width: 100%;
 			}
 
@@ -785,6 +785,14 @@ nav {
 						-webkit-border-radius: 0 !important;
 						-moz-border-radius: 0 !important;
 						border-radius: 0 !important;
+					}
+				}
+
+				.video {
+					.frame {
+						-webkit-border-radius: 0 !important;
+						-moz-border-radius: 0 !important;
+						border-radius: 0 !important;	
 					}
 				}
 
@@ -1203,8 +1211,8 @@ nav {
 	}
 	
 	.video {
-		padding-top: 20px;
-		padding-bottom: 10px;
+		margin-top: 20px;
+		margin-bottom: 10px;
 	
 		.frame {
 			-webkit-border-radius: 4px;
