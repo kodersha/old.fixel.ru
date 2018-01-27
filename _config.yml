@@ -73,9 +73,29 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jekyll-sitemap
+  - jekyll-timeago
   - jekyll-assets
   - jekyll-feed
   - uglifier
+
+jekyll_timeago:
+  depth: 1
+  today: 'Сегодня'
+  yesterday: 'Вчера'
+  tomorrow: 'Завтра'
+  and: 'и'
+  suffix: 'назад'
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'in'
+  years: 'года'
+  year: 'год'
+  months: 'мес.'
+  month: 'мес.'
+  weeks: 'нед.'
+  week: 'нед.'
+  days: 'дн.'
+  day: 'дн.'
   
 paginate: 8
 paginate_path: "/page-:num/"

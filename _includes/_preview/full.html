@@ -7,7 +7,7 @@
 		<div class="actions">	
 			<div class="tags">
 				<span class="date" title="{{ post.date | russian_date }}">
-					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y" }}</a>
+					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | timeago }}</a>
 				</span>	
 				{% if post.categories %}
 					{% for category in post.categories %}								
