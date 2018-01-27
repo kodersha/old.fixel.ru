@@ -2658,7 +2658,7 @@ body.lb-disable-scrolling {
           font-size: 1em; } }
   .highlight:before {
     content: '';
-    background-color: #f8f8f8;
+    background-color: #faf9f9;
     position: absolute;
     left: 0;
     right: 0;
