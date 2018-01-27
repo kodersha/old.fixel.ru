@@ -173,78 +173,6 @@
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
-/* pt-sans-regular - cyrillic_latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-regular-4a49e0f04e74ace92808870cb8972526cfdfb0def898625cdb2e03b12acf59ca.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Sans"), local("PTSans-Regular"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-regular-4a49e0f04e74ace92808870cb8972526cfdfb0def898625cdb2e03b12acf59ca.eot") format("embedded-opentype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-regular-07bc95540e05387d2ce59574ee0a6139738b50e3ea15d7de452829079e1c2189.woff2") format("woff2"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-regular-cce70f0746995f7234d174a3df3adaac14bfb6a2bfc88b4e8d21ded6e0db0656.woff") format("woff"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-regular-a7434dcf8b1b85bd7358e538ddc254fd0427574436d9ca841939da7b359112ec.ttf") format("truetype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-regular-96f1a1a96d312268ea047979b972394c176def042a9f7548195647f7b15f36e7.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-sans-italic - cyrillic_latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-italic-45593f3e5aeb063ebe8117f9a44f12db30bebf57fb8597c05e5a43084dd1d5e0.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Sans Italic"), local("PTSans-Italic"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-italic-45593f3e5aeb063ebe8117f9a44f12db30bebf57fb8597c05e5a43084dd1d5e0.eot") format("embedded-opentype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-italic-bd07ba0e79de7a5b84e755457b84f9b0c9cb2a0371543b45f1d382069e47afe3.woff2") format("woff2"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-italic-b449895fedb3b0f4f2397d4b22a9669b5af41d82947c521119d8c1bc25c33c3d.woff") format("woff"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-italic-f62e17881930e104970ca6fd427fd55b79d84000fd49be9a9288a7b45589a0da.ttf") format("truetype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-italic-0b2a16803d502fdb6d91099fa9b62bd9ede4b3bb9395db56cb7cb69471c5364a.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-sans-700 - cyrillic_latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700-baf8ec775808af50caba4de5bf351de745ff86efcd0f2bd05325908a1aecef9a.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Sans Bold"), local("PTSans-Bold"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700-baf8ec775808af50caba4de5bf351de745ff86efcd0f2bd05325908a1aecef9a.eot") format("embedded-opentype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700-61920ff572c90f2eb48395d583b618dd1640620a5c97b1ed6608a25c46f6beca.woff2") format("woff2"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700-50ab73ea211402e2094dfe54623b3767a21bd8af299cf26363740ce9cdb0cd5c.woff") format("woff"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700-909b8dd39587cfedf0f8b4afe620de53b2d74f6cea4d9737b27424d153f6a895.ttf") format("truetype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700-870a604e7ed340f85fbf12de49b63b2d30c24a261d9e29f19a28d03170bb00a8.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-sans-700italic - cyrillic_latin */
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700italic-490c90d3f81e855ec7d52bcc2fd217e70268eb44a3dc2a56216a34c125661551.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Sans Bold Italic"), local("PTSans-BoldItalic"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700italic-490c90d3f81e855ec7d52bcc2fd217e70268eb44a3dc2a56216a34c125661551.eot") format("embedded-opentype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700italic-a138480ce7fe5514263daad03a7ff4f5db36bfaeda7f3a7538ccde600d0c363c.woff2") format("woff2"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700italic-8831249299cf4900ebe183a8679f50d9058c354f06fa5967c366b5e93e164629.woff") format("woff"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700italic-897f1665c5870984788a3c3959a65d93578bd7420a9a63a4670a4aa1872df38e.ttf") format("truetype"), url("/assets/pt-sans/pt-sans-v9-cyrillic_latin-700italic-fe1345c9ad6d80ca76a5f40cbc2845bfb788764e716f36e146e9a70aa8a9993f.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-serif-regular - cyrillic_latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-regular-8990ea08d2ca46df2a5bae9430c687604e281d357913e7be55a6cbbb2167d774.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Serif"), local("PTSerif-Regular"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-regular-8990ea08d2ca46df2a5bae9430c687604e281d357913e7be55a6cbbb2167d774.eot") format("embedded-opentype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-regular-6e6b1e9c3af1274715bf6973aa2b7888bbd4c32c1e30cbe67f122cb61337f938.woff2") format("woff2"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-regular-1e4903498a10cbd095f70278a724c4773a3ce79029cad6e3d6501befea6ff529.woff") format("woff"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-regular-1b6f57444ac2c6ec911b16230d3ac2ddb7089163082fa3954668ba6d6594197b.ttf") format("truetype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-regular-9fe1ec3eab9304ec08f2f46d1c4a9eb5b9900548a1b9f6c61bfb9dede9cd22db.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-serif-italic - cyrillic_latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 400;
-  src: url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-italic-71c61d6009b681e5d2264b59a935e90f553e94d56a7ecb5e8cccd6cff4720ddd.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Serif Italic"), local("PTSerif-Italic"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-italic-71c61d6009b681e5d2264b59a935e90f553e94d56a7ecb5e8cccd6cff4720ddd.eot") format("embedded-opentype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-italic-58769d7997564d13455cce104d8ceefddbf7748332da58797664fa6a59da13fd.woff2") format("woff2"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-italic-2b4c92f0ff00196d592b39faf43ac0d572febd6262c7a6cb1decd80dedcebc6e.woff") format("woff"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-italic-3790c067e86d7de9305cfa52bd8486f224135628d0f375bfeaad842bb94d0c4e.ttf") format("truetype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-italic-66096ea6404d08490b4ed20231c0ba125b2d7f6b6fd3db5868c6cd7c76478e3f.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-serif-700 - cyrillic_latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700-60b42241a4553d00aae723de5a279819e09cca283e37250de3fd2fc7dd4dbb65.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Serif Bold"), local("PTSerif-Bold"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700-60b42241a4553d00aae723de5a279819e09cca283e37250de3fd2fc7dd4dbb65.eot") format("embedded-opentype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700-708472a6e528b521cb7372c1d1b8950336bc0771881bb0d26870ff19037952d9.woff2") format("woff2"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700-70326e89dd2f4ddcab89eeb722a7ceb5355acf001b17cc95e7ed99f5ea247488.woff") format("woff"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700-389d7321fa3f835861f4601dca9157aeeb57e96cf794aaaa65b2c4185d3ad2d7.ttf") format("truetype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700-0d688ab535527be866ba3af336fdf7ac8b7636283ea7ecdc0372d64c21435187.svg") format("svg");
-  /* Legacy iOS */ }
-/* pt-serif-700italic - cyrillic_latin */
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 700;
-  src: url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700italic-4d4ccb3fc12ab0dacb608eff9ebe7831fc87427c02a4bcb9b9ea1462933f85e8.eot");
-  /* IE9 Compat Modes */
-  src: local("PT Serif Bold Italic"), local("PTSerif-BoldItalic"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700italic-4d4ccb3fc12ab0dacb608eff9ebe7831fc87427c02a4bcb9b9ea1462933f85e8.eot") format("embedded-opentype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700italic-c73dc11b72d8262f297c3502b105825b8bff3a87ff3636a72f9135fb4cd54856.woff2") format("woff2"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700italic-6bcf1d7f5d5d9815581730a99aa5f83edf66bd99f33bc7726824511c1f21ffd0.woff") format("woff"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700italic-d71a13eb40fdca2fbd1672f201a769fc144158e4efedc2f7c9f9a83664951f83.ttf") format("truetype"), url("/assets/pt-serif/pt-serif-v9-cyrillic_latin-700italic-622c23e8a7faa2dd68a19106036e6123b5017400061ba3b6850ba0b5b7186a0d.svg") format("svg");
-  /* Legacy iOS */ }
 @font-face {
   font-family: 'Fira Code';
   src: url("/assets/fira-code/eot/FiraCode-Light-c98183e31441d101b8c584a61a825a5f804edca08da96121c7da833a7457e558.eot");
@@ -452,10 +380,10 @@ select[multiple=multiple] {
     float: left; }
     @media (max-width: 1366px) {
       .common .aside {
-        max-width: 25%; } }
+        max-width: 25% !important; } }
     @media (max-width: 900px) {
       .common .aside {
-        max-width: 100%;
+        max-width: 100% !important;
         float: none; } }
 
 nav {
@@ -773,9 +701,39 @@ nav {
       .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
         max-width: 100%; } }
   .post .entry [full] {
+    position: relative;
     max-width: 100%; }
     .post .entry [full] p, .post .entry [full] h1, .post .entry [full] h2, .post .entry [full] h3, .post .entry [full] h4, .post .entry [full] blockquote, .post .entry [full] hr, .post .entry [full] ul, .post .entry [full] .video, .post .entry [full] .youtube, .post .entry [full] .fotorama, .post .entry [full] [block] {
       max-width: 100%; }
+    .post .entry [full].dark::before {
+      content: '';
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-left: 9999px;
+      padding-right: 9999px;
+      margin-left: -9999px;
+      margin-right: -9999px; }
+    .post .entry [full].dark .youtube {
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border-radius: 0 !important; }
+      .post .entry [full].dark .youtube img {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important; }
+    .post .entry [full].dark .fotorama .fotorama__active,
+    .post .entry [full].dark .fotorama img {
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border-radius: 0 !important; }
+    .post .entry [full].dark .fotorama .fotorama__nav-wrap {
+      position: relative;
+      margin-top: -30px;
+      z-index: 10; }
   .post p {
     margin: 0;
     padding-top: 20px;
@@ -871,7 +829,7 @@ nav {
       max-width: 100% !important; }
     @media (max-width: 1366px) {
       .post [left] {
-        max-width: 25%; } }
+        max-width: 25% !important; } }
     @media (max-width: 900px) {
       .post [left] {
         float: none;
@@ -896,10 +854,10 @@ nav {
       max-width: 100% !important; }
     @media (max-width: 1366px) {
       .post [main] {
-        max-width: 75%; } }
+        max-width: 75% !important; } }
     @media (max-width: 900px) {
       .post [main] {
-        max-width: 100%;
+        max-width: 100% !important;
         float: none;
         clear: none; } }
   .post [aside] {
@@ -932,11 +890,11 @@ nav {
     position: relative; }
     @media (max-width: 1366px) {
       .post [main] + [aside] {
-        max-width: 25%; } }
+        max-width: 25% !important; } }
     @media (max-width: 900px) {
       .post [main] + [aside] {
         float: none;
-        max-width: 100%;
+        max-width: 100% !important;
         display: inline-block;
         text-align: left;
         width: 100%;
@@ -1069,8 +1027,8 @@ nav {
   .post .picture a {
     border-bottom: 0; }
   .post .fotorama {
-    padding-top: 20px;
-    padding-bottom: 10px; }
+    margin-top: 20px;
+    margin-bottom: 10px; }
   .post hr {
     font: 400 1.4rem/1 "Helvetica", sans-serif;
     text-align: center;
@@ -1088,10 +1046,12 @@ nav {
     padding-top: 20px;
     padding-bottom: 10px; }
     .post blockquote::after {
+      font-family: "Georgia", serif;
+      position: absolute;
       content: "\201C";
       font-size: 4em;
-      position: absolute;
-      top: 5px;
+      color: #d70033;
+      top: 0;
       left: 0; }
     .post blockquote p {
       padding-top: 0 !important;
@@ -1350,6 +1310,7 @@ footer {
     column-count: 4; }
     @media (max-width: 900px) {
       .tag-cloud ul {
+        font-family: 1.1rem;
         -webkit-column-count: auto;
         -moz-column-count: auto;
         column-count: auto; } }
