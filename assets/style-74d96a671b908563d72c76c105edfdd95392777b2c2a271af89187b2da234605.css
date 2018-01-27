@@ -692,18 +692,18 @@ nav {
     @media (max-width: 900px) {
       .post .header {
         max-width: 100%; } }
-  .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
+  .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
     max-width: 70%; }
     @media (max-width: 1366px) {
-      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
+      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
         max-width: 75%; } }
     @media (max-width: 900px) {
-      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry [block] {
+      .post .entry p, .post .entry h1, .post .entry h2, .post .entry h3, .post .entry h4, .post .entry blockquote, .post .entry hr, .post .entry ul, .post .entry ol, .post .entry .video, .post .entry .youtube, .post .entry .fotorama, .post .entry .highlight, .post .entry [block] {
         max-width: 100%; } }
   .post .entry [full] {
     position: relative;
     max-width: 100%; }
-    .post .entry [full] p, .post .entry [full] h1, .post .entry [full] h2, .post .entry [full] h3, .post .entry [full] h4, .post .entry [full] blockquote, .post .entry [full] hr, .post .entry [full] ul, .post .entry [full] .video, .post .entry [full] .youtube, .post .entry [full] .fotorama, .post .entry [full] [block] {
+    .post .entry [full] p, .post .entry [full] h1, .post .entry [full] h2, .post .entry [full] h3, .post .entry [full] h4, .post .entry [full] blockquote, .post .entry [full] hr, .post .entry [full] ul, .post .entry [full] .video, .post .entry [full] .youtube, .post .entry [full] .fotorama, .post .entry [full] .highlight, .post .entry [full] [block] {
       max-width: 100%; }
     .post .entry [full].dark::before {
       content: '';
@@ -725,6 +725,10 @@ nav {
         -webkit-border-radius: 0 !important;
         -moz-border-radius: 0 !important;
         border-radius: 0 !important; }
+    .post .entry [full].dark .video .frame {
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border-radius: 0 !important; }
     .post .entry [full].dark .fotorama .fotorama__active,
     .post .entry [full].dark .fotorama img {
       -webkit-border-radius: 0 !important;
@@ -1008,8 +1012,8 @@ nav {
       .post .youtube {
         margin: 10px 0 0; } }
   .post .video {
-    padding-top: 20px;
-    padding-bottom: 10px; }
+    margin-top: 20px;
+    margin-bottom: 10px; }
     .post .video .frame {
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
