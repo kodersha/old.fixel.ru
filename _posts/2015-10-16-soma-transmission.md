@@ -8,7 +8,7 @@ tags:
 - Научная фантастика
 ---
 
-<div full>
+<div full class="dark">
 	<div class="youtube" id="nsgQcRxf3e0"></div>
 </div>
 
