@@ -127,7 +127,7 @@ assets:
   compression: true
   caching:
     path: ".jekyll-cache/assets"
-    type: file
+    type: true
     enabled: false
   sources:
     - "_assets/css"
