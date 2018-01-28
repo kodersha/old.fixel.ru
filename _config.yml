@@ -66,10 +66,10 @@ exclude:
 ## Plugins
 plugins:
   - font-awesome-sass
-  - jekyll-tagging-related_posts
   - jekyll-redirect-from
   - jekyll-include-cache
   - jekyll-auto-image
+  - jekyll-typogrify
   - jekyll-paginate
   - jekyll-archives
   - jekyll-sitemap
@@ -123,14 +123,12 @@ sitemap:
   priority_name: "priority"
   
 assets:
-  compress:
-    css: true
-    js: true
-  cache: false
-  prefix: "/assets"
-  assets:
-    - "*."
-  digest: true
+  destination: "/assets"
+  compression: true
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file
+    enabled: false
   sources:
     - "_assets/css"
     - "_assets/fonts"

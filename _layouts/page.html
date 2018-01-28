@@ -9,25 +9,35 @@ layout: default
 		<article class="post">
 			<div class="common">
 				<div class="header">
-					<h1 class="title">{{ page.title }}</h1>
-					{% if page.subtitle %}
-						<p class="subtitle">{{ page.subtitle }}</p>
-					{% endif %}
+					<h1 class="title">{{ page.title | improve }}</h1>
 				</div>
 			</div>
 
 			{% include _post/cover.html %}
 
 			<div class="common">
-				<div class="maintenance single">	
-					<div class="entry js-toc-content">
-						{{ content }}
+				<div class="entry">
+					{% if page.toc == "true" %}
+						<div class="toc js-toc"></div>
+						<div class="js-toc-content">
+							{{ content | improve }}
+						</div>
+					{% else %}
+						{{ content | improve }}
+					{% endif %}
+				</div>
+					
+				<div class="actions">
+					<div class="tags">
+						<span class="date">{{ page.date | russian_date }}</span>
 					</div>
 				</div>
+				{% include _post/related.html %}
 			</div>
 		</article>
 	</div>
 </div>
 
 {% include breadcrumbs.html %}
+{% include likely.html %}
 {% include_cached footer.html %}

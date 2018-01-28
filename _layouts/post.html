@@ -9,7 +9,7 @@ layout: default
 		<article class="post">
 			<div class="common">
 				<div class="header">
-					<h1 class="title">{{ page.title }}</h1>
+					<h1 class="title">{{ page.title | improve }}</h1>
 					{% include _post/old.html %}
 				</div>
 			</div>
@@ -21,10 +21,10 @@ layout: default
 					{% if page.toc == "true" %}
 						<div class="toc js-toc"></div>
 						<div class="js-toc-content">
-							{{ content }}
+							{{ content | improve }}
 						</div>
 					{% else %}
-						{{ content }}
+						{{ content | improve }}
 					{% endif %}
 				</div>
 					
