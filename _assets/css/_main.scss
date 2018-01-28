@@ -654,7 +654,6 @@ nav {
 
 							.date {
 								margin: 0 0 5px 0;
-								font-size: 14px;
 							}
 						}
 					}
@@ -949,7 +948,6 @@ nav {
 		@media (max-width : $mq-mobile) {
 			float: none;
 			clear: none;
-			font-size: 14px;
 			max-width: 100% !important;
 			padding-top: 20px;
 			padding-left: 0;
@@ -1013,8 +1011,6 @@ nav {
 		}
 
 		@media (max-width : $mq-mobile) {
-			font-size: 14px;
-
 			p {
 				&:first-of-type {
 					padding: 0;
@@ -1057,10 +1053,6 @@ nav {
 		color: $darkGray;
 		padding-top: 0;
 		padding-bottom: 10px;
-
-		@media (max-width : $mq-mobile) {
-			font-size: 14px;
-		}
 	}
 	
 	[quote] {
@@ -1614,11 +1606,7 @@ footer {
     width: 100%;
 	
 	.common {
-		padding-bottom: 10px;
-		
-		@media (max-width : $mq-mobile) {
-			padding-bottom: 0;
-		}
+		padding-bottom: 20px;
 	}
 	
 	.copyright {
