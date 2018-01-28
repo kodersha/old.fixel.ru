@@ -38,7 +38,7 @@
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link rel="stylesheet" type="text/css" href="/assets/style-74a624369ce3464b0ea1214c3b4d176c8f8f732dcb4892fa23c7194fa88cc23e.css">
+		<link rel="stylesheet" type="text/css" href="/assets/style-a265eec8f0266178c7373191fe746c4eea1717490269d7b3791ef60a9a2b7136.css">
 
 	</head>
 
@@ -82,7 +82,7 @@
 		<article class="post">
 			<div class="common">
 				<div class="header">
-					<h1 class="title">Устанавливаем Jekyll на Windows</h1>
+					<h1 class="title">Устанавливаем Jekyll на&nbsp;Windows</h1>
 					
 				</div>
 			</div>
@@ -94,55 +94,55 @@
 			<div class="common">
 				<div class="entry">
 					
-						<p main="">По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+						<p main="">По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на&nbsp;Windows.</p>
 
-<p aside="">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/">Официальная документация Jekyll</a></p>
+<p aside="">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/">Официальная документация&nbsp;Jekyll</a></p>
 
 <hr />
 
-<p>Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте <strong>Параметры</strong> - <strong>Система</strong> - <strong>О системе</strong>. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и введите:</p>
+<p>Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте <strong>Параметры</strong> - <strong>Система</strong> - <strong>О системе</strong>. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и&nbsp;введите:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">Enable-WindowsOptionalFeature <span class="nt">-Online</span> <span class="nt">-FeatureName</span> Microsoft-Windows-Subsystem-Linux</code></pre></figure>
 
-<p>Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте <strong>Параметры</strong> - <strong>Обновление и безопасность</strong> - <strong>Для разработчиков</strong> и включите «Режим разработчика». Откройте <mark>cmd</mark> от администратора и введите:</p>
+<p>Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте <strong>Параметры</strong> - <strong>Обновление и безопасность</strong> - <strong>Для разработчиков</strong> и включите «Режим разработчика». Откройте <mark>cmd</mark> от администратора и&nbsp;введите:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">bash</code></pre></figure>
 
-<p left="">Начиная с обновления 1709 (Fall Creators Update) среду Ubuntu можно установить напрямую из <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6">Windows маркета</a> пропустив предыдущие шаги.</p>
+<p left="">Начиная с обновления 1709 (Fall Creators Update) среду Ubuntu можно установить напрямую из <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6">Windows маркета</a> пропустив предыдущие&nbsp;шаги.</p>
 
-<p>Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.</p>
+<p>Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в&nbsp;будущем.</p>
 
-<p>Приступим к установке Jekyll. Но для начала обновим пакеты:</p>
+<p>Приступим к установке Jekyll. Но для начала обновим&nbsp;пакеты:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get update <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span></code></pre></figure>
 
-<p>Теперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий <a href="https://www.brightbox.com/docs/ruby/ubuntu/">BrightBox</a> оптимизированный для Ubuntu. Вводим команды:</p>
+<p>Теперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий <a href="https://www.brightbox.com/docs/ruby/ubuntu/">BrightBox</a> оптимизированный для Ubuntu. Вводим&nbsp;команды:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-add-repository ppa:brightbox/ruby-ng
 <span class="nb">sudo </span>apt-get update
 <span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby2.4 ruby2.4-dev build-essential</code></pre></figure>
 
-<p>Обновляем RubyGems.</p>
+<p>Обновляем&nbsp;RubyGems.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>gem update</code></pre></figure>
 
-<p>Теперь осталось установить сам Jekyll.</p>
+<p>Теперь осталось установить сам&nbsp;Jekyll.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>gem <span class="nb">install </span>jekyll bundler</code></pre></figure>
 
-<p>Проверить правильность установки можно командой:</p>
+<p>Проверить правильность установки можно&nbsp;командой:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll <span class="nt">-v</span></code></pre></figure>
 
-<p>Jekyll установлен. Теперь создайте свой блог.</p>
+<p>Jekyll установлен. Теперь создайте свой&nbsp;блог.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll new my_blog</code></pre></figure>
 
-<p>По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:</p>
+<p>По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с&nbsp;блогом:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd </span>my_blog</code></pre></figure>
 
-<p>Теперь можно запустить Jekyll.</p>
+<p>Теперь можно запустить&nbsp;Jekyll.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
 
@@ -176,28 +176,28 @@
 					</div>
 				</div>
 				
-	<div class="related">
-		<h3>Похожие записи</h3>
-		<ul>
-			
-				<li><a href="/blog/ustanavlivaem-jekyll-na-mac/">Устанавливаем Jekyll на Mac OS</a></li>
-			
-				<li><a href="/blog/ujutnyj-jekyll/">Уютный Jekyll</a></li>
-			
-				<li><a href="/blog/kat-v-egee/">Кат в Эгее</a></li>
-			
-				<li><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Упрощаем получение карточек на распродаже Steam</a></li>
-			
-				<li><a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a></li>
-			
-				<li><a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></li>
-			
-				<li><a href="/blog/ustanovka-flarum-na-centos-7/">Установка flarum на centOS</a></li>
-			
-				<li><a href="/blog/roskomnadzor-i-obhod-blokirovok/">«Роскомнадзор» и обход блокировок</a></li>
-			
-		</ul>
-	</div>
+<div class="related">
+	<h3>Похожие записи</h3>
+	<ul>
+		
+			<li><a href="/blog/ustanavlivaem-jekyll-na-mac/">Устанавливаем Jekyll на Mac OS</a></li>
+		
+			<li><a href="/blog/ujutnyj-jekyll/">Уютный Jekyll</a></li>
+		
+			<li><a href="/blog/kat-v-egee/">Кат в Эгее</a></li>
+		
+			<li><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Упрощаем получение карточек на распродаже Steam</a></li>
+		
+			<li><a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a></li>
+		
+			<li><a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></li>
+		
+			<li><a href="/blog/ustanovka-flarum-na-centos-7/">Установка flarum на centOS</a></li>
+		
+			<li><a href="/blog/roskomnadzor-i-obhod-blokirovok/">«Роскомнадзор» и обход блокировок</a></li>
+		
+	</ul>
+</div>
 
 			</div>
 		</article>
@@ -267,17 +267,17 @@
 		<![endif]-->
 		
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/assets/jquery-5c2148f394c0d0085e316066a9ec847d1d5335885c0ab4a32480ad882998ed3f.js"></script>
-<script type="text/javascript" src="/assets/jekyll-search-3a3b83ffc013a089d4ef8268266e9a19ba467ebd12943b264323ce1d78e61a17.js"></script>
-<script type="text/javascript" src="/assets/fotorama-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js"></script>
-<script type="text/javascript" src="/assets/lightbox-4ad8cf4c7aa9d000bc590c76e484df6ae565de6012d9c48306e0edbfcc441c2c.js"></script>
-<script type="text/javascript" src="/assets/hyphenator-53cbf24deb9c133b3e733a529b83e2081f68063be451a4ec67b1df08e0982f75.js"></script>
-<script type="text/javascript" src="/assets/likely-1ffee5bce70221ed59050cf3626c06e49f34d861250316917af75a421bb8983e.js"></script>
-<script type="text/javascript" src="/assets/base-d459db9eb9de234e84c06c96b40b5dad2fd2ca5326812ac787a5c37e73a4d548.js"></script>
+		<script type="text/javascript" src="/assets/jquery-b50e3d0497f416ee5d7dbeefdbaa98723a2200a8c1428b006ebadda28284bcef.js"></script>
+<script type="text/javascript" src="/assets/jekyll-search-7204433405551c7f3443e8466082062d37e6d3db2e5e1c8f124c1bc10fea2396.js"></script>
+<script type="text/javascript" src="/assets/fotorama-aebfda04c47491f370486c38568e25aff265f4f95347a0e4abfe9c9f1353b39b.js"></script>
+<script type="text/javascript" src="/assets/lightbox-38219f7d2b364b9f29051725c39509889e12bca6fba070e54066d5710f9ae46d.js"></script>
+<script type="text/javascript" src="/assets/hyphenator-9030ad3748aef2e496294b0dc2d947f35c51403f8813d24e519fff8cccb28471.js"></script>
+<script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
+<script type="text/javascript" src="/assets/base-f41d4407914a7c0dc5535257b2bf75353060336814b6c79ab3d0aaf7183b1a60.js"></script>
 		
 		
-			<script type="text/javascript" src="/assets/tocbot-68657214b07ce1a63931cc56b31288cfc8be28e96d815f9d7d08d07b7c564988.js"></script>
-<script type="text/javascript" src="/assets/post-d7320f6cea2e68940904393e73f7290f2282ef5f35de6ed2dc06e73d7809c1a2.js"></script>
+			<script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
+<script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
 		
 	
 	</body>

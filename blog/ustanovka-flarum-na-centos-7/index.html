@@ -38,7 +38,7 @@
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
 		<!--[ CSS ]-->
-		<link rel="stylesheet" type="text/css" href="/assets/style-74a624369ce3464b0ea1214c3b4d176c8f8f732dcb4892fa23c7194fa88cc23e.css">
+		<link rel="stylesheet" type="text/css" href="/assets/style-a265eec8f0266178c7373191fe746c4eea1717490269d7b3791ef60a9a2b7136.css">
 
 	</head>
 
@@ -82,7 +82,7 @@
 		<article class="post">
 			<div class="common">
 				<div class="header">
-					<h1 class="title">Установка flarum на centOS</h1>
+					<h1 class="title">Установка flarum на&nbsp;cent<span class="caps">OS</span></h1>
 					
 				</div>
 			</div>
@@ -94,17 +94,17 @@
 			<div class="common">
 				<div class="entry">
 					
-						<p>Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — <a href="http://flarum.org/">flarum</a>. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на centOS 7.</p>
+						<p>Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — <a href="http://flarum.org/">flarum</a>. Судя по тому, что уже есть, <span class="caps">CMS</span> довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на cent<span class="caps">OS</span>&nbsp;7.</p>
 
-<p>Ставилась flarum на centOS 7 самого обычного <a href="https://www.ihor.ru/vds">VDS хостинга</a>. Для установки требуется Apache (с mod_rewrite), Nginx и Lighttpd. PHP версии 5.5 и выше, MySQL 5.5 и конечно же SSH консоль, так как ставится flarum через Сomposer.</p>
+<p>Ставилась flarum на cent<span class="caps">OS</span> 7 самого обычного <a href="https://www.ihor.ru/vds"><span class="caps">VDS</span> хостинга</a>. Для установки требуется Apache (с mod_rewrite), Nginx и Lighttpd. <span class="caps">PHP</span> версии <span class="caps">5.5</span> и выше, My<span class="caps">SQL</span> <span class="caps">5.5</span> и конечно же <span class="caps">SSH</span> консоль, так как ставится flarum через&nbsp;Сomposer.</p>
 
-<h2 id="обновляем-php">Обновляем PHP</h2>
+<h2 id="обновляем-php">Обновляем&nbsp;<span class="caps">PHP</span></h2>
 
-<p>Так как на сервере стоял PHP версии 5.4 нам придется его обновить. Открываем консоль и добавляем репозиторий:</p>
+<p>Так как на сервере стоял <span class="caps">PHP</span> версии <span class="caps">5.4</span> нам придется его обновить. Открываем консоль и добавляем&nbsp;репозиторий:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">rpm <span class="nt">-Uvh</span> http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</code></pre></figure>
 
-<p>После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем секцию:</p>
+<p>После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем&nbsp;секцию:</p>
 
 <figure class="highlight"><pre><code class="language-conf" data-lang="conf">[<span class="n">remi</span>-<span class="n">php56</span>]
 <span class="n">name</span>=<span class="n">Les</span> <span class="n">RPM</span> <span class="n">de</span> <span class="n">remi</span> <span class="n">de</span> <span class="n">PHP</span> <span class="m">5</span>.<span class="m">6</span> <span class="n">pour</span> <span class="n">Enterprise</span> <span class="n">Linux</span> <span class="m">6</span> - $<span class="n">basearch</span>&amp;<span class="n">nbsp</span>
@@ -115,54 +115,54 @@
 <span class="n">gpgcheck</span>=<span class="m">1</span> 
 <span class="n">gpgkey</span>=<span class="n">file</span>:///<span class="n">etc</span>/<span class="n">pki</span>/<span class="n">rpm</span>-<span class="n">gpg</span>/<span class="n">RPM</span>-<span class="n">GPG</span>-<span class="n">KEY</span>-<span class="n">remi</span></code></pre></figure>
 
-<p>И меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с PHP версии 5.4 до 5.5 в соответствующей секции remi-php55.</p>
+<p>И меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с <span class="caps">PHP</span> версии <span class="caps">5.4</span> до <span class="caps">5.5</span> в соответствующей секции&nbsp;remi-php55.</p>
 
-<p>Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится следующее:</p>
+<p>Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится&nbsp;следующее:</p>
 
 <figure class="highlight"><pre><code class="language-conf" data-lang="conf"><span class="n">php_admin_value</span> <span class="n">open_basedir</span> <span class="s2">"/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/phpMyAdmin/:/tmp/:/usr/share/php/:/var/lib/php/session/:/usr/share/doc/"</span></code></pre></figure>
 
-<p>Делается это для того, что бы не возникло проблем при обновлении phpmyadmin.</p>
+<p>Делается это для того, что бы не возникло проблем при обновлении&nbsp;phpmyadmin.</p>
 
-<p>Теперь в консоль можно ввести следующее:</p>
+<p>Теперь в консоль можно ввести&nbsp;следующее:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">yum <span class="nb">install </span>php <span class="nt">-y</span></code></pre></figure>
 
-<p>И PHP обновится до 5.6 версии, соответственно. Проверяем:</p>
+<p>И <span class="caps">PHP</span> обновится до <span class="caps">5.6</span> версии, соответственно.&nbsp;Проверяем:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">php <span class="nt">-v</span></code></pre></figure>
 
-<h2 id="обновляем-остальные-пакеты">Обновляем остальные пакеты</h2>
+<h2 id="обновляем-остальные-пакеты">Обновляем остальные&nbsp;пакеты</h2>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">уum update</code></pre></figure>
 
-<h2 id="устанавливаем-lighttpd">Устанавливаем Lighttpd</h2>
+<h2 id="устанавливаем-lighttpd">Устанавливаем&nbsp;Lighttpd</h2>
 
-<p>Ставим wget:</p>
+<p>Ставим&nbsp;wget:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum <span class="nb">install </span>wget</code></pre></figure>
 
-<p>Обновляем репозитории:</p>
+<p>Обновляем&nbsp;репозитории:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>rpm <span class="nt">--import</span> https://fedoraproject.org/static/0608B895.txt
 <span class="nb">sudo </span>wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 <span class="nb">sudo </span>rpm <span class="nt">-ivh</span> epel-release-6-8.noarch.rpm</code></pre></figure>
 
-<p>Устанавливаем lighttpd:</p>
+<p>Устанавливаем&nbsp;lighttpd:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum <span class="nb">install </span>lighttpd</code></pre></figure>
 
-<p>Прописываем автостарт:</p>
+<p>Прописываем&nbsp;автостарт:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>chkconfig <span class="nt">--levels</span> 235 lighttpd on</code></pre></figure>
 
-<p>Запускаем и проверяем:</p>
+<p>Запускаем и&nbsp;проверяем:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>service lighttpd start
 <span class="nb">sudo </span>service lighttpd status</code></pre></figure>
 
-<h2 id="устанавливаем-composer">Устанавливаем Composer</h2>
+<h2 id="устанавливаем-composer">Устанавливаем&nbsp;Composer</h2>
 
-<p>Установка composer предельно проста:</p>
+<p>Установка composer предельно&nbsp;проста:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl <span class="nt">-sS</span> https://getcomposer.org/installer | php
 <span class="nb">mv </span>composer.phar /usr/local/bin/composer</code></pre></figure>
@@ -171,24 +171,24 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer <span class="nt">-v</span></code></pre></figure>
 
-<h2 id="устанавливаем-flarum">Устанавливаем Flarum</h2>
+<h2 id="устанавливаем-flarum">Устанавливаем&nbsp;Flarum</h2>
 
-<p>Если все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с сайтом:</p>
+<p>Если все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с&nbsp;сайтом:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/имя/data/www/домен</code></pre></figure>
 
-<p>Папка домена должна быть пуста. Вводим:</p>
+<p>Папка домена должна быть пуста.&nbsp;Вводим:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer create-project flarum/flarum <span class="nb">.</span> <span class="nt">--stability</span><span class="o">=</span>beta</code></pre></figure>
 
-<p>Начнется установка flarum. После завершения установки откройте сайт в браузере и завершите установку flarum.</p>
+<p>Начнется установка flarum. После завершения установки откройте сайт в браузере и завершите установку&nbsp;flarum.</p>
 
-<h2 id="возникающие-ошибки">Возникающие ошибки</h2>
+<h2 id="возникающие-ошибки">Возникающие&nbsp;ошибки</h2>
 
 <div block="">
-<p><b>Q</b>: Нет доступа к сайту, в логах ссылается на «Option Multiviews not allowed here».</p>
-<p><b>A</b>: Править /etc/httpd/conf.d/z1_home.conf, изменить значение параметра AllowOverride на All.</p>
-<p><b>Q</b>: При установке flarum composer выдает ошибку: PHP Fatal error: Uncaught exception ‘ErrorException’ with message ’proc_open(): fork failed — Cannot allocate memory’ in phar</p>
+<p><b>Q</b>: Нет доступа к сайту, в логах ссылается на «Option Multiviews not allowed&nbsp;here».</p>
+<p><b>A</b>: Править /etc/httpd/conf.d/z1_home.conf, изменить значение параметра AllowOverride на&nbsp;All.</p>
+<p><b>Q</b>: При установке flarum composer выдает ошибку: <span class="caps">PHP</span> Fatal error: Uncaught exception ‘ErrorException’ with message ’proc_open(): fork failed — Cannot allocate memory’ in&nbsp;phar</p>
 <p><b>A</b>: Смотрите заметку на <a href="https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors">getcomposer.org</a></p>
 </div>
 
@@ -216,26 +216,26 @@
 					</div>
 				</div>
 				
-	<div class="related">
-		<h3>Похожие записи</h3>
-		<ul>
-			
-				<li><a href="/blog/kat-v-egee/">Кат в Эгее</a></li>
-			
-				<li><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Упрощаем получение карточек на распродаже Steam</a></li>
-			
-				<li><a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a></li>
-			
-				<li><a href="/blog/ustanavlivaem-jekyll-na-mac/">Устанавливаем Jekyll на Mac OS</a></li>
-			
-				<li><a href="/blog/ustanavlivaem-jekyll-na-windows/">Устанавливаем Jekyll на Windows</a></li>
-			
-				<li><a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></li>
-			
-				<li><a href="/blog/roskomnadzor-i-obhod-blokirovok/">«Роскомнадзор» и обход блокировок</a></li>
-			
-		</ul>
-	</div>
+<div class="related">
+	<h3>Похожие записи</h3>
+	<ul>
+		
+			<li><a href="/blog/kat-v-egee/">Кат в Эгее</a></li>
+		
+			<li><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Упрощаем получение карточек на распродаже Steam</a></li>
+		
+			<li><a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a></li>
+		
+			<li><a href="/blog/ustanavlivaem-jekyll-na-mac/">Устанавливаем Jekyll на Mac OS</a></li>
+		
+			<li><a href="/blog/ustanavlivaem-jekyll-na-windows/">Устанавливаем Jekyll на Windows</a></li>
+		
+			<li><a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a></li>
+		
+			<li><a href="/blog/roskomnadzor-i-obhod-blokirovok/">«Роскомнадзор» и обход блокировок</a></li>
+		
+	</ul>
+</div>
 
 			</div>
 		</article>
@@ -305,17 +305,17 @@
 		<![endif]-->
 		
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/assets/jquery-5c2148f394c0d0085e316066a9ec847d1d5335885c0ab4a32480ad882998ed3f.js"></script>
-<script type="text/javascript" src="/assets/jekyll-search-3a3b83ffc013a089d4ef8268266e9a19ba467ebd12943b264323ce1d78e61a17.js"></script>
-<script type="text/javascript" src="/assets/fotorama-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js"></script>
-<script type="text/javascript" src="/assets/lightbox-4ad8cf4c7aa9d000bc590c76e484df6ae565de6012d9c48306e0edbfcc441c2c.js"></script>
-<script type="text/javascript" src="/assets/hyphenator-53cbf24deb9c133b3e733a529b83e2081f68063be451a4ec67b1df08e0982f75.js"></script>
-<script type="text/javascript" src="/assets/likely-1ffee5bce70221ed59050cf3626c06e49f34d861250316917af75a421bb8983e.js"></script>
-<script type="text/javascript" src="/assets/base-d459db9eb9de234e84c06c96b40b5dad2fd2ca5326812ac787a5c37e73a4d548.js"></script>
+		<script type="text/javascript" src="/assets/jquery-b50e3d0497f416ee5d7dbeefdbaa98723a2200a8c1428b006ebadda28284bcef.js"></script>
+<script type="text/javascript" src="/assets/jekyll-search-7204433405551c7f3443e8466082062d37e6d3db2e5e1c8f124c1bc10fea2396.js"></script>
+<script type="text/javascript" src="/assets/fotorama-aebfda04c47491f370486c38568e25aff265f4f95347a0e4abfe9c9f1353b39b.js"></script>
+<script type="text/javascript" src="/assets/lightbox-38219f7d2b364b9f29051725c39509889e12bca6fba070e54066d5710f9ae46d.js"></script>
+<script type="text/javascript" src="/assets/hyphenator-9030ad3748aef2e496294b0dc2d947f35c51403f8813d24e519fff8cccb28471.js"></script>
+<script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
+<script type="text/javascript" src="/assets/base-f41d4407914a7c0dc5535257b2bf75353060336814b6c79ab3d0aaf7183b1a60.js"></script>
 		
 		
-			<script type="text/javascript" src="/assets/tocbot-68657214b07ce1a63931cc56b31288cfc8be28e96d815f9d7d08d07b7c564988.js"></script>
-<script type="text/javascript" src="/assets/post-d7320f6cea2e68940904393e73f7290f2282ef5f35de6ed2dc06e73d7809c1a2.js"></script>
+			<script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
+<script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
 		
 	
 	</body>
