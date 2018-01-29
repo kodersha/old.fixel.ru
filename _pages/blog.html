@@ -6,20 +6,14 @@ dscription: Список записей за все время
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="post-list archive">
-		<div class="posts">
-			<div class="common">
-				<div class="wrapper">
-					<h1 class="title">{{ page.title }}</h1>
-					{% for post in site.posts %}
-						{% if post.old != 'true' %}
-							{% include _preview/blog.html %}
-						{% endif %}
-					{% endfor %}
-				</div>
-			</div>
-		</div>
+<div class="content post-list archive common ">
+	<div class="posts wrapper">
+		<h1 class="title">{{ page.title }}</h1>
+		{% for post in site.posts %}
+			{% if post.old != 'true' %}
+				{% include _preview/blog.html %}
+			{% endif %}
+		{% endfor %}
 	</div>
 </div>
 

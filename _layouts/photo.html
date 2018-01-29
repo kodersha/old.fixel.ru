@@ -4,31 +4,27 @@ layout: default
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="post-single">
-		<article class="post">
-			<div class="common">
-				<div class="header">
-					<h1 class="title">{{ page.title | improve }}</h1>
-				</div>
-			</div>
+<article class="content post single">
+	<header class="common">
+		<div class="wrapper">
+			<h1 class="title">{{ page.title | improve }}</h1>
+		</div>
+	</header>
 
-			{% include _post/cover.html %}
+	{% include _post/cover.html %}
 
-			<div class="common">
-				<div class="entry">
-					{{ content | improve }}
-				</div>
-					
-				<div class="actions">
-					<div class="tags">
-						<span class="date">{{ page.date | russian_date }}</span>
-					</div>
-				</div>
+	<div class="common">
+		<div class="entry">
+			{{ content | improve }}
+		</div>
+
+		<div class="actions">
+			<div class="tags">
+				<span class="date">{{ page.date | russian_date }}</span>
 			</div>
-		</article>
+		</div>
 	</div>
-</div>
+</article>
 
 {% include breadcrumbs.html %}
 {% include likely.html %}

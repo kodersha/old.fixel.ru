@@ -5,18 +5,12 @@ title: {{ page.title }}
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="post-list archive">
-		<div class="posts">
-			<div class="common">
-				<div class="wrapper">
-					<h1 class="title">{{ page.title }}</h1>
-					{% for post in page.posts %}
-						{% include _preview/archive.html %}
-					{% endfor %}
-				</div>
-			</div>
-		</div>
+<div class="content post-list archive common">
+	<div class="posts wrapper">
+		<h1 class="title">{{ page.title }}</h1>
+		{% for post in page.posts %}
+			{% include _preview/archive.html %}
+		{% endfor %}
 	</div>
 </div>
 

@@ -1,18 +1,9 @@
-<div class="post-pagination">
+<div class="pagination common full">
 	{% if page.previous.url %}
-		<div class="prev">
-			<a href="{{ page.previous.url }}">
-				<i class="fa fa-angle-left" aria-hidden="true"></i> {{ page.previous.title }}
-				{% if page.previous.subtitle %}<p>{{ page.previous.subtitle }}</p>{% endif %}
-			</a>
-		</div>
+		<a class="next" title="{{ page.previous.title }}" href="{{ page.previous.url }}">Ранее</a>
 	{% endif %}
+	<span class="page_number ">Запись: {{ page.index | plus: 1 }} из {{ site.posts | size }}</span>
 	{% if page.next.url %}
-		<div class="next">
-			<a href="{{ page.next.url }}">
-				{{ page.next.title }} <i class="fa fa-angle-right" aria-hidden="true"></i>
-				{% if page.next.subtitle %}<p>{{ page.next.subtitle }}</p>{% endif %}
-			</a>
-		</div>
+		<a class="previous" title="{{ page.next.title }}" href="{{ page.next.url }}">Позднее</a>
 	{% endif %}
 </div>

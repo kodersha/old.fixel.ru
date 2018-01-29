@@ -5,16 +5,13 @@ title: Работы
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="post-list work">
-		<div class="posts">
-			<div class="common">
-				<div class="grid">
-					{% for post in site.works reversed %}
-						{% include _preview/work.html %}
-					{% endfor %}
-				</div>
-			</div>
+<div class="content post-list work common">
+	<div class="posts">
+		<h1 class="title">{{ page.title }}</h1>
+		<div class="grid">
+		{% for post in site.works reversed %}
+			{% include _preview/work.html %}
+		{% endfor %}
 		</div>
 	</div>
 </div>

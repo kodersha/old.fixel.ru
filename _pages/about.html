@@ -8,63 +8,54 @@ cover: "https://i.imgur.com/2wItOsS.png"
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="about">
-		<article class="post">
-			<div class="common">
-				<div class="left w70">
-					<h1 class="title">Привет,</h1>
+<div class="content about">
+	<article class="post common">
+		<div class="left w70">
+			<h1 class="title">Привет,</h1>
 
-					<div block>
-						<p>меня зовут Александра Травкина.</p>
-						<p>Я веб-дизайнер. Блоггер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. Верстаю шаблоны и придумываю дизайны. Пишу обзоры и статьи о играх.</p>
-						<p>Прокрастинирую.</p>
-					</div>
-				</div>
-
-				<div class="right w30">
-					<h1 class="title">В соцсетях</h1>
-					
-					<div block>
-						<p>GitHub: <a target="_blank" href="https://github.com/sasha-travkina/">@sasha-travkina</a></p>
-						<p>Steam: <a target="_blank" href="https://steamcommunity.com/id/sasha_travkina">@sasha_travkina</a></p>
-						<p>Tumblr: <a target="_blank" href="http://sasha-travkina.tumblr.com/">@sasha-travkina</a></p>
-						<p>Twitter: <a target="_blank" href="https://twitter.com/sasha_travkina">@sasha_travkina</a></p>
-						<p>Instagram: <a target="_blank" href="https://www.instagram.com/sasha_travkina/">@sasha_travkina</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="cover frame bottom" style="background-image: url('{{ page.cover }}'); margin-bottom: 0;"></div>
-		</article>
-
-		<div class="post-list work">
-			<div class="posts">
-				<div class="common">
-					<div class="grid">
-						<article class="hint">
-							Верстаю шаблоны для различных движков и сайтов. <a href="{{site.baseurl}}/work">Здесь</a> можно увидеть, что из этого выходит.
-						</article>
-						{% for post in site.works reversed limit:4 %}
-							{% include _preview/work.html %}
-						{% endfor %}
-					</div>
-				</div>
+			<div block>
+				<p>меня зовут Александра Травкина.</p>
+				<p>Я веб-дизайнер. Блоггер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. Верстаю шаблоны и придумываю дизайны. Пишу обзоры и статьи о играх.</p>
+				<p>Прокрастинирую.</p>
 			</div>
 		</div>
 
-		<div class="post-list photo black">
-			<div class="posts">
-				<div class="common">
-					<div class="grid">
-						<article class="hint">
-							Иногда фотографирую во время редких путешествий. <a href="{{site.baseurl}}/photo">Здесь</a> можно посмотреть и почитать об этом.
-						</article>
-						{% for post in site.photos reversed limit:2 %}
-							{% include _preview/photo.html %}
-						{% endfor %}
-					</div>				
-				</div>
+		<div class="right w30">
+			<h1 class="title">В соцсетях</h1>
+			
+			<div block>
+				<p>GitHub: <a target="_blank" href="https://github.com/sasha-travkina/">@sasha-travkina</a></p>
+				<p>Steam: <a target="_blank" href="https://steamcommunity.com/id/sasha_travkina">@sasha_travkina</a></p>
+				<p>Tumblr: <a target="_blank" href="http://sasha-travkina.tumblr.com/">@sasha-travkina</a></p>
+				<p>Twitter: <a target="_blank" href="https://twitter.com/sasha_travkina">@sasha_travkina</a></p>
+				<p>Instagram: <a target="_blank" href="https://www.instagram.com/sasha_travkina/">@sasha_travkina</a></p>
 			</div>
+		</div>
+	</article>
+
+	<div class="post">
+		<div class="cover frame bottom" style="background-image: url('{{ page.cover }}'); margin-bottom: 0;"></div>
+	</div>
+
+	<div class="post-list work">
+		<div class="posts common">
+			<h1 class="title"><a href="{{ site.baseurl }}/work">Работы</a></h1>
+			<div class="grid">
+			{% for post in site.works reversed limit:4 %}
+				{% include _preview/work.html %}
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="post-list photo black">
+		<div class="posts common">
+				<h1 class="title"><a href="{{ site.baseurl }}/photo">Фотографии</a></h1>
+				<div class="grid">
+				{% for post in site.photos reversed limit:2 %}
+					{% include _preview/photo.html %}
+				{% endfor %}
+				</div>
 		</div>
 	</div>
 </div>

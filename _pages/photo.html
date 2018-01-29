@@ -5,16 +5,13 @@ title: Фотографии
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="post-list photo">
-		<div class="posts">
-			<div class="common">
-				<div class="grid">
-					{% for post in site.photos reversed %}
-						{% include _preview/photo.html %}
-					{% endfor %}
-				</div>
-			</div>
+<div class="content post-list photo common">
+	<div class="posts">
+		<h1 class="title">{{ page.title }}</h1>
+		<div class="grid">
+			{% for post in site.photos reversed %}
+				{% include _preview/photo.html %}
+			{% endfor %}
 		</div>
 	</div>
 </div>

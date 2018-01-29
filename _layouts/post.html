@@ -4,56 +4,51 @@ layout: default
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="post-single">
-		<article class="post">
-			<div class="common">
-				<div class="header">
-					<h1 class="title">{{ page.title | improve }}</h1>
-					{% include _post/old.html %}
+<article class="content post single">
+	<header class="common">
+		<div class="wrapper">
+			<h1 class="title">{{ page.title | improve }}</h1>
+			{% include _post/old.html %}
+		</div>
+	</header>
+
+	{% include _post/cover.html %}
+
+	<div class="common">
+		<div class="entry">
+			{% if page.toc == "true" %}
+				<div class="toc js-toc"></div>
+				<div class="js-toc-content">
+					{{ content | improve }}
 				</div>
+			{% else %}
+				{{ content | improve }}
+			{% endif %}
+		</div>
+			
+		<div class="actions">
+			<div class="tags">
+				<span class="date">{{ page.date | russian_date }}</span>
+				{% if page.categories %}
+					{% for category in page.categories %}								
+						<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>
+					{% endfor %}
+				{% endif %}
+
+				{% if page.tags.size > 0 %}
+				<span class="point">·</span>
+					{% assign tags = page.tags | sort %}
+					{% for tag in tags %}
+						<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase }}/">
+							{{ tag }}{% unless forloop.last %},{% endunless %}
+						</a>
+					{% endfor %}
+				{% endif %}
 			</div>
-
-			{% include _post/cover.html %}
-
-			<div class="common">
-				<div class="entry">
-					{% if page.toc == "true" %}
-						<div class="toc js-toc"></div>
-						<div class="js-toc-content">
-							{{ content | improve }}
-						</div>
-					{% else %}
-						{{ content | improve }}
-					{% endif %}
-				</div>
-					
-				<div class="actions">
-					<div class="tags">
-						<span class="date">{{ page.date | russian_date }}</span>
-						{% if page.categories %}
-							{% for category in page.categories %}								
-								<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>
-							{% endfor %}
-						{% endif %}
-
-						{% if page.tags.size > 0 %}
-						<span class="point">·</span>
-							{% assign tags = page.tags | sort %}
-							{% for tag in tags %}
-								<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase }}/">
-									{{ tag }}{% unless forloop.last %},{% endunless %}
-								</a>
-							{% endfor %}
-						{% endif %}
-					</div>
-				</div>
-				{% include _post/related.html %}
-			</div>
-		</article>
+		</div>
 	</div>
-</div>
+</article>
 
-{% include breadcrumbs.html %}
+{% include _post/pagination.html %}
 {% include likely.html %}
 {% include_cached footer.html %}

@@ -1,19 +1,8 @@
-{% capture now %}{{ 'now' | date: '%s' }}{% endcapture %}
-{% capture postDate %}{{ post.date | date: '%s' }}{% endcapture %}
-{% assign difference = now | minus: postDate %}
-
-<div class="post">
-	<div class="entry">
-		<a href="{{ site.baseurl }}{{ post.url }}">
-			{% if post.title %}
-				{{ post.title }}
-			{% endif %}
-			<span class="date">{{ post.date | russian_date }}</span>
-		</a>
-		{% if post.categories %}
-		{% for category in post.categories %}								
-			&nbsp;·&nbsp;<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>
-		{% endfor %}
-		{% endif %}
-	</div>
-</div>
+<article class="post">
+	<a href="{{ site.baseurl }}{{ post.url }}">{% if post.title %}{{ post.title }}{% endif %} <span class="date">{{ post.date | russian_date }}</span></a>
+	{% if post.categories %}
+	{% for category in post.categories %}								
+	&nbsp;·&nbsp;<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>
+	{% endfor %}
+	{% endif %}
+</article>

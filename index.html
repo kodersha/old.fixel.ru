@@ -4,17 +4,13 @@ layout: default
 
 {% include_cached header.html %}
 
-<div class="content">
-	<div class="common">
-		<div class="post-list full">	
-			{% for post in paginator.posts %}
-				{% include _preview/full.html %}
-			{% endfor %}
-		</div>
-	</div>
-	<div class="common full">
-		{% include pagination.html %}
+<div class="content common">
+	<div class="post-list full">	
+		{% for post in paginator.posts %}
+			{% include _preview/full.html %}
+		{% endfor %}
 	</div>
 </div>
 
+{% include pagination.html %}
 {% include_cached footer.html %}
