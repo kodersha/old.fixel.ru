@@ -3,7 +3,7 @@
 		<h1 class="title">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
 		</h1>
-		{{ post.content | improve }}
+		{{ post.content | improve | extlinks }}
 		<div class="actions">	
 			<div class="tags">
 				<span class="date" title="{{ post.date | russian_date }}">

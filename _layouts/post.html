@@ -17,10 +17,10 @@ layout: default
 			{% if page.toc == "true" %}
 				<div class="toc js-toc"></div>
 				<div class="js-toc-content">
-					{{ content | improve }}
+					{{ content | improve | extlinks }}
 				</div>
 			{% else %}
-				{{ content | improve }}
+				{{ content | improve | extlinks }}
 			{% endif %}
 		</div>
 			

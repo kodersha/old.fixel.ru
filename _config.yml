@@ -72,6 +72,7 @@ plugins:
   - jekyll-typogrify
   - jekyll-paginate
   - jekyll-archives
+  - jekyll-extlinks
   - jekyll-sitemap
   - jekyll-timeago
   - jekyll-assets
@@ -101,6 +102,10 @@ jekyll_timeago:
 maps:
   google:
     api_key: AIzaSyCdzBPyxAeuk-0bG2pyMbO8d32PMBKgcRo
+
+extlinks:
+  attributes: {rel: nofollow, target: _blank} 
+  rel_exclude: ['milkleaks.ru']
   
 paginate: 8
 paginate_path: "/page-:num/"

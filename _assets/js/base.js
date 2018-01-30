@@ -14,10 +14,6 @@ lightbox.option({
 	'showImageNumberLabel': false
 });
 
-/* Открываем ссылки в новой вкладке */
-
-$('.post .entry p a').attr('target','_blank');
-
 /* Настраиваем fotorama */
 
 $('.post .entry .fotorama').fotorama({

@@ -24,6 +24,7 @@ group :jekyll_plugins do
    gem "jekyll-typogrify"
    gem "jekyll-paginate"
    gem "jekyll-archives"
+   gem "jekyll-extlinks"
    gem "jekyll-timeago"
    gem "jekyll-sitemap"
    gem "jekyll-assets"
