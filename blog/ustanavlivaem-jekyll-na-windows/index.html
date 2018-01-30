@@ -82,59 +82,59 @@
 	<div class="common">
 		<div class="entry">
 			
-				<p main="">По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на&nbsp;Windows.</p>
+				<p main="">По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <mark>master</mark> ветке репозитория, а собранный сайт в ветке <mark>gh-pages</mark>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
 
-<p aside="">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/">Официальная документация&nbsp;Jekyll</a></p>
+<p aside="">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun" rel="nofollow" target="_blank">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/" rel="nofollow" target="_blank">Официальная документация Jekyll</a></p>
 
-<hr />
+<hr>
 
-<p>Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте <strong>Параметры</strong> - <strong>Система</strong> - <strong>О системе</strong>. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и&nbsp;введите:</p>
+<p>Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте <strong>Параметры</strong> - <strong>Система</strong> - <strong>О системе</strong>. Если все в порядке, запустите <mark>PowerShell</mark> от администратора и введите:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">Enable-WindowsOptionalFeature <span class="nt">-Online</span> <span class="nt">-FeatureName</span> Microsoft-Windows-Subsystem-Linux</code></pre></figure>
 
-<p>Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте <strong>Параметры</strong> - <strong>Обновление и безопасность</strong> - <strong>Для разработчиков</strong> и включите «Режим разработчика». Откройте <mark>cmd</mark> от администратора и&nbsp;введите:</p>
+<p>Компьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте <strong>Параметры</strong> - <strong>Обновление и безопасность</strong> - <strong>Для разработчиков</strong> и включите «Режим разработчика». Откройте <mark>cmd</mark> от администратора и введите:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">bash</code></pre></figure>
 
-<p left="">Начиная с обновления 1709 (Fall Creators Update) среду Ubuntu можно установить напрямую из <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6">Windows маркета</a> пропустив предыдущие&nbsp;шаги.</p>
+<p left="">Начиная с обновления 1709 (Fall Creators Update) среду Ubuntu можно установить напрямую из <a href="https://www.microsoft.com/store/productId/9NBLGGH4MSV6" rel="nofollow" target="_blank">Windows маркета</a> пропустив предыдущие шаги.</p>
 
-<p>Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в&nbsp;будущем.</p>
+<p>Примите лицензионное соглашение и дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.</p>
 
-<p>Приступим к установке Jekyll. Но для начала обновим&nbsp;пакеты:</p>
+<p>Приступим к установке Jekyll. Но для начала обновим пакеты:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get update <span class="nt">-y</span> <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade <span class="nt">-y</span></code></pre></figure>
 
-<p>Теперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий <a href="https://www.brightbox.com/docs/ruby/ubuntu/">BrightBox</a> оптимизированный для Ubuntu. Вводим&nbsp;команды:</p>
+<p>Теперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий <a href="https://www.brightbox.com/docs/ruby/ubuntu/" rel="nofollow" target="_blank">BrightBox</a> оптимизированный для Ubuntu. Вводим команды:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-add-repository ppa:brightbox/ruby-ng
 <span class="nb">sudo </span>apt-get update
 <span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby2.4 ruby2.4-dev build-essential</code></pre></figure>
 
-<p>Обновляем&nbsp;RubyGems.</p>
+<p>Обновляем RubyGems.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>gem update</code></pre></figure>
 
-<p>Теперь осталось установить сам&nbsp;Jekyll.</p>
+<p>Теперь осталось установить сам Jekyll.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>gem <span class="nb">install </span>jekyll bundler</code></pre></figure>
 
-<p>Проверить правильность установки можно&nbsp;командой:</p>
+<p>Проверить правильность установки можно командой:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll <span class="nt">-v</span></code></pre></figure>
 
-<p>Jekyll установлен. Теперь создайте свой&nbsp;блог.</p>
+<p>Jekyll установлен. Теперь создайте свой блог.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">jekyll new my_blog</code></pre></figure>
 
-<p>По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с&nbsp;блогом:</p>
+<p>По умолчанию файлы блога  будут находиться по адресу <mark>C:/Пользователи/Имя_пользователя/my_blog</mark>, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd </span>my_blog</code></pre></figure>
 
-<p>Теперь можно запустить&nbsp;Jekyll.</p>
+<p>Теперь можно запустить Jekyll.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">bundle <span class="nb">exec </span>jekyll serve</code></pre></figure>
 
-<p>Блог станет доступен по локальному адресу <a href="http://localhost:4000">localhost:4000</a>.</p>
+<p>Блог станет доступен по локальному адресу <a href="http://localhost:4000" rel="nofollow" target="_blank">localhost:4000</a>.</p>
 
 			
 		</div>
@@ -200,7 +200,7 @@
 <script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
 <script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
 <script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
-<script type="text/javascript" src="/assets/base-f41d4407914a7c0dc5535257b2bf75353060336814b6c79ab3d0aaf7183b1a60.js"></script>
+<script type="text/javascript" src="/assets/base-8b50d1d7d26d2b32eae53d8388537b866d8111ec1645785de4da72f035074924.js"></script>
 	
 	</body>
 </html>
