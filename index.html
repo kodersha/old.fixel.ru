@@ -2,15 +2,12 @@
 layout: default
 ---
 
-{% include_cached header.html %}
-
 <div class="content common">
-	<div class="post-list full">	
+	<div class="post-list index">	
 		{% for post in paginator.posts %}
-			{% include _preview/full.html %}
+			{% include _preview/index.html %}
 		{% endfor %}
 	</div>
 </div>
 
 {% include pagination.html %}
-{% include_cached footer.html %}
