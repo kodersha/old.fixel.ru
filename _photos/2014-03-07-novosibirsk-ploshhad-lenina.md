@@ -1,6 +1,9 @@
 ---
 title: "Новосибирск · Площадь Ленина"
 thumbnail: "https://i.imgur.com/LsdOYmXl.jpg"
+location:
+  latitude: 55.030189
+  longitude: 82.9173012
 ---
 
 <div full>

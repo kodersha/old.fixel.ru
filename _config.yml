@@ -76,6 +76,7 @@ plugins:
   - jekyll-timeago
   - jekyll-assets
   - jekyll-feed
+  - jekyll-maps
   - uglifier
 
 jekyll_timeago:
@@ -96,6 +97,10 @@ jekyll_timeago:
   week: 'нед.'
   days: 'дн.'
   day: 'дн.'
+
+maps:
+  google:
+    api_key: AIzaSyCdzBPyxAeuk-0bG2pyMbO8d32PMBKgcRo
   
 paginate: 8
 paginate_path: "/page-:num/"

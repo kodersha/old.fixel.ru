@@ -1305,6 +1305,19 @@ nav {
 			background-position: center bottom;
 		}
 	}
+
+	.map {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		background-color: $action;
+		height: 60vh !important;
+		min-height: 350px;
+
+		@media (max-width : $mq-mobile) {
+			height: 100vh;
+			min-height: initial;
+		}
+	}
 	
 }
 

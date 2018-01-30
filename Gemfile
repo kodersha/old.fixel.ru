@@ -27,6 +27,7 @@ group :jekyll_plugins do
    gem "jekyll-timeago"
    gem "jekyll-sitemap"
    gem "jekyll-assets"
+   gem "jekyll-maps"
    gem "therubyracer"
    gem "uglifier"
    gem "kramdown"
