@@ -1,9 +1,11 @@
 {% if site.related_posts.size >= 3 %}
-<div class="related">
-	<h3>Похожие записи</h3>
+<div class="related common full">
 	<ul>
-		{% for post in site.related_posts | limit: 9 %}
-			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% for post in site.related_posts | limit: 6 %}
+			<li>
+				<div class="thumbnail" style="background-image: url('{% if post.thumbnail %}{{ post.thumbnail }}{% else %}{{ post.image }}{% endif %}')"></div>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
 		{% endfor %}
 	</ul>
 </div>

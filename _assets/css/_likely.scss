@@ -7,8 +7,9 @@
 }
 
 .likely {
-    display: block;
+    font: 400 16px/1.4 $latoMedium;
     min-height: 32px;
+    display: block;
 }
 
 .likely__widget {
@@ -110,7 +111,7 @@
     left: 3px;
     top: 3px;
     width: 16px;
-    height: 16px
+    height: 16px;
 }
 
 .likely__button,
@@ -129,7 +130,7 @@
 
 .likely .likely__widget {
     color: #000;
-    background: #faf9f9;
+    background: rgba(231,231,231,.8);
 }
 
 .likely .likely__counter {
@@ -462,9 +463,9 @@
 .likely .likely__widget {
     line-height: 20px;
     font-size: 14px;
-    border-radius: 3px;
     height: 22px;
-    margin: 0 5px 10px
+    border-radius: 3px;
+    margin: 0 5px 10px;
 }
 
 .likely .likely__icon {

@@ -183,6 +183,6 @@ tags:
 </script>
 {% endhighlight %}
 
-<p main>Теперь остается открыть шаблон <mark>notes.tmpl.php</mark> и к основному div’у поста (18 строка) добавить класс <mark>wow fadeIn</mark>, а в <mark>main.css</mark> добавить <mark>.wow { visibility: hidden; }</mark>. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.</p>
+<p left>Смотрите ещё: <a href="{{ site.baseurl }}/blog/kat-v-egee">Кат в Эгее</a> и <a href="{{ site.baseurl }}/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a>.</p>
 
-<p aside>Смотрите ещё: <a href="{{ site.baseurl }}/blog/kat-v-egee">Кат в Эгее</a> и <a href="{{ site.baseurl }}/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a>.</p>
+Теперь остается открыть шаблон <mark>notes.tmpl.php</mark> и к основному div’у поста (18 строка) добавить класс <mark>wow fadeIn</mark>, а в <mark>main.css</mark> добавить <mark>.wow { visibility: hidden; }</mark>. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.

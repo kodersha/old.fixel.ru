@@ -1,7 +1,9 @@
-<div class="likely {% if page.black == 'true' %}likely-light{% endif %} common full">
-	<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{{ page.title }}" class="vkontakte">Поделиться</div>
-	<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{{ page.title }}" data-via="sasha_travkina" class="twitter">Твитнуть</div>
-	<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{{ page.title }}" class="telegram">Отправить</div>
-	<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{{ page.title }}" class="facebook">Поделиться</div>
-	<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{{ page.title }}" class="gplus">Плюсануть</div>
+<div class="common full">
+	<div class="likely {% if page.black == 'true' %}likely-light{% endif %} wrapper">
+		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" data-via="sasha_travkina" class="twitter">Твитнуть</div>
+		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="facebook">Поделиться</div>
+		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="vkontakte">Поделиться</div>
+		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="telegram">Отправить</div>
+		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="gplus">Плюсануть</div>
+	</div>
 </div>
