@@ -1,8 +1,6 @@
 <div class="common full">
 	<div class="likely {% if page.black == 'true' %}likely-light{% endif %} wrapper">
-		<div class="likely__widget likely__widget_rss">
-			<a target="_blank" href="{{ site.baseurl }}/feed"><i class="fa fa-rss" aria-hidden="true"></i> Подписаться</a>
-		</div>
+		<div class="likely__widget likely__widget_rss" onclick="window.open('{{ site.baseurl }}/feed', '_blank')"><i class="fa fa-rss" aria-hidden="true"></i> Подписаться</div>
 		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" data-via="sasha_travkina" class="twitter">Твитнуть</div>
 		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="facebook">Поделиться</div>
 		<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="vkontakte">Поделиться</div>

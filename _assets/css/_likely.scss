@@ -460,12 +460,18 @@
     background: #4183C4 !important;
     padding-right: 8px !important;
     padding-left: 8px !important;
+    line-height: 22px !important;
+    color: #fff !important;
 }
 
-.likely__widget_rss a {
-    line-height: 22px;
-    color: #fff;
-    border: 0;
+.likely__widget_rss:active,
+.likely__widget_rss:focus,
+.likely__widget_rss:hover {
+    background: #3b79b5 !important;
+}
+
+.likely__widget_rss i {
+    vertical-align: middle;
 }
 
 .likely {
