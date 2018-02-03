@@ -5,8 +5,8 @@
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <link>https://milkleaks.ru/</link>
     <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Feb 2018 23:20:38 +0700</pubDate>
-    <lastBuildDate>Sat, 03 Feb 2018 23:20:38 +0700</lastBuildDate>
+    <pubDate>Sun, 04 Feb 2018 01:01:45 +0700</pubDate>
+    <lastBuildDate>Sun, 04 Feb 2018 01:01:45 +0700</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
     
       <item>
@@ -111,9 +111,9 @@
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KcpY7yg.png&quot; alt=&quot;Кат в Эгее&quot; /&gt;&lt;/p&gt;
 
-&lt;p main=&quot;&quot;&gt;Возможно где-то придется отредактировать стили по ситуации, подобрать оптимальную длину заметки после которой кат будет скрывать запись и тому подобное. Стандартный шаблон &lt;mark&gt;plain&lt;/mark&gt; здесь используется в качестве примера, но намного лучше сделать его копию и переименовать на свой лад, дабы при последующих обновлениях Эгеи ничего лишнего не перезаписалось.&lt;/p&gt;
+&lt;p left=&quot;&quot;&gt;Смотрите также: &lt;a href=&quot;/blog/svoi-shrifty-v-egee/&quot;&gt;Свои шрифты в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p aside=&quot;&quot;&gt;Смотрите также: &lt;a href=&quot;/blog/svoi-shrifty-v-egee/&quot;&gt;Свои шрифты в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Возможно где-то придется отредактировать стили по ситуации, подобрать оптимальную длину заметки после которой кат будет скрывать запись и тому подобное. Стандартный шаблон &lt;mark&gt;plain&lt;/mark&gt; здесь используется в качестве примера, но намного лучше сделать его копию и переименовать на свой лад, дабы при последующих обновлениях Эгеи ничего лишнего не перезаписалось.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 23 Jan 2018 00:00:00 +0700</pubDate>
@@ -346,9 +346,9 @@
 	&lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p main=&quot;&quot;&gt;Чтобы разминимизировать &lt;mark&gt;main.css&lt;/mark&gt;, для более удобного внесения правок, стоит воспользоваться полезным &lt;a href=&quot;http://unminify.com/&quot;&gt;сервисом&lt;/a&gt;. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.&lt;/p&gt;
+&lt;p left=&quot;&quot;&gt;Смотрите ещё: &lt;a href=&quot;/blog/kat-v-egee&quot;&gt;Кат в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p aside=&quot;&quot;&gt;Смотрите ещё: &lt;a href=&quot;/blog/kat-v-egee&quot;&gt;Кат в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Чтобы разминимизировать &lt;mark&gt;main.css&lt;/mark&gt;, для более удобного внесения правок, стоит воспользоваться полезным &lt;a href=&quot;http://unminify.com/&quot;&gt;сервисом&lt;/a&gt;. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 08 Oct 2017 00:00:00 +0700</pubDate>
