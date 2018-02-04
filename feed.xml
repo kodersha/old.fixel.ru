@@ -2,16 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://milkleaks.ru/</link>
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
-    <language>ru</language>
+    <link>https://milkleaks.ru/</link>
     <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <yandex:analytics id="40455205" type="Yandex"></yandex:analytics>
     
       <item>
         <title>Кат в Эгее</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/kat-v-egee/</guid>
-        <link>https://milkleaks.ru/blog/kat-v-egee/</link>
         <description>&lt;p&gt;Как известно &lt;a href=&quot;https://blogengine.ru&quot;&gt;Эгея&lt;/a&gt; не имеет функции скрытия длинных постов под катом, в этой &lt;a href=&quot;https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/&quot;&gt;статье&lt;/a&gt; Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта &lt;a href=&quot;http://jedfoster.com/Readmore.js/&quot;&gt;readmore.js&lt;/a&gt;. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.&lt;/p&gt;
 
 &lt;p&gt;Скачаем сам скрипт &lt;a href=&quot;https://github.com/jedfoster/Readmore.js&quot;&gt;readmore.js&lt;/a&gt; с GitHub и поместим файл &lt;mark&gt;readmore.min.js&lt;/mark&gt; в заранее созданную папку &lt;mark&gt;js&lt;/mark&gt; в корне вашего шаблона.&lt;/p&gt;
@@ -118,13 +114,15 @@
 
 </description>
         <pubDate>Tue, 23 Jan 2018 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/kat-v-egee/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/kat-v-egee/</guid>
+        <category>Веб</category>
+        <category>Гайд</category><category>Эгея</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Beat Cop</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/beat-cop/</guid>
-        <link>https://milkleaks.ru/blog/beat-cop/</link>
         <description>&lt;p&gt;Джек Келли - бывший детектив низвергнутый до простого патрульного Бруклинских улиц Нью-Йорка. Его подозревают в хищении бриллиантов у сенатора, ибо несмотря на то, что на последнем задании грабитель сенаторского особняка был пристрелен - кому-то всё же удалось опустошить сейф сенатора и скрыться безнаказанным, тем самым подставив незадачливого детектива. Теперь Келли вынужден патрулировать улицы, выполнять нормы по штрафам за неправильную парковку, травить тараканов в местной забегаловке, спасать самоубийц от самоподжога и задерживать мелких воришек - балансируя между конфликтующими бандами «макаронников» и «черномазых» в ожидании завершения расследования. Не забывая платить алименты бывшей жене, конечно же.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/UWy8mZ1.png&quot; alt=&quot;Beat Cop&quot; /&gt;&lt;/p&gt;
@@ -139,13 +137,15 @@
 
 </description>
         <pubDate>Wed, 03 Jan 2018 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/beat-cop/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/beat-cop/</guid>
+        <category>Игры</category>
+        <category>Пиксельная графика</category><category>Квест</category><category>Инди</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Новый, новый, новый год</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
-        <link>https://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
         <description>&lt;p&gt;Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард. Люди неистово закупают продукты, подарки и алкоголь, и вообще всячески пытаются веселится, о чём говорят их нетрезвые голоса под окнами. В конце уходящего года многие подводят его итоги - обдумывают и делятся прошедшими событиями в своих уютных блогах и соцсетях, а также строят грандиозные планы на год будущий. Поддавшись традиции я тоже решила подвести итоги две тысячи семнадцатого, пусть и не вдаваясь в подробности событий жизни вне Сети, не смотря на то, что и их было предостаточно.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SJAVwfQ.jpg&quot; alt=&quot;Новый, новый, новый год&quot; /&gt;&lt;/p&gt;
@@ -160,13 +160,15 @@
 
 </description>
         <pubDate>Sun, 31 Dec 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
+        <category>Заметки</category>
+        
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Упрощаем получение карточек на распродаже Steam</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</guid>
-        <link>https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</link>
         <description>&lt;p&gt;Как известно, каждый год в Steam стартуют две крупные распродажи - летняя и зимняя, где за просмотр списка рекомендаций можно получить по три карточки в день которые, в свою очередь, можно продать или потратить на создание значка распродажи. Дабы упростить и ускорить процесс просмотра скучного списка рекомендаций участник GitHub &lt;a href=&quot;https://github.com/AceLewis/&quot;&gt;AceLewis&lt;/a&gt; написал небольшой скрипт для браузера который автоматически просматривает список за несколько секунд прошествии которых и выпадают заветные три карточки. Способ безопасен и работает уже несколько лет, бана Steam аккаунта вы не получите, а вот чтобы получить карточки достаточно выполнить несколько незаурядных шагов без регистрации и смс.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -211,13 +213,15 @@
 
 </description>
         <pubDate>Fri, 22 Dec 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</guid>
+        <category>Заметки</category>
+        <category>Steam</category><category>Гайд</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>elementaryOS</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/elementary-os/</guid>
-        <link>https://milkleaks.ru/blog/elementary-os/</link>
         <description>&lt;p&gt;Создаваемая дизайнерами, бесплатная операционная система с открытым исходным кодом основанная на ubuntu 16.04. &lt;a href=&quot;https://elementary.io/ru/&quot;&gt;elementaryOS&lt;/a&gt; пожалуй один из самых красивых и быстрых дистрибутивов linux. Для чего стоит устанавливать elementary? Как минимум она отлично работает на слабых ноутбуках и нетбуках, и отлично показывает себя там, где Windows и OS X тормозят и пожирают оперативную память, при этом не проигрывая им в оформлении, комфортной работе с окнами и приложениями. Интерфейс elementaryOS не перегружен лишними украшательствами и в целом, не без недостатков, старается наследовать дизайн и эргономику OS X. Если на вашем ноутбуке комфортно работает только Windows 7 или &lt;a href=&quot;https://www.neverware.com/&quot;&gt;Chrome OS&lt;/a&gt;, elementaryOS может стать не плохой альтернативой.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Sdrss77.png&quot; alt=&quot;elementaryOS&quot; /&gt;&lt;/p&gt;
@@ -231,13 +235,15 @@
 
 </description>
         <pubDate>Tue, 14 Nov 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/elementary-os/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/elementary-os/</guid>
+        <category>Заметки</category>
+        <category>OS</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>VA-11 Hall-A</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/va11halla/</guid>
-        <link>https://milkleaks.ru/blog/va11halla/</link>
         <description>&lt;p&gt;Вдохновленная японской анимацией визуальная новелла от небольшой студии из Венесуэлы, где в кибернитезированном будущем, со всеми его корпорациями зла, искусственным интеллектом, аугментацией и наномашинами, игроку, в роли девушки по имени Джилл, предстоит поработать в качестве бармена в «Вальхалле» - не самом популярном барном заведении мегаполиса Глитч Сити в две тысячи семидесятых годах.&lt;/p&gt;
 
 &lt;p full=&quot;&quot;&gt;&lt;img alt=&quot;VA-11 Hall-A&quot; src=&quot;https://i.imgur.com/6OEqkZb.png&quot; /&gt;&lt;/p&gt;
@@ -255,13 +261,15 @@
 &lt;p&gt;Пожалуй VA-11 Hall-A одна из тех немногих игр, которой, так или иначе, невозможно не проникнутся. К финалу игры привыкаешь и привязываешься как к главной героине, так и к множеству разнообразных посетителей, от главного редактора местной газеты, до наемного убийцы с аугментациями. Сопереживать их историям весьма увлекательно, а расставаться в финале может быть тоскливо. В целом, «Вальхалла» отличный представитель такого замусоренного жанра, как визуальные новеллы. Мир здесь, несмотря на своё кибернетическое будущее, как никогда близок и знаком - всё те же социальные проблемы, всё те же имиджборды с мемами, всё те же люди (И не совсем люди) готовые открыться скромному бармену за бокалом чего нибудь алкогольного. Хотя бы за это «Вальхалла» стоит внимания.&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Nov 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/va11halla/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/va11halla/</guid>
+        <category>Игры</category>
+        <category>Инди</category><category>Квест</category><category>Визуальная новелла</category><category>Пиксельная графика</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Свои шрифты в Эгее</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/svoi-shrifty-v-egee/</guid>
-        <link>https://milkleaks.ru/blog/svoi-shrifty-v-egee/</link>
         <description>&lt;p&gt;Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона &lt;mark&gt;plain&lt;/mark&gt; и движка стабильной версии &lt;mark&gt;3118&lt;/mark&gt;.&lt;/p&gt;
 
 &lt;p&gt;Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно &lt;a href=&quot;https://www.tinkov.info/gilroy.html&quot;&gt;скачать у автора&lt;/a&gt;, а бесплатную &lt;mark&gt;webfont&lt;/mark&gt; версию, которую я использую в примере, можно скачать &lt;a href=&quot;https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/&quot;&gt;отсюда&lt;/a&gt;. После, откроем каталог шаблона:&lt;/p&gt;
@@ -311,13 +319,15 @@
 
 </description>
         <pubDate>Sun, 08 Oct 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/svoi-shrifty-v-egee/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/svoi-shrifty-v-egee/</guid>
+        <category>Веб</category>
+        <category>Эгея</category><category>Гайд</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Darkwood</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/darkwood/</guid>
-        <link>https://milkleaks.ru/blog/darkwood/</link>
         <description>&lt;p&gt;Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько качественно сделана эта игра во всех своих проявлениях, могут позавидовать даже некоторые крупные компании в сфере игростроя.&lt;/p&gt;
 
 &lt;p left=&quot;&quot;&gt;В 2013 году игра успешно прошла краудфандинговую компанию на Indiegogo, где собрала более 57 000 долларов. После выхода в свет в качестве «Раннего доступа», в июле 2014, студия потратила еще три года на её дальнейшую разработку. Darkwood была выпущена 17 августа 2017 и тепло принята игроками. С момента своего релиза она имеет «Крайне положительные» отзывы в Steam.&lt;/p&gt;
@@ -339,13 +349,15 @@
 &lt;p&gt;Darkwood отличный представитель жанра инди игр, а студия Acid Wizard подаёт прекрасный пример того, как стоило бы делать игры. Чувствуется, что Darkwood создана с должной ответственностью и любовью к своему творению. К слову, благодаря разработчикам любой желающий невозбранно может познакомиться с игрой ближе, скачав её с торрента - Acid Wizard Studio не то, что не стали встраивать в свое творение антипиратских защит, но даже лично выложили игру на трекеры для всех желающих. Тем не менее если игра вам понравилась, её всегда можно купить в Steam и тем самым поддержать разработчика.&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Oct 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/darkwood/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/darkwood/</guid>
+        <category>Игры</category>
+        <category>Выживание</category><category>Крафтинг</category><category>Квест</category><category>Инди</category><category>Хоррор</category><category>Открытый мир</category><category>Пиксельная графика</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Уильям Зинсер «Как писать хорошо»</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</guid>
-        <link>https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</link>
         <description>&lt;p&gt;Читая различных блогеров так или иначе стала сталкиваться с упоминаниями книги Уиляма Зинсера «Как писать хорошо», как практическое руководство к написанию самых лучших статей, заметок, репортажей и прочих нехудожественных текстов. А потому, тоже не смогла обойти её стороной. В своей книге, впервые появившейся на свет еще в эпоху печатных машинок, в далеком 1976 году, переизданной и дополненной около тридцати раз, Уильям Зинсер рассказывает и приводит примеры правильного текста, дает советы о том как писать интересно и избавится от «воды». В целом, «Как писать хорошо» сама по себе является примером того, как стоит писать нехудожественную литературу - она написана понятным и простым языком в форме непринужденной беседы автора с читателем. На протяжении всей книги автор дает множество полезных советов и примеров, которые могут помочь сделать текст лучше.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;«Упрощайте же, упрощайте.»&lt;/b&gt;&lt;/p&gt;
@@ -365,13 +377,15 @@
 &lt;p&gt;«Как писать хорошо» стоит порекомендовать всем тем, кто так или иначе увлекается, или только начал увлекаться ремеслом писательства. Даже если ваши публикации, это простые заметки из повседневной жизни. Конечно, некоторые советы и примеры приведенные в этой книге в некотором роде сугубо узконаправленные, ведь написаны американским писателем для американской публики, тем не менее даже из них можно почерпнуть что-то полезное. Надеюсь что кто-то, так же как и я, откроет для себя эту книгу и почерпнет, если не все, то хотя бы парочку полезных советов.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Oct 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</guid>
+        <category>Книги</category>
+        <category>Саморазвитие</category>
         <author>Александра Травкина</author>
       </item>
     
       <item>
         <title>Устанавливаем Jekyll на Mac OS</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</guid>
-        <link>https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</link>
         <description>&lt;p&gt;В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика &lt;a href=&quot;https://itunes.apple.com/ru/app/xcode/id497799835?mt=12&quot;&gt;Xcode из AppStore&lt;/a&gt;, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;xcode-select &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -419,6 +433,10 @@
 &lt;p&gt;Теперь ваш сайт доступен по локальному адресу &lt;a href=&quot;http://localhost:4000&quot;&gt;localhost:4000&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Sep 2017 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</guid>
+        <category>Веб</category>
+        <category>Гайд</category><category>Jekyll</category>
         <author>Александра Травкина</author>
       </item>
     
