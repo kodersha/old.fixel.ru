@@ -2,14 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <link>https://milkleaks.ru/</link>
+    <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
+    <language>ru</language>
     <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Feb 2018 02:13:27 +0700</pubDate>
-    <lastBuildDate>Sun, 04 Feb 2018 02:13:27 +0700</lastBuildDate>
+    <yandex:analytics id="40455205" type="Yandex"></yandex:analytics>
     
-      <item>
+      <item turbo="true">
         <title>Кат в Эгее</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/kat-v-egee/</guid>
+        <link>https://milkleaks.ru/blog/kat-v-egee/</link>
         <description>&lt;p&gt;Как известно &lt;a href=&quot;https://blogengine.ru&quot;&gt;Эгея&lt;/a&gt; не имеет функции скрытия длинных постов под катом, в этой &lt;a href=&quot;https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/&quot;&gt;статье&lt;/a&gt; Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта &lt;a href=&quot;http://jedfoster.com/Readmore.js/&quot;&gt;readmore.js&lt;/a&gt;. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.&lt;/p&gt;
 
 &lt;p&gt;Скачаем сам скрипт &lt;a href=&quot;https://github.com/jedfoster/Readmore.js&quot;&gt;readmore.js&lt;/a&gt; с GitHub и поместим файл &lt;mark&gt;readmore.min.js&lt;/mark&gt; в заранее созданную папку &lt;mark&gt;js&lt;/mark&gt; в корне вашего шаблона.&lt;/p&gt;
@@ -116,20 +118,118 @@
 
 </description>
         <pubDate>Tue, 23 Jan 2018 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/kat-v-egee/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/kat-v-egee/</guid>
-        
-        <category>Веб</category>
-        
-        
-        <category>Гайд</category>
-        
-        <category>Эгея</category>
-        
+        <turbo:content>&lt;p&gt;Как известно &lt;a href=&quot;https://blogengine.ru&quot;&gt;Эгея&lt;/a&gt; не имеет функции скрытия длинных постов под катом, в этой &lt;a href=&quot;https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/&quot;&gt;статье&lt;/a&gt; Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта &lt;a href=&quot;http://jedfoster.com/Readmore.js/&quot;&gt;readmore.js&lt;/a&gt;. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.&lt;/p&gt;
+
+&lt;p&gt;Скачаем сам скрипт &lt;a href=&quot;https://github.com/jedfoster/Readmore.js&quot;&gt;readmore.js&lt;/a&gt; с GitHub и поместим файл &lt;mark&gt;readmore.min.js&lt;/mark&gt; в заранее созданную папку &lt;mark&gt;js&lt;/mark&gt; в корне вашего шаблона.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/js/readmore.min.js&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Затем создадим файл &lt;mark&gt;script.tmpl.php&lt;/mark&gt; в папке &lt;mark&gt;templates&lt;/mark&gt; шаблона, в нём мы будем подключать и настраивать сам скрипт.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/templates/script.tmpl.php&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Добавим в созданный файл немного настроек, полный список которых можно посмотреть на странице скрипта на GitHub.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.e2-note-short'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readmore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;speed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;75&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Скорость раскрытия ката&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;collapsedHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1250&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Длинна заметки после которой будет добавлен кат&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;moreLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;lt;div class=&quot;more&quot;&amp;gt;&amp;lt;a class=&quot;morelink&quot; href=&quot;#&quot;&amp;gt;Показать полностью&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Классы кнокпи раскрытия ката&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;lessLink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Классы кнокпи скрытия ката&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь добавим класс &lt;mark&gt;.e2-note-short&lt;/mark&gt; на основании которого будет добавляться кат к вашим записям, для этого нужно скопировать файл:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../system/theme/templates/notes.tmpl.php&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;И поместить в папку &lt;mark&gt;templates&lt;/mark&gt; вашего шаблона.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/templates/notes.tmpl.php&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Затем откроем &lt;mark&gt;notes.tmpl.php&lt;/mark&gt; где на 27 строке добавим к &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;article&amp;gt;&lt;/code&gt; класс &lt;mark&gt;e2-note-short&lt;/mark&gt; обернув его &lt;mark&gt;php&lt;/mark&gt; параметром, чтобы кат не работал на отдельной странице с записью.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;article&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'class'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'note'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;e2-note-short&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь в папке &lt;mark&gt;styles&lt;/mark&gt; шаблона создадим файл &lt;mark&gt;style.css&lt;/mark&gt; со стилями кнопки ката. В дальнейшем в этот &lt;mark&gt;css&lt;/mark&gt; можно добавлять любые собственные стили без конфликта с основным файлом стилей шаблона Эгеи.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/styles/style.css&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Добавим стилей. Их можно отредактировать на свой вкус.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.more&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.more&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-moz-linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;-webkit-linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;80%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;progid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DXImageTransform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Microsoft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;startColorstr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'#00ffffff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;endColorstr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'#ffffff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GradientType&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+    &lt;span class=&quot;nl&quot;&gt;pointer-events&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-150px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.morelink&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;-webkit-border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;-moz-border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#f1f3f4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;720px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8890a7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.morelink&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#e2e5e6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8890a7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Далее, необходимо подключить все созданные файлы, для этого копируем &lt;mark&gt;main.tmpl.php&lt;/mark&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../system/theme/templates/main.tmpl.php&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;И вставляем в папку &lt;mark&gt;templates&lt;/mark&gt; вашего шаблона.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/templates/main.tmpl.php&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь отредактируем &lt;mark&gt;main.tmpl.php&lt;/mark&gt; добавив стили после основных стилей &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_CSS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'main'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt; в конце файла.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_CSS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'style'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;А после основных скриптов шаблона &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_JS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'main'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt; добавим сам &lt;mark&gt;readmore.js&lt;/mark&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_JS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'readmore.min'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Также перед закрывающимся тегом &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/html&amp;gt;&lt;/code&gt; добавим файл с настройками скрипта.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_T&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'script'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Таким образом мы добавили кат в Эгею.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KcpY7yg.png&quot; alt=&quot;Кат в Эгее&quot; /&gt;&lt;/p&gt;
+
+&lt;p left=&quot;&quot;&gt;Смотрите также: &lt;a href=&quot;/blog/svoi-shrifty-v-egee/&quot;&gt;Свои шрифты в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Возможно где-то придется отредактировать стили по ситуации, подобрать оптимальную длину заметки после которой кат будет скрывать запись и тому подобное. Стандартный шаблон &lt;mark&gt;plain&lt;/mark&gt; здесь используется в качестве примера, но намного лучше сделать его копию и переименовать на свой лад, дабы при последующих обновлениях Эгеи ничего лишнего не перезаписалось.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Beat Cop</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/beat-cop/</guid>
+        <link>https://milkleaks.ru/blog/beat-cop/</link>
         <description>&lt;p&gt;Джек Келли - бывший детектив низвергнутый до простого патрульного Бруклинских улиц Нью-Йорка. Его подозревают в хищении бриллиантов у сенатора, ибо несмотря на то, что на последнем задании грабитель сенаторского особняка был пристрелен - кому-то всё же удалось опустошить сейф сенатора и скрыться безнаказанным, тем самым подставив незадачливого детектива. Теперь Келли вынужден патрулировать улицы, выполнять нормы по штрафам за неправильную парковку, травить тараканов в местной забегаловке, спасать самоубийц от самоподжога и задерживать мелких воришек - балансируя между конфликтующими бандами «макаронников» и «черномазых» в ожидании завершения расследования. Не забывая платить алименты бывшей жене, конечно же.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/UWy8mZ1.png&quot; alt=&quot;Beat Cop&quot; /&gt;&lt;/p&gt;
@@ -144,22 +244,26 @@
 
 </description>
         <pubDate>Wed, 03 Jan 2018 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/beat-cop/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/beat-cop/</guid>
-        
-        <category>Игры</category>
-        
-        
-        <category>Пиксельная графика</category>
-        
-        <category>Квест</category>
-        
-        <category>Инди</category>
-        
+        <turbo:content>&lt;p&gt;Джек Келли - бывший детектив низвергнутый до простого патрульного Бруклинских улиц Нью-Йорка. Его подозревают в хищении бриллиантов у сенатора, ибо несмотря на то, что на последнем задании грабитель сенаторского особняка был пристрелен - кому-то всё же удалось опустошить сейф сенатора и скрыться безнаказанным, тем самым подставив незадачливого детектива. Теперь Келли вынужден патрулировать улицы, выполнять нормы по штрафам за неправильную парковку, травить тараканов в местной забегаловке, спасать самоубийц от самоподжога и задерживать мелких воришек - балансируя между конфликтующими бандами «макаронников» и «черномазых» в ожидании завершения расследования. Не забывая платить алименты бывшей жене, конечно же.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/UWy8mZ1.png&quot; alt=&quot;Beat Cop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Beat Cop погружает в атмосферу гипертрофированных полицейских фильмов времен конца восьмидесятых, здесь всё как всегда - подставы, коррумпированные власти, Итальянская мафия и афро-американские банды торгующие крэком в подворотне, сутенеры и проститутки, пончики с розовой глазурью и остывший кофе, советская «клюква», расистский юмор и никакой цензуры. Всё это под аккомпанемент восьмибитной музыки и отсылок к тем самым фильмам времен VHS. Визуальная составляющая выполнена в аскетичной, «олдскульной» пиксельной графике, к слову, довольно богатой на мелкие детали.&lt;/p&gt;
+
+&lt;p&gt;Что же касается геймплея, здесь он довольно тривиален и представляет из себя своего рода point-and-click квест на внимательность. Каждый игровой день, а в игре их двадцать один, Келли нужно будет выполнять задания полученные на брифинге в полицейском участке. Среди них, в основном, выписка десятка штрафов за неправильную парковку, разбитые фары или стёртые шины, на подконтрольной ему улице. Рутинные задания разбавляются случайными событиями, например задержать преступника умыкнувшего чужой кошелёк или помочь мафии найти пропавшую партию кокаина. Время каждого дня строго лимитировано и выполнить все задания не всегда удаётся, порой приходится разрываться между перестрелкой с грабителями или помощью сумасшедшей старушке с покупкой пончиков. Чтобы восполнить энергию Келли может выпить кофе в местной закусочной или перекусить пиццей у Итальянцев. Однако, не смотря на некоторую однообразность и ежедневную рутину, многие задания весьма забавны в своей абсурдности, что так или иначе не даёт заскучать, а не менее абсурдные диалоги создают львиную долю атмосферности. За каждое выполненное или не выполненное задание Келли получает или теряет очки репутации. Репутацию нужно зарабатывать как у полицейских, так и у мафии «итальяшек» с бандой «чернокожих». И здесь приходится соблюдать золотой баланс и поддерживать нейтральные отношения со всеми, ибо «переходить дорогу» бандам делящим одну улицу невыгодно для здоровья Келли, также как невыгодно для его кошелька не выполнять нормы по штрафам. Поэтому, так или иначе, придется закрывать глаза на правонарушения и идти на уступки, или безжалостно «закрывать» очередного вора телевизоров, да и вообще всячески вертеться.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/ooFwLpm.png&quot; alt=&quot;Beat Cop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В целом, не смотря на некоторую однообразность игровых механик, порой повторяющиеся диалоги и смазанную концовку с подведением итогов - Beat Cop не самый худший, и в своём роде уникальный, представитель пиксельного инди жанра. В нём как минимум отлично передана атмосфера фильмов о полицейских, как максимум - гипертрофированна и возведена в абсолют. Персонажи патрулируемой улицы настолько харизматичны, насколько и глупы в своей стереотипности. Дополняет картину и то, что перевод на русский язык выполнен с сохранением всех нецензурных эпитетов и слэнговых словечек, что не может не дополнять общую картину происходящего безумия. Хотя бы поэтому Beat Cop заслуживает внимания, особенно для всех любителей жанра. Однако, чтобы игра быстро не наскучила, рекомендую потреблять мелкими порциями.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Новый, новый, новый год</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
+        <link>https://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
         <description>&lt;p&gt;Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард. Люди неистово закупают продукты, подарки и алкоголь, и вообще всячески пытаются веселится, о чём говорят их нетрезвые голоса под окнами. В конце уходящего года многие подводят его итоги - обдумывают и делятся прошедшими событиями в своих уютных блогах и соцсетях, а также строят грандиозные планы на год будущий. Поддавшись традиции я тоже решила подвести итоги две тысячи семнадцатого, пусть и не вдаваясь в подробности событий жизни вне Сети, не смотря на то, что и их было предостаточно.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SJAVwfQ.jpg&quot; alt=&quot;Новый, новый, новый год&quot; /&gt;&lt;/p&gt;
@@ -174,16 +278,26 @@
 
 </description>
         <pubDate>Sun, 31 Dec 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
-        
-        <category>Заметки</category>
-        
-        
+        <turbo:content>&lt;p&gt;Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард. Люди неистово закупают продукты, подарки и алкоголь, и вообще всячески пытаются веселится, о чём говорят их нетрезвые голоса под окнами. В конце уходящего года многие подводят его итоги - обдумывают и делятся прошедшими событиями в своих уютных блогах и соцсетях, а также строят грандиозные планы на год будущий. Поддавшись традиции я тоже решила подвести итоги две тысячи семнадцатого, пусть и не вдаваясь в подробности событий жизни вне Сети, не смотря на то, что и их было предостаточно.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/SJAVwfQ.jpg&quot; alt=&quot;Новый, новый, новый год&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В первую очередь семнадцатый год был богат на различные игровые релизы, как среди ААА-проектов, так и в инди сегменте. Прямиком в начале года вышел &lt;a href=&quot;/blog/resident-evil-7/&quot;&gt;Resident Evil 7&lt;/a&gt;. Мы дождались выхода сюжетного режима &lt;a href=&quot;/blog/the-long-dark-wintermute/&quot;&gt;The Long Dark&lt;/a&gt;, пусть он оказался не таким захватывающим, как хотелось бы. Дождались новой части &lt;a href=&quot;/blog/retrospektiva-prey/&quot;&gt;старушки Prey&lt;/a&gt;, пусть в ней и не осталось ничего от индейцев. Увидели ремастер Full Throttle и спорную третью часть Syberia. Погрузились в захватывающую историю отношений Хлои Прайс и Рейчел Эмбер в приквеле Life is Strange. Bethesda порадовала второй частью The Evil Within, которая стала на голову лучше предыдущей, а также новой частью приключений Уильяма Джозефа Бласковица в Wolfenstein: The New Colossus. Поляки наконец доделали отличный инди-хоррор &lt;a href=&quot;/blog/darkwood/&quot;&gt;Darkwood&lt;/a&gt;, а студия Giant Sparrow подарила миру проникновенную визуальную историю &lt;a href=&quot;/blog/what-remains-of-edith-finch/&quot;&gt;What Remains of Edith Finch&lt;/a&gt;. Помимо вышеперечисленного было и множество других игр увидевших свет в уходящем году, что не может не радовать. А потому, остается надеется, что будущий год также будет разнообразен на различные интересные релизы. Как минимум я жду Metro: Exodus и Vampyr от DONTNOD.&lt;/p&gt;
+
+&lt;p&gt;Что же касается блога, в этому году я отказалась от платного хостинга и переехала с &lt;a href=&quot;/blog/egeya/&quot;&gt;Эгеи&lt;/a&gt; на &lt;a href=&quot;/blog/ujutnyj-jekyll/&quot;&gt;Jekyll&lt;/a&gt;, который размещается на бесплатном сервисе &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. Как оказалось Jekyll замечательный и гибкий движок, и отлично подходит для нужд моего блога, изучая его я получила опыт в верстке и дизайне, познакомилась с &lt;mark&gt;sass&lt;/mark&gt; и &lt;mark&gt;ruby&lt;/mark&gt;. Помимо прочего, для подписчиков &lt;a href=&quot;https://sasha-travkina.tumblr.com/&quot;&gt;Tumblr&lt;/a&gt; я публикую свои посты и там, кроме специфических касающихся веб дизайна. Ohayo, подписчикам и команде Tumblr &lt;a href=&quot;https://komanda.tumblr.com/post/168430394913/игры-игры-и-еще-раз-игры-в-блоге&quot;&gt;упомянувшей&lt;/a&gt; мой блог в своём недавнем посте.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Относительно внешнего мира - в семнадцатом году произошло множество событий, веселых и не очень. Рассказывать о них я, конечно, не буду. Надеюсь, что в восемнадцатом будет меньше сложностей с государственной бюрократической машиной и вообще он станет разнообразнее на более позитивные события и впечатления. Как минимум, аки хипстер, я планирую путешествовать и фотографировать пейзажи на новоприобретенный Canon EOS 100D, писать больше полезных статей и обзоров игр. Но это не точно. В остальном же, осталось украсить квартиру разноцветной мишурой, купить вкусняшек и встретить Новый год за просмотром Доктора Хауса вместе со своей второй половинкой и кошками. Такие дела.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Упрощаем получение карточек на распродаже Steam</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</guid>
+        <link>https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</link>
         <description>&lt;p&gt;Как известно, каждый год в Steam стартуют две крупные распродажи - летняя и зимняя, где за просмотр списка рекомендаций можно получить по три карточки в день которые, в свою очередь, можно продать или потратить на создание значка распродажи. Дабы упростить и ускорить процесс просмотра скучного списка рекомендаций участник GitHub &lt;a href=&quot;https://github.com/AceLewis/&quot;&gt;AceLewis&lt;/a&gt; написал небольшой скрипт для браузера который автоматически просматривает список за несколько секунд прошествии которых и выпадают заветные три карточки. Способ безопасен и работает уже несколько лет, бана Steam аккаунта вы не получите, а вот чтобы получить карточки достаточно выполнить несколько незаурядных шагов без регистрации и смс.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -228,20 +342,56 @@
 
 </description>
         <pubDate>Fri, 22 Dec 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/</guid>
-        
-        <category>Заметки</category>
-        
-        
-        <category>Steam</category>
-        
-        <category>Гайд</category>
-        
+        <turbo:content>&lt;p&gt;Как известно, каждый год в Steam стартуют две крупные распродажи - летняя и зимняя, где за просмотр списка рекомендаций можно получить по три карточки в день которые, в свою очередь, можно продать или потратить на создание значка распродажи. Дабы упростить и ускорить процесс просмотра скучного списка рекомендаций участник GitHub &lt;a href=&quot;https://github.com/AceLewis/&quot;&gt;AceLewis&lt;/a&gt; написал небольшой скрипт для браузера который автоматически просматривает список за несколько секунд прошествии которых и выпадают заветные три карточки. Способ безопасен и работает уже несколько лет, бана Steam аккаунта вы не получите, а вот чтобы получить карточки достаточно выполнить несколько незаурядных шагов без регистрации и смс.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Открыть свой любимый браузер и авторизоваться в Steam аккаунте на &lt;a href=&quot;http://steampowered.com/&quot;&gt;steampowered.com&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Открыть страницу рекомендаций: &lt;a href=&quot;http://store.steampowered.com/explore/&quot;&gt;store.steampowered.com/explore&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Открыть консоль разработчика.
+    &lt;ul&gt;
+      &lt;li&gt;В Google Chrome сочетанием клавиш &lt;mark&gt;Ctrl + Shift + J&lt;/mark&gt; или &lt;mark&gt;Cmd + Option + J&lt;/mark&gt; на устройствах Mac.&lt;/li&gt;
+      &lt;li&gt;В Firefox &lt;mark&gt;Ctrl + Shift + I&lt;/mark&gt; или &lt;mark&gt;Cmd + Option + I&lt;/mark&gt;.&lt;/li&gt;
+      &lt;li&gt;В Safari &lt;mark&gt;Cmd + Option + C&lt;/mark&gt;, предварительно включив режим разработчика &lt;mark&gt;Настройки - Дополнения - Показывать меню «Разработка» в строке меню&lt;/mark&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Скопировать и вставить скрипт в консоль, нажать &lt;mark&gt;Enter&lt;/mark&gt; и немного подождать до обновления страницы.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;GenerateQueue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Queue #'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://store.steampowered.com/explore/generatenewdiscoveryqueue'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sessionid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;g_sessionID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;queuetype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requests&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	        &lt;span class=&quot;nx&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'http://store.steampowered.com/app/10'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;appid_to_clear_from_queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;sessionid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;g_sessionID&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	    &lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requests&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	            &lt;span class=&quot;nx&quot;&gt;GenerateQueue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;queueNumber&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	            &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;GenerateQueue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Собственно говоря, таким нехитрым образом можно получать все три распродажные карточки за считаные секунды, что ещё более актуально при наличии нескольких Steam аккаунтов.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>elementaryOS</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/elementary-os/</guid>
+        <link>https://milkleaks.ru/blog/elementary-os/</link>
         <description>&lt;p&gt;Создаваемая дизайнерами, бесплатная операционная система с открытым исходным кодом основанная на ubuntu 16.04. &lt;a href=&quot;https://elementary.io/ru/&quot;&gt;elementaryOS&lt;/a&gt; пожалуй один из самых красивых и быстрых дистрибутивов linux. Для чего стоит устанавливать elementary? Как минимум она отлично работает на слабых ноутбуках и нетбуках, и отлично показывает себя там, где Windows и OS X тормозят и пожирают оперативную память, при этом не проигрывая им в оформлении, комфортной работе с окнами и приложениями. Интерфейс elementaryOS не перегружен лишними украшательствами и в целом, не без недостатков, старается наследовать дизайн и эргономику OS X. Если на вашем ноутбуке комфортно работает только Windows 7 или &lt;a href=&quot;https://www.neverware.com/&quot;&gt;Chrome OS&lt;/a&gt;, elementaryOS может стать не плохой альтернативой.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Sdrss77.png&quot; alt=&quot;elementaryOS&quot; /&gt;&lt;/p&gt;
@@ -255,18 +405,25 @@
 
 </description>
         <pubDate>Tue, 14 Nov 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/elementary-os/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/elementary-os/</guid>
-        
-        <category>Заметки</category>
-        
-        
-        <category>OS</category>
-        
+        <turbo:content>&lt;p&gt;Создаваемая дизайнерами, бесплатная операционная система с открытым исходным кодом основанная на ubuntu 16.04. &lt;a href=&quot;https://elementary.io/ru/&quot;&gt;elementaryOS&lt;/a&gt; пожалуй один из самых красивых и быстрых дистрибутивов linux. Для чего стоит устанавливать elementary? Как минимум она отлично работает на слабых ноутбуках и нетбуках, и отлично показывает себя там, где Windows и OS X тормозят и пожирают оперативную память, при этом не проигрывая им в оформлении, комфортной работе с окнами и приложениями. Интерфейс elementaryOS не перегружен лишними украшательствами и в целом, не без недостатков, старается наследовать дизайн и эргономику OS X. Если на вашем ноутбуке комфортно работает только Windows 7 или &lt;a href=&quot;https://www.neverware.com/&quot;&gt;Chrome OS&lt;/a&gt;, elementaryOS может стать не плохой альтернативой.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Sdrss77.png&quot; alt=&quot;elementaryOS&quot; /&gt;&lt;/p&gt;
+&lt;p caption=&quot;&quot;&gt;elementaryOS с темой оформления &lt;a href=&quot;https://github.com/LinxGem33/OSX-Arc-Darker/&quot;&gt;ArkDarker&lt;/a&gt; на морально устаревшем для OS X &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;Macbook Air mid 2012, 11-inch&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Для визуализации рабочей среды elementary использует оболочку GTK с рабочим окружением Pantheon. В ней также есть свой магазин бесплатных приложений, предустановлен бесполезный браузер Epiphany, почтовый клиент и прочий стандартный набор  первостепенного софта, написанный специально для elementary. Не смотря на существующие альтернативы, одним из недостатков линуксоидов можно считать отсутствие всем известных программ, таких как, например, Adobe Photoshop, Microsoft Word или iTunes. Для их запуска, конечно, можно использовать костыли в виде Wine, однако по наличию и качеству софта elementaryOS (Читай любой дистрибутив linux) во многом проигрывает Windows и OS X. Зато у linux есть огромный потенциал к кастомизации, например верхнюю панель в elementaryOS можно изменить просто отредактировав css файл, ведь весь исходный код операционной системы открыт для пользователя. Что и говорить о бесчисленных множествах наборов иконок, тем оформления и различных гаджетах рабочего стола.&lt;/p&gt;
+
+&lt;p&gt;Тем не менее, не смотря на то, что elementaryOS старается быть красивой, удобной и человекопонятной, в ней всё еще хватает типичных недостатков дистрибутивов linux для рабочих столов. Многое приходится устанавливать и настраивать через консоль, некоторое приходится доделывать за разработчика, использовать фиксы, костыли и восстанавливать отвалившееся. Однако, как операционная система для нетребовательного пользователя elementaryOS вполне неплохо себя показывает, в ней можно выполнять любые нетривиальные задачи, серфить интернет в google chrome, смотреть фильмы, слушать музыку, играть в некоторые steam игры (Около 80 игр из 180 на аккаунте были оптимизированы для linux). Но самое главное преимущество elementary перед другими ОС, это быстрота. Ресурс потребления оперативной памяти самой системой всего около 700 мегабайт при всех плавных анимациях окон и фоновых приложениях, всё остальное остается на приложения пользователя, в итоге четыре гигабайта памяти занять довольно не просто.&lt;/p&gt;
+
+&lt;p&gt;По своему опыту использования elementaryOS на MacBook Air, могу сказать лишь то, что для моих задач она, к сожалению, не подошла. На том же OS X есть специализированный софт, скажем для обработки фотографий, есть продуманный и удобный интерфейс, отличное приложение почты и интеграция с iphone. Тем не менее тот же google chrome в разы быстрее и плавнее работает на elementary, когда OS X, начиная от el capitan, тормозит до невозможности простого просмотра видео на youtube и перманентно шумит кулером. Тем не менее, если у вас слабый ноутбук и это не MacBook, elementaryOS отлично подойдет в качестве быстрой и не сильно прихотливой системы, что и было доказано в те времена, когда я пользовалась такой древностью, как ASUS Eee PC 900.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>VA-11 Hall-A</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/va11halla/</guid>
+        <link>https://milkleaks.ru/blog/va11halla/</link>
         <description>&lt;p&gt;Вдохновленная японской анимацией визуальная новелла от небольшой студии из Венесуэлы, где в кибернитезированном будущем, со всеми его корпорациями зла, искусственным интеллектом, аугментацией и наномашинами, игроку, в роли девушки по имени Джилл, предстоит поработать в качестве бармена в «Вальхалле» - не самом популярном барном заведении мегаполиса Глитч Сити в две тысячи семидесятых годах.&lt;/p&gt;
 
 &lt;p full=&quot;&quot;&gt;&lt;img alt=&quot;VA-11 Hall-A&quot; src=&quot;https://i.imgur.com/6OEqkZb.png&quot; /&gt;&lt;/p&gt;
@@ -284,24 +441,29 @@
 &lt;p&gt;Пожалуй VA-11 Hall-A одна из тех немногих игр, которой, так или иначе, невозможно не проникнутся. К финалу игры привыкаешь и привязываешься как к главной героине, так и к множеству разнообразных посетителей, от главного редактора местной газеты, до наемного убийцы с аугментациями. Сопереживать их историям весьма увлекательно, а расставаться в финале может быть тоскливо. В целом, «Вальхалла» отличный представитель такого замусоренного жанра, как визуальные новеллы. Мир здесь, несмотря на своё кибернетическое будущее, как никогда близок и знаком - всё те же социальные проблемы, всё те же имиджборды с мемами, всё те же люди (И не совсем люди) готовые открыться скромному бармену за бокалом чего нибудь алкогольного. Хотя бы за это «Вальхалла» стоит внимания.&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Nov 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/va11halla/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/va11halla/</guid>
-        
-        <category>Игры</category>
-        
-        
-        <category>Инди</category>
-        
-        <category>Квест</category>
-        
-        <category>Визуальная новелла</category>
-        
-        <category>Пиксельная графика</category>
-        
+        <turbo:content>&lt;p&gt;Вдохновленная японской анимацией визуальная новелла от небольшой студии из Венесуэлы, где в кибернитезированном будущем, со всеми его корпорациями зла, искусственным интеллектом, аугментацией и наномашинами, игроку, в роли девушки по имени Джилл, предстоит поработать в качестве бармена в «Вальхалле» - не самом популярном барном заведении мегаполиса Глитч Сити в две тысячи семидесятых годах.&lt;/p&gt;
+
+&lt;p full=&quot;&quot;&gt;&lt;img alt=&quot;VA-11 Hall-A&quot; src=&quot;https://i.imgur.com/6OEqkZb.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p main=&quot;&quot;&gt;Геймплей «Вальхаллы» точнее всего можно охарактеризовать как «Игра жанра Papers, Please», где от ваших правильных или не правильных действий зависит развитие сюжета, то сколько денег и чаевых за рабочий день вы сможете заработать, дабы оплатить коммунальные счета и удовлетворение потребностей, и какую из шести концовок откроете в финале. Однако влиять на развитие диалогов можно лишь косвенно, ход беседы и расположение духа клиента зависит от того, как правильно и насколько точно вы смешаете и подадите тот или иной алкогольный напиток. Совсем как в том квесте в Syberia. Зачастую посетители «Вальхаллы» могут и сами не знать что они хотят выпить и тут стоит полагаться лишь на чутье и интуицию - запоминать характеры и подмечать особенности постоянных клиентов. Скажем, не каждой хрупкой девушке понравится коктейль «Удар по печени», как не каждому мужчине «Голубая Фея», однако всегда бывают исключения. Между рабочими днями Джилл может отдохнуть у себя дома в компании кота Лунки, а также почитать новостную ленту, имиджборд или блог, или купить предметы интерьера для большего счастья. Если не удовлетворять потребности Джилл она станет хуже работать, а значит её подсказок по приготовлению коктейлей не будет.&lt;/p&gt;
+
+&lt;p aside=&quot;&quot;&gt;&lt;img src=&quot;https://i.imgur.com/EoKyanS.jpg&quot; /&gt; Некоторый саундтрек к VA-11 Hall-A можно послушать на &lt;a href=&quot;https://soundcloud.com/garoadmusic/sets/va-11-hall-a-prologue-ost&quot;&gt;Soundcloud&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p main=&quot;&quot;&gt;В VA-11 Hall-A отлично проработаны диалоги, мир детально наполнен событиями, новостями, происшествиями, атмосферой киберпанка. Из душевных диалогов с самыми разнообразными посетителями «Вальхаллы» можно узнать о их личных переживаниях, взаимоотношениях, мечтах, планах и событиях в мире. Особенно, если напиток правильно смешан и располагает к беседе. Всё это дополнено отличным музыкальным сопровождением в синтетическом стиле 16-битных приставок. Сам мир изобилует множеством отсылок к современной поп-культуре, а также, поднимает множество животрепещущих вопросов о классовом расслоении общества, о бюрократии, корпорациях, коррупции, кликбейтах, правах искусственного интеллекта, стримерах и лесбиянках. Всё это вишенкой на торте приправлено сарказмом, чёрным юмором и самыми нелепыми ситуациями.&lt;/p&gt;
+
+&lt;p aside=&quot;&quot;&gt;Неофициальный русификатор можно скачать &lt;a href=&quot;http://tairennaino.narod.ru/va11halla/status.html&quot;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WmBTc9B.png&quot; alt=&quot;VA-11 Hall-A&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Пожалуй VA-11 Hall-A одна из тех немногих игр, которой, так или иначе, невозможно не проникнутся. К финалу игры привыкаешь и привязываешься как к главной героине, так и к множеству разнообразных посетителей, от главного редактора местной газеты, до наемного убийцы с аугментациями. Сопереживать их историям весьма увлекательно, а расставаться в финале может быть тоскливо. В целом, «Вальхалла» отличный представитель такого замусоренного жанра, как визуальные новеллы. Мир здесь, несмотря на своё кибернетическое будущее, как никогда близок и знаком - всё те же социальные проблемы, всё те же имиджборды с мемами, всё те же люди (И не совсем люди) готовые открыться скромному бармену за бокалом чего нибудь алкогольного. Хотя бы за это «Вальхалла» стоит внимания.&lt;/p&gt;
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Свои шрифты в Эгее</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/svoi-shrifty-v-egee/</guid>
+        <link>https://milkleaks.ru/blog/svoi-shrifty-v-egee/</link>
         <description>&lt;p&gt;Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона &lt;mark&gt;plain&lt;/mark&gt; и движка стабильной версии &lt;mark&gt;3118&lt;/mark&gt;.&lt;/p&gt;
 
 &lt;p&gt;Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно &lt;a href=&quot;https://www.tinkov.info/gilroy.html&quot;&gt;скачать у автора&lt;/a&gt;, а бесплатную &lt;mark&gt;webfont&lt;/mark&gt; версию, которую я использую в примере, можно скачать &lt;a href=&quot;https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/&quot;&gt;отсюда&lt;/a&gt;. После, откроем каталог шаблона:&lt;/p&gt;
@@ -351,20 +513,61 @@
 
 </description>
         <pubDate>Sun, 08 Oct 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/svoi-shrifty-v-egee/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/svoi-shrifty-v-egee/</guid>
-        
-        <category>Веб</category>
-        
-        
-        <category>Эгея</category>
-        
-        <category>Гайд</category>
-        
+        <turbo:content>&lt;p&gt;Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона &lt;mark&gt;plain&lt;/mark&gt; и движка стабильной версии &lt;mark&gt;3118&lt;/mark&gt;.&lt;/p&gt;
+
+&lt;p&gt;Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно &lt;a href=&quot;https://www.tinkov.info/gilroy.html&quot;&gt;скачать у автора&lt;/a&gt;, а бесплатную &lt;mark&gt;webfont&lt;/mark&gt; версию, которую я использую в примере, можно скачать &lt;a href=&quot;https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/&quot;&gt;отсюда&lt;/a&gt;. После, откроем каталог шаблона:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/styles/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;И создадим в нем папки &lt;mark&gt;../fonts/gilroy&lt;/mark&gt;, куда положим скачанные файлы шрифта в форматах &lt;mark&gt;eot&lt;/mark&gt;, &lt;mark&gt;ttf&lt;/mark&gt;, &lt;mark&gt;woff&lt;/mark&gt; и &lt;mark&gt;woff2&lt;/mark&gt;. В папке &lt;mark&gt;styles&lt;/mark&gt; шаблона создадим файл &lt;mark&gt;fonts.css&lt;/mark&gt; где подключаем шрифт:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.eot')&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.eot?#iefix')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'embedded-opentype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+	     &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.woff2')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+	     &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.woff')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+	     &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.ttf')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;К слову, подробнее о @font-face можно почитать &lt;a href=&quot;http://htmlbook.ru/css/font-face&quot;&gt;здесь&lt;/a&gt;. Чтобы подключить &lt;mark&gt;fonts.css&lt;/mark&gt; с вашими шрифтами к шаблону, внесем изменения в &lt;mark&gt;main.tmpl.php&lt;/mark&gt;, для этого скопируем его из:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../system/theme/templates/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;И вставим в:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/templates/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Помните, что вносить изменения в файлы стандартного шаблона можно только скопировав их в папку своего шаблона, иначе при обновлении движка все ваши измнениея пропадут. Откроем скопированный &lt;mark&gt;main.tmpl.php&lt;/mark&gt; и после 41 строки добавим:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_CSS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fonts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Всё, css с вашими шрифтами подключен к шаблону. Тепепь внесем изменения в основной файл стилей &lt;mark&gt;main.css&lt;/mark&gt;, найдем класс &lt;mark&gt;.e2-note h1&lt;/mark&gt; и заменим на:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.e2-note&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;720px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p left=&quot;&quot;&gt;Смотрите ещё: &lt;a href=&quot;/blog/kat-v-egee&quot;&gt;Кат в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Чтобы разминимизировать &lt;mark&gt;main.css&lt;/mark&gt;, для более удобного внесения правок, стоит воспользоваться полезным &lt;a href=&quot;http://unminify.com/&quot;&gt;сервисом&lt;/a&gt;. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Darkwood</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/darkwood/</guid>
+        <link>https://milkleaks.ru/blog/darkwood/</link>
         <description>&lt;p&gt;Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько качественно сделана эта игра во всех своих проявлениях, могут позавидовать даже некоторые крупные компании в сфере игростроя.&lt;/p&gt;
 
 &lt;p left=&quot;&quot;&gt;В 2013 году игра успешно прошла краудфандинговую компанию на Indiegogo, где собрала более 57 000 долларов. После выхода в свет в качестве «Раннего доступа», в июле 2014, студия потратила еще три года на её дальнейшую разработку. Darkwood была выпущена 17 августа 2017 и тепло принята игроками. С момента своего релиза она имеет «Крайне положительные» отзывы в Steam.&lt;/p&gt;
@@ -386,30 +589,33 @@
 &lt;p&gt;Darkwood отличный представитель жанра инди игр, а студия Acid Wizard подаёт прекрасный пример того, как стоило бы делать игры. Чувствуется, что Darkwood создана с должной ответственностью и любовью к своему творению. К слову, благодаря разработчикам любой желающий невозбранно может познакомиться с игрой ближе, скачав её с торрента - Acid Wizard Studio не то, что не стали встраивать в свое творение антипиратских защит, но даже лично выложили игру на трекеры для всех желающих. Тем не менее если игра вам понравилась, её всегда можно купить в Steam и тем самым поддержать разработчика.&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Oct 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/darkwood/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/darkwood/</guid>
-        
-        <category>Игры</category>
-        
-        
-        <category>Выживание</category>
-        
-        <category>Крафтинг</category>
-        
-        <category>Квест</category>
-        
-        <category>Инди</category>
-        
-        <category>Хоррор</category>
-        
-        <category>Открытый мир</category>
-        
-        <category>Пиксельная графика</category>
-        
+        <turbo:content>&lt;p&gt;Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько качественно сделана эта игра во всех своих проявлениях, могут позавидовать даже некоторые крупные компании в сфере игростроя.&lt;/p&gt;
+
+&lt;p left=&quot;&quot;&gt;В 2013 году игра успешно прошла краудфандинговую компанию на Indiegogo, где собрала более 57 000 долларов. После выхода в свет в качестве «Раннего доступа», в июле 2014, студия потратила еще три года на её дальнейшую разработку. Darkwood была выпущена 17 августа 2017 и тепло принята игроками. С момента своего релиза она имеет «Крайне положительные» отзывы в Steam.&lt;/p&gt;
+
+&lt;p&gt;В Darkwood, как и в любой игре жанра выживания, игроку предстоит выжить и попытаться выбраться из места, которое можно было бы охарактеризовать как Зона (Если бы лор игры писали Стругацкие, произведениями которых, я думаю, авторы вдохновлялись в не меньшей степени чем славянским фольклором с его таинственными болотами и духами леса). Зона постсоветского пространства, где в одночасье оказалась заперты живые люди, многие из которых уже давно перестали быть живыми или разумными, мутируя во что-то немыслимое, со всеми их домами, дорогами, целыми деревнями. Зона, где вашим безмолвным врагом станет Лес из которого нет выхода, а каждая из ночей, с её кошмарными обитателями, может быть последней.&lt;/p&gt;
+
+&lt;div full=&quot;&quot; class=&quot;dark&quot;&gt;
+	&lt;div id=&quot;meZDUUY4XFA&quot; class=&quot;youtube&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Несмотря на то, что игра выполнена в уже приевшейся многим, пиксельной графике, она нисколько не теряет в атмосферности. Паны из Acid Wizard тщательно проработали каждую деталь окружающего мира. Трава колышется под дуновением ветра, грибные наросты пульсируют и мерцают, туман стелется по долинам. Лес выглядит дышащим, порой приобретая пугающее сходство с живым организмом из плоти и крови. Аналогично, большую часть атмосферы в Darkwood создает звук, который проработан ничуть не хуже графики. Неспешный амбиент, шорохи, скрипы - во многом помогают погрузиться в игру.&lt;/p&gt;
+
+&lt;p&gt;Тем не менее Darkwood нельзя назвать хоррором в классическом его понимании. В ней нет пресловутых скримеров или выпрыгивающих в лицо монстров, в первую очередь игра пугает своей атмосферой, обволакивая гнилостной грибной слизью, заставляет в напряжении пережидать каждую ночь прячась в забаррикадированной лачуге. И в сравнении с другими играми жанра «хоррор», Darkwood в этом плане выигрывает.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/bqtqRQw.jpg&quot; alt=&quot;Darkwood&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Относительно самой механики игры, как может быть понятно из абзацев выше, в Darkwood основной задачей стоит выживание. Отсюда необходимость в исследовании локаций и поиске необходимых ресурсов днем, для выживания ночью. Карта в Darkwood генерируется случайным образом с каждым новым началом игры, а вместе с тем, что многие действия игрока сами по себе влияют на развитие сюжета, Darkwood имеет довольно высокую реиграбельность. Ко всему, в игре имеется крафт и система навыков персонажа для улучшения его характеристик. Однако, как такового обучения всем премудростям выживания в игре нет, а значит для кого-то порог вхождения может быть довольно высок.&lt;/p&gt;
+
+&lt;p&gt;Darkwood отличный представитель жанра инди игр, а студия Acid Wizard подаёт прекрасный пример того, как стоило бы делать игры. Чувствуется, что Darkwood создана с должной ответственностью и любовью к своему творению. К слову, благодаря разработчикам любой желающий невозбранно может познакомиться с игрой ближе, скачав её с торрента - Acid Wizard Studio не то, что не стали встраивать в свое творение антипиратских защит, но даже лично выложили игру на трекеры для всех желающих. Тем не менее если игра вам понравилась, её всегда можно купить в Steam и тем самым поддержать разработчика.&lt;/p&gt;
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Уильям Зинсер «Как писать хорошо»</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</guid>
+        <link>https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</link>
         <description>&lt;p&gt;Читая различных блогеров так или иначе стала сталкиваться с упоминаниями книги Уиляма Зинсера «Как писать хорошо», как практическое руководство к написанию самых лучших статей, заметок, репортажей и прочих нехудожественных текстов. А потому, тоже не смогла обойти её стороной. В своей книге, впервые появившейся на свет еще в эпоху печатных машинок, в далеком 1976 году, переизданной и дополненной около тридцати раз, Уильям Зинсер рассказывает и приводит примеры правильного текста, дает советы о том как писать интересно и избавится от «воды». В целом, «Как писать хорошо» сама по себе является примером того, как стоит писать нехудожественную литературу - она написана понятным и простым языком в форме непринужденной беседы автора с читателем. На протяжении всей книги автор дает множество полезных советов и примеров, которые могут помочь сделать текст лучше.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;«Упрощайте же, упрощайте.»&lt;/b&gt;&lt;/p&gt;
@@ -429,18 +635,31 @@
 &lt;p&gt;«Как писать хорошо» стоит порекомендовать всем тем, кто так или иначе увлекается, или только начал увлекаться ремеслом писательства. Даже если ваши публикации, это простые заметки из повседневной жизни. Конечно, некоторые советы и примеры приведенные в этой книге в некотором роде сугубо узконаправленные, ведь написаны американским писателем для американской публики, тем не менее даже из них можно почерпнуть что-то полезное. Надеюсь что кто-то, так же как и я, откроет для себя эту книгу и почерпнет, если не все, то хотя бы парочку полезных советов.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Oct 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/uiljam-zinser-kak-pisat-horosho/</guid>
-        
-        <category>Книги</category>
-        
-        
-        <category>Саморазвитие</category>
-        
+        <turbo:content>&lt;p&gt;Читая различных блогеров так или иначе стала сталкиваться с упоминаниями книги Уиляма Зинсера «Как писать хорошо», как практическое руководство к написанию самых лучших статей, заметок, репортажей и прочих нехудожественных текстов. А потому, тоже не смогла обойти её стороной. В своей книге, впервые появившейся на свет еще в эпоху печатных машинок, в далеком 1976 году, переизданной и дополненной около тридцати раз, Уильям Зинсер рассказывает и приводит примеры правильного текста, дает советы о том как писать интересно и избавится от «воды». В целом, «Как писать хорошо» сама по себе является примером того, как стоит писать нехудожественную литературу - она написана понятным и простым языком в форме непринужденной беседы автора с читателем. На протяжении всей книги автор дает множество полезных советов и примеров, которые могут помочь сделать текст лучше.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;«Упрощайте же, упрощайте.»&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Писать ясно излагая свои мысли, избавляться от словесного мусора, сложных слов и конструкций. Постоянно вычитывать написанное, пользоваться словарями, тщательно подбирать слова, разбивать текст на абзацы, - советует Зинсер. Не забывать о стилистике, стержне повествования, начале и концовке текста.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;«Писать учатся, когда пишут.»&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Однако, говорит автор, даже следуя этим советам нельзя научиться писать хорошо сразу. Как и в любом ремесле мастерство приходит с опытом, со всеми его пробами, ошибками и поисками себя. Зинсер считает, что только работая над своими текстами, вычитывая, перерабатывая и переписывая можно научиться писать хорошо. Писательство - кропотливая работа требующая усердия, ни один известный писатель не обходился без множества исправлений прежде чем текст обретал окончательный вариант.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;«Писать - это тяжелая работа. Ясная фраза - не случайность. Очень редко фразы выходят ясными с первого и даже с третьего раза. Помните это в минуты отчаяния. Если вы обнаружите, что писать трудно, не удивляйтесь. Так оно и есть.»&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Зинсер дает советы не только о том как правильно строить предложения, но и как правильно писать в целом, как заинтересовать читателя, как относиться к собственному тексту и критике. Избавляться от обезличенного «журналистского жаргона», ясно излагать свою точку зрения, уважать читателя, но между тем не пытаться подстроится под желания аудитории. Писать от своего имени своего мнения даже когда в тексте нет конкретно выраженного авторского «Я» - именно тогда текст станет индивидуальным, а значит - интересным.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;«В конечном счёте главный продукт, предлагаемый писателем читателю, - это не тема, о которой он пишет, а он сам.»&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;«Как писать хорошо» стоит порекомендовать всем тем, кто так или иначе увлекается, или только начал увлекаться ремеслом писательства. Даже если ваши публикации, это простые заметки из повседневной жизни. Конечно, некоторые советы и примеры приведенные в этой книге в некотором роде сугубо узконаправленные, ведь написаны американским писателем для американской публики, тем не менее даже из них можно почерпнуть что-то полезное. Надеюсь что кто-то, так же как и я, откроет для себя эту книгу и почерпнет, если не все, то хотя бы парочку полезных советов.&lt;/p&gt;
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
-      <item>
+      <item turbo="true">
         <title>Устанавливаем Jekyll на Mac OS</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</guid>
+        <link>https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</link>
         <description>&lt;p&gt;В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика &lt;a href=&quot;https://itunes.apple.com/ru/app/xcode/id497799835?mt=12&quot;&gt;Xcode из AppStore&lt;/a&gt;, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;xcode-select &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -488,16 +707,53 @@
 &lt;p&gt;Теперь ваш сайт доступен по локальному адресу &lt;a href=&quot;http://localhost:4000&quot;&gt;localhost:4000&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Sep 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/ustanavlivaem-jekyll-na-mac/</guid>
-        
-        <category>Веб</category>
-        
-        
-        <category>Гайд</category>
-        
-        <category>Jekyll</category>
-        
+        <turbo:content>&lt;p&gt;В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac OS. Чтобы установить Jekyll на Mac OS, для начала понадобится установить инструмент разработчика &lt;a href=&quot;https://itunes.apple.com/ru/app/xcode/id497799835?mt=12&quot;&gt;Xcode из AppStore&lt;/a&gt;, запустить его и принять лицензионное соглашение. После, установим инструменты командной строки:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;xcode-select &lt;span class=&quot;nt&quot;&gt;--install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Далее, установим менеджер недостающих пакетов &lt;a href=&quot;https://brew.sh/index_ru.html&quot;&gt;Homebrew&lt;/a&gt;, для этого вводим в терминал:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;/usr/bin/ruby &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь установим Ruby.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;ruby&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Проверим установку.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;ruby &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Установим bundler.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь установим сам Jekyll.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Проверим установленную версию.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;jekyll &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь можно создать папку для Jekyll блога, например по пути &lt;mark&gt;~/Documents/Jekyll&lt;/mark&gt;. Переходим в нее:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Documents/Jekyll/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Устанавливаем сам блог, &lt;mark&gt;site-name&lt;/mark&gt; можно заменить на свое.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;jekyll new site-name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Перейдём в каталог с созданным блогом.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/Documents/Jekyll/site-name/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Запустим:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Теперь ваш сайт доступен по локальному адресу &lt;a href=&quot;http://localhost:4000&quot;&gt;localhost:4000&lt;/a&gt;.&lt;/p&gt;
+</turbo:content>
+        <author>Александра Травкина</author>
       </item>
     
   </channel>
