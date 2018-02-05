@@ -1769,6 +1769,12 @@ footer {
 		.actions {
 			.tags {
 				color: $white !important;
+
+				.share {
+					.link {
+						color: $white !important;
+					}
+				}
 			}
 		}
 	}
