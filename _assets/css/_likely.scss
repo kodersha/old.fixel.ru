@@ -1,14 +1,11 @@
 .likely,
 .likely__widget {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-indent: 0!important;
     list-style: none!important;
 }
 
 .likely {
     font: 400 14px/1.4 $latoMedium;
-    min-height: 32px;
     display: block;
 }
 
@@ -148,6 +145,13 @@
 
 .likely-light .likely__counter {
     background-image: linear-gradient(to right, rgba(255, 255, 255, .4) 0, rgba(255, 255, 255, 0) .5px, rgba(255, 255, 255, 0) 100%)
+}
+
+.likely__share {
+    font: 400 16px/1.4 $latoMedium !important;
+    background: transparent !important;
+    color: $darkGray !important;
+    cursor: default !important;
 }
 
 .likely__widget_facebook {
@@ -507,7 +511,7 @@
     font-size: 14px;
     border-radius: 2px;
     margin: 0 5px 10px;
-    height: 22px;
+    padding: 5px 8px;
 }
 
 .likely .likely__icon {

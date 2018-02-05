@@ -27,6 +27,7 @@ layout: default
 		<div class="actions">
 			<div class="tags">
 				<span class="date">{{ page.date | russian_date }}</span>
+				
 				{% if page.categories %}
 					{% for category in page.categories %}								
 						<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>
@@ -34,17 +35,18 @@ layout: default
 				{% endif %}
 
 				{% if page.tags.size > 0 %}
-				<span class="point">·</span>
+					<span class="point">·</span>
 					{% assign tags = page.tags | sort %}
 					{% for tag in tags %}
-						<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase }}/">
-							{{ tag }}{% unless forloop.last %},{% endunless %}
-						</a>
+						<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase }}/" class="tag">{{ tag }}{% unless forloop.last %},{% endunless %}</a>
 					{% endfor %}
 				{% endif %}
+
+				<span class="share {% unless page.tags.size > 0 %}without-tags{% endunless %}" title="Поделиться записью в соцсетях"><label class="link" for="fsociety-{{ page.slug }}">Поделиться</label></span>
 			</div>
 		</div>
 	</div>
+	{% include likely.html %}
 </article>
 
 {% include _post/pagination.html %}

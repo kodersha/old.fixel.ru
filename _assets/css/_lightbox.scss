@@ -18,17 +18,19 @@ body.lb-disable-scrolling {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: #fff;
-    filter: alpha(Opacity=80);
-    opacity: .8;
-    display: none
+    background-color: rgba(0,0,0,0.5);
+    display: none;
 }
 
 .lightbox {
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 10000;
-    font-weight: 400
+    font-weight: 400;
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .lightbox .lb-image {
