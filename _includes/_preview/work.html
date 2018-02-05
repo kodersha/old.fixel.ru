@@ -1,9 +1,7 @@
 <article class="post">
 	<div class="thumbnail" style="{% if post.thumbnail %}background-image: url('{{ post.thumbnail }}');{% endif %} {% if post.color %}background-color: {{ post.color }}{% endif %}" onclick="window.open('{{ post.link }}', '_blank')"></div>
-	<div class="actions">
-		<div class="tags">
-			<a target="_blank" href="{{ post.link }}">{{ post.title }}</a>
-			<div class="date">{{ post.description }}</div>
+	<div class="meta">
+			<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+			<div class="description">{{ post.description }}</div>
 		</div>
-	</div>
 </article>

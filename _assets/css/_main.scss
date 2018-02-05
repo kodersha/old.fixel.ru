@@ -234,6 +234,7 @@ nav {
 		
 		.avatar {
 			position: relative;
+			z-index: 10;			
 
 			@media (max-width : $mq-mobile) {
 				margin-right: auto;
@@ -316,6 +317,7 @@ nav {
 				border-radius: 50px;
 				position: relative;
 				overflow: hidden;
+				z-index: 10;
 
 				@media (max-width : $mq-mobile) {
 					background-color: #f1f3f4;
@@ -561,23 +563,17 @@ nav {
 						-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 					}
 		
-					.actions {
+					.meta {
+						font: 400 1rem/1.25 $latoMedium;
 						padding-top: 20px;
-						padding-bottom: 0;
-						line-height: 1.25;
-						max-width: 100%;
 
-						.tags {
-							a {
-								text-overflow: ellipsis;
-								white-space: nowrap;
-								overflow: hidden;
-								margin: 0;
-							}
+						.title {
+							display: inline-block;
+							margin-bottom: 5px;
+						}
 
-							.date {
-								margin: 0 0 5px 0;
-							}
+						.date, .description {
+							color: $darkGray;
 						}
 					}
 				}
@@ -1223,65 +1219,41 @@ nav {
 	}
 	
 	.actions {
-		font: 300 16px/1.4 $latoMedium;
+		font: 300 16px/1.25 $latoMedium;
+		max-width: -webkit-calc(70% + 10px);
+		max-width: -moz-calc(70% + 10px);
+		max-width: calc(70% + 10px);
+		margin-right: -5px;
+		margin-left: -5px;
 		padding-top: 30px;
 		color: $darkGray;
-		max-width: 70%;
-		display: table;
+		display: block;
 		width: 100%;
 
 		@media (max-width : $mq-notebook) {
-			max-width: 75%;
+			max-width: -webkit-calc(75% + 10px);
+			max-width: -moz-calc(75% + 10px);
+			max-width: calc(75% + 10px);
 		}
 		
 		@media (max-width : $mq-mobile) {
-			max-width: 100%;
+			max-width: -webkit-calc(100% + 10px);
+			max-width: -moz-calc(100% + 10px);
+			max-width: calc(100% + 10px);
 		}
 		
-		.tags {
-			margin-bottom: -5px;
-			display: inherit;
-			
-			a {
-				display: inline-block;
-				margin-right: 10px;
-				margin-bottom: 5px;
-				
-				&:nth-of-type(2) {
-					margin-right: 10px;
-					margin-left: 10px;
-				}
+		.category, .tag, .title, .date, .share, .point {
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
 
-				&:last-of-type {
-					margin-right: 15px;
-				}
-				
-				&.category {
-					margin-right: 10px;
-				}
-			}
+		.date, .share {
+			color: $darkGray;
 
-			.date {
-				margin-right: 15px;
-				margin-bottom: 5px;
-				
-				a {
-					margin-right: 0 !important;
-					margin-bottom: 0 !important;
-					color: $darkGray;
-				}
-			}
-	
-			.share {
-				margin-bottom: 5px;
-
-				.link {
-					color: $darkGray;
-				}
-	
-				&.without-tags {
-					margin-left: 5px;
-				}
+			a, .link {
+				color: $darkGray;
 			}
 		}
 	
@@ -1381,102 +1353,78 @@ nav {
 //
 
 .about {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	-webkit-animation: fadeUpIn 1s;
-	-moz-animation: fadeUpIn 1s;
-	animation: fadeUpIn 1s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+	height: 100%;
+    position: absolute;
 
-	.post {
-		h1 {
-			&.title {
-				@media (max-width : $mq-mobile) {
-					font-size: 1.25rem;
-					padding-bottom: 0;
-				}
-			}
-		}
-
-		[block] {
-			p {
-				&:first-of-type {
-					@media (max-width : $mq-mobile) {
-						padding-top: 10px;
-					}
-				}
-			}
-		}
-
-		.cover {
-			&.bottom {
-				@media (max-width : $mq-mobile) {
-					background-position: left bottom;
-				}
-			}
-		}
+	&::before {
+		background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(image_path('about.jpg'));
+		background-position: center, center;
+		background-size: cover, cover;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
 	}
 
-	.post-list {
-		&.work, &.photo {
-			padding-top: 40px;
-			padding-bottom: 20px;
-			-webkit-animation: none;
-			-moz-animation: none;
-			animation: none;
+	.post {
+		-webkit-animation: fadeUpIn 1s;
+		-moz-animation: fadeUpIn 1s;
+		animation: fadeUpIn 1s;
+		position: relative;
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
 
-			.posts {
-				.hint {
-					box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-					-moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-					-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
-					-webkit-border-radius: 2px;
-					-moz-border-radius: 2px;
-					border-radius: 2px;
-					background-color: #f2f3f4;
-					color: $darkGray;
-					max-height: 285px;
-					padding: 20px;
+		h1 {
+			&.title {
+				font-size: 4rem;
+
+				@media (max-width : $mq-mobile) {
+					font-size: 2rem;
 				}
 			}
 		}
 
-		&.work {
-			.posts {
-				.grid {
-					article {
-						-ms-flex: 1 1 250px;
-						flex: 1 1 250px;
-		
-						&.post {
-							.thumbnail {
-								height: 185px;
-							}
-						}
-					}
-				}
+		a {
+			color: $red;
+
+			&:hover, &:active, &.active {
+				border-color: $red;
+			}			
+		}
+
+		p {
+			font: 400 1.8rem/1.4 $gregorIt;
+
+			@media (max-width : $mq-mobile) {
+				font-size: 1.1rem;
 			}
 		}
 
-		&.photo {
-			.posts {
-				article {
-					&.post {
-						.thumbnail {
-							filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
-							filter: gray;
-							-webkit-filter: grayscale(100%);	
-						}
-					}
-				}
-			}
-		}
+		.back {
+			padding-bottom: 30px;
+			font-size: 1rem;
 
-		&.black {
-			.posts {
-				.hint {
-					background-color: $blackGray !important;
-					color: $white !important;
-				}
+			a {
+				border-bottom: 0;
+				color: $white;
+
+				&:hover, &:active, &.active {
+					opacity: .9;
+				}				
 			}
 		}
 	}

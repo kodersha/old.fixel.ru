@@ -1,9 +1,7 @@
 <article class="post">
 	<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')" onclick="location.href='{{ post.url }}'"></div>
-	<div class="actions">
-		<div class="tags">
-			<a href="{{ post.url }}">{{ post.title }}</a>
-			<div title="{{ post.date | russian_date }}" class="date">{{ post.date | timeago }}</div>
-		</div>
+	<div class="meta">
+		<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+		<div class="date" title="{{ post.date | russian_date }}">{{ post.date | timeago }}</div>
 	</div>
 </article>

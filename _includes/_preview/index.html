@@ -5,8 +5,9 @@
 		</h1>
 		{{ post.content | improve | extlinks }}
 		<div class="actions">	
-			<div class="tags">
-				<span class="date" title="{{ post.date | russian_date }}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | timeago }}</a></span>	
+				<span class="date" title="{{ post.date | russian_date }}">
+					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | timeago }}</a>
+				</span>	
 				
 				{% if post.categories %}
 					{% for category in post.categories %}								
@@ -16,14 +17,16 @@
 				
 				{% if post.tags.size > 0 %}
 					<span class="point">·</span>
+
 					{% assign tags = post.tags | sort %}
 					{% for tag in tags %}
 						<a href="{{ site.baseurl }}/tag/{{ tag | replace:' ', '-' | downcase | uri_escape }}/" class="tag">{{ tag }}{% unless forloop.last %},{% endunless %}</a>
 					{% endfor %}
 				{% endif %}
 
-				<span class="share {% unless post.tags.size > 0 %}without-tags{% endunless %}" title="Поделиться записью в соцсетях"><label class="link" for="fsociety-{{ post.slug }}">Поделиться</label></span>
-			</div>
+				<span class="share" title="Поделиться записью в соцсетях">
+					<label class="link" for="fsociety-{{ post.slug }}">Поделиться</label>
+				</span>
 		</div>
 	</div>
 	{% include likely.html %}

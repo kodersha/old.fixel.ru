@@ -17,11 +17,14 @@ layout: default
 		</div>
 
 		<div class="actions">
-			<div class="tags">
-				<span class="date">{{ page.date | russian_date }}</span>
-			</div>
+			<span class="date">{{ page.date | russian_date }}</span>
+
+			<span class="share" title="Поделиться записью в соцсетях">
+				<label class="link" for="fsociety-{{ page.slug }}">Поделиться</label>
+			</span>
 		</div>
 	</div>
+	{% include likely.html %}
 </article>
 
 {% include breadcrumbs.html %}
