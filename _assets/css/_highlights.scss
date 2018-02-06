@@ -14,7 +14,7 @@
 		position: relative;
 
 		code {
-			font: 400 1rem/1.4 $firaCode;
+			font: 400 1rem/1.4 $consolas;
 			display: block;
 
 			@media (max-width : $mq-mobile) {
@@ -25,7 +25,7 @@
 	
 	&:before {
 		content: '';
-		background-color: rgba(0,0,0,.05);
+		background-color: #f7f7f7;
 		position: absolute;
 		left: 0;
 		right: 0;
