@@ -814,6 +814,7 @@ nav {
 	mark {
 		background-color: $mark;
 		word-wrap: break-word;
+		padding: 0.125em 0.25em;
 		border-radius: 2px;
 		-moz-border-radius: 2px;
 		-webkit-border-radius: 2px;
@@ -1242,17 +1243,23 @@ nav {
 			max-width: calc(100% + 10px);
 		}
 		
-		.category, .tag, .title, .date, .share, .point {
-			display: inline-block;
+		.category, .tag, .date, .share, .point {
 			margin-left: 5px;
 			margin-right: 5px;
-			margin-bottom: 5px;
+			margin-bottom: 10px;
+		}
+
+		.category, .tag {
+			display: inline-block;
+			padding-bottom: 2px;
 		}
 
 		.date, .share {
 			color: $darkGray;
 
 			a, .link {
+				display: inline-block;
+				padding-bottom: 2px;
 				color: $darkGray;
 			}
 		}
@@ -1781,7 +1788,7 @@ footer {
 .help {
     font: 400 16px/1.4 $latoMedium;
     border-radius: 2px;
-    background: #fff4a5;
+    background: $help;
     padding: 15px 20px;
 	margin-top: 20px;
 	margin-bottom: 10px;

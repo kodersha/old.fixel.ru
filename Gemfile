@@ -17,7 +17,6 @@ gem "jekyll", "3.7.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "font-awesome-sass"
-   gem "jekyll-feed", "~> 0.6"
    gem "jekyll-include-cache"
    gem "jekyll-redirect-from"
    gem "jekyll-auto-image"
@@ -28,10 +27,11 @@ group :jekyll_plugins do
    gem "jekyll-timeago"
    gem "jekyll-sitemap"
    gem "jekyll-assets"
+   gem "jekyll-feed"
    gem "jekyll-maps"
    gem "therubyracer"
-   gem "uglifier"
    gem "kramdown"
+   gem "uglifier"
    gem "json"
    gem "jgd"
 end

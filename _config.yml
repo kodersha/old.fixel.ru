@@ -59,9 +59,6 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - .asset-cache
-  - .jekyll-cache
-  - .DS_Store
   
 ## Plugins
 plugins:

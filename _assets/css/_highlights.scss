@@ -25,7 +25,7 @@
 	
 	&:before {
 		content: '';
-		background-color: #f7f7f7;
+		background-color: $highlights;
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -41,7 +41,8 @@
 .highlighter-rouge {
     font: 400 1.3rem/1.5 $gregor;
     background-color: $mark;
-    word-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0.125em 0.25em;
     border-radius: 2px;
     -moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
