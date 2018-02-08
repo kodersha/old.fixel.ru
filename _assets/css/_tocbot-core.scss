@@ -6,19 +6,27 @@
 .toc {
     position: relative;
     overflow-y: auto;
-    background: $highlights;
-    margin: 20px 0 0 20px;
+	background-color: #F4F6F8;
+    margin-top: 20px;
+    margin-left: 40px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-	max-width: -webkit-calc(25% - 20px);
-	max-width: -moz-calc(25% - 20px);
-	max-width: calc(25% - 20px);
+    max-width: -webkit-calc(30% - 40px);
+    max-width: -moz-calc(30% - 40px);
+    max-width: calc(30% - 40px);
     float: right;
     clear: left;
+	width: 100%;
 	
 	@media (max-width : $mq-mobile) {
-		margin: 20px 0 0;
+		max-width: -webkit-calc(25% - 40px);
+		max-width: -moz-calc(25% - 40px);
+		max-width: calc(25% - 40px);
+	}
+
+	@media (max-width : $mq-mobile) {
+		margin-left: 0;
 		position: relative;
 		max-width: 100%;
 		width: 100%;
@@ -50,18 +58,13 @@
 
 .toc-list {
     max-width: 100% !important;
-    text-align: right;
     margin: 0;
-	
-	@media (max-width : $mq-mobile) {
-	    text-align: left;
-	}
 }
 
 a.toc-link {
-    font: 400 16px/1.4 $latoMedium;
+    font: 400 1rem/1.4 $lato;
 	border-bottom: 0;
-	color: $gray;
+	color: #7F8FA4;
     height: 100%;
 }
 

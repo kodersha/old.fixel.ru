@@ -27,8 +27,7 @@ $('.post .entry .fotorama').fotorama({
 /* Подменяем youtube плеер картинкой */
 
 $(".post .entry .youtube").each(function() {
-	$(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg', 'class': 'lazyload', 'data-src': 'https://img.youtube.com/vi/' + this.id + '/hqdefault.jpg'}));
-
+	$(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/maxresdefault.jpg', 'class': 'maxresdefault'}));
 	$(this).append($('<div/>', {'class': 'play'}));
 
 	$(document).delegate('#'+this.id, 'click', function() {

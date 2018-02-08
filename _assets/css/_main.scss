@@ -671,7 +671,7 @@ nav {
 	}
 
 	.entry {
-		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, ol, .video, .youtube, .fotorama, [block], [tags] {
 			max-width: 70%;
 
 			@media (max-width : $mq-notebook) {
@@ -682,12 +682,32 @@ nav {
 				max-width: 100%;
 			}
 		}
+
+		[frame] {
+			max-width: calc(70% + 10px);
+
+			@media (max-width : $mq-notebook) {
+				max-width: calc(75% + 10px);
+			}
+
+			@media (max-width : $mq-mobile) {
+				max-width: calc(100% + 10px);
+			}
+
+			p {
+				&:first-of-type,
+				&:last-of-type {
+					padding-top: 20px;
+					padding-bottom: 10px;
+				}
+			}
+		}
 		
 		[full] {
 			position: relative;
 			max-width: 100%;
 		
-			p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+			p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block], [tags] {
 				max-width: 100%;
 			}
 
@@ -795,13 +815,14 @@ nav {
 		padding-top: 30px;
 		
 		&.title {
-			font: 300 2.5rem/1.2 $latoBlack;
+			font: 300 2rem/1.2 $latoBlack;
 			letter-spacing: -.01em;
 			padding-bottom: 10px;
-			padding-top: 0;
+			padding-top: 60px;
 		
 			@media (max-width : $mq-mobile) {
-				font-size: 2rem;
+				font-size: 1.5rem;
+				padding-top: 30px;
 			}
 			
 			a {
@@ -877,7 +898,7 @@ nav {
 			}
 		}
 		
-		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block], [tags] {
 			max-width: 100% !important;
 		}
 
@@ -911,7 +932,7 @@ nav {
 		float: left;
 		clear: left;
 		
-		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block], [tags] {
 			max-width: 100% !important;
 		}
 
@@ -939,14 +960,15 @@ nav {
 		}
 		
 		p {
-			padding: 0;
+			padding-top: 0;
+			padding-bottom: 20px;
 			
 			&:first-of-type {
-				padding-top: 20px;
+				padding-top: 0;
 			}
 		}
 		
-		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block] {
+		p, h1, h2, h3, h4, blockquote, hr, ul, .video, .youtube, .fotorama, .highlight, [block], [tags] {
 			max-width: 100% !important;
 		}
 
@@ -965,6 +987,7 @@ nav {
 		width: 100%;
 		max-width: 30%;
 		padding-left: 40px;
+		padding-top: 20px;
 		text-align: left;
 		position: relative;
 
@@ -1014,18 +1037,16 @@ nav {
 	}
 	
 	[block] {
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		display: inline-block;
+
 		p {
 			padding-top: 0;
 			padding-bottom: 0;
+			display: inherit;
 			max-width: 100% !important;
-			
-			&:first-of-type {
-				padding-top: 20px;
-			}
-
-			&:last-of-type {
-				padding-bottom: 10px;
-			}
 		}
 	}
 	
@@ -1046,6 +1067,53 @@ nav {
 			opacity: 1;
 			margin: 0.5em 0 1em;
 			height: auto;
+		}
+	}
+
+	[tags] {
+		padding-top: 20px;
+		padding-bottom: 5px;
+		display: table;
+		width: 100%;
+
+		p {
+			font: 300 1rem/1.25 $lato;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			background-color: #F4F6F8;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			padding-top: 8px !important;
+			padding-left: 20px !important;
+			padding-right: 20px !important;
+			padding-bottom: 8px !important;
+			color: #7F8FA4;
+			float: left;
+
+			&.yellow {
+				background-color: #fff9cc;
+				color: #a97700;
+			}
+
+			&.green {
+				background-color: #ccffce;
+				color: #17a900;
+			}
+
+			&.blue {
+				background-color: #ccdeff;
+				color: #009fc7;
+			}
+
+			&.gary {
+				background-color: #a9b1b5;
+				color: #ffffff;
+			}
+
+			&.white {
+				background-color: transparent;
+			}
 		}
 	}
 
@@ -1076,27 +1144,40 @@ nav {
 	.left {
 		float: left;
 		clear: left;
-		padding-right: 20px;
+		padding-right: 10px;
 
 		@media (max-width : $mq-mobile) {
-			width: 100% !important;
-			float: none;
-			clear: none;
-			padding-right: 0;
+			padding-right: 5px;
+		}
+
+		&.mobile {
+			@media (max-width : $mq-mobile) {
+				width: 100% !important;
+				float: none;
+				clear: none;
+				padding-right: 0;
+				padding-bottom: 10px !important;
+			}
 		}
 	}
 
 	.right {
 		float: right;
 		clear: right;
-		padding-left: 20px;
+		padding-left: 10px;
 
 		@media (max-width : $mq-mobile) {
-			width: 100% !important;
-			float: none;
-			clear: none;
-			padding-left: 0;
-			padding-top: 20px;
+			padding-left: 5px;
+		}
+
+		&.mobile {
+			@media (max-width : $mq-mobile) {
+				width: 100% !important;
+				float: none;
+				clear: none;
+				padding-left: 0;
+				padding-top: 20px !important;
+			}
 		}
 	}
 	
@@ -1116,8 +1197,6 @@ nav {
 			width: 100%;
 			display: block;
 			max-width: 100%;
-			margin-top: -10%;
-			margin-bottom: -10%;
 		}
 
 		.play {
@@ -1142,8 +1221,10 @@ nav {
 			}
 		}
 
-		@media (max-width : $mq-mobile) {
-			margin: 10px 0 0;
+		&.thumbnail {
+			.maxresdefault {
+				display: none;
+			}
 		}
 	}
 	
@@ -1194,6 +1275,30 @@ nav {
 			position: relative;
 			content: "⌘ ⌘ ⌘";
 		}
+	}
+
+	.laurel, .hipster {
+		background-size: 100%;
+		margin-bottom: 20px;
+		padding-bottom: 0 !important;
+		padding-top: 0 !important;
+
+		@media (max-width : $mq-mobile) {
+			margin-right: 20px;
+			float: left;
+		}
+	}
+
+	.laurel {
+		background-image: url(image_path('laurel.png'));
+		height: 42px;
+		width: 54px;
+	}
+
+	.hipster {
+		background-image: url(image_path('hipster.png'));
+		height: 32px;
+		width: 54px;
 	}
 		
 	blockquote {
