@@ -9,6 +9,14 @@
     } ,
   
     {
+      "title"    : "О любимых сериалах",
+      "category" : "Фильмы",
+      "tags"     : "",
+      "url"      : "/blog/o-ljubimyh-serialah/",
+      "date"     : "2018-02-07 00:00:00 +0700"
+    } ,
+  
+    {
       "title"    : "Кат в Эгее",
       "category" : "Веб",
       "tags"     : "Гайд and Эгея",
