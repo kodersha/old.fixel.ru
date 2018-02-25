@@ -9905,7 +9905,7 @@ header .search .dropdown .results li:last-of-type {
 .post [caption],
 .post .caption {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   color: rgba(0, 0, 0, 0.76);
   line-height: 1.4;
   margin-bottom: 2rem;
@@ -9937,7 +9937,7 @@ header .search .dropdown .results li:last-of-type {
 .post [tags] p {
   background-color: #F4F6F8;
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   border-radius: 2px;
   margin: 0 5px 5px 0;
   padding: 8px 16px;
@@ -9980,7 +9980,7 @@ header .search .dropdown .results li:last-of-type {
 .post [aside-left],
 .post .aside-left {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   max-width: 45rem;
   color: rgba(0, 0, 0, 0.76);
   position: relative;
