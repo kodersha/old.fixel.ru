@@ -3,6 +3,7 @@
 	<head>
 		<title>Darkwood</title>
 
+		<!--[ Meta ]-->
 			<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -19,14 +20,14 @@
 	<meta property="og:description" content="Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько..."/>
 	<meta property="og:url" content="https://milkleaks.ru/blog/darkwood/">
     <meta property="og:locale" content="ru">
-	<meta property="og:image" content="https://i.imgur.com/frrkqNul.png" />
+	<meta property="og:image" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519580120/thumb_rsczqq.jpg" />
 	<meta property="og:image:width" content="640">
 	<meta property="og:image:height" content="360">
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Darkwood · Milkleaks">
 	<meta name="twitter:description" content="Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько...">
-	<meta name="twitter:image:src" content="https://i.imgur.com/frrkqNul.png">
+	<meta name="twitter:image:src" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519580120/thumb_rsczqq.jpg">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/darkwood/">
 	<meta name="twitter:domain" content="https://milkleaks.ru">
 	
@@ -35,25 +36,61 @@
 	
 	<link rel="canonical" href="https://milkleaks.ru/blog/darkwood/">
 	<link rel="alternate" type="application/rss+xml" title="Milkleaks · Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." href="https://milkleaks.ru/feed.xml" />
-		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
-		<!--[ CSS ] -->
-		<link rel="stylesheet" type="text/css" href="/assets/style-00d50cc19273ff77d237d1d7373813257c8c3b83dee028e9da63ab15bd3ff533.css">
+		<!--[ CSS ]-->
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 
 	</head>
 
-	<body class="black">
-<nav class="common full">
-	<div class="navigation wrapper">
-		<div class="avatar">
-			<a href="/">
-				<div class="logo"></div>
-			</a>
-		</div>
+	<body class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+<header class="row row-middle-md space-in-top-mili-xs">
+	<div class="col-xs-12 col-sm-shrink space-in-bottom-micro-xs space-in-bottom-zero-md">
+		<span class="logo">
+			<span class="logo-icon"></span>
+		</span>
 	</div>
-	<div class="search-base aside">
-		<div class="frame">
-			<div class="search">
+	<div class="col-xs-12 col-sm">
+		<div class="row">
+			<nav class="col-xs-12 col-sm-shrink breadcrumbs">
+	<ol class="breadcrumb space-out-v-nano-xs" vocab="http://schema.org/" typeof="BreadcrumbList">
+	
+	
+		
+
+		
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="https://milkleaks.ru">
+					<span property="name">Milkleaks</span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+			
+		
+
+		
+
+		
+
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
+		</li>
+	
+		
+
+		
+
+		
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<span property="name">Darkwood</span><meta property="position" content="3" />
+			</li>
+			
+	</ol>
+</nav>
+			<div class="col-xs-12 col-sm-shrink space-in-top-micro-xs space-in-top-zero-md space-auto-left-sm search">
 				<div class="search-form">
 					<input type="text" id="search-input" placeholder="Найти..." class="search-box" />
 					<span class="search-button">
@@ -61,105 +98,122 @@
 						<i class="fa fa-times close" aria-hidden="true"></i>
 					</span>
 				</div>
-				<ul id="results-container" class="dropdown"></ul>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
 			</div>
 		</div>
 	</div>
-</nav>
+	<div class="col-xs-12 space-in-top-mili-xs divider"><div class="line"></div></div>
+</header>
 
-	<article class="content post single">
-	<header class="common">
-		<div class="wrapper">
-			<h1 class="title">Darkwood</h1>
-			
+<section class="space-minus-h-kilo-xl">
+	<article class="space-out-v-mega-xs space-out-v-giga-sm space-auto-h-xl  post ">
+	
+	<h1>Darkwood</h1>
+
+	
+	
+		<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl cover">
+			<div class="frame"></div>
+			<img alt="Darkwood" src="https://res.cloudinary.com/milkleaks/image/upload/c_scale,q_100,w_1440/v1519214788/cover_frovqr.png">
 		</div>
-	</header>
-
-	
-	
-		<div class="cover frame" style="background-image: url('https://i.imgur.com/frrkqNu.png')"></div>
 	
 
 
-	<div class="common">
-		<div class="entry">
-			
-				<p>Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько качественно сделана эта игра во всех своих проявлениях, могут позавидовать даже некоторые крупные компании в сфере игростроя.</p>
+	
 
-<p left="">В 2013 году игра успешно прошла краудфандинговую компанию на Indiegogo, где собрала более 57 000 долларов. После выхода в свет в качестве «Раннего доступа», в июле 2014, студия потратила еще три года на её дальнейшую разработку. Darkwood была выпущена 17 августа 2017 и тепло принята игроками. С момента своего релиза она имеет «Крайне положительные» отзывы в Steam.</p>
+	<p>Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху на движке Unity, польской студией Acid Wizard, состоящей из трех человек (И собаки), которые ранее ничем знамениты не были. Можно сказать, что Darkwood далеко не ААА проект. Однако тому, насколько качественно сделана эта игра во всех своих проявлениях, могут позавидовать даже некоторые крупные компании в сфере игростроя.</p>
+
+<p><img src="https://res.cloudinary.com/milkleaks/image/upload/v1519214784/01_icsvzw.jpg" alt="Darkwood"></p>
 
 <p>В Darkwood, как и в любой игре жанра выживания, игроку предстоит выжить и попытаться выбраться из места, которое можно было бы охарактеризовать как Зона (Если бы лор игры писали Стругацкие, произведениями которых, я думаю, авторы вдохновлялись в не меньшей степени чем славянским фольклором с его таинственными болотами и духами леса). Зона постсоветского пространства, где в одночасье оказалась заперты живые люди, многие из которых уже давно перестали быть живыми или разумными, мутируя во что-то немыслимое, со всеми их домами, дорогами, целыми деревнями. Зона, где вашим безмолвным врагом станет Лес из которого нет выхода, а каждая из ночей, с её кошмарными обитателями, может быть последней.</p>
 
-<div full="" class="dark">
-	<div id="meZDUUY4XFA" class="youtube"></div>
-</div>
+<a class="anchor" id="more"></a>
+
+<blockquote>
+  <p>В 2013 году игра успешно прошла краудфандинговую компанию на Indiegogo, где собрала более 57 000 долларов. После выхода в свет в качестве «Раннего доступа», в июле 2014, студия потратила еще три года на её дальнейшую разработку. Darkwood была выпущена 17 августа 2017 и тепло принята игроками. С момента своего релиза она имеет «Крайне положительные» отзывы в Steam.</p>
+</blockquote>
 
 <p>Несмотря на то, что игра выполнена в уже приевшейся многим, пиксельной графике, она нисколько не теряет в атмосферности. Паны из Acid Wizard тщательно проработали каждую деталь окружающего мира. Трава колышется под дуновением ветра, грибные наросты пульсируют и мерцают, туман стелется по долинам. Лес выглядит дышащим, порой приобретая пугающее сходство с живым организмом из плоти и крови. Аналогично, большую часть атмосферы в Darkwood создает звук, который проработан ничуть не хуже графики. Неспешный амбиент, шорохи, скрипы - во многом помогают погрузиться в игру.</p>
 
 <p>Тем не менее Darkwood нельзя назвать хоррором в классическом его понимании. В ней нет пресловутых скримеров или выпрыгивающих в лицо монстров, в первую очередь игра пугает своей атмосферой, обволакивая гнилостной грибной слизью, заставляет в напряжении пережидать каждую ночь прячась в забаррикадированной лачуге. И в сравнении с другими играми жанра «хоррор», Darkwood в этом плане выигрывает.</p>
 
-<p><img src="https://i.imgur.com/bqtqRQw.jpg" alt="Darkwood"></p>
+<div full="" class="dark">
+	<div id="meZDUUY4XFA" class="youtube"></div>
+</div>
 
 <p>Относительно самой механики игры, как может быть понятно из абзацев выше, в Darkwood основной задачей стоит выживание. Отсюда необходимость в исследовании локаций и поиске необходимых ресурсов днем, для выживания ночью. Карта в Darkwood генерируется случайным образом с каждым новым началом игры, а вместе с тем, что многие действия игрока сами по себе влияют на развитие сюжета, Darkwood имеет довольно высокую реиграбельность. Ко всему, в игре имеется крафт и система навыков персонажа для улучшения его характеристик. Однако, как такового обучения всем премудростям выживания в игре нет, а значит для кого-то порог вхождения может быть довольно высок.</p>
 
 <p>Darkwood отличный представитель жанра инди игр, а студия Acid Wizard подаёт прекрасный пример того, как стоило бы делать игры. Чувствуется, что Darkwood создана с должной ответственностью и любовью к своему творению. К слову, благодаря разработчикам любой желающий невозбранно может познакомиться с игрой ближе, скачав её с торрента - Acid Wizard Studio не то, что не стали встраивать в свое творение антипиратских защит, но даже лично выложили игру на трекеры для всех желающих. Тем не менее если игра вам понравилась, её всегда можно купить в Steam и тем самым поддержать разработчика.</p>
 
+
 			
-		</div>
-			
-		<div class="actions">
-			<span class="date">
-				 3 октября 2017
-			</span>
+	<nav class="row actions">
+		<div class="col-xs-12 col-sm">
+			<time class="space-out-bottom-nano-xs space-out-right-nano-xs"> 3 октября 2017</time>
 			
 			
 												
-					<a href="/category/игры/" class="category">Игры</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/categories/игры/">Игры</a>
 				
 			
 
 			
-				<span class="point">·</span>
+				<span class="space-out-bottom-nano-xs space-out-right-nano-xs">&#183;</span>
 
 				
 				
-					<a href="/tag/выживание/" class="tag">Выживание,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/выживание/">Выживание,</a>
 				
-					<a href="/tag/инди/" class="tag">Инди,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/инди/">Инди,</a>
 				
-					<a href="/tag/квест/" class="tag">Квест,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/квест/">Квест,</a>
 				
-					<a href="/tag/крафтинг/" class="tag">Крафтинг,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/крафтинг/">Крафтинг,</a>
 				
-					<a href="/tag/открытый-мир/" class="tag">Открытый мир,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/открытый-мир/">Открытый мир,</a>
 				
-					<a href="/tag/пиксельная-графика/" class="tag">Пиксельная графика,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/пиксельная-графика/">Пиксельная графика,</a>
 				
-					<a href="/tag/хоррор/" class="tag">Хоррор</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/хоррор/">Хоррор</a>
 				
 			
-
-			<span class="share" title="Поделиться записью в соцсетях">
-				<label class="link" for="fsociety-darkwood">Поделиться</label>
-			</span>
 		</div>
-	</div>
-	<div class="modal fsociety-darkwood">
-	<input type="checkbox" class="modal-trigger" id="fsociety-darkwood">
-	<label class="modal-overlay" for="fsociety-darkwood"></label>
+		<div class="col-xs-12 col-sm-shrink">
+			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-73">Поделиться</label>
+		</div>
+	</nav>
+	
+<section class="space-out-top-mega-xs comments">
+	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-73">Комментировать</a></button>
+	<a class="anchor" id="comments"></a>
+	<div id="disqus_thread" class="thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'milkleaks-ru';
+		var disqus_identifier = 'disqus-73';
+		var disqus_title = 'Darkwood · Milkleaks';
+		var disqus_url = 'https://milkleaks.ru/blog/darkwood/';
+    </script>
+</section>
+
+
+	<div class="modal fsociety-73">
+	<input type="checkbox" class="modal-trigger" id="fsociety-73">
+	<label class="modal-overlay" for="fsociety-73"></label>
 
 	<div class="modal-container">
-		<div class="card">
-			<div class="card-header">
-				<h3 class="card-title">
+		<div class="space-in-h-mili-xs space-in-v-mili-xs place">
+			<div class="place-header">
+				<h3 class="place-title">
 					Поделиться
 				</h3>
 			</div>
-			<div class="card-body">
-				<div class="card-content">
+			<div class="place-body">
+				<div class="place-content">
 					<noindex>
 					<p>Рассказать о записи «Darkwood» в соцсетях:</p>
-					<div class="likely likely-light">
+					<div class="likely ">
 						
 							<div data-url="https://milkleaks.ru/blog/darkwood/" data-title="Darkwood · Milkleaks" data-via="sasha_travkina" class="twitter">Twitter</div>
 							<div data-url="https://milkleaks.ru/blog/darkwood/" data-title="Darkwood · Milkleaks" class="vkontakte">VK</div>
@@ -171,8 +225,8 @@
 					</noindex>
 				</div>
 			</div>
-			<div class="card-footer">
-				<label for="fsociety-darkwood" class="item action">
+			<div class="space-minus-h-mili-xs space-minus-bottom-mili-xs place-footer">
+				<label for="fsociety-73" class="item action">
 					Закрыть
 				</label>
 			</div>
@@ -181,25 +235,65 @@
 </div>
 </article>
 
-<div class="pagination common full">
-	
-		<a class="next" title="Уильям Зинсер «Как писать хорошо»" href="/blog/uiljam-zinser-kak-pisat-horosho/">Ранее</a>
-	
-	<span class="page_number ">Запись: 73 из 81</span>
-	
-		<a class="previous" title="Свои шрифты в Эгее" href="/blog/svoi-shrifty-v-egee/">Позднее</a>
-	
-</div>
+<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
+	<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+		
+			<a class="link" title="Уильям Зинсер «Как писать хорошо»" href="/blog/uiljam-zinser-kak-pisat-horosho/">&larr; Ранее</a>
+		
+	</span>	
 
-<footer class="common full">
-	<div class="copyright wrapper">
-		<a href="/about">Александра Травкина</a> &copy; 2015 - 2018 · <a target="_blank" href="/feed"><b>RSS</b></a> · Электропочта <a href="mailto:hello@milkleaks.ru" target="_blank">hello@milkleaks.ru</a> или телеграм <a href="https://t.me/sashatravkina" target="_blank">@sashatravkina</a>.<br />
-		Блог о <a href="/category/игры/">компьютерных играх</a>, <a href="/category/фильмы/">фильмах</a>, <a href="/category/книги/">книгах</a>, <a href="/category/веб/">вебе</a> и <a href="/category/заметки/">всем прочем</a>. А ещё есть <a href="/photo/">фото</a> и архив <a href="/dungeon/">старых</a> записей.<br />
-		<a href="http://steambuy.com/partner/milkleaks" target="_blank">Здесь можно купить лицензионные игры со скидкой.</a>
-	</div>
+	<span class="col-xs-shrink space-auto-h-xs page-number">Запись: 73 из 82</span>
 
-	<div class="scroll-to-top aside">
-		<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+	<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+		
+			<a class="link" title="Свои шрифты в Эгее" href="/blog/svoi-shrifty-v-egee/">Позднее &rarr;</a>
+		
+	</span>
+</nav>
+</section>
+
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+	<div class="row row-middle-md space-in-bottom-mili-xs">
+		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
+
+		<div class="col-xs-12 space-in-bottom-mili-xs menu">
+			<nav class="row space-minus-h-nano-xs">
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link active" href="/blog/">Блог</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/blog/all/">Все записи</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/photo/">Фотографии</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/about/">Об авторе</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/donate/">Поддержать</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+				
+			</nav>
+		</div>
+
+		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
+			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
+		</div>
+
+		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
+			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
 	</div>
 </footer>
 		<!--[ JS ]-->
@@ -207,15 +301,27 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/assets/jquery-b50e3d0497f416ee5d7dbeefdbaa98723a2200a8c1428b006ebadda28284bcef.js"></script>
-<script type="text/javascript" src="/assets/jekyll-search-7204433405551c7f3443e8466082062d37e6d3db2e5e1c8f124c1bc10fea2396.js"></script>
-<script type="text/javascript" src="/assets/fotorama-aebfda04c47491f370486c38568e25aff265f4f95347a0e4abfe9c9f1353b39b.js"></script>
-<script type="text/javascript" src="/assets/lightbox-38219f7d2b364b9f29051725c39509889e12bca6fba070e54066d5710f9ae46d.js"></script>
-<script type="text/javascript" src="/assets/hyphenator-9030ad3748aef2e496294b0dc2d947f35c51403f8813d24e519fff8cccb28471.js"></script>
-<script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
-<script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
-<script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
-<script type="text/javascript" src="/assets/base-d985a6b4b8ba27d4785ccc0644d1200ff792fe5b224faaca1a0c8957a4053cd5.js"></script>
+<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
+
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
+<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
+<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
+<script type="text/javascript" src="/static/modules/likely/likely.js"></script>
+
+<script type="text/javascript" src="/static/js/template.js"></script>
 	
+		<!--[ Disqus ]-->
+		<script type="text/javascript">
+			var disqus_shortname = 'milkleaks-ru';
+			(function () {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			}());
+		</script>
+
 	</body>
 </html>

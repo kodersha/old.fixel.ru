@@ -3,6 +3,7 @@
 	<head>
 		<title>Свои шрифты в Эгее</title>
 
+		<!--[ Meta ]-->
 			<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -19,14 +20,14 @@
 	<meta property="og:description" content="Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона plain и движка стабильной версии 3118. Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно скачать у автора,..."/>
 	<meta property="og:url" content="https://milkleaks.ru/blog/svoi-shrifty-v-egee/">
     <meta property="og:locale" content="ru">
-	<meta property="og:image" content="" />
+	<meta property="og:image" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519562707/thumb_ny948f.jpg" />
 	<meta property="og:image:width" content="640">
 	<meta property="og:image:height" content="360">
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Свои шрифты в Эгее · Milkleaks">
 	<meta name="twitter:description" content="Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона plain и движка стабильной версии 3118. Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно скачать у автора,...">
-	<meta name="twitter:image:src" content="">
+	<meta name="twitter:image:src" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519562707/thumb_ny948f.jpg">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/svoi-shrifty-v-egee/">
 	<meta name="twitter:domain" content="https://milkleaks.ru">
 	
@@ -35,25 +36,61 @@
 	
 	<link rel="canonical" href="https://milkleaks.ru/blog/svoi-shrifty-v-egee/">
 	<link rel="alternate" type="application/rss+xml" title="Milkleaks · Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." href="https://milkleaks.ru/feed.xml" />
-		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
-		<!--[ CSS ] -->
-		<link rel="stylesheet" type="text/css" href="/assets/style-00d50cc19273ff77d237d1d7373813257c8c3b83dee028e9da63ab15bd3ff533.css">
+		<!--[ CSS ]-->
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 
 	</head>
 
-	<body >
-<nav class="common full">
-	<div class="navigation wrapper">
-		<div class="avatar">
-			<a href="/">
-				<div class="logo"></div>
-			</a>
-		</div>
+	<body class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+<header class="row row-middle-md space-in-top-mili-xs">
+	<div class="col-xs-12 col-sm-shrink space-in-bottom-micro-xs space-in-bottom-zero-md">
+		<span class="logo">
+			<span class="logo-icon"></span>
+		</span>
 	</div>
-	<div class="search-base aside">
-		<div class="frame">
-			<div class="search">
+	<div class="col-xs-12 col-sm">
+		<div class="row">
+			<nav class="col-xs-12 col-sm-shrink breadcrumbs">
+	<ol class="breadcrumb space-out-v-nano-xs" vocab="http://schema.org/" typeof="BreadcrumbList">
+	
+	
+		
+
+		
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="https://milkleaks.ru">
+					<span property="name">Milkleaks</span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+			
+		
+
+		
+
+		
+
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
+		</li>
+	
+		
+
+		
+
+		
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<span property="name">Свои шрифты в Эгее</span><meta property="position" content="3" />
+			</li>
+			
+	</ol>
+</nav>
+			<div class="col-xs-12 col-sm-shrink space-in-top-micro-xs space-in-top-zero-md space-auto-left-sm search">
 				<div class="search-form">
 					<input type="text" id="search-input" placeholder="Найти..." class="search-box" />
 					<span class="search-button">
@@ -61,34 +98,37 @@
 						<i class="fa fa-times close" aria-hidden="true"></i>
 					</span>
 				</div>
-				<ul id="results-container" class="dropdown"></ul>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
 			</div>
 		</div>
 	</div>
-</nav>
+	<div class="col-xs-12 space-in-top-mili-xs divider"><div class="line"></div></div>
+</header>
 
-	<article class="content post single">
-	<header class="common">
-		<div class="wrapper">
-			<h1 class="title">Свои шрифты в&nbsp;Эгее</h1>
-			
-		</div>
-	</header>
+<section class="space-minus-h-kilo-xl">
+	<article class="space-out-v-mega-xs space-out-v-giga-sm space-auto-h-xl  post ">
+	
+	<h1>Свои шрифты в&nbsp;Эгее</h1>
 
 	
 	
 
 
-	<div class="common">
-		<div class="entry">
-			
-				<p>Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона <mark>plain</mark> и движка стабильной версии <mark>3118</mark>.</p>
+	
 
-<p>Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно <a href="https://www.tinkov.info/gilroy.html" rel="nofollow" target="_blank">скачать у автора</a>, а бесплатную <mark>webfont</mark> версию, которую я использую в примере, можно скачать <a href="https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/" rel="nofollow" target="_blank">отсюда</a>. После, откроем каталог шаблона:</p>
+	<p>Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона <code class="highlighter-rouge">plain</code> и движка стабильной версии <code class="highlighter-rouge">3118</code>.</p>
+
+<a class="anchor" id="more"></a>
+
+<p>Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно <a href="https://www.tinkov.info/gilroy.html" rel="nofollow" target="_blank">скачать у автора</a>, а бесплатную <code class="highlighter-rouge">webfont</code> версию, которую я использую в примере, можно скачать <a href="https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/" rel="nofollow" target="_blank">отсюда</a>. После, откроем каталог шаблона:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/styles/</code></pre></figure>
 
-<p>И создадим в нем папки <mark>../fonts/gilroy</mark>, куда положим скачанные файлы шрифта в форматах <mark>eot</mark>, <mark>ttf</mark>, <mark>woff</mark> и <mark>woff2</mark>. В папке <mark>styles</mark> шаблона создадим файл <mark>fonts.css</mark> где подключаем шрифт:</p>
+<p>И создадим в нем папки <code class="highlighter-rouge">../fonts/gilroy</code>, куда положим скачанные файлы шрифта в форматах <code class="highlighter-rouge">eot</code>, <code class="highlighter-rouge">ttf</code>, <code class="highlighter-rouge">woff</code> и <code class="highlighter-rouge">woff2</code>. В папке <code class="highlighter-rouge">styles</code> шаблона создадим файл <code class="highlighter-rouge">fonts.css</code> где подключаем шрифт:</p>
+
+<div main="" color="">
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@font-face</span> <span class="p">{</span>
 	<span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Gilroy-ExtraBold'</span><span class="p">;</span>
@@ -101,7 +141,9 @@
 	<span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>К слову, подробнее о @font-face можно почитать <a href="http://htmlbook.ru/css/font-face" rel="nofollow" target="_blank">здесь</a>. Чтобы подключить <mark>fonts.css</mark> с вашими шрифтами к шаблону, внесем изменения в <mark>main.tmpl.php</mark>, для этого скопируем его из:</p>
+</div>
+
+<p>К слову, подробнее о @font-face можно почитать <a href="http://htmlbook.ru/css/font-face" rel="nofollow" target="_blank">здесь</a>. Чтобы подключить <code class="highlighter-rouge">fonts.css</code> с вашими шрифтами к шаблону, внесем изменения в <code class="highlighter-rouge">main.tmpl.php</code>, для этого скопируем его из:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">../system/theme/templates/</code></pre></figure>
 
@@ -109,11 +151,13 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">../themes/plain/templates/</code></pre></figure>
 
-<p>Помните, что вносить изменения в файлы стандартного шаблона можно только скопировав их в папку своего шаблона, иначе при обновлении движка все ваши измнениея пропадут. Откроем скопированный <mark>main.tmpl.php</mark> и после 41 строки добавим:</p>
+<p>Помните, что вносить изменения в файлы стандартного шаблона можно только скопировав их в папку своего шаблона, иначе при обновлении движка все ваши измнениея пропадут. Откроем скопированный <code class="highlighter-rouge">main.tmpl.php</code> и после 41 строки добавим:</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'fonts'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
-<p>Всё, css с вашими шрифтами подключен к шаблону. Тепепь внесем изменения в основной файл стилей <mark>main.css</mark>, найдем класс <mark>.e2-note h1</mark> и заменим на:</p>
+<p>Всё, css с вашими шрифтами подключен к шаблону. Тепепь внесем изменения в основной файл стилей <code class="highlighter-rouge">main.css</code>, найдем класс <code class="highlighter-rouge">.e2-note h1</code> и заменим на:</p>
+
+<div main="" color="">
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.e2-note</span> <span class="nt">h1</span> <span class="p">{</span>
 	<span class="nl">color</span><span class="p">:</span> <span class="m">#000</span><span class="p">;</span>
@@ -125,54 +169,66 @@
 	<span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Gilroy-ExtraBold'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
 <span class="p">}</span></code></pre></figure>
 
-<p left="">Смотрите ещё: <a href="/blog/kat-v-egee">Кат в Эгее</a> и <a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a>.</p>
+</div>
 
-<p>Чтобы разминимизировать <mark>main.css</mark>, для более удобного внесения правок, стоит воспользоваться полезным <a href="http://unminify.com/" rel="nofollow" target="_blank">сервисом</a>. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.</p>
+<p>Чтобы разминимизировать <code class="highlighter-rouge">main.css</code>, для более удобного внесения правок, стоит воспользоваться полезным <a href="http://unminify.com/" rel="nofollow" target="_blank">сервисом</a>. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.</p>
+
+<p class="aside">Смотрите ещё: <a href="/blog/kat-v-egee">Кат в Эгее</a> и <a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для Эгеи</a>.</p>
 
 
 			
-		</div>
-			
-		<div class="actions">
-			<span class="date">
-				 8 октября 2017
-			</span>
+	<nav class="row actions">
+		<div class="col-xs-12 col-sm">
+			<time class="space-out-bottom-nano-xs space-out-right-nano-xs"> 8 октября 2017</time>
 			
 			
 												
-					<a href="/category/веб/" class="category">Веб</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/categories/веб/">Веб</a>
 				
 			
 
 			
-				<span class="point">·</span>
+				<span class="space-out-bottom-nano-xs space-out-right-nano-xs">&#183;</span>
 
 				
 				
-					<a href="/tag/гайд/" class="tag">Гайд,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/гайд/">Гайд,</a>
 				
-					<a href="/tag/эгея/" class="tag">Эгея</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/эгея/">Эгея</a>
 				
 			
-
-			<span class="share" title="Поделиться записью в соцсетях">
-				<label class="link" for="fsociety-svoi-shrifty-v-egee">Поделиться</label>
-			</span>
 		</div>
-	</div>
-	<div class="modal fsociety-svoi-shrifty-v-egee">
-	<input type="checkbox" class="modal-trigger" id="fsociety-svoi-shrifty-v-egee">
-	<label class="modal-overlay" for="fsociety-svoi-shrifty-v-egee"></label>
+		<div class="col-xs-12 col-sm-shrink">
+			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-74">Поделиться</label>
+		</div>
+	</nav>
+	
+<section class="space-out-top-mega-xs comments">
+	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-74">Комментировать</a></button>
+	<a class="anchor" id="comments"></a>
+	<div id="disqus_thread" class="thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'milkleaks-ru';
+		var disqus_identifier = 'disqus-74';
+		var disqus_title = 'Свои шрифты в Эгее · Milkleaks';
+		var disqus_url = 'https://milkleaks.ru/blog/svoi-shrifty-v-egee/';
+    </script>
+</section>
+
+
+	<div class="modal fsociety-74">
+	<input type="checkbox" class="modal-trigger" id="fsociety-74">
+	<label class="modal-overlay" for="fsociety-74"></label>
 
 	<div class="modal-container">
-		<div class="card">
-			<div class="card-header">
-				<h3 class="card-title">
+		<div class="space-in-h-mili-xs space-in-v-mili-xs place">
+			<div class="place-header">
+				<h3 class="place-title">
 					Поделиться
 				</h3>
 			</div>
-			<div class="card-body">
-				<div class="card-content">
+			<div class="place-body">
+				<div class="place-content">
 					<noindex>
 					<p>Рассказать о записи «Свои шрифты в Эгее» в соцсетях:</p>
 					<div class="likely ">
@@ -187,8 +243,8 @@
 					</noindex>
 				</div>
 			</div>
-			<div class="card-footer">
-				<label for="fsociety-svoi-shrifty-v-egee" class="item action">
+			<div class="space-minus-h-mili-xs space-minus-bottom-mili-xs place-footer">
+				<label for="fsociety-74" class="item action">
 					Закрыть
 				</label>
 			</div>
@@ -197,25 +253,65 @@
 </div>
 </article>
 
-<div class="pagination common full">
-	
-		<a class="next" title="Darkwood" href="/blog/darkwood/">Ранее</a>
-	
-	<span class="page_number ">Запись: 74 из 81</span>
-	
-		<a class="previous" title="VA-11 Hall-A" href="/blog/va11halla/">Позднее</a>
-	
-</div>
+<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
+	<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+		
+			<a class="link" title="Darkwood" href="/blog/darkwood/">&larr; Ранее</a>
+		
+	</span>	
 
-<footer class="common full">
-	<div class="copyright wrapper">
-		<a href="/about">Александра Травкина</a> &copy; 2015 - 2018 · <a target="_blank" href="/feed"><b>RSS</b></a> · Электропочта <a href="mailto:hello@milkleaks.ru" target="_blank">hello@milkleaks.ru</a> или телеграм <a href="https://t.me/sashatravkina" target="_blank">@sashatravkina</a>.<br />
-		Блог о <a href="/category/игры/">компьютерных играх</a>, <a href="/category/фильмы/">фильмах</a>, <a href="/category/книги/">книгах</a>, <a href="/category/веб/">вебе</a> и <a href="/category/заметки/">всем прочем</a>. А ещё есть <a href="/photo/">фото</a> и архив <a href="/dungeon/">старых</a> записей.<br />
-		<a href="http://steambuy.com/partner/milkleaks" target="_blank">Здесь можно купить лицензионные игры со скидкой.</a>
-	</div>
+	<span class="col-xs-shrink space-auto-h-xs page-number">Запись: 74 из 82</span>
 
-	<div class="scroll-to-top aside">
-		<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+	<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+		
+			<a class="link" title="VA-11 Hall-A" href="/blog/va11halla/">Позднее &rarr;</a>
+		
+	</span>
+</nav>
+</section>
+
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+	<div class="row row-middle-md space-in-bottom-mili-xs">
+		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
+
+		<div class="col-xs-12 space-in-bottom-mili-xs menu">
+			<nav class="row space-minus-h-nano-xs">
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link active" href="/blog/">Блог</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/blog/all/">Все записи</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/photo/">Фотографии</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/about/">Об авторе</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/donate/">Поддержать</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+				
+			</nav>
+		</div>
+
+		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
+			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
+		</div>
+
+		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
+			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
 	</div>
 </footer>
 		<!--[ JS ]-->
@@ -223,15 +319,27 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/assets/jquery-b50e3d0497f416ee5d7dbeefdbaa98723a2200a8c1428b006ebadda28284bcef.js"></script>
-<script type="text/javascript" src="/assets/jekyll-search-7204433405551c7f3443e8466082062d37e6d3db2e5e1c8f124c1bc10fea2396.js"></script>
-<script type="text/javascript" src="/assets/fotorama-aebfda04c47491f370486c38568e25aff265f4f95347a0e4abfe9c9f1353b39b.js"></script>
-<script type="text/javascript" src="/assets/lightbox-38219f7d2b364b9f29051725c39509889e12bca6fba070e54066d5710f9ae46d.js"></script>
-<script type="text/javascript" src="/assets/hyphenator-9030ad3748aef2e496294b0dc2d947f35c51403f8813d24e519fff8cccb28471.js"></script>
-<script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
-<script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
-<script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
-<script type="text/javascript" src="/assets/base-d985a6b4b8ba27d4785ccc0644d1200ff792fe5b224faaca1a0c8957a4053cd5.js"></script>
+<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
+
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
+<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
+<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
+<script type="text/javascript" src="/static/modules/likely/likely.js"></script>
+
+<script type="text/javascript" src="/static/js/template.js"></script>
 	
+		<!--[ Disqus ]-->
+		<script type="text/javascript">
+			var disqus_shortname = 'milkleaks-ru';
+			(function () {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			}());
+		</script>
+
 	</body>
 </html>

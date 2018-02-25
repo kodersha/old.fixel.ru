@@ -3,6 +3,7 @@
 	<head>
 		<title>Блог Александры Травкиной</title>
 
+		<!--[ Meta ]-->
 			<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -19,14 +20,14 @@
 	<meta property="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
 	<meta property="og:url" content="https://milkleaks.ru/about/">
     <meta property="og:locale" content="ru">
-	<meta property="og:image" content="https://i.imgur.com/2wItOsSl.png" />
+	<meta property="og:image" content="" />
 	<meta property="og:image:width" content="640">
 	<meta property="og:image:height" content="360">
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Блог Александры Травкиной · Milkleaks">
 	<meta name="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
-	<meta name="twitter:image:src" content="https://i.imgur.com/2wItOsSl.png">
+	<meta name="twitter:image:src" content="">
 	<meta name="twitter:url" content="https://milkleaks.ru/about/">
 	<meta name="twitter:domain" content="https://milkleaks.ru">
 	
@@ -35,45 +36,95 @@
 	
 	<link rel="canonical" href="https://milkleaks.ru/about/">
 	<link rel="alternate" type="application/rss+xml" title="Milkleaks · Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." href="https://milkleaks.ru/feed.xml" />
-		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
-		<!--[ CSS ] -->
-		<link rel="stylesheet" type="text/css" href="/assets/style-00d50cc19273ff77d237d1d7373813257c8c3b83dee028e9da63ab15bd3ff533.css">
+		<!--[ CSS ]-->
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 
 	</head>
 
-	<body class="black">
+	<body class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
 
-	<div class="about">
-	<article class="post common">
-		<div class="entry">
-			<div class="back">
-				<a href="/"><i class="fa fa-chevron-left"></i></a>
-			</div>
+	<section class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-v-kilo-xl page">
+	<div class="cover">
+		<div class="glitch-img image" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('/static/images/about.jpg');"></div>
+	</div>
+	<div class="home">
+		<a class="link-home" href="/" title="Назад"><i class="fa fa-chevron-left"></i></a>
+	</div>
+	<article class="message">
+		<h1 id="привет">Привет</h1>
 
-			<h1 class="title">Привет</h1>
+<p>Меня зовут Александра Травкина.</p>
 
-			<p>Меня зовут Александра Травкина.</p>
-			<p>Я веб-дизайнер. Блогер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. <a href="/work">Верстаю</a> шаблоны и придумываю дизайны. <a href="/blog">Пишу</a> обзоры и статьи о играх.</p>
-			<p>Прокрастинирую.</p>
-		</div>
+<p>Я веб-дизайнер. Блогер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. <a href="/work">Верстаю</a> шаблоны и придумываю дизайны. <a href="/blog">Пишу</a> обзоры и статьи о играх.</p>
+
+<p>Прокрастинирую.</p>
+
+<hr>
+
+<p>Электропочта <a href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a href="https://t.me/sashatravkina" rel="nofollow" target="_blank">@sashatravkina</a>.</p>
+
+
 	</article>
-</div>
+</section>
+
+<!--[ JS ]-->
+<script type="text/javascript" src="/static/modules/mgglitch/mgglitch.js"></script>
+<script type="text/javascript">
+	$( function() {
+		$( ".glitch-img" ).mgGlitch({
+		// set 'true' to stop the plugin
+		destroy : false, 
+		// set 'false' to stop glitching
+		glitch: true, 
+		// set 'false' to stop scaling
+		scale: true, 
+		// set 'false' to stop glitch blending
+		blend : true, 
+		// select blend mode type
+		blendModeType : 'hue',
+		// set min time for glitch 1 elem
+		glitch1TimeMin : 200, 
+		// set max time for glitch 1 elem
+		glitch1TimeMax : 400,
+		// set min time for glitch 2 elem
+		glitch2TimeMin : 10, 
+		// set max time for glitch 2 elem
+		glitch2TimeMax : 100, 
+		});
+	});
+</script>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/assets/jquery-b50e3d0497f416ee5d7dbeefdbaa98723a2200a8c1428b006ebadda28284bcef.js"></script>
-<script type="text/javascript" src="/assets/jekyll-search-7204433405551c7f3443e8466082062d37e6d3db2e5e1c8f124c1bc10fea2396.js"></script>
-<script type="text/javascript" src="/assets/fotorama-aebfda04c47491f370486c38568e25aff265f4f95347a0e4abfe9c9f1353b39b.js"></script>
-<script type="text/javascript" src="/assets/lightbox-38219f7d2b364b9f29051725c39509889e12bca6fba070e54066d5710f9ae46d.js"></script>
-<script type="text/javascript" src="/assets/hyphenator-9030ad3748aef2e496294b0dc2d947f35c51403f8813d24e519fff8cccb28471.js"></script>
-<script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
-<script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
-<script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
-<script type="text/javascript" src="/assets/base-d985a6b4b8ba27d4785ccc0644d1200ff792fe5b224faaca1a0c8957a4053cd5.js"></script>
+<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
+
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
+<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
+<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
+<script type="text/javascript" src="/static/modules/likely/likely.js"></script>
+
+<script type="text/javascript" src="/static/js/template.js"></script>
 	
+		<!--[ Disqus ]-->
+		<script type="text/javascript">
+			var disqus_shortname = 'milkleaks-ru';
+			(function () {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			}());
+		</script>
+
 	</body>
 </html>

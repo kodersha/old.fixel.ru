@@ -3,6 +3,7 @@
 	<head>
 		<title>Peace, Death!</title>
 
+		<!--[ Meta ]-->
 			<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -19,14 +20,14 @@
 	<meta property="og:description" content="Симпатичная пиксельная игра с говорящим названием от отечественных разработчиков совсем недавно вышедшая на просторах Steam. В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в компании «Апокалипсис Inc», ведь даже Жнецу нужно как-то зарабатывать на пропитание. Вашей главной задачей..."/>
 	<meta property="og:url" content="https://milkleaks.ru/blog/peace-death/">
     <meta property="og:locale" content="ru">
-	<meta property="og:image" content="https://i.imgur.com/hLmoSChl.jpg" />
+	<meta property="og:image" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519218309/cover_f0twip.jpg" />
 	<meta property="og:image:width" content="640">
 	<meta property="og:image:height" content="360">
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Peace, Death! · Milkleaks">
 	<meta name="twitter:description" content="Симпатичная пиксельная игра с говорящим названием от отечественных разработчиков совсем недавно вышедшая на просторах Steam. В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в компании «Апокалипсис Inc», ведь даже Жнецу нужно как-то зарабатывать на пропитание. Вашей главной задачей...">
-	<meta name="twitter:image:src" content="https://i.imgur.com/hLmoSChl.jpg">
+	<meta name="twitter:image:src" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519218309/cover_f0twip.jpg">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/peace-death/">
 	<meta name="twitter:domain" content="https://milkleaks.ru">
 	
@@ -35,25 +36,61 @@
 	
 	<link rel="canonical" href="https://milkleaks.ru/blog/peace-death/">
 	<link rel="alternate" type="application/rss+xml" title="Milkleaks · Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." href="https://milkleaks.ru/feed.xml" />
-		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		
-		<!--[ CSS ] -->
-		<link rel="stylesheet" type="text/css" href="/assets/style-00d50cc19273ff77d237d1d7373813257c8c3b83dee028e9da63ab15bd3ff533.css">
+		<!--[ CSS ]-->
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 
 	</head>
 
-	<body >
-<nav class="common full">
-	<div class="navigation wrapper">
-		<div class="avatar">
-			<a href="/">
-				<div class="logo"></div>
-			</a>
-		</div>
+	<body class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+<header class="row row-middle-md space-in-top-mili-xs">
+	<div class="col-xs-12 col-sm-shrink space-in-bottom-micro-xs space-in-bottom-zero-md">
+		<span class="logo">
+			<span class="logo-icon"></span>
+		</span>
 	</div>
-	<div class="search-base aside">
-		<div class="frame">
-			<div class="search">
+	<div class="col-xs-12 col-sm">
+		<div class="row">
+			<nav class="col-xs-12 col-sm-shrink breadcrumbs">
+	<ol class="breadcrumb space-out-v-nano-xs" vocab="http://schema.org/" typeof="BreadcrumbList">
+	
+	
+		
+
+		
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="https://milkleaks.ru">
+					<span property="name">Milkleaks</span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+			
+		
+
+		
+
+		
+
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
+		</li>
+	
+		
+
+		
+
+		
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<span property="name">Peace, Death!</span><meta property="position" content="3" />
+			</li>
+			
+	</ol>
+</nav>
+			<div class="col-xs-12 col-sm-shrink space-in-top-micro-xs space-in-top-zero-md space-auto-left-sm search">
 				<div class="search-form">
 					<input type="text" id="search-input" placeholder="Найти..." class="search-box" />
 					<span class="search-button">
@@ -61,88 +98,106 @@
 						<i class="fa fa-times close" aria-hidden="true"></i>
 					</span>
 				</div>
-				<ul id="results-container" class="dropdown"></ul>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
 			</div>
 		</div>
 	</div>
-</nav>
+	<div class="col-xs-12 space-in-top-mili-xs divider"><div class="line"></div></div>
+</header>
 
-	<article class="content post single">
-	<header class="common">
-		<div class="wrapper">
-			<h1 class="title">Peace,&nbsp;Death!</h1>
-			
+<section class="space-minus-h-kilo-xl">
+	<article class="space-out-v-mega-xs space-out-v-giga-sm space-auto-h-xl  post ">
+	
+	<h1>Peace,&nbsp;Death!</h1>
+
+	
+	
+		<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl cover">
+			<div class="frame"></div>
+			<img alt="Peace, Death!" src="https://res.cloudinary.com/milkleaks/image/upload/c_scale,q_100,w_1440/v1519218309/cover_f0twip.jpg">
 		</div>
-	</header>
-
-	
 	
 
 
-	<div class="common">
-		<div class="entry">
-			
-				<p>Симпатичная пиксельная игра с говорящим названием от отечественных разработчиков совсем недавно вышедшая на просторах Steam. В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в компании «Апокалипсис Inc», ведь даже Жнецу нужно как-то зарабатывать на пропитание. Вашей главной задачей станет распределение умерших в Рай, Ад или Чистилище, соответственно.</p>
+	
+
+	<p>Симпатичная пиксельная игра с говорящим названием от отечественных разработчиков совсем недавно вышедшая на просторах Steam. В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в компании «Апокалипсис Inc», ведь даже Жнецу нужно как-то зарабатывать на пропитание. Вашей главной задачей станет распределение умерших в Рай, Ад или Чистилище, соответственно.</p>
+
+<p><img src="https://res.cloudinary.com/milkleaks/image/upload/v1519054134/02_o0i735.jpg" alt="Peace, Death!"></p>
+
+<p>Жнецу предстоит пройти семинедельный испытательный срок на своем нелегком посту, дабы получить постоянную работу. По мере сюжета задания будут усложняться и потребуют от игрока предельной внимательности, ведь чтобы получить оценку А+ распределить умерших нужно безошибочно. Так, например, клиентов с рогами, оружием или в крови следует отправлять в Ад, всех остальных — в Рай. Тем не менее они могут скрывать свои дьявольские признаки, чтобы обмануть Жнеца, ну или отказываться от них, чтобы законно попасть в Рай через Чистилище. Помимо стандартной рутины вас будут отвлекать множеством случайных событий — война крестоносцев, психбольные разбившиеся на угнанном автобусе, массовая драка на чемпионате — всех умерших нужно срочно распределить! Ко всему прочему с каждым днем будут появляться и другие отвлекающие факторы — постоянные звонки от стажера, поломки лифта, контрабанда и т. д. — все это будет мешать вам завершить рабочий день на А+.</p>
+
+<a class="anchor" id="more"></a>
+
+<p>Помимо этого в игре присутствует и хронология событий, умершие появляются не просто так, ведь на Земле тем временем меняются эпохи и вершатся мировые войны. Таким образом Жнец распределит множество умерших, от египтян и крестоносцев, до Стива Джобса и Лемми Килмистера. В Peace, Death! также присутствует множество мемичных персонажей (Хотя бы «Гарольд скрывающий боль»), персонажей из фильмов (Терминатор, Зловещие мертвецы, Большой Лебовски, Пираты карибского моря), поп-культуры и игр — все это приправлено забавными фразами. В целом — скучать не придется, особенно, если учесть, что игра имеет высокий процент реиграбельности.</p>
+
+<p class="aside"><img src="https://res.cloudinary.com/milkleaks/image/upload/v1519054133/01_zzy9oe.jpg" alt="Peace, Death!">
+Peace, Death! изобилует шутками и самоиронией.</p>
 
 <div full="" class="dark">
     <div class="youtube" id="OyGfzHAEk3g"></div>
 </div>
 
-<p main="">Жнецу предстоит пройти семинедельный испытательный срок на своем нелегком посту, дабы получить постоянную работу. По мере сюжета задания будут усложняться и потребуют от игрока предельной внимательности, ведь чтобы получить оценку А+ распределить умерших нужно безошибочно. Так, например, клиентов с рогами, оружием или в крови следует отправлять в Ад, всех остальных — в Рай. Тем не менее они могут скрывать свои дьявольские признаки, чтобы обмануть Жнеца, ну или отказываться от них, чтобы законно попасть в Рай через Чистилище. Помимо стандартной рутины вас будут отвлекать множеством случайных событий — война крестоносцев, психбольные разбившиеся на угнанном автобусе, массовая драка на чемпионате — всех умерших нужно срочно распределить! Ко всему прочему с каждым днем будут появляться и другие отвлекающие факторы — постоянные звонки от стажера, поломки лифта, контрабанда и т. д. — все это будет мешать вам завершить рабочий день на А+.</p>
-
-<p aside=""><img src="https://i.imgur.com/WTQtG4R.jpg">Peace, Death! изобилует шутками и самоиронией.</p>
-
-<p>Помимо этого в игре присутствует и хронология событий, умершие появляются не просто так, ведь на Земле тем временем меняются эпохи и вершатся мировые войны. Таким образом Жнец распределит множество умерших, от египтян и крестоносцев, до Стива Джобса и Лемми Килмистера. В Peace, Death! также присутствует множество мемичных персонажей (Хотя бы «Гарольд скрывающий боль»), персонажей из фильмов (Терминатор, Зловещие мертвецы, Большой Лебовски, Пираты карибского моря), поп-культуры и игр — все это приправлено забавными фразами. В целом — скучать не придется, особенно, если учесть, что игра имеет высокий процент реиграбельности.</p>
-
-<p><img src="https://i.imgur.com/hLmoSCh.jpg" alt="Peace, Death!"></p>
-
 <p>Не смотря на то, что Peace, Death! проходится всего за пару часов, а концовка показалась весьма скомканной (Ожидалась более счастливая концовка, где Жнец уже купит себе долгожданный говяжий окорок), положительных эмоций она доставляет множество, особенно вкупе с неплохим, хоть и однообразным, саундтреком, отличным дизайном и общей динамичностью геймплея (Не смотря на некоторое однообразие). Всем любителям пикселей и игр на подобии Papers, Please!, McPixel и Paty Hard — Must have.</p>
 
+
 			
-		</div>
-			
-		<div class="actions">
-			<span class="date">
-				29 марта 2017
-			</span>
+	<nav class="row actions">
+		<div class="col-xs-12 col-sm">
+			<time class="space-out-bottom-nano-xs space-out-right-nano-xs">29 марта 2017</time>
 			
 			
 												
-					<a href="/category/игры/" class="category">Игры</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/categories/игры/">Игры</a>
 				
 			
 
 			
-				<span class="point">·</span>
+				<span class="space-out-bottom-nano-xs space-out-right-nano-xs">&#183;</span>
 
 				
 				
-					<a href="/tag/квест/" class="tag">Квест,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/квест/">Квест,</a>
 				
-					<a href="/tag/пиксельная-графика/" class="tag">Пиксельная графика,</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/пиксельная-графика/">Пиксельная графика,</a>
 				
-					<a href="/tag/платформер/" class="tag">Платформер</a>
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/платформер/">Платформер</a>
 				
 			
-
-			<span class="share" title="Поделиться записью в соцсетях">
-				<label class="link" for="fsociety-peace-death">Поделиться</label>
-			</span>
 		</div>
-	</div>
-	<div class="modal fsociety-peace-death">
-	<input type="checkbox" class="modal-trigger" id="fsociety-peace-death">
-	<label class="modal-overlay" for="fsociety-peace-death"></label>
+		<div class="col-xs-12 col-sm-shrink">
+			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-61">Поделиться</label>
+		</div>
+	</nav>
+	
+<section class="space-out-top-mega-xs comments">
+	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-61">Комментировать</a></button>
+	<a class="anchor" id="comments"></a>
+	<div id="disqus_thread" class="thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'milkleaks-ru';
+		var disqus_identifier = 'disqus-61';
+		var disqus_title = 'Peace, Death! · Milkleaks';
+		var disqus_url = 'https://milkleaks.ru/blog/peace-death/';
+    </script>
+</section>
+
+
+	<div class="modal fsociety-61">
+	<input type="checkbox" class="modal-trigger" id="fsociety-61">
+	<label class="modal-overlay" for="fsociety-61"></label>
 
 	<div class="modal-container">
-		<div class="card">
-			<div class="card-header">
-				<h3 class="card-title">
+		<div class="space-in-h-mili-xs space-in-v-mili-xs place">
+			<div class="place-header">
+				<h3 class="place-title">
 					Поделиться
 				</h3>
 			</div>
-			<div class="card-body">
-				<div class="card-content">
+			<div class="place-body">
+				<div class="place-content">
 					<noindex>
 					<p>Рассказать о записи «Peace, Death!» в соцсетях:</p>
 					<div class="likely ">
@@ -157,8 +212,8 @@
 					</noindex>
 				</div>
 			</div>
-			<div class="card-footer">
-				<label for="fsociety-peace-death" class="item action">
+			<div class="space-minus-h-mili-xs space-minus-bottom-mili-xs place-footer">
+				<label for="fsociety-61" class="item action">
 					Закрыть
 				</label>
 			</div>
@@ -167,25 +222,65 @@
 </div>
 </article>
 
-<div class="pagination common full">
-	
-		<a class="next" title="Leaks · Шаблон для Эгеи" href="/blog/leaks-shablon-dlya-egei/">Ранее</a>
-	
-	<span class="page_number ">Запись: 61 из 81</span>
-	
-		<a class="previous" title="Wallpaper Engine · Нескучные обои" href="/blog/wallpaper-engine/">Позднее</a>
-	
-</div>
+<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
+	<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+		
+			<a class="link" title="Leaks · Шаблон для Эгеи" href="/blog/leaks-shablon-dlya-egei/">&larr; Ранее</a>
+		
+	</span>	
 
-<footer class="common full">
-	<div class="copyright wrapper">
-		<a href="/about">Александра Травкина</a> &copy; 2015 - 2018 · <a target="_blank" href="/feed"><b>RSS</b></a> · Электропочта <a href="mailto:hello@milkleaks.ru" target="_blank">hello@milkleaks.ru</a> или телеграм <a href="https://t.me/sashatravkina" target="_blank">@sashatravkina</a>.<br />
-		Блог о <a href="/category/игры/">компьютерных играх</a>, <a href="/category/фильмы/">фильмах</a>, <a href="/category/книги/">книгах</a>, <a href="/category/веб/">вебе</a> и <a href="/category/заметки/">всем прочем</a>. А ещё есть <a href="/photo/">фото</a> и архив <a href="/dungeon/">старых</a> записей.<br />
-		<a href="http://steambuy.com/partner/milkleaks" target="_blank">Здесь можно купить лицензионные игры со скидкой.</a>
-	</div>
+	<span class="col-xs-shrink space-auto-h-xs page-number">Запись: 61 из 82</span>
 
-	<div class="scroll-to-top aside">
-		<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+	<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+		
+			<a class="link" title="Wallpaper Engine" href="/blog/wallpaper-engine/">Позднее &rarr;</a>
+		
+	</span>
+</nav>
+</section>
+
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+	<div class="row row-middle-md space-in-bottom-mili-xs">
+		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
+
+		<div class="col-xs-12 space-in-bottom-mili-xs menu">
+			<nav class="row space-minus-h-nano-xs">
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link active" href="/blog/">Блог</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/blog/all/">Все записи</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/photo/">Фотографии</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/about/">Об авторе</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/donate/">Поддержать</a>
+				
+					
+					
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+				
+			</nav>
+		</div>
+
+		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
+			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
+		</div>
+
+		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
+			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
 	</div>
 </footer>
 		<!--[ JS ]-->
@@ -193,15 +288,27 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/assets/jquery-b50e3d0497f416ee5d7dbeefdbaa98723a2200a8c1428b006ebadda28284bcef.js"></script>
-<script type="text/javascript" src="/assets/jekyll-search-7204433405551c7f3443e8466082062d37e6d3db2e5e1c8f124c1bc10fea2396.js"></script>
-<script type="text/javascript" src="/assets/fotorama-aebfda04c47491f370486c38568e25aff265f4f95347a0e4abfe9c9f1353b39b.js"></script>
-<script type="text/javascript" src="/assets/lightbox-38219f7d2b364b9f29051725c39509889e12bca6fba070e54066d5710f9ae46d.js"></script>
-<script type="text/javascript" src="/assets/hyphenator-9030ad3748aef2e496294b0dc2d947f35c51403f8813d24e519fff8cccb28471.js"></script>
-<script type="text/javascript" src="/assets/likely-780ace139e84bdd5df86e36fe18413907f96abaf433a7ec48a2acb3dea905c0e.js"></script>
-<script type="text/javascript" src="/assets/tocbot-deafbb0615f0bca439dbb779dcfc6337cb76ef05c436ea9eb205029708496a67.js"></script>
-<script type="text/javascript" src="/assets/post-e1622ae246c099cf1e081969d1ccc68a3a9d63fbfa188570c627204412e6b40a.js"></script>
-<script type="text/javascript" src="/assets/base-d985a6b4b8ba27d4785ccc0644d1200ff792fe5b224faaca1a0c8957a4053cd5.js"></script>
+<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
+
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
+<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
+<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
+<script type="text/javascript" src="/static/modules/likely/likely.js"></script>
+
+<script type="text/javascript" src="/static/js/template.js"></script>
 	
+		<!--[ Disqus ]-->
+		<script type="text/javascript">
+			var disqus_shortname = 'milkleaks-ru';
+			(function () {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			}());
+		</script>
+
 	</body>
 </html>
