@@ -1,14 +1,13 @@
-<nav class="common full">
-	<div class="navigation wrapper">
-		<div class="avatar">
-			<a href="{{ site.baseurl }}/">
-				<div class="logo"></div>
-			</a>
-		</div>
+<header class="row row-middle-md space-in-top-mili-xs">
+	<div class="col-xs-12 col-sm-shrink space-in-bottom-micro-xs space-in-bottom-zero-md">
+		<span class="logo">
+			<span class="logo-icon"></span>
+		</span>
 	</div>
-	<div class="search-base aside">
-		<div class="frame">
-			<div class="search">
+	<div class="col-xs-12 col-sm">
+		<div class="row">
+			{% include breadcrumbs.html %}
+			<div class="col-xs-12 col-sm-shrink space-in-top-micro-xs space-in-top-zero-md space-auto-left-sm search">
 				<div class="search-form">
 					<input type="text" id="search-input" placeholder="Найти..." class="search-box" />
 					<span class="search-button">
@@ -16,8 +15,11 @@
 						<i class="fa fa-times close" aria-hidden="true"></i>
 					</span>
 				</div>
-				<ul id="results-container" class="dropdown"></ul>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
 			</div>
 		</div>
 	</div>
-</nav>
+	<div class="col-xs-12 space-in-top-mili-xs divider"><div class="line"></div></div>
+</header>

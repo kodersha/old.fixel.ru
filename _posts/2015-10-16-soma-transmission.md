@@ -1,6 +1,6 @@
 ---
 title: "SOMA · Transmission"
-thumbnail: "https://i.imgur.com/jMCfRr4l.jpg"
+thumbnail: "v1518878343/01_arlaq4.jpg"
 category: "Фильмы"
 tags:
 - Фильм

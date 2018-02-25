@@ -1,30 +1,85 @@
 ---
-layout: default
+layout: base_posts
 ---
 
-<article class="content post single">
-	<header class="common">
-		<div class="wrapper">
-			<h1 class="title">{{ page.title | improve }}</h1>
-		</div>
-	</header>
+<article class="space-out-v-mega-xs space-out-v-giga-sm space-auto-h-xl {% if page.toc == "true" %}js-toc-content{% endif %} post ">
+	
+	<h1>{{ page.title | improve }}</h1>
 
-	{% include _post/cover.html %}
-
-	<div class="common">
-		<div class="entry">
-			{{ content | improve | extlinks }}
-		</div>
-
-		<div class="actions">
-			<span class="date">{{ page.date | russian_date }}</span>
-
-			<span class="share" title="Поделиться записью в соцсетях">
-				<label class="link" for="fsociety-{{ page.slug }}">Поделиться</label>
-			</span>
-		</div>
+	<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
+		{% google_map width="100%" class="map" zoom="12" %}
 	</div>
-	{% include likely.html %}
+
+	{% if page.toc == "true" %}
+		<div class="toc js-toc"></div>
+	{% endif %}
+
+	{{ content | improve | extlinks }}
+			
+	<nav class="row actions">
+		<div class="col-xs-12 col-sm">
+			<time class="space-out-bottom-nano-xs space-out-right-nano-xs">{{ page.date | russian_date }}</time>
+		</div>
+		<div class="col-xs-12 col-sm-shrink">
+			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-{{ page.slug }}">Поделиться</label>
+		</div>
+	</nav>
+
+	{% include _post/likely.html %}
 </article>
 
-{% include breadcrumbs.html %}
+{% for c in site.works %}
+{% if c.title == page.title %}
+  {% assign thisPost = c %}
+  {% if forloop.index == 1 %}
+	{% assign prevflag = 0 %}
+	{% assign nextflag = 1 %}
+  {% elsif forloop.index == forloop.length %}
+	{% assign prevflag = 1 %}
+	{% assign nextflag = 0 %}
+  {% else %}
+	{% assign prevflag = 1 %}
+	{% assign nextflag = 1 %}
+  {% endif %}
+{% endif %}
+{% endfor %}
+
+{% for c in site.works %}
+  {% if c.title == page.title %}
+	{% assign prevflag = 0 %}
+  {% endif %}
+  {% if prevflag == 1 %}
+	{% assign prevPost = c %}
+	{% assign page.previous = c %}
+  {% endif %}
+{% endfor %}
+
+{% if nextflag == 1 %}
+  {% for c in site.works %}
+	{% if foundPost == 1 %}
+	  {% assign getNext = 1 %}
+	{% endif %}
+	{% if c.title == page.title %}
+	  {% assign foundPost = 1 %}
+	{% endif %}
+	{% if getNext == 1%}
+	  {% assign nextPost = c %}
+	  {% assign page.next = c %}
+	  {% assign foundPost = 0 %}
+	  {% assign getNext = 0 %}
+	{% endif %}
+  {% endfor %}
+{% endif %}
+
+<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
+	{% if prevPost.url %}
+		<a class="link col-xs-shrink space-auto-right-xs space-in-h-zero-xl" rel="prev" href="{{ prevPost.url }}">&larr; Ранее</a>
+	{% else %}
+		<span class="col-xs-shrink space-auto-right-xs"></span>
+	{% endif %}
+	{% if nextPost.url %}
+		<a class="link col-xs-shrink space-auto-left-xs space-in-h-zero-xl" rel="next" href="{{ nextPost.url }}">Позднее &rarr;</a>
+	{% else %}
+		<span class="col-xs-shrink space-auto-left-xs"></span>
+	{% endif %}
+</nav>

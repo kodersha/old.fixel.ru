@@ -1,0 +1,17 @@
+---
+layout: base_category
+title: Категории
+description: Список категорй блога
+---
+
+<h1 class="col-xs-12">{{ page.title }}</h1>
+
+<section class="col-xs-12 space-out-bottom-base-xs">
+	{% assign categories_list = site.categories %}
+	{% for category in categories_list %}
+		<article class="item">
+			<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a> &middot; {{ category[1].size }}
+		</article>
+	{% endfor %}
+	{% assign categories_list = nil %}
+</section>

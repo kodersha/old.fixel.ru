@@ -1,15 +1,14 @@
 ---
-layout: default
+layout: base_category
 title: {{ page.title }}
 ---
 
-<div class="content post-list archive common">
-	<div class="posts wrapper">
-		<h1 class="title">{{ page.title }}</h1>
-		{% for post in page.posts %}
-			{% include _preview/archive.html %}
-		{% endfor %}
-	</div>
-</div>
+<h1 class="col-xs-12">{{ page.title }}</h1>
 
-{% include breadcrumbs.html %}
+<section class="col-xs-12 space-out-bottom-base-xs">
+	{% for post in page.posts %}
+		<article class="space-out-bottom-pico-xs item">
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+		</article>
+	{% endfor %}
+</section>

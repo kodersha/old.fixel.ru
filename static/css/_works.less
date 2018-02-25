@@ -1,0 +1,36 @@
+.item {
+    font-family: @glob-font;
+    font-size: @glob-font-size;
+    position: relative;
+
+    &:before {
+        content: '● ● ●';
+        border-radius: 2px 2px 0 0;
+        background-color: #bbb;
+        font-family: @helvetica;
+        line-height: 20px;
+        padding: 2px 10px;
+        text-align: left;
+        font-size: 18px;
+        display: block;
+        color: #999;
+        width: 100%;
+    }
+
+    .thumbnail {
+        border-radius: 0 0 2px 2px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: @action;
+        background-size: cover;
+        cursor: pointer;
+        height: 245px;
+        width: 100%;
+    }
+
+    .meta {
+        span {
+            display: block;
+        }
+    }
+} 

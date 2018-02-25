@@ -1,17 +1,18 @@
 ---
-layout: default
+layout: base_default
 title: Работы
 ---
 
-<div class="content post-list work common">
-	<div class="posts">
-		<h1 class="title">{{ page.title }}</h1>
-		<div class="grid">
-		{% for post in site.works reversed %}
-			{% include _preview/work.html %}
-		{% endfor %}
-		</div>
-	</div>
-</div>
+<section class="space-in-v-mili-xs row works">
+	<h1 class="col-xs-12">{{ page.title }}</h1>
 
-{% include breadcrumbs.html %}
+	{% for post in site.works reversed %}
+		<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-micro-xs item">
+			<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')" onclick="location.href='{{ post.url }}'"></div>
+			<div class="space-in-top-nano-xs meta">
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<span>{{ post.description }}</span>
+			</div>
+		</article>
+	{% endfor %}
+</section>

@@ -1,12 +1,15 @@
-<nav class="breadcrumbs common hidden-sm-down">
-	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+<nav class="col-xs-12 col-sm-shrink breadcrumbs">
+	<ol class="breadcrumb space-out-v-nano-xs" vocab="http://schema.org/" typeof="BreadcrumbList">
 	{% assign position = 0 %}
 	{% for crumbitem in breadcrumbs %}
 		{% assign position = position  | plus: 1 %}
 
 		{% if forloop.first %}
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">{{ site.name }}</span><meta property="position" content="{{ position }}" /></a>
+				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}">
+					<span property="name">{{ site.name }}</span>
+					<meta property="position" content="{{ position }}" />
+				</a>
 			</li>
 			{% continue %}
 		{% endif %}

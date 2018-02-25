@@ -1,7 +1,0 @@
-<article class="post">
-	<div class="thumbnail" style="{% if post.thumbnail %}background-image: url('{{ post.thumbnail }}');{% endif %} {% if post.color %}background-color: {{ post.color }}{% endif %}" onclick="window.open('{{ post.link }}', '_blank')"></div>
-	<div class="meta">
-			<a class="title" href="{{ post.url }}">{{ post.title }}</a>
-			<div class="description">{{ post.description }}</div>
-		</div>
-</article>

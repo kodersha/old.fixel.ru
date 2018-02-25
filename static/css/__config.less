@@ -1,0 +1,125 @@
+.global-settings() {
+    @glob-text: @black;
+    @glob-subtext: @darkerGray;
+    @glob-font: @latoMedium;
+    @glob-font-size: 1rem;
+}
+
+.post-settings() {
+    @post-top: 1.5rem;
+    @post-bottom: 2rem;
+    @post-text: rgba(0,0,0,.84);
+    @post-subtext: rgba(0,0,0,.76);
+    @post-width: 1440px;
+    @post-linel: 45rem;
+
+    @grid-edge: 2.5rem;
+    @grid-aside: 1fr;
+    @grid-inner: minmax(1rem, 2.5rem);
+    @grid-main: minmax(auto, 45rem);
+}
+
+/*!
+* Bettertext
+*/
+
+.bettertext-settings() {
+    @fz: 12px;                                      // default font-size
+    @rythm: 18px;                                   // vertical rythm = line-height in pixels
+    @fz-small: 10px;                                // smaller font-size (px)
+    @linel: 45rem;                                  // max-width for text (any css value)
+
+    @font-body: @gregor;                            // body
+    @font-headers: @latoHeavy;                      // headers
+    @font-code: @code;                              // code (duplication is intentional)
+
+    @scale1: 1.125;                    // header size multiplier for small screens
+    @scale2: 1.200;                    // header size multiplier for large screens
+
+    // margin for body, articles and sections (any css value)
+    @structure-margin: ~"calc(24px + 3vw)" 5vw;
+
+    @bettertext-breakpoint: ~"(min-width: 50em)"; // large screens starts from that value
+
+    //redefining header margin-top
+    @h1-mt: 3em;
+    @h2-mt: 2.5em;
+    @h3-mt: 2em;
+    @h4-mt: 1.5em;
+}
+
+/*!
+* Space
+
+.space-settings() {
+
+    @spaces: 0, 4px, 8px, 16px, 24px, 40px, 64px, 104px, 168px;
+    @spacealias: zero, pico, nano, micro, mili, base, kilo, mega, giga;
+
+    // media breakpoints
+    @breakpoints:
+        ~"(min-width: 576px)",
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)";
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg, xl;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+}
+
+*/
+
+/*!
+* Links
+*/
+
+.links-settings() {
+    @links-class: link; //you can rename that classname
+    @links-text-decoration: underline;
+    @links-roundness: 0.125em;   // default = 2px
+    @links-focuswidth: 0.1875em; // default = 3px
+
+    //colors
+    @links-link:          #4183C4;
+    @links-hover:         #487bad;
+    @links-visited:       #4183C4;
+    @links-visitedhover:  #487bad;
+    @links-active:        #487bad;
+    @links-fadeout: 75%;  // amount of transparency added to underline
+
+    //animation
+    @links-aniduration: .3s; //fading duration from hover
+}
+
+/*!
+* Grid
+*/
+
+.grid-settings() {
+
+    // settings
+    @grid-columns: 12;   // number of columns
+    @gutter-width: 32px; // gap between columns
+
+    // media breakpoints (default: as on bootstrap)
+    @breakpoints:
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)";
+
+    // max-width of containers according breakpoints
+    @container-maw:
+        750px,
+        970px,
+        1170px;
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+
+}

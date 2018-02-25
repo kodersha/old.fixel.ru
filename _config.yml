@@ -2,21 +2,33 @@ name: Milkleaks
 description: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.
 author: Александра Травкина
 
+# Base
 url: https://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
-
 image:
+markdown: kramdown
+disqus: milkleaks-ru
 
-version: v3.7.0
+# Jekyll
 safe: false
 
+# Navigation
 navigation:
   - title: Блог
     url: /blog/
+  - title: Все записи
+    url: /blog/all/
+  - title: Фотографии
+    url: /photo/
   - title: Об авторе
     url: /about/
+  - title: Поддержать
+    url: /donate/
+  - title: Магазин игр
+    url: http://steambuy.com/partner/milkleaks
 
+# Deafults layout
 defaults:
   - scope:
       path: ""
@@ -33,7 +45,8 @@ defaults:
       type: posts
     values:
       layout: post
-      
+
+# Collections     
 collections:
   photos:
     output: true
@@ -42,27 +55,16 @@ collections:
     output: true
     permalink: /work/:title/
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: compressed
-
 # Exclude these files from your production _site
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  
+  - node_modules/
+
 ## Plugins
 plugins:
-  - font-awesome-sass
   - jekyll-redirect-from
   - jekyll-include-cache
   - jekyll-auto-image
@@ -71,73 +73,64 @@ plugins:
   - jekyll-archives
   - jekyll-extlinks
   - jekyll-sitemap
-  - jekyll-timeago
-  - jekyll-assets
   - jekyll-feed
   - jekyll-maps
-  - uglifier
+  - jekyll-less
 
-jekyll_timeago:
-  depth: 1
-  today: 'Сегодня'
-  yesterday: 'Вчера'
-  tomorrow: 'Завтра'
-  and: 'и'
-  suffix: 'назад'
-  prefix: ''
-  suffix_future: ''
-  prefix_future: 'in'
-  years: 'года'
-  year: 'год'
-  months: 'мес.'
-  month: 'мес.'
-  weeks: 'нед.'
-  week: 'нед.'
-  days: 'дн.'
-  day: 'дн.'
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: compressed
 
+less:
+  entrypoint: "static/style.less"
+  less_dir: static
+
+# Google maps
 maps:
   google:
     api_key: AIzaSyCdzBPyxAeuk-0bG2pyMbO8d32PMBKgcRo
 
+# Cloudinary
+cloudinary:
+  cloud_name: milkleaks
+  presets:
+    default:
+      min_width: 640
+      max_width: 1440
+      fallback_max_width: 1440
+      steps: 5
+      sizes: "(min-width: 45rem) 45rem, 90rem"
+
+# Extlinks
 extlinks:
   attributes: {rel: nofollow, target: _blank} 
   rel_exclude: ['milkleaks.ru']
   
+# Pagination
 paginate: 8
 paginate_path: "/page-:num/"
 
+# Archives
 jekyll-archives:
   enabled:
     - categories
     - tags
   layout: "archive"
   permalinks:
-    year: "/:year/"
-    month: "/:year/:month/"
-    day: "/:year/:month/:day/"
-    tag: "/tag/:name/"
-    category: "/category/:name/"
+    year: "/blog/:year/"
+    month: "/blog/:year/:month/"
+    day: "/blog/:year/:month/:day/"
+    tag: "/blog/tags/:name/"
+    category: "/blog/categories/:name/"
 
+# Sitemap
 sitemap:
   file: "/sitemap.xml"
   exclude:
     - "/atom.xml"
     - "/feed.xml"
+    - "/turbo.xml"
   include_posts:
     - "/index.html"
   change_frequency_name: "change_frequency"
   priority_name: "priority"
-  
-assets:
-  destination: "/assets"
-  compression: true
-  caching:
-    path: ".jekyll-cache/assets"
-    type: file
-    enabled: true
-  sources:
-    - "_assets/css"
-    - "_assets/fonts"
-    - "_assets/images"
-    - "_assets/js"

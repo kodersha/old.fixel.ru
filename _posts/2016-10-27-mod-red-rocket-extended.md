@@ -1,16 +1,16 @@
 ---
 title: "Мод «Red Rocket Extended»"
-thumbnail: "https://i.imgur.com/CTABrxVl.png"
+thumbnail: "v1519046136/01_suakvv.png"
 category: "Заметки"
 ---
 
 <div full class="dark">
 	<div class="fotorama">
-		<img src="https://i.imgur.com/CTABrxV.png" />
-		<img src="https://i.imgur.com/UGhuCl0.png" />
-		<img src="https://i.imgur.com/2bBqSfL.png" />
-		<img src="https://i.imgur.com/3o7YGEd.png" />
-		<img src="https://i.imgur.com/mWL4Vir.png" />
+		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046136/01_suakvv.png" />
+		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/02_beqdwp.png" />
+		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046129/03_ramzq7.png" />
+		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/04_oa3ri1.png" />
+		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046126/05_egdfsf.png" />
 	</div>
 </div>
 

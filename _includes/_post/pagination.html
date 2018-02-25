@@ -1,9 +1,15 @@
-<div class="pagination common full">
-	{% if page.previous.url %}
-		<a class="next" title="{{ page.previous.title }}" href="{{ page.previous.url }}">Ранее</a>
-	{% endif %}
-	<span class="page_number ">Запись: {{ page.index | plus: 1 }} из {{ site.posts | size }}</span>
-	{% if page.next.url %}
-		<a class="previous" title="{{ page.next.title }}" href="{{ page.next.url }}">Позднее</a>
-	{% endif %}
-</div>
+<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
+	<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+		{% if page.previous.url %}
+			<a class="link" title="{{ page.previous.title }}" href="{{ page.previous.url }}">&larr; Ранее</a>
+		{% endif %}
+	</span>	
+
+	<span class="col-xs-shrink space-auto-h-xs page-number">Запись: {{ page.index | plus: 1 }} из {{ site.posts | size }}</span>
+
+	<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+		{% if page.next.url %}
+			<a class="link" title="{{ page.next.title }}" href="{{ page.next.url }}">Позднее &rarr;</a>
+		{% endif %}
+	</span>
+</nav>

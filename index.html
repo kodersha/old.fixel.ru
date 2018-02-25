@@ -1,13 +1,9 @@
 ---
-layout: default
+layout: base_posts
 ---
 
-<div class="content common">
-	<div class="post-list index">	
-		{% for post in paginator.posts %}
-			{% include _preview/index.html %}
-		{% endfor %}
-	</div>
-</div>
+{% for post in paginator.posts %}
+	{% include _post/index.html %}
+{% endfor %}
 
 {% include pagination.html %}

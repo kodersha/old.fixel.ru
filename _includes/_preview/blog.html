@@ -1,8 +1,0 @@
-<article class="post">
-	<a href="{{ site.baseurl }}{{ post.url }}">{% if post.title %}{{ post.title }}{% endif %} <span class="date">{{ post.date | russian_date }}</span></a>
-	{% if post.categories %}
-	{% for category in post.categories %}								
-	&nbsp;·&nbsp;<a href="{{ site.baseurl }}/category/{{ category | replace:' ', '-' | downcase }}/" class="category">{{ category }}</a>
-	{% endfor %}
-	{% endif %}
-</article>

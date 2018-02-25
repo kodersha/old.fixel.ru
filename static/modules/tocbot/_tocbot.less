@@ -1,0 +1,51 @@
+.toc {
+	margin-bottom: @post-bottom;
+	margin-top: @post-top;
+    position: relative;
+	overflow-y: auto;
+	width: 100%;
+
+	@media @xl {
+		grid-column: outer-left / inner-left !important;
+	}
+}
+
+.toc > ul {
+	position: relative;
+	overflow: hidden;
+}
+
+.toc li {
+	font-size: @glob-font-size;
+	font-family: @glob-font;
+	list-style: decimal;
+	line-height: 1.25;
+}
+
+.toc-list {
+    max-width: 100% !important;
+    margin: 0;
+}
+
+
+.toc-link {
+	.links-color(#4183C4, #487bad, #4183C4, #487bad, #4183C4, 75%);
+}
+
+.is-collapsible {
+	max-height: 1000px;
+	overflow: hidden;
+	transition: all 300ms ease-in-out;
+}
+
+.is-collapsed {
+	max-height: 0;
+}
+
+.is-position-fixed {
+	position: fixed !important;
+	top: 0;
+}
+
+.is-active-link {
+}

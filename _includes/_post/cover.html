@@ -1,5 +1,8 @@
 {% unless page.header == "true" %}
 	{% if page.cover %}
-		<div class="cover frame" style="background-image: url('{{ page.cover }}')"></div>
+		<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl cover">
+			<div class="frame"></div>
+			<img alt="{{ page.title }}" src="https://res.cloudinary.com/{{ site.cloudinary.cloud_name }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}">
+		</div>
 	{% endif %}
 {% endunless %}

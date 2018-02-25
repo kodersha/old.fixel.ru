@@ -1,0 +1,52 @@
+background-color: @black;
+position: absolute;
+display: table;
+height: 100vh;
+width: 100vw;
+bottom: 0;
+right: 0;
+left: 0;
+top: 0;
+
+.cover {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    
+    .image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.message {
+    -webkit-animation: fadeUpIn 1s;
+    -moz-animation: fadeUpIn 1s;
+    animation: fadeUpIn 1s;
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    color: @white;
+    z-index: 10;
+}
+
+.home {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    top: @mili;
+
+    .link-home {
+        .links-color(@white, @lightGray, @white, @lightGray, @white, 100%);
+        text-decoration: none;
+    }
+}

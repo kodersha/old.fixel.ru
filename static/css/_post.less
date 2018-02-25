@@ -1,0 +1,222 @@
+[full] {
+    margin-bottom: @post-bottom;
+    margin-top: @post-top;
+
+    img {
+        border-radius: 0;
+    }
+
+    @media @xl {
+        grid-column: left / right;
+    }
+}
+
+[outer] {
+    @media @xl {
+        grid-column: outer-left / outer-right;
+    }
+}
+
+[frame] {
+    margin-bottom: @post-bottom;
+    margin-top: @post-top;
+
+    @media @xl {
+        grid-column: outer-left / outer-right;
+    }
+}
+
+[main], .main {
+    @media @xl {
+        grid-column: main-left / main-right;
+    }
+}
+
+[outer], [full], [frame] {
+    position: relative;
+
+    &.dark {
+        &::before {
+            position: absolute;
+            background-color: @black;
+            padding-right: 9999px;
+            margin-right: -9999px;
+            padding-left: 9999px;
+            margin-left: -9999px;
+            content: '';
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+
+        .youtube {
+            border-radius: 0 !important;
+
+            img {
+                border-radius: 0 !important;
+            }
+        }
+
+        .video {
+            .frame {
+                border-radius: 0 !important;	
+            }
+        }
+
+        .fotorama {
+            .fotorama__active,
+            img {
+                border-radius: 0 !important;
+            }
+
+            .fotorama__nav-wrap {
+                position: relative;
+                margin-top: -30px;
+                z-index: 10;
+            }
+        }
+    }
+}
+
+[row] {
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0;
+}
+
+[base], [block] {
+    margin-bottom: @post-bottom;
+    margin-top: @post-top;
+
+    &>* {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+[caption], .caption {
+    font-size: @glob-font-size;
+    font-family: @glob-font;
+    color: @post-subtext;
+    line-height: 1.4;
+    margin-bottom: @post-bottom;
+    margin-top: 0;
+
+    &.center {
+        text-align: center;
+    }
+}
+
+[pic] {
+    img {
+        transition: visibility 0s, opacity 0.3s ease-in-out;
+        visibility: hidden;
+        display: block;
+        width: auto;
+        opacity: 0;
+        height: 0;
+    }
+    
+    &:hover img {
+        visibility: visible;
+        margin: 0.5em 0 1em;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+[tags] {
+    margin-bottom: ~'calc('@post-bottom ~'- 5px)';
+    margin-top: @post-top;
+    display: table;
+
+    p {
+        background-color: #F4F6F8;
+        font-size: @glob-font-size;
+        font-family: @glob-font;
+        border-radius: 2px;
+        margin: 0 5px 5px 0;
+        padding: 8px 16px;
+        color: #7F8FA4;
+        text-align: left;
+        float: left;
+
+        @media @xl {
+            text-align: right;
+            float: right;
+        }
+
+        &.yellow {
+            background-color: #fff9cc;
+            color: #a97700;
+        }
+
+        &.green {
+            background-color: #ccffce;
+            color: #17a900;
+        }
+
+        &.blue {
+            background-color: #ccdeff;
+            color: #009fc7;
+        }
+
+        &.gary {
+            background-color: #a9b1b5;
+            color: #ffffff;
+        }
+
+        &.white {
+            background-color: transparent;
+        }
+    }
+
+    p:before, ol:not([class]):before, ul:not([class]):before {
+        width: auto;
+    }
+}
+
+/* aside */
+
+[aside], .aside,
+[aside-left], .aside-left {
+    font-size: @glob-font-size;
+    font-family: @glob-font;
+    max-width: @post-linel;
+    color: @post-subtext;
+    position: relative;
+    line-height: 1.25;
+    display: block;
+
+    @media @xl {
+        height: fit-content;
+        max-width: initial;
+    }
+
+    p {
+        color: @post-subtext;
+    }
+
+    img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+[aside], .aside {
+    @media @xl {
+        grid-column: aside-right / outer-right;
+    }
+}
+
+[aside-left], .aside-left {
+    @media @xl {
+        grid-column: outer-left / inner-left;
+    }
+}

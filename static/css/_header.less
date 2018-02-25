@@ -1,0 +1,201 @@
+.logo {
+    text-align: left;
+    display: table;
+    height: 48px;
+    width: auto;
+    margin: 0;
+
+    .logo-icon {
+        background-image: url('../../images/logo.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 30px 40px;
+        vertical-align: middle;
+        display: table-cell;
+        position: relative;
+        height: 40px;
+        width: 30px;
+    }
+}
+
+//
+// .breadcrumbs
+//
+
+.breadcrumbs {
+    font-size: @glob-font-size;
+    font-family: @glob-font;
+
+	.breadcrumb {
+		list-style: none;
+		padding: 0;
+		
+		&::after {
+		  display: table;
+          clear: both;
+		  content: "";
+		}
+		
+		&-item {
+            line-height: 32px;
+			float: left;
+        }
+	}
+
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: inline-block;
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+        color: @action;
+		content: "/";
+	}
+}
+
+//
+// .search
+//
+
+.search {
+    position: relative;
+    
+    .search-form {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        border-radius: 50px;
+        position: relative;
+        margin-left: auto;
+        overflow: hidden;
+        height: 48px;
+        width: 48px;
+
+        .search-box {
+            font-size: @glob-font-size - 0.2rem;
+            background: transparent;
+            visibility: hidden;
+            padding-right: 48px;
+            padding-left: 25px;
+            min-width: 17.5rem;
+            box-shadow: none;
+            height: 100%;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        .search-button {
+            font-size: @glob-font-size;
+            padding-bottom: 12px;
+            padding-right: 16px;
+            padding-left: 16px;
+            padding-top: 12px;
+            position: absolute;
+            color: #a9b1b5;
+            cursor: pointer;
+            display: block;
+            right: 0;
+            top: 0;
+            
+            i.close {
+                display: none;
+            }
+        }
+
+        @media @mmd {
+            background-color: #f1f3f4;
+            width: 100%;
+
+            .search-box {
+                visibility: visible;
+                min-width: 100%;
+            }
+
+            .search-button {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.open {
+        .search-form {
+            background-color: #f1f3f4;
+            width: 100%;
+
+            .search-box {
+                visibility: visible;
+            }
+        }
+        
+        .search-button {
+            padding-bottom: 16px;
+            padding-right: 18px;
+            padding-left: 18px;
+            padding-top: 16px;
+            
+            i.open {
+                display: none;
+            }
+            
+            i.close {
+                display: block;
+            }
+        }
+        
+        .dropdown {
+            visibility: visible;
+            display: block;
+
+            .results {
+                display: block;
+            }
+        }
+    }
+    
+    .dropdown {
+        font-size: @glob-font-size;
+        font-family: @glob-font;
+        visibility: hidden;
+        position: relative;
+        display: none;
+        z-index: 100;
+        
+        .results {
+            background-color: #fafafa;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            border-radius: 2px;
+            position: absolute;
+            list-style: none;
+            padding-left: 0;
+            display: none;
+            width: 100%;
+
+            li {
+                padding-bottom: 5px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-top: 5px;
+                
+                &:first-of-type {
+                    padding-top: 15px;
+                }
+                
+                &:last-of-type {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        @media @mmd {
+            visibility: visible;
+            display: block;
+
+            .results {
+                display: block;
+            }
+        }
+    }
+}

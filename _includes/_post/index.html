@@ -1,0 +1,28 @@
+<article class="space-out-v-mega-xs space-out-v-giga-sm space-auto-h-xl post">
+	<h1>
+		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a>
+	</h1>
+
+	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
+
+	{% if post.content contains '<!-- more -->' %}
+		<a class="link-readmore" href="{{ post.url | prepend: site.baseurl }}#more" title="Читать далее">&bull; &bull; &bull;</a>
+	{% endif %}
+
+	<nav class="row actions">
+		<div class="col-xs-12">
+			<a class="link link-action space-out-bottom-nano-xs space-out-right-nano-xs" href="{{ post.url | prepend: site.baseurl }}"><time>{{ post.date | russian_date }}</time></a>
+
+			{% if post.categories %}
+				{% for category in post.categories %}								
+					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/">{{ category }}</a>
+				{% endfor %}
+			{% endif %}
+		</div>
+	</nav>
+</article>
+
+{% if page.url == "/" %}
+	{% if forloop.first == true %}
+	{% endif %}
+{% endif %}

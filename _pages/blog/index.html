@@ -1,0 +1,58 @@
+---
+layout: base_category
+title: Блог
+dscription: Последние десять записей из каждой категории
+---
+
+<h1 class="col-xs-12">{{ page.title }}</h1>
+
+<!-- categories -->
+{% for category in site.categories %}
+	<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
+		{% capture category_name %}{{ category | first }}{% endcapture %}
+
+		<h5>{{ category_name }}</h5>
+
+		{% for post in site.categories[category_name] limit: 10 %}
+			<article class="item">
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+			</article>
+		{% endfor %}
+
+		<a class="space-out-top-nano-xs link link-readmore" href="{{ site.baseurl }}/blog/categories/{{ category_name | replace:' ', '-' | downcase  }}/">&bull;&bull;&bull;</a>
+	</section>
+{% endfor %}
+
+<!-- hiddens -->
+<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
+	<h5>Архив</h5>
+	{% assign olderPosts = site.posts | where: 'hidden', 'true' %}
+	{% for post in olderPosts limit: 10 %}
+		<article class="item">
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+		</article>
+	{% endfor %}
+	<a class="space-out-top-nano-xs link link-readmore" href="{{ site.baseurl }}/blog/dungeon/">&bull;&bull;&bull;</a>
+</section>
+
+<!-- photos -->
+<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
+	<h5>Фотографии</h5>
+	{% for post in site.photos reversed limit: 10 %}
+		<article class="item">
+			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+		</article>
+	{% endfor %}
+	<a class="space-out-top-nano-xs link link-readmore" href="{{ site.baseurl }}/photo/">&bull;&bull;&bull;</a>
+</section>
+
+<!-- works -->
+<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
+	<h5>Работы</h5>
+	{% for post in site.works reversed limit: 10 %}
+		<article class="item">
+			<a target="_blank" href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }} &middot; {{ post.description | improve }}</a>
+		</article>
+	{% endfor %}
+	<a class="space-out-top-nano-xs link link-readmore" href="{{ site.baseurl }}/work/">&bull;&bull;&bull;</a>
+</section>

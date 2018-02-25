@@ -1,11 +1,17 @@
 {% if paginator.total_pages > 1 %}
-	<div class="pagination common full">
-		{% if paginator.next_page %}
-			<a class="next" href="{{ paginator.next_page_path | beautify_url }}">Ранее</a>
-		{% endif %}
-		<span class="page_number ">Страница: {{ paginator.page }} из {{ paginator.total_pages }}</span>
-		{% if paginator.previous_page %}
-			<a class="previous" href="{{ paginator.previous_page_path | beautify_url }}">Позднее</a>
-		{% endif %}
-	</div>
+	<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
+		<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+			{% if paginator.next_page %}
+				<a class="link" rel="prev" href="{{ paginator.next_page_path | beautify_url }}">&larr; Ранее</a>
+			{% endif %}
+		</span>
+		
+		<span class="col-xs-shrink space-auto-h-xs page-number">Страница: {{ paginator.page }} из {{ paginator.total_pages }}</span>
+		
+		<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+			{% if paginator.previous_page %}
+				<a class="link" rel="next" href="{{ paginator.previous_page_path | beautify_url }}">Позднее &rarr;</a>
+			{% endif %}
+		</span>
+	</nav>
 {% endif %}

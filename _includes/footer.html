@@ -1,11 +1,24 @@
-<footer class="common full">
-	<div class="copyright wrapper">
-		<a href="{{ site.baseurl }}/about">{{ site.author }}</a> &copy; 2015 - {{ site.time | date: '%Y' }} · <a target="_blank" href="{{ site.baseurl }}/feed"><b>RSS</b></a> · Электропочта <a href="mailto:hello@milkleaks.ru" target="_blank">hello@milkleaks.ru</a> или телеграм <a href="https://t.me/sashatravkina" target="_blank">@sashatravkina</a>.<br />
-		Блог о <a href="{{ site.baseurl }}/category/игры/">компьютерных играх</a>, <a href="{{ site.baseurl }}/category/фильмы/">фильмах</a>, <a href="{{ site.baseurl }}/category/книги/">книгах</a>, <a href="{{ site.baseurl }}/category/веб/">вебе</a> и <a href="{{ site.baseurl }}/category/заметки/">всем прочем</a>. А ещё есть <a href="{{ site.baseurl }}/photo/">фото</a> и архив <a href="{{ site.baseurl }}/dungeon/">старых</a> записей.<br />
-		<a href="http://steambuy.com/partner/milkleaks" target="_blank">Здесь можно купить лицензионные игры со скидкой.</a>
-	</div>
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
+	<div class="row row-middle-md space-in-bottom-mili-xs">
+		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
 
-	<div class="scroll-to-top aside">
-		<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<div class="col-xs-12 space-in-bottom-mili-xs menu">
+			<nav class="row space-minus-h-nano-xs">
+				{% for item in site.navigation %}
+					{% assign class = nil %}
+					{% if page.url contains item.url %}{% assign class = 'active' %}{% endif %}
+					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link {{ class }}" href="{{ item.url }}">{{ item.title }}</a>
+				{% endfor %}
+			</nav>
+		</div>
+
+		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+			{{ site.author }} &copy; 2015 - {{ site.time | date: '%Y' }} · <a class="link-subcontrol" target="_blank" href="{{ site.baseurl }}/feed"><b>RSS</b></a><br />
+			{{ site.description }}<br />
+		</div>
+
+		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
+			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
 	</div>
 </footer>

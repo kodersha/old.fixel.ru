@@ -1,0 +1,40 @@
+<div class="modal fsociety-{% if page.layout == 'default' %}{{ post.index | plus: 1 }}{% else %}{{ page.index | plus: 1 }}{% endif %}">
+	<input type="checkbox" class="modal-trigger" id="fsociety-{% if page.layout == 'default' %}{{ post.index | plus: 1 }}{% else %}{{ page.index | plus: 1 }}{% endif %}">
+	<label class="modal-overlay" for="fsociety-{% if page.layout == 'default' %}{{ post.index | plus: 1 }}{% else %}{{ page.index | plus: 1 }}{% endif %}"></label>
+
+	<div class="modal-container">
+		<div class="space-in-h-mili-xs space-in-v-mili-xs place">
+			<div class="place-header">
+				<h3 class="place-title">
+					Поделиться
+				</h3>
+			</div>
+			<div class="place-body">
+				<div class="place-content">
+					<noindex>
+					<p>Рассказать о записи «{% if page.layout == 'default' %}{{ post.title | replace:'«', '"' | replace:'»', '"' }}{% else %}{{ page.title | replace:'«', '"' | replace:'»', '"' }}{% endif %}» в соцсетях:</p>
+					<div class="likely {% if page.black == 'true' %}likely-light{% endif %}">
+						{% if page.layout == 'default' %}						
+							<div data-url="{{ site.url }}{{ post.url | beautify_url }}" data-title="{% if post.title %}{{ post.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" data-via="sasha_travkina" class="twitter">Twitter</div>
+							<div data-url="{{ site.url }}{{ post.url | beautify_url }}" data-title="{% if post.title %}{{ post.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="vkontakte">VK</div>
+							<div data-url="{{ site.url }}{{ post.url | beautify_url }}" data-title="{% if post.title %}{{ post.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="telegram">Telegram</div>
+							<div data-url="{{ site.url }}{{ post.url | beautify_url }}" data-title="{% if post.title %}{{ post.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="facebook">Facebook</div>	
+						{% else %}
+							<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" data-via="sasha_travkina" class="twitter">Twitter</div>
+							<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="vkontakte">VK</div>
+							<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="telegram">Telegram</div>
+							<div data-url="{{ site.url }}{{ page.url | beautify_url }}" data-title="{% if page.title %}{{ page.title }} · {{ site.name }}{% else %}{{ site.name }} · {{ site.description }}{% endif %}" class="facebook">Facebook</div>
+						{% endif %}
+					</div>
+					<p>А еще можно подписаться на блог по <a href="{{ site.baseurl }}/feed" target="_blank"><b>RSS</b></a>.</p>
+					</noindex>
+				</div>
+			</div>
+			<div class="space-minus-h-mili-xs space-minus-bottom-mili-xs place-footer">
+				<label for="fsociety-{% if page.layout == 'default' %}{{ post.index | plus: 1 }}{% else %}{{ page.index | plus: 1 }}{% endif %}" class="item action">
+					Закрыть
+				</label>
+			</div>
+		</div>		
+	</div>
+</div>

@@ -3,12 +3,16 @@
 	<head>
 		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
 
+		<!--[ Meta ]-->
 		{% include _index/meta.html %}
-		<script type="text/javascript">base_url = "{{ site.url }}";</script>
 		
-		<!--[ CSS ] -->
+		<!--[ CSS ]-->
 		{% include_cached _index/style.html %}
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="{{ site.baseurl }}/static/js/jquery.js"></script>
+		<script type="text/javascript">base_url = "{{ site.url }}";</script>
 
 	</head>
 
-	<body {% if page.black == 'true' %}class="black"{% endif %}>
+	<body class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
