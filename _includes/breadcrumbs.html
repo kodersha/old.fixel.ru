@@ -5,20 +5,20 @@
 		{% assign position = position  | plus: 1 %}
 
 		{% if forloop.first %}
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">{{ site.name }}</span><meta property="position" content="{{ position }}" /></a>
 			</li>
 			{% continue %}
 		{% endif %}
 
 		{% if forloop.last %}
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" />
 			</li>
 			{% continue %}
 		{% endif %}
 
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+		<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 			<a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
 		</li>
 	{% endfor %}

@@ -6,26 +6,16 @@ layout: base_posts
 	
 	<h1>{{ page.title }}</h1>
 
-	<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
-		{% google_map width="100%" class="map" zoom="12" %}
-	</div>
-
 	{% if page.toc == "true" %}
 		<div class="toc js-toc"></div>
 	{% endif %}
 
 	{{ content | improve | extlinks }}
 			
-	<nav class="row actions">
-		<div class="col-xs-12 col-sm">
-			<time class="space-out-bottom-nano-xs space-out-right-nano-xs">{{ page.date | russian_date }}</time>
-		</div>
-		<div class="col-xs-12 col-sm-shrink">
-			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-{{ page.slug }}">Поделиться</label>
-		</div>
-	</nav>
-
-	{% include _post/likely.html %}
+    {% include _post/actions.html %}
+	{% include _post/comments.html %}
+    {% include _post/likely.html %}
+    
 </article>
 
 {% for c in site.works %}

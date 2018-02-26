@@ -124,7 +124,7 @@ $('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post [ca
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	
 	$('h1, h2, h3, h4, h5').addClass('hyphenate');
-
+	$('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post [caption], .post .caption').addClass('donthyphenate');
 }
 
 function selectorFunction() {

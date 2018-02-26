@@ -10,12 +10,12 @@
 	{% endif %}
 
 	<nav class="row actions">
-		<div class="col-xs-12">
-			<a class="link link-action space-out-bottom-nano-xs space-out-right-nano-xs" href="{{ post.url | prepend: site.baseurl }}"><time>{{ post.date | russian_date }}</time></a>
-
-			{% if post.categories %}
+		<div class="col-xs-12 col-sm-shrink space-in-bottom-nano-xs space-in-bottom-zero-sm">
+			<a class="link link-action" href="{{ post.url | prepend: site.baseurl }}"><time>{{ post.date | russian_date }}</time></a>
+			{% if post.categories.size > 0 %}
+				<span class="space-out-h-nano-xs">&#183;</span>
 				{% for category in post.categories %}								
-					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/">{{ category }}</a>
+					<a href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/">{{ category }}</a>
 				{% endfor %}
 			{% endif %}
 		</div>

@@ -268,20 +268,22 @@ header {
             z-index: 10;
         }
 
-        .frame {
-            position: absolute;
-            background-color: @black;
-            padding-right: 9999px;
-            margin-right: -9999px;
-            padding-left: 9999px;
-            margin-left: -9999px;
-            height: 100%;
-            width: 100%;
-            z-index: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            top: 0;
+        @media @xl {
+            .frame {
+                position: absolute;
+                background-color: @black;
+                padding-right: 9999px;
+                margin-right: -9999px;
+                padding-left: 9999px;
+                margin-left: -9999px;
+                height: 100%;
+                width: 100%;
+                z-index: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
         }
 
         @media @xl {
@@ -337,14 +339,25 @@ header {
         display: block;
     }
 
+    .tags, .actions {
+        font-size: @glob-font-size;
+        font-family: @glob-font;
+        color: @post-subtext;
+    }
+
+    .tags {
+        @media @xl {
+            grid-column: outer-left / inner-left;
+        }
+        margin-bottom: @post-bottom;
+        margin-top: @post-top;
+    }
+
     /* Actions */
 
 	.actions {
-        font-size: @glob-font-size;
-        font-family: @glob-font;
         margin-top: @post-top;
-        color: @post-subtext;
-        
+
         .link-action {
             .links-color(@post-subtext, @black, @post-subtext, @black, @post-subtext, 75%);
         }
@@ -446,6 +459,20 @@ header {
 
     .previous, .next {
         min-width: 85px;
+    }
+
+    @media @md {
+        .previous {
+            text-align: left;
+        }
+
+        .page-number {
+            text-align: center;
+        }
+
+        .next {
+            text-align: right;
+        }
     }
 }
 

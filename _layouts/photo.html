@@ -16,15 +16,8 @@ layout: base_posts
 
 	{{ content | improve | extlinks }}
 			
-	<nav class="row actions">
-		<div class="col-xs-12 col-sm">
-			<time class="space-out-bottom-nano-xs space-out-right-nano-xs">{{ page.date | russian_date }}</time>
-		</div>
-		<div class="col-xs-12 col-sm-shrink">
-			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-{{ page.slug }}">Поделиться</label>
-		</div>
-	</nav>
-
+    {% include _post/actions.html %}
+	{% include _post/comments.html %}
 	{% include _post/likely.html %}
 </article>
 
