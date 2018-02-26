@@ -66,12 +66,11 @@ header {
 
     /* Grid */
 
-    display: grid;
-
     @media @xl {
         grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' 0 ~'[aside-left]' @grid-aside ~'[main-left]' 0 ~'[inner-left]' @grid-inner ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[inner-right]' @grid-inner ~'[main-right]' 0 ~'[aside-right]' @grid-aside ~'[outer-right]' 0 ~'[edge-right]' @grid-edge ~'[right]' 0;
         max-width: @post-width;
         grid-auto-rows: auto;
+        display: grid;
         width: 100%;
 
         &>* {
