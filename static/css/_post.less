@@ -133,57 +133,6 @@
     }
 }
 
-[tags] {
-    margin-bottom: ~'calc('@post-bottom ~'- 5px)';
-    margin-top: @post-top;
-    display: table;
-
-    p {
-        background-color: #F4F6F8;
-        font-size: @glob-font-size;
-        font-family: @glob-font;
-        border-radius: 2px;
-        margin: 0 5px 5px 0;
-        padding: 8px 16px;
-        color: #7F8FA4;
-        text-align: left;
-        float: left;
-
-        @media @xl {
-            text-align: right;
-            float: right;
-        }
-
-        &.yellow {
-            background-color: #fff9cc;
-            color: #a97700;
-        }
-
-        &.green {
-            background-color: #ccffce;
-            color: #17a900;
-        }
-
-        &.blue {
-            background-color: #ccdeff;
-            color: #009fc7;
-        }
-
-        &.gary {
-            background-color: #a9b1b5;
-            color: #ffffff;
-        }
-
-        &.white {
-            background-color: transparent;
-        }
-    }
-
-    p:before, ol:not([class]):before, ul:not([class]):before {
-        width: auto;
-    }
-}
-
 /* aside */
 
 [aside], .aside,
