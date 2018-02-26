@@ -5,7 +5,7 @@ title: {{ page.title }}
 
 <h1 class="col-xs-12">{{ page.title }}</h1>
 
-<section class="col-xs-12 space-out-bottom-base-xs">
+<section class="col-xs-12">
 	{% for post in page.posts %}
 		<article class="space-out-bottom-pico-xs item">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
