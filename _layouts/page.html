@@ -2,41 +2,11 @@
 layout: base_blank
 ---
 
-<section class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-v-kilo-xl page">
-	<div class="cover">
-		<div class="glitch-img image" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('{{ page.cover }}');"></div>
-	</div>
+<section class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-v-kilo-xl page" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('{{ page.cover }}');">
 	<div class="home">
 		<a class="link-home" href="{{ site.baseurl }}/" title="Назад"><i class="fa fa-chevron-left"></i></a>
 	</div>
-	<article class="message">
+	<article class="space-in-v-kilo-xs message">
 		{{ content | improve | extlinks }}
 	</article>
 </section>
-
-<!--[ JS ]-->
-<script type="text/javascript" src="{{ site.baseurl }}/static/modules/mgglitch/mgglitch.js"></script>
-<script type="text/javascript">
-	$( function() {
-		$( ".glitch-img" ).mgGlitch({
-		// set 'true' to stop the plugin
-		destroy : false, 
-		// set 'false' to stop glitching
-		glitch: true, 
-		// set 'false' to stop scaling
-		scale: true, 
-		// set 'false' to stop glitch blending
-		blend : true, 
-		// select blend mode type
-		blendModeType : 'hue',
-		// set min time for glitch 1 elem
-		glitch1TimeMin : 200, 
-		// set max time for glitch 1 elem
-		glitch1TimeMax : 400,
-		// set min time for glitch 2 elem
-		glitch2TimeMin : 10, 
-		// set max time for glitch 2 elem
-		glitch2TimeMax : 100, 
-		});
-	});
-</script>
