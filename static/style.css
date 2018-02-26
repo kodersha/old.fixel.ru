@@ -9913,52 +9913,6 @@ header .search .dropdown .results li:last-of-type {
   height: auto;
   opacity: 1;
 }
-.post [tags] {
-  margin-bottom: calc( 24px - 5px);
-  margin-top: 16px;
-  display: table;
-}
-.post [tags] p {
-  background-color: #F4F6F8;
-  font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  border-radius: 2px;
-  margin: 0 5px 5px 0;
-  padding: 8px 16px;
-  color: #7F8FA4;
-  text-align: left;
-  float: left;
-}
-@media (min-width: 1200px) {
-  .post [tags] p {
-    text-align: right;
-    float: right;
-  }
-}
-.post [tags] p.yellow {
-  background-color: #fff9cc;
-  color: #a97700;
-}
-.post [tags] p.green {
-  background-color: #ccffce;
-  color: #17a900;
-}
-.post [tags] p.blue {
-  background-color: #ccdeff;
-  color: #009fc7;
-}
-.post [tags] p.gary {
-  background-color: #a9b1b5;
-  color: #ffffff;
-}
-.post [tags] p.white {
-  background-color: transparent;
-}
-.post [tags] p:before,
-.post [tags] ol:not([class]):before,
-.post [tags] ul:not([class]):before {
-  width: auto;
-}
 .post [aside],
 .post .aside,
 .post [aside-left],
