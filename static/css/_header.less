@@ -25,30 +25,44 @@
 .breadcrumbs {
     font-size: @glob-font-size;
     font-family: @glob-font;
+    min-height: 48px;
+    display: table;
+    height: 100%;
 
 	.breadcrumb {
-		list-style: none;
+        vertical-align: middle;
+        display: table-cell;
+        list-style: none;
 		padding: 0;
 		
-		&::after {
+		&:after {
 		  display: table;
           clear: both;
-		  content: "";
+		  content: '';
 		}
 		
 		&-item {
-            line-height: 32px;
+            line-height: normal;
 			float: left;
         }
 	}
 
-	.breadcrumb-item + .breadcrumb-item::before {
-		display: inline-block;
-		padding-right: 0.5rem;
-		padding-left: 0.5rem;
-        color: @action;
-		content: "/";
-	}
+    .breadcrumb-item {
+        padding-bottom: @nano;
+        padding-top: @nano;
+
+        &:after {
+            display: inline-block;
+            padding-right: @nano;
+            padding-left: @nano;
+            color: @action;
+            content: '/';
+        }
+
+        &:last-of-type:after {
+            content: none;
+        }
+    }
 }
 
 //

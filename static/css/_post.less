@@ -36,18 +36,20 @@
     position: relative;
 
     &.dark {
-        &::before {
-            position: absolute;
-            background-color: @black;
-            padding-right: 9999px;
-            margin-right: -9999px;
-            padding-left: 9999px;
-            margin-left: -9999px;
-            content: '';
-            bottom: 0;
-            right: 0;
-            left: 0;
-            top: 0;
+        @media @xl {
+            &::before {
+                position: absolute;
+                background-color: @black;
+                padding-right: 9999px;
+                margin-right: -9999px;
+                padding-left: 9999px;
+                margin-left: -9999px;
+                content: '';
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
         }
 
         .youtube {
@@ -192,7 +194,6 @@
     color: @post-subtext;
     position: relative;
     line-height: 1.25;
-    display: block;
 
     @media @xl {
         height: fit-content;

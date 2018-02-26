@@ -21,6 +21,13 @@ body {
     margin: 0;
 }
 
+@media @msm {
+    body {
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+}
+
 h1, h2, h3, h4, h5 {
     letter-spacing: -.01em;
 }
@@ -60,8 +67,6 @@ header {
     /* Grid */
 
     @media @xl {
-        .post-grid();
-
         grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' 0 ~'[aside-left]' @grid-aside ~'[main-left]' 0 ~'[inner-left]' @grid-inner ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[inner-right]' @grid-inner ~'[main-right]' 0 ~'[aside-right]' @grid-aside ~'[outer-right]' 0 ~'[edge-right]' @grid-edge ~'[right]' 0;
         max-width: @post-width;
         grid-auto-rows: auto;
@@ -71,6 +76,8 @@ header {
         &>* {
             grid-column: text-left / text-right;
         }
+
+        .post-grid();
     }
 
     /* title */
@@ -290,21 +297,23 @@ header {
         margin-top: @post-top;
         position: relative;
 
-        &:before {
-            content: '';
-            position: absolute;
-            background-color: #e5e3df;
-            padding-right: 9999px;
-            margin-right: -9999px;
-            padding-left: 9999px;
-            margin-left: -9999px;
-            height: 100%;
-            width: 100%;
-            z-index: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            top: 0;
+        @media @xl {
+            &:before {
+                content: '';
+                position: absolute;
+                background-color: #e5e3df;
+                padding-right: 9999px;
+                margin-right: -9999px;
+                padding-left: 9999px;
+                margin-left: -9999px;
+                height: 100%;
+                width: 100%;
+                z-index: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
         }
 
         @media @xl {

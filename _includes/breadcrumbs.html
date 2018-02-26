@@ -6,10 +6,7 @@
 
 		{% if forloop.first %}
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}">
-					<span property="name">{{ site.name }}</span>
-					<meta property="position" content="{{ position }}" />
-				</a>
+				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">{{ site.name }}</span><meta property="position" content="{{ position }}" /></a>
 			</li>
 			{% continue %}
 		{% endif %}

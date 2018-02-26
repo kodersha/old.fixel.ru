@@ -1,6 +1,6 @@
 <article class="space-out-v-mega-xs space-out-v-giga-sm space-auto-h-xl post">
 	<h1>
-		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a>
+		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</h1>
 
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
