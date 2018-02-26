@@ -123,7 +123,7 @@ $('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post [ca
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	
-	$('p, h1, h2, h3, h4, h5').attr('class','hyphenate');
+	$('h1, h2, h3, h4, h5').addClass('hyphenate');
 
 }
 
