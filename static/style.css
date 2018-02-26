@@ -8722,7 +8722,6 @@ header .search .dropdown .results li:last-of-type {
 }
 .post {
   /* Grid */
-  display: grid;
   /* title */
   /* Body */
   /* blockquote */
@@ -8806,6 +8805,7 @@ header .search .dropdown .results li:last-of-type {
     grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] 0 [aside-left] 1fr [main-left] 0 [inner-left] minmax(1rem, 2.5rem) [text-left] 0 [main] minmax(auto, 45rem) [text-right] 0 [inner-right] minmax(1rem, 2.5rem) [main-right] 0 [aside-right] 1fr [outer-right] 0 [edge-right] 2.5rem [right] 0;
     max-width: 1440px;
     grid-auto-rows: auto;
+    display: grid;
     width: 100%;
   }
   .post > * {
