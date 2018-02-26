@@ -64,7 +64,7 @@
 		
 
 		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Milkleaks</span><meta property="position" content="1" /></a>
 			</li>
 			
@@ -74,7 +74,7 @@
 
 		
 
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+		<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
 		</li>
 	
@@ -83,7 +83,7 @@
 		
 
 		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<span property="name">Уютный Jekyll</span><meta property="position" content="3" />
 			</li>
 			
@@ -117,6 +117,18 @@
 
 	
 
+	
+		<nav class="space-out-top-micro-xs space-out-bottom-zero-xs space-out-bottom-mili-md tags">
+			<span class="space-out-right-nano-xs">Теги:</span>
+			
+			
+				<a class="space-out-right-nano-xs link tag" href="/blog/tags/cms/"><span class="caps">CMS</span>,</a>
+			
+				<a class="space-out-right-nano-xs link tag" href="/blog/tags/jekyll/">Jekyll</a>
+			
+		</nav>
+	
+
 	<p>Внезапно, но блог сменил движок с <a href="/blog/egeya/">Эгеи</a> на Jekyll и тому было несколько причин. Во-первых, в блог я пишу не так часто, иногда и вовсе раз в несколько месяцев, поэтому нет смысла содержать полноценный хостинг. Во-вторых, Jekyll представляет собой статический сайт без какого-либо php и mysql, соответственно страницы загружаются если не моментально, то явно гораздо быстрее, в отличие от сайта на хостинге который, ко всему прочему, был не очень то быстр. В-третьих, Jekyll базируется на GitHub Pages, следовательно, не придется беспокоится об оплате хостинга, а сайт всегда будет доступен из репозитория.</p>
 
 <p><img src="https://res.cloudinary.com/milkleaks/image/upload/v1519057410/01_okpiiz.png" alt="Уютный Jekyll"></p>
@@ -124,32 +136,22 @@
 <p>Что же касается удобства пользования, Jekyll довольно прост в обращении. Установить его можно просто создав аккаунт на GitHub и сделав форк репозитория <a href="https://github.com/barryclark/jekyll-now" rel="nofollow" target="_blank">Jekyll now</a>. Для написания заметки в блог, достаточно создать файл с markdown разметкой, написать и оформить саму заметку, отправить ее на github. Админ-панели у Jekyll нет, но всегда можно воспользоваться <a href="http://prose.io" rel="nofollow" target="_blank">prose.io</a> или брутально написать пост прямо в notepad++. Если чукча дизайнер, а не программист и нет желания возиться с консолью и командами, то взаимодействовать с файлами блога можно через приложение <a href="https://desktop.github.com/" rel="nofollow" target="_blank">GitHub Desktop</a>. К слову, верстать шаблон для Jekyll гораздо легче чем для Эгеи, при том, что Jekyll дает куда большую свободу для оформления поста и самого сайта.</p>
 
 
-			
+
 	<nav class="row actions">
-		<div class="col-xs-12 col-sm">
-			<time class="space-out-bottom-nano-xs space-out-right-nano-xs">24 августа 2017</time>
+	<div class="col-xs-12 col-sm space-in-bottom-nano-xs space-in-bottom-zero-md">
+		<time>24 августа 2017</time>
+		
+			<span class="space-out-h-nano-xs">&#183;</span>
+											
+				<a href="/blog/categories/заметки/">Заметки</a>
 			
-			
-												
-					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/categories/заметки/">Заметки</a>
-				
-			
+		
+	</div>
 
-			
-				<span class="space-out-bottom-nano-xs space-out-right-nano-xs">&#183;</span>
-
-				
-				
-					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/cms/">CMS,</a>
-				
-					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/jekyll/">Jekyll</a>
-				
-			
-		</div>
-		<div class="col-xs-12 col-sm-shrink">
-			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-67">Поделиться</label>
-		</div>
-	</nav>
+	<div class="col-xs-12 col-sm-shrink space-in-top-nano-xs space-in-top-zero-md">
+		<label class="link link-action" title="Поделиться записью в соцсетях" for="fsociety-67">Поделиться</label>
+	</div>
+</nav>
 	
 <section class="space-out-top-mega-xs comments">
 	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-67">Комментировать</a></button>
@@ -162,7 +164,6 @@
 		var disqus_url = 'https://milkleaks.ru/blog/ujutnyj-jekyll/';
     </script>
 </section>
-
 
 	<div class="modal fsociety-67">
 	<input type="checkbox" class="modal-trigger" id="fsociety-67">
@@ -201,16 +202,16 @@
 </div>
 </article>
 
-<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
-	<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+<nav class="row row-between-sm space-out-h-kilo-xl space-out-v-mega-xs space-out-v-giga-sm pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-left-zero-xl previous">
 		
 			<a class="link" title="The Long Dark: Wintermute" href="/blog/the-long-dark-wintermute/">&larr; Ранее</a>
 		
 	</span>	
 
-	<span class="col-xs-shrink space-auto-h-xs page-number">Запись: 67 из 82</span>
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs page-number">Запись: 67 из 82</span>
 
-	<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-right-zero-xl next">
 		
 			<a class="link" title="Aseprite" href="/blog/aseprite/">Позднее &rarr;</a>
 		
@@ -218,47 +219,61 @@
 </nav>
 </section>
 
-<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
-	<div class="row row-middle-md space-in-bottom-mili-xs">
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-bottom-mili-xs">
+	<div class="row">
 		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
 
 		<div class="col-xs-12 space-in-bottom-mili-xs menu">
-			<nav class="row space-minus-h-nano-xs">
+			<nav class="row space-minus-h-nano-xs space-minus-v-nano-xs">
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link active" href="/blog/">Блог</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link active" href="/blog/">Блог</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/blog/all/">Все записи</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/blog/all/">Все записи</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/photo/">Фотографии</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/photo/">Фотографии</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/about/">Об авторе</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/about/">Об авторе</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/donate/">Поддержать</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/donate/">Поддержать</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+					</div>
 				
 			</nav>
 		</div>
 
-		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+		<div class="col-xs-12 col-sm-shrink copyright">
 			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
 			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
 		</div>
 
-		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
-			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md hidden-upto-sm">
+			<div class="scroll-to-top">
+				<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
 </footer>

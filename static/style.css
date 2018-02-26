@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'LatoWebHeavy', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebBlack', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: bolder;
 }
 h1 {
@@ -8585,10 +8585,6 @@ header .breadcrumbs .breadcrumb-item {
   line-height: normal;
   float: left;
 }
-header .breadcrumbs .breadcrumb-item {
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
 header .breadcrumbs .breadcrumb-item:after {
   display: inline-block;
   padding-right: 8px;
@@ -8849,7 +8845,7 @@ header .search .dropdown .results li:last-of-type {
 }
 .post hr {
   font-size: 1.4rem;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   margin-bottom: 24px;
   margin-top: 16px;
   text-align: center;
@@ -8984,20 +8980,22 @@ header .search .dropdown .results li:last-of-type {
   width: 100%;
   z-index: 10;
 }
-.post .cover .frame {
-  position: absolute;
-  background-color: #000000;
-  padding-right: 9999px;
-  margin-right: -9999px;
-  padding-left: 9999px;
-  margin-left: -9999px;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
+@media (min-width: 1200px) {
+  .post .cover .frame {
+    position: absolute;
+    background-color: #000000;
+    padding-right: 9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    margin-left: -9999px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
 }
 @media (min-width: 1200px) {
   .post .cover {
@@ -9067,11 +9065,23 @@ header .search .dropdown .results li:last-of-type {
   color: #000000;
   text-decoration-color: rgba(0, 0, 0, 0);
 }
+.post .tags,
 .post .actions {
   font-size: 1rem;
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  margin-top: 16px;
   color: rgba(0, 0, 0, 0.76);
+}
+.post .tags {
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .post .tags {
+    grid-column: outer-left / inner-left;
+  }
+}
+.post .actions {
+  margin-top: 16px;
 }
 .post .actions .link-action,
 .post .actions .link-action:link {
@@ -9119,28 +9129,20 @@ header .search .dropdown .results li:last-of-type {
 .post .toc {
   margin-bottom: 24px;
   margin-top: 16px;
-  position: relative;
-  overflow-y: auto;
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .post .toc {
-    grid-column: outer-left / inner-left !important;
-  }
 }
 .post .toc > ul {
-  position: relative;
-  overflow: hidden;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .post .toc > ul {
+    padding: 0;
+  }
 }
 .post .toc li {
   font-size: 1rem;
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   list-style: decimal;
-  line-height: 1.25;
-}
-.post .toc-list {
-  max-width: 100% !important;
-  margin: 0;
+  line-height: 1.4;
 }
 .post .toc-link,
 .post .toc-link:link {
@@ -9491,7 +9493,7 @@ header .search .dropdown .results li:last-of-type {
   color: #999;
   width: 100%;
   text-align: left;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   background-color: #bbb;
   border-radius: 4px 4px 0 0;
 }
@@ -9887,7 +9889,7 @@ header .search .dropdown .results li:last-of-type {
 .post [caption],
 .post .caption {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   color: rgba(0, 0, 0, 0.76);
   line-height: 1.4;
   margin-bottom: 24px;
@@ -9919,7 +9921,7 @@ header .search .dropdown .results li:last-of-type {
 .post [tags] p {
   background-color: #F4F6F8;
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   border-radius: 2px;
   margin: 0 5px 5px 0;
   padding: 8px 16px;
@@ -9962,7 +9964,7 @@ header .search .dropdown .results li:last-of-type {
 .post [aside-left],
 .post .aside-left {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   max-width: 45rem;
   color: rgba(0, 0, 0, 0.76);
   position: relative;
@@ -10062,7 +10064,7 @@ header .search .dropdown .results li:last-of-type {
   content: '● ● ●';
   border-radius: 2px 2px 0 0;
   background-color: #bbb;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   line-height: 20px;
   padding: 2px 10px;
   text-align: left;
@@ -10163,6 +10165,17 @@ header .search .dropdown .results li:last-of-type {
 .pagination .previous,
 .pagination .next {
   min-width: 85px;
+}
+@media (min-width: 768px) {
+  .pagination .previous {
+    text-align: left;
+  }
+  .pagination .page-number {
+    text-align: center;
+  }
+  .pagination .next {
+    text-align: right;
+  }
 }
 .divider .line {
   background-color: rgba(0, 0, 0, 0.05);

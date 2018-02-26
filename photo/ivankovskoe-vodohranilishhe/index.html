@@ -218,7 +218,7 @@ if (typeof Object.assign !== 'function') {
 		
 
 		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Milkleaks</span><meta property="position" content="1" /></a>
 			</li>
 			
@@ -228,7 +228,7 @@ if (typeof Object.assign !== 'function') {
 
 		
 
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+		<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 			<a property="item" typeof="WebPage" href="/photo/"><span property="name">Фотографии</span><meta property="position" content="2" /></a>
 		</li>
 	
@@ -237,7 +237,7 @@ if (typeof Object.assign !== 'function') {
 		
 
 		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<span property="name">Иваньковское водохранилище</span><meta property="position" content="3" />
 			</li>
 			
@@ -266,10 +266,10 @@ if (typeof Object.assign !== 'function') {
 	<h1>Иваньковское водохранилище</h1>
 
 	<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
-		<div id='264448be-de23-4803-930d-194b2b8e1015' style='width:100%;height:400px;' class='map'></div>
+		<div id='c9cdf4ba-bfde-456c-8592-7209e4da1768' style='width:100%;height:400px;' class='map'></div>
 <script type='text/javascript'>
   jekyllMaps.register(
-    '264448be-de23-4803-930d-194b2b8e1015',
+    'c9cdf4ba-bfde-456c-8592-7209e4da1768',
     [{"latitude":56.5990938,"longitude":36.3508798,"title":"Иваньковское водохранилище","url":"/photo/ivankovskoe-vodohranilishhe/","image":""}],
     {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"customZoom":12}
   );
@@ -303,14 +303,28 @@ if (typeof Object.assign !== 'function') {
 
 
 			
-	<nav class="row actions">
-		<div class="col-xs-12 col-sm">
-			<time class="space-out-bottom-nano-xs space-out-right-nano-xs"> 1 июня 2014</time>
-		</div>
-		<div class="col-xs-12 col-sm-shrink">
-			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-ivankovskoe-vodohranilishhe">Поделиться</label>
-		</div>
-	</nav>
+    <nav class="row actions">
+	<div class="col-xs-12 col-sm space-in-bottom-nano-xs space-in-bottom-zero-md">
+		<time> 1 июня 2014</time>
+		
+	</div>
+
+	<div class="col-xs-12 col-sm-shrink space-in-top-nano-xs space-in-top-zero-md">
+		<label class="link link-action" title="Поделиться записью в соцсетях" for="fsociety-1">Поделиться</label>
+	</div>
+</nav>
+	
+<section class="space-out-top-mega-xs comments">
+	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-1">Комментировать</a></button>
+	<a class="anchor" id="comments"></a>
+	<div id="disqus_thread" class="thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'milkleaks-ru';
+		var disqus_identifier = 'disqus-1';
+		var disqus_title = 'Иваньковское водохранилище · Milkleaks';
+		var disqus_url = 'https://milkleaks.ru/photo/ivankovskoe-vodohranilishhe/';
+    </script>
+</section>
 
 	<div class="modal fsociety-1">
 	<input type="checkbox" class="modal-trigger" id="fsociety-1">
@@ -365,47 +379,61 @@ if (typeof Object.assign !== 'function') {
 </nav>
 </section>
 
-<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
-	<div class="row row-middle-md space-in-bottom-mili-xs">
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-bottom-mili-xs">
+	<div class="row">
 		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
 
 		<div class="col-xs-12 space-in-bottom-mili-xs menu">
-			<nav class="row space-minus-h-nano-xs">
+			<nav class="row space-minus-h-nano-xs space-minus-v-nano-xs">
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link active" href="/blog/">Блог</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link active" href="/blog/">Блог</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/blog/all/">Все записи</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/blog/all/">Все записи</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/photo/">Фотографии</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/photo/">Фотографии</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/about/">Об авторе</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/about/">Об авторе</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/donate/">Поддержать</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/donate/">Поддержать</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+					</div>
 				
 			</nav>
 		</div>
 
-		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+		<div class="col-xs-12 col-sm-shrink copyright">
 			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
 			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
 		</div>
 
-		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
-			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md hidden-upto-sm">
+			<div class="scroll-to-top">
+				<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
 </footer>

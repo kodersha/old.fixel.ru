@@ -64,7 +64,7 @@
 		
 
 		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Milkleaks</span><meta property="position" content="1" /></a>
 			</li>
 			
@@ -74,7 +74,7 @@
 
 		
 
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+		<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
 		</li>
 	
@@ -83,7 +83,7 @@
 		
 
 		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<span property="name">Эгея</span><meta property="position" content="3" />
 			</li>
 			
@@ -117,6 +117,16 @@
 
 	
 
+	
+		<nav class="space-out-top-micro-xs space-out-bottom-zero-xs space-out-bottom-mili-md tags">
+			<span class="space-out-right-nano-xs">Теги:</span>
+			
+			
+				<a class="space-out-right-nano-xs link tag" href="/blog/tags/cms/"><span class="caps">CMS</span></a>
+			
+		</nav>
+	
+
 	<p>В который раз блог сменил домен и переехал. На этот раз с tumblr’a на отечественную, блоговую <span class="caps">CMS</span> под названием e2, она же Эгея. Эгея понравилась в первую очередь своей легковесностью, быстротой и незаурядностью функционала. В чистом виде она занимает чуть больше мегабайта, но по функционалу не уступает тому же tumblr’у. Хостинг не нагружает, страницы загружаются за секунды, а структура базы данных проста как газета «Правда». Редактор постов не имеет визуализации но понимает html и markdown, точнее нечто на него похожее. У публикаций имеются теги и своя форма комментариев без регистрации и СМС. Панели администратора в <span class="caps">CMS</span> и вовсе нет, лишь отдельная страница с несколькими настройками и выбором шаблона. В сравнении с каким нибудь wordpress, движок Эгеи выигрывает с точки зрения юзабилити и скорости работы, особенно если нужен блог, а не тяжеловесный медиа-портал.</p>
 
 <p>К сожалению Эгея не слишком популярна и ее дальнейшая судьба не ясна. Обновления выходят редко, примерно раз в год, а сообщество скорее мертво, чем живо. Большинство блогов работающих когда-то на Эгее перестали обновляться, уже исчезли, либо вовсе сменили <span class="caps">CMS</span> на ghost или нечто похожее. Расширений, шаблонов и прочих дополнений у Эгеи толком нет, как нет сообщества поддержки и внятной документации. Разумеется нужно учитывать, что Эгея разрабатывается всего одним человеком, а сам движок бесплатен для некоммерческих блогов, оттого и неспешность в разработке, ибо автор ваяет движок скорее для себя, чем для массового потребителя.</p>
@@ -124,30 +134,22 @@
 <p><strong><span class="caps">UPD</span></strong>: Теперь блог работает на <a href="/blog/ujutnyj-jekyll/">Jekyll</a>.</p>
 
 
-			
+
 	<nav class="row actions">
-		<div class="col-xs-12 col-sm">
-			<time class="space-out-bottom-nano-xs space-out-right-nano-xs">26 октября 2016</time>
+	<div class="col-xs-12 col-sm space-in-bottom-nano-xs space-in-bottom-zero-md">
+		<time>26 октября 2016</time>
+		
+			<span class="space-out-h-nano-xs">&#183;</span>
+											
+				<a href="/blog/categories/заметки/">Заметки</a>
 			
-			
-												
-					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/categories/заметки/">Заметки</a>
-				
-			
+		
+	</div>
 
-			
-				<span class="space-out-bottom-nano-xs space-out-right-nano-xs">&#183;</span>
-
-				
-				
-					<a class="space-out-bottom-nano-xs space-out-right-nano-xs link" href="/blog/tags/cms/">CMS</a>
-				
-			
-		</div>
-		<div class="col-xs-12 col-sm-shrink">
-			<label class="space-out-bottom-nano-xs link link-action" title="Поделиться записью в соцсетях" for="fsociety-55">Поделиться</label>
-		</div>
-	</nav>
+	<div class="col-xs-12 col-sm-shrink space-in-top-nano-xs space-in-top-zero-md">
+		<label class="link link-action" title="Поделиться записью в соцсетях" for="fsociety-55">Поделиться</label>
+	</div>
+</nav>
 	
 <section class="space-out-top-mega-xs comments">
 	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-55">Комментировать</a></button>
@@ -160,7 +162,6 @@
 		var disqus_url = 'https://milkleaks.ru/blog/egeya/';
     </script>
 </section>
-
 
 	<div class="modal fsociety-55">
 	<input type="checkbox" class="modal-trigger" id="fsociety-55">
@@ -199,16 +200,16 @@
 </div>
 </article>
 
-<nav class="row row-middle-md space-out-bottom-mega-xs space-out-bottom-giga-lg space-out-h-kilo-xl pagination">
-	<span class="col-xs-shrink space-auto-right-xs space-in-h-zero-xl previous">
+<nav class="row row-between-sm space-out-h-kilo-xl space-out-v-mega-xs space-out-v-giga-sm pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-left-zero-xl previous">
 		
 			<a class="link" title="No Man’s Sky" href="/blog/no-mans-sky/">&larr; Ранее</a>
 		
 	</span>	
 
-	<span class="col-xs-shrink space-auto-h-xs page-number">Запись: 55 из 82</span>
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs page-number">Запись: 55 из 82</span>
 
-	<span class="col-xs-shrink space-auto-left-xs space-in-h-zero-xl next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-right-zero-xl next">
 		
 			<a class="link" title="Мод «Red Rocket Extended»" href="/blog/mod-red-rocket-extended/">Позднее &rarr;</a>
 		
@@ -216,47 +217,61 @@
 </nav>
 </section>
 
-<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
-	<div class="row row-middle-md space-in-bottom-mili-xs">
+<footer class="space-minus-h-mili-xs space-minus-h-base-sm space-minus-h-kilo-xl space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-bottom-mili-xs">
+	<div class="row">
 		<div class="col-xs-12 space-in-bottom-mili-xs divider"><div class="line"></div></div>
 
 		<div class="col-xs-12 space-in-bottom-mili-xs menu">
-			<nav class="row space-minus-h-nano-xs">
+			<nav class="row space-minus-h-nano-xs space-minus-v-nano-xs">
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link active" href="/blog/">Блог</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link active" href="/blog/">Блог</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/blog/all/">Все записи</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/blog/all/">Все записи</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/photo/">Фотографии</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/photo/">Фотографии</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/about/">Об авторе</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/about/">Об авторе</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="/donate/">Поддержать</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="/donate/">Поддержать</a>
+					</div>
 				
 					
 					
-					<a class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-v-nano-xs space-out-h-nano-xs link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+					<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
+						<a class="link " href="http://steambuy.com/partner/milkleaks">Магазин игр</a>
+					</div>
 				
 			</nav>
 		</div>
 
-		<div class="col-sm-shrink col-xs-12 col-xl-8 copyright">
+		<div class="col-xs-12 col-sm-shrink copyright">
 			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
 			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
 		</div>
 
-		<div class="col-xs-12 col-xl-4 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md scroll-to-top">
-			<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md hidden-upto-sm">
+			<div class="scroll-to-top">
+				<a class="link link-subcontrol"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
 </footer>
