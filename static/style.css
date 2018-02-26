@@ -8521,13 +8521,6 @@ body {
     line-height: 1.4;
   }
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  letter-spacing: -0.01em;
-}
 input,
 textarea,
 select,
@@ -8610,7 +8603,7 @@ header .search .search-form {
   width: 48px;
 }
 header .search .search-form .search-box {
-  font-size: 0.8rem;
+  font-size: 1rem;
   background: transparent;
   visibility: hidden;
   padding-right: 48px;
