@@ -8515,6 +8515,12 @@ body {
   cursor: default;
   margin: 0;
 }
+@media (max-width: 576px) {
+  body {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+}
 h1,
 h2,
 h3,
@@ -8560,26 +8566,38 @@ header .logo .logo-icon {
 header .breadcrumbs {
   font-size: 1rem;
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  min-height: 48px;
+  display: table;
+  height: 100%;
 }
 header .breadcrumbs .breadcrumb {
+  vertical-align: middle;
+  display: table-cell;
   list-style: none;
   padding: 0;
 }
-header .breadcrumbs .breadcrumb::after {
+header .breadcrumbs .breadcrumb:after {
   display: table;
   clear: both;
-  content: "";
+  content: '';
 }
 header .breadcrumbs .breadcrumb-item {
-  line-height: 32px;
+  line-height: normal;
   float: left;
 }
-header .breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+header .breadcrumbs .breadcrumb-item {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+header .breadcrumbs .breadcrumb-item:after {
   display: inline-block;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 8px;
+  padding-left: 8px;
   color: #f1f3f4;
-  content: "/";
+  content: '/';
+}
+header .breadcrumbs .breadcrumb-item:last-of-type:after {
+  content: none;
 }
 header .search {
   position: relative;
@@ -8992,21 +9010,23 @@ header .search .dropdown .results li:last-of-type {
   margin-top: 16px;
   position: relative;
 }
-.post .google-maps:before {
-  content: '';
-  position: absolute;
-  background-color: #e5e3df;
-  padding-right: 9999px;
-  margin-right: -9999px;
-  padding-left: 9999px;
-  margin-left: -9999px;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
+@media (min-width: 1200px) {
+  .post .google-maps:before {
+    content: '';
+    position: absolute;
+    background-color: #e5e3df;
+    padding-right: 9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    margin-left: -9999px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
 }
 @media (min-width: 1200px) {
   .post .google-maps {
@@ -9797,20 +9817,22 @@ header .search .dropdown .results li:last-of-type {
 .post [frame] {
   position: relative;
 }
-.post [outer].dark::before,
-.post [full].dark::before,
-.post [frame].dark::before {
-  position: absolute;
-  background-color: #000000;
-  padding-right: 9999px;
-  margin-right: -9999px;
-  padding-left: 9999px;
-  margin-left: -9999px;
-  content: '';
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
+@media (min-width: 1200px) {
+  .post [outer].dark::before,
+  .post [full].dark::before,
+  .post [frame].dark::before {
+    position: absolute;
+    background-color: #000000;
+    padding-right: 9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    margin-left: -9999px;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
 }
 .post [outer].dark .youtube,
 .post [full].dark .youtube,
@@ -9945,7 +9967,6 @@ header .search .dropdown .results li:last-of-type {
   color: rgba(0, 0, 0, 0.76);
   position: relative;
   line-height: 1.25;
-  display: block;
 }
 @media (min-width: 1200px) {
   .post [aside],
