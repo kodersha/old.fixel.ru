@@ -41,10 +41,7 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
-
-		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
 	<script type='text/javascript'>
   /* global google */
@@ -266,10 +263,10 @@ if (typeof Object.assign !== 'function') {
 	<h1>Иваньковское водохранилище</h1>
 
 	<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
-		<div id='fbe9cc82-9738-4276-8e9b-0dccce64ce80' style='width:100%;height:400px;' class='map'></div>
+		<div id='b5a44938-b693-4919-aa93-16e12d7b3fda' style='width:100%;height:400px;' class='map'></div>
 <script type='text/javascript'>
   jekyllMaps.register(
-    'fbe9cc82-9738-4276-8e9b-0dccce64ce80',
+    'b5a44938-b693-4919-aa93-16e12d7b3fda',
     [{"latitude":56.5990938,"longitude":36.3508798,"title":"Иваньковское водохранилище","url":"/photo/ivankovskoe-vodohranilishhe/","image":""}],
     {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"customZoom":12}
   );
@@ -314,16 +311,23 @@ if (typeof Object.assign !== 'function') {
 	</div>
 </nav>
 	
-<section class="space-out-top-mega-xs comments">
+<section class="space-out-top-mega-xs space-out-top-giga-md comments">
 	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-1">Комментировать</a></button>
 	<a class="anchor" id="comments"></a>
 	<div id="disqus_thread" class="thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'milkleaks-ru';
+	<script type="text/javascript">
+		var disqus_shortname = 'milkleaks-ru';
 		var disqus_identifier = 'disqus-1';
 		var disqus_title = 'Иваньковское водохранилище · Milkleaks';
 		var disqus_url = 'https://milkleaks.ru/photo/ivankovskoe-vodohranilishhe/';
-    </script>
+
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+		}());
+	</script>
 </section>
 
 	<div class="modal fsociety-1">
@@ -442,6 +446,7 @@ if (typeof Object.assign !== 'function') {
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
@@ -452,17 +457,6 @@ if (typeof Object.assign !== 'function') {
 <script type="text/javascript" src="/static/modules/likely/likely.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
-	
-		<!--[ Disqus ]-->
-		<script type="text/javascript">
-			var disqus_shortname = 'milkleaks-ru';
-			(function () {
-				var s = document.createElement('script'); s.async = true;
-				s.type = 'text/javascript';
-				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-			}());
-		</script>
-
+		
 	</body>
 </html>

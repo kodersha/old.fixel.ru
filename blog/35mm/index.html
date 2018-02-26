@@ -11,13 +11,13 @@
 	<meta name="robots" content="index, follow" />
 	
 	<meta name="title" content="35mm · Milkleaks" />
-	<meta name="description" content="Инди-проект российского разработчика Сергея Носкова, автора таких игр как «Поезд» и «Свет». Как и предыдущие игры автора, 35mm являет собой атомсферный симулятор ходьбы с элементами квеста и хоррора. Однако в сравнении с предыдущими играми здесь виден куда больший творческий размах — почти открытый мир, обширные локации, озвученные персонажи, несколько концовок..."/>
+	<meta name="description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
 	<meta name="keywords" content="Игры, Постапокалипсис, История, Квест, Экшен, Инди, " />
 	
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:title" content="35mm · Milkleaks" />
-	<meta property="og:description" content="Инди-проект российского разработчика Сергея Носкова, автора таких игр как «Поезд» и «Свет». Как и предыдущие игры автора, 35mm являет собой атомсферный симулятор ходьбы с элементами квеста и хоррора. Однако в сравнении с предыдущими играми здесь виден куда больший творческий размах — почти открытый мир, обширные локации, озвученные персонажи, несколько концовок..."/>
+	<meta property="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
 	<meta property="og:url" content="https://milkleaks.ru/blog/35mm/">
     <meta property="og:locale" content="ru">
 	<meta property="og:image" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519220895/cover_f16ldw.jpg" />
@@ -26,7 +26,7 @@
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="35mm · Milkleaks">
-	<meta name="twitter:description" content="Инди-проект российского разработчика Сергея Носкова, автора таких игр как «Поезд» и «Свет». Как и предыдущие игры автора, 35mm являет собой атомсферный симулятор ходьбы с элементами квеста и хоррора. Однако в сравнении с предыдущими играми здесь виден куда больший творческий размах — почти открытый мир, обширные локации, озвученные персонажи, несколько концовок...">
+	<meta name="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
 	<meta name="twitter:image:src" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519220895/cover_f16ldw.jpg">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/35mm/">
 	<meta name="twitter:domain" content="https://milkleaks.ru">
@@ -41,10 +41,7 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
-
-		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
 	</head>
 
@@ -174,16 +171,23 @@
 	</div>
 </nav>
 	
-<section class="space-out-top-mega-xs comments">
+<section class="space-out-top-mega-xs space-out-top-giga-md comments">
 	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-50">Комментировать</a></button>
 	<a class="anchor" id="comments"></a>
 	<div id="disqus_thread" class="thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'milkleaks-ru';
+	<script type="text/javascript">
+		var disqus_shortname = 'milkleaks-ru';
 		var disqus_identifier = 'disqus-50';
 		var disqus_title = '35mm · Milkleaks';
 		var disqus_url = 'https://milkleaks.ru/blog/35mm/';
-    </script>
+
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+		}());
+	</script>
 </section>
 
 	<div class="modal fsociety-50">
@@ -303,6 +307,7 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
@@ -313,17 +318,6 @@
 <script type="text/javascript" src="/static/modules/likely/likely.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
-	
-		<!--[ Disqus ]-->
-		<script type="text/javascript">
-			var disqus_shortname = 'milkleaks-ru';
-			(function () {
-				var s = document.createElement('script'); s.async = true;
-				s.type = 'text/javascript';
-				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-			}());
-		</script>
-
+		
 	</body>
 </html>

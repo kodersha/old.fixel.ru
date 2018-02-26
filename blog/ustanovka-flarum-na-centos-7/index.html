@@ -11,13 +11,13 @@
 	<meta name="robots" content="index, follow" />
 	
 	<meta name="title" content="Установка flarum на centOS · Milkleaks" />
-	<meta name="description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии,..."/>
+	<meta name="description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
 	<meta name="keywords" content="Веб, Гайд, " />
 	
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:title" content="Установка flarum на centOS · Milkleaks" />
-	<meta property="og:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии,..."/>
+	<meta property="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
 	<meta property="og:url" content="https://milkleaks.ru/blog/ustanovka-flarum-na-centos-7/">
     <meta property="og:locale" content="ru">
 	<meta property="og:image" content="" />
@@ -26,7 +26,7 @@
 	
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Установка flarum на centOS · Milkleaks">
-	<meta name="twitter:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии,...">
+	<meta name="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
 	<meta name="twitter:image:src" content="">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/ustanovka-flarum-na-centos-7/">
 	<meta name="twitter:domain" content="https://milkleaks.ru">
@@ -41,10 +41,7 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
-
-		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
 	</head>
 
@@ -254,16 +251,23 @@
 	</div>
 </nav>
 	
-<section class="space-out-top-mega-xs comments">
+<section class="space-out-top-mega-xs space-out-top-giga-md comments">
 	<button id="comment" class="space-auto-h-xl slider"><a class="link-button" data-disqus-identifier="disqus-40">Комментировать</a></button>
 	<a class="anchor" id="comments"></a>
 	<div id="disqus_thread" class="thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'milkleaks-ru';
+	<script type="text/javascript">
+		var disqus_shortname = 'milkleaks-ru';
 		var disqus_identifier = 'disqus-40';
 		var disqus_title = 'Установка flarum на centOS · Milkleaks';
 		var disqus_url = 'https://milkleaks.ru/blog/ustanovka-flarum-na-centos-7/';
-    </script>
+
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+		}());
+	</script>
 </section>
 
 	<div class="modal fsociety-40">
@@ -383,6 +387,7 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
@@ -393,17 +398,6 @@
 <script type="text/javascript" src="/static/modules/likely/likely.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
-	
-		<!--[ Disqus ]-->
-		<script type="text/javascript">
-			var disqus_shortname = 'milkleaks-ru';
-			(function () {
-				var s = document.createElement('script'); s.async = true;
-				s.type = 'text/javascript';
-				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-			}());
-		</script>
-
+		
 	</body>
 </html>

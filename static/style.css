@@ -10087,7 +10087,10 @@ header .search .dropdown .results li:last-of-type {
   display: block;
 }
 .page {
+  background-position: center center;
+  background-repeat: no-repeat;
   background-color: #000000;
+  background-size: cover;
   position: absolute;
   display: table;
   height: 100vh;
@@ -10096,24 +10099,6 @@ header .search .dropdown .results li:last-of-type {
   right: 0;
   left: 0;
   top: 0;
-}
-.page .cover {
-  position: absolute;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-}
-.page .cover .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
 }
 .page .message {
   -webkit-animation: fadeUpIn 1s;

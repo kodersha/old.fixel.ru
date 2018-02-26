@@ -41,23 +41,17 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
-
-		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 
 	</head>
 
 	<body class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl">
 
-	<section class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-v-kilo-xl page">
-	<div class="cover">
-		<div class="glitch-img image" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('/static/images/about.jpg');"></div>
-	</div>
+	<section class="space-in-h-mili-xs space-in-h-base-sm space-in-h-kilo-xl space-in-v-kilo-xl page" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('/static/images/about.jpg');">
 	<div class="home">
 		<a class="link-home" href="/" title="Назад"><i class="fa fa-chevron-left"></i></a>
 	</div>
-	<article class="message">
+	<article class="space-in-v-kilo-xs message">
 		<h1 id="привет">Привет</h1>
 
 <p>Меня зовут Александра Травкина.</p>
@@ -74,38 +68,12 @@
 	</article>
 </section>
 
-<!--[ JS ]-->
-<script type="text/javascript" src="/static/modules/mgglitch/mgglitch.js"></script>
-<script type="text/javascript">
-	$( function() {
-		$( ".glitch-img" ).mgGlitch({
-		// set 'true' to stop the plugin
-		destroy : false, 
-		// set 'false' to stop glitching
-		glitch: true, 
-		// set 'false' to stop scaling
-		scale: true, 
-		// set 'false' to stop glitch blending
-		blend : true, 
-		// select blend mode type
-		blendModeType : 'hue',
-		// set min time for glitch 1 elem
-		glitch1TimeMin : 200, 
-		// set max time for glitch 1 elem
-		glitch1TimeMax : 400,
-		// set min time for glitch 2 elem
-		glitch2TimeMin : 10, 
-		// set max time for glitch 2 elem
-		glitch2TimeMax : 100, 
-		});
-	});
-</script>
-
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
@@ -116,17 +84,6 @@
 <script type="text/javascript" src="/static/modules/likely/likely.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
-	
-		<!--[ Disqus ]-->
-		<script type="text/javascript">
-			var disqus_shortname = 'milkleaks-ru';
-			(function () {
-				var s = document.createElement('script'); s.async = true;
-				s.type = 'text/javascript';
-				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
-			}());
-		</script>
-
+		
 	</body>
 </html>
