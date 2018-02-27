@@ -8538,23 +8538,6 @@ button {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-header .logo {
-  text-align: left;
-  display: block;
-  height: 48px;
-  width: auto;
-  margin: 0;
-}
-header .logo .logo-icon {
-  background-image: url('../static/images/logo.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 30px;
-  position: relative;
-  display: block;
-  height: 48px;
-  width: 32px;
-}
 header .search {
   position: relative;
 }
@@ -8678,6 +8661,215 @@ header .search .dropdown .results li:last-of-type {
   }
   header .search .dropdown .results {
     display: block;
+  }
+}
+header .logo {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  height: 48px;
+  width: 48px;
+}
+@media (min-width: 768px) {
+  header .logo {
+    margin: 0;
+  }
+}
+header .logo a {
+  text-decoration: none;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  height: 48px;
+  width: 48px;
+}
+header .logo a span {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  position: absolute;
+  display: block;
+  height: 48px;
+  width: 48px;
+}
+header .logo a span:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #4183c4;
+  border-radius: 20px;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  content: '';
+}
+header .logo .cdunn {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  height: 48px;
+  width: 38px;
+}
+header .logo .cdunn .cdunn-path {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  height: 48px;
+  width: 38px;
+}
+header .logo.animate a span {
+  -webkit-animation: easeInElastic 0.35s forwards;
+  animation: easeInElastic 0.35s forwards;
+}
+header .logo.animate a .cdunn {
+  -webkit-animation: easeOutElasticVisible 0.5s forwards;
+  animation: easeOutElasticVisible 0.5s forwards;
+}
+header .logo.animate a:focus span,
+header .logo.animate a:hover span {
+  -webkit-animation: easeOutElastic 0.5s forwards;
+  animation: easeOutElastic 0.5s forwards;
+}
+header .logo.animate a:focus .cdunn,
+header .logo.animate a:hover .cdunn {
+  -webkit-animation: easeInElasticVisible 0.35s forwards;
+  animation: easeInElasticVisible 0.35s forwards;
+}
+header .logo.animate a:focus .cdunn .cdunn-path,
+header .logo.animate a:hover .cdunn .cdunn-path {
+  fill: #fff;
+}
+@-webkit-keyframes easeInElastic {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.135);
+    transform: scale(1.135);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@keyframes easeInElastic {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.135);
+    transform: scale(1.135);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes easeInElasticVisible {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.135);
+    transform: scale(1.135);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+@keyframes easeInElasticVisible {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.135);
+    transform: scale(1.135);
+  }
+  100% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+@-webkit-keyframes easeOutElastic {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  60% {
+    -webkit-transform: scale(1.135);
+    transform: scale(1.135);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes easeOutElastic {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  60% {
+    -webkit-transform: scale(1.135);
+    transform: scale(1.135);
+  }
+  80% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes easeOutElasticVisible {
+  0% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  20% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  40% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes easeOutElasticVisible {
+  0% {
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  20% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  40% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 .post {
