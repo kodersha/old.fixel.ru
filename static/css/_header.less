@@ -189,7 +189,7 @@
                 -ms-transform: rotate(45deg);
                 -o-transform: rotate(45deg);
                 transform: rotate(45deg);
-                background-color: rgba(0, 0, 0, 0.84);
+                background-color: @black;
                 border-radius: 50%;
                 position: absolute;
                 height: 44px;
@@ -201,14 +201,14 @@
         }
     }
 
-    .cdunn {
+    .logotype {
         -webkit-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
         position: relative;
         height: 40px;
         width: 40px;
 
-        .cdunn-path {
+        &-path {
             -webkit-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
             position: absolute;
@@ -224,7 +224,7 @@
                 animation: easeInElastic 0.35s forwards;
             }
 
-            .cdunn {
+            .logotype {
                 -webkit-animation: easeOutElasticVisible 0.5s forwards;
                 animation: easeOutElasticVisible 0.5s forwards;
             }
@@ -235,12 +235,12 @@
                     animation: easeOutElastic 0.5s forwards;                    
                 }
 
-                .cdunn {
+                .logotype {
                     -webkit-animation: easeInElasticVisible 0.35s forwards;
                     animation: easeInElasticVisible 0.35s forwards;
 
-                    .cdunn-path {
-                        fill: #fff;
+                    &-path {
+                        fill: @white;
                     }
                 }
             }
