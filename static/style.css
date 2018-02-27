@@ -8667,8 +8667,8 @@ header .logo {
   position: relative;
   margin: 0 auto;
   display: block;
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
 }
 @media (min-width: 768px) {
   header .logo {
@@ -8681,8 +8681,8 @@ header .logo a {
   cursor: pointer;
   display: block;
   outline: none;
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
 }
 header .logo a span {
   -webkit-transform: scale(0);
@@ -8692,8 +8692,8 @@ header .logo a span {
   transform: scale(0);
   position: absolute;
   display: block;
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
 }
 header .logo a span:before {
   -webkit-transform: rotate(45deg);
@@ -8701,26 +8701,28 @@ header .logo a span:before {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #4183c4;
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.84);
+  border-radius: 50%;
   position: absolute;
-  height: 48px;
-  width: 48px;
+  height: 44px;
+  width: 44px;
+  left: -2px;
+  top: -2px;
   content: '';
 }
 header .logo .cdunn {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: relative;
-  height: 48px;
-  width: 38px;
+  height: 40px;
+  width: 40px;
 }
 header .logo .cdunn .cdunn-path {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: absolute;
-  height: 48px;
-  width: 38px;
+  height: 40px;
+  width: 40px;
 }
 header .logo.animate a span {
   -webkit-animation: easeInElastic 0.35s forwards;
