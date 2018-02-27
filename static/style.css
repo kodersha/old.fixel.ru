@@ -9019,6 +9019,14 @@ header .logo.animate a:hover .logotype .logotype-path {
   position: relative;
   content: "⌘ ⌘ ⌘";
 }
+.post hr.easy {
+  background-color: #f1f1f1;
+  height: 1px;
+  width: 100%;
+}
+.post hr.easy::before {
+  content: none;
+}
 .post figure {
   margin-bottom: 0;
   margin-right: 0;
@@ -9039,6 +9047,7 @@ header .logo.animate a:hover .logotype .logotype-path {
   margin-right: 0;
   margin-left: 0;
   margin-top: 16px;
+  font-style: italic;
   position: relative;
   line-height: 1.4;
   max-width: 100%;
@@ -9072,6 +9081,9 @@ header .logo.animate a:hover .logotype .logotype-path {
 .post > .picture.aside img {
   margin-bottom: 24px;
   margin-top: 0;
+}
+.post > .picture.left img {
+  margin-left: 0;
 }
 .post > .picture img {
   margin-bottom: 0;
@@ -9906,12 +9918,6 @@ header .logo.animate a:hover .logotype .logotype-path {
     max-width: 374px;
   }
 }
-.post .modal .place-content p:first-of-type {
-  margin-bottom: 0;
-}
-.post .modal .place-content .likely {
-  margin-bottom: 0;
-}
 .post .modal .place-content .likely .likely__widget {
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   border-radius: 2px;
@@ -10059,20 +10065,6 @@ header .logo.animate a:hover .logotype .logotype-path {
 .post [caption].center,
 .post .caption.center {
   text-align: center;
-}
-.post [pic] img {
-  transition: visibility 0s, opacity 0.3s ease-in-out;
-  visibility: hidden;
-  display: block;
-  width: auto;
-  opacity: 0;
-  height: 0;
-}
-.post [pic]:hover img {
-  visibility: visible;
-  margin: 0.5em 0 1em;
-  height: auto;
-  opacity: 1;
 }
 .post [aside],
 .post .aside,
