@@ -6,7 +6,7 @@
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
 
 	{% if post.content contains '<!-- more -->' %}
-		<a class="link-readmore" href="{{ post.url | prepend: site.baseurl }}#more" title="Читать далее">&bull; &bull; &bull;</a>
+		<a class="link-readmore" href="{{ post.url | prepend: site.baseurl }}#more" title="Читать далее">&bull;&bull;&bull;</a>
 	{% endif %}
 
 	<nav class="row actions">
