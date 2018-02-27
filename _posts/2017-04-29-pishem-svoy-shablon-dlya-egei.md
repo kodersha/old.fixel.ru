@@ -42,127 +42,237 @@ tags:
 
 ## Шаблоны
 
-Теперь стоит подробнее разобрать содержимое папки `../system/theme/templates` стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты, наводите мышью на заголовки для их отображения.
+Теперь стоит подробнее разобрать содержимое папки `../system/theme/templates` стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты.
 
-<div block>
-    <div pic>
-        <mark>author-menu.tmpl.php</mark> — Меню автора.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/01_u94w7j.png"/>
-    </div>
-    <div pic>
-        <mark>comments-heading.tmpl.php</mark> — Заголовок списка комментариев с счетчиком их количества.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/02_dqegcp.png"/>
-    </div>
-    <div pic>
-        <mark>comments.tmpl.php</mark> — Список комментариев.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/03_oiureh.png"/>
-    </div>
-    <div pic>
-        <mark>drafts.tmpl.php</mark> — Список черновиков.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/04_gegc6o.png"/>
-    </div>
-    <div pic>
-        <mark>form-comment.tmpl.php</mark> — Форма комментирования.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/05_iffrnu.png"/>
-    </div>
-    <div pic>
-        <mark>form-database.tmpl.php</mark> — Форма подключения к базе данных.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/06_yor8w5.png"/>
-    </div>
-    <div pic>
-        <mark>form-install.tmpl.php</mark> — Форма установки Эгеи.
-    </div>
-    <div pic>
-        <mark>form-login.tmpl.php</mark> — Форма авторизации.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/07_tyqwia.png"/>
-    </div>
-    <div pic>
-        <mark>form-note-delete.tmpl.php</mark> — Форма удаления поста.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/08_qujnf6.png"/>
-    </div>
-    <div pic>
-        <mark>form-note-publish.tmpl.php</mark> — Кнопка публикации поста.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/09_li03z6.png"/>
-    </div>
-    <div pic>
-        <mark>form-note.tmpl.php</mark> — Форма публикации поста.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/10_ufuc0b.png"/>
-    </div>
-    <div pic>
-        <mark>form-password.tmpl.php</mark> — Форма смены админ-пароля.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/11_hhe2au.png"/>
-    </div>
-    <div pic>
-        <mark>form-preferences.tmpl.php</mark> — Форма общих настроек блога.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/13_i8udli.png"/>
-    </div>
-    <div pic>
-        <mark>form-tag-delete.tmpl.php</mark> — Форма удаления тега.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/14_jwipj8.png"/>
-    </div>
-    <div pic>
-        <mark>form-tag.tmpl.php</mark> — Форма редактирования тега.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/15_p02lox.png"/>
-    </div>
-    <div pic>
-        <mark>head.tmpl.php</mark> — Метатеги в head.
-    </div>
-    <div pic>
-        <mark>heading.tmpl.php</mark> — Заголовки.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/16_sxxqud.png"/>
-    </div>
-    <div pic>
-        <mark>init-script.tmpl.php</mark> — Подключение дополнительных скриптов.
-    </div>
-    <div pic>
-        <mark>layout.tmpl.php</mark> — Основная разметка шаблона внтури body.
-    </div>
-    <div pic>
-        <mark>login-element.tmpl.php</mark> — Кнопка авторизации.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/17_gtjx4a.png"/>
-    </div>
-    <div pic>
-        <mark>main.tmpl.php</mark> — Общая разметка, подключение скриптов.
-    </div>
-    <div pic>
-        <mark>notes-list.tmpl.php</mark> — Список избранных постов.
-    </div>
-    <div pic>
-        <mark>notes.tmpl.php</mark> — Шаблон поста. Заголовок, текст, дата, теги, ссылка на комментарии.
-    </div>
-    <div pic>
-        <mark>pages-earlier.tmpl.php</mark> — Кнопка к постам «Ранее».
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/18_z1fn67.png"/>
-    </div>
-    <div pic>
-        <mark>pages-later.tmpl.php</mark> — Кнопка к постам «Позднее».
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/19_twa7wi.png"/>
-    </div>
-    <div pic>
-        <mark>pages.tmpl.php</mark> — Навигация между постами.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055161/20_vsrib7.png"/>
-    </div>
-    <div pic>
-        <mark>popular.tmpl.php</mark> — Блок популярных постов.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/21_ukwlhu.png"/>
-    </div>
-    <div pic>
-        <mark>search.tmpl.php</mark> — Форма поиска и теги.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/22_r7lfmw.png"/>
-    </div>
-    <div pic>
-        <mark>tags-menu.tmpl.php</mark> — Список избранных тегов.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/23_lbl7ii.png"/>
-    </div>
-    <div pic>
-        <mark>tags.tmpl.php</mark> — Страница тегов.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055161/24_fldmsy.png"/>
-    </div>
-    <div pic>
-        <mark>user-picture.tmpl.php</mark> — Аватар блога.
-        <img src="https://res.cloudinary.com/milkleaks/image/upload/v1519055161/25_zw1ide.png"/>
-    </div>
-</div>
+---
+{: .easy}
+
+`author-menu.tmpl.php` — Меню автора.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/01_u94w7j.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`comments-heading.tmpl.php` — Заголовок списка комментариев с счетчиком их количества.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/02_dqegcp.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`comments.tmpl.php` — Список комментариев.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/03_oiureh.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`drafts.tmpl.php` — Список черновиков.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/04_gegc6o.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-comment.tmpl.php` — Форма комментирования.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/05_iffrnu.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-database.tmpl.php` — Форма подключения к базе данных.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/06_yor8w5.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-install.tmpl.php` — Форма установки Эгеи.
+
+---
+{: .easy}
+
+`form-login.tmpl.php` — Форма авторизации.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/07_tyqwia.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-note-delete.tmpl.php` — Форма удаления поста.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/08_qujnf6.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-note-publish.tmpl.php` — Кнопка публикации поста.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/09_li03z6.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-note.tmpl.php` — Форма публикации поста.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/10_ufuc0b.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-password.tmpl.php` — Форма смены админ-пароля.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/11_hhe2au.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-preferences.tmpl.php` — Форма общих настроек блога.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/13_i8udli.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-tag-delete.tmpl.php` — Форма удаления тега.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/14_jwipj8.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`form-tag.tmpl.php` — Форма редактирования тега.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/15_p02lox.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`head.tmpl.php` — Метатеги в head.
+
+---
+{: .easy}
+
+`heading.tmpl.php` — Заголовки.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/16_sxxqud.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`init-script.tmpl.php` — Подключение дополнительных скриптов.
+
+---
+{: .easy}
+
+`layout.tmpl.php` — Основная разметка шаблона внтури body.
+
+---
+{: .easy}
+
+`login-element.tmpl.php` — Кнопка авторизации.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/17_gtjx4a.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`main.tmpl.php` — Общая разметка, подключение скриптов.
+
+---
+{: .easy}
+
+`notes-list.tmpl.php` — Список избранных постов.
+
+---
+{: .easy}
+
+`notes.tmpl.php` — Шаблон поста. Заголовок, текст, дата, теги, ссылка на комментарии.
+
+---
+{: .easy}
+
+`pages-earlier.tmpl.php` — Кнопка к постам «Ранее».
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/18_z1fn67.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`pages-later.tmpl.php` — Кнопка к постам «Позднее».
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/19_twa7wi.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`pages.tmpl.php` — Навигация между постами.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055161/20_vsrib7.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`popular.tmpl.php` — Блок популярных постов.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/21_ukwlhu.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`search.tmpl.php` — Форма поиска и теги.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/22_r7lfmw.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`tags-menu.tmpl.php` — Список избранных тегов.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/23_lbl7ii.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`tags.tmpl.php` — Страница тегов.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055161/24_fldmsy.png)
+{: .wrap .left}
+
+---
+{: .easy}
+
+`user-blockture.tmpl.php` — Аватар блога.
+
+![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055161/25_zw1ide.png)
+{: .wrap .left}
+
+---
+{: .easy}
 
 Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы `../system/theme/templates` в папку `templates` вашего шаблона и уже там производите все изменения.
 

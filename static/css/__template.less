@@ -110,6 +110,16 @@ header {
             position: relative;
             content: "⌘ ⌘ ⌘";
         }
+
+        &.easy {
+            background-color: #f1f1f1;
+            height: 1px;
+            width: 100%;
+
+            &::before {
+                content: none;
+            }
+        }
     }
 
     figure {
@@ -135,6 +145,7 @@ header {
         margin-right: 0;
         margin-left: 0;
         margin-top: @post-top;
+        font-style: italic;
         position: relative;
         line-height: 1.4;
         max-width: 100%;
@@ -175,6 +186,12 @@ header {
             img {
                 margin-bottom: @post-bottom;
                 margin-top: 0;
+            }
+        }
+
+        &.left {
+            img {
+                margin-left: 0;
             }
         }
 
