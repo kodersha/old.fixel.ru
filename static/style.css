@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'LatoWebHeavy', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: bolder;
 }
 h1 {
@@ -8525,7 +8525,7 @@ input,
 textarea,
 select,
 button {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 h1,
 h2,
@@ -8631,7 +8631,7 @@ header .search.open .dropdown .results {
 }
 header .search .dropdown {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   visibility: hidden;
   position: relative;
   display: none;
@@ -8679,7 +8679,7 @@ header .logo {
 }
 @media (min-width: 768px) {
   header .logo {
-    margin: 0;
+    margin: 0 0 0 2px;
   }
 }
 header .logo a {
@@ -8703,11 +8703,6 @@ header .logo a span {
   width: 40px;
 }
 header .logo a span:before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
   background-color: #000000;
   border-radius: 50%;
   position: absolute;
@@ -8978,12 +8973,12 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .post .link-title,
 .post .link-title:link {
-  color: #000000;
-  text-decoration-color: rgba(0, 0, 0, 0);
+  color: #111111;
+  text-decoration-color: rgba(17, 17, 17, 0);
 }
 .post .link-title:visited {
-  color: #000000;
-  text-decoration-color: rgba(0, 0, 0, 0);
+  color: #111111;
+  text-decoration-color: rgba(17, 17, 17, 0);
 }
 .post .link-title:hover,
 .post .link-title:focus {
@@ -8996,8 +8991,8 @@ header .logo.animate a:hover .logotype .logotype-path {
   text-decoration-color: rgba(51, 51, 51, 0);
 }
 .post .link-title:active {
-  color: #000000;
-  text-decoration-color: rgba(0, 0, 0, 0);
+  color: #111111;
+  text-decoration-color: rgba(17, 17, 17, 0);
 }
 .post p {
   margin-bottom: 24px;
@@ -9209,11 +9204,11 @@ header .logo.animate a:hover .logotype .logotype-path {
   min-height: 350px;
 }
 .post .link-readmore {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   margin-bottom: 24px;
   margin-top: 16px;
   text-decoration: none;
-  display: block;
+  display: table;
 }
 .post .link-readmore,
 .post .link-readmore:link {
@@ -9241,7 +9236,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 .post .tags,
 .post .actions {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   color: rgba(0, 0, 0, 0.76);
 }
 .post .tags {
@@ -9293,7 +9288,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .post .related {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .post .related ul {
   list-style: none;
@@ -9313,7 +9308,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .post .toc li {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: decimal;
   line-height: 1.4;
 }
@@ -9904,7 +9899,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .post .modal .place {
   background-color: #ffffff;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   border-radius: 2px;
   overflow: hidden;
@@ -9919,7 +9914,7 @@ header .logo.animate a:hover .logotype .logotype-path {
   }
 }
 .post .modal .place-content .likely .likely__widget {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   border-radius: 2px;
   padding: 3px 6px;
   height: auto;
@@ -10056,7 +10051,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 .post [caption],
 .post .caption {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   color: rgba(0, 0, 0, 0.76);
   line-height: 1.4;
   margin-bottom: 24px;
@@ -10071,7 +10066,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 .post [aside-left],
 .post .aside-left {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   max-width: 45rem;
   color: rgba(0, 0, 0, 0.76);
   position: relative;
@@ -10113,11 +10108,12 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .blog section .item {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  margin-bottom: 2px;
 }
 .blog section .link-readmore {
   font-size: 0.7rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   text-transform: none;
   display: inline-block;
 }
@@ -10145,7 +10141,7 @@ header .logo.animate a:hover .logotype .logotype-path {
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 .photos .item {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -10163,7 +10159,7 @@ header .logo.animate a:hover .logotype .logotype-path {
   display: block;
 }
 .works .item {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -10251,7 +10247,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .pagination {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.25;
 }
 .pagination .previous,
@@ -10271,7 +10267,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .breadcrumbs {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   height: 100%;
 }
 .breadcrumbs .breadcrumb {
@@ -10309,7 +10305,7 @@ button {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   vertical-align: middle;
   position: relative;
   background: none;
@@ -10393,7 +10389,7 @@ button.slider .link-button:active {
   border-radius: 50px !important;
   border: 2px solid #4183c4;
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   text-decoration: none;
   overflow: hidden;
   padding: 1em 2em;
@@ -10403,13 +10399,13 @@ button.slider .link-button:active {
 }
 footer .copyright {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   color: #333333;
   line-height: 1.25;
 }
 footer .menu {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 footer .scroll-to-top {
   display: none;
