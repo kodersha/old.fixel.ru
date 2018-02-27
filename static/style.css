@@ -8708,7 +8708,7 @@ header .logo a span:before {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: rgba(0, 0, 0, 0.84);
+  background-color: #000000;
   border-radius: 50%;
   position: absolute;
   height: 44px;
@@ -8717,14 +8717,14 @@ header .logo a span:before {
   top: -2px;
   content: '';
 }
-header .logo .cdunn {
+header .logo .logotype {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: relative;
   height: 40px;
   width: 40px;
 }
-header .logo .cdunn .cdunn-path {
+header .logo .logotype-path {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: absolute;
@@ -8735,7 +8735,7 @@ header .logo.animate a span {
   -webkit-animation: easeInElastic 0.35s forwards;
   animation: easeInElastic 0.35s forwards;
 }
-header .logo.animate a .cdunn {
+header .logo.animate a .logotype {
   -webkit-animation: easeOutElasticVisible 0.5s forwards;
   animation: easeOutElasticVisible 0.5s forwards;
 }
@@ -8744,14 +8744,14 @@ header .logo.animate a:hover span {
   -webkit-animation: easeOutElastic 0.5s forwards;
   animation: easeOutElastic 0.5s forwards;
 }
-header .logo.animate a:focus .cdunn,
-header .logo.animate a:hover .cdunn {
+header .logo.animate a:focus .logotype,
+header .logo.animate a:hover .logotype {
   -webkit-animation: easeInElasticVisible 0.35s forwards;
   animation: easeInElasticVisible 0.35s forwards;
 }
-header .logo.animate a:focus .cdunn .cdunn-path,
-header .logo.animate a:hover .cdunn .cdunn-path {
-  fill: #fff;
+header .logo.animate a:focus .logotype-path,
+header .logo.animate a:hover .logotype-path {
+  fill: #ffffff;
 }
 @-webkit-keyframes easeInElastic {
   0% {
