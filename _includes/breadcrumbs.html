@@ -1,24 +1,24 @@
-<nav class="col-xs-12 col-sm-shrink breadcrumbs">
-	<ol class="breadcrumb space-out-v-nano-xs" vocab="http://schema.org/" typeof="BreadcrumbList">
+<nav class="space-in-bottom-mili-xs breadcrumbs">
+	<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
 	{% assign position = 0 %}
 	{% for crumbitem in breadcrumbs %}
 		{% assign position = position  | plus: 1 %}
 
 		{% if forloop.first %}
-			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">{{ site.name }}</span><meta property="position" content="{{ position }}" /></a>
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">Главная</span><meta property="position" content="{{ position }}" /></a>
 			</li>
 			{% continue %}
 		{% endif %}
 
 		{% if forloop.last %}
-			<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" />
 			</li>
 			{% continue %}
 		{% endif %}
 
-		<li class="space-in-v-nano-xs breadcrumb-item" property="itemListElement" typeof="ListItem">
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 			<a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
 		</li>
 	{% endfor %}
