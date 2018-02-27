@@ -8724,7 +8724,7 @@ header .logo .logotype {
   height: 40px;
   width: 40px;
 }
-header .logo .logotype-path {
+header .logo .logotype .logotype-path {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: absolute;
@@ -8749,8 +8749,8 @@ header .logo.animate a:hover .logotype {
   -webkit-animation: easeInElasticVisible 0.35s forwards;
   animation: easeInElasticVisible 0.35s forwards;
 }
-header .logo.animate a:focus .logotype-path,
-header .logo.animate a:hover .logotype-path {
+header .logo.animate a:focus .logotype .logotype-path,
+header .logo.animate a:hover .logotype .logotype-path {
   fill: #ffffff;
 }
 @-webkit-keyframes easeInElastic {
