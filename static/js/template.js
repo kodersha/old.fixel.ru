@@ -26,7 +26,7 @@ lightbox.option({
 
 /* highlight */
 
-$( '[full]' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg');
+$( '[full]' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl');
 
 /* Настраиваем fotorama */
 
