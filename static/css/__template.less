@@ -61,7 +61,6 @@ header {
 //
 
 .post {
-
     .post-settings();
 
     /* Grid */
@@ -165,26 +164,6 @@ header {
 
     .picture {
         position: relative;
-
-        &.lazyload,
-        &.lazyloading {
-            &:before {
-                animation-name: rotate;
-                animation-duration: 0.6s;
-                animation-iteration-count: infinite;
-                background-color: @action;
-                position: absolute;
-                margin-left: -10px;
-                margin-top: -10px;
-                display: block;
-                content: '';
-                z-index: -1;
-                height: 20px;
-                width: 20px;
-                left: 50%;
-                top: 50%;
-            }
-        }
         
         img {
             text-indent: -9999px;
@@ -324,26 +303,6 @@ header {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
         position: relative;
-
-        &.lazyload,
-        &.lazyloading {
-            &:before {
-                animation-name: rotate;
-                animation-duration: 0.6s;
-                animation-iteration-count: infinite;
-                background-color: #a9b1b5;
-                position: absolute;
-                margin-left: -10px;
-                margin-top: -10px;
-                display: block;
-                content: '';
-                z-index: 5;
-                height: 20px;
-                width: 20px;
-                left: 50%;
-                top: 50%;
-            }
-        }
 
         img {
             position: relative;
@@ -521,6 +480,30 @@ header {
 
     @import (less) "../static/css/_post.less";
 
+    &.slide-up-fade-in {
+        animation: slide-up-fade-in ease 1s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
+        animation-fill-mode:forwards; /*when the spec is finished*/
+        -webkit-animation: slide-up-fade-in ease 1s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+        -moz-animation: slide-up-fade-in ease 1s;
+        -moz-animation-iteration-count: 1;
+        -moz-transform-origin: 50% 50%;
+        -moz-animation-fill-mode:forwards; /*FF 5+*/
+        -o-animation: slide-up-fade-in ease 1s;
+        -o-animation-iteration-count: 1;
+        -o-transform-origin: 50% 50%;
+        -o-animation-fill-mode:forwards; /*Not implemented yet*/
+        -ms-animation: slide-up-fade-in ease 1s;
+        -ms-animation-iteration-count: 1;
+        -ms-transform-origin: 50% 50%;
+        -ms-animation-fill-mode:forwards; /*IE 10+*/
+        opacity:0;
+        opacity: 1\9;
+    }
 }
 
 //
@@ -740,33 +723,4 @@ footer {
 //
 
 @import (less) "../static/css/_links.less";
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes rotate {
-	0% { transform: rotate(0deg); }
-	70%, 100% { transform: rotate(90deg); }
-}
+@import (less) "../static/css/_animations.less";
