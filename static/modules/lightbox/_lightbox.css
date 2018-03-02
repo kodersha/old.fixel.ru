@@ -38,7 +38,7 @@ body.lb-disable-scrolling {
     height: auto;
     max-width: inherit;
     max-height: none;
-    border-radius: 2px
+    border-radius: 2px;
 }
 
 .lb-dataContainer:after,

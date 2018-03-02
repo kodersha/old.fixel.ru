@@ -83,7 +83,7 @@ header {
     /* title */
 
     .link-title {
-        .links-color(@lightBlack, @darkerGray, @lightBlack, @darkerGray, @lightBlack, 100%);
+        .links-color(@black, @darkerGray, @black, @darkerGray, @black, 100%);
         text-decoration: none;
     }
 
@@ -164,8 +164,44 @@ header {
     /* picture */
 
     .picture {
+        position: relative;
+
+        &.lazyload,
+        &.lazyloading {
+            &:before {
+                animation-name: rotate;
+                animation-duration: 0.6s;
+                animation-iteration-count: infinite;
+                background-color: @action;
+                position: absolute;
+                margin-left: -10px;
+                margin-top: -10px;
+                display: block;
+                content: '';
+                z-index: -1;
+                height: 20px;
+                width: 20px;
+                left: 50%;
+                top: 50%;
+            }
+        }
+        
         img {
+            text-indent: -9999px;
             border-radius: 2px;
+
+            &.lazyload,
+            &.lazyloading {
+                opacity: 0;
+            }
+        
+            &.lazyloaded {
+                -webkit-animation: fadein @fadeInSpeed;
+                -moz-animation: fadein @fadeInSpeed;
+                -ms-animation: fadein @fadeInSpeed;
+                -o-animation: fadein @fadeInSpeed;
+                animation: fadein @fadeInSpeed;
+            }          
         }
     }
 
@@ -218,6 +254,19 @@ header {
             max-width: 100%;
             display: block;
             width: 100%;
+
+            &.lazyload,
+            &.lazyloading {
+                opacity: 0;
+            }
+        
+            &.lazyloaded {
+                -webkit-animation: fadein @fadeInSpeed;
+                -moz-animation: fadein @fadeInSpeed;
+                -ms-animation: fadein @fadeInSpeed;
+                -o-animation: fadein @fadeInSpeed;
+                animation: fadein @fadeInSpeed;
+            }
         }
 
         .play {
@@ -276,23 +325,61 @@ header {
         margin-top: @post-top;
         position: relative;
 
+        &.lazyload,
+        &.lazyloading {
+            &:before {
+                animation-name: rotate;
+                animation-duration: 0.6s;
+                animation-iteration-count: infinite;
+                background-color: #a9b1b5;
+                position: absolute;
+                margin-left: -10px;
+                margin-top: -10px;
+                display: block;
+                content: '';
+                z-index: 5;
+                height: 20px;
+                width: 20px;
+                left: 50%;
+                top: 50%;
+            }
+        }
+
         img {
             position: relative;
             object-fit: cover;
-            min-height: 350px;
-            height: 60vh;
+            min-height: 100vh;
+            height: 100vh;
             width: 100%;
             z-index: 10;
+
+            @media @md {
+                min-height: 60vh;
+                height: 60vh;
+            }
+
+            &.lazyload,
+            &.lazyloading {
+                opacity: 0;
+            }
+        
+            &.lazyloaded {
+                -webkit-animation: fadein @fadeInSpeed;
+                -moz-animation: fadein @fadeInSpeed;
+                -ms-animation: fadein @fadeInSpeed;
+                -o-animation: fadein @fadeInSpeed;
+                animation: fadein @fadeInSpeed;
+            }
         }
 
         @media @xl {
             .frame {
-                position: absolute;
-                background-color: @black;
+                background-color: @action;
                 padding-right: 9999px;
                 margin-right: -9999px;
                 padding-left: 9999px;
                 margin-left: -9999px;
+                position: absolute;
                 height: 100%;
                 width: 100%;
                 z-index: 0;
@@ -340,8 +427,11 @@ header {
         }
 
         .map {
-            height: 60vh !important;
-            min-height: 350px;
+            height: 100vh !important;
+
+            @media @md {
+                height: 60vh;
+            }
         }
     }
 
@@ -540,7 +630,7 @@ header {
 
 .divider {
     .line {
-        background-color: rgba(0,0,0,.05);
+        background-color: rgba(0, 0, 0, 0.05);
         margin: 0 auto;
         border: none;
         height: 1px;
@@ -650,3 +740,33 @@ footer {
 //
 
 @import (less) "../static/css/_links.less";
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	70%, 100% { transform: rotate(90deg); }
+}

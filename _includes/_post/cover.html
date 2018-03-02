@@ -1,8 +1,9 @@
 {% unless page.header == "true" %}
 	{% if page.cover %}
-		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover">
+		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover lazyload preloader">
 			<div class="hidden-upto-xl frame"></div>
-			<img alt="{{ page.title }}" src="https://res.cloudinary.com/{{ site.cloudinary.cloud_name }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}">
+			<img alt="{{ page.title }}" data-src="https://res.cloudinary.com/{{ site.cloudinary.cloud_name }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}" class="lazyload">
+			<noscript><img src="https://res.cloudinary.com/{{ site.cloudinary.cloud_name }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}" /></noscript>
 		</div>
 	{% endif %}
 {% endunless %}
