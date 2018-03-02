@@ -22,12 +22,6 @@ $(function() {
 
 /* Добавляем lightbox к изображениям */
 
-$( ".post p img" ).parent().addClass( 'picture' );
-
-$('.picture img').wrap(function() {
-	return "<a href='" + $( this ).attr("src") + "' data-lightbox='image' class='image'></a>";	
-});
-
 lightbox.option({
 	'resizeDuration': 0,
 	'fadeDuration': 300,
@@ -38,9 +32,9 @@ lightbox.option({
 	'showImageNumberLabel': false
 });
 
-/* highlight */
-
-$( '[full]' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl');
+window.lazySizesConfig = {
+	addClasses: true
+};
 
 /* Настраиваем fotorama */
 
@@ -55,7 +49,8 @@ $('.post .fotorama').fotorama({
 /* Подменяем youtube плеер картинкой */
 
 $(".post .youtube").each(function() {
-	$(this).append($('<img/>', {'src': 'https://img.youtube.com/vi/' + this.id + '/maxresdefault.jpg', 'class': 'maxresdefault'}));
+	$(this).append($('<img/>', {'data-src': 'https://img.youtube.com/vi/' + this.id + '/maxresdefault.jpg', 'class': 'maxresdefault lazyload'}));
+	$(this).append( "<noscript><img src='https://img.youtube.com/vi/" + this.id + "/maxresdefault.jpg' class='maxresdefault' /></noscript>" );
 	$(this).append($('<div/>', {'class': 'play'}));
 
 	$(document).delegate('#'+this.id, 'click', function() {

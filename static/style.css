@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'LatoWebHeavy', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: bolder;
 }
 h1 {
@@ -8973,12 +8973,12 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .post .link-title,
 .post .link-title:link {
-  color: #111111;
-  text-decoration-color: rgba(17, 17, 17, 0);
+  color: #000000;
+  text-decoration-color: rgba(0, 0, 0, 0);
 }
 .post .link-title:visited {
-  color: #111111;
-  text-decoration-color: rgba(17, 17, 17, 0);
+  color: #000000;
+  text-decoration-color: rgba(0, 0, 0, 0);
 }
 .post .link-title:hover,
 .post .link-title:focus {
@@ -8991,8 +8991,8 @@ header .logo.animate a:hover .logotype .logotype-path {
   text-decoration-color: rgba(51, 51, 51, 0);
 }
 .post .link-title:active {
-  color: #111111;
-  text-decoration-color: rgba(17, 17, 17, 0);
+  color: #000000;
+  text-decoration-color: rgba(0, 0, 0, 0);
 }
 .post p {
   margin-bottom: 24px;
@@ -9057,8 +9057,40 @@ header .logo.animate a:hover .logotype .logotype-path {
     font-size: 1.6rem;
   }
 }
+.post .picture {
+  position: relative;
+}
+.post .picture.lazyload:before,
+.post .picture.lazyloading:before {
+  animation-name: rotate;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  background-color: #f1f3f4;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
+  content: '';
+  z-index: -1;
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+}
 .post .picture img {
+  text-indent: -9999px;
   border-radius: 2px;
+}
+.post .picture img.lazyload,
+.post .picture img.lazyloading {
+  opacity: 0;
+}
+.post .picture img.lazyloaded {
+  -webkit-animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  -ms-animation: fadein 0.3s;
+  -o-animation: fadein 0.3s;
+  animation: fadein 0.3s;
 }
 .post > .picture {
   max-width: initial;
@@ -9100,6 +9132,17 @@ header .logo.animate a:hover .logotype .logotype-path {
   display: block;
   width: 100%;
 }
+.post .youtube img.lazyload,
+.post .youtube img.lazyloading {
+  opacity: 0;
+}
+.post .youtube img.lazyloaded {
+  -webkit-animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  -ms-animation: fadein 0.3s;
+  -o-animation: fadein 0.3s;
+  animation: fadein 0.3s;
+}
 .post .youtube .play {
   background: url('../static/images/youtube-play-btn.png') no-repeat;
   -webkit-background-size: 100% auto;
@@ -9140,22 +9183,56 @@ header .logo.animate a:hover .logotype .logotype-path {
   margin-top: 16px;
   position: relative;
 }
+.post .cover.lazyload:before,
+.post .cover.lazyloading:before {
+  animation-name: rotate;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  background-color: #a9b1b5;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -10px;
+  display: block;
+  content: '';
+  z-index: 5;
+  height: 20px;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+}
 .post .cover img {
   position: relative;
   object-fit: cover;
-  min-height: 350px;
-  height: 60vh;
+  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   z-index: 10;
 }
+@media (min-width: 768px) {
+  .post .cover img {
+    min-height: 60vh;
+    height: 60vh;
+  }
+}
+.post .cover img.lazyload,
+.post .cover img.lazyloading {
+  opacity: 0;
+}
+.post .cover img.lazyloaded {
+  -webkit-animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  -ms-animation: fadein 0.3s;
+  -o-animation: fadein 0.3s;
+  animation: fadein 0.3s;
+}
 @media (min-width: 1200px) {
   .post .cover .frame {
-    position: absolute;
-    background-color: #000000;
+    background-color: #f1f3f4;
     padding-right: 9999px;
     margin-right: -9999px;
     padding-left: 9999px;
     margin-left: -9999px;
+    position: absolute;
     height: 100%;
     width: 100%;
     z-index: 0;
@@ -9200,8 +9277,12 @@ header .logo.animate a:hover .logotype .logotype-path {
   }
 }
 .post .google-maps .map {
-  height: 60vh !important;
-  min-height: 350px;
+  height: 100vh !important;
+}
+@media (min-width: 768px) {
+  .post .google-maps .map {
+    height: 60vh;
+  }
 }
 .post .link-readmore {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -10438,6 +10519,55 @@ footer .scroll-to-top .show {
 .link-subcontrol:active {
   color: #333333;
   text-decoration-color: rgba(51, 51, 51, 0.25);
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  70%,
+  100% {
+    transform: rotate(90deg);
+  }
 }
 /*!
 * Bettertext

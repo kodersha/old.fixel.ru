@@ -42,6 +42,7 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 	</head>
 
@@ -85,9 +86,10 @@
 
 	
 	
-		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover">
+		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover lazyload preloader">
 			<div class="hidden-upto-xl frame"></div>
-			<img alt="Sheltered" src="https://res.cloudinary.com/milkleaks/image/upload/c_scale,q_100,w_1440/v1518873383/cover_gvrgui.jpg">
+			<img alt="Sheltered" data-src="https://res.cloudinary.com/milkleaks/image/upload/c_scale,q_100,w_1440/v1518873383/cover_gvrgui.jpg" class="lazyload">
+			<noscript><img src="https://res.cloudinary.com/milkleaks/image/upload/c_scale,q_100,w_1440/v1518873383/cover_gvrgui.jpg" /></noscript>
 		</div>
 	
 
@@ -244,7 +246,7 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/class.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
@@ -252,6 +254,7 @@
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
 <script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
+<script type="text/javascript" src="/static/modules/lazysizes/lazysizes.js"></script>
 <script type="text/javascript" src="/static/modules/likely/likely.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
