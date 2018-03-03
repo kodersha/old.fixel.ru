@@ -49,23 +49,18 @@ $('.post .fotorama').fotorama({
 /* Подменяем youtube плеер картинкой */
 
 $(".post .youtube").each(function() {
-	$(this).append($('<img/>', {'data-src': 'https://img.youtube.com/vi/' + this.id + '/maxresdefault.jpg', 'class': 'maxresdefault lazyload'}));
-	$(this).append( "<noscript><img src='https://img.youtube.com/vi/" + this.id + "/maxresdefault.jpg' class='maxresdefault' /></noscript>" );
-	$(this).append($('<div/>', {'class': 'play'}));
-
 	$(document).delegate('#'+this.id, 'click', function() {
 		var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
 		if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
-
 		var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url });
-
-		$(this).html(iframe).addClass('frame');
-		$(this).html(iframe).removeClass('youtube');
-		$(this).html(iframe).wrap("<div class='video'/>");
-		
+		$(this).html(iframe).addClass('playing');
 		$(this).fitVids();
 	});
 });
+
+/* Добавляем классы */
+
+$( '[full], .full' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl');
 
 /* Поиск */
 
@@ -126,7 +121,7 @@ tocbot.init({
 
 /* Расстановка переносов */
 
-$('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post [caption], .post .caption').addClass('hyphenate');
+$('.post [aside], .post .aside, .post [aside-left], .post .aside-left').addClass('hyphenate');
 
 /* Расстановка переносов на мобильных устройствах */
 
