@@ -49,48 +49,42 @@ tags:
 
 `author-menu.tmpl.php` — Меню автора.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/01_u94w7j.png)
-{: .wrap .left}
+{% cloudinary src:v1519055157/01_u94w7j.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `comments-heading.tmpl.php` — Заголовок списка комментариев с счетчиком их количества.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/02_dqegcp.png)
-{: .wrap .left}
+{% cloudinary src:v1519055157/02_dqegcp.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `comments.tmpl.php` — Список комментариев.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/03_oiureh.png)
-{: .wrap .left}
+{% cloudinary src:v1519055157/03_oiureh.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `drafts.tmpl.php` — Список черновиков.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/04_gegc6o.png)
-{: .wrap .left}
+{% cloudinary src:v1519055157/04_gegc6o.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-comment.tmpl.php` — Форма комментирования.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/05_iffrnu.png)
-{: .wrap .left}
+{% cloudinary src:v1519055157/05_iffrnu.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-database.tmpl.php` — Форма подключения к базе данных.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055157/06_yor8w5.png)
-{: .wrap .left}
+{% cloudinary src:v1519055157/06_yor8w5.png class:"wrap left" %}
 
 ---
 {: .easy}
@@ -102,64 +96,56 @@ tags:
 
 `form-login.tmpl.php` — Форма авторизации.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/07_tyqwia.png)
-{: .wrap .left}
+{% cloudinary src:v1519055158/07_tyqwia.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-note-delete.tmpl.php` — Форма удаления поста.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/08_qujnf6.png)
-{: .wrap .left}
+{% cloudinary src:v1519055158/08_qujnf6.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-note-publish.tmpl.php` — Кнопка публикации поста.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/09_li03z6.png)
-{: .wrap .left}
+{% cloudinary src:v1519055158/09_li03z6.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-note.tmpl.php` — Форма публикации поста.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/10_ufuc0b.png)
-{: .wrap .left}
+{% cloudinary src:v1519055158/10_ufuc0b.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-password.tmpl.php` — Форма смены админ-пароля.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055158/11_hhe2au.png)
-{: .wrap .left}
+{% cloudinary src:v1519055158/11_hhe2au.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-preferences.tmpl.php` — Форма общих настроек блога.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/13_i8udli.png)
-{: .wrap .left}
+{% cloudinary src:v1519055160/13_i8udli.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-tag-delete.tmpl.php` — Форма удаления тега.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/14_jwipj8.png)
-{: .wrap .left}
+{% cloudinary src:v1519055159/14_jwipj8.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `form-tag.tmpl.php` — Форма редактирования тега.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/15_p02lox.png)
-{: .wrap .left}
+{% cloudinary src:v1519055160/15_p02lox.png class:"wrap left" %}
 
 ---
 {: .easy}
@@ -171,8 +157,7 @@ tags:
 
 `heading.tmpl.php` — Заголовки.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/16_sxxqud.png)
-{: .wrap .left}
+{% cloudinary src:v1519055159/16_sxxqud.png class:"wrap left" %}
 
 ---
 {: .easy}
@@ -189,8 +174,7 @@ tags:
 
 `login-element.tmpl.php` — Кнопка авторизации.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/17_gtjx4a.png)
-{: .wrap .left}
+{% cloudinary src:v1519055159/17_gtjx4a.png class:"wrap left" %}
 
 ---
 {: .easy}
@@ -212,64 +196,56 @@ tags:
 
 `pages-earlier.tmpl.php` — Кнопка к постам «Ранее».
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055159/18_z1fn67.png)
-{: .wrap .left}
+{% cloudinary src:v1519055159/18_z1fn67.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `pages-later.tmpl.php` — Кнопка к постам «Позднее».
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/19_twa7wi.png)
-{: .wrap .left}
+{% cloudinary src:v1519055160/19_twa7wi.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `pages.tmpl.php` — Навигация между постами.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055161/20_vsrib7.png)
-{: .wrap .left}
+{% cloudinary src:v1519055161/20_vsrib7.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `popular.tmpl.php` — Блок популярных постов.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/21_ukwlhu.png)
-{: .wrap .left}
+{% cloudinary src:v1519055160/21_ukwlhu.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `search.tmpl.php` — Форма поиска и теги.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/22_r7lfmw.png)
-{: .wrap .left}
+{% cloudinary src:v1519055160/22_r7lfmw.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `tags-menu.tmpl.php` — Список избранных тегов.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055160/23_lbl7ii.png)
-{: .wrap .left}
+{% cloudinary src:v1519055160/23_lbl7ii.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `tags.tmpl.php` — Страница тегов.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055161/24_fldmsy.png)
-{: .wrap .left}
+{% cloudinary src:v1519055161/24_fldmsy.png class:"wrap left" %}
 
 ---
 {: .easy}
 
 `user-blockture.tmpl.php` — Аватар блога.
 
-![Пишем свой шаблон для Эгеи](https://res.cloudinary.com/milkleaks/image/upload/v1519055161/25_zw1ide.png)
-{: .wrap .left}
+{% cloudinary src:v1519055161/25_zw1ide.png class:"wrap left" %}
 
 ---
 {: .easy}

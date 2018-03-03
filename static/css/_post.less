@@ -1,4 +1,4 @@
-[full] {
+[full], .full {
     margin-bottom: @post-bottom;
     margin-top: @post-top;
 
@@ -11,7 +11,7 @@
     }
 }
 
-[outer] {
+[outer], .outer {
     @media @xl {
         grid-column: outer-left / outer-right;
     }
@@ -32,7 +32,7 @@
     }
 }
 
-[outer], [full], [frame] {
+[outer], .outer, [full], .full, [frame] {
     position: relative;
 
     &.dark {
@@ -53,16 +53,14 @@
         }
 
         .youtube {
-            border-radius: 0 !important;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            border-radius: 0;
 
             img {
-                border-radius: 0 !important;
-            }
-        }
-
-        .video {
-            .frame {
-                border-radius: 0 !important;	
+                border-radius: 0;
             }
         }
 

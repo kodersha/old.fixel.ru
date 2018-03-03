@@ -8,7 +8,9 @@ title: Фотографии
 
 	{% for post in site.photos reversed %}
 		<article class="col-xs-12 col-sm-4 col-md-3 col-lg-2 space-out-bottom-micro-xs item">
-			<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')" onclick="location.href='{{ post.url }}'"></div>
+			<a href="{{ post.url }}" class="link-photo">
+				<div class="thumbnail" {% if post.thumbnail %}style="background-image: url('http://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_thumb,h_150,q_100,w_300/{{ post.thumbnail }}')"{% endif %}></div>
+			</a>
 			<div class="space-in-top-nano-xs meta">
 				<a href="{{ post.url }}">{{ post.title }}</a>
 				<time class="date">{{ post.date | russian_date }}</time>

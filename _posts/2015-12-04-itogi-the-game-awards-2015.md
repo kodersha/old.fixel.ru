@@ -4,178 +4,190 @@ thumbnail: "v1518879257/cover_g3qe4f.jpg"
 hidden: true
 ---
 
-Вот и завершился The Game Awards 2015. За почти два с половиной часа YouTube эфира было анонсировано и показано множество игр, а так же представлены награды в различных номинациях…
+> Вот и завершился The Game Awards 2015. За почти два с половиной часа YouTube эфира было анонсировано и показано множество игр, а так же представлены награды в различных номинациях…
 
 ### Игра года
 
-<div block>
-<p><b>Номинированы:</b> Falout 4, Metal Gear Solid V, Bloodborne, Super Mario Maker, The Witcher 3: Wild Hunt.</p>
-<p><b>Победитель:</b> The Witcher 3: Wild Hunt.</p>
+<div block markdown="1">
+**Номинированы:** Falout 4, Metal Gear Solid V, Bloodborne, Super Mario Maker, The Witcher 3: Wild Hunt.
+
+**Победитель:** The Witcher 3: Wild Hunt.
 </div>
 
 ### Лучшая ролевая игра
 
-<div block>
-<p><b>Номинированы:</b> Fallout 4, Pillars of Eternity, Bloodborne, Undertale, The Witcher 3: Wild Hunt.</p>
-<p><b>Победитель:</b> The Witcher 3: Wild Hunt.</p>
+<div block markdown="1">
+**Номинированы:** Fallout 4, Pillars of Eternity, Bloodborne, Undertale, The Witcher 3: Wild Hunt.
+
+**Победитель:** The Witcher 3: Wild Hunt.
 </div>
 
 ### Разработчик года
 
-<div block>
-<p><b>Номинированы:</b> CD Projekt Red, Kojima Productions, Nintendo, From Software, Bethesda Game Studios.</p>
-<p><b>Победитель:</b> CD Projekt Red.</p>
+<div block markdown="1">
+**Номинированы:** CD Projekt Red, Kojima Productions, Nintendo, From Software, Bethesda Game Studios.
+
+**Победитель:** CD Projekt Red.
 </div>
 
-![Итоги The Game Awards 2015][image-1]
+{% cloudinary src:v1518879256/01_lepj5p.jpg %}
 
 ### Лучшая инди
 
-<div block>
-<p><b>Номинированы:</b> Her Story, Ori and the Blind Forest, Undertale, Rocket League, Axiom Verge.</p>
-<p><b>Победитель:</b> Rocket League.</p>
+<div block markdown="1">
+**Номинированы:** Her Story, Ori and the Blind Forest, Undertale, Rocket League, Axiom Verge.
+
+**Победитель:** Rocket League.
 </div>
 
 ### Лучший шутер
 
-<div block>
-<p><b>Номинированы:</b> Star Wars Battlefront, Halo 5: Guardians, Call of Duty: Black Ops 3, Destiny: The Taken King, Splatoon.</p>
-<p><b>Победитель:</b> Splatoon.</p>
+<div block markdown="1">
+**Номинированы:** Star Wars Battlefront, Halo 5: Guardians, Call of Duty: Black Ops 3, Destiny: The Taken King, Splatoon.
+
+**Победитель:** Splatoon.
 </div>
 
 ### Лучший экшн/адвечура
 
-<div block>
-<p><b>Номинированы:</b> Batman: Arkham Knight, Assassin’s Creed Syndicate, Metal Gear Solid V: The Phantom Pain, Ori and the Blind Forest, Rise of the Tomb Raider.</p>
-<p><b>Победитель:</b> Metal Gear Solid V: The Phantom Pain.</p>
+<div block markdown="1">
+**Номинированы:** Batman: Arkham Knight, Assassin’s Creed Syndicate, Metal Gear Solid V: The Phantom Pain, Ori and the Blind Forest, Rise of the Tomb Raider.
+
+**Победитель:** Metal Gear Solid V: The Phantom Pain.
 </div>
 
-![Итоги The Game Awards 2015][image-2]
+{% cloudinary src:v1518879256/02_cslpur.jpg %}
 
 ### Лучшая роль
 
-<div block>
-<p><b>Номинированы:</b> Эшли Берч в роли Хлои Прайс (Life is Strange), Камилла Ладдингтон в роли Лары Крофт (Rise of the Tomb Raider), Марк Хэмилл в роли Джокера (Batman: Arkham Knight), Даг Кокл в роли Геральта (The Witcher 3: Wild Hunt), Вива Зайферт (Her Story).</p>
-<p><b>Победитель:</b> Вива Зайферт (Her Story).</p>
+<div block markdown="1">
+**Номинированы:** Эшли Берч в роли Хлои Прайс (Life is Strange), Камилла Ладдингтон в роли Лары Крофт (Rise of the Tomb Raider), Марк Хэмилл в роли Джокера (Batman: Arkham Knight), Даг Кокл в роли Геральта (The Witcher 3: Wild Hunt), Вива Зайферт (Her Story).
+
+**Победитель:** Вива Зайферт (Her Story).
 </div>
 
 ### Лучший сюжет
 
-<div block>
-<p><b>Номинированы:</b> Life is Strange, Tales From the Borderlands, Her Story, Until Dawn, The Witcher 3: Wild Hunt.</p>
-<p><b>Победитель:</b> Her Story.</p>
+<div block markdown="1">
+**Номинированы:** Life is Strange, Tales From the Borderlands, Her Story, Until Dawn, The Witcher 3: Wild Hunt.
+
+**Победитель:** Her Story.
 </div>
 
 ### Лучшая постановка сюжета
 
-<div block>
-<p><b>Номинированы:</b> Batman: Arkham Knight, Metal Gear Solid V: The Phantom Pain, Bloodborne, Ori and the Blind Forest, The Witcher 3: Wild Hunt.</p>
-<p><b>Победитель:</b> Ori and the Blind Forest.</p>
+<div block markdown="1">
+**Номинированы:** Batman: Arkham Knight, Metal Gear Solid V: The Phantom Pain, Bloodborne, Ori and the Blind Forest, The Witcher 3: Wild Hunt.
+
+**Победитель:** Ori and the Blind Forest.
 </div>
 
-![Итоги The Game Awards 2015][image-3]
+{% cloudinary src:v1518879256/03_iqnl1i.jpg %}
 
 ### Лучший саундтрек
 
-<div block>
-<p><b>Номинированы:</b> The Witcher 3: Wild Hunt, Metal Gear Solid V: The Phantom Pain, Halo 5: Guardians, Fallout 4, Ori and the Blind Forest.</p>
-<p><b>Победитель:</b> Metal Gear Solid V: The Phantom Pain.</p>
+<div block markdown="1">
+**Номинированы:** The Witcher 3: Wild Hunt, Metal Gear Solid V: The Phantom Pain, Halo 5: Guardians, Fallout 4, Ori and the Blind Forest.
+
+**Победитель:** Metal Gear Solid V: The Phantom Pain.
 </div>
 
 ### Лучший фан-проект
 
-<div block>
-<p><b>Номинированы:</b> Real GTA, GTA 5 — Targets, Super Mario Maker e-Reader Levels, Twitch Plays Dark Souls, Portal Stories: Mel.</p>
-<p><b>Победитель:</b> Portal Stories: Mel.</p>
+<div block markdown="1">
+**Номинированы:** Real GTA, GTA 5 — Targets, Super Mario Maker e-Reader Levels, Twitch Plays Dark Souls, Portal Stories: Mel.
+
+**Победитель:** Portal Stories: Mel.
 </div>
 
 ### Прорыв года
 
-<div block>
-<p><b>Номинированы:</b> Her Story, Sunset, Undertale, Cibele, Life is Strange.</p>
-<p><b>Победитель:</b> Life is Strange.</p>
+<div block markdown="1">
+**Номинированы:** Her Story, Sunset, Undertale, Cibele, Life is Strange.
+
+**Победитель:** Life is Strange.
 </div>
 
-![Итоги The Game Awards 2015][image-4]
+{% cloudinary src:v1518879257/04_vnryeh.png %}
 
 ### Лучший файтинг
 
-<div block>
-<p><b>Номинированы:</b> Mortal Kombat X, Rising Thunder, Rise of Incarnates, Guilty Gear Xrd Sign.</p>
-<p><b>Победитель:</b> Mortal Kombat X.</p>
+<div block markdown="1">
+**Номинированы:** Mortal Kombat X, Rising Thunder, Rise of Incarnates, Guilty Gear Xrd Sign.
+
+**Победитель:** Mortal Kombat X.
 </div>
 
 ### Лучшая семейная игра
 
-<div block>
-<p><b>Номинированы:</b> Lego Dimensions, Disney Infinity, Super Mario Maker, Skylanders SuperChargers, Splatoon.</p>
-<p><b>Победитель:</b> Super Mario Maker.</p>
+<div block markdown="1">
+**Номинированы:** Lego Dimensions, Disney Infinity, Super Mario Maker, Skylanders SuperChargers, Splatoon.
+
+**Победитель:** Super Mario Maker.
 </div>
 
 ### Наиболее ожидаемая игра
 
-<div block>
-<p><b>Номинированы:</b> No Man’s Sky, Quantum Break, Horizon Zero Dawn, The Last Guardian, Uncharted 4: A Thief’s End.</p>
-<p><b>Победитель:</b> No Man’s Sky.</p>
+<div block markdown="1">
+**Номинированы:** No Man’s Sky, Quantum Break, Horizon Zero Dawn, The Last Guardian, Uncharted 4: A Thief’s End.
+
+**Победитель:** No Man’s Sky.
 </div>
 
-![Итоги The Game Awards 2015][image-5]
+{% cloudinary src:v1518879258/05_cguore.png %}
 
 ### Лучший мультиплеер
 
-<div block>
-<p><b>Номинированы:</b> Rocket League, Splatoon, Halo 5: Guardians, Destiny: The Taken King, Call of Duty: Black Ops 3.</p>
-<p><b>Победитель:</b> Splatoon.</p>
+<div block markdown="1">
+**Номинированы:** Rocket League, Splatoon, Halo 5: Guardians, Destiny: The Taken King, Call of Duty: Black Ops 3.
+
+**Победитель:** Splatoon.
 </div>
 
 ### Лучшая киберспортивная игра
 
-<div block>
-<p><b>Номинированы:</b> Counter-Strike: Global Offensive, Dota 2, Hearthstone: Heroes of Warcraft, Call of Duty: Advanced Warfare, League of Legends.</p>
-<p><b>Победитель:</b> Counter-Strike: Global Offensive.</p>
+<div block markdown="1">
+**Номинированы:** Counter-Strike: Global Offensive, Dota 2, Hearthstone: Heroes of Warcraft, Call of Duty: Advanced Warfare, League of Legends.
+
+**Победитель:** Counter-Strike: Global Offensive.
 </div>
 
 ### Лучший спортивный симулятор
 
-<div block>
-<p><b>Номинированы:</b> FIFA 16, NBA 2K16, Pro Evolution Soccer 2016, Forza Motorsport 6, Rocket League.</p>
-<p><b>Победитель:</b> Rocket League.</p>
+<div block markdown="1">
+**Номинированы:** FIFA 16, NBA 2K16, Pro Evolution Soccer 2016, Forza Motorsport 6, Rocket League.
+
+**Победитель:** Rocket League.
 </div>
 
-![Итоги The Game Awards 2015][image-6]
+{% cloudinary src:v1518879256/06_ldovvs.jpg %}
 
 ### Лучшая игра для мобильных
 
-<div block>
-<p><b>Номинированы:</b> Fallout Shelter, Downwell, Pac-Man 256, Monster Hunter 4 Ultimate, Lara Croft Go.</p>
-<p><b>Победитель:</b> Lara Croft Go.</p>
+<div block markdown="1">
+**Номинированы:** Fallout Shelter, Downwell, Pac-Man 256, Monster Hunter 4 Ultimate, Lara Croft Go.
+
+**Победитель:** Lara Croft Go.
 </div>
 
 ### Лучшая киберспортивная команда
 
-<div block>
-<p><b>Номинированы:</b> Optic Gaming, SK Telecom T1, Evil Geniuses, Team SoloMid, Fnatic.</p>
-<p><b>Победитель:</b> Optic Gaming.</p>
+<div block markdown="1">
+**Номинированы:** Optic Gaming, SK Telecom T1, Evil Geniuses, Team SoloMid, Fnatic.
+
+**Победитель:** Optic Gaming.
 </div>
 
 ### Популярный летсплеер
 
-<div block>
-<p><b>Номинированы:</b> PewDiePie, Markiplier, Total Biscuit, Christopher Mykles, Greg Miller.</p>
-<p><b>Победитель:</b> Greg Miller.</p>
+<div block markdown="1">
+**Номинированы:** PewDiePie, Markiplier, Total Biscuit, Christopher Mykles, Greg Miller.
+
+**Победитель:** Greg Miller.
 </div>
 
 ---
 
 Полную запись трансляции вы можете посмотреть ниже.
 
-<div full class="dark">
-    <div class="youtube" id="cJyLB9-y8bA"></div>
-</div>
-
-[image-1]:  https://res.cloudinary.com/milkleaks/image/upload/v1518879256/01_lepj5p.jpg
-[image-2]:  https://res.cloudinary.com/milkleaks/image/upload/v1518879256/02_cslpur.jpg
-[image-3]:  http://res.cloudinary.com/milkleaks/image/upload/v1518879256/03_iqnl1i.jpg
-[image-4]:  https://res.cloudinary.com/milkleaks/image/upload/v1518879257/04_vnryeh.png
-[image-5]:  https://res.cloudinary.com/milkleaks/image/upload/v1518879258/05_cguore.png
-[image-6]:  https://res.cloudinary.com/milkleaks/image/upload/v1518879256/06_ldovvs.jpg
+{% youtube id:cJyLB9-y8bA class:"full dark" %}

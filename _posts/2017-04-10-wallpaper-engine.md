@@ -11,14 +11,9 @@ tags:
 К слову, аналогом данной программы для MacOS является — [Ubersicht][2]. Он, также как и Wallpaper Engine, позволяет устанавливать анимированные обои и прочие виджеты рабочего стола.
 {: .aside}
 
-![Wallpaper Engine][image-1]
-
-Обоина [Audio Eclipse][3] реагирующая на проигрываемую музыку разноцветными вспышками.
-{: .caption}
+{% cloudinary src:v1519054420/01_nmhwvs.png alt:"Обоина [Audio Eclipse](http://steamcommunity.com/sharedfiles/filedetails/?id=863568819) реагирующая на проигрываемую музыку разноцветными вспышками."%}
 
 Wallpaper Engine работает на многофункциональном движке Unity, а потому совершенно не нагружает систему, не требует постоянно запущенного Steam-клиента и вообще базируется в трее никого не беспокоя. Пожалуй, на данный момент — это лучшая утилита для того чтобы разнообразить стандартные обои.
 
-[image-1]:  https://res.cloudinary.com/milkleaks/image/upload/v1519054420/01_nmhwvs.png
 [1]:    http://store.steampowered.com/app/431960/
 [2]:    http://tracesof.net/uebersicht/
-[3]:    http://steamcommunity.com/sharedfiles/filedetails/?id=863568819

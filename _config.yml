@@ -9,6 +9,8 @@ permalink: /blog/:title/
 image:
 markdown: kramdown
 disqus: milkleaks-ru
+cloudinary: milkleaks
+cloudinary-size: c_limit,w_800
 
 # Jekyll
 safe: false
@@ -89,17 +91,6 @@ less:
 maps:
   google:
     api_key: AIzaSyCdzBPyxAeuk-0bG2pyMbO8d32PMBKgcRo
-
-# Cloudinary
-cloudinary:
-  cloud_name: milkleaks
-  presets:
-    default:
-      min_width: 640
-      max_width: 1440
-      fallback_max_width: 1440
-      steps: 5
-      sizes: "(min-width: 45rem) 45rem, 90rem"
 
 # Extlinks
 extlinks:
