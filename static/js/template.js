@@ -119,14 +119,12 @@ tocbot.init({
 	headingSelector: 'h2, h3',
 });
 
-/* Расстановка переносов */
-
-$('.post [aside], .post .aside, .post [aside-left], .post .aside-left').addClass('hyphenate');
-
-/* Расстановка переносов на мобильных устройствах */
+/* Расстановка переносов на мобильных устройствах и не на мобильных тоже */
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	$('h1, h2, h3, h4, h5').addClass('hyphenate');
+} else {
+	$('.post [aside], .post .aside, .post [aside-left], .post .aside-left').addClass('hyphenate');
 }
 
 function selectorFunction() {
@@ -215,7 +213,7 @@ jQuery(function($){
 	});
 });
 
-/* Комментарии */
+/* Скрываем комментарии так как все равно никто не комментирует */
 
 function loadDisqusOnDemand() {
     var script = document.createElement('script');
