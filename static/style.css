@@ -9326,7 +9326,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 @media (min-width: 1200px) {
   .post .tags,
   .post .actions {
-    max-width: 100%;
+    max-width: initial;
   }
 }
 .post .tags {
