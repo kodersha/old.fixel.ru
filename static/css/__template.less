@@ -36,6 +36,12 @@ h1, h2, h3, h4, h5 {
     letter-spacing: -1px;
 }
 
+@media @xl {
+    h1 {
+        font-size: 3.2em;
+    }
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -191,11 +197,6 @@ header {
         }
 
         img {
-            -webkit-animation: fadein @fadeInSpeed;
-            -moz-animation: fadein @fadeInSpeed;
-            -ms-animation: fadein @fadeInSpeed;
-            -o-animation: fadein @fadeInSpeed;
-            animation: fadein @fadeInSpeed;
             border-radius: 2px;      
         }
 
@@ -264,19 +265,10 @@ header {
     .youtube {
         border-radius: 2px;
         position: relative;
-        overflow: hidden;
         cursor: pointer;
-        display: block;
         width: 100%;
 
         img {
-            -webkit-animation: fadein @fadeInSpeed;
-            -moz-animation: fadein @fadeInSpeed;
-            -ms-animation: fadein @fadeInSpeed;
-            -o-animation: fadein @fadeInSpeed;
-            animation: fadein @fadeInSpeed;
-            max-width: 100%;
-            display: block;
             width: 100%;
         }
 
@@ -405,11 +397,6 @@ header {
         }
 
         .map {
-            -webkit-animation: fadein @fadeInSpeed;
-            -moz-animation: fadein @fadeInSpeed;
-            -ms-animation: fadein @fadeInSpeed;
-            -o-animation: fadein @fadeInSpeed;
-            animation: fadein @fadeInSpeed;
             height: 100vh !important;
 
             @media @md {
@@ -546,6 +533,10 @@ header {
     font-size: @glob-font-size;
     font-family: @glob-font;
     line-height: 1.25;
+
+    p {
+        margin-bottom: 0;
+    }
 
     .previous, .next {
         min-width: 85px;
