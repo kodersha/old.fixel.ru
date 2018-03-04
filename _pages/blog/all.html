@@ -1,12 +1,12 @@
 ---
-layout: base_category
+layout: base_default
 title: Все записи
 dscription: Список записей за все время
 ---
 
-<h1 class="col-xs-12">{{ page.title }}</h1>
+<section class="space-in-v-mili-xs blog">
+	<h1>{{ page.title }}</h1>
 
-<section class="col-xs-12">
 	{% for post in site.posts %}
 		<article class="item">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>

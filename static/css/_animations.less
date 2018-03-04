@@ -107,3 +107,18 @@
         -ms-transform:  translate(0px,0px)  ;
     }
 }
+
+@keyframes cycle-colors {
+    0% { background: hsl(0, 100%, 50%); }
+    25% { background: hsl(90, 100%, 50%); }
+    50% { background: hsl(180, 100%, 50%); }
+    75% { background: hsl(270, 100%, 50%); }
+    100% { background: hsl(360, 100%, 50%); }
+}
+  
+@keyframes pulse {
+    to {
+      opacity: 0;
+      transform: scale(1);
+    }
+}

@@ -100,6 +100,10 @@ header {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
         color: @post-text;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     hr {
@@ -418,11 +422,8 @@ header {
 
     .link-readmore {
         .links-color(@black, @darkerGray, @black, @darkerGray, @black, 100%);
-        font-family: @helvetica;
-        margin-bottom: @post-bottom;
-        margin-top: @post-top;
+        font-family: @latoLight;
         text-decoration: none;
-        display: table;
     }
 
     .tags, .actions {
@@ -449,7 +450,7 @@ header {
     /* Actions */
 
 	.actions {
-        margin-top: @post-top;
+        margin-top: @post-top + @post-bottom;
 
         .link-action {
             .links-color(@post-subtext, @black, @post-subtext, @black, @post-subtext, 75%);

@@ -1,4 +1,4 @@
-<article class="space-out-v-mega-xs space-out-v-giga-md space-auto-h-xl post">
+<article class="{% if forloop.first == true %}space-in-top-mega-xs space-in-top-giga-md {% else %}space-in-top-mega-xs space-in-top-giga-md {% endif %}{% if forloop.last == true %}space-in-bottom-mega-xs space-in-bottom-giga-md {% endif %}space-auto-h-xl post">
 	<h1>
 		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</h1>
@@ -6,7 +6,7 @@
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
 
 	{% if post.content contains '<!-- more -->' %}
-		<a class="link-readmore" href="{{ post.url | prepend: site.baseurl }}#more" title="Читать далее">&bull;&bull;&bull;</a>
+		<p><a class="link-readmore" href="{{ post.url | prepend: site.baseurl }}#more">&bull;&bull;&bull;</a></p>
 	{% endif %}
 
 	<nav class="row actions">
@@ -20,6 +20,7 @@
 			{% endif %}
 		</div>
 	</nav>
+
 </article>
 
 {% if page.url == "/" %}
