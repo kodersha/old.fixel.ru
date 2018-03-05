@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5 {
 
 @media @xl {
     h1 {
-        font-size: 3.2em;
+        font-size: 64px;
     }
 }
 
@@ -416,28 +416,32 @@ header {
     .tags, .actions {
         font-size: @glob-font-size;
         font-family: @glob-font;
-        max-width: @post-linel;
         color: @post-subtext;
-
-        @media @xl {
-            max-width: initial;
-        }
     }
 
     /* Tags */
 
     .tags {
-        @media @xl {
-            grid-column: outer-left / inner-left;
-        }
         margin-bottom: @post-bottom;
         margin-top: @post-top;
+        max-width: @post-linel;
+
+        @media @xl {
+            grid-column: outer-left / inner-left;
+            max-width: 100%;
+        }
     }
 
     /* Actions */
 
 	.actions {
-        margin-top: @post-top + @post-bottom;
+        margin-top: @post-top;
+        max-width: ~"calc("@post-linel ~" + 32px)";
+
+        @media @xl {
+            margin-top: @post-top + @post-bottom;
+            max-width: none;
+        }
 
         .link-action {
             .links-color(@post-subtext, @black, @post-subtext, @black, @post-subtext, 75%);
