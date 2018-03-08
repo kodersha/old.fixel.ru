@@ -10179,19 +10179,6 @@ header .logo.animate a:hover .logotype .logotype-path {
   font-size: 1rem;
   position: relative;
 }
-.works .item:before {
-  content: '● ● ●';
-  border-radius: 2px 2px 0 0;
-  background-color: #bbb;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  line-height: 20px;
-  padding: 2px 10px;
-  text-align: left;
-  font-size: 18px;
-  display: block;
-  color: #999;
-  width: 100%;
-}
 .works .item .thumbnail {
   border-radius: 0 0 2px 2px;
   background-position: center center;
@@ -10204,6 +10191,51 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 .works .item .meta span {
   display: block;
+}
+.works .item .browser {
+  overflow: hidden;
+  width: 100%;
+}
+.works .item .browser .title-bar {
+  border-radius: 2px 2px 0 0;
+  background: #D3D3D3;
+  height: auto;
+  width: 100%;
+  float: left;
+}
+.works .item .browser .btns {
+  position: relative;
+  float: left;
+  white-space: nowrap;
+  padding: .6em;
+  margin-left: 4px;
+}
+.works .item .browser .btns .close,
+.works .item .browser .btns .min,
+.works .item .browser .btns .max {
+  border-radius: 50%;
+  margin-right: 8px;
+  opacity: 100;
+  height: 10px;
+  width: 10px;
+  float: left;
+}
+.works .item .browser .btns .close {
+  background-color: #E96E4C;
+}
+.works .item .browser .btns .min {
+  background-color: #E6A935;
+}
+.works .item .browser .btns .max {
+  background-color: #85C33D;
+}
+.works .item .browser .location-bar {
+  background-color: #c3c3c3;
+  position: relative;
+  float: left;
+  height: .9em;
+  width: calc(100% - 92px);
+  margin-top: .45em;
 }
 .page {
   background-position: center center;
