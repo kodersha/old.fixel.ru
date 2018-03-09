@@ -1,34 +1,37 @@
 & {
     background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: @black;
     background-size: cover;
+    min-height: 100vh;
+    color: @white;
+}
+
+.home {
     position: absolute;
+    cursor: pointer;
+
+    .link-home {
+        .links-color(@white, @lightGray, @white, @lightGray, @white, 100%);
+        text-decoration: none;
+    }
+}
+
+.content {
     display: table;
-    height: 100vh;
-    width: 100vw;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .message {
     vertical-align: middle;
     display: table-cell;
     position: relative;
-    color: @white;
-    z-index: 10;
-}
 
-.home {
-    position: absolute;
-    cursor: pointer;
-    z-index: 100;
-    top: @mili;
-
-    .link-home {
-        .links-color(@white, @lightGray, @white, @lightGray, @white, 100%);
-        text-decoration: none;
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }

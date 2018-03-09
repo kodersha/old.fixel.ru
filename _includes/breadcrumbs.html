@@ -1,26 +1,50 @@
-<nav class="space-in-bottom-mili-xs breadcrumbs">
+<nav class="breadcrumbs">
 	<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	{% assign position = 0 %}
-	{% for crumbitem in breadcrumbs %}
-		{% assign position = position  | plus: 1 %}
+		{% assign position = 0 %}
+		{% for crumbitem in breadcrumbs %}
+			{% assign position = position  | plus: 1 %}
 
-		{% if forloop.first %}
+			{% if forloop.first %}
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">Главная</span><meta property="position" content="{{ position }}" /></a>
+				</li>
+				{% continue %}
+			{% endif %}
+
+			{% if forloop.last %}
+				{% continue %}
+			{% endif %}
+
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">Главная</span><meta property="position" content="{{ position }}" /></a>
-			</li>
-			{% continue %}
+				<a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
+			</li>		
+		{% endfor %}
+
+		{% if page.path contains '_posts' %}
+			{% if page.hidden == true %}
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/dungeon/"><span property="name">Старые записи</span><meta property="position" content="{{ position }}" /></a>
+				</li>
+			{% endif %}
+			{% if page.categories.size > 0 %}
+				{% for category in page.categories %}	
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/"><span property="name">{{ category }}</span><meta property="position" content="{{ position }}" /></a>
+				</li>
+				{% endfor %}			
+			{% endif %}
 		{% endif %}
 
-		{% if forloop.last %}
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" />
-			</li>
-			{% continue %}
-		{% endif %}
+		{% assign position = 0 %}
+		{% for crumbitem in breadcrumbs %}
+			{% assign position = position  | plus: 1 %}
 
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
-		</li>
-	{% endfor %}
+			{% if forloop.last %}
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">{{ page.title }}</span>
+				</li>
+				{% continue %}
+			{% endif %}
+		{% endfor %}
 	</ol>
 </nav>

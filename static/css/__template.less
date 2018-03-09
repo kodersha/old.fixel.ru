@@ -15,10 +15,14 @@ body {
     -ms-text-size-adjust: none;
     text-size-adjust: none;
     background-color: @white;
-    letter-spacing: -.003em;
     overflow-x: hidden;
     cursor: default;
     margin: 0;
+
+    @media @xl {
+        max-width: @glob-width;
+        margin: 0 auto;
+    }
 }
 
 @media @msm {
@@ -30,10 +34,6 @@ body {
 
 input, textarea, select, button {
     font-family: @glob-font;
-}
-
-h1, h2, h3, h4, h5 {
-    letter-spacing: -1px;
 }
 
 @media @xl {
@@ -94,8 +94,9 @@ header {
 
     /* Body */
 
-    h1, h2, h3, h4, h5 {
+    h1, h2, h3, h4, h5, h6 {
         max-width: @post-linel;
+        margin-bottom: @post-bottom;
 
         @media @xl {
             max-width: 100%;
@@ -106,10 +107,6 @@ header {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
         color: @post-text;
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
     }
 
     hr {
@@ -407,6 +404,10 @@ header {
 
     /* Read more */
 
+    .readmore {
+        margin-bottom: 0;
+    }
+
     .link-readmore {
         .links-color(@black, @darkerGray, @black, @darkerGray, @black, 100%);
         font-family: @latoLight;
@@ -435,11 +436,11 @@ header {
     /* Actions */
 
 	.actions {
-        margin-top: @post-top;
         max-width: ~"calc("@post-linel ~" + 32px)";
+        margin-bottom: @post-bottom;
 
         @media @xl {
-            margin-top: @post-top + @post-bottom;
+            margin-bottom: @post-bottom + @post-top;
             max-width: none;
         }
 
@@ -453,12 +454,6 @@ header {
     .comments {
         .thread {
             position: relative;
-            min-height: 320px;
-            display: none;
-
-            &.show {
-                display: block;
-            }
 
             iframe {
                 position: relative;
@@ -557,47 +552,6 @@ header {
 
         .next {
             text-align: right;
-        }
-    }
-}
-
-//
-// .breadcrumbs
-//
-
-.breadcrumbs {
-    font-size: @glob-font-size;
-    font-family: @glob-font;
-    height: 100%;
-
-	.breadcrumb {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-		
-		&:after {
-		  display: table;
-          clear: both;
-		  content: '';
-		}
-		
-		&-item {
-            line-height: normal;
-			float: left;
-        }
-	}
-
-    .breadcrumb-item {
-        &:after {
-            display: inline-block;
-            padding-right: @nano;
-            padding-left: @nano;
-            color: #a9b1b5;
-            content: '\00B7';
-        }
-
-        &:last-of-type:after {
-            content: none;
         }
     }
 }
@@ -721,4 +675,5 @@ footer {
 
 @import (less) "../static/css/_modal.less";
 @import (less) "../static/css/_links.less";
+@import (less) "../static/css/_tooltip.less";
 @import (less) "../static/css/_animations.less";

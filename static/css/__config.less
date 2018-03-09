@@ -1,8 +1,13 @@
+@content-linel: 45rem;
+@content-width: 1440px;
+
 .global-settings() {
     @glob-text: @black;
     @glob-subtext: @darkerGray;
     @glob-font: @latoMedium;
     @glob-font-size: 1rem;
+    @glob-linel: @content-linel;
+    @glob-width: @content-width;
 
     @fadeInSpeed: 0.1s;
 }
@@ -11,17 +16,17 @@
     @post-top: 20px;
     @post-bottom: 20px;
 
-    @post-linel: 45rem;
+    @post-linel: @content-linel;
     @post-text: rgba(0,0,0,.84);
     @post-subtext: rgba(0,0,0,.76);
 }
 
 .post-grid() {
-    @post-width: 1440px;
+    @post-width: @content-width;
     @grid-edge: 2.5rem;
     @grid-aside: 1fr;
     @grid-inner: minmax(1rem, 2.5rem);
-    @grid-main: minmax(auto, 45rem);
+    @grid-main: minmax(auto, @content-linel);
 }
 
 /*!
@@ -32,7 +37,7 @@
     @fz: 12px;                                      // default font-size
     @rythm: 18px;                                   // vertical rythm = line-height in pixels
     @fz-small: 10px;                                // smaller font-size (px)
-    @linel: 45rem;                                  // max-width for text (any css value)
+    @linel: @content-linel;                                  // max-width for text (any css value)
 
     @font-body: @gregor;                            // body
     @font-headers: @latoHeavy;                      // headers

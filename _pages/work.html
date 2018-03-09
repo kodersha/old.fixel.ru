@@ -3,11 +3,9 @@ layout: base_default
 title: Работы
 ---
 
-<section class="space-in-v-mega-xs space-in-v-giga-md slide-up-fade-in row works">
-	<h1 class="col-xs-12">{{ page.title }}</h1>
-
+<section class="space-in-v-kilo-xs slide-up-fade-in row works">
 	{% for post in site.works reversed %}
-		<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-micro-xs item">
+		<article class="col-xs-12 col-sm-6 col-md-4 space-out-bottom-micro-xs item">
 			<div class="browser">
 				<div class="title-bar">
 					<div class="btns">
@@ -18,9 +16,11 @@ title: Работы
 					<div class="location-bar"></div>
 				</div>
 			</div>
-			<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')" onclick="location.href='{{ post.url }}'"></div>
+			<a target="_blank" href="{{ post.url }}" class="link-work">
+				<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')"></div>
+			</a>
 			<div class="space-in-top-nano-xs meta">
-				<a href="{{ post.url }}">{{ post.title }}</a>
+				<a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
 				<span>{{ post.description }}</span>
 			</div>
 		</article>
