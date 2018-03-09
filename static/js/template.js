@@ -212,28 +212,3 @@ jQuery(function($){
 		return false;
 	});
 });
-
-/* Скрываем комментарии так как все равно никто не комментирует */
-
-function loadDisqusOnDemand() {
-    var script = document.createElement('script');
-
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = '//go.disqus.com/embed.js';
-
-    (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(script);
-
-    //hides the button and remove event listeners
-    this.removeEventListener('click', loadDisqusOnDemand);
-    this.style.display = 'none';
-}
-
-document
-  .getElementById('comment')
-  .addEventListener('click', loadDisqusOnDemand);
-
-$('#comment').click(function(){
-	$('.thread').addClass('show');
-});
