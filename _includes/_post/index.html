@@ -3,15 +3,15 @@
 		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</h1>
 
-	<nav class="actions">
-		<time>{{ post.date | russian_date }}</time>
-	</nav>
-
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
 
 	{% if post.content contains '<!-- more -->' %}
 		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
 	{% endif %}
+
+	<nav class="actions">
+		<time>{{ post.date | russian_date }}</time>
+	</nav>
 </article>
 
 {% if page.url == "/" %}

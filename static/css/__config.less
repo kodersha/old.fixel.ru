@@ -13,8 +13,8 @@
 }
 
 .post-settings() {
-    @post-top: 20px;
-    @post-bottom: 20px;
+    @post-top: 1.5rem;
+    @post-bottom: 1.5rem;
 
     @post-linel: @content-linel;
     @post-text: rgba(0,0,0,.84);
@@ -37,7 +37,7 @@
     @fz: 12px;                                      // default font-size
     @rythm: 18px;                                   // vertical rythm = line-height in pixels
     @fz-small: 10px;                                // smaller font-size (px)
-    @linel: @content-linel;                                  // max-width for text (any css value)
+    @linel: @content-linel;                         // max-width for text (any css value)
 
     @font-body: @gregor;                            // body
     @font-headers: @latoHeavy;                      // headers
@@ -56,52 +56,6 @@
     @h2-mt: 2.5em;
     @h3-mt: 2em;
     @h4-mt: 1.5em;
-}
-
-/*!
-* Space
-
-.space-settings() {
-
-    @spaces: 0, 4px, 8px, 16px, 24px, 40px, 64px, 104px, 168px;
-    @spacealias: zero, pico, nano, micro, mili, base, kilo, mega, giga;
-
-    // media breakpoints
-    @breakpoints:
-        ~"(min-width: 576px)",
-        ~"(min-width: 768px)",
-        ~"(min-width: 992px)",
-        ~"(min-width: 1200px)";
-
-    // names for breakpoint suffixes
-    @suffixes: xs, sm, md, lg, xl;
-
-    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
-    // suffixes-count = breakpoints-count + 1
-}
-
-*/
-
-/*!
-* Links
-*/
-
-.links-settings() {
-    @links-class: link; //you can rename that classname
-    @links-text-decoration: underline;
-    @links-roundness: 0.125em;   // default = 2px
-    @links-focuswidth: 0.1875em; // default = 3px
-
-    //colors
-    @links-link:          #4183C4;
-    @links-hover:         #487bad;
-    @links-visited:       #4183C4;
-    @links-visitedhover:  #487bad;
-    @links-active:        #487bad;
-    @links-fadeout: 75%;  // amount of transparency added to underline
-
-    //animation
-    @links-aniduration: .3s; //fading duration from hover
 }
 
 /*!

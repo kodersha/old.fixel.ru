@@ -1,12 +1,35 @@
-.link {
+a {
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(152,184,200,.2);
+    text-decoration: none;
     cursor: pointer;
+    color: #4183C4;
+
+    &:hover {
+        border-bottom-color: #487bad;
+        color: #487bad;
+    }
 }
 
 .link-subcontrol {
-    .links-color(@glob-subtext, @glob-text, @glob-subtext, @glob-text, @glob-subtext, 75%);
+    border-bottom-color: rgba(0,0,0,.2);
+    color: rgba(0,0,0,.76);
+
+    &:hover {
+        border-bottom-color: @black;
+        color: @black;
+    }
 }
 
 .link-button {
-    .links-color(#a9b1b5, #969da0, #a9b1b5, #969da0, #a9b1b5, 100%);
-    text-decoration: none;
+    border-bottom: none;
+    color: #a9b1b5;
+
+    &:hover {
+        color: #969da0;
+    }
+}
+
+.lightbox-image, .anchor {
+    border-bottom: none;
 }

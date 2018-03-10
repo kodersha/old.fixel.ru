@@ -88,13 +88,29 @@ header {
     /* title */
 
     .link-title {
-        .links-color(@black, @darkerGray, @black, @darkerGray, @black, 100%);
-        text-decoration: none;
+        border-bottom: none;
+        color: @black;
+
+        &:hover {
+            color: @darkerGray;
+        }
     }
 
     /* Body */
 
-    h1, h2, h3, h4, h5, h6 {
+    h1 {
+        max-width: @post-linel;
+
+        @media @xl {
+            max-width: 100%;
+        }
+
+        @media @mxl {
+            margin-bottom: @post-bottom;
+        }
+    }
+
+    h2, h3, h4, h5, h6 {
         max-width: @post-linel;
         margin-bottom: @post-bottom;
 
@@ -402,17 +418,7 @@ header {
         }
     }
 
-    /* Read more */
-
-    .readmore {
-        margin-bottom: 0;
-    }
-
-    .link-readmore {
-        .links-color(@black, @darkerGray, @black, @darkerGray, @black, 100%);
-        font-family: @latoLight;
-        text-decoration: none;
-    }
+    /* Tags & Actions */
 
     .tags, .actions {
         font-size: @glob-font-size;
@@ -437,15 +443,18 @@ header {
 
 	.actions {
         max-width: ~"calc("@post-linel ~" + 32px)";
-        margin-bottom: @post-bottom;
+        margin-top: @post-top;
 
         @media @xl {
-            margin-bottom: @post-bottom + @post-top;
             max-width: none;
         }
 
         .link-action {
-            .links-color(@post-subtext, @black, @post-subtext, @black, @post-subtext, 75%);
+            color: @post-subtext;
+
+            &:hover {
+                color: @black;
+            }
         }
     }
 
@@ -634,8 +643,7 @@ button {
         }
         
         .link-button {
-            .links-color(#4183c4, #4183c4, #4183c4, #4183c4, #4183c4, 100%);
-            text-decoration: none;
+            border-bottom: 0;
         }
 	}
 }

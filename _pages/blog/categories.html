@@ -10,7 +10,7 @@ description: Список категорй блога
 	{% assign categories_list = site.categories %}
 	{% for category in categories_list %}
 		<article class="item">
-			<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a> &middot; {{ category[1].size }}
+			<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a>
 		</article>
 	{% endfor %}
 	{% assign categories_list = nil %}

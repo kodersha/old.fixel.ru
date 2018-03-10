@@ -13,8 +13,13 @@
     cursor: pointer;
 
     .link-home {
-        .links-color(@white, @lightGray, @white, @lightGray, @white, 100%);
         text-decoration: none;
+        border-bottom: none;
+        color: @white;
+
+        &:hover {
+            color: @lightGray;
+        }
     }
 }
 

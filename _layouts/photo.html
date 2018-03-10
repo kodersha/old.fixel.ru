@@ -5,10 +5,6 @@ layout: base_posts
 <article class="space-in-v-mega-xs space-in-v-giga-md space-auto-h-xl slide-up-fade-in post ">
 	
     <h1>{{ page.title }}</h1>
-    
-	<nav class="actions">
-        <time>{{ page.date | russian_date }}</time>
-    </nav>
 
 	<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
 		{% google_map width="100%" class="map" zoom="12" %}
@@ -18,7 +14,11 @@ layout: base_posts
 		<div class="toc js-toc"></div>
 	{% endif %}
 
-	{{ content | improve | extlinks }}
+    {{ content | improve | extlinks }}
+    
+	<nav class="actions">
+        <time>{{ page.date | russian_date }}</time>
+    </nav>
 
 </article>
 

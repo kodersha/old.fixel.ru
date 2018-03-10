@@ -10,7 +10,7 @@ function logoAnimate() {
   
 window.onload = function() {
 	logoAnimate();
-};  
+};
 
 /* Шапка поста */
 
