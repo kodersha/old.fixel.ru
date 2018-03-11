@@ -32,10 +32,6 @@ lightbox.option({
 	'showImageNumberLabel': false
 });
 
-window.lazySizesConfig = {
-	addClasses: true
-};
-
 /* Настраиваем fotorama */
 
 $('.post .fotorama').fotorama({
@@ -61,6 +57,7 @@ $(".post .youtube").each(function() {
 /* Добавляем классы */
 
 $( '[full], .full' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl');
+$( '[color] .highlight pre' ).addClass('space-out-h-micro-xs space-out-h-mili-md space-out-h-base-lg');
 
 /* Поиск */
 
@@ -122,9 +119,6 @@ tocbot.init({
 /* Расстановка переносов на мобильных устройствах и не на мобильных тоже */
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-	$('h1, h2, h3, h4, h5').addClass('hyphenate');
-} else {
-	$('.post [aside], .post .aside, .post [aside-left], .post .aside-left').addClass('hyphenate');
 }
 
 function selectorFunction() {

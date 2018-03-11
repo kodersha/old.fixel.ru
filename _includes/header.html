@@ -1,5 +1,5 @@
-<header class="space-in-v-mili-xs">
-	<div class="row row-middle-sm">
+<header class="space-in-top-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg">
+	<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg row row row-middle-sm">
 		<div class="col-xs-12 col-sm-shrink">
 			<div class="logo" data-js="logo">
 				<a class="link-logo" href="{{ site.baseurl }}/">
@@ -12,21 +12,9 @@
 				</a>
 			</div>
 		</div>
-
-		<div class="col-xs-12 col-sm">
-			<div class="row">
-				<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-sm search">
-					<div class="search-form">
-						<input type="text" id="search-input" class="search-box" />
-						<span class="search-button">
-							<i class="fa fa-search open" aria-hidden="true"></i>
-							<i class="fa fa-times close" aria-hidden="true"></i>
-						</span>
-					</div>
-					<div class="dropdown">
-						<ul class="results" id="results-container"></ul>
-					</div>
-				</div>
+		<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md space-in-left-zero-md">
+			<div class="logo-txt">
+				<span class="space-auto-h-xs space-out-h-zero-md logo-name">{% if page.path contains '_posts' %}Запись #{{ page.index | plus: 1 }}{% elsif page.path contains '_photos' %}Фотографии{% else %}{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}{% endif %}</span>
 			</div>
 		</div>
 	</div>

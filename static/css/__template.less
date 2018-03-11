@@ -21,7 +21,6 @@ body {
 
     @media @xl {
         max-width: @glob-width;
-        margin: 0 auto;
     }
 }
 
@@ -34,12 +33,6 @@ body {
 
 input, textarea, select, button {
     font-family: @glob-font;
-}
-
-@media @xl {
-    h1 {
-        font-size: 2.5em;
-    }
 }
 
 * {
@@ -72,8 +65,7 @@ header {
     /* Grid */
 
     @media @xl {
-        grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' 0 ~'[aside-left]' @grid-aside ~'[main-left]' 0 ~'[inner-left]' @grid-inner ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[inner-right]' @grid-inner ~'[main-right]' 0 ~'[aside-right]' @grid-aside ~'[outer-right]' 0 ~'[edge-right]' @grid-edge ~'[right]' 0;
-        max-width: @post-width;
+        grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' 0 ~'[main-left]' 0 ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[main-right]' @main-outer ~'[inner-left]' @grid-inner ~'[aside]' @grid-aside ~'[inner-right]' @grid-inner ~'[outer-right]' 0 ~'[edge-right]' @grid-edge ~'[right]' 0;
         grid-auto-rows: auto;
         display: grid;
         width: 100%;
@@ -98,21 +90,8 @@ header {
 
     /* Body */
 
-    h1 {
+    h1, h2, h3, h4, h5, h6 {
         max-width: @post-linel;
-
-        @media @xl {
-            max-width: 100%;
-        }
-
-        @media @mxl {
-            margin-bottom: @post-bottom;
-        }
-    }
-
-    h2, h3, h4, h5, h6 {
-        max-width: @post-linel;
-        margin-bottom: @post-bottom;
 
         @media @xl {
             max-width: 100%;
@@ -122,7 +101,6 @@ header {
     p {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
-        color: @post-text;
     }
 
     hr {
@@ -209,34 +187,12 @@ header {
             display: block;
         }
 
-        img {
-            border-radius: 2px;      
-        }
-
-        &.center {
-            .caption {
-                max-width: fit-content;
-                margin-right: auto;
-                margin-left: auto;
-            }
-        }
-
-        &.aside, &.aside-left {
-            .caption {
-                margin-right: 0;
-                margin-left: 0;
-            }
-        }
-
         .caption {
-            margin-top: @post-top;
-            margin-bottom: 0;
             max-width: 100%;
-
-            @media @xl {
-                margin-right: 2.5rem;
-                margin-left: 2.5rem;
-            }
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 20px;
 
             p {
                 max-width: 100%;
@@ -245,23 +201,37 @@ header {
             }
         }
 
-        &.left {
+        &.center {
+            .caption {
+                max-width: fit-content;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        &.aside {
+            .caption {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
             img {
                 margin-left: 0;
             }
+        }
+
+        &.left {
+            img {
+                margin-left: 0;
+            }            
         }
     }
 
     & > .picture {
 
         @media @xl {
-            grid-column: main-left / main-right;
-        }
-
-        &.wrap {
-            @media @xl {
-                grid-column: text-left / text-right;
-            }
+            grid-column: text-left / text-right;
         }
 
         img {
@@ -276,12 +246,12 @@ header {
     /* youtube frame */
 
     .youtube {
-        border-radius: 2px;
         position: relative;
         cursor: pointer;
         width: 100%;
 
         img {
+            vertical-align: middle;
             width: 100%;
         }
 
@@ -327,32 +297,21 @@ header {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
         position: relative;
+        min-height: 100vh;
+        height: 100vh;
+
+        @media @md {
+            min-height: 60vh;
+            height: 60vh;
+        }
 
         img {
+            vertical-align: middle;
             position: relative;
             object-fit: cover;
-            min-height: 100vh;
-            height: 100vh;
+            height: 100%;
             width: 100%;
             z-index: 10;
-
-            @media @md {
-                min-height: 60vh;
-                height: 60vh;
-            }
-
-            &.lazyload,
-            &.lazyloading {
-                opacity: 0;
-            }
-        
-            &.lazyloaded {
-                -webkit-animation: fadein @fadeInSpeed;
-                -moz-animation: fadein @fadeInSpeed;
-                -ms-animation: fadein @fadeInSpeed;
-                -o-animation: fadein @fadeInSpeed;
-                animation: fadein @fadeInSpeed;
-            }
         }
 
         @media @xl {
@@ -434,8 +393,7 @@ header {
         max-width: @post-linel;
 
         @media @xl {
-            grid-column: outer-left / inner-left;
-            max-width: 100%;
+            grid-column: text-left / text-right;
         }
     }
 

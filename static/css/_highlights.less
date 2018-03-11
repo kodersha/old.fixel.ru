@@ -1,13 +1,14 @@
 .highlight {
-	display: grid;
 	position: relative;
+	display: grid;
 	
 	pre {
-		white-space: pre;
 		position: relative;
+		white-space: pre;
+		margin-bottom: 0;
+		margin-top: 0;
 		overflow: auto;
 		z-index: 10;
-		margin: 0;
 
 		code {
 			font-size: 1rem;
@@ -90,27 +91,11 @@
 [color] {
 	.highlight {
 		background-color: #3f3f3f;
-		border-radius: 4px;
-		color: #ffffff;
+		color: @white;
 
 		pre {
-			code {
-				padding: @micro @mili;
-			}
-		}
-
-		&:before {
-			content: '● ● ●';
-			display: block;
-			font-size: 18px;
-			padding: 2px 10px;
-			line-height: 20px;
-			color: #999;
-			width: 100%;
-			text-align: left;
-			font-family: @helvetica;
-			background-color: #bbb;
-			border-radius: 4px 4px 0 0;
+			margin-bottom: 40px;
+			margin-top: 40px;
 		}
 	}
 	.highlight .hll { background-color: #272822; }

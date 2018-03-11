@@ -150,14 +150,10 @@
 
 .logo {
     position: relative;
-    margin: 2px auto;
     display: block;
     height: 40px;
     width: 40px;
-
-    @media @xl {
-        margin: 2px;
-    }
+    margin: 2px;
 
     a {
         text-decoration: none;
@@ -413,5 +409,13 @@
         0%{background-position:0% 82%}
         50%{background-position:100% 19%}
         100%{background-position:0% 82%}
+    }
+}
+
+.logo-txt {
+    .logo-name {
+        font-family: @latoBold;
+        font-size: 1rem;
+        display: block;
     }
 }

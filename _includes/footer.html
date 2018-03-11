@@ -1,5 +1,5 @@
-<footer class="space-in-bottom-mili-xs">
-	<div class="row">
+<footer class="space-in-bottom-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg">
+	<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg row row-middle-md">
 		<div class="col-xs-12 space-in-bottom-mili-xs menu">
 			{% if page.url == "/" %}
 				<nav class="row space-minus-h-nano-xs space-minus-v-nano-xs">
@@ -16,14 +16,21 @@
 			{% endif %}
 		</div>
 
-		<div class="col-xs-12 col-sm-shrink copyright">
-			{{ site.author }} &copy; 2015 - {{ site.time | date: '%Y' }} · <a class="link-subcontrol" target="_blank" href="{{ site.baseurl }}/feed"><b>RSS</b></a><br />
-			{{ site.description }}<br />
+		<div class="col-xs-12 col-md-shrink copyright">
+			{{ site.author }} &copy; 2015 - {{ site.time | date: '%Y' }} &middot; <a class="link-subcontrol" target="_blank" href="{{ site.baseurl }}/feed"><b>RSS</b></a><br />
+			Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
 		</div>
 
-		<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md hidden-upto-md">
-			<div class="scroll-to-top">
-				<a class="link link-button"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg search">
+			<div class="search-form">
+				<input type="text" id="search-input" class="search-box" />
+				<span class="search-button">
+					<i class="fa fa-search open" aria-hidden="true"></i>
+					<i class="fa fa-times close" aria-hidden="true"></i>
+				</span>
+			</div>
+			<div class="dropdown">
+				<ul class="results" id="results-container"></ul>
 			</div>
 		</div>
 	</div>

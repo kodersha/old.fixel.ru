@@ -1,4 +1,4 @@
-<article class="{% if forloop.first == true %}slide-up-fade-in space-in-top-mega-xs space-in-top-giga-md {% else %}space-in-top-mega-xs space-in-top-giga-md {% endif %}{% if forloop.last == true %}space-in-bottom-mega-xs space-in-bottom-giga-md {% endif %}space-auto-h-xl post">	
+<article class="{% if forloop.first == true %}slide-up-fade-in {% endif %}space-in-top-mega-xs space-in-top-giga-xl {% if forloop.last == true %}space-in-bottom-mega-xs space-in-bottom-giga-xl {% endif %} post">	
 	<h1>
 		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	</h1>

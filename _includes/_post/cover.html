@@ -2,8 +2,7 @@
 	{% if page.cover %}
 		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover">
 			<div class="hidden-upto-xl frame"></div>
-			<img alt="{{ page.title }}" data-src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}" class="lazyload">
-			<noscript><img alt="{{ page.title }}" src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}" /></noscript>
+			<img alt="{{ page.title }}" src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_scale,q_100,w_1440/{{ page.cover }}">
 		</div>
 	{% endif %}
 {% endunless %}

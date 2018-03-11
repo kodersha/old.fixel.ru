@@ -21,7 +21,6 @@ rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 
 После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем секцию:
 
-<div main color>
 {% highlight conf %}
 [remi-php56]
 name=Les RPM de remi de PHP 5.6 pour Enterprise Linux 6 - $basearch&nbsp
@@ -32,7 +31,6 @@ enabled=0
 gpgcheck=1 
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
 {% endhighlight %}
-</div>
 
 И меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с PHP версии 5.4 до 5.5 в соответствующей секции remi-php55.
 
@@ -72,13 +70,11 @@ sudo yum install wget
 
 Обновляем репозитории:
 
-<div color main>
 {% highlight shell %}
 sudo rpm --import https://fedoraproject.org/static/0608B895.txt
 sudo wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 sudo rpm -ivh epel-release-6-8.noarch.rpm
 {% endhighlight %}
-</div>
 
 Устанавливаем lighttpd:
 

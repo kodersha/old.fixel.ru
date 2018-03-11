@@ -2,14 +2,10 @@
 layout: base_posts
 ---
 
-<article class="space-in-v-mega-xs space-in-v-giga-md space-auto-h-xl slide-up-fade-in {% if page.toc == 'true' %}js-toc-content{% endif %} post ">
+<article class="space-in-v-mega-xs space-in-v-giga-xl slide-up-fade-in {% if page.toc == 'true' %}js-toc-content{% endif %} post ">
 	<h1>{{ page.title }}</h1>
 
 	{% include _post/cover.html %}
-
-	{% if page.toc == "true" %}
-		<div class="toc js-toc"></div>
-	{% endif %}
 
 	{% if page.tags.size > 0 %}
 		<nav class="space-out-top-micro-xs space-out-bottom-zero-xs space-out-bottom-mili-md tags">
@@ -19,6 +15,10 @@ layout: base_posts
 				<a class="space-out-right-nano-xs link tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
 			{% endfor %}
 		</nav>
+	{% endif %}
+
+	{% if page.toc == "true" %}
+		<div class="toc js-toc"></div>
 	{% endif %}
 
 	{{ content | improve | extlinks | replace: '<!-- more -->', '<a class="anchor" id="more"></a>' }}

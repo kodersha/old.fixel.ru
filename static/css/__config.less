@@ -1,5 +1,5 @@
-@content-linel: 45rem;
-@content-width: 1440px;
+@content-linel: 43.75rem;
+@content-width: 96rem;
 
 .global-settings() {
     @glob-text: @black;
@@ -13,8 +13,8 @@
 }
 
 .post-settings() {
-    @post-top: 1.5rem;
-    @post-bottom: 1.5rem;
+    @post-top: 0;
+    @post-bottom: @base;
 
     @post-linel: @content-linel;
     @post-text: rgba(0,0,0,.84);
@@ -23,10 +23,12 @@
 
 .post-grid() {
     @post-width: @content-width;
+
     @grid-edge: 2.5rem;
-    @grid-aside: 1fr;
-    @grid-inner: minmax(1rem, 2.5rem);
-    @grid-main: minmax(auto, @content-linel);
+    @grid-aside: minmax(13.5rem, 20rem);
+    @grid-inner: minmax(0rem, 1fr);
+    @main-outer: 2.5rem;
+    @grid-main: @content-linel;
 }
 
 /*!
@@ -34,13 +36,13 @@
 */
 
 .bettertext-settings() {
-    @fz: 12px;                                      // default font-size
-    @rythm: 18px;                                   // vertical rythm = line-height in pixels
+    @fz: 12.8px;                                    // default font-size
+    @rythm: 19px;                                   // vertical rythm = line-height in pixels
     @fz-small: 10px;                                // smaller font-size (px)
     @linel: @content-linel;                         // max-width for text (any css value)
 
     @font-body: @gregor;                            // body
-    @font-headers: @latoHeavy;                      // headers
+    @font-headers: @latoBold;                       // headers
     @font-code: @code;                              // code (duplication is intentional)
 
     @scale1: 1.125;                    // header size multiplier for small screens

@@ -19,30 +19,30 @@ tags:
 - В Safari `Cmd + Option + C`, предварительно включив режим разработчика `Настройки - Дополнения - Показывать меню «Разработка» в строке меню`.
 4. Скопировать и вставить скрипт в консоль, нажать `Enter` и немного подождать до обновления страницы.
 
-<div color outer>
+<div full color class="light-dark">
 {% highlight javascript %}
 var GenerateQueue = function( queueNumber )
 {
-	console.log( 'Queue #' + ++queueNumber );
-	jQuery.post( 'http://store.steampowered.com/explore/generatenewdiscoveryqueue', { sessionid: g_sessionID, queuetype: 0 } ).done( function( data )
-	{
-		var requests = [];
-		for( var i = 0; i < data.queue.length; i++ )
-		{
-			requests.push( jQuery.post( 'http://store.steampowered.com/app/10', { appid_to_clear_from_queue: data.queue[ i ], sessionid: g_sessionID } ) );
-		}
-		jQuery.when.apply( jQuery, requests ).done( function()
-		{
-			if( queueNumber < 3 )
-			{
-				GenerateQueue( queueNumber );
-			}
-			else
-			{
-				window.location.reload();
-			}
-		} );
-	} );
+    console.log( 'Queue #' + ++queueNumber );
+    jQuery.post( 'http://store.steampowered.com/explore/generatenewdiscoveryqueue', { sessionid: g_sessionID, queuetype: 0 } ).done( function( data )
+    {
+        var requests = [];
+        for( var i = 0; i < data.queue.length; i++ )
+        {
+            requests.push( jQuery.post( 'http://store.steampowered.com/app/10', { appid_to_clear_from_queue: data.queue[ i ], sessionid: g_sessionID } ) );
+        }
+        jQuery.when.apply( jQuery, requests ).done( function()
+        {
+            if( queueNumber < 3 )
+            {
+                GenerateQueue( queueNumber );
+            }
+            else
+            {
+                window.location.reload();
+            }
+        } );
+    } );
 };
 GenerateQueue( 0 );
 {% endhighlight %}
