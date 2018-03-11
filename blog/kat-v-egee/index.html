@@ -45,9 +45,9 @@
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg ">
-<header class="space-in-v-mili-xs">
-	<div class="row row-middle-sm">
+	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl ">
+<header class="space-in-top-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg">
+	<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg row row row-middle-sm">
 		<div class="col-xs-12 col-sm-shrink">
 			<div class="logo" data-js="logo">
 				<a class="link-logo" href="/">
@@ -60,35 +60,21 @@
 				</a>
 			</div>
 		</div>
-
-		<div class="col-xs-12 col-sm">
-			<div class="row">
-				<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-sm search">
-					<div class="search-form">
-						<input type="text" id="search-input" class="search-box" />
-						<span class="search-button">
-							<i class="fa fa-search open" aria-hidden="true"></i>
-							<i class="fa fa-times close" aria-hidden="true"></i>
-						</span>
-					</div>
-					<div class="dropdown">
-						<ul class="results" id="results-container"></ul>
-					</div>
-				</div>
+		<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md space-in-left-zero-md">
+			<div class="logo-txt">
+				<span class="space-auto-h-xs space-out-h-zero-md logo-name">Запись #80</span>
 			</div>
 		</div>
 	</div>
 </header>
 
 <section class="space-minus-h-base-xl">
-	<article class="space-in-v-mega-xs space-in-v-giga-md space-auto-h-xl slide-up-fade-in  post ">
+	<article class="space-in-v-mega-xs space-in-v-giga-xl slide-up-fade-in  post ">
 	<h1>Кат в Эгее</h1>
 
 	
 	
 
-
-	
 
 	
 		<nav class="space-out-top-micro-xs space-out-bottom-zero-xs space-out-bottom-mili-md tags">
@@ -100,6 +86,8 @@
 				<a class="space-out-right-nano-xs link tag" href="/blog/tags/эгея/">Эгея</a>
 			
 		</nav>
+	
+
 	
 
 	<p>Как известно <a href="https://blogengine.ru" rel="nofollow" target="_blank">Эгея</a> не имеет функции скрытия длинных постов под катом, в этой <a href="https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/" rel="nofollow" target="_blank">статье</a> Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта <a href="http://jedfoster.com/Readmore.js/" rel="nofollow" target="_blank">readmore.js</a>. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.</p>
@@ -116,7 +104,7 @@
 
 <p>Добавим в созданный файл немного настроек, полный список которых можно посмотреть на странице скрипта на GitHub.</p>
 
-<div outer="" color="">
+<div full="" color="" class="light-dark">
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
     <span class="nx">$</span><span class="p">(</span><span class="s1">'.e2-note-short'</span><span class="p">).</span><span class="nx">readmore</span><span class="p">({</span>
@@ -147,7 +135,7 @@
 
 <p>Добавим стилей. Их можно отредактировать на свой вкус.</p>
 
-<div outer="" color="">
+<div full="" color="" class="light-dark">
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.more</span> <span class="p">{</span>
     <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
@@ -229,27 +217,22 @@
 
 </article>
 
-<nav class="row row-between-sm space-out-h-base-xl space-in-bottom-mega-xs space-in-bottom-giga-md pagination">
+<nav class="row row-between-sm space-out-h-base-xl space-in-bottom-mega-xs space-in-bottom-giga-xl pagination">
 	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-left-zero-xl previous">
 		
-			<a class="link" href="/blog/beat-cop/">&larr; Ранее</a>
+			<a title="Beat Cop" class="link" href="/blog/beat-cop/">&larr; Ранее</a>
 		
-		<p>Beat Cop</p>
 	</span>	
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-auto-v-md page-number">Запись: 80 из 83</span>
-
 	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-right-zero-xl next">
 		
-			<a class="link" href="/blog/o-ljubimyh-serialah/">Позднее &rarr;</a>
+			<a title="О любимых сериалах" class="link" href="/blog/o-ljubimyh-serialah/">Позднее &rarr;</a>
 		
-		<p>О любимых сериалах</p>
 	</span>
 </nav>
 </section>
 
-<footer class="space-in-bottom-mili-xs">
-	<div class="row">
+<footer class="space-in-bottom-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg">
+	<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg row row-middle-md">
 		<div class="col-xs-12 space-in-bottom-mili-xs menu">
 			
 				<nav class="breadcrumbs">
@@ -313,14 +296,21 @@
 			
 		</div>
 
-		<div class="col-xs-12 col-sm-shrink copyright">
-			Александра Травкина &copy; 2015 - 2018 · <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
-			Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.<br />
+		<div class="col-xs-12 col-md-shrink copyright">
+			Александра Травкина &copy; 2015 - 2018 &middot; <a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
+			Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
 		</div>
 
-		<div class="col-xs-12 col-sm-shrink space-in-top-mili-xs space-in-top-zero-md space-auto-left-md hidden-upto-md">
-			<div class="scroll-to-top">
-				<a class="link link-button"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg search">
+			<div class="search-form">
+				<input type="text" id="search-input" class="search-box" />
+				<span class="search-button">
+					<i class="fa fa-search open" aria-hidden="true"></i>
+					<i class="fa fa-times close" aria-hidden="true"></i>
+				</span>
+			</div>
+			<div class="dropdown">
+				<ul class="results" id="results-container"></ul>
 			</div>
 		</div>
 	</div>
@@ -337,8 +327,6 @@
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
-<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
-<script type="text/javascript" src="/static/modules/lazysizes/lazysizes.js"></script>
 <script type="text/javascript" src="/static/modules/likely/likely.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
