@@ -116,62 +116,57 @@ tocbot.init({
 	headingSelector: 'h2, h3',
 });
 
-/* Расстановка переносов на мобильных устройствах и не на мобильных тоже */
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-}
 
-function selectorFunction() {
-	return window.document.getElementsByClassName("hyphenate");
-}
+} else {
+	/* Прилепляем футер */
 
-/* Прилепляем футер */
-
-;(function(window, $, undefined){
-	'use strict';
-	/**
-	 * @return {Object}
-	 */
-	$.fn.stickyFooter = function()
-	{
-		var windowHeight = 0,
-			offset = 0,
-			$div = this;
-		position();
-		$(window).bind('resize.stickyFooter', function(){
-			position();
-		});
+	;(function(window, $, undefined){
+		'use strict';
 		/**
-		 * @return {void}
+		 * @return {Object}
 		 */
-		function position(){
-			if( $div.css('position') !== 'static' )
-			{
-				offset = $div.outerHeight(true);
-			}else{
-				offset = 0;
+		$.fn.stickyFooter = function()
+		{
+			var windowHeight = 0,
+				offset = 0,
+				$div = this;
+			position();
+			$(window).bind('resize.stickyFooter', function(){
+				position();
+			});
+			/**
+			 * @return {void}
+			 */
+			function position(){
+				if( $div.css('position') !== 'static' )
+				{
+					offset = $div.outerHeight(true);
+				}else{
+					offset = 0;
+				}
+				windowHeight = window.innerHeight
+					? window.innerHeight
+					: $(window).height();
+				if( $('body').outerHeight(true) + offset < windowHeight ){
+					$div.css({
+						position	: 'fixed',
+						width		: '100%',
+						bottom		: 0,
+					});
+				}else{
+					$div.css({
+						position	: 'static',
+						width		: 'auto'
+					});
+				}
 			}
-			windowHeight = window.innerHeight
-				? window.innerHeight
-				: $(window).height();
-			if( $('body').outerHeight(true) + offset < windowHeight ){
-				$div.css({
-					position	: 'fixed',
-					width		: '100%',
-					bottom		: 0,
-				});
-			}else{
-				$div.css({
-					position	: 'static',
-					width		: 'auto'
-				});
-			}
-		}
-		return this;
-	};
-}(window, jQuery));
+			return this;
+		};
+	}(window, jQuery));
 
-$('footer').stickyFooter();
+	$('footer').stickyFooter();
+}
 
 /* Кнопка вверх */
 

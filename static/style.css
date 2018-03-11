@@ -10190,7 +10190,7 @@ button.slider .link-button {
   border-color: #4183c4;
 }
 footer {
-  max-width: 96rem;
+  max-width: calc(96rem - 40px - 40px);
 }
 footer .copyright {
   font-size: 1rem;
