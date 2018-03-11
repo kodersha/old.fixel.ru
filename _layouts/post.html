@@ -7,16 +7,6 @@ layout: base_posts
 
 	{% include _post/cover.html %}
 
-	{% if page.tags.size > 0 %}
-		<nav class="space-out-top-micro-xs space-out-bottom-zero-xs space-out-bottom-mili-md tags">
-			<span class="space-out-right-nano-xs">Теги:</span>
-			{% assign tags = page.tags | sort %}
-			{% for tag in tags %}
-				<a class="space-out-right-nano-xs link tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
-			{% endfor %}
-		</nav>
-	{% endif %}
-
 	{% if page.toc == "true" %}
 		<div class="toc js-toc"></div>
 	{% endif %}
@@ -24,7 +14,15 @@ layout: base_posts
 	{{ content | improve | extlinks | replace: '<!-- more -->', '<a class="anchor" id="more"></a>' }}
 
 	<nav class="actions">
-		<time>{{ page.date | russian_date }}</time>
+		<time class="space-out-right-nano-xs">{{ page.date | russian_date }}</time>
+
+		{% if page.tags.size > 0 %}
+			<span class="space-out-right-nano-xs">&middot;</span>
+			{% assign tags = page.tags | sort %}
+			{% for tag in tags %}
+				<a class="space-out-right-nano-xs link tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
+			{% endfor %}
+		{% endif %}
 	</nav>
 
 </article>

@@ -26,13 +26,17 @@ body {
 
 @media @msm {
     body {
-        font-size: 1.2em;
-        line-height: 1.4;
+        font-size: 1.1em;
+        line-height: 1.35;
     }
 }
 
 input, textarea, select, button {
     font-family: @glob-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -90,6 +94,12 @@ header {
 
     /* Body */
 
+    h1 {
+        @media @xl {
+            font-size: 2.5em;
+        }
+    }
+
     h1, h2, h3, h4, h5, h6 {
         max-width: @post-linel;
 
@@ -101,6 +111,7 @@ header {
     p {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
+        color: @post-text;
     }
 
     hr {

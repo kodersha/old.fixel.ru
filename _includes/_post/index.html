@@ -10,7 +10,15 @@
 	{% endif %}
 
 	<nav class="actions">
-		<time>{{ post.date | russian_date }}</time>
+		<time class="space-out-right-nano-xs">{{ post.date | russian_date }}</time>
+
+		{% if post.tags.size > 0 %}
+			<span class="space-out-right-nano-xs">&middot;</span>
+			{% assign tags = post.tags | sort %}
+			{% for tag in tags %}
+				<a class="space-out-right-nano-xs link tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
+			{% endfor %}
+		{% endif %}
 	</nav>
 </article>
 
