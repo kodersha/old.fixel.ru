@@ -10397,6 +10397,7 @@ footer .search .dropdown .results li:last-of-type {
   -webkit-transition: max-height 0.5s ease-in;
   -moz-transition: max-height 0.5s ease-in;
   transition: max-height 0.5s ease-in;
+  visibility: visible;
   max-height: 300px;
 }
 .menu.menu-open .menu-content .menu-navigation {
@@ -10404,7 +10405,6 @@ footer .search .dropdown .results li:last-of-type {
 }
 .menu .menu-content {
   border-bottom: 1px solid #f3f3f3;
-  visibility: hidden;
   position: relative;
   width: 100%;
 }
