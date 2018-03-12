@@ -17,6 +17,8 @@ safe: false
 
 # Navigation
 navigation:
+  - title: Блог
+    url: /blog/
   - title: Все записи
     url: /blog/all/
   - title: Фотографии

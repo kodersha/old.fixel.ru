@@ -1,19 +1,7 @@
 <footer class="space-in-bottom-mili-xs">
 	<div class="row row-middle-md">
-		<div class="col-xs-12 space-in-bottom-mili-xs menu">
-			{% if page.url == "/" %}
-				<nav class="row space-minus-h-nano-xs space-minus-v-nano-xs">
-					{% for item in site.navigation %}
-						{% assign class = nil %}
-						{% if page.url contains item.url %}{% assign class = 'active' %}{% endif %}
-						<div class="col-xs-12 col-sm-shrink space-in-h-zero-xs space-out-h-nano-xs space-out-v-nano-xs">
-							<a class="link {{ class }}" href="{{ item.url }}">{{ item.title }}</a>
-						</div>
-					{% endfor %}
-				</nav>
-			{% else %}
-				{% include breadcrumbs.html %}
-			{% endif %}
+		<div class="col-xs-12 space-in-bottom-mili-xs">
+			{% include breadcrumbs.html %}
 		</div>
 
 		<div class="col-xs-12 col-md-shrink copyright">

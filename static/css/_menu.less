@@ -1,0 +1,43 @@
+.menu {
+    -webkit-transition: max-height 0.3s ease-out;
+    -moz-transition: max-height 0.3s ease-out;
+    transition: max-height 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+    position: relative;
+    max-height: 0;
+    opacity: 0;
+    
+    &.menu-open {
+        max-height: 100%;
+        opacity: 1;
+
+        .menu-content {
+            display: table;
+        }
+    }
+    
+    .menu-content {
+        border-bottom: 1px solid #f3f3f3;
+        position: relative;
+        display: none;
+        width: 100%;
+        z-index: 10;
+
+        a {
+            font-size: @glob-font-size;
+            font-family: @lato;
+            margin-bottom: 4px;
+
+            @media @mmd {
+                float: left;
+                width: 50%;
+            }
+
+            &.active {
+                font-weight: bolder;
+            }
+        }
+    }
+}
