@@ -2,41 +2,50 @@
     -webkit-transition: max-height 0.3s ease-out;
     -moz-transition: max-height 0.3s ease-out;
     transition: max-height 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+    visibility: hidden;
     position: relative;
     max-height: 0;
-    opacity: 0;
     
     &.menu-open {
-        max-height: 100%;
-        opacity: 1;
+        -webkit-transition: max-height 0.5s ease-in;
+        -moz-transition: max-height 0.5s ease-in;
+        transition: max-height 0.5s ease-in;
+        max-height: 300px;
 
         .menu-content {
-            display: table;
+            .menu-navigation {
+                opacity: 1;
+            }
         }
     }
     
     .menu-content {
         border-bottom: 1px solid #f3f3f3;
+        visibility: hidden;
         position: relative;
-        display: none;
         width: 100%;
-        z-index: 10;
 
-        a {
-            font-size: @glob-font-size;
-            font-family: @glob-font;
-            margin-bottom: 4px;
+        .menu-navigation {
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+            display: table;
+            width: 100%;
+            opacity: 0;
 
-            @media @mmd {
-                float: left;
-                width: 50%;
-            }
+            a {
+                font-size: @glob-font-size;
+                font-family: @glob-font;
+                margin-bottom: 4px;
 
-            &.active {
-                font-weight: bolder;
+                &.active {
+                    font-weight: bolder;
+                }
+
+                @media @mmd {
+                    float: left;
+                    width: 50%;
+                }
             }
         }
     }

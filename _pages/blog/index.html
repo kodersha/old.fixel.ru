@@ -9,7 +9,7 @@ dscription: Последние десять записей из каждой к�
 	<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
 		{% capture category_name %}{{ category | first }}{% endcapture %}
 
-		<strong>{{ category_name }}</strong>
+		<h4>{{ category_name }}</h4>
 
 		{% for post in site.categories[category_name] limit: 10 %}
 			<article class="item">
@@ -23,7 +23,7 @@ dscription: Последние десять записей из каждой к�
 
 <!-- hiddens -->
 <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
-	<strong>Старые записи</strong>
+	<h4>Старые записи</h4>
 	{% assign olderPosts = site.posts | where: 'hidden', 'true' %}
 	{% for post in olderPosts limit: 10 %}
 		<article class="item">
@@ -35,7 +35,7 @@ dscription: Последние десять записей из каждой к�
 
 <!-- photos -->
 <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
-	<strong>Фотографии</strong>
+	<h4>Фотографии</h4>
 	{% for post in site.photos reversed limit: 10 %}
 		<article class="item">
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
@@ -46,7 +46,7 @@ dscription: Последние десять записей из каждой к�
 
 <!-- works -->
 <section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-base-xs">
-	<strong>Работы</strong>
+	<h4>Работы</h4>
 	{% for post in site.works reversed limit: 10 %}
 		<article class="item">
 			<a target="_blank" href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }} &middot; {{ post.description | improve }}</a>
