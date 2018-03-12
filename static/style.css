@@ -8393,8 +8393,8 @@ body {
 }
 @media (max-width: 576px) {
   body {
-    font-size: 1.1em;
     line-height: 1.35;
+    font-size: 1.1em;
   }
 }
 input,
@@ -8816,6 +8816,14 @@ header .logo-txt .logo-name {
   font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   display: block;
+}
+header .show-menu {
+  font-size: 1rem;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  cursor: pointer;
+}
+header .show-menu.active {
+  color: #d70033;
 }
 .post {
   /* Grid */
@@ -10477,6 +10485,45 @@ footer .search .dropdown .results li:last-of-type {
 }
 .modal .place-footer .item.action:hover {
   background-color: #f1f3f4;
+}
+.menu {
+  -webkit-transition: max-height 0.3s ease-out;
+  -moz-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: relative;
+  max-height: 0;
+  opacity: 0;
+}
+.menu.menu-open {
+  max-height: 100%;
+  opacity: 1;
+}
+.menu.menu-open .menu-content {
+  display: table;
+}
+.menu .menu-content {
+  border-bottom: 1px solid #f3f3f3;
+  position: relative;
+  display: none;
+  width: 100%;
+  z-index: 10;
+}
+.menu .menu-content a {
+  font-size: 1rem;
+  font-family: 'LatoWeb', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  margin-bottom: 4px;
+}
+@media (max-width: 768px) {
+  .menu .menu-content a {
+    float: left;
+    width: 50%;
+  }
+}
+.menu .menu-content a.active {
+  font-weight: bolder;
 }
 a {
   border-bottom: 1px solid;

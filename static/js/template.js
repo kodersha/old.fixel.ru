@@ -1,3 +1,14 @@
+/* Меню */
+
+var menuTop = document.getElementById( 'menu' ),
+	showMenu = document.getElementById( 'showMenu' ),
+	body = document.body;
+
+showMenu.onclick = function() {
+	classie.toggle( this, 'active' );
+	classie.toggle( menuTop, 'menu-open' );
+};
+
 /* Лого */
 
 function logoAnimate() {
