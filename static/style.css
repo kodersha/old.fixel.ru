@@ -8821,6 +8821,7 @@ header .show-menu {
   font-size: 1rem;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   cursor: pointer;
+  padding: 16px;
 }
 header .show-menu.active {
   color: #d70033;
@@ -10411,7 +10412,7 @@ footer .search .dropdown .results li:last-of-type {
 }
 .menu .menu-content a {
   font-size: 1rem;
-  font-family: 'LatoWeb', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   margin-bottom: 4px;
 }
 @media (max-width: 768px) {
@@ -10534,7 +10535,7 @@ a:hover {
 }
 .link-subcontrol {
   border-bottom-color: rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.76);
+  color: #000000;
 }
 .link-subcontrol:hover {
   border-bottom-color: #000000;
