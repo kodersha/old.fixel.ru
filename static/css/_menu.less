@@ -7,9 +7,9 @@
     max-height: 0;
     
     &.menu-open {
-        -webkit-transition: max-height 0.5s ease-in;
-        -moz-transition: max-height 0.5s ease-in;
-        transition: max-height 0.5s ease-in;
+        -webkit-transition: max-height 0.3s ease-in;
+        -moz-transition: max-height 0.3s ease-in;
+        transition: max-height 0.3s ease-in;
         visibility: visible;
         max-height: 300px;
 
@@ -39,7 +39,15 @@
                 margin-bottom: 4px;
 
                 &.active {
-                    font-weight: bolder;
+                    font-weight: bold;
+
+                    @media @md {
+                        background-color: rgba(152, 184, 200, 0.2);
+                        border-bottom-color: transparent;
+                        font-weight: normal;
+                        border-radius: 2px;
+                        padding: 5px 10px;
+                    }
                 }
 
                 @media @mmd {

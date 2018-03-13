@@ -8,9 +8,10 @@ baseurl:
 permalink: /blog/:title/
 image:
 markdown: kramdown
+
 disqus: milkleaks-ru
 cloudinary: milkleaks
-cloudinary-size: c_limit,w_800
+cloudinary-size: c_limit,w_700
 
 # Jekyll
 safe: false

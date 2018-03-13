@@ -92,14 +92,10 @@ header {
 
     /* Body */
 
-    h1 {
-        @media @xl {
-            font-size: 2.5em;
-        }
-    }
-
     h1, h2, h3, h4, h5, h6 {
+        margin-bottom: @post-bottom;
         max-width: @post-linel;
+        font-size: 1.25em;
 
         @media @xl {
             max-width: 100%;
@@ -112,8 +108,8 @@ header {
         color: @post-text;
     }
 
-    hr {
-        font-size: @glob-font-size + 0.4rem;
+    & > hr {
+        font-size: @glob-font-size;
         font-family: @helvetica;
         margin-bottom: @post-bottom;
         margin-top: @post-top;
@@ -384,6 +380,11 @@ header {
                 height: 60vh !important;
             }
         }
+    }
+
+    .gist {
+        margin-top: @post-top;
+        margin-bottom: @post-bottom;
     }
 
     /* Tags & Actions */
