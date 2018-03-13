@@ -8923,18 +8923,15 @@ header .show-menu.active {
 .post .link-title:hover {
   color: #333333;
 }
-@media (min-width: 1200px) {
-  .post h1 {
-    font-size: 2.5em;
-  }
-}
 .post h1,
 .post h2,
 .post h3,
 .post h4,
 .post h5,
 .post h6 {
+  margin-bottom: 20px;
   max-width: 43.75rem;
+  font-size: 1.25em;
 }
 @media (min-width: 1200px) {
   .post h1,
@@ -8951,8 +8948,8 @@ header .show-menu.active {
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.84);
 }
-.post hr {
-  font-size: 1.4rem;
+.post > hr {
+  font-size: 1rem;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -8962,16 +8959,16 @@ header .show-menu.active {
   border: none;
   opacity: 1;
 }
-.post hr::before {
+.post > hr::before {
   position: relative;
   content: "⌘ ⌘ ⌘";
 }
-.post hr.easy {
+.post > hr.easy {
   background-color: #f1f1f1;
   height: 1px;
   width: 100%;
 }
-.post hr.easy::before {
+.post > hr.easy::before {
   content: none;
 }
 .post ul:not([class]),
@@ -9185,6 +9182,10 @@ header .show-menu.active {
   .post .google-maps .map {
     height: 60vh !important;
   }
+}
+.post .gist {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .post .tags,
 .post .actions {
@@ -10394,9 +10395,9 @@ footer .search .dropdown .results li:last-of-type {
   max-height: 0;
 }
 .menu.menu-open {
-  -webkit-transition: max-height 0.5s ease-in;
-  -moz-transition: max-height 0.5s ease-in;
-  transition: max-height 0.5s ease-in;
+  -webkit-transition: max-height 0.3s ease-in;
+  -moz-transition: max-height 0.3s ease-in;
+  transition: max-height 0.3s ease-in;
   visibility: visible;
   max-height: 300px;
 }
@@ -10422,7 +10423,16 @@ footer .search .dropdown .results li:last-of-type {
   margin-bottom: 4px;
 }
 .menu .menu-content .menu-navigation a.active {
-  font-weight: bolder;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .menu .menu-content .menu-navigation a.active {
+    background-color: rgba(152, 184, 200, 0.2);
+    border-bottom-color: transparent;
+    font-weight: normal;
+    border-radius: 2px;
+    padding: 5px 10px;
+  }
 }
 @media (max-width: 768px) {
   .menu .menu-content .menu-navigation a {

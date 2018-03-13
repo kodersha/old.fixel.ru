@@ -109,6 +109,34 @@
 	
 	<article class="slide-up-fade-in space-in-top-mega-xs space-in-top-giga-xl  post">	
 	<h1>
+		<a class="link-title" href="/blog/jekyll-i-izobrazhenija/">Jekyll и изображения</a>
+	</h1>
+
+	<p>Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в <a href="https://help.github.com/articles/what-is-github-pages/" rel="nofollow" target="_blank">справке</a> GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала <a href="https://imgur.com/" rel="nofollow" target="_blank">imgur</a>, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.</p>
+
+<p>Например <a href="https://cloudinary.com/" rel="nofollow" target="_blank">Cloudinary</a> — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий <a href="https://nhoizey.github.io/jekyll-cloudinary/" rel="nofollow" target="_blank">плагин</a>, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде <a href="https://gist.github.com/sasha-travkina/851bba69a34801cdc342ff5b9c38fe58" rel="nofollow" target="_blank"><strong>плагина</strong></a> для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100.</p>
+
+
+
+	
+
+	<nav class="actions">
+		<time class="space-out-right-nano-xs">13 марта 2018</time>
+
+		
+			<span class="space-out-right-nano-xs">&middot;</span>
+			
+			
+				<a class="space-out-right-nano-xs link tag" href="/blog/tags/jekyll/">Jekyll</a>
+			
+		
+	</nav>
+</article>
+
+
+
+	<article class="space-in-top-mega-xs space-in-top-giga-xl  post">	
+	<h1>
 		<a class="link-title" href="/blog/papers-please-korotkometrazhyi-film/">Короткометражный фильм «Papers, Please»</a>
 	</h1>
 
@@ -200,7 +228,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216290/01_ruhqgg.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216290/01_ruhqgg.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216290/01_ruhqgg.png">
 				</a>
 				
 			</figure>
@@ -211,7 +239,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216293/02_bqjuqd.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216293/02_bqjuqd.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216293/02_bqjuqd.png">
 				</a>
 				
 			</figure>
@@ -249,7 +277,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216008/01_i3skfm.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216008/01_i3skfm.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216008/01_i3skfm.jpg">
 				</a>
 				
 			</figure>
@@ -305,7 +333,7 @@
 
 
 
-	<article class="space-in-top-mega-xs space-in-top-giga-xl  post">	
+	<article class="space-in-top-mega-xs space-in-top-giga-xl space-in-bottom-mega-xs space-in-bottom-giga-xl  post">	
 	<h1>
 		<a class="link-title" href="/blog/elementary-os/">elementaryOS</a>
 	</h1>
@@ -314,7 +342,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519215768/01_ogwus9.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215768/01_ogwus9.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215768/01_ogwus9.png">
 				</a>
 				<figcaption class="caption"><p>elementary<span class="caps">OS</span> с темой оформления <a href="https://github.com/LinxGem33/OSX-Arc-Darker/" rel="nofollow" target="_blank">ArkDarker</a> на морально устаревшем для <span class="caps">OS</span> X <a href="/blog/znakomstvo-s-mac/">Macbook Air mid 2012, 11-inch</a>.</p>
 </figcaption>
@@ -338,68 +366,6 @@
 			
 			
 				<a class="space-out-right-nano-xs link tag" href="/blog/tags/os/"><span class="caps">OS</span></a>
-			
-		
-	</nav>
-</article>
-
-
-
-	<article class="space-in-top-mega-xs space-in-top-giga-xl space-in-bottom-mega-xs space-in-bottom-giga-xl  post">	
-	<h1>
-		<a class="link-title" href="/blog/va11halla/">VA-11 Hall-A</a>
-	</h1>
-
-	<p>Вдохновленная японской анимацией визуальная новелла от небольшой студии из Венесуэлы, где в кибернитезированном будущем, со всеми его корпорациями зла, искусственным интеллектом, аугментацией и наномашинами, игроку, в роли девушки по имени Джилл, предстоит поработать в качестве бармена в «Вальхалле» - не самом популярном барном заведении мегаполиса Глитч Сити в две тысячи семидесятых годах.</p>
-
-<figure class="picture">
-				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519215463/01_txkg8e.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215463/01_txkg8e.png">
-				</a>
-				
-			</figure>
-
-<p>Геймплей «Вальхаллы» точнее всего можно охарактеризовать как «Игра жанра Papers, Please», где от ваших правильных или не правильных действий зависит развитие сюжета, то сколько денег и чаевых за рабочий день вы сможете заработать, дабы оплатить коммунальные счета и удовлетворение потребностей, и какую из шести концовок откроете в финале. Однако влиять на развитие диалогов можно лишь косвенно, ход беседы и расположение духа клиента зависит от того, как правильно и насколько точно вы смешаете и подадите тот или иной алкогольный напиток. Совсем как в том квесте в Syberia. Зачастую посетители «Вальхаллы» могут и сами не знать что они хотят выпить и тут стоит полагаться лишь на чутье и интуицию - запоминать характеры и подмечать особенности постоянных клиентов. Скажем, не каждой хрупкой девушке понравится коктейль «Удар по печени», как не каждому мужчине «Голубая Фея», однако всегда бывают исключения. Между рабочими днями Джилл может отдохнуть у себя дома в компании кота Лунки, а также почитать новостную ленту, имиджборд или блог, или купить предметы интерьера для большего счастья. Если не удовлетворять потребности Джилл она станет хуже работать, а значит её подсказок по приготовлению коктейлей не будет.</p>
-
-<figure class="picture aside">
-				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519215462/02_zjtiob.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215462/02_zjtiob.jpg">
-				</a>
-				<figcaption class="caption"><p>Некоторый саундтрек к <span class="caps">VA</span>-11 Hall-A можно послушать на <a href="https://soundcloud.com/garoadmusic/sets/va-11-hall-a-prologue-ost" rel="nofollow" target="_blank">Soundcloud</a>.</p>
-</figcaption>
-			</figure>
-
-<p>В <span class="caps">VA</span>-11 Hall-A отлично проработаны диалоги, мир детально наполнен событиями, новостями, происшествиями, атмосферой киберпанка. Из душевных диалогов с самыми разнообразными посетителями «Вальхаллы» можно узнать о их личных переживаниях, взаимоотношениях, мечтах, планах и событиях в мире. Особенно, если напиток правильно смешан и располагает к беседе. Всё это дополнено отличным музыкальным сопровождением в синтетическом стиле 16-битных приставок. Сам мир изобилует множеством отсылок к современной поп-культуре, а также, поднимает множество животрепещущих вопросов о классовом расслоении общества, о бюрократии, корпорациях, коррупции, кликбейтах, правах искусственного интеллекта, стримерах и лесбиянках. Всё это вишенкой на торте приправлено сарказмом, чёрным юмором и самыми нелепыми ситуациями.</p>
-
-<p class="aside">Неофициальный русификатор можно скачать <a href="http://tairennaino.narod.ru/va11halla/status.html" rel="nofollow" target="_blank">здесь</a>.</p>
-
-<figure class="picture">
-				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519215463/03_zzenfo.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215463/03_zzenfo.png">
-				</a>
-				
-			</figure>
-
-<p>Пожалуй <span class="caps">VA</span>-11 Hall-A одна из тех немногих игр, которой, так или иначе, невозможно не проникнутся. К финалу игры привыкаешь и привязываешься как к главной героине, так и к множеству разнообразных посетителей, от главного редактора местной газеты, до наемного убийцы с аугментациями. Сопереживать их историям весьма увлекательно, а расставаться в финале может быть тоскливо. В целом, «Вальхалла» отличный представитель такого замусоренного жанра, как визуальные новеллы. Мир здесь, несмотря на своё кибернетическое будущее, как никогда близок и знаком - всё те же социальные проблемы, всё те же имиджборды с мемами, всё те же люди (И не совсем люди) готовые открыться скромному бармену за бокалом чего нибудь алкогольного. Хотя бы за это «Вальхалла» стоит внимания.</p>
-
-
-
-	
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs"> 9 ноября 2017</time>
-
-		
-			<span class="space-out-right-nano-xs">&middot;</span>
-			
-			
-				<a class="space-out-right-nano-xs link tag" href="/blog/tags/визуальная-новелла/">Визуальная&nbsp;новелла,</a>
-			
-				<a class="space-out-right-nano-xs link tag" href="/blog/tags/инди/">Инди,</a>
-			
-				<a class="space-out-right-nano-xs link tag" href="/blog/tags/квест/">Квест,</a>
-			
-				<a class="space-out-right-nano-xs link tag" href="/blog/tags/пиксельная-графика/">Пиксельная&nbsp;графика</a>
 			
 		
 	</nav>

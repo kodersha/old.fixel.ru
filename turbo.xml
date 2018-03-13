@@ -9,6 +9,24 @@
     <yandex:analytics id="40455205" type="Yandex"></yandex:analytics>
     
       <item turbo="true">
+        <title>Jekyll и изображения</title>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/jekyll-i-izobrazhenija/</guid>
+        <link>https://milkleaks.ru/blog/jekyll-i-izobrazhenija/</link>
+        <description>&lt;p&gt;Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/&quot;&gt;справке&lt;/a&gt; GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала &lt;a href=&quot;https://imgur.com/&quot;&gt;imgur&lt;/a&gt;, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.&lt;/p&gt;
+
+&lt;p&gt;Например &lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий &lt;a href=&quot;https://nhoizey.github.io/jekyll-cloudinary/&quot;&gt;плагин&lt;/a&gt;, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде &lt;a href=&quot;https://gist.github.com/sasha-travkina/851bba69a34801cdc342ff5b9c38fe58&quot;&gt;&lt;strong&gt;плагина&lt;/strong&gt;&lt;/a&gt; для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 13 Mar 2018 00:00:00 +0700</pubDate>
+        <turbo:content>&lt;p&gt;Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/&quot;&gt;справке&lt;/a&gt; GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала &lt;a href=&quot;https://imgur.com/&quot;&gt;imgur&lt;/a&gt;, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.&lt;/p&gt;
+
+&lt;p&gt;Например &lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий &lt;a href=&quot;https://nhoizey.github.io/jekyll-cloudinary/&quot;&gt;плагин&lt;/a&gt;, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде &lt;a href=&quot;https://gist.github.com/sasha-travkina/851bba69a34801cdc342ff5b9c38fe58&quot;&gt;&lt;strong&gt;плагина&lt;/strong&gt;&lt;/a&gt; для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100.&lt;/p&gt;
+
+</turbo:content>
+        <author>Александра Травкина</author>
+      </item>
+    
+      <item turbo="true">
         <title>Короткометражный фильм «Papers, Please»</title>
         <guid isPermaLink="true">https://milkleaks.ru/blog/papers-please-korotkometrazhyi-film/</guid>
         <link>https://milkleaks.ru/blog/papers-please-korotkometrazhyi-film/</link>
@@ -57,14 +75,14 @@
 &lt;div main=&quot;&quot; row=&quot;&quot;&gt;
   &lt;figure class=&quot;picture col-xs-12 col-sm-6 center&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519470747/01_ui3wbb.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519470747/01_ui3wbb.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519470747/01_ui3wbb.png&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Так главная страница выглядела раньше&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
   &lt;figure class=&quot;picture col-xs-12 col-sm-6 center&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519485996/02_tka1iv.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519485996/02_tka1iv.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519485996/02_tka1iv.png&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;А так - после обновления&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -75,7 +93,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519594757/03_cajndq.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519594757/03_cajndq.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519594757/03_cajndq.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -93,14 +111,14 @@
 &lt;div main=&quot;&quot; row=&quot;&quot;&gt;
   &lt;figure class=&quot;picture col-xs-12 col-sm-6 center&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519470747/01_ui3wbb.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519470747/01_ui3wbb.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519470747/01_ui3wbb.png&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Так главная страница выглядела раньше&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
   &lt;figure class=&quot;picture col-xs-12 col-sm-6 center&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519485996/02_tka1iv.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519485996/02_tka1iv.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519485996/02_tka1iv.png&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;А так - после обновления&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -111,7 +129,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519594757/03_cajndq.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519594757/03_cajndq.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519594757/03_cajndq.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -136,7 +154,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;0d1zpt6k5OI&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216868/video_01_pwvore.png&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216868/video_01_pwvore.png&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0d1zpt6k5OI?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -146,7 +164,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216775/01_bnj1ur.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/01_bnj1ur.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216775/01_bnj1ur.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -156,13 +174,13 @@
 &lt;div main=&quot;&quot; row=&quot;&quot;&gt;
   &lt;figure class=&quot;picture col-xs-12 col-md-6&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519217048/row_01_ptclcy.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519217048/row_01_ptclcy.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519217048/row_01_ptclcy.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
   &lt;figure class=&quot;picture col-xs-12 col-md-6&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519217050/row_02_umiuxg.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519217050/row_02_umiuxg.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519217050/row_02_umiuxg.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -174,7 +192,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;w_BXG9up-oE&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216916/video_02_uzuhkn.png&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216916/video_02_uzuhkn.png&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/w_BXG9up-oE?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -184,7 +202,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216775/02_lf2lvz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/02_lf2lvz.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216775/02_lf2lvz.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -199,7 +217,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;0U989j62g20&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216951/video_03_rankfw.jpg&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216951/video_03_rankfw.jpg&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0U989j62g20?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -209,7 +227,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216774/03_rzxuzi.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216774/03_rzxuzi.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216774/03_rzxuzi.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -224,7 +242,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;KTu8iDynwNc&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216987/video_04_d5eqx2.png&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216987/video_04_d5eqx2.png&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/KTu8iDynwNc?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -234,7 +252,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216772/04_mxnlly.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/04_mxnlly.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216772/04_mxnlly.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -247,7 +265,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216772/05_lno5rf.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/05_lno5rf.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216772/05_lno5rf.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -263,7 +281,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;0d1zpt6k5OI&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216868/video_01_pwvore.png&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216868/video_01_pwvore.png&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0d1zpt6k5OI?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -273,7 +291,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216775/01_bnj1ur.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/01_bnj1ur.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216775/01_bnj1ur.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -283,13 +301,13 @@
 &lt;div main=&quot;&quot; row=&quot;&quot;&gt;
   &lt;figure class=&quot;picture col-xs-12 col-md-6&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519217048/row_01_ptclcy.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519217048/row_01_ptclcy.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519217048/row_01_ptclcy.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
   &lt;figure class=&quot;picture col-xs-12 col-md-6&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519217050/row_02_umiuxg.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519217050/row_02_umiuxg.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519217050/row_02_umiuxg.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -301,7 +319,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;w_BXG9up-oE&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216916/video_02_uzuhkn.png&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216916/video_02_uzuhkn.png&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/w_BXG9up-oE?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -311,7 +329,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216775/02_lf2lvz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/02_lf2lvz.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216775/02_lf2lvz.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -326,7 +344,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;0U989j62g20&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216951/video_03_rankfw.jpg&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216951/video_03_rankfw.jpg&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0U989j62g20?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -336,7 +354,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216774/03_rzxuzi.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216774/03_rzxuzi.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216774/03_rzxuzi.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -351,7 +369,7 @@
 
 &lt;div class=&quot;full dark&quot;&gt;
 				&lt;figure id=&quot;KTu8iDynwNc&quot; class=&quot;youtube&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1440/v1519216987/video_04_d5eqx2.png&quot; class=&quot;thumbnail&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/w_1536/v1519216987/video_04_d5eqx2.png&quot; class=&quot;thumbnail&quot; /&gt;
 					&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/KTu8iDynwNc?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
 				&lt;/figure&gt;
@@ -361,7 +379,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216772/04_mxnlly.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/04_mxnlly.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216772/04_mxnlly.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -374,7 +392,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216772/05_lno5rf.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/05_lno5rf.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216772/05_lno5rf.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -498,7 +516,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216527/01_ooazsz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216527/01_ooazsz.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216527/01_ooazsz.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -619,7 +637,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216527/01_ooazsz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216527/01_ooazsz.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216527/01_ooazsz.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -640,7 +658,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216290/01_ruhqgg.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216290/01_ruhqgg.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216290/01_ruhqgg.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -651,7 +669,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216293/02_bqjuqd.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216293/02_bqjuqd.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216293/02_bqjuqd.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -663,7 +681,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216290/01_ruhqgg.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216290/01_ruhqgg.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216290/01_ruhqgg.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -674,7 +692,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216293/02_bqjuqd.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216293/02_bqjuqd.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216293/02_bqjuqd.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -692,7 +710,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216008/01_i3skfm.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216008/01_i3skfm.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216008/01_i3skfm.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -711,7 +729,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216008/01_i3skfm.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216008/01_i3skfm.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519216008/01_i3skfm.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -842,7 +860,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215768/01_ogwus9.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215768/01_ogwus9.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215768/01_ogwus9.png&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;elementaryOS с темой оформления &lt;a href=&quot;https://github.com/LinxGem33/OSX-Arc-Darker/&quot;&gt;ArkDarker&lt;/a&gt; на морально устаревшем для OS X &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;Macbook Air mid 2012, 11-inch&lt;/a&gt;.&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -860,7 +878,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215768/01_ogwus9.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215768/01_ogwus9.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215768/01_ogwus9.png&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;elementaryOS с темой оформления &lt;a href=&quot;https://github.com/LinxGem33/OSX-Arc-Darker/&quot;&gt;ArkDarker&lt;/a&gt; на морально устаревшем для OS X &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;Macbook Air mid 2012, 11-inch&lt;/a&gt;.&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -884,7 +902,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215463/01_txkg8e.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215463/01_txkg8e.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215463/01_txkg8e.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -893,7 +911,7 @@
 
 &lt;figure class=&quot;picture aside&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215462/02_zjtiob.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215462/02_zjtiob.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215462/02_zjtiob.jpg&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Некоторый саундтрек к VA-11 Hall-A можно послушать на &lt;a href=&quot;https://soundcloud.com/garoadmusic/sets/va-11-hall-a-prologue-ost&quot;&gt;Soundcloud&lt;/a&gt;.&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -905,7 +923,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215463/03_zzenfo.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215463/03_zzenfo.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215463/03_zzenfo.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -918,7 +936,7 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215463/01_txkg8e.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215463/01_txkg8e.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215463/01_txkg8e.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -927,7 +945,7 @@
 
 &lt;figure class=&quot;picture aside&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215462/02_zjtiob.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215462/02_zjtiob.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215462/02_zjtiob.jpg&quot; /&gt;
 				&lt;/a&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Некоторый саундтрек к VA-11 Hall-A можно послушать на &lt;a href=&quot;https://soundcloud.com/garoadmusic/sets/va-11-hall-a-prologue-ost&quot;&gt;Soundcloud&lt;/a&gt;.&lt;/p&gt;
 &lt;/figcaption&gt;
@@ -939,120 +957,12 @@
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519215463/03_zzenfo.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519215463/03_zzenfo.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1519215463/03_zzenfo.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;Пожалуй VA-11 Hall-A одна из тех немногих игр, которой, так или иначе, невозможно не проникнутся. К финалу игры привыкаешь и привязываешься как к главной героине, так и к множеству разнообразных посетителей, от главного редактора местной газеты, до наемного убийцы с аугментациями. Сопереживать их историям весьма увлекательно, а расставаться в финале может быть тоскливо. В целом, «Вальхалла» отличный представитель такого замусоренного жанра, как визуальные новеллы. Мир здесь, несмотря на своё кибернетическое будущее, как никогда близок и знаком - всё те же социальные проблемы, всё те же имиджборды с мемами, всё те же люди (И не совсем люди) готовые открыться скромному бармену за бокалом чего нибудь алкогольного. Хотя бы за это «Вальхалла» стоит внимания.&lt;/p&gt;
-
-</turbo:content>
-        <author>Александра Травкина</author>
-      </item>
-    
-      <item turbo="true">
-        <title>Свои шрифты в Эгее</title>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/svoi-shrifty-v-egee/</guid>
-        <link>https://milkleaks.ru/blog/svoi-shrifty-v-egee/</link>
-        <description>&lt;p&gt;Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона &lt;code class=&quot;highlighter-rouge&quot;&gt;plain&lt;/code&gt; и движка стабильной версии &lt;code class=&quot;highlighter-rouge&quot;&gt;3118&lt;/code&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно &lt;a href=&quot;https://www.tinkov.info/gilroy.html&quot;&gt;скачать у автора&lt;/a&gt;, а бесплатную &lt;code class=&quot;highlighter-rouge&quot;&gt;webfont&lt;/code&gt; версию, которую я использую в примере, можно скачать &lt;a href=&quot;https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/&quot;&gt;отсюда&lt;/a&gt;. После, откроем каталог шаблона:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/styles/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;И создадим в нем папки &lt;code class=&quot;highlighter-rouge&quot;&gt;../fonts/gilroy&lt;/code&gt;, куда положим скачанные файлы шрифта в форматах &lt;code class=&quot;highlighter-rouge&quot;&gt;eot&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ttf&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;woff&lt;/code&gt; и &lt;code class=&quot;highlighter-rouge&quot;&gt;woff2&lt;/code&gt;. В папке &lt;code class=&quot;highlighter-rouge&quot;&gt;styles&lt;/code&gt; шаблона создадим файл &lt;code class=&quot;highlighter-rouge&quot;&gt;fonts.css&lt;/code&gt; где подключаем шрифт:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.eot')&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.eot?#iefix')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'embedded-opentype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-         &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.woff2')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-         &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.woff')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-         &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.ttf')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;К слову, подробнее о @font-face можно почитать &lt;a href=&quot;http://htmlbook.ru/css/font-face&quot;&gt;здесь&lt;/a&gt;. Чтобы подключить &lt;code class=&quot;highlighter-rouge&quot;&gt;fonts.css&lt;/code&gt; с вашими шрифтами к шаблону, внесем изменения в &lt;code class=&quot;highlighter-rouge&quot;&gt;main.tmpl.php&lt;/code&gt;, для этого скопируем его из:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../system/theme/templates/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;И вставим в:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/templates/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Помните, что вносить изменения в файлы стандартного шаблона можно только скопировав их в папку своего шаблона, иначе при обновлении движка все ваши измнениея пропадут. Откроем скопированный &lt;code class=&quot;highlighter-rouge&quot;&gt;main.tmpl.php&lt;/code&gt; и после 41 строки добавим:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_CSS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fonts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Всё, css с вашими шрифтами подключен к шаблону. Тепепь внесем изменения в основной файл стилей &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt;, найдем класс &lt;code class=&quot;highlighter-rouge&quot;&gt;.e2-note h1&lt;/code&gt; и заменим на:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.e2-note&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;720px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Чтобы разминимизировать &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt;, для более удобного внесения правок, стоит воспользоваться полезным &lt;a href=&quot;http://unminify.com/&quot;&gt;сервисом&lt;/a&gt;. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.&lt;/p&gt;
-
-&lt;p class=&quot;aside&quot;&gt;Смотрите ещё: &lt;a href=&quot;/blog/kat-v-egee&quot;&gt;Кат в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 08 Oct 2017 00:00:00 +0700</pubDate>
-        <turbo:content>&lt;p&gt;Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона &lt;code class=&quot;highlighter-rouge&quot;&gt;plain&lt;/code&gt; и движка стабильной версии &lt;code class=&quot;highlighter-rouge&quot;&gt;3118&lt;/code&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;Для начала нам понадобятся сами шрифты. Для примера изменим стандартный шрифт заголовков на Gilroy Extra Bold, бесплатную версию которого можно &lt;a href=&quot;https://www.tinkov.info/gilroy.html&quot;&gt;скачать у автора&lt;/a&gt;, а бесплатную &lt;code class=&quot;highlighter-rouge&quot;&gt;webfont&lt;/code&gt; версию, которую я использую в примере, можно скачать &lt;a href=&quot;https://www.myfonts.com/fonts/radomir-tinkov/gilroy/extra-bold/&quot;&gt;отсюда&lt;/a&gt;. После, откроем каталог шаблона:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/styles/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;И создадим в нем папки &lt;code class=&quot;highlighter-rouge&quot;&gt;../fonts/gilroy&lt;/code&gt;, куда положим скачанные файлы шрифта в форматах &lt;code class=&quot;highlighter-rouge&quot;&gt;eot&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ttf&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;woff&lt;/code&gt; и &lt;code class=&quot;highlighter-rouge&quot;&gt;woff2&lt;/code&gt;. В папке &lt;code class=&quot;highlighter-rouge&quot;&gt;styles&lt;/code&gt; шаблона создадим файл &lt;code class=&quot;highlighter-rouge&quot;&gt;fonts.css&lt;/code&gt; где подключаем шрифт:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.eot')&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.eot?#iefix')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'embedded-opentype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-         &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.woff2')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-         &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.woff')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-         &lt;span class=&quot;sx&quot;&gt;url('fonts/gilroy/34D194_0_0.ttf')&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;К слову, подробнее о @font-face можно почитать &lt;a href=&quot;http://htmlbook.ru/css/font-face&quot;&gt;здесь&lt;/a&gt;. Чтобы подключить &lt;code class=&quot;highlighter-rouge&quot;&gt;fonts.css&lt;/code&gt; с вашими шрифтами к шаблону, внесем изменения в &lt;code class=&quot;highlighter-rouge&quot;&gt;main.tmpl.php&lt;/code&gt;, для этого скопируем его из:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../system/theme/templates/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;И вставим в:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;../themes/plain/templates/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Помните, что вносить изменения в файлы стандартного шаблона можно только скопировав их в папку своего шаблона, иначе при обновлении движка все ваши измнениея пропадут. Откроем скопированный &lt;code class=&quot;highlighter-rouge&quot;&gt;main.tmpl.php&lt;/code&gt; и после 41 строки добавим:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_CSS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fonts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Всё, css с вашими шрифтами подключен к шаблону. Тепепь внесем изменения в основной файл стилей &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt;, найдем класс &lt;code class=&quot;highlighter-rouge&quot;&gt;.e2-note h1&lt;/code&gt; и заменим на:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.e2-note&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;40px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;720px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;8px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;padding-right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Gilroy-ExtraBold'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Чтобы разминимизировать &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt;, для более удобного внесения правок, стоит воспользоваться полезным &lt;a href=&quot;http://unminify.com/&quot;&gt;сервисом&lt;/a&gt;. Таким несложным образом можно добавлять любые нестандартные шрифты в свой шаблон Эгеи.&lt;/p&gt;
-
-&lt;p class=&quot;aside&quot;&gt;Смотрите ещё: &lt;a href=&quot;/blog/kat-v-egee&quot;&gt;Кат в Эгее&lt;/a&gt; и &lt;a href=&quot;/blog/pishem-svoy-shablon-dlya-egei/&quot;&gt;Пишем свой шаблон для Эгеи&lt;/a&gt;.&lt;/p&gt;
 
 </turbo:content>
         <author>Александра Травкина</author>

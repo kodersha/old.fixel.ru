@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Jekyll и изображения",
+      "category" : "Веб",
+      "tags"     : "Jekyll",
+      "url"      : "/blog/jekyll-i-izobrazhenija/",
+      "date"     : "2018-03-13 00:00:00 +0700"
+    } ,
+  
+    {
       "title"    : "Короткометражный фильм «Papers, Please»",
       "category" : "Фильмы",
       "tags"     : "",
