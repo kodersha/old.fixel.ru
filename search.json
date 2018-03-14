@@ -670,6 +670,19 @@
       "tags"     : "",
       "url"      : "/blog/cities-skylines/",
       "date"     : "2015-03-11 00:00:00 +0600"
-    } 
+    } ,
   
+  
+    {
+      "title"    : "Новосибирск · Площадь Ленина",
+      "url"      : "/photo/novosibirsk-ploshhad-lenina/",
+      "date"     : "2014-03-07 00:00:00 +0700"
+    } ,
+  
+    {
+      "title"    : "Иваньковское водохранилище",
+      "url"      : "/photo/ivankovskoe-vodohranilishhe/",
+      "date"     : "2014-06-01 00:00:00 +0700"
+    } 
+    
 ]

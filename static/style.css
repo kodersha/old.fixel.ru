@@ -8910,7 +8910,6 @@ header .show-menu.active {
     grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] 0 [main-left] 0 [text-left] 0 [main] 43.75rem [text-right] 0 [main-right] 2.5rem [inner-left] minmax(0rem, 1fr) [aside] minmax(13.5rem, 20rem) [inner-right] minmax(0rem, 1fr) [outer-right] 0 [edge-right] 2.5rem [right] 0;
     grid-auto-rows: auto;
     display: grid;
-    width: 100%;
   }
   .post > * {
     grid-column: text-left / text-right;
@@ -9960,21 +9959,13 @@ header .show-menu.active {
     grid-column: aside / inner-right;
   }
 }
-.blog {
+.blog .item {
   font-size: 1rem;
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-}
-.blog strong {
-  padding-bottom: 4px;
-}
-.blog .item {
   padding-bottom: 4px;
 }
 .blog .item:last-of-type {
   padding-bottom: 0;
-}
-.blog .item time {
-  display: block;
 }
 .blog .link-readmore {
   font-size: 1rem;
@@ -10401,44 +10392,42 @@ footer .search .dropdown .results li:last-of-type {
   visibility: visible;
   max-height: 300px;
 }
-.menu.menu-open .menu-content .menu-navigation {
+.menu.menu-open .menu-content {
   opacity: 1;
 }
 .menu .menu-content {
-  border-bottom: 1px solid #f3f3f3;
-  position: relative;
-  width: 100%;
-}
-.menu .menu-content .menu-navigation {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  border-bottom: 1px solid #f3f3f3;
+  background-color: #ffffff;
+  position: relative;
   display: table;
   width: 100%;
   opacity: 0;
+  margin: 0;
 }
-.menu .menu-content .menu-navigation a {
+.menu .menu-content li {
   font-size: 1rem;
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  margin-bottom: 4px;
-}
-.menu .menu-content .menu-navigation a.active {
-  font-weight: bold;
-}
-@media (min-width: 768px) {
-  .menu .menu-content .menu-navigation a.active {
-    background-color: rgba(152, 184, 200, 0.2);
-    border-bottom-color: transparent;
-    font-weight: normal;
-    border-radius: 2px;
-    padding: 5px 10px;
-  }
+  margin-right: 3px;
+  padding: 5px 10px;
+  list-style: none;
+  float: left;
 }
 @media (max-width: 768px) {
-  .menu .menu-content .menu-navigation a {
-    float: left;
+  .menu .menu-content li {
+    margin-right: 0;
     width: 50%;
   }
+}
+.menu .menu-content li.active,
+.menu .menu-content li:hover {
+  background-color: rgba(152, 184, 200, 0.2);
+  border-radius: 2px;
+}
+.menu .menu-content li:last-of-type {
+  margin-right: 0;
 }
 .modal > .modal-trigger {
   display: none;
