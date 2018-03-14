@@ -12,15 +12,15 @@
 	<meta name="robots" content="index, follow" />
 	
 	<!--[ Global Graph ]-->
-	<meta name="title" content="Jekyll и изображения &middot; Milkleaks" />
-	<meta name="description" content="Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает..."/>
-	<meta name="keywords" content="Веб, Jekyll" />
-	
+	<meta name="title" content="Jekyll и изображения &middot; Milkleaks" />	
+	<meta name="keywords" content="Jekyll" />
+	<meta name="description" content="Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его..." />
+
 	<!--[ Open Graph ]-->
 	<meta property="og:image" content="" />
 	<meta property="og:title" content="Jekyll и изображения &middot; Milkleaks" />
 	<meta property="og:type" content="article">
-	<meta name="og:description" content="Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает..."/>
+	<meta name="og:description" content="Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его..."/>
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/jekyll-i-izobrazhenija/">
 	<meta property="og:image:height" content="360">
@@ -32,10 +32,10 @@
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta property="twitter:title" content="Jekyll и изображения &middot; Milkleaks">
-	<meta property="twitter:description" content="Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает...">
+	<meta property="twitter:description" content="Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его...">
 	<meta property="twitter:image" content="">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/jekyll-i-izobrazhenija/">
-	<meta name="twitter:domain" content="https://milkleaks.ru">
+	<meta name="twitter:domain" content="https://milkleaks.ru/">
 
 	<!--[ Favicons ]-->
 	<link rel="icon" type="image/png" sizes="32x32" href="https://milkleaks.ru/favicon-32x32.png">
@@ -63,6 +63,60 @@
 
 		<!--[ JS ]-->
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
+		<script type="application/ld+json">
+
+	
+	
+
+	{  
+		"@context":"http://schema.org",
+		"@type":"BlogPosting",
+		"headline":"Jekyll и изображения",
+		"genre":"Веб",
+		"keywords":"Jekyll",
+		"wordCount":"307",
+		"url":"https://milkleaks.ru/blog/jekyll-i-izobrazhenija/",
+		"datePublished":"2018-03-13",
+		"author":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"publisher":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			],
+			"logo": {
+				"@type": "ImageObject",
+				"contentUrl": "https://milkleaks.ru/static/images/logo.png",
+				"url": "https://milkleaks.ru/"
+			}
+		},
+		"image":{  
+			"@type":"ImageObject",
+			"contentUrl":"",
+			"url":"https://milkleaks.ru/",
+			"height":"360",
+			"width":"640"
+		},
+		"mainEntityOfPage":{  
+			"@type":"WebPage",
+			"@id":"https://milkleaks.ru/"
+		},
+		"articleBody":"Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в справке GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала imgur, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.Например Cloudinary — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий плагин, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде плагина для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100."
+	}
+
+
+</script>
+
 	</head>
 
 	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl">
@@ -137,7 +191,7 @@
 <p>Например <a href="https://cloudinary.com/" rel="nofollow" target="_blank">Cloudinary</a> — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий <a href="https://nhoizey.github.io/jekyll-cloudinary/" rel="nofollow" target="_blank">плагин</a>, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде <a href="https://gist.github.com/sasha-travkina/851bba69a34801cdc342ff5b9c38fe58" rel="nofollow" target="_blank"><strong>плагина</strong></a> для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100.</p>
 
 
-
+	
 	<nav class="actions">
 		<time class="space-out-right-nano-xs">13 марта 2018</time>
 

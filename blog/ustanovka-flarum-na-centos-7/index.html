@@ -12,15 +12,15 @@
 	<meta name="robots" content="index, follow" />
 	
 	<!--[ Global Graph ]-->
-	<meta name="title" content="Установка flarum на centOS &middot; Milkleaks" />
-	<meta name="description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что..."/>
-	<meta name="keywords" content="Веб, Гайд" />
-	
+	<meta name="title" content="Установка flarum на centOS &middot; Milkleaks" />	
+	<meta name="keywords" content="Гайд" />
+	<meta name="description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся...." />
+
 	<!--[ Open Graph ]-->
 	<meta property="og:image" content="" />
 	<meta property="og:title" content="Установка flarum на centOS &middot; Milkleaks" />
 	<meta property="og:type" content="article">
-	<meta name="og:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что..."/>
+	<meta name="og:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся...."/>
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/ustanovka-flarum-na-centos-7/">
 	<meta property="og:image:height" content="360">
@@ -32,10 +32,10 @@
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta property="twitter:title" content="Установка flarum на centOS &middot; Milkleaks">
-	<meta property="twitter:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что...">
+	<meta property="twitter:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся....">
 	<meta property="twitter:image" content="">
 	<meta name="twitter:url" content="https://milkleaks.ru/blog/ustanovka-flarum-na-centos-7/">
-	<meta name="twitter:domain" content="https://milkleaks.ru">
+	<meta name="twitter:domain" content="https://milkleaks.ru/">
 
 	<!--[ Favicons ]-->
 	<link rel="icon" type="image/png" sizes="32x32" href="https://milkleaks.ru/favicon-32x32.png">
@@ -63,6 +63,60 @@
 
 		<!--[ JS ]-->
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
+		<script type="application/ld+json">
+
+	
+	
+
+	{  
+		"@context":"http://schema.org",
+		"@type":"BlogPosting",
+		"headline":"Установка flarum на centOS",
+		"genre":"Веб",
+		"keywords":"Гайд",
+		"wordCount":"544",
+		"url":"https://milkleaks.ru/blog/ustanovka-flarum-na-centos-7/",
+		"datePublished":"2016-01-17",
+		"author":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"publisher":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			],
+			"logo": {
+				"@type": "ImageObject",
+				"contentUrl": "https://milkleaks.ru/static/images/logo.png",
+				"url": "https://milkleaks.ru/"
+			}
+		},
+		"image":{  
+			"@type":"ImageObject",
+			"contentUrl":"",
+			"url":"https://milkleaks.ru/",
+			"height":"360",
+			"width":"640"
+		},
+		"mainEntityOfPage":{  
+			"@type":"WebPage",
+			"@id":"https://milkleaks.ru/"
+		},
+		"articleBody":"Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на centOS 7.Ставилась flarum на centOS 7 самого обычного VDS хостинга. Для установки требуется Apache (с mod_rewrite), Nginx и Lighttpd. PHP версии 5.5 и выше, MySQL 5.5 и конечно же SSH консоль, так как ставится flarum через Сomposer.Обновляем PHPТак как на сервере стоял PHP версии 5.4 нам придется его обновить. Открываем консоль и добавляем репозиторий:rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpmПосле добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем секцию:[remi-php56]name=Les RPM de remi de PHP 5.6 pour Enterprise Linux 6 - $basearch&amp;amp;nbsp#baseurl=http://rpms.famillecollet.com/enterprise/6/php56/$basearch/mirrorlist=http://rpms.famillecollet.com/enterprise/6/php56/mirror#WARNING: If you enable this repository, you must also enable &quot;remi&quot; enabled=0 gpgcheck=1 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remiИ меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с PHP версии 5.4 до 5.5 в соответствующей секции remi-php55.Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится следующее:php_admin_value open_basedir &quot;/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/phpMyAdmin/:/tmp/:/usr/share/php/:/var/lib/php/session/:/usr/share/doc/&quot;Делается это для того, что бы не возникло проблем при обновлении phpmyadmin.Теперь в консоль можно ввести следующее:yum install php -yИ PHP обновится до 5.6 версии, соответственно. Проверяем:php -vОбновляем остальные пакетыуum updateУстанавливаем LighttpdСтавим wget:sudo yum install wgetОбновляем репозитории:sudo rpm --import https://fedoraproject.org/static/0608B895.txtsudo wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpmsudo rpm -ivh epel-release-6-8.noarch.rpmУстанавливаем lighttpd:sudo yum install lighttpdПрописываем автостарт:sudo chkconfig --levels 235 lighttpd onЗапускаем и проверяем:sudo service lighttpd startsudo service lighttpd statusУстанавливаем ComposerУстановка composer предельно проста:curl -sS https://getcomposer.org/installer | phpmv composer.phar /usr/local/bin/composerПроверяем:composer -vУстанавливаем FlarumЕсли все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с сайтом:cd /var/www/имя/data/www/доменПапка домена должна быть пуста. Вводим:composer create-project flarum/flarum . --stability=betaНачнется установка flarum. После завершения установки откройте сайт в браузере и завершите установку flarum.Возникающие ошибкиQ: Нет доступа к сайту, в логах ссылается на «Option Multiviews not allowed here».A: Править /etc/httpd/conf.d/z1_home.conf, изменить значение параметра AllowOverride на All.Q: При установке flarum composer выдает ошибку: PHP Fatal error: Uncaught exception ‘ErrorException’ with message ’proc_open(): fork failed — Cannot allocate memory’ in pharA: Смотрите заметку на getcomposer.org"
+	}
+
+
+</script>
+
 	</head>
 
 	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl">
@@ -134,7 +188,7 @@
 
 	<p>Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — <a href="http://flarum.org/" rel="nofollow" target="_blank">flarum</a>. Судя по тому, что уже есть, <span class="caps">CMS</span> довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на cent<span class="caps">OS</span> 7.</p>
 
-<a class="anchor" id="more"></a>
+
 
 <p>Ставилась flarum на cent<span class="caps">OS</span> 7 самого обычного <a href="https://www.ihor.ru/vds" rel="nofollow" target="_blank"><span class="caps">VDS</span> хостинга</a>. Для установки требуется Apache (с mod_rewrite), Nginx и Lighttpd. <span class="caps">PHP</span> версии <span class="caps">5.5</span> и выше, My<span class="caps">SQL</span> <span class="caps">5.5</span> и конечно же <span class="caps">SSH</span> консоль, так как ставится flarum через Сomposer.</p>
 
@@ -234,7 +288,7 @@
 </div>
 
 
-
+	
 	<nav class="actions">
 		<time class="space-out-right-nano-xs">17 января 2016</time>
 

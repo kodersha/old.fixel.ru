@@ -12,14 +12,14 @@
 	<meta name="robots" content="index, follow" />
 	
 	<!--[ Global Graph ]-->
-	<meta name="title" content="Иваньковское водохранилище &middot; Milkleaks" />
-	<meta name="description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
+	<meta name="title" content="Иваньковское водохранилище &middot; Milkleaks" />	
 	<meta name="keywords" content="" />
-	
+	<meta name="description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем." />
+
 	<!--[ Open Graph ]-->
-	<meta property="og:image" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1520095294/02_ys4nav.jpg" />
+	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1520095294/02_ys4nav.jpg" />
 	<meta property="og:title" content="Иваньковское водохранилище &middot; Milkleaks" />
-	<meta property="og:type" content="article">
+	<meta property="og:type" content="website">
 	<meta name="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/photo/ivankovskoe-vodohranilishhe/">
@@ -33,9 +33,9 @@
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta property="twitter:title" content="Иваньковское водохранилище &middot; Milkleaks">
 	<meta property="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
-	<meta property="twitter:image" content="http://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1520095294/02_ys4nav.jpg">
+	<meta property="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1520095294/02_ys4nav.jpg">
 	<meta name="twitter:url" content="https://milkleaks.ru/photo/ivankovskoe-vodohranilishhe/">
-	<meta name="twitter:domain" content="https://milkleaks.ru">
+	<meta name="twitter:domain" content="https://milkleaks.ru/">
 
 	<!--[ Favicons ]-->
 	<link rel="icon" type="image/png" sizes="32x32" href="https://milkleaks.ru/favicon-32x32.png">
@@ -63,6 +63,33 @@
 
 		<!--[ JS ]-->
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
+		<script type="application/ld+json">
+
+
+	{
+		"@context": "http://schema.org", 
+		"@type": "Blog",
+		"keywords": "", 
+		"url": "https://milkleaks.ru/photo/ivankovskoe-vodohranilishhe/",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://milkleaks.ru/photo/ivankovskoe-vodohranilishhe/"
+		},
+		"author": {
+			"@type": "Person",
+			"name": "Александра Травкина",
+			"sameAs": [
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"description": "Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."
+	}
+
+
+</script>
+
 	<script type='text/javascript'>
   /* global google */
 /* global MarkerClusterer */
@@ -145,12 +172,19 @@ var jekyllMaps = (function() {
         position: position,
         title: location.title,
         image: location.image,
-        url: location.url.length > 0 ? mapOptions.baseUrl + location.url : '',
+        icon: location.icon || mapOptions.markerIcon,
+        url: markerUrl(mapOptions.baseUrl, location.url),
         map: map
       })
       if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
 
       return marker
+    }
+
+    function markerUrl(baseUrl, url) {
+      if (/^(https?|\/\/)/.test(url)) return url
+
+      return url.length > 0 ? baseUrl + url : ''
     }
 
     function markerPopup() {
@@ -282,12 +316,12 @@ if (typeof Object.assign !== 'function') {
     <h1>Иваньковское водохранилище</h1>
 
 	<div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
-		<div id='fbf80add-70fa-4c66-aba7-8e4f7155768e' style='width:100%;height:400px;' class='map'></div>
+		<div id='a078d49c-c250-426e-b117-f5715b055208' style='width:100%;height:400px;' class='map'></div>
 <script type='text/javascript'>
   jekyllMaps.register(
-    'fbf80add-70fa-4c66-aba7-8e4f7155768e',
-    [{"latitude":56.5990938,"longitude":36.3508798,"title":"Иваньковское водохранилище","url":"/photo/ivankovskoe-vodohranilishhe/","image":""}],
-    {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"customZoom":12}
+    'a078d49c-c250-426e-b117-f5715b055208',
+    [{"latitude":56.5990938,"longitude":36.3508798,"title":"Иваньковское водохранилище","icon":null,"url":"/photo/ivankovskoe-vodohranilishhe/","image":""}],
+    {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"customZoom":12}
   );
 </script>
 
