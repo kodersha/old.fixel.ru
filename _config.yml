@@ -6,11 +6,16 @@ author: Александра Травкина
 url: https://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
-image:
 markdown: kramdown
-
 disqus: milkleaks-ru
+image:
+
+# Socail
+github: sasha-travkina
 twitter: sasha_travkina
+telegram: sashatravkina
+
+# Cloudinary
 cloudinary: milkleaks
 cloudinary-size: c_limit,w_700
 

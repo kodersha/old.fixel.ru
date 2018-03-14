@@ -16,18 +16,18 @@
 			"@type":"Person",
 			"name":"{{ site.author }}",
 			"sameAs":[  
-				"https://twitter.com/sasha_travkina",
-				"https://github.com/sasha-travkina",
-				"https://t.me/sashatravkina"
+				"https://twitter.com/{{ site.twitter }}",
+				"https://github.com/{{ site.github }}",
+				"https://t.me/{{ site.telegram }}"
 			]
 		},
 		"publisher":{  
 			"@type":"Person",
 			"name":"{{ site.author }}",
 			"sameAs":[  
-				"https://twitter.com/sasha_travkina",
-				"https://github.com/sasha-travkina",
-				"https://t.me/sashatravkina"
+				"https://twitter.com/{{ site.twitter }}",
+				"https://github.com/{{ site.github }}",
+				"https://t.me/{{ site.telegram }}"
 			],
 			"logo": {
 				"@type": "ImageObject",
@@ -64,9 +64,9 @@
 			"@type": "Person",
 			"name": "{{ site.author }}",
 			"sameAs": [
-				"https://twitter.com/sasha_travkina",
-				"https://github.com/sasha-travkina",
-				"https://t.me/sashatravkina"
+				"https://twitter.com/{{ site.twitter }}",
+				"https://github.com/{{ site.github }}",
+				"https://t.me/{{ site.telegram }}"
 			]
 		},
 		"description": "{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
