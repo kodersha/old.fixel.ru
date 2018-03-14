@@ -11,8 +11,8 @@ layout: default
 		<div class="toc js-toc"></div>
 	{% endif %}
 
-	{{ content | improve | extlinks | replace: '<!-- more -->', '<a class="anchor" id="more"></a>' }}
-
+	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
+	
 	<nav class="actions">
 		<time class="space-out-right-nano-xs">{{ page.date | russian_date }}</time>
 
