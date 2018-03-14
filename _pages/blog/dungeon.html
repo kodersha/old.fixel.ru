@@ -1,14 +1,13 @@
 ---
-layout: base_category
+layout: default
+class: blog
 title: Старые записи
 dscription: Список устаревших записей за все время
 ---
 
-<section class="col-xs-12">
-	{% assign olderPosts = site.posts | where: 'hidden', 'true' %}
-	{% for post in olderPosts %}
-		<article class="item">
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-		</article>
-	{% endfor %}
-</section>
+{% assign olderPosts = site.posts | where: 'hidden', 'true' %}
+{% for post in olderPosts %}
+	<article class="item{% if forloop.first == true %} space-out-top-kilo-xs{% endif %}{% if forloop.last == true %} space-out-bottom-kilo-xs{% endif %}">
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+	</article>
+{% endfor %}

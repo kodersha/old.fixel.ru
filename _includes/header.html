@@ -20,7 +20,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md space-in-left-zero-md logo-txt">
-					<span class="logo-name">{% if page.path contains '_posts' %}Запись #{{ page.index | plus: 1 }}{% elsif page.path contains '_photos' %}Фотографии{% else %}{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}{% endif %}</span>
+					<span class="logo-name">{% if page.path contains '_posts' %}Запись #{{ page.index | plus: 1 }}{% elsif page.path contains '_photos' %}Фотографии{% else %}{% if page.title %}{{ page.title }}{% elsif layout.title %}{{ layout.title }}{% else %}{{ site.name }}{% endif %}{% endif %}</span>
 				</div>
 			</div>
 		</div>

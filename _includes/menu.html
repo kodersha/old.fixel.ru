@@ -1,11 +1,9 @@
 <nav class="menu" id="menu">
-	<section class="space-in-v-nano-xs menu-content">
-		<div class="menu-navigation">
-			{% for item in site.navigation %}
-			{% assign class = nil %}
-			{% if page.url contains item.url %}{% assign class = 'active' %}{% endif %}
-				<a class="space-out-right-micro-md {{ class }}" href="{{ item.url }}">{{ item.title }}</a>
-			{% endfor %}
-		</div>
-	</section>
+	<ol class="space-in-v-nano-xs space-in-h-zero-xs menu-content">
+		{% for item in site.navigation %}
+		{% assign class = nil %}
+		{% if page.url contains item.url %}{% assign class = 'class="active"' %}{% endif %}
+			<li {{ class }}><a href="{{ item.url }}">{{ item.title }}</a></li>
+		{% endfor %}
+	</ol>
 </nav>

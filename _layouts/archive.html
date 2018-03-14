@@ -1,12 +1,11 @@
 ---
-layout: base_category
+layout: default
+class: blog
 title: {{ page.title }}
 ---
 
-<section class="col-xs-12">
-	{% for post in page.posts %}
-		<article class="space-out-bottom-pico-xs item">
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-		</article>
-	{% endfor %}
-</section>
+{% for post in page.posts %}
+	<article class="item{% if forloop.first == true %} space-out-top-kilo-xs{% endif %}{% if forloop.last == true %} space-out-bottom-kilo-xs{% endif %}">
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+	</article>
+{% endfor %}

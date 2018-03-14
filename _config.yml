@@ -10,6 +10,7 @@ image:
 markdown: kramdown
 
 disqus: milkleaks-ru
+twitter: sasha_travkina
 cloudinary: milkleaks
 cloudinary-size: c_limit,w_700
 
@@ -105,9 +106,9 @@ paginate_path: "/page-:num/"
 # Archives
 jekyll-archives:
   enabled:
-    - categories
     - tags
-  layout: "archive"
+    - categories
+  layout: archive
   permalinks:
     year: "/blog/:year/"
     month: "/blog/:year/:month/"

@@ -1,9 +1,9 @@
 ---
-layout: base_default
+layout: default
 title: Фотографии
 ---
 
-<section class="space-in-v-kilo-xs slide-up-fade-in row photos">
+<div class="space-in-v-kilo-xs slide-up-fade-in row photos">
 	{% for post in site.photos reversed %}
 		<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-micro-xs item">
 			<a href="{{ post.url }}" class="link-photo">
@@ -15,4 +15,4 @@ title: Фотографии
 			</div>
 		</article>
 	{% endfor %}
-</section>
+</div>

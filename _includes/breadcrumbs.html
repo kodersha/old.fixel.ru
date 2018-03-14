@@ -2,7 +2,7 @@
 	<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
 		{% assign position = 0 %}
 		{% for crumbitem in breadcrumbs %}
-			{% assign position = position  | plus: 1 %}
+			{% assign position = position | plus: 1 %}
 
 			{% if forloop.first %}
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
@@ -35,13 +35,17 @@
 			{% endif %}
 		{% endif %}
 
-		{% assign position = 0 %}
+		{% if page.path contains '_posts' %}
+			{% assign position = 1 %}
+		{% else %}
+			{% assign position = 0 %}
+		{% endif %}
 		{% for crumbitem in breadcrumbs %}
-			{% assign position = position  | plus: 1 %}
+			{% assign position = position | plus: 1 %}
 
 			{% if forloop.last %}
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<span property="name">{{ page.title }}</span>
+					<span property="name">{{ page.title }}</span><meta property="position" content="{{ position }}" />
 				</li>
 				{% continue %}
 			{% endif %}

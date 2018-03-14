@@ -1,15 +1,14 @@
 ---
-layout: base_category
+layout: default
+class: blog
 title: Категории
 description: Список категорй блога
 ---
 
-<section class="col-xs-12">
-	{% assign categories_list = site.categories %}
-	{% for category in categories_list %}
-		<article class="item">
-			<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a>
-		</article>
-	{% endfor %}
-	{% assign categories_list = nil %}
-</section>
+{% assign categories_list = site.categories %}
+{% for category in categories_list %}
+	<article class="item{% if forloop.first == true %} space-out-top-kilo-xs{% endif %}{% if forloop.last == true %} space-out-bottom-kilo-xs{% endif %}">
+		<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a>
+	</article>
+{% endfor %}
+{% assign categories_list = nil %}
