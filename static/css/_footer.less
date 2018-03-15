@@ -21,43 +21,36 @@
 // .breadcrumbs
 //
 
-.breadcrumbs {
+.breadcrumb {
     font-size: @glob-font-size;
     font-family: @glob-font;
-    display: table;
-    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+    
+    &-item {
+        line-height: normal;
+        float: left;
+    }
+}
 
-	.breadcrumb {
-        vertical-align: middle;
-        display: table-cell;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-		
-		&:after {
-		  display: table;
-          clear: both;
-		  content: '';
-		}
-		
-		&-item {
-            line-height: normal;
-			float: left;
-        }
-	}
+.breadcrumb-item {
+    &:after {
+        display: inline-block;
+        padding-right: @nano;
+        padding-left: @nano;
+        color: #a9b1b5;
+        content: '\00B7';
+    }
 
-    .breadcrumb-item {
-        &:after {
-            display: inline-block;
-            padding-right: @nano;
-            padding-left: @nano;
-            color: #a9b1b5;
-            content: '\00B7';
-        }
-
-        &:last-of-type:after {
-            content: none;
-        }
+    &:last-of-type:after {
+        content: none;
     }
 }
 
