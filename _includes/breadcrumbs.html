@@ -6,7 +6,7 @@
 
 			{% if forloop.first %}
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<a property="item" typeof="WebPage" href="{{ site.url | prepend: site.baseurl }}"><span property="name">Главная</span><meta property="position" content="{{ position }}" /></a>
+					<a property="item" typeof="Blog" href="{{ site.url | prepend: site.baseurl }}"><span property="name">Главная</span><meta property="position" content="{{ position }}" /></a>
 				</li>
 				{% continue %}
 			{% endif %}
@@ -16,20 +16,20 @@
 			{% endif %}
 
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
+				<a property="item" typeof="Blog" href="{{ crumbitem.url | prepend: site.baseurl }}"><span property="name">{{ crumbitem.title }}</span><meta property="position" content="{{ position }}" /></a>
 			</li>		
 		{% endfor %}
 
 		{% if page.path contains '_posts' %}
 			{% if page.hidden == true %}
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/dungeon/"><span property="name">Старые записи</span><meta property="position" content="{{ position }}" /></a>
+					<a property="item" typeof="Blog" href="{{ site.baseurl }}/blog/dungeon/"><span property="name">Старые записи</span><meta property="position" content="{{ position }}" /></a>
 				</li>
 			{% endif %}
 			{% if page.categories.size > 0 %}
 				{% for category in page.categories %}	
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/"><span property="name">{{ category }}</span><meta property="position" content="{{ position }}" /></a>
+					<a property="item" typeof="Blog" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/"><span property="name">{{ category }}</span><meta property="position" content="{{ position }}" /></a>
 				</li>
 				{% endfor %}			
 			{% endif %}

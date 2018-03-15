@@ -12,6 +12,7 @@
 		"wordCount":"{{ wordcount }}",
 		"url":"{{ page.url | prepend:site.url | beautify_url }}",
 		"datePublished":"{{ page.date | date: '%Y-%m-%d' }}",
+		"dateModified":"{{ page.date | date: '%Y-%m-%d' }}",
 		"author":{  
 			"@type":"Person",
 			"name":"{{ site.author }}",
@@ -28,12 +29,7 @@
 				"https://twitter.com/{{ site.twitter }}",
 				"https://github.com/{{ site.github }}",
 				"https://t.me/{{ site.telegram }}"
-			],
-			"logo": {
-				"@type": "ImageObject",
-				"contentUrl": "{{ site.url }}/static/images/logo.png",
-				"url": "{{ site.url }}/"
-			}
+			]
 		},
 		"image":{  
 			"@type":"ImageObject",
