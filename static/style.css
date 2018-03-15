@@ -10219,36 +10219,30 @@ footer .scroll-to-top {
 footer .scroll-to-top .show {
   display: block;
 }
-footer .breadcrumbs {
+footer .breadcrumb {
   font-size: 1rem;
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  display: table;
-  height: 100%;
-}
-footer .breadcrumbs .breadcrumb {
-  vertical-align: middle;
-  display: table-cell;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-footer .breadcrumbs .breadcrumb:after {
+footer .breadcrumb:after {
   display: table;
   clear: both;
   content: '';
 }
-footer .breadcrumbs .breadcrumb-item {
+footer .breadcrumb-item {
   line-height: normal;
   float: left;
 }
-footer .breadcrumbs .breadcrumb-item:after {
+footer .breadcrumb-item:after {
   display: inline-block;
   padding-right: 8px;
   padding-left: 8px;
   color: #a9b1b5;
   content: '\00B7';
 }
-footer .breadcrumbs .breadcrumb-item:last-of-type:after {
+footer .breadcrumb-item:last-of-type:after {
   content: none;
 }
 footer .search {
