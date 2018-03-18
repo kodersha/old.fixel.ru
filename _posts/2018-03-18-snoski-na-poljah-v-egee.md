@@ -25,7 +25,7 @@ tags:
 }
 .e2-text .aside {
     line-height: 16px;
-    font-size: 12px;
+    font-size: 14px;
     opacity: .8;
 }
 {% endhighlight %}
@@ -68,7 +68,7 @@ tags:
 }
 .e2-text [aside] {
     line-height: 16px;
-    font-size: 12px;
+    font-size: 14px;
     opacity: .8;
 }
 {% endhighlight %}
