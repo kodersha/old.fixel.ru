@@ -1,159 +1,8 @@
-//
-// .search
-//
-
-.search {
-    position: relative;
-    
-    .search-form {
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        border-radius: 50px;
-        position: relative;
-        margin-left: auto;
-        overflow: hidden;
-        height: 48px;
-        width: 48px;
-
-        .search-box {
-            font-size: @glob-font-size;
-            background: transparent;
-            visibility: hidden;
-            padding-right: 48px;
-            padding-left: 25px;
-            min-width: 17.5rem;
-            box-shadow: none;
-            height: 100%;
-            border: none;
-
-            &:focus {
-                outline: none;
-            }
-        }
-        
-        .search-button {
-            font-size: @glob-font-size;
-            padding-bottom: 16px;
-            padding-right: 16px;
-            padding-left: 16px;
-            padding-top: 16px;
-            position: absolute;
-            color: #a9b1b5;
-            line-height: 0;
-            cursor: pointer;
-            display: block;
-            right: 0;
-            top: 0;
-            
-            i.close {
-                display: none;
-            }
-        }
-
-        @media @mmd {
-            background-color: #f1f3f4;
-            width: 100%;
-
-            .search-box {
-                visibility: visible;
-                min-width: 100%;
-            }
-
-            .search-button {
-                pointer-events: none;
-            }
-        }
-    }
-
-    &.open {
-        .search-form {
-            background-color: #f1f3f4;
-            width: 100%;
-
-            .search-box {
-                visibility: visible;
-            }
-        }
-        
-        .search-button {
-            padding-bottom: 16px;
-            padding-right: 18px;
-            padding-left: 18px;
-            padding-top: 16px;
-            
-            i.open {
-                display: none;
-            }
-            
-            i.close {
-                display: block;
-            }
-        }
-        
-        .dropdown {
-            visibility: visible;
-            display: block;
-
-            .results {
-                display: block;
-            }
-        }
-    }
-    
-    .dropdown {
-        font-size: @glob-font-size;
-        font-family: @glob-font;
-        visibility: hidden;
-        position: relative;
-        display: none;
-        z-index: 100;
-        
-        .results {
-            background-color: #fafafa;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            border-radius: 2px;
-            position: absolute;
-            list-style: none;
-            padding-left: 0;
-            display: none;
-            width: 100%;
-
-            li {
-                padding-bottom: 5px;
-                padding-right: 20px;
-                padding-left: 20px;
-                padding-top: 5px;
-                
-                &:first-of-type {
-                    padding-top: 15px;
-                }
-                
-                &:last-of-type {
-                    padding-bottom: 15px;
-                }
-            }
-        }
-
-        @media @mmd {
-            visibility: visible;
-            display: block;
-
-            .results {
-                display: block;
-            }
-        }
-    }
-}
-
 .logo {
     position: relative;
     display: block;
     height: 40px;
     width: 40px;
-    margin: 2px;
 
     a {
         text-decoration: none;
@@ -168,10 +17,8 @@
         &:before {
             position: absolute;
             border-radius: 50%;
-            margin-left: -2px;
-            margin-top: -2px;
-            height: 44px;
-            width: 44px;
+            height: 40px;
+            width: 40px;
             content: '';
         }
 
@@ -195,10 +42,8 @@
                 background-size: 1800% 1800%;
                 border-radius: 50%;
                 position: absolute;
-                height: 44px;
-                width: 44px;
-                left: -2px;
-                top: -2px;
+                height: 40px;
+                width: 40px;
                 content: '';
             }
         }
@@ -215,6 +60,7 @@
             -webkit-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
             position: absolute;
+            fill: @black;
             height: 40px;
             width: 40px;
         }
@@ -420,13 +266,20 @@
     }
 }
 
+
+.space-logo {
+    @media (min-width: 1610px) {
+        margin-left: -56px;
+    }
+}
+
 .show-menu {
     font-size: @glob-font-size;
     font-family: @helvetica;
-    cursor: pointer;
     padding: 16px;
+    cursor: pointer;
 
-    &.active {
+    &.active, &:hover {
         color: @red;
     }
 } 

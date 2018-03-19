@@ -7,7 +7,7 @@ dscription: Список устаревших записей за все вре�
 
 {% assign olderPosts = site.posts | where: 'hidden', 'true' %}
 {% for post in olderPosts %}
-	<article class="item{% if forloop.first == true %} space-out-top-kilo-xs{% endif %}{% if forloop.last == true %} space-out-bottom-kilo-xs{% endif %}">
+	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-base-xs {% endif %}{% if forloop.last == true %}space-out-bottom-base-xs space-in-bottom-zero-xs {% endif %}item">
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
 	</article>
 {% endfor %}

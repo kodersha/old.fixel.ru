@@ -7,7 +7,7 @@ description: Список тегов блога
 
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
-	<article class="item{% if forloop.first == true %} space-out-top-kilo-xs{% endif %}{% if forloop.last == true %} space-out-bottom-kilo-xs{% endif %}">
+	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-base-xs {% endif %}{% if forloop.last == true %}space-out-bottom-base-xs space-in-bottom-zero-xs {% endif %}item">
 		<a href="{{ site.baseurl }}/blog/tags/{{ tag | first | slugify }}/">{{ tag[0] | replace:'-', ' ' }}</a> &middot; {{ tag | last | size }}
 	</article>
 {% endfor %}

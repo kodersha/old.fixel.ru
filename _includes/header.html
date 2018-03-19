@@ -7,7 +7,7 @@
 		</div>
 		<div class="col-xs">
 			<div class="row row-middle-sm">
-				<div class="col-xs-12 col-sm-shrink">
+				<div class="col-xs-12 col-sm-shrink space-in-right-zero-md space-logo">
 					<div class="logo" data-js="logo">
 						<a class="link-logo" href="{{ site.baseurl }}/">
 							<span></span>
@@ -19,7 +19,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md space-in-left-zero-md logo-txt">
+				<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md logo-txt">
 					<span class="logo-name">{% if page.path contains '_posts' %}Запись #{{ page.index | plus: 1 }}{% elsif page.path contains '_photos' %}Фотографии{% else %}{% if page.title %}{{ page.title }}{% elsif layout.title %}{{ layout.title }}{% else %}{{ site.name }}{% endif %}{% endif %}</span>
 				</div>
 			</div>
