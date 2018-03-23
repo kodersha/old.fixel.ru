@@ -5,7 +5,7 @@
 body {
   font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 1.25em;
-  line-height: 1.484375;
+  line-height: 1.40625;
 }
 body:not([class]),
 article:not([class]),
@@ -22,7 +22,7 @@ section:not([class]) section:not([class]) {
   margin-right: 0;
 }
 p {
-  margin: 0 0 1.484375em;
+  margin: 0 0 1.40625em;
   max-width: 43.75rem;
 }
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
@@ -49,55 +49,55 @@ h6 {
 h1 {
   font-size: 1.640625em;
   line-height: 1.1;
-  margin: 3em 0 0.9047619em;
+  margin: 3em 0 0.85714286em;
 }
 h2 {
   font-size: 1.40625em;
   line-height: 1.2;
-  margin: 2.5em 0 1.05555556em;
+  margin: 2.5em 0 1em;
 }
 h3 {
   font-size: 1.25em;
   line-height: 1.3;
-  margin: 2em 0 1.1875em;
+  margin: 2em 0 1.125em;
 }
 h4 {
   font-size: 1.09375em;
   line-height: 1.4;
-  margin: 1.5em 0 1.35714286em;
+  margin: 1.5em 0 1.28571429em;
 }
 h5 {
   font-size: 1.015625em;
-  line-height: 1.484375;
-  margin: 2.19230769em 0 1.46153846em;
+  line-height: 1.40625;
+  margin: 2.07692308em 0 1.38461538em;
 }
 h6 {
   font-size: 0.78125em;
-  line-height: 1.9;
-  margin: 1.9em 0 0;
+  line-height: 1.8;
+  margin: 1.8em 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 @media (min-width: 50em) {
   h1 {
     font-size: 2.109375em;
-    margin-top: 3.51851852em;
-    margin-bottom: 0.7037037em;
+    margin-top: 3.33333333em;
+    margin-bottom: 0.66666667em;
   }
   h2 {
     font-size: 1.71875em;
-    margin-top: 3.45454545em;
-    margin-bottom: 0.86363636em;
+    margin-top: 3.27272727em;
+    margin-bottom: 0.81818182em;
   }
   h3 {
     font-size: 1.40625em;
-    margin-top: 3.16666667em;
-    margin-bottom: 1.05555556em;
+    margin-top: 3em;
+    margin-bottom: 1em;
   }
   h4 {
     font-size: 1.171875em;
-    margin-top: 2.53333333em;
-    margin-bottom: 1.26666667em;
+    margin-top: 2.4em;
+    margin-bottom: 1.2em;
   }
 }
 h1:first-child,
@@ -119,16 +119,16 @@ h3 + h4 {
   margin-top: 1.4em;
 }
 h4 + h5 {
-  margin-top: 1.46153846em;
+  margin-top: 1.38461538em;
 }
 h5 + h6 {
-  margin-top: 1.9em;
+  margin-top: 1.8em;
 }
 /* lists */
 /* lists without classes */
 ul:not([class]),
 ol:not([class]) {
-  margin: 0 0 1.484375em;
+  margin: 0 0 1.40625em;
   max-width: calc(41.25rem);
   padding-left: 0;
   padding-right: 2.5em;
@@ -162,7 +162,7 @@ p img:not(:only-child) {
   vertical-align: baseline;
 }
 figure:not([class]) {
-  margin: 2.96875em 0;
+  margin: 2.8125em 0;
 }
 figure:not([class]) > p {
   max-width: 32.8125rem;
@@ -172,7 +172,7 @@ figure:not([class]) > p {
 figcaption {
   max-width: 32.8125rem;
   font-size: 0.78125em;
-  margin: 0.5em 0 2.96875em;
+  margin: 0.5em 0 2.8125em;
 }
 figcaption > p {
   margin: 0.5em 0 0;
@@ -180,8 +180,8 @@ figcaption > p {
 /* blockquotes */
 blockquote {
   max-width: calc(38.75rem);
-  margin: 0 0 1.484375em;
-  padding: 1.484375em 2.5em;
+  margin: 0 0 1.40625em;
+  padding: 1.40625em 2.5em;
 }
 blockquote > p:last-child {
   margin-bottom: 0;
@@ -193,7 +193,7 @@ blockquote > cite {
 }
 /* code */
 pre {
-  margin: 1.484375em 0;
+  margin: 1.40625em 0;
   white-space: pre-wrap;
 }
 p code {
@@ -202,8 +202,8 @@ p code {
 }
 /* tables */
 table:not([class]) {
-  margin-top: 2.96875em;
-  margin-bottom: 2.96875em;
+  margin-top: 2.8125em;
+  margin-bottom: 2.8125em;
   border-collapse: separate;
   border-spacing: 0;
 }
@@ -229,19 +229,19 @@ table:not([class]) thead th {
 /* definition lists */
 dl:not([class]) {
   max-width: 43.75rem;
-  margin: 0 0 1.484375em;
+  margin: 0 0 1.40625em;
 }
 dl:not([class]) dt:not([class]) {
   font-weight: bolder;
 }
 dl:not([class]) dd:not([class]) {
-  margin: 0 0 1.484375em;
+  margin: 0 0 1.40625em;
 }
 /* other tags */
 hr:not([class]) {
   border: 0;
   border-bottom: 1px solid;
-  margin: 1.484375em 0;
+  margin: 1.40625em 0;
   max-width: 43.75rem;
   opacity: .1;
 }
@@ -8798,9 +8798,9 @@ header .show-menu:hover {
 .post h4,
 .post h5,
 .post h6 {
-  margin-bottom: 20px;
-  max-width: 43.75rem;
   font-size: 1.25em;
+  max-width: 43.75rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 1200px) {
   .post h1,
@@ -8813,17 +8813,17 @@ header .show-menu:hover {
   }
 }
 .post p {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.84);
 }
 .post > hr {
   font-size: 1rem;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: bolder;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   text-align: center;
-  line-height: 1;
   display: block;
   border: none;
   opacity: 1;
@@ -8842,16 +8842,16 @@ header .show-menu:hover {
 }
 .post ul:not([class]),
 .post ol:not([class]) {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 0;
 }
 .post blockquote {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 0;
   position: relative;
   max-width: 45rem;
   padding: 0;
@@ -8875,10 +8875,10 @@ header .show-menu:hover {
   }
 }
 .post figure {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 0;
 }
 .post .picture {
   position: relative;
@@ -8897,7 +8897,7 @@ header .show-menu:hover {
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .post .picture .caption p {
   max-width: 100%;
@@ -8973,8 +8973,8 @@ header .show-menu:hover {
   background-position: 0 0;
 }
 .post .cover {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   position: relative;
   min-height: 100vh;
   height: 100vh;
@@ -9017,8 +9017,8 @@ header .show-menu:hover {
 }
 .post .google-maps {
   background-color: #e5e3df;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   position: relative;
 }
 @media (min-width: 1200px) {
@@ -9053,8 +9053,8 @@ header .show-menu:hover {
   }
 }
 .post .gist {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 .post .tags,
 .post .actions {
@@ -9063,8 +9063,8 @@ header .show-menu:hover {
   color: rgba(0, 0, 0, 0.66);
 }
 .post .tags {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   max-width: 43.75rem;
 }
 @media (min-width: 1200px) {
@@ -9074,7 +9074,7 @@ header .show-menu:hover {
 }
 .post .actions {
   max-width: calc( 43.75rem  + 32px);
-  margin-top: 20px;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .post .actions {
@@ -9103,8 +9103,8 @@ header .show-menu:hover {
   padding: 0;
 }
 .post .toc {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 .post .toc > ul {
   margin: 0;
@@ -9625,8 +9625,8 @@ header .show-menu:hover {
 }
 .post [full],
 .post .full {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .post [full],
@@ -9772,13 +9772,13 @@ header .show-menu:hover {
   display: flex;
 }
 .post [row] figure {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 .post [base],
 .post [block] {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 .post [base] > *,
 .post [block] > * {
@@ -9791,8 +9791,8 @@ header .show-menu:hover {
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   color: rgba(0, 0, 0, 0.66);
   line-height: 1.4;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 .post [caption].center,
 .post .caption.center {
@@ -10296,11 +10296,6 @@ footer .search .dropdown .results li:last-of-type {
 .menu .menu-content li:hover a {
   border-bottom-color: rgba(43, 92, 140, 0.15);
   color: #2b5c8c;
-}
-@media (min-width: 768px) {
-  .menu .menu-content li:first-of-type {
-    margin-left: -10px;
-  }
 }
 @media (min-width: 1200px) {
   .menu .menu-content::before {
