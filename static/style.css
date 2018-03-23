@@ -8403,14 +8403,6 @@ select,
 button {
   font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  -webkit-font-smoothing: antialiased;
-}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8685,6 +8677,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 }
 header .logo-txt .logo-name {
   font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-weight: bolder;
   font-size: 1rem;
   display: block;
 }
@@ -8822,11 +8815,11 @@ header .show-menu:hover {
 .post p {
   margin-bottom: 20px;
   margin-top: 20px;
-  color: rgba(0, 0, 0, 0.84);
 }
 .post > hr {
   font-size: 1rem;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: bolder;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
@@ -10273,7 +10266,7 @@ footer .search .dropdown .results li:last-of-type {
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
-  background-color: #fafafa;
+  background-color: #ffffff;
   position: relative;
   display: table;
   z-index: 10;
@@ -10304,13 +10297,6 @@ footer .search .dropdown .results li:last-of-type {
   border-bottom-color: rgba(43, 92, 140, 0.15);
   color: #2b5c8c;
 }
-.menu .menu-content li.active {
-  pointer-events: none;
-  cursor: default;
-}
-.menu .menu-content li.active a {
-  border-bottom: none;
-}
 @media (min-width: 768px) {
   .menu .menu-content li:first-of-type {
     margin-left: -10px;
@@ -10318,7 +10304,7 @@ footer .search .dropdown .results li:last-of-type {
 }
 @media (min-width: 1200px) {
   .menu .menu-content::before {
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding-right: 9999px;
     margin-right: -9999px;
     padding-left: 9999px;
