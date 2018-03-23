@@ -8465,6 +8465,7 @@ header .logo .logotype {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: relative;
+  padding: 2px;
   height: 40px;
   width: 40px;
 }
