@@ -25,7 +25,7 @@
         -webkit-transition: all 0.1s ease-out;
         -moz-transition: all 0.1s ease-out;
         transition: all 0.1s ease-out;
-        background-color: #fafafa;
+        background-color: @white;
         position: relative;
         display: table;
         z-index: 10;
@@ -55,15 +55,6 @@
                 }
             }
 
-            &.active {
-                pointer-events: none;
-                cursor: default;
-
-                a {
-                    border-bottom: none;
-                }
-            }
-
             @media @md {
                 &:first-of-type {
                     margin-left: -10px;
@@ -73,7 +64,7 @@
 
         @media @xl {
             &::before {
-                background-color: #fafafa;
+                background-color: @white;
                 padding-right: 9999px;
                 margin-right: -9999px;
                 padding-left: 9999px;
