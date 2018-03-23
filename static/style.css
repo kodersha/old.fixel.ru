@@ -9832,6 +9832,7 @@ header .show-menu:hover {
 .blog strong {
   font-size: 1rem;
   font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  display: block;
 }
 .blog .item {
   font-size: 1rem;
@@ -9943,6 +9944,14 @@ header .show-menu:hover {
   background-size: cover;
   min-height: 100vh;
   color: #ffffff;
+}
+.page a {
+  color: #ffffff;
+  border-bottom-color: #fafafa;
+}
+.page a:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .page .home {
   position: absolute;
