@@ -11,8 +11,10 @@ tags:
 - книги
 ---
 
-{% for post in paginator.posts %}
-	{% include _post/index.html %}
-{% endfor %}
+<section class="slide-up-fade-in">
+	{% for post in paginator.posts %}
+		{% include _post/index.html %}
+	{% endfor %}
+</section>
 
 {% include pagination.html %}
