@@ -1,9 +1,9 @@
-<nav class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg menu" id="menu">
-	<ol class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-zero-xs space-in-v-nano-xs menu-content">
+<nav class="menu" id="menu">
+	<ol class="menu-content">
 		{% for item in site.navigation %}
 		{% assign class = nil %}
-		{% if page.url contains item.url %}{% assign class = 'class="active"' %}{% endif %}
-			<li {{ class }}><a href="{{ item.url }}">{{ item.title }}</a></li>
+		{% if page.url contains item.url %}{% assign class = ' active' %}{% endif %}
+			<li class="space-in-right-micro-md space-in-top-nano-xs{{ class }}"><a href="{{ item.url }}">{{ item.title }}</a></li>
 		{% endfor %}
 	</ol>
 </nav>

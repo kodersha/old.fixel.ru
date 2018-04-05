@@ -31,13 +31,13 @@
         z-index: 10;
         width: 100%;
         opacity: 0;
+        padding: 0;
         margin: 0;
 
         li {
             font-size: @glob-font-size;
             font-family: @glob-font;
             position: relative;
-            padding: 5px 10px;
             list-style: none;
             float: left;
 
@@ -46,29 +46,10 @@
             }
 
             &.active, &:hover {
-                background-color: rgba(43, 92, 140, 0.15);
-                border-radius: 2px;
-
                 a {
-                    border-bottom-color: rgba(43, 92, 140, 0.15);
-                    color: #2b5c8c;
+                    border-bottom-color: rgba(192, 57, 43, .15);
+                    color: @red;
                 }
-            }
-        }
-
-        @media @xl {
-            &::before {
-                background-color: @white;
-                padding-right: 9999px;
-                margin-right: -9999px;
-                padding-left: 9999px;
-                margin-left: -9999px;
-                position: absolute;
-                content: '';
-                bottom: 0;
-                right: 0;
-                left: 0;
-                top: 0;
             }
         }
     }

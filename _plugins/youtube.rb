@@ -17,7 +17,7 @@ module Jekyll
 
 			# Get the path
 			@video = @attributes['id']
-			@thumbnail = @attributes['thumb'] ? "<img src=\"https://res.cloudinary.com/#{@cloud_name}/image/upload/w_1520/#{@attributes['thumb']}\" class=\"thumbnail\">" : "<img src=\"https://img.youtube.com/vi/#{@attributes['id']}/maxresdefault.jpg\" class=\"thumbnail\">"
+			@thumbnail = @attributes['thumb'] ? "<img src=\"https://res.cloudinary.com/#{@cloud_name}/image/upload/w_1560/#{@attributes['thumb']}\" class=\"thumbnail\">" : "<img src=\"https://img.youtube.com/vi/#{@attributes['id']}/maxresdefault.jpg\" class=\"thumbnail\">"
 			@class_start = @attributes['class'] ? "<div class=\"#{@attributes['class']}\">" : ''
 			@class_end = @attributes['class'] ? "</div>" : ''
 
