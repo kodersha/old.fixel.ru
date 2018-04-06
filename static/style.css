@@ -23,7 +23,7 @@ section:not([class]) section:not([class]) {
 }
 p {
   margin: 0 0 1.4em;
-  max-width: 45rem;
+  max-width: 43.75rem;
 }
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
 p:before,
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'LatoWebHeavy', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: bolder;
 }
 h1 {
@@ -129,7 +129,7 @@ h5 + h6 {
 ul:not([class]),
 ol:not([class]) {
   margin: 0 0 1.4em;
-  max-width: calc(42.5rem);
+  max-width: calc(41.25rem);
   padding-left: 0;
   padding-right: 2.5em;
 }
@@ -165,12 +165,12 @@ figure:not([class]) {
   margin: 2.8em 0;
 }
 figure:not([class]) > p {
-  max-width: 33.75rem;
+  max-width: 32.8125rem;
   font-size: 0.78125em;
   margin: 0.5em 0 0;
 }
 figcaption {
-  max-width: 33.75rem;
+  max-width: 32.8125rem;
   font-size: 0.78125em;
   margin: 0.5em 0 2.8em;
 }
@@ -179,7 +179,7 @@ figcaption > p {
 }
 /* blockquotes */
 blockquote {
-  max-width: calc(40rem);
+  max-width: calc(38.75rem);
   margin: 0 0 1.4em;
   padding: 1.4em 2.5em;
 }
@@ -228,7 +228,7 @@ table:not([class]) thead th {
 }
 /* definition lists */
 dl:not([class]) {
-  max-width: 45rem;
+  max-width: 43.75rem;
   margin: 0 0 1.4em;
 }
 dl:not([class]) dt:not([class]) {
@@ -242,7 +242,7 @@ hr:not([class]) {
   border: 0;
   border-bottom: 1px solid;
   margin: 1.4em 0;
-  max-width: 45rem;
+  max-width: 43.75rem;
   opacity: .1;
 }
 abbr {
@@ -11182,6 +11182,94 @@ body.lb-disable-scrolling {
   font-weight: normal;
   font-style: italic;
 }
+/* ubuntu-300 - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300.eot');
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-300italic - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300italic.eot');
+  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-300italic.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-regular.eot');
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-regular.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-italic - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-italic.eot');
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-italic.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500.eot');
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-500italic - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500italic.eot');
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-500italic.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700.eot');
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-700italic - cyrillic_latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700italic.eot');
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-cyrillic_latin-700italic.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
 @font-face {
   font-family: 'LatoWebBlack';
   src: url('../static/fonts/lato/Lato-Black.eot');
@@ -11340,13 +11428,14 @@ body {
   -ms-text-size-adjust: none;
   text-size-adjust: none;
   background-color: #ffffff;
+  letter-spacing: -0.003em;
   overflow-x: hidden;
   cursor: default;
   margin: 0;
 }
 @media (min-width: 1200px) {
   body {
-    max-width: 97.5rem;
+    max-width: 95rem;
   }
 }
 @media (max-width: 576px) {
@@ -11355,19 +11444,21 @@ body {
     font-size: 1.1em;
   }
 }
+input,
+textarea,
+select,
+button {
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #111111;
-}
-input,
-textarea,
-select,
-button {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  letter-spacing: -0.05rem;
+  margin-left: -2.13px;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -11642,9 +11733,11 @@ header .logo.animate a:hover .logotype .logotype-path {
   }
 }
 header .logo-txt .logo-name {
-  font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  letter-spacing: -0.05rem;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: bolder;
   font-size: 1rem;
+  color: #313131;
   display: block;
 }
 @media (min-width: 1640px) {
@@ -11660,7 +11753,7 @@ header .show-menu {
 }
 header .show-menu.active,
 header .show-menu:hover {
-  color: #e74c3c;
+  color: #c0392b;
 }
 .post {
   /* Grid */
@@ -11743,7 +11836,7 @@ header .show-menu:hover {
 }
 @media (min-width: 1200px) {
   .post {
-    grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] 0 [main-left] 0 [text-left] 0 [main] 45rem [text-right] 0 [main-right] 2.5rem [inner-left] minmax(0rem, 1fr) [aside] minmax(15rem, 25rem) [inner-right] minmax(0rem, 1fr) [outer-right] 0 [edge-right] 2.5rem [right] 0;
+    grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] 0 [main-left] 0 [text-left] 0 [main] 43.75rem [text-right] 0 [main-right] 2.5rem [inner-left] minmax(0rem, 1fr) [aside] minmax(17.5rem, 20.5rem) [inner-right] minmax(0rem, 1fr) [outer-right] 0 [edge-right] 2.5rem [right] 0;
     grid-auto-rows: auto;
     display: grid;
   }
@@ -11758,6 +11851,20 @@ header .show-menu:hover {
 .post .link-title:hover {
   color: #333333;
 }
+@media (min-width: 768px) {
+  .post h1 {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 768px) {
+  .post h2,
+  .post h3,
+  .post h4,
+  .post h5,
+  .post h6 {
+    font-size: 1.45em;
+  }
+}
 .post h1,
 .post h2,
 .post h3,
@@ -11765,7 +11872,7 @@ header .show-menu:hover {
 .post h5,
 .post h6 {
   letter-spacing: -0.05rem;
-  max-width: 45rem;
+  max-width: 43.75rem;
 }
 @media (min-width: 1200px) {
   .post h1,
@@ -11780,7 +11887,7 @@ header .show-menu:hover {
 .post p {
   margin-bottom: 1.5rem;
   margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.84);
+  color: rgba(0, 0, 0, 0.86);
 }
 .post > hr {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -11834,7 +11941,7 @@ header .show-menu:hover {
   margin-left: 0;
   margin-top: 1rem;
   position: relative;
-  max-width: 45rem;
+  max-width: 43.75rem;
   padding: 0;
 }
 @media (min-width: 1200px) {
@@ -11863,7 +11970,7 @@ header .show-menu:hover {
 }
 .post .picture {
   position: relative;
-  max-width: 45rem;
+  max-width: 43.75rem;
 }
 @media (min-width: 1200px) {
   .post .picture {
@@ -11880,10 +11987,10 @@ header .show-menu:hover {
   margin-right: 0;
   margin-left: 0;
   margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.74);
+  color: rgba(0, 0, 0, 0.68);
 }
 .post .picture .caption p {
-  color: rgba(0, 0, 0, 0.74);
+  color: rgba(0, 0, 0, 0.68);
   max-width: 100%;
   margin-bottom: 0;
   margin-top: 0;
@@ -12040,14 +12147,14 @@ header .show-menu:hover {
 }
 .post .tags,
 .post .actions {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   color: #000000;
 }
 .post .tags {
   margin-bottom: 1.5rem;
   margin-top: 1rem;
-  max-width: 45rem;
+  max-width: 43.75rem;
 }
 @media (min-width: 1200px) {
   .post .tags {
@@ -12055,7 +12162,7 @@ header .show-menu:hover {
   }
 }
 .post .actions {
-  max-width: calc( 45rem  + 32px);
+  max-width: calc( 43.75rem  + 32px);
   margin-top: 1rem;
 }
 @media (min-width: 1200px) {
@@ -12064,7 +12171,7 @@ header .show-menu:hover {
   }
 }
 .post .actions .link-action {
-  color: rgba(0, 0, 0, 0.74);
+  color: rgba(0, 0, 0, 0.68);
 }
 .post .actions .link-action:hover {
   color: #000000;
@@ -12078,7 +12185,7 @@ header .show-menu:hover {
 }
 .post .related {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .post .related ul {
   list-style: none;
@@ -12098,7 +12205,7 @@ header .show-menu:hover {
 }
 .post .toc li {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: decimal;
   line-height: 1.4;
 }
@@ -12770,8 +12877,8 @@ header .show-menu:hover {
 .post [caption],
 .post .caption {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  color: rgba(0, 0, 0, 0.74);
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  color: rgba(0, 0, 0, 0.68);
   line-height: 1.3;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
@@ -12783,15 +12890,15 @@ header .show-menu:hover {
 .post [aside],
 .post .aside {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  max-width: 45rem;
-  color: rgba(0, 0, 0, 0.74);
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  max-width: 43.75rem;
+  color: rgba(0, 0, 0, 0.68);
   position: relative;
   line-height: 1.3;
 }
 .post [aside] p,
 .post .aside p {
-  color: rgba(0, 0, 0, 0.74);
+  color: rgba(0, 0, 0, 0.68);
 }
 .post [aside] img,
 .post .aside img {
@@ -12826,12 +12933,13 @@ header .show-menu:hover {
 }
 .blog strong {
   font-size: 1rem;
-  font-family: 'LatoWebBold', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  letter-spacing: -0.05rem;
   display: block;
 }
 .blog .item {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .blog .link-readmore {
   font-size: 1rem;
@@ -12841,10 +12949,10 @@ header .show-menu:hover {
   color: #000000;
 }
 .blog .link-readmore:hover {
-  color: #e74c3c;
+  color: #c0392b;
 }
 .photos .item {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -12865,7 +12973,7 @@ header .show-menu:hover {
   display: block;
 }
 .works .item {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -12983,7 +13091,7 @@ header .show-menu:hover {
 }
 .pagination {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.25;
 }
 .pagination p {
@@ -13015,7 +13123,7 @@ button {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   vertical-align: middle;
   position: relative;
   background: none;
@@ -13076,7 +13184,7 @@ button.slider .link-button {
   border-radius: 50px !important;
   border: 2px solid #4183c4;
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   text-decoration: none;
   width: fit-content;
   overflow: hidden;
@@ -13087,11 +13195,11 @@ button.slider .link-button {
   border-color: #4183c4;
 }
 footer {
-  max-width: calc(97.5rem - 40px - 40px);
+  max-width: calc(95rem - 40px - 40px);
 }
 footer .copyright {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.3;
 }
 footer .scroll-to-top {
@@ -13102,7 +13210,7 @@ footer .scroll-to-top .show {
 }
 footer .breadcrumb {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -13145,7 +13253,7 @@ footer .search .search-form .search-box {
   visibility: hidden;
   padding-right: 48px;
   padding-left: 25px;
-  min-width: 15rem;
+  min-width: 17.5rem;
   box-shadow: none;
   height: 100%;
   border: none;
@@ -13211,7 +13319,7 @@ footer .search.open .dropdown .results {
 }
 footer .search .dropdown {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   visibility: hidden;
   position: relative;
   display: none;
@@ -13287,7 +13395,7 @@ footer .search .dropdown .results li:last-of-type {
 }
 .menu .menu-content li {
   font-size: 1rem;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   position: relative;
   list-style: none;
   float: left;
@@ -13300,7 +13408,7 @@ footer .search .dropdown .results li:last-of-type {
 .menu .menu-content li.active a,
 .menu .menu-content li:hover a {
   border-bottom-color: rgba(192, 57, 43, 0.15);
-  color: #e74c3c;
+  color: #c0392b;
 }
 .modal > .modal-trigger {
   display: none;
@@ -13349,7 +13457,7 @@ footer .search .dropdown .results li:last-of-type {
 }
 .modal .place {
   background-color: #ffffff;
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   border-radius: 2px;
   overflow: hidden;
@@ -13370,7 +13478,7 @@ footer .search .dropdown .results li:last-of-type {
   display: block;
 }
 .modal .place-content .likely .likely__widget {
-  font-family: 'LatoWebMedium', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   border-radius: 2px;
   padding: 3px 6px;
   height: auto;
@@ -13404,12 +13512,12 @@ a {
   border-bottom: 1px solid;
   border-bottom-color: rgba(41, 128, 185, 0.15);
   text-decoration: none;
-  color: #3498db;
+  color: #2980b9;
   cursor: pointer;
 }
 a:hover {
   border-bottom-color: rgba(192, 57, 43, 0.15);
-  color: #e74c3c;
+  color: #c0392b;
 }
 .link-subcontrol {
   border-bottom-color: rgba(0, 0, 0, 0.2);
