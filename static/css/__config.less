@@ -1,10 +1,10 @@
-@content-linel: 45rem;
-@content-width: 97.5rem;
+@content-linel: 43.75rem;
+@content-width: 95rem;
 
 .global-settings() {
     @glob-text: @black;
     @glob-subtext: @darkerGray;
-    @glob-font: @latoMedium;
+    @glob-font: @ubuntu;
     @glob-font-size: 1rem;
     @glob-linel: @content-linel;
     @glob-width: @content-width;
@@ -17,15 +17,15 @@
     @post-bottom: 1.5rem;
 
     @post-linel: @content-linel;
-    @post-text: rgba(0,0,0,.84);
-    @post-subtext: rgba(0,0,0,.74);
+    @post-text: rgba(0,0,0,.86);
+    @post-subtext: rgba(0,0,0,.68);
 }
 
 .post-grid() {
     @post-width: @content-width;
 
     @grid-edge: 2.5rem;
-    @grid-aside: minmax(15rem, 25rem);
+    @grid-aside: minmax(17.5rem, 20.5rem);
     @grid-inner: minmax(0rem, 1fr);
     @main-outer: 2.5rem;
     @grid-main: @content-linel;
@@ -42,7 +42,7 @@
     @linel: @content-linel;                         // max-width for text (any css value)
 
     @font-body: @gregor;                            // body
-    @font-headers: @latoHeavy;                      // headers
+    @font-headers: @ubuntu;                         // headers
     @font-code: @code;                              // code (duplication is intentional)
 
     @scale1: 1.125;                    // header size multiplier for small screens
