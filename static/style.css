@@ -11324,7 +11324,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(0, 0, 0, 0.84);
+  color: rgba(0, 0, 0, 0.86);
   letter-spacing: -0.05rem;
 }
 * {
@@ -11604,7 +11604,7 @@ header .logo-txt .logo-name {
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: bolder;
   font-size: 1rem;
-  color: #313131;
+  color: rgba(0, 0, 0, 0.86);
   display: block;
 }
 @media (min-width: 1640px) {
@@ -11713,14 +11713,14 @@ header .show-menu:hover {
 }
 .post .link-title {
   border-bottom: none;
-  color: rgba(0, 0, 0, 0.84);
+  color: rgba(0, 0, 0, 0.86);
 }
 .post .link-title:hover {
   color: #333333;
 }
 @media (min-width: 768px) {
   .post h1 {
-    font-size: 1.7em;
+    font-size: 1.750em;
   }
 }
 @media (min-width: 768px) {
@@ -11729,7 +11729,7 @@ header .show-menu:hover {
   .post h4,
   .post h5,
   .post h6 {
-    font-size: 1.45em;
+    font-size: 1.438em;
   }
 }
 .post h1,
@@ -11852,15 +11852,15 @@ header .show-menu:hover {
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 1rem;
+  margin-top: 0.875rem;
 }
 .post .picture .caption p,
 .post .picture .captionp {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  color: rgba(0, 0, 0, 0.86);
+  color: #81868e;
   line-height: 1.4;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 100%;
   margin-bottom: 0;
   margin-top: 0;
@@ -12018,7 +12018,7 @@ header .show-menu:hover {
 .post .tags,
 .post .actions {
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
   color: #000000;
 }
 .post .tags {
@@ -12041,7 +12041,7 @@ header .show-menu:hover {
   }
 }
 .post .actions .link-action {
-  color: rgba(0, 0, 0, 0.86);
+  color: #81868e;
 }
 .post .actions .link-action:hover {
   color: #000000;
@@ -12753,11 +12753,11 @@ header .show-menu:hover {
 .post .caption p,
 .post [caption]p,
 .post .captionp {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.86);
+  color: #81868e;
 }
 .post [caption].center,
 .post .caption.center {
@@ -12765,11 +12765,11 @@ header .show-menu:hover {
 }
 .post [aside],
 .post .aside {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.86);
+  color: #81868e;
   max-width: 43.75rem;
   position: relative;
 }
@@ -12777,11 +12777,11 @@ header .show-menu:hover {
 .post .aside p,
 .post [aside]p,
 .post .asidep {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.86);
+  color: #81868e;
 }
 .post [aside] img,
 .post .aside img {
