@@ -20,7 +20,6 @@ group :jekyll_plugins do
    gem "jekyll-redirect-from"
    gem "jekyll-auto-image"
    gem "jekyll-typogrify"
-   gem "jekyll-minifier"
    gem "jekyll-paginate"
    gem "jekyll-archives"
    gem "jekyll-extlinks"

@@ -4,7 +4,7 @@
 .global-settings() {
     @glob-text: @black;
     @glob-subtext: @darkerGray;
-    @glob-font: @ubuntu;
+    @glob-font: @openSans;
     @glob-font-size: 1rem;
     @glob-linel: @content-linel;
     @glob-width: @content-width;
@@ -13,12 +13,16 @@
 }
 
 .post-settings() {
-    @post-top: 1rem;
+    @post-top: 0.5rem;
     @post-bottom: 1.5rem;
 
     @post-linel: @content-linel;
     @post-text: rgba(0,0,0,.86);
-    @post-subtext: rgba(0,0,0,.68);
+    @post-subtext: rgba(0,0,0,.86);
+
+    @post-subtext-size: 0.8rem;
+    @post-subtext-linel: 1.4;
+    @post-subtext-weight: 500;
 }
 
 .post-grid() {
@@ -36,13 +40,13 @@
 */
 
 .bettertext-settings() {
-    @fz: 12.8px;                                    // default font-size
-    @rythm: 17.92px;                                // vertical rythm = line-height in pixels
+    @fz: 13.333333333333333px;                      // default font-size
+    @rythm: 18.666666666666666px;                   // vertical rythm = line-height in pixels
     @fz-small: 10px;                                // smaller font-size (px)
     @linel: @content-linel;                         // max-width for text (any css value)
 
     @font-body: @gregor;                            // body
-    @font-headers: @ubuntu;                         // headers
+    @font-headers: @openSans;                       // headers
     @font-code: @code;                              // code (duplication is intentional)
 
     @scale1: 1.125;                    // header size multiplier for small screens
