@@ -1,6 +1,6 @@
 <article class="space-in-top-mega-xs space-in-top-giga-md{% if forloop.last == true %} space-in-bottom-mega-xs space-in-bottom-giga-md{% endif %} space-minus-h-base-xl post">	
 	<h1>
-		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a>
 	</h1>
 
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
@@ -13,10 +13,9 @@
 		<time class="space-out-right-nano-xs">{{ post.date | russian_date }}</time>
 
 		{% if post.tags.size > 0 %}
-			<span class="space-out-right-nano-xs">&middot;</span>
 			{% assign tags = post.tags | sort %}
 			{% for tag in tags %}
-				<a class="space-out-right-nano-xs link tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
+				<a class="space-out-right-nano-xs link-tag tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
 			{% endfor %}
 		{% endif %}
 	</nav>

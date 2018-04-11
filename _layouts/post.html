@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="slide-up-fade-in space-in-v-mega-xs space-in-v-giga-md space-minus-h-base-xl post{% if page.toc == 'true' %} js-toc-content{% endif %}">
-	<h1>{{ page.title }}</h1>
+	<h1>{{ page.title | improve }}</h1>
 
 	{% include _post/cover.html %}
 
@@ -17,10 +17,9 @@ layout: default
 		<time class="space-out-right-nano-xs">{{ page.date | russian_date }}</time>
 
 		{% if page.tags.size > 0 %}
-			<span class="space-out-right-nano-xs">&middot;</span>
 			{% assign tags = page.tags | sort %}
 			{% for tag in tags %}
-				<a class="space-out-right-nano-xs link tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
+				<a class="space-out-right-nano-xs link-tag tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
 			{% endfor %}
 		{% endif %}
 	</nav>
