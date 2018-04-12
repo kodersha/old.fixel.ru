@@ -11751,14 +11751,14 @@ header .show-menu:hover {
   }
 }
 .post p {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
   color: rgba(0, 0, 0, 0.86);
 }
 .post > hr {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
   text-align: center;
   display: block;
   border: none;
@@ -11778,10 +11778,10 @@ header .show-menu:hover {
 }
 .post ul:not([class]),
 .post ol:not([class]) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4em;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .post ul:not([class]),
@@ -11802,10 +11802,10 @@ header .show-menu:hover {
   transform: none;
 }
 .post blockquote {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4em;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 0.5rem;
+  margin-top: 0;
   position: relative;
   max-width: 43.75rem;
   padding: 0;
@@ -11829,10 +11829,10 @@ header .show-menu:hover {
   }
 }
 .post figure {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4em;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 .post .picture {
   position: relative;
@@ -11852,7 +11852,7 @@ header .show-menu:hover {
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
-  margin-top: 0.875rem;
+  margin-top: 1em;
 }
 .post .picture .caption p,
 .post .picture .captionp {
@@ -11932,8 +11932,8 @@ header .show-menu:hover {
   background-position: 0 0;
 }
 .post .cover {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
   position: relative;
   min-height: 100vh;
   height: 100vh;
@@ -11976,8 +11976,8 @@ header .show-menu:hover {
 }
 .post .google-maps {
   background-color: #e5e3df;
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
   position: relative;
 }
 @media (min-width: 1200px) {
@@ -12012,8 +12012,8 @@ header .show-menu:hover {
   }
 }
 .post .gist {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.4em;
 }
 .post .tags,
 .post .actions {
@@ -12022,8 +12022,8 @@ header .show-menu:hover {
   color: #000000;
 }
 .post .tags {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
   max-width: 43.75rem;
 }
 @media (min-width: 1200px) {
@@ -12033,7 +12033,7 @@ header .show-menu:hover {
 }
 .post .actions {
   max-width: calc( 43.75rem  + 32px);
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .post .actions {
@@ -12063,8 +12063,8 @@ header .show-menu:hover {
 }
 .post [full],
 .post .full {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .post [full],
@@ -12210,13 +12210,13 @@ header .show-menu:hover {
   display: flex;
 }
 .post [row] figure {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
 }
 .post [base],
 .post [block] {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
 }
 .post [base] > *,
 .post [block] > * {
@@ -12225,8 +12225,8 @@ header .show-menu:hover {
 }
 .post [caption],
 .post .caption {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
 }
 .post [caption],
 .post .caption,
@@ -12289,8 +12289,8 @@ header .show-menu:hover {
   box-shadow: #464646 0px 0px 100px 0px;
 }
 .post .toc {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1.4em;
+  margin-top: 0;
 }
 .post .toc > ul {
   margin: 0;
@@ -12619,8 +12619,8 @@ header .show-menu:hover {
   color: #ffffff;
 }
 .post [color] .highlight pre {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.4em;
+  margin-top: 1.4em;
 }
 .post [color] .highlight .hll {
   background-color: #272822;
