@@ -11739,6 +11739,7 @@ header .show-menu:hover {
 .post h5,
 .post h6 {
   max-width: 43.75rem;
+  margin-bottom: 0.875em;
 }
 @media (min-width: 1200px) {
   .post h1,
@@ -11753,7 +11754,7 @@ header .show-menu:hover {
 .post p {
   margin-bottom: 1.4em;
   margin-top: 0;
-  color: rgba(0, 0, 0, 0.86);
+  color: #000000;
 }
 .post > hr {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
