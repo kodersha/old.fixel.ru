@@ -1,25 +1,10 @@
-<footer class="space-in-bottom-mili-xs">
-	<div class="row row-middle-md">
-		<div class="col-xs-12 space-in-bottom-mili-xs">
-			{% include breadcrumbs.html %}
-		</div>
+<footer class="space-in-bottom-mili-xs linel">
+	{% include breadcrumbs.html %}
 
-		<div class="col-xs-12 col-md-shrink copyright">
-			{{ site.author }} &copy; 2015 - {{ site.time | date: '%Y' }}<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="{{ site.baseurl }}/feed"><b>RSS</b></a><br />
-			Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
-		</div>
-
-		<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg search">
-			<div class="search-form">
-				<input type="text" id="search-input" class="search-box" />
-				<span class="search-button">
-					<i class="fa fa-search open" aria-hidden="true"></i>
-					<i class="fa fa-times close" aria-hidden="true"></i>
-				</span>
-			</div>
-			<div class="dropdown">
-				<ul class="results" id="results-container"></ul>
-			</div>
-		</div>
+	<div class="space-in-top-mili-xs copyright">
+		{{ site.author }} &copy; 2015 - {{ site.time | date: '%Y' }}<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="{{ site.baseurl }}/feed">RSS</a><br />
+		Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
 	</div>
+
+	{% include menu.html %}
 </footer>

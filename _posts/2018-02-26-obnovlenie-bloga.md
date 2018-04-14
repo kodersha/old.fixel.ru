@@ -8,7 +8,7 @@ hidden: true
 
 <!-- more -->
 
-<div main row markdown="1">
+<div big row markdown="1">
 {% cloudinary src:v1519470747/01_ui3wbb.png class:"col-xs-12 col-sm-6 center" alt:"Так главная страница выглядела раньше" %}
 {% cloudinary src:v1519485996/02_tka1iv.png class:"col-xs-12 col-sm-6 center" alt:"А так - после обновления" %}
 </div>

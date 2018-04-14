@@ -1,55 +1,29 @@
 .menu {
-    -webkit-transition: max-height 0.1s ease-out;
-    -moz-transition: max-height 0.1s ease-out;
-    transition: max-height 0.1s ease-out;
-    visibility: hidden;
     position: relative;
-    max-height: 0;
-    
-    &.menu-open {
-        -webkit-transition: max-height 0.1s ease-in;
-        -moz-transition: max-height 0.1s ease-in;
-        transition: max-height 0.1s ease-in;
-        visibility: visible;
-        max-height: 300px;
-
-        .menu-content {
-            -webkit-transition: all 0.1s ease-in;
-            -moz-transition: all 0.1s ease-in;
-            transition: all 0.1s ease-in;
-            opacity: 1;
-        }
-    }
     
     .menu-content {
         -webkit-transition: all 0.1s ease-out;
         -moz-transition: all 0.1s ease-out;
         transition: all 0.1s ease-out;
-        background-color: @white;
         position: relative;
         display: table;
-        z-index: 10;
         width: 100%;
-        opacity: 0;
         padding: 0;
         margin: 0;
 
         li {
-            font-size: @glob-font-size;
+            .post-settings();
+
+            font-size: @post-subtext-size;
             font-family: @glob-font;
+            font-weight: @post-subtext-weight;
+            line-height: @post-subtext-linel;
             position: relative;
             list-style: none;
             float: left;
 
             @media @mmd {
                 width: 50%;
-            }
-
-            &.active, &:hover {
-                a {
-                    border-bottom-color: rgba(192, 57, 43, .15);
-                    color: @red;
-                }
             }
         }
     }

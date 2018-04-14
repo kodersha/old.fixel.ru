@@ -1,26 +1,18 @@
 [full], .full {
-    margin-bottom: @post-bottom;
-    margin-top: @post-top;
-	
     @media @xl {
         grid-column: left / right;
-    }
-
-    figure {
-        margin-bottom: 0;
-        margin-top: 0;        
     }
 }
 
 [main], .main {
     @media @xl {
-        grid-column: text-left / edge-right;
+        grid-column: main-left / inner-right;
     }
 }
 
 [big], .big {
     @media @xl {
-        grid-column: edge-left / inner-left;
+        grid-column: outer-left / edge-right;
     }
 }
 
@@ -30,8 +22,22 @@
     }    
 }
 
-[full], .full, [main], .main, [big], .big, [big-outer], .big-outer {
+[full], .full,
+[main], .main,
+[big], .big,
+[big-outer], .big-outer {
+    margin-bottom: @post-bottom !important;
+    margin-top: @post-top !important;
     position: relative;
+
+    figure {
+        max-width: none !important;
+
+        @media @md {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+    }
 
     &.dark, &.light-dark {
         @media @xl {
@@ -129,7 +135,17 @@
 
 [aside], .aside {
     max-width: @post-linel;
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
+
+    @media @xl {
+        grid-column: aside-right;
+        max-width: none;
+        margin-right: initial;
+        margin-left: initial;
+        height: fit-content;
+    }
 
     &, p {
         font-size: @post-subtext-size;
@@ -152,12 +168,6 @@
     &.gray {
         background-color: @action;
         padding: 1em;
-    }
-
-    @media @xl {
-        grid-column: aside / inner-right;
-        height: fit-content;
-        max-width: initial;
     }
 }
 

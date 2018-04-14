@@ -4,7 +4,7 @@ class: blog
 title: {{ page.title }}
 ---
 
-<section class="slide-up-fade-in">
+<section class="slide-up-fade-in linel">
 {% for post in page.posts %}
 	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-base-xs {% endif %}{% if forloop.last == true %}space-out-bottom-base-xs space-in-bottom-zero-xs {% endif %}item">
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>

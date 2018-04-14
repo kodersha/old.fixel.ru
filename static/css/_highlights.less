@@ -1,4 +1,9 @@
 .highlight {
+	max-width: @post-linel;
+	margin-bottom: @post-bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: @post-top;
 	position: relative;
 	display: grid;
 	
@@ -15,6 +20,12 @@
 			line-height: 1.4;
 			display: block;
 		}
+	}
+
+	@media @xl {
+		max-width: none;
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 }

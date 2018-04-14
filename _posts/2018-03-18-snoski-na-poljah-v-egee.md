@@ -10,7 +10,6 @@ tags:
 
 <!-- more -->
 
-<div full color class="light-dark">
 {% highlight css %}
 @media screen and (min-width: 1050px) {
     .e2-text .aside {
@@ -29,7 +28,6 @@ tags:
     opacity: .8;
 }
 {% endhighlight %}
-</div>
 
 Как использовать? Начиная с Эгеи 2.7 в редакторе можно сделать вот так:
 
@@ -47,7 +45,6 @@ tags:
 
 ## Способ второй
 
-<div full color class="light-dark">
 {% highlight css %}
 @media screen and (min-width: 1050px) {
     .e2-text [main] {
@@ -72,7 +69,6 @@ tags:
     opacity: .8;
 }
 {% endhighlight %}
-</div>
 
 Как использовать? В редакторе:
 

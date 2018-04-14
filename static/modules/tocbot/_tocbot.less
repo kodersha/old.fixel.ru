@@ -1,6 +1,16 @@
 .toc {
+	max-width: @post-linel;
 	margin-bottom: @post-bottom;
+	margin-right: auto;
+	margin-left: auto;
 	margin-top: @post-top;
+
+	@media @xl {
+		grid-column: aside-left / inner-left;
+		max-width: none;
+		margin-right: initial;
+		margin-left: initial;
+	}
 }
 
 .toc > ul {

@@ -1,11 +1,20 @@
-{% include menu.html %}
-
-<header class="space-in-top-mili-xs">
+<header class="space-in-top-mili-xs linel">
 	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-shrink">
-			<span class="show-menu" id="showMenu">&bull;&bull;&bull;</span>
+		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+			<div class="search space-auto-left-md">
+				<div class="search-form">
+					<input type="text" id="search-input" class="search-box" />
+					<span class="search-button">
+						<i class="fa fa-search open" aria-hidden="true"></i>
+						<i class="fa fa-times close" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs">
+		<div class="col-xs-12 col-sm-shrink">
 			<div class="row row-middle-sm">
 				<div class="col-xs-12 col-sm-shrink space-in-right-zero-md space-logo">
 					<div class="logo" data-js="logo">

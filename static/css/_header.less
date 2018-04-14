@@ -1,3 +1,164 @@
+//
+// .search
+//
+
+.search {
+    max-width: 18.125rem;
+    position: relative;
+    
+    .search-form {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        border-radius: 50px;
+        position: relative;
+        margin-left: auto;
+        overflow: hidden;
+        height: 48px;
+        width: 48px;
+
+        .search-box {
+            font-size: @glob-font-size;
+            background: transparent;
+            visibility: hidden;
+            padding-right: 48px;
+            padding-left: 25px;
+            box-shadow: none;
+            border: none;
+            height: 100%;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        .search-button {
+            font-size: @glob-font-size;
+            padding-bottom: 16px;
+            padding-right: 16px;
+            padding-left: 16px;
+            padding-top: 16px;
+            position: absolute;
+            color: #a9b1b5;
+            line-height: 0;
+            cursor: pointer;
+            display: block;
+            right: 0;
+            top: 0;
+            
+            i.close {
+                display: none;
+            }
+        }
+
+        @media @mmd {
+            background-color: #f1f3f4;
+            max-width: 100%;
+            width: 100%;
+
+            .search-box {
+                visibility: visible;
+            }
+
+            .search-button {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.open {
+        .search-form {
+            background-color: #f1f3f4;
+            width: 100%;
+
+            .search-box {
+                visibility: visible;
+            }
+        }
+        
+        .search-button {
+            padding-bottom: 16px;
+            padding-right: 18px;
+            padding-left: 18px;
+            padding-top: 16px;
+            
+            i.open {
+                display: none;
+            }
+            
+            i.close {
+                display: block;
+            }
+        }
+        
+        .dropdown {
+            visibility: visible;
+            display: block;
+
+            .results {
+                display: block;
+            }
+        }
+    }
+    
+    .dropdown {
+        visibility: hidden;
+        position: relative;
+        display: none;
+        z-index: 100;
+        
+        .results {
+            background-color: #fafafa;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            border-radius: 2px;
+            position: absolute;
+            list-style: none;
+            padding-left: 0;
+            display: none;
+            width: 100%;
+            right: 0;
+            top: 0;
+
+            li {
+                font-size: @glob-font-size;
+                font-family: @glob-font;
+                padding-bottom: 10px;
+                padding-right: 25px;
+                padding-left: 25px;
+                padding-top: 10x;
+                
+                &:first-of-type {
+                    padding-top: 25px;
+                }
+                
+                &:last-of-type {
+                    padding-bottom: 25px;
+                }
+            }
+        }
+
+        @media @mmd {
+            visibility: visible;
+            display: block;
+
+            .results {
+                display: block;
+            }
+        }
+    }
+
+    @media @mmd {
+        max-width: 100%;
+    }
+}
+
+//
+// .logo
+//
+
 .logo {
     position: relative;
     display: block;
@@ -15,6 +176,7 @@
         width: 40px;
 
         &:before {
+            background-color: #d95e40;
             position: absolute;
             border-radius: 50%;
             height: 40px;
@@ -53,7 +215,7 @@
         -webkit-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
         position: relative;
-        padding: 2px;
+        padding: 4px;
         height: 40px;
         width: 40px;
 
@@ -61,6 +223,7 @@
             -webkit-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
             position: absolute;
+            fill: @white;
             height: 40px;
             width: 40px;
         }
@@ -271,7 +434,7 @@
 
 
 .space-logo {
-    @media (min-width: 1640px) {
+    @media @xl {
         margin-left: -60px;
     }
 }

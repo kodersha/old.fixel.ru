@@ -3,26 +3,28 @@ layout: default
 title: Работы
 ---
 
-<div class="slide-up-fade-in space-in-v-kilo-xs row works">
-	{% for post in site.works reversed %}
-		<article class="col-xs-12 col-sm-6 col-md-4 space-out-bottom-mili-xs item">
-			<div class="browser">
-				<div class="title-bar">
-					<div class="btns">
-						<div class="close"></div>
-						<div class="min"></div>      
-						<div class="max"></div> 
+<div class="slide-up-fade-in space-in-v-kilo-xs linel">
+	<div class="row works">
+		{% for post in site.works reversed %}
+			<article class="col-xs-12 col-sm-6 space-out-bottom-mili-xs item">
+				<div class="browser">
+					<div class="title-bar">
+						<div class="btns">
+							<div class="close"></div>
+							<div class="min"></div>      
+							<div class="max"></div> 
+						</div>
+						<div class="location-bar"></div>
 					</div>
-					<div class="location-bar"></div>
 				</div>
-			</div>
-			<a target="_blank" href="{{ post.url }}" class="link-work">
-				<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')"></div>
-			</a>
-			<div class="space-in-top-nano-xs meta">
-				<a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
-				<span>{{ post.description }}</span>
-			</div>
-		</article>
-	{% endfor %}
+				<a target="_blank" href="{{ post.url }}" class="link-work">
+					<div class="thumbnail" style="background-image: url('{{ post.thumbnail }}')"></div>
+				</a>
+				<div class="space-in-top-nano-xs meta">
+					<a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
+					<span>{{ post.description }}</span>
+				</div>
+			</article>
+		{% endfor %}
+	</div>
 </div>

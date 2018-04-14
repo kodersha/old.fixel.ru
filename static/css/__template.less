@@ -51,6 +51,26 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.linel {
+    max-width: @glob-linel;
+    margin-right: auto;
+    margin-left: auto;
+
+    &-extended {
+        max-width: calc(~'@{glob-linel} + @{micro} + @{micro}');
+        margin-right: auto;
+        margin-left: auto;
+
+        @media @md {
+            max-width: calc(~'@{glob-linel} + @{mili} + @{mili}');
+        }
+
+        @media @lg {
+            max-width: calc(~'@{glob-linel} + @{base} + @{base}');
+        }
+    }
+}
+
 //
 // header
 //
@@ -69,7 +89,7 @@ header {
     /* Grid */
 
     @media @xl {
-        grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' 0 ~'[main-left]' 0 ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[main-right]' @main-outer ~'[inner-left]' @grid-inner ~'[aside]' @grid-aside ~'[inner-right]' @grid-inner ~'[outer-right]' 0 ~'[edge-right]' @grid-edge ~'[right]' 0;
+        grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' @grid-outer ~'[aside-left]' @grid-aside ~'[inner-left]' @grid-inner ~'[main-left]' @main-outer ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[main-right]' @main-outer ~'[inner-right]' @grid-inner ~'[aside-right]' @grid-aside ~'[outer-right]' @grid-outer ~'[edge-right]' @grid-edge ~'[right]' 0;
         grid-auto-rows: auto;
         display: grid;
 
@@ -93,37 +113,40 @@ header {
 
     /* Body */
 
-    h1 {
-        @media @md {
-            font-size: 1.750em;
-        }
-    }
-
-    h2, h3, h4, h5, h6 {
-        @media @md {
-            font-size: 1.438em;
-        }
-    }
-
     h1, h2, h3, h4, h5, h6 {
         max-width: @post-linel;
-        margin-bottom: 0.875em;
+        margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
 
         @media @xl {
-            max-width: 100%;
+            max-width: none;
+            margin-right: initial;
+            margin-left: initial;
         }
     }
 
     p {
         margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
         color: @post-text;
+
+        @media @xl {
+            margin-right: initial;
+            margin-left: initial;
+        } 
     }
 
     & > hr {
-        font-family: @helvetica;
+        max-width: @post-linel;
         margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
+
+        font-family: @helvetica;
         text-align: center;
         display: block;
         border: none;
@@ -143,18 +166,25 @@ header {
                 content: none;
             }
         }
+
+        @media @xl {
+            max-width: none;
+            margin-right: 0;
+            margin-left: 0;
+        }
     }
 
     ul:not([class]), ol:not([class]) {
+        max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
 
         @media @xl {
-            max-width: 100%;
-            padding-right: 0;
-            padding-left: 0;
+            max-width: none;
+            margin-right: initial;
+            margin-left: initial;
 
             li {
                 transform: none;
@@ -171,16 +201,18 @@ header {
     /* blockquote */
 
     blockquote {
+        max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
         position: relative;
-        max-width: @post-linel;
         padding: 0;
 
         @media @xl {
-            max-width: 100%;
+            max-width: none;
+            margin-right: initial;
+            margin-left: initial;
         }
 
         p {
@@ -198,21 +230,23 @@ header {
     }
 
     figure {
+        max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
+
+        @media @xl {
+            max-width: none;
+            margin-right: initial;
+            margin-left: initial;
+        }
     }
 
     /* picture */
 
     .picture {
         position: relative;
-        max-width: @post-linel;
-
-        @media @xl {
-            max-width: 100%;
-        }
 
         .lightbox-image {
             cursor: zoom-in;
@@ -220,11 +254,11 @@ header {
         }
 
         .caption {
-            max-width: 100%;
+            max-width: @post-linel;
             margin-bottom: 0;
-            margin-right: 0;
-            margin-left: 0;
-            margin-top: 1em;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 1rem;
 
             p, &p {
                 font-size: @post-subtext-size;
@@ -249,8 +283,8 @@ header {
 
         &.aside {
             .caption {
-                margin-right: 0;
-                margin-left: 0;
+                margin-right: initial;
+                margin-left: initial;
             }
         }
 
@@ -264,7 +298,7 @@ header {
     & > .picture {
 
         @media @xl {
-            grid-column: text-left / text-right;
+            grid-column: main-left / inner-right;
         }
 
         img {
@@ -273,6 +307,12 @@ header {
             margin-left: auto;
             margin-top: 0;
             display: block;
+        }
+
+        &.wrap {
+            @media @xl {
+                grid-column: text-left / text-right;
+            }
         }
     }
 
@@ -439,11 +479,15 @@ header {
     /* Actions */
 
 	.actions {
-        max-width: ~"calc("@post-linel ~" + 32px)";
+        max-width: @post-linel;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
 
         @media @xl {
             max-width: none;
+            margin-right: initial;
+            margin-left: initial;
         }
 
         .link-action {
