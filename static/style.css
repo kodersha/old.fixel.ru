@@ -80,19 +80,19 @@ h6 {
 }
 @media (min-width: 43.75rem) {
   h1 {
-    font-size: 1.95em;
-    margin-top: 3.58974359em;
-    margin-bottom: 0.71794872em;
+    font-size: 1.875em;
+    margin-top: 3.73333333em;
+    margin-bottom: 0.74666667em;
   }
   h2 {
-    font-size: 1.65em;
-    margin-top: 3.39393939em;
-    margin-bottom: 0.84848485em;
+    font-size: 1.575em;
+    margin-top: 3.55555556em;
+    margin-bottom: 0.88888889em;
   }
   h3 {
-    font-size: 1.425em;
-    margin-top: 2.94736842em;
-    margin-bottom: 0.98245614em;
+    font-size: 1.35em;
+    margin-top: 3.11111111em;
+    margin-bottom: 1.03703704em;
   }
   h4 {
     font-size: 1.2em;
@@ -11342,11 +11342,13 @@ h6 {
   max-width: 43.75rem;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 }
 .linel-extended {
   max-width: calc(43.75rem + 16px + 16px);
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .linel-extended {
@@ -11786,8 +11788,6 @@ header .show-menu:hover {
   /* youtube frame */
   /* cover */
   /* google maps */
-  /* Tags & Actions */
-  /* Tags */
   /* Actions */
   /* Comments */
   /* Related */
@@ -11856,11 +11856,15 @@ header .show-menu:hover {
   /* Name.Variable.Instance */
   /* Literal.Number.Integer.Long */
 }
+@media (min-width: 768px) {
+  .post {
+    display: grid;
+  }
+}
 @media (min-width: 1200px) {
   .post {
     grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] minmax(0, 1fr) [aside-left] minmax(10.625rem, 18.125rem) [inner-left] 2.5rem [main-left] minmax(0, 2.5rem) [text-left] 0 [main] 43.75rem [text-right] 0 [main-right] minmax(0, 2.5rem) [inner-right] 2.5rem [aside-right] minmax(10.625rem, 18.125rem) [outer-right] minmax(0, 1fr) [edge-right] 2.5rem [right] 0;
     grid-auto-rows: auto;
-    display: grid;
   }
   .post > * {
     grid-column: text-left / text-right;
@@ -11880,9 +11884,10 @@ header .show-menu:hover {
 .post h5,
 .post h6 {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .post h1,
@@ -11897,10 +11902,10 @@ header .show-menu:hover {
   }
 }
 .post p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: #000000;
 }
 @media (min-width: 1200px) {
@@ -11911,10 +11916,11 @@ header .show-menu:hover {
 }
 .post > hr {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
   display: block;
@@ -11943,10 +11949,11 @@ header .show-menu:hover {
 .post ul:not([class]),
 .post ol:not([class]) {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .post ul:not([class]),
@@ -11968,10 +11975,11 @@ header .show-menu:hover {
 }
 .post blockquote {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
   position: relative;
   padding: 0;
 }
@@ -11997,10 +12005,11 @@ header .show-menu:hover {
 }
 .post figure {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .post figure {
@@ -12106,8 +12115,8 @@ header .show-menu:hover {
   background-position: 0 0;
 }
 .post .cover {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   position: relative;
   min-height: 100vh;
   height: 100vh;
@@ -12150,8 +12159,8 @@ header .show-menu:hover {
 }
 .post .google-maps {
   background-color: #e5e3df;
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   position: relative;
 }
 @media (min-width: 1200px) {
@@ -12186,30 +12195,19 @@ header .show-menu:hover {
   }
 }
 .post .gist {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.post .tags,
-.post .actions {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 0.875rem;
-  color: #000000;
-}
-.post .tags {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
-  max-width: 43.75rem;
-}
-@media (min-width: 1200px) {
-  .post .tags {
-    grid-column: text-left / text-right;
-  }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .post .actions {
   max-width: 43.75rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #000000;
 }
 @media (min-width: 1200px) {
   .post .actions {
@@ -12271,8 +12269,8 @@ header .show-menu:hover {
 .post .big,
 .post [big-outer],
 .post .big-outer {
-  margin-bottom: 1.5rem !important;
-  margin-top: 0.5rem !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
   position: relative;
 }
 .post [full] figure,
@@ -12403,13 +12401,13 @@ header .show-menu:hover {
   display: flex;
 }
 .post [row] figure {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .post [base],
 .post [block] {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .post [base] > *,
 .post [block] > * {
@@ -12418,8 +12416,8 @@ header .show-menu:hover {
 }
 .post [caption],
 .post .caption {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .post [caption],
 .post .caption,
@@ -12487,10 +12485,10 @@ header .show-menu:hover {
 }
 .post .toc {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 @media (min-width: 1200px) {
   .post .toc {
@@ -12528,10 +12526,10 @@ header .show-menu:hover {
 }
 .post .highlight {
   max-width: 43.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   position: relative;
   display: grid;
 }
