@@ -110,42 +110,23 @@
 	</head>
 
 	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl">
-<nav class="menu" id="menu">
-	<ol class="menu-content">
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs active"><a href="/blog/">Блог</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/blog/all/">Все записи</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/photo/">Фотографии</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/about/">Об авторе</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/donate/">Поддержать</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="http://steambuy.com/partner/milkleaks">Магазин игр</a></li>
-		
-	</ol>
-</nav>
-
-<header class="space-in-top-mili-xs">
+<header class="space-in-top-mili-xs linel">
 	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-shrink">
-			<span class="show-menu" id="showMenu">&bull;&bull;&bull;</span>
+		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+			<div class="search space-auto-left-md">
+				<div class="search-form">
+					<input type="text" id="search-input" class="search-box" />
+					<span class="search-button">
+						<i class="fa fa-search open" aria-hidden="true"></i>
+						<i class="fa fa-times close" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs">
+		<div class="col-xs-12 col-sm-shrink">
 			<div class="row row-middle-sm">
 				<div class="col-xs-12 col-sm-shrink space-in-right-zero-md space-logo">
 					<div class="logo" data-js="logo">
@@ -191,23 +172,21 @@
 
 </article>
 
-<nav class="row row-between-sm space-in-bottom-mega-xs space-in-bottom-giga-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-mega-xs space-in-bottom-giga-md pagination linel">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
 			<a title="The Escapists" class="link" href="/blog/the-escapists/">&larr; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs space-in next">
 		
 			<a title="О кошках и аллергии" class="link" href="/blog/o-koshkah-i-allergii/">Позднее &rarr;</a>
 		
 	</span>
 </nav>
 
-<footer class="space-in-bottom-mili-xs">
-	<div class="row row-middle-md">
-		<div class="col-xs-12 space-in-bottom-mili-xs">
-			<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+<footer class="space-in-bottom-mili-xs linel">
+	<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
 	
 	
 		
@@ -263,28 +242,46 @@
 			</li>
 			
 </ol>
-		</div>
 
-		<div class="col-xs-12 col-md-shrink copyright">
-			Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
-			Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
-		</div>
+	<div class="space-in-top-mili-xs copyright">
+		Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="/feed">RSS</a><br />
+		Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
+	</div>
 
-		<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg search">
-			<div class="search-form">
-				<input type="text" id="search-input" class="search-box" />
-				<span class="search-button">
-					<i class="fa fa-search open" aria-hidden="true"></i>
-					<i class="fa fa-times close" aria-hidden="true"></i>
-				</span>
-			</div>
-			<div class="dropdown">
-				<ul class="results" id="results-container"></ul>
-			</div>
+	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
+	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+		<ol class="menu-content">
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все записи</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="http://steambuy.com/partner/milkleaks">Магазин игр</a></li>
+			
+		</ol>
+	</nav>
+
+	<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg">
+		<div class="scroll-to-top">
+			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 		</div>
 	</div>
+</section>
 </footer>
-
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -294,12 +291,10 @@
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
-<script type="text/javascript" src="/static/modules/classie/classie.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
-<script type="text/javascript" src="/static/modules/likely/likely.js"></script>
-<script type="text/javascript" src="/static/modules/wow/wow.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
 

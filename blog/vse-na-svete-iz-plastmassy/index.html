@@ -110,42 +110,23 @@
 	</head>
 
 	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl">
-<nav class="menu" id="menu">
-	<ol class="menu-content">
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs active"><a href="/blog/">Блог</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/blog/all/">Все записи</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/photo/">Фотографии</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/about/">Об авторе</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="/donate/">Поддержать</a></li>
-		
-		
-		
-			<li class="space-in-right-micro-md space-in-top-nano-xs"><a href="http://steambuy.com/partner/milkleaks">Магазин игр</a></li>
-		
-	</ol>
-</nav>
-
-<header class="space-in-top-mili-xs">
+<header class="space-in-top-mili-xs linel">
 	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-shrink">
-			<span class="show-menu" id="showMenu">&bull;&bull;&bull;</span>
+		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+			<div class="search space-auto-left-md">
+				<div class="search-form">
+					<input type="text" id="search-input" class="search-box" />
+					<span class="search-button">
+						<i class="fa fa-search open" aria-hidden="true"></i>
+						<i class="fa fa-times close" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="dropdown">
+					<ul class="results" id="results-container"></ul>
+				</div>
+			</div>
 		</div>
-		<div class="col-xs">
+		<div class="col-xs-12 col-sm-shrink">
 			<div class="row row-middle-sm">
 				<div class="col-xs-12 col-sm-shrink space-in-right-zero-md space-logo">
 					<div class="logo" data-js="logo">
@@ -186,17 +167,17 @@
 
 <p>Сам принтер приходит в естественном, разобранном состоянии, гайды по его сборке и настройке китайцы записывают на флешку которой комплектуют принтер. Не стоит забывать, что множество наглядных инструкций по сборке можно найти на youtube или в старом-добром google. Сама сборка не представляет собой чего-то сверхсложного, однако на нее так или иначе придется потратить не один час дабы во всей полноте освоить китайскую мудрость сборки <span class="caps">3D</span> принетров. К сожалению, в процессе сборки пришлось столкнуться с некачественными подшипниками подвижных механизмов, а потому шарики подшипников пришлось вставлять обратно вручную, как следствие первое время они довольно сильно трещали во время движения даже после смазки. В итоге закончив процесс сборки приступаем к печати тестовой фигурки, которая также находится на флешке присланной китайцами. Anet <span class="caps">A8</span> поддерживает такие форматы <span class="caps">3D</span> моделей, как <span class="caps">STL</span>, <span class="caps">OBJ</span> и G-code.</p>
 
-<div main="" row="">
-  <figure class="picture full-caption col-xs-12 col-sm-6">
+<div big="" row="">
+  <figure class="picture col-xs-12 col-sm-6 center">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518867324/01_rtuntu.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1518867324/01_rtuntu.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_780/v1518867324/01_rtuntu.png">
 				</a>
 				<figcaption class="caption"><p>Существуют три вещи на которые можно смотреть бесконечно: как горит огонь, течет вода и печатает <span class="caps">3D</span> принтер.</p>
 </figcaption>
 			</figure>
-  <figure class="picture full-caption col-xs-12 col-sm-6">
+  <figure class="picture col-xs-12 col-sm-6 center">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518867325/02_ex8uxh.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1518867325/02_ex8uxh.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_780/v1518867325/02_ex8uxh.png">
 				</a>
 				<figcaption class="caption"><p>Готовая тестовая модель из комплектного, прозрачного <span class="caps">PLA</span> пластика на фоне музыкального усилителя.</p>
 </figcaption>
@@ -207,17 +188,17 @@
 
 <p>Не стоит забывать и о нюансах работы с пластиком, важна как правильная температура экструдера и рабочей поверхности, так и само качество филамента. Так по мере работы с принтером мы столкнулись с разницей в качестве между отечественным и китайским филаментом, к сожалению не в пользу отечественного. <span class="caps">ABS</span> пластик купленный у сибирского производителя «printsib» вопреки заявлениям об отличном качестве и корейском сырье оказался на редкость ломким, с пузырьками воздуха внутри, детали напечатанные из такого филамента были неровными, а в процессе печати и вовсе отклеивались от стола искажая конструкцию. Все претензии качества продавцы из «printsib» с гордостью проигнорировали.</p>
 
-<div main="" row="">
-  <figure class="picture full-caption col-xs-12 col-sm-6">
+<div big="" row="">
+  <figure class="picture col-xs-12 col-sm-6 center">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518867325/03_ccqldb.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1518867325/03_ccqldb.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_780/v1518867325/03_ccqldb.png">
 				</a>
 				<figcaption class="caption"><p>Печатаем <a href="https://www.thingiverse.com/thing:6076" rel="nofollow" target="_blank">октокота</a> из <span class="caps">ABS</span> пластика.</p>
 </figcaption>
 			</figure>
-  <figure class="picture full-caption col-xs-12 col-sm-6">
+  <figure class="picture col-xs-12 col-sm-6 center">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518867326/04_rs0op1.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_700/v1518867326/04_rs0op1.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_780/v1518867326/04_rs0op1.png">
 				</a>
 				<figcaption class="caption"><p>Готовый октокот, требует доработки и покраски, но и без этого очень мил.</p>
 </figcaption>
@@ -243,23 +224,21 @@
 
 </article>
 
-<nav class="row row-between-sm space-in-bottom-mega-xs space-in-bottom-giga-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-mega-xs space-in-bottom-giga-md pagination linel">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
 			<a title="Aseprite" class="link" href="/blog/aseprite/">&larr; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs space-in next">
 		
 			<a title="Устанавливаем Jekyll на Windows" class="link" href="/blog/ustanavlivaem-jekyll-na-windows/">Позднее &rarr;</a>
 		
 	</span>
 </nav>
 
-<footer class="space-in-bottom-mili-xs">
-	<div class="row row-middle-md">
-		<div class="col-xs-12 space-in-bottom-mili-xs">
-			<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+<footer class="space-in-bottom-mili-xs linel">
+	<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
 	
 	
 		
@@ -315,28 +294,46 @@
 			</li>
 			
 </ol>
-		</div>
 
-		<div class="col-xs-12 col-md-shrink copyright">
-			Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="/feed"><b>RSS</b></a><br />
-			Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
-		</div>
+	<div class="space-in-top-mili-xs copyright">
+		Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="/feed">RSS</a><br />
+		Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
+	</div>
 
-		<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg search">
-			<div class="search-form">
-				<input type="text" id="search-input" class="search-box" />
-				<span class="search-button">
-					<i class="fa fa-search open" aria-hidden="true"></i>
-					<i class="fa fa-times close" aria-hidden="true"></i>
-				</span>
-			</div>
-			<div class="dropdown">
-				<ul class="results" id="results-container"></ul>
-			</div>
+	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
+	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+		<ol class="menu-content">
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все записи</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="http://steambuy.com/partner/milkleaks">Магазин игр</a></li>
+			
+		</ol>
+	</nav>
+
+	<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg">
+		<div class="scroll-to-top">
+			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
 		</div>
 	</div>
+</section>
 </footer>
-
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -346,12 +343,10 @@
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
-<script type="text/javascript" src="/static/modules/classie/classie.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
-<script type="text/javascript" src="/static/modules/likely/likely.js"></script>
-<script type="text/javascript" src="/static/modules/wow/wow.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
 

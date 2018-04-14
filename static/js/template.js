@@ -1,14 +1,3 @@
-/* Меню */
-
-var menuTop = document.getElementById( 'menu' ),
-	showMenu = document.getElementById( 'showMenu' ),
-	body = document.body;
-
-showMenu.onclick = function() {
-	classie.toggle( this, 'active' );
-	classie.toggle( menuTop, 'menu-open' );
-};
-
 /* Лого */
 
 function logoAnimate() {
@@ -164,6 +153,8 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 						position	: 'fixed',
 						width		: '100%',
 						bottom		: 0,
+						right		: 0,
+						left		: 0
 					});
 				}else{
 					$div.css({
@@ -177,6 +168,14 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	}(window, jQuery));
 
 	$('footer').stickyFooter();
+
+	/* Расстановка переносов */
+
+	$('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post .toc').addClass('hyphenate');
+}
+
+function selectorFunction() {
+	return window.document.getElementsByClassName("hyphenate");
 }
 
 /* Кнопка вверх */
@@ -212,21 +211,3 @@ jQuery(function($){
 		return false;
 	});
 });
-
-/* Анимации */
-
-var wow = new WOW(
-	{
-		boxClass:     'wow',      // animated element css class (default is wow)
-		animateClass: 'animated', // animation css class (default is animated)
-		offset:       0,          // distance to the element when triggering the animation (default is 0)
-		mobile:       true,       // trigger animations on mobile devices (default is true)
-		live:         true,       // act on asynchronously loaded content (default is true)
-		callback:     function(box) {
-		// the callback is fired every time an animation is started
-		// the argument that is passed in is the DOM node being animated
-		},
-		scrollContainer: null // optional scroll container selector, otherwise use window
-	}
-);
-wow.init();
