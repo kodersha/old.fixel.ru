@@ -3648,8 +3648,8 @@ samp {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .row {
   box-sizing: border-box;
@@ -3657,8 +3657,8 @@ samp {
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 .row[class*="col-"] {
   padding-left: 0;
@@ -3697,8 +3697,8 @@ samp {
 .col-xs {
   box-sizing: border-box;
   flex: 0 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .col-xs-1 {
   flex-basis: 8.33333333%;
@@ -3856,8 +3856,8 @@ samp {
   .col-sm {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .col-sm-1 {
     flex-basis: 8.33333333%;
@@ -4016,8 +4016,8 @@ samp {
   .col-md {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .col-md-1 {
     flex-basis: 8.33333333%;
@@ -4176,8 +4176,8 @@ samp {
   .col-lg {
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .col-lg-1 {
     flex-basis: 8.33333333%;
@@ -11764,7 +11764,7 @@ header .logo-txt .logo-name {
 }
 @media (min-width: 1200px) {
   header .space-logo {
-    margin-left: -60px;
+    margin-left: -56px;
   }
 }
 header .show-menu {
@@ -12393,8 +12393,8 @@ header .show-menu:hover {
   }
 }
 .post [row] {
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -16px;
+  margin-left: -16px;
   margin-bottom: 0;
   box-sizing: border-box;
   flex-direction: row;
