@@ -55,11 +55,13 @@ h1, h2, h3, h4, h5, h6 {
     max-width: @glob-linel;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
 
     &-extended {
         max-width: calc(~'@{glob-linel} + @{micro} + @{micro}');
         margin-right: auto;
         margin-left: auto;
+        width: 100%;
 
         @media @md {
             max-width: calc(~'@{glob-linel} + @{mili} + @{mili}');
@@ -88,10 +90,13 @@ header {
 
     /* Grid */
 
+    @media @md {
+        display: grid;
+    }
+
     @media @xl {
         grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' @grid-outer ~'[aside-left]' @grid-aside ~'[inner-left]' @grid-inner ~'[main-left]' @main-outer ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[main-right]' @main-outer ~'[inner-right]' @grid-inner ~'[aside-right]' @grid-aside ~'[outer-right]' @grid-outer ~'[edge-right]' @grid-edge ~'[right]' 0;
         grid-auto-rows: auto;
-        display: grid;
 
         &>* {
             grid-column: text-left / text-right;
@@ -118,6 +123,7 @@ header {
         margin-bottom: @post-bottom;
         margin-right: auto;
         margin-left: auto;
+        width: 100%;
 
         @media @xl {
             max-width: none;
@@ -145,6 +151,7 @@ header {
         margin-right: auto;
         margin-left: auto;
         margin-top: @post-top;
+        width: 100%;
 
         font-family: @helvetica;
         text-align: center;
@@ -180,6 +187,7 @@ header {
         margin-right: auto;
         margin-left: auto;
         margin-top: @post-top;
+        width: 100%;
 
         @media @xl {
             max-width: none;
@@ -206,6 +214,8 @@ header {
         margin-right: auto;
         margin-left: auto;
         margin-top: @post-top;
+        width: 100%;
+
         position: relative;
         padding: 0;
 
@@ -235,6 +245,7 @@ header {
         margin-right: auto;
         margin-left: auto;
         margin-top: @post-top;
+        width: 100%;
 
         @media @xl {
             max-width: none;
@@ -456,26 +467,6 @@ header {
         margin-bottom: @post-bottom;
     }
 
-    /* Tags & Actions */
-
-    .tags, .actions {
-        font-family: @glob-font;
-		font-size: @post-subtext-size;
-		color: @black;
-    }
-
-    /* Tags */
-
-    .tags {
-        margin-bottom: @post-bottom;
-        margin-top: @post-top;
-        max-width: @post-linel;
-
-        @media @xl {
-            grid-column: text-left / text-right;
-        }
-    }
-
     /* Actions */
 
 	.actions {
@@ -483,6 +474,12 @@ header {
         margin-right: auto;
         margin-left: auto;
         margin-top: @post-top;
+        width: 100%;
+
+        font-family: @glob-font;
+        font-size: @post-subtext-size;
+        line-height: 1.4;
+		color: @black;
 
         @media @xl {
             max-width: none;
