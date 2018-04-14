@@ -11906,6 +11906,7 @@ header .show-menu:hover {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
+  width: 100%;
   color: #000000;
 }
 @media (min-width: 1200px) {
@@ -12438,6 +12439,7 @@ header .show-menu:hover {
   max-width: 43.75rem;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
   position: relative;
 }
 @media (min-width: 1200px) {
@@ -12489,6 +12491,7 @@ header .show-menu:hover {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .post .toc {
