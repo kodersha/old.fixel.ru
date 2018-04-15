@@ -160,10 +160,12 @@
 //
 
 .logo {
+    @logoSize: 40px;
+
     position: relative;
     display: block;
-    height: 40px;
-    width: 40px;
+    height: @logoSize;
+    width: @logoSize;
 
     a {
         text-decoration: none;
@@ -172,15 +174,15 @@
         cursor: pointer;
         display: block;
         outline: none;
-        height: 40px;
-        width: 40px;
+        height: @logoSize;
+        width: @logoSize;
 
         &:before {
             background-color: #d95e40;
             position: absolute;
             border-radius: 50%;
-            height: 40px;
-            width: 40px;
+            height: @logoSize;
+            width: @logoSize;
             content: '';
         }
 
@@ -192,8 +194,8 @@
             transform: scale(0);
             position: absolute;
             display: block;
-            height: 40px;
-            width: 40px;
+            height: @logoSize;
+            width: @logoSize;
 
             &:before {
                 -webkit-animation: rainbow 18s ease infinite;
@@ -204,8 +206,8 @@
                 background-size: 1800% 1800%;
                 border-radius: 50%;
                 position: absolute;
-                height: 40px;
-                width: 40px;
+                height: @logoSize;
+                width: @logoSize;
                 content: '';
             }
         }
@@ -215,17 +217,17 @@
         -webkit-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
         position: relative;
-        padding: 4px;
-        height: 40px;
-        width: 40px;
+        padding: 6px;
+        height: @logoSize;
+        width: @logoSize;
 
         .logotype-path {
             -webkit-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
             position: absolute;
             fill: @white;
-            height: 40px;
-            width: 40px;
+            height: @logoSize;
+            width: @logoSize;
         }
     }
 
@@ -421,31 +423,19 @@
     }
 }
 
-.logo-txt {
-    .logo-name {
-        letter-spacing: -0.03rem;
-        font-family: @glob-font;
-        font-weight: bolder;
-        font-size: 1rem;
-        color: rgba(0,0,0,.86);
-        display: block;
-    }
-}
-
-
 .space-logo {
     @media @xl {
         margin-left: -56px;
     }
 }
 
-.show-menu {
-    font-size: @glob-font-size;
-    font-family: @helvetica;
-    padding: 16px;
-    cursor: pointer;
-
-    &.active, &:hover {
-        color: @red;
+.logo-txt {
+    .logo-name {
+        color: rgba(0, 0, 0, .86);
+        letter-spacing: -.015em;
+        line-height: 1;
+        font-family: @glob-header;
+        font-weight: bolder;
+        display: block;
     }
-} 
+}
