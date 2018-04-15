@@ -116,59 +116,57 @@ tocbot.init({
 	headingSelector: 'h2, h3',
 });
 
+/* Прилепляем футер */
+
+;(function(window, $, undefined){
+	'use strict';
+	/**
+	 * @return {Object}
+	 */
+	$.fn.stickyFooter = function()
+	{
+		var windowHeight = 0,
+			offset = 0,
+			$div = this;
+		position();
+		$(window).bind('resize.stickyFooter', function(){
+			position();
+		});
+		/**
+		 * @return {void}
+		 */
+		function position(){
+			if( $div.css('position') !== 'static' )
+			{
+				offset = $div.outerHeight(true);
+			}else{
+				offset = 0;
+			}
+			windowHeight = window.innerHeight
+				? window.innerHeight
+				: $(window).height();
+			if( $('body').outerHeight(true) + offset < windowHeight ){
+				$div.css({
+					position	: 'fixed',
+					width		: '100%',
+					bottom		: 0
+				});
+			}else{
+				$div.css({
+					position	: 'static',
+					width		: 'auto'
+				});
+			}
+		}
+		return this;
+	};
+}(window, jQuery));
+
+$('footer').stickyFooter();
+
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
 } else {
-	/* Прилепляем футер */
-
-	;(function(window, $, undefined){
-		'use strict';
-		/**
-		 * @return {Object}
-		 */
-		$.fn.stickyFooter = function()
-		{
-			var windowHeight = 0,
-				offset = 0,
-				$div = this;
-			position();
-			$(window).bind('resize.stickyFooter', function(){
-				position();
-			});
-			/**
-			 * @return {void}
-			 */
-			function position(){
-				if( $div.css('position') !== 'static' )
-				{
-					offset = $div.outerHeight(true);
-				}else{
-					offset = 0;
-				}
-				windowHeight = window.innerHeight
-					? window.innerHeight
-					: $(window).height();
-				if( $('body').outerHeight(true) + offset < windowHeight ){
-					$div.css({
-						position	: 'fixed',
-						width		: '100%',
-						bottom		: 0,
-						right		: 0,
-						left		: 0
-					});
-				}else{
-					$div.css({
-						position	: 'static',
-						width		: 'auto'
-					});
-				}
-			}
-			return this;
-		};
-	}(window, jQuery));
-
-	$('footer').stickyFooter();
-
 	/* Расстановка переносов */
 
 	$('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post .toc').addClass('hyphenate');

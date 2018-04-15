@@ -80,24 +80,24 @@ h6 {
 }
 @media (min-width: 43.75rem) {
   h1 {
-    font-size: 1.875em;
-    margin-top: 3.73333333em;
-    margin-bottom: 0.74666667em;
+    font-size: 1.65em;
+    margin-top: 4.24242424em;
+    margin-bottom: 0.84848485em;
   }
   h2 {
-    font-size: 1.575em;
-    margin-top: 3.55555556em;
-    margin-bottom: 0.88888889em;
+    font-size: 1.425em;
+    margin-top: 3.92982456em;
+    margin-bottom: 0.98245614em;
   }
   h3 {
-    font-size: 1.35em;
-    margin-top: 3.11111111em;
-    margin-bottom: 1.03703704em;
+    font-size: 1.275em;
+    margin-top: 3.29411765em;
+    margin-bottom: 1.09803922em;
   }
   h4 {
-    font-size: 1.2em;
-    margin-top: 2.33333333em;
-    margin-bottom: 1.16666667em;
+    font-size: 1.125em;
+    margin-top: 2.48888889em;
+    margin-bottom: 1.24444444em;
   }
 }
 h1:first-child,
@@ -11282,6 +11282,204 @@ body.lb-disable-scrolling {
   /* IE9 Compat Modes */
   /* Legacy iOS */
 }
+/* Webfont: Lato-Black */
+@font-face {
+  font-family: '../fonts/latoWebBlack';
+  src: url('../static/fonts/lato/Lato-Black.eot');
+  src: local('../fonts/latoWebBlack'), url('../static/fonts/lato/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Black.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Black.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-BlackItalic */
+@font-face {
+  font-family: '../fonts/latoWebBlack';
+  src: url('../static/fonts/lato/Lato-BlackItalic.eot');
+  src: local('../fonts/latoWebBlack'), url('../static/fonts/lato/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-BlackItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BlackItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BlackItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Bold */
+@font-face {
+  font-family: '../fonts/latoWebBold';
+  src: url('../static/fonts/lato/Lato-Bold.eot');
+  src: local('../fonts/latoWebBold'), url('../static/fonts/lato/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Bold.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-BoldItalic */
+@font-face {
+  font-family: '../fonts/latoWebBold';
+  src: url('../static/fonts/lato/Lato-BoldItalic.eot');
+  src: local('../fonts/latoWebBold'), url('../static/fonts/lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-BoldItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Hairline */
+@font-face {
+  font-family: '../fonts/latoWebHairline';
+  src: url('../static/fonts/lato/Lato-Hairline.eot');
+  src: local('../fonts/latoWebHairline'), url('../static/fonts/lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Hairline.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Hairline.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Hairline.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-HairlineItalic */
+@font-face {
+  font-family: '../fonts/latoWebHairline';
+  src: url('../static/fonts/lato/Lato-HairlineItalic.eot');
+  src: local('../fonts/latoWebHairline'), url('../static/fonts/lato/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-HairlineItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HairlineItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HairlineItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Heavy */
+@font-face {
+  font-family: '../fonts/latoWebHeavy';
+  src: url('../static/fonts/lato/Lato-Heavy.eot');
+  src: local('../fonts/latoWebHeavy'), url('../static/fonts/lato/Lato-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Heavy.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Heavy.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Heavy.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-HeavyItalic */
+@font-face {
+  font-family: '../fonts/latoWebHeavy';
+  src: url('../static/fonts/lato/Lato-HeavyItalic.eot');
+  src: local('../fonts/latoWebHeavy'), url('../static/fonts/lato/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-HeavyItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HeavyItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HeavyItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Italic */
+@font-face {
+  font-family: '../fonts/latoWeb';
+  src: url('../static/fonts/lato/Lato-Italic.eot');
+  src: local('../fonts/latoWeb'), url('../static/fonts/lato/Lato-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Italic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Light */
+@font-face {
+  font-family: '../fonts/latoWebLight';
+  src: url('../static/fonts/lato/Lato-Light.eot');
+  src: local('../fonts/latoWebLight'), url('../static/fonts/lato/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Light.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Light.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-LightItalic */
+@font-face {
+  font-family: '../fonts/latoWebLight';
+  src: url('../static/fonts/lato/Lato-LightItalic.eot');
+  src: local('../fonts/latoWebLight'), url('../static/fonts/lato/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-LightItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-LightItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-LightItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Medium */
+@font-face {
+  font-family: '../fonts/latoWebMedium';
+  src: url('../static/fonts/lato/Lato-Medium.eot');
+  src: local('../fonts/latoWebMedium'), url('../static/fonts/lato/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Medium.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-MediumItalic */
+@font-face {
+  font-family: '../fonts/latoWebMedium';
+  src: url('../static/fonts/lato/Lato-MediumItalic.eot');
+  src: local('../fonts/latoWebMedium'), url('../static/fonts/lato/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-MediumItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-MediumItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-MediumItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Regular */
+@font-face {
+  font-family: '../fonts/latoWeb';
+  src: url('../static/fonts/lato/Lato-Regular.eot');
+  src: local('../fonts/latoWeb'), url('../static/fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Regular.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Semibold */
+@font-face {
+  font-family: '../fonts/latoWebSemibold';
+  src: url('../static/fonts/lato/Lato-Semibold.eot');
+  src: local('../fonts/latoWebSemibold'), url('../static/fonts/lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Semibold.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-SemiboldItalic */
+@font-face {
+  font-family: '../fonts/latoWebSemibold';
+  src: url('../static/fonts/lato/Lato-SemiboldItalic.eot');
+  src: local('../fonts/latoWebSemibold'), url('../static/fonts/lato/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-SemiboldItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-SemiboldItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-SemiboldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-Thin */
+@font-face {
+  font-family: '../fonts/latoWebThin';
+  src: url('../static/fonts/lato/Lato-Thin.eot');
+  src: local('../fonts/latoWebThin'), url('../static/fonts/lato/Lato-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Thin.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Thin.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Thin.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
+/* Webfont: Lato-ThinItalic */
+@font-face {
+  font-family: '../fonts/latoWebThin';
+  src: url('../static/fonts/lato/Lato-ThinItalic.eot');
+  src: local('../fonts/latoWebThin'), url('../static/fonts/lato/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-ThinItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-ThinItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-ThinItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  
+  /* IE9 Compat Modes */
+}
 /* Fonts */
 /* Colors */
 /* Media */
@@ -11316,7 +11514,7 @@ input,
 textarea,
 select,
 button {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 h1,
 h2,
@@ -11325,7 +11523,7 @@ h4,
 h5,
 h6 {
   color: rgba(0, 0, 0, 0.86);
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.015em;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -11467,7 +11665,7 @@ header .search .dropdown .results {
 }
 header .search .dropdown .results li {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   padding-bottom: 10px;
   padding-right: 25px;
   padding-left: 25px;
@@ -11545,7 +11743,7 @@ header .logo .logotype {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: relative;
-  padding: 4px;
+  padding: 6px;
   height: 40px;
   width: 40px;
 }
@@ -11756,28 +11954,18 @@ header .logo.animate a:hover .logotype .logotype-path {
     background-position: 0% 82%;
   }
 }
-header .logo-txt .logo-name {
-  letter-spacing: -0.03rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: bolder;
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.86);
-  display: block;
-}
 @media (min-width: 1200px) {
   header .space-logo {
     margin-left: -56px;
   }
 }
-header .show-menu {
-  font-size: 1rem;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  padding: 16px;
-  cursor: pointer;
-}
-header .show-menu.active,
-header .show-menu:hover {
-  color: #c0392b;
+header .logo-txt .logo-name {
+  color: rgba(0, 0, 0, 0.86);
+  letter-spacing: -0.015em;
+  line-height: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: bolder;
+  display: block;
 }
 .post {
   /* Grid */
@@ -11863,7 +12051,7 @@ header .show-menu:hover {
 }
 @media (min-width: 1200px) {
   .post {
-    grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] minmax(0, 1fr) [aside-left] minmax(10.625rem, 18.125rem) [inner-left] 2.5rem [main-left] minmax(0, 2.5rem) [text-left] 0 [main] 43.75rem [text-right] 0 [main-right] minmax(0, 2.5rem) [inner-right] 2.5rem [aside-right] minmax(10.625rem, 18.125rem) [outer-right] minmax(0, 1fr) [edge-right] 2.5rem [right] 0;
+    grid-template-columns: [left] 0 [edge-left] 2.5rem [outer-left] minmax(0, 1fr) [aside-left] minmax(10.625rem, 18.125rem) [main-left] 2.5rem [text-left] 0 [main] 43.75rem [text-right] 0 [main-right] 2.5rem [aside-right] minmax(10.625rem, 18.125rem) [outer-right] minmax(0, 1fr) [edge-right] 2.5rem [right] 0;
     grid-auto-rows: auto;
   }
   .post > * {
@@ -11905,9 +12093,9 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.84);
 }
 @media (min-width: 1200px) {
   .post p {
@@ -11920,10 +12108,11 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
+  color: rgba(0, 0, 0, 0.84);
   display: block;
   border: none;
   opacity: 1;
@@ -11953,8 +12142,12 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
+}
+.post ul:not([class]) li,
+.post ol:not([class]) li {
+  color: rgba(0, 0, 0, 0.84);
 }
 @media (min-width: 1200px) {
   .post ul:not([class]),
@@ -11979,7 +12172,7 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
   position: relative;
   padding: 0;
@@ -11995,8 +12188,9 @@ header .show-menu:hover {
   font-size: 1.4rem;
   font-family: 'GregorIT', 'Georgia', 'Times New Roman', Times, serif;
   font-style: italic;
-  line-height: 1.25;
+  line-height: 1.3;
   max-width: 100%;
+  color: rgba(0, 0, 0, 0.84);
   margin: 0;
 }
 @media (min-width: 1200px) {
@@ -12009,7 +12203,7 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
 }
 @media (min-width: 1200px) {
@@ -12036,9 +12230,9 @@ header .show-menu:hover {
 .post .picture .caption p,
 .post .picture .captionp {
   font-size: 0.875rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #7f7f7f;
-  line-height: 1.25;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  color: rgba(0, 0, 0, 0.68);
+  line-height: 1.4;
   font-weight: 400;
   max-width: 100%;
   margin-bottom: 0;
@@ -12059,7 +12253,7 @@ header .show-menu:hover {
 }
 @media (min-width: 1200px) {
   .post > .picture {
-    grid-column: main-left / inner-right;
+    grid-column: text-left / text-right;
   }
 }
 .post > .picture img {
@@ -12117,15 +12311,15 @@ header .show-menu:hover {
 }
 .post .cover {
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   position: relative;
   min-height: 100vh;
   height: 100vh;
 }
 @media (min-width: 768px) {
   .post .cover {
-    min-height: 60vh;
-    height: 60vh;
+    min-height: 80vh;
+    height: 80vh;
   }
 }
 .post .cover img {
@@ -12161,7 +12355,7 @@ header .show-menu:hover {
 .post .google-maps {
   background-color: #e5e3df;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   position: relative;
 }
 @media (min-width: 1200px) {
@@ -12192,20 +12386,20 @@ header .show-menu:hover {
 }
 @media (min-width: 768px) {
   .post .google-maps .map {
-    height: 60vh !important;
+    height: 80vh !important;
   }
 }
 .post .gist {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 .post .actions {
   max-width: 43.75rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 0.875rem;
   line-height: 1.4;
   color: #000000;
@@ -12218,7 +12412,7 @@ header .show-menu:hover {
   }
 }
 .post .actions .link-action {
-  color: #7f7f7f;
+  color: rgba(0, 0, 0, 0.68);
 }
 .post .actions .link-action:hover {
   color: #000000;
@@ -12232,7 +12426,7 @@ header .show-menu:hover {
 }
 .post .related {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .post .related ul {
   list-style: none;
@@ -12271,7 +12465,7 @@ header .show-menu:hover {
 .post [big-outer],
 .post .big-outer {
   margin-bottom: 1rem !important;
-  margin-top: 1rem !important;
+  margin-top: 0.5rem !important;
   position: relative;
 }
 .post [full] figure,
@@ -12403,12 +12597,12 @@ header .show-menu:hover {
 }
 .post [row] figure {
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .post [base],
 .post [block] {
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .post [base] > *,
 .post [block] > * {
@@ -12418,17 +12612,17 @@ header .show-menu:hover {
 .post [caption],
 .post .caption {
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .post [caption],
 .post .caption,
 .post [caption] p,
 .post .caption p {
   font-size: 0.875rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 400;
-  line-height: 1.25;
-  color: #7f7f7f;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.68);
 }
 .post [caption].center,
 .post .caption.center {
@@ -12445,7 +12639,7 @@ header .show-menu:hover {
 @media (min-width: 1200px) {
   .post [aside],
   .post .aside {
-    grid-column: aside-right;
+    grid-column: aside-right / edge-right;
     max-width: none;
     margin-right: initial;
     margin-left: initial;
@@ -12457,10 +12651,10 @@ header .show-menu:hover {
 .post [aside] p,
 .post .aside p {
   font-size: 0.875rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 400;
-  line-height: 1.25;
-  color: #7f7f7f;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.68);
 }
 .post [aside] img,
 .post .aside img {
@@ -12490,12 +12684,12 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
 }
 @media (min-width: 1200px) {
   .post .toc {
-    grid-column: aside-left / inner-left;
+    grid-column: aside-left / main-left;
     max-width: none;
     margin-right: initial;
     margin-left: initial;
@@ -12511,7 +12705,7 @@ header .show-menu:hover {
 }
 .post .toc li {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: decimal;
   line-height: 1.4;
 }
@@ -12532,7 +12726,7 @@ header .show-menu:hover {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   position: relative;
   display: grid;
 }
@@ -12840,8 +13034,8 @@ header .show-menu:hover {
   color: #ffffff;
 }
 .post [color] .highlight pre {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .post [color] .highlight .hll {
   background-color: #272822;
@@ -13032,17 +13226,18 @@ header .show-menu:hover {
 }
 .blog strong {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   letter-spacing: -0.03rem;
   display: block;
 }
 .blog .item {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .blog .link-readmore {
+  letter-spacing: -0.015em;
   font-size: 1rem;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   display: inline-block;
   border-bottom: none;
   color: #000000;
@@ -13051,7 +13246,7 @@ header .show-menu:hover {
   color: #c0392b;
 }
 .photos .item {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -13072,7 +13267,7 @@ header .show-menu:hover {
   display: block;
 }
 .works .item {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -13188,7 +13383,7 @@ header .show-menu:hover {
 }
 .pagination {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.25;
 }
 .pagination p {
@@ -13220,7 +13415,7 @@ button {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   vertical-align: middle;
   position: relative;
   background: none;
@@ -13281,7 +13476,7 @@ button.slider .link-button {
   border-radius: 50px !important;
   border: 2px solid #4183c4;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   text-decoration: none;
   width: fit-content;
   overflow: hidden;
@@ -13291,12 +13486,28 @@ button.slider .link-button {
 .button a:hover {
   border-color: #4183c4;
 }
+footer {
+  right: 16px;
+  left: 16px;
+}
+@media (min-width: 768px) {
+  footer {
+    right: 24px;
+    left: 24px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    right: 40px;
+    left: 40px;
+  }
+}
 footer .copyright {
-  border-top: 1px solid #f1f3f4;
+  border-top: 1px solid #eee;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.3;
-  color: #7f7f7f;
+  color: rgba(0, 0, 0, 0.68);
 }
 footer .scroll-to-top {
   display: none;
@@ -13315,7 +13526,7 @@ footer .scroll-to-top a:hover {
 }
 footer .breadcrumb {
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -13353,9 +13564,9 @@ footer .breadcrumb-item:last-of-type:after {
 }
 .menu .menu-content li {
   font-size: 0.875rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.4;
   position: relative;
   list-style: none;
   float: left;
@@ -13412,7 +13623,7 @@ footer .breadcrumb-item:last-of-type:after {
 }
 .modal .place {
   background-color: #ffffff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   border-radius: 2px;
   overflow: hidden;
@@ -13433,7 +13644,7 @@ footer .breadcrumb-item:last-of-type:after {
   display: block;
 }
 .modal .place-content .likely .likely__widget {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   border-radius: 2px;
   padding: 3px 6px;
   height: auto;
@@ -13476,7 +13687,7 @@ a:hover {
 }
 .link-subcontrol {
   border-bottom-color: rgba(127, 127, 127, 0.15);
-  color: #7f7f7f;
+  color: rgba(0, 0, 0, 0.68);
 }
 .link-subcontrol:hover {
   border-bottom-color: #000000;
@@ -13523,7 +13734,7 @@ a:hover {
 }
 [tooltip]::after {
   content: attr(tooltip);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 300;
   text-align: center;
   min-width: 3em;
