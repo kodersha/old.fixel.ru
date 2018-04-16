@@ -4,7 +4,7 @@
 /*! bettertext.css v2.0.4 | MIT License | github.com/paulradzkov/bettertext.css */
 body {
   font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
-  font-size: 1.2em;
+  font-size: 1.25em;
   line-height: 1.4;
 }
 body:not([class]),
@@ -47,57 +47,57 @@ h6 {
   font-weight: bolder;
 }
 h1 {
-  font-size: 1.425em;
+  font-size: 1.40625em;
   line-height: 1.1;
-  margin: 3em 0 0.98245614em;
+  margin: 3em 0 0.99555556em;
 }
 h2 {
-  font-size: 1.275em;
+  font-size: 1.25em;
   line-height: 1.2;
-  margin: 2.5em 0 1.09803922em;
+  margin: 2.5em 0 1.12em;
 }
 h3 {
-  font-size: 1.2em;
+  font-size: 1.171875em;
   line-height: 1.3;
-  margin: 2em 0 1.16666667em;
+  margin: 2em 0 1.19466667em;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 1.09375em;
   line-height: 1.4;
-  margin: 1.5em 0 1.24444444em;
+  margin: 1.5em 0 1.28em;
 }
 h5 {
-  font-size: 0.975em;
+  font-size: 1.015625em;
   line-height: 1.4;
-  margin: 2.15384615em 0 1.43589744em;
+  margin: 2.06769231em 0 1.37846154em;
 }
 h6 {
-  font-size: 0.75em;
-  line-height: 1.86666667;
-  margin: 1.86666667em 0 0;
+  font-size: 0.78125em;
+  line-height: 1.792;
+  margin: 1.792em 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 @media (min-width: 43.75rem) {
   h1 {
-    font-size: 1.65em;
-    margin-top: 4.24242424em;
-    margin-bottom: 0.84848485em;
+    font-size: 1.640625em;
+    margin-top: 4.26666667em;
+    margin-bottom: 0.85333333em;
   }
   h2 {
-    font-size: 1.425em;
-    margin-top: 3.92982456em;
-    margin-bottom: 0.98245614em;
+    font-size: 1.40625em;
+    margin-top: 3.98222222em;
+    margin-bottom: 0.99555556em;
   }
   h3 {
-    font-size: 1.275em;
-    margin-top: 3.29411765em;
-    margin-bottom: 1.09803922em;
+    font-size: 1.25em;
+    margin-top: 3.36em;
+    margin-bottom: 1.12em;
   }
   h4 {
-    font-size: 1.125em;
-    margin-top: 2.48888889em;
-    margin-bottom: 1.24444444em;
+    font-size: 1.09375em;
+    margin-top: 2.56em;
+    margin-bottom: 1.28em;
   }
 }
 h1:first-child,
@@ -119,10 +119,10 @@ h3 + h4 {
   margin-top: 1.4em;
 }
 h4 + h5 {
-  margin-top: 1.43589744em;
+  margin-top: 1.37846154em;
 }
 h5 + h6 {
-  margin-top: 1.86666667em;
+  margin-top: 1.792em;
 }
 /* lists */
 /* lists without classes */
@@ -166,12 +166,12 @@ figure:not([class]) {
 }
 figure:not([class]) > p {
   max-width: 32.8125rem;
-  font-size: 0.75em;
+  font-size: 0.78125em;
   margin: 0.5em 0 0;
 }
 figcaption {
   max-width: 32.8125rem;
-  font-size: 0.75em;
+  font-size: 0.78125em;
   margin: 0.5em 0 2.8em;
 }
 figcaption > p {
@@ -189,7 +189,7 @@ blockquote > p:last-child {
 blockquote > footer,
 blockquote > cite {
   display: block;
-  font-size: 0.75em;
+  font-size: 0.78125em;
 }
 /* code */
 pre {
@@ -209,7 +209,7 @@ table:not([class]) {
 }
 table:not([class]) caption {
   text-align: left;
-  font-size: 0.75em;
+  font-size: 0.78125em;
   margin-bottom: 0.625em;
 }
 table:not([class]) td,
@@ -11182,102 +11182,90 @@ body.lb-disable-scrolling {
   font-weight: normal;
   font-style: italic;
 }
+/* ubuntu-300 - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 300;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.eot');
-  src: local('Open Sans Light'), local('OpenSans-Light'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.svg#OpenSans') format('svg');
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300.eot');
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300.svg#Ubuntu') format('svg');
   
   /* IE9 Compat Modes */
   /* Legacy iOS */
 }
+/* ubuntu-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-regular.eot');
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-regular.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-300italic - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
   font-style: italic;
   font-weight: 300;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.eot');
-  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.svg#OpenSans') format('svg');
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300italic.eot');
+  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-300italic.svg#Ubuntu') format('svg');
   
   /* IE9 Compat Modes */
   /* Legacy iOS */
 }
+/* ubuntu-italic - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.eot');
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.svg#OpenSans') format('svg');
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Ubuntu';
   font-style: italic;
   font-weight: 400;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.eot');
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.svg#OpenSans') format('svg');
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-italic.eot');
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-italic.svg#Ubuntu') format('svg');
   
   /* IE9 Compat Modes */
   /* Legacy iOS */
 }
+/* ubuntu-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: 600;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.eot');
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.svg#OpenSans') format('svg');
+  font-weight: 500;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500.eot');
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500.svg#Ubuntu') format('svg');
   
   /* IE9 Compat Modes */
   /* Legacy iOS */
 }
+/* ubuntu-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.eot');
-  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.svg#OpenSans') format('svg');
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.eot');
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.svg#OpenSans') format('svg');
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700.eot');
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700.svg#Ubuntu') format('svg');
   
   /* IE9 Compat Modes */
   /* Legacy iOS */
 }
+/* ubuntu-500italic - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500italic.eot');
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-500italic.svg#Ubuntu') format('svg');
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+/* ubuntu-700italic - latin_cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
   font-style: italic;
   font-weight: 700;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.eot');
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.svg#OpenSans') format('svg');
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.eot');
-  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.svg#OpenSans') format('svg');
-  
-  /* IE9 Compat Modes */
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 800;
-  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.eot');
-  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.svg#OpenSans') format('svg');
+  src: url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700italic.eot');
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/ubuntu/ubuntu-v11-latin_cyrillic-700italic.svg#Ubuntu') format('svg');
   
   /* IE9 Compat Modes */
   /* Legacy iOS */
@@ -11488,13 +11476,6 @@ html {
   height: 100%;
 }
 body {
-  -webkit-font-smoothing: subpixel-antialiased;
-  text-rendering: optimizeLegibility;
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
-  background-color: #ffffff;
-  letter-spacing: -0.003em;
   overflow-x: hidden;
   cursor: default;
   margin: 0;
@@ -11514,7 +11495,7 @@ input,
 textarea,
 select,
 button {
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 h1,
 h2,
@@ -11665,7 +11646,7 @@ header .search .dropdown .results {
 }
 header .search .dropdown .results li {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   padding-bottom: 10px;
   padding-right: 25px;
   padding-left: 25px;
@@ -11964,6 +11945,7 @@ header .logo-txt .logo-name {
   letter-spacing: -0.05rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: bolder;
+  font-size: 1rem;
   line-height: 1;
   display: block;
 }
@@ -12095,7 +12077,8 @@ header .logo-txt .logo-name {
   margin-left: auto;
   margin-top: 0.5rem;
   width: 100%;
-  color: rgba(0, 0, 0, 0.84);
+  letter-spacing: -0.003em;
+  color: #000000;
 }
 @media (min-width: 1200px) {
   .post p {
@@ -12112,7 +12095,7 @@ header .logo-txt .logo-name {
   width: 100%;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   text-align: center;
-  color: rgba(0, 0, 0, 0.84);
+  color: #000000;
   display: block;
   border: none;
   opacity: 1;
@@ -12147,7 +12130,8 @@ header .logo-txt .logo-name {
 }
 .post ul:not([class]) li,
 .post ol:not([class]) li {
-  color: rgba(0, 0, 0, 0.84);
+  letter-spacing: -0.003em;
+  color: #000000;
 }
 @media (min-width: 1200px) {
   .post ul:not([class]),
@@ -12185,12 +12169,13 @@ header .logo-txt .logo-name {
   }
 }
 .post blockquote p {
-  font-size: 1.4rem;
   font-family: 'GregorIT', 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
   font-style: italic;
   line-height: 1.3;
+  letter-spacing: -0.003em;
   max-width: 100%;
-  color: rgba(0, 0, 0, 0.84);
+  color: #000000;
   margin: 0;
 }
 @media (min-width: 1200px) {
@@ -12220,21 +12205,17 @@ header .logo-txt .logo-name {
   cursor: zoom-in;
   display: block;
 }
-.post .picture .caption {
+.post .picture .caption,
+.post .picture .caption p {
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.925rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.4;
+  color: #9b9b9b;
   max-width: 100%;
   margin-bottom: 0;
   margin-top: 0.875rem;
-}
-.post .picture .caption p,
-.post .picture .captionp {
-  font-size: 0.875rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  color: rgba(0, 0, 0, 0.68);
-  line-height: 1.4;
-  font-weight: 400;
-  max-width: 100%;
-  margin-bottom: 0;
-  margin-top: 0;
 }
 .post .picture.center .caption {
   max-width: fit-content;
@@ -12397,8 +12378,8 @@ header .logo-txt .logo-name {
   margin-left: auto;
   margin-top: 0.5rem;
   width: 100%;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-size: 0.875rem;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.925rem;
   line-height: 1.4;
   color: #000000;
 }
@@ -12410,7 +12391,7 @@ header .logo-txt .logo-name {
   }
 }
 .post .actions .link-action {
-  color: rgba(0, 0, 0, 0.68);
+  color: #9b9b9b;
 }
 .post .actions .link-action:hover {
   color: #000000;
@@ -12424,7 +12405,7 @@ header .logo-txt .logo-name {
 }
 .post .related {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .post .related ul {
   list-style: none;
@@ -12607,25 +12588,6 @@ header .logo-txt .logo-name {
   margin-bottom: 0;
   margin-top: 0;
 }
-.post [caption],
-.post .caption {
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-}
-.post [caption],
-.post .caption,
-.post [caption] p,
-.post .caption p {
-  font-size: 0.875rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
-  color: rgba(0, 0, 0, 0.68);
-}
-.post [caption].center,
-.post .caption.center {
-  text-align: center;
-}
 .post [aside],
 .post .aside {
   max-width: 43.75rem;
@@ -12648,11 +12610,12 @@ header .logo-txt .logo-name {
 .post .aside,
 .post [aside] p,
 .post .aside p {
-  font-size: 0.875rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.925rem;
   font-weight: 400;
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.68);
+  letter-spacing: normal;
+  color: #9b9b9b;
 }
 .post [aside] img,
 .post .aside img {
@@ -12703,7 +12666,7 @@ header .logo-txt .logo-name {
 }
 .post .toc li {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: decimal;
   line-height: 1.4;
 }
@@ -13230,7 +13193,7 @@ header .logo-txt .logo-name {
 }
 .blog .item {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .blog .link-readmore {
   font-size: 1rem;
@@ -13243,7 +13206,7 @@ header .logo-txt .logo-name {
   color: #c0392b;
 }
 .photos .item {
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -13264,7 +13227,7 @@ header .logo-txt .logo-name {
   display: block;
 }
 .works .item {
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -13380,7 +13343,7 @@ header .logo-txt .logo-name {
 }
 .pagination {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.25;
 }
 .pagination p {
@@ -13412,7 +13375,7 @@ button {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   vertical-align: middle;
   position: relative;
   background: none;
@@ -13473,7 +13436,7 @@ button.slider .link-button {
   border-radius: 50px !important;
   border: 2px solid #4183c4;
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   text-decoration: none;
   width: fit-content;
   overflow: hidden;
@@ -13500,11 +13463,11 @@ footer {
   }
 }
 footer .copyright {
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   line-height: 1.3;
-  color: rgba(0, 0, 0, 0.68);
+  color: #9b9b9b;
 }
 footer .scroll-to-top {
   display: none;
@@ -13523,7 +13486,7 @@ footer .scroll-to-top a:hover {
 }
 footer .breadcrumb {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -13560,8 +13523,8 @@ footer .breadcrumb-item:last-of-type:after {
   margin: 0;
 }
 .menu .menu-content li {
-  font-size: 0.875rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 0.925rem;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 400;
   line-height: 1.4;
   position: relative;
@@ -13620,7 +13583,7 @@ footer .breadcrumb-item:last-of-type:after {
 }
 .modal .place {
   background-color: #ffffff;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-size: 1rem;
   border-radius: 2px;
   overflow: hidden;
@@ -13641,7 +13604,7 @@ footer .breadcrumb-item:last-of-type:after {
   display: block;
 }
 .modal .place-content .likely .likely__widget {
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   border-radius: 2px;
   padding: 3px 6px;
   height: auto;
@@ -13684,7 +13647,7 @@ a:hover {
 }
 .link-subcontrol {
   border-bottom-color: rgba(127, 127, 127, 0.15);
-  color: rgba(0, 0, 0, 0.68);
+  color: #9b9b9b;
 }
 .link-subcontrol:hover {
   border-bottom-color: #000000;
@@ -13731,7 +13694,7 @@ a:hover {
 }
 [tooltip]::after {
   content: attr(tooltip);
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: 'Ubuntu', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
   font-weight: 300;
   text-align: center;
   min-width: 3em;
