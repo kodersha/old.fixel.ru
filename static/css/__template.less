@@ -9,16 +9,9 @@ html {
 }
 
 body {
-    -webkit-font-smoothing: subpixel-antialiased;
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
-    background-color: @white;
-    letter-spacing: -.003em;
     overflow-x: hidden;
     cursor: default;
-    margin: 0; 
+    margin: 0;
 
     @media @xl {
         max-width: @glob-width;
@@ -139,6 +132,7 @@ header {
         margin-top: @post-top;
         width: 100%;
         
+        letter-spacing: -.003em;
         color: @post-text;
 
         @media @xl {
@@ -193,6 +187,7 @@ header {
         width: 100%;
 
         li {
+            letter-spacing: -.003em;
             color: @post-text;
         }
 
@@ -233,10 +228,11 @@ header {
         }
 
         p {
-            font-size: @glob-font-size + 0.4rem;
             font-family: @gregorIT;
+            font-size: @glob-font-size + 0.4rem;
             font-style: italic;
             line-height: 1.3;
+            letter-spacing: -.003em;
             max-width: 100%;
             color: @post-text;
             margin: 0;
@@ -273,19 +269,16 @@ header {
         }
 
         .caption {
-            max-width: 100%;
-            margin-bottom: 0;
-            margin-top: 0.875rem;
-
-            p, &p {
-                font-size: @post-subtext-size;
+            &, p {
                 font-family: @glob-font;
-                color: @post-subtext;
-                line-height: @post-subtext-linel;
+                font-size: @post-subtext-size;
                 font-weight: @post-subtext-weight;
+                letter-spacing: normal;
+                line-height: @post-subtext-linel;
+                color: @post-subtext;
                 max-width: 100%;
                 margin-bottom: 0;
-                margin-top: 0;      
+                margin-top: 0.875rem; 
             }
         }
 

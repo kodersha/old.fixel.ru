@@ -114,23 +114,6 @@
     }
 }
 
-[caption], .caption {
-    margin-bottom: @post-bottom;
-    margin-top: @post-top;
-
-    &, p {
-        font-size: @post-subtext-size;
-        font-family: @glob-font;
-        font-weight: @post-subtext-weight;
-        line-height: @post-subtext-linel;
-        color: @post-subtext;
-    }
-
-    &.center {
-        text-align: center;
-    }
-}
-
 /* aside */
 
 [aside], .aside {
@@ -150,10 +133,11 @@
     }
 
     &, p {
-        font-size: @post-subtext-size;
         font-family: @glob-font;
+        font-size: @post-subtext-size;
         font-weight: @post-subtext-weight;
         line-height: @post-subtext-linel;
+        letter-spacing: normal;
         color: @post-subtext;
     }
 

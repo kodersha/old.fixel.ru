@@ -1,8 +1,8 @@
 .global-settings() {
     @glob-text: @black;
-    @glob-subtext: rgba(0,0,0,.68);
+    @glob-subtext: @darkGray;
 
-    @glob-font: @openSans;
+    @glob-font: @ubuntu;
     @glob-font-size: 1rem;
 
     @glob-header: @headers;
@@ -18,10 +18,10 @@
     @post-bottom: 1rem;
     @post-linel: @glob-linel;
 
-    @post-text: rgba(0,0,0,.84);
+    @post-text: @black;
 
     @post-subtext: @glob-subtext;
-    @post-subtext-size: 0.875rem;
+    @post-subtext-size: 0.925rem;
     @post-subtext-linel: 1.4;
     @post-subtext-weight: 400;
 }
@@ -44,8 +44,8 @@
 
     .global-settings();
 
-    @fz: 13.333333333333333px;                      // default font-size
-    @rythm: 18.666666666666666px;                   // vertical rythm = line-height in pixels
+    @fz: 12.8px;                      // default font-size
+    @rythm: 17.92px;                   // vertical rythm = line-height in pixels
     @fz-small: 10px;                                // smaller font-size (px)
     @linel: @glob-linel;                           // max-width for text (any css value)
 
@@ -53,8 +53,8 @@
     @font-headers: @glob-header;                    // headers
     @font-code: @code;                              // code (duplication is intentional)
 
-    @scale1: 1.090;                    // header size multiplier for small screens
-    @scale2: 1.135;                    // header size multiplier for large screens
+    @scale1: 1.085;                    // header size multiplier for small screens
+    @scale2: 1.125;                    // header size multiplier for large screens
 
     // margin for body, articles and sections (any css value)
     @structure-margin: ~"calc(24px + 3vw)" 5vw;
