@@ -30,8 +30,15 @@ tags:
 
 Рано или поздно бесплатный прокси может потерять актуальность и нужно будет указать новый.
 
+## Для Telegram
+
+- [telegram.veesecurity.com][5]
+- [tgproxy.me][6]
+
 
 [1]:	https://hideip.me/en/proxy/socks5list
 [2]:    https://hidemy.name/ru/proxy-list/?type=5#list 
 [3]:    http://spys.one/proxys/
 [4]:    https://sockslist.net/
+[5]:    https://telegram.veesecurity.com/
+[6]:    http://tgproxy.me/
