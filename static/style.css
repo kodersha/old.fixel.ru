@@ -11954,17 +11954,17 @@ header .logo.animate a:hover .logotype .logotype-path {
     background-position: 0% 82%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   header .space-logo {
     margin-left: -56px;
   }
 }
 header .logo-txt .logo-name {
   color: rgba(0, 0, 0, 0.86);
-  letter-spacing: -0.015em;
-  line-height: 1;
+  letter-spacing: -0.05rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: bolder;
+  line-height: 1;
   display: block;
 }
 .post {
@@ -12221,11 +12221,9 @@ header .logo-txt .logo-name {
   display: block;
 }
 .post .picture .caption {
-  max-width: 43.75rem;
+  max-width: 100%;
   margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 1rem;
+  margin-top: 0.875rem;
 }
 .post .picture .caption p,
 .post .picture .captionp {
@@ -12318,8 +12316,8 @@ header .logo-txt .logo-name {
 }
 @media (min-width: 768px) {
   .post .cover {
-    min-height: 80vh;
-    height: 80vh;
+    min-height: 70vh;
+    height: 70vh;
   }
 }
 .post .cover img {
@@ -12386,7 +12384,7 @@ header .logo-txt .logo-name {
 }
 @media (min-width: 768px) {
   .post .google-maps .map {
-    height: 80vh !important;
+    height: 70vh !important;
   }
 }
 .post .gist {
@@ -13226,8 +13224,8 @@ header .logo-txt .logo-name {
 }
 .blog strong {
   font-size: 1rem;
-  font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  letter-spacing: -0.03rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: -0.015em;
   display: block;
 }
 .blog .item {
@@ -13235,9 +13233,8 @@ header .logo-txt .logo-name {
   font-family: 'Open Sans', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
 }
 .blog .link-readmore {
-  letter-spacing: -0.015em;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   display: inline-block;
   border-bottom: none;
   color: #000000;
