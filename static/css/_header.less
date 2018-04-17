@@ -160,7 +160,7 @@
 //
 
 .logo {
-    @logoSize: 40px;
+    @logoSize: 48px;
 
     position: relative;
     display: block;
@@ -425,17 +425,21 @@
 
 .space-logo {
     @media @lg {
-        margin-left: -56px;
+        margin-left: -64px;
     }
 }
 
+//
+// title
+//
+
 .logo-txt {
     .logo-name {
-        color: rgba(0, 0, 0, .86);
+        color: @glob-text;
         letter-spacing: -.05rem;
         font-family: @glob-header;
-        font-weight: bolder;
-        font-size: 1rem;
+        font-weight: 700;
+        font-size: 1.25rem;
         line-height: 1;
         display: block;
     }

@@ -10,6 +10,7 @@ html {
 
 body {
     overflow-x: hidden;
+    color: @glob-text;
     cursor: default;
     margin: 0;
 
@@ -28,8 +29,8 @@ input, textarea, select, button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: rgba(0,0,0,.86);
-    letter-spacing: -.015em;
+    color: @glob-text;
+    letter-spacing: -.05rem;
 }
 
 * {
@@ -102,7 +103,7 @@ header {
 
     .link-title {
         border-bottom: none;
-        color: rgba(0,0,0,.86);
+        color: @glob-text;
 
         &:hover {
             color: @darkerGray;
@@ -478,20 +479,12 @@ header {
         font-family: @glob-font;
         font-size: @post-subtext-size;
         line-height: 1.4;
-		color: @black;
+		color: @glob-text;
 
         @media @xl {
             max-width: none;
             margin-right: initial;
             margin-left: initial;
-        }
-
-        .link-action {
-            color: @post-subtext;
-
-            &:hover {
-                color: @black;
-            }
         }
     }
 

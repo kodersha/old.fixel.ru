@@ -8,7 +8,7 @@ dscription: Список устаревших записей за все вре�
 <section class="slide-up-fade-in linel">
 {% assign olderPosts = site.posts | where: 'hidden', 'true' %}
 {% for post in olderPosts %}
-	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-base-xs {% endif %}{% if forloop.last == true %}space-out-bottom-base-xs space-in-bottom-zero-xs {% endif %}item">
+	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-mili-xs {% endif %}{% if forloop.last == true %}space-out-bottom-mili-xs {% endif %}item">
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
 	</article>
 {% endfor %}
