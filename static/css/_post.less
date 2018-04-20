@@ -6,13 +6,13 @@
 
 [main], .main {
     @media @xl {
-        grid-column: main-left / inner-right;
+        grid-column: text-left / inner-right;
     }
 }
 
 [big], .big {
     @media @xl {
-        grid-column: outer-left / edge-right;
+        grid-column: text-left / edge-right;
     }
 }
 
@@ -117,18 +117,12 @@
 /* aside */
 
 [aside], .aside {
+    position: relative;
     max-width: @post-linel;
-    margin-right: auto;
-    margin-left: auto;
     width: 100%;
 
-    position: relative;
-
     @media @xl {
-        grid-column: aside-right / edge-right;
-        max-width: none;
-        margin-right: initial;
-        margin-left: initial;
+        grid-column: aside / inner-right;
         height: fit-content;
     }
 

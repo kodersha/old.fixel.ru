@@ -3,10 +3,10 @@ layout: default
 title: Фотографии
 ---
 
-<div class="slide-up-fade-in space-in-v-mili-xs linel">
+<div class="slide-up-fade-in space-in-v-mili-xs">
 	<div class="row photos">
 		{% for post in site.photos reversed %}
-			<article class="col-xs-12 col-sm-6 space-out-bottom-mili-xs item">
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-mili-xs item">
 				<a href="{{ post.url }}" class="link-photo">
 					<div class="thumbnail" {% if post.thumbnail %}style="background-image: url('http://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_thumb,h_150,q_100,w_300/{{ post.thumbnail }}')"{% endif %}></div>
 				</a>

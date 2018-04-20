@@ -5,7 +5,7 @@ title: Старые записи
 dscription: Список устаревших записей за все время
 ---
 
-<section class="slide-up-fade-in linel">
+<section class="slide-up-fade-in">
 {% assign olderPosts = site.posts | where: 'hidden', 'true' %}
 {% for post in olderPosts %}
 	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-mili-xs {% endif %}{% if forloop.last == true %}space-out-bottom-mili-xs {% endif %}item">

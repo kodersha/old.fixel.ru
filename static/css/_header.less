@@ -178,7 +178,6 @@
         width: @logoSize;
 
         &:before {
-            background-color: #d95e40;
             position: absolute;
             border-radius: 50%;
             height: @logoSize;
@@ -217,7 +216,7 @@
         -webkit-transition: all 0.25s ease-in-out;
         transition: all 0.25s ease-in-out;
         position: relative;
-        padding: 6px;
+        padding: 4px;
         height: @logoSize;
         width: @logoSize;
 
@@ -225,7 +224,6 @@
             -webkit-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
             position: absolute;
-            fill: @white;
             height: @logoSize;
             width: @logoSize;
         }
@@ -424,7 +422,7 @@
 }
 
 .space-logo {
-    @media @lg {
+    @media (min-width: 1560px) {
         margin-left: -64px;
     }
 }
@@ -442,5 +440,32 @@
         font-size: 1.25rem;
         line-height: 1;
         display: block;
+    }
+}
+
+.clip-text {
+    font-family: @glob-header;
+    font-size: 1.25em;
+    letter-spacing: -0.05rem;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: @black;
+    /* Color fallback */
+    background-image: url('/static/images/pattern.png');
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media @md {
+        font-size: 1.475em;
+    }
+
+    a {
+        color: transparent;
+        border: 0;
     }
 }

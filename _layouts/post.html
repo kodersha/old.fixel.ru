@@ -5,17 +5,8 @@ layout: default
 <article class="slide-up-fade-in space-in-v-kilo-xs space-in-v-mega-md space-minus-h-base-xl post{% if page.toc == 'true' %} js-toc-content{% endif %}">
 	<h1>{{ page.title | improve }}</h1>
 
-	{% include _post/cover.html %}
-
-	{% if page.toc == "true" %}
-		<div class="toc js-toc"></div>
-	{% endif %}
-
-	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
-	
 	<nav class="actions">
 		<time class="space-out-right-nano-xs">{{ page.date | russian_date }}</time>
-
 		{% if page.tags.size > 0 %}
 			{% assign tags = page.tags | sort %}
 			{% for tag in tags %}
@@ -23,6 +14,14 @@ layout: default
 			{% endfor %}
 		{% endif %}
 	</nav>
+
+	{% include _post/cover.html %}
+
+	{% if page.toc == "true" %}
+		<div class="toc js-toc"></div>
+	{% endif %}
+
+	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
 
 </article>
 

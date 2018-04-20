@@ -167,9 +167,7 @@ $('footer').stickyFooter();
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
 } else {
-	/* Расстановка переносов */
 
-	$('.post [aside], .post .aside, .post [aside-left], .post .aside-left, .post .toc').addClass('hyphenate');
 }
 
 function selectorFunction() {

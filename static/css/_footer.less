@@ -1,24 +1,16 @@
-& {
-    right: 16px;
-    left: 16px;
-
-    @media @md {
-        right: 24px;
-        left: 24px;        
-    }
-
-    @media @lg {
-        right: 40px;
-        left: 40px;        
-    }
-}
-
 .copyright {
-    border-top: 1px solid rgba(0,0,0,.05);
     font-size: @glob-font-size;
     font-family: @glob-font;
     line-height: 1.3;
-    color: @glob-subtext;
+
+    a {
+        border-bottom-color: @lightGray;
+        color: @black;
+
+        &:hover {
+            border-bottom-color: @black;
+        }
+    }
 }
 
 .scroll-to-top {

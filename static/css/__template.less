@@ -9,14 +9,14 @@ html {
 }
 
 body {
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    font-display: optional;
+    max-width: @glob-width;
     overflow-x: hidden;
     color: @glob-text;
     cursor: default;
     margin: 0;
-
-    @media @xl {
-        max-width: @glob-width;
-    }
 
     @media @msm {
         line-height: 1.35;
@@ -89,7 +89,7 @@ header {
     }
 
     @media @xl {
-        grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[outer-left]' @grid-outer ~'[aside-left]' @grid-aside ~'[main-left]' @grid-inner ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' 0 ~'[main-right]' @grid-inner ~'[aside-right]' @grid-aside ~'[outer-right]' @grid-outer ~'[edge-right]' @grid-edge ~'[right]' 0;
+        grid-template-columns: ~'[left]' 0 ~'[edge-left]' @grid-edge ~'[text-left]' 0 ~'[main]' @grid-main ~'[text-right]' @grid-text ~'[inner-left]' @grid-inner ~'[aside]' @grid-aside ~'[inner-right]' @grid-inner ~'[edge-right]' @grid-edge ~'[right]' 0;
         grid-auto-rows: auto;
 
         &>* {
@@ -113,44 +113,39 @@ header {
     /* Body */
 
     h1, h2, h3, h4, h5, h6 {
-        max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: -0.5px;
+        max-width: @post-linel;
         width: 100%;
 
         @media @xl {
             max-width: none;
-            margin-right: initial;
-            margin-left: initial;
         }
     }
 
     p {
         margin-bottom: @post-bottom;
-        margin-right: auto;
-        margin-left: auto;
         margin-top: @post-top;
-        width: 100%;
-        
         letter-spacing: -.003em;
         color: @post-text;
+        width: 100%;
+    }
 
-        @media @xl {
-            margin-right: initial;
-            margin-left: initial;
-        } 
+    & > p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     & > hr {
         max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: auto;
-        margin-left: auto;
         margin-top: @post-top;
         width: 100%;
 
         font-family: @helvetica;
+        font-weight: 600;
+        font-size: 1rem;
         text-align: center;
         color: @post-text;
         display: block;
@@ -171,19 +166,11 @@ header {
                 content: none;
             }
         }
-
-        @media @xl {
-            max-width: none;
-            margin-right: 0;
-            margin-left: 0;
-        }
     }
 
     ul:not([class]), ol:not([class]) {
         max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: auto;
-        margin-left: auto;
         margin-top: @post-top;
         width: 100%;
 
@@ -193,10 +180,6 @@ header {
         }
 
         @media @xl {
-            max-width: none;
-            margin-right: initial;
-            margin-left: initial;
-
             li {
                 transform: none;
             }
@@ -212,21 +195,12 @@ header {
     /* blockquote */
 
     blockquote {
-        max-width: @post-linel;
-        margin-bottom: @post-bottom;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: @post-top;
-        width: 100%;
-
         position: relative;
+        margin-bottom: @post-bottom;
+        margin-top: @post-top;
+        max-width: @post-linel;
+        width: 100%;
         padding: 0;
-
-        @media @xl {
-            max-width: none;
-            margin-right: initial;
-            margin-left: initial;
-        }
 
         p {
             font-family: @gregorIT;
@@ -245,18 +219,12 @@ header {
     }
 
     figure {
-        max-width: @post-linel;
         margin-bottom: @post-bottom;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 0;
+        margin-left: 0;
         margin-top: @post-top;
+        max-width: @post-linel;
         width: 100%;
-
-        @media @xl {
-            max-width: none;
-            margin-right: initial;
-            margin-left: initial;
-        }
     }
 
     /* picture */
@@ -354,10 +322,10 @@ header {
         }
 
         .play {
-            background: url('../images/youtube-play-btn.png') no-repeat;
-            -webkit-background-size: 100% auto;
-            background-size: 100% auto;
+            background-image: url('/static/images/youtube-play-btn.png');
+            background-repeat: no-repeat;
             background-position: 0 -50px;
+            background-size: 100% auto;
             position: absolute;
             transition: none;
             margin: auto;
@@ -470,21 +438,17 @@ header {
     /* Actions */
 
 	.actions {
-        max-width: @post-linel;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: @post-top;
-        width: 100%;
-
         font-family: @glob-font;
         font-size: @post-subtext-size;
         line-height: 1.4;
-		color: @glob-text;
+        color: @glob-text;
+        
+        margin-bottom: @post-bottom;
+        max-width: @post-linel;
+        width: 100%;
 
-        @media @xl {
-            max-width: none;
-            margin-right: initial;
-            margin-left: initial;
+        time {
+           color: @darkGray;
         }
     }
 

@@ -25,9 +25,9 @@ module Jekyll
 			"""
 			#{@class_start}
 				<figure id=\"#{@video}\" class=\"youtube\">
+					<div class=\"play\"></div>
 					#{@thumbnail}
 					<noscript><div class=\"playing\"><iframe frameborder=\"0\" src=\"https://www.youtube.com/embed/#{@video}?autoplay=0&amp;autohide=1\"></iframe></div></noscript>
-					<div class=\"play\"></div>
 				</figure>
 			#{@class_end}
 			""".strip

@@ -3,15 +3,8 @@
 		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a>
 	</h1>
 
-	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
-
-	{% if post.content contains '<!-- more -->' %}
-		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
-	{% endif %}
-
 	<nav class="actions">
 		<time class="space-out-right-nano-xs">{{ post.date | russian_date }}</time>
-
 		{% if post.tags.size > 0 %}
 			{% assign tags = post.tags | sort %}
 			{% for tag in tags %}
@@ -19,6 +12,12 @@
 			{% endfor %}
 		{% endif %}
 	</nav>
+
+	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
+
+	{% if post.content contains '<!-- more -->' %}
+		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
+	{% endif %}
 </article>
 
 {% if page.url == "/" %}

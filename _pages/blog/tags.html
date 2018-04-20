@@ -5,7 +5,7 @@ title: Теги
 description: Список тегов блога
 ---
 
-<section class="slide-up-fade-in linel">
+<section class="slide-up-fade-in">
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
 	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-mili-xs {% endif %}{% if forloop.last == true %}space-out-bottom-mili-xs {% endif %}item">
