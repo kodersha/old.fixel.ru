@@ -12,7 +12,7 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.7.3" />
+	<meta name="generator" content="Jekyll v3.8.0" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
@@ -87,7 +87,7 @@
 	</head>
 
 	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl">
-<header class="space-in-v-mili-xs linel">
+<header class="space-in-top-mili-xs">
 	<div class="row row-reverse-xs row-middle-sm">
 		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
 			<div class="search space-auto-left-md">
@@ -105,20 +105,8 @@
 		</div>
 		<div class="col-xs-12 col-sm-shrink">
 			<div class="row row-middle-sm">
-				<div class="col-xs-12 col-sm-shrink space-in-right-zero-md space-logo">
-					<div class="logo" data-js="logo">
-						<a class="link-logo" href="/">
-							<span></span>
-							<svg class="logotype" version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 120.000000 120.000000" preserveAspectRatio="xMidYMid meet">
-								<g class="logotype-path" transform="translate(0.000000,120.000000) scale(0.100000,-0.100000)" stroke="none">
-									<path d="M330 1186 c0 -7 -7 -20 -17 -27 -23 -19 -53 -88 -53 -123 0 -42 50 -102 142 -170 76 -56 117 -100 105 -112 -3 -3 -28 3 -56 13 -45 15 -53 16 -61 4 -13 -22 4 -45 55 -78 66 -42 59 -70 -32 -127 -49 -30 -53 -44 -20 -73 34 -31 60 -42 89 -36 20 4 30 1 34 -10 9 -25 -15 -84 -41 -101 -14 -9 -32 -30 -40 -46 -15 -28 -14 -33 10 -85 31 -64 168 -205 199 -205 25 0 95 83 128 150 47 97 27 320 -39 417 -31 46 -30 69 5 76 32 7 76 66 66 91 -7 19 -18 20 -43 4 -10 -6 -27 -8 -37 -4 -16 6 -13 12 26 44 144 119 182 180 161 257 -15 57 -78 124 -102 110 -6 -4 0 -19 15 -40 15 -19 26 -36 26 -39 0 -2 -16 -2 -35 1 -28 5 -35 2 -35 -11 0 -9 8 -19 18 -23 25 -9 52 -44 52 -69 0 -29 -27 -51 -42 -36 -23 23 -35 13 -34 -26 1 -46 -32 -83 -78 -87 -25 -2 -33 -8 -42 -34 -5 -17 -18 -39 -28 -49 -17 -16 -20 -15 -57 28 -21 25 -42 53 -45 62 -3 9 -20 22 -39 28 -18 6 -63 40 -99 75 -74 71 -82 97 -41 135 34 32 33 52 -2 44 -27 -7 -27 -6 -11 12 9 10 20 31 23 47 6 21 4 27 -9 27 -9 0 -16 -6 -16 -14z"/>
-								</g>
-							</svg>							
-						</a>
-					</div>
-				</div>
 				<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md logo-txt">
-					<span class="logo-name">Milkleaks</span>
+					<div class="clip-text"><a href="/">Milkleaks</a></div>
 				</div>
 			</div>
 		</div>
@@ -132,17 +120,8 @@
 		<a class="link-title" href="/blog/ustanavlivaem-jekyll-na-windows/">Устанавливаем Jekyll на&nbsp;Windows</a>
 	</h1>
 
-	<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <code class="highlighter-rouge">master</code> ветке репозитория, а собранный сайт в ветке <code class="highlighter-rouge">gh-pages</code>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
-
-
-
-	
-		<p><a href="/blog/ustanavlivaem-jekyll-na-windows/">Читать полностью &rarr;</a></p>
-	
-
 	<nav class="actions">
 		<time class="space-out-right-nano-xs"> 4 сентября 2017</time>
-
 		
 			
 			
@@ -152,6 +131,14 @@
 			
 		
 	</nav>
+
+	<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <code class="highlighter-rouge">master</code> ветке репозитория, а собранный сайт в ветке <code class="highlighter-rouge">gh-pages</code>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+
+
+
+	
+		<p><a href="/blog/ustanavlivaem-jekyll-na-windows/">Читать полностью &rarr;</a></p>
+	
 </article>
 
 
@@ -161,17 +148,8 @@
 		<a class="link-title" href="/blog/vse-na-svete-iz-plastmassy/">Все на свете из&nbsp;пластмассы</a>
 	</h1>
 
-	<p>Вот и настал тот день, когда будущее уже наступило и мы, с легкостью нажатия нескольких кнопок, можем печатать любые пластиковые изделия прямиком у себя дома. Технологии <span class="caps">3D</span> печати стремительно развиваются и открывают новые горизонты для творчества и технологии. Теперь, чтобы обзавестись люстрой или крючком для полотенец, больше не нужно идти в магазин, ведь все можно напечатать прямо у себя дома. В более глобальных масштабах технологии <span class="caps">3D</span> печати позволяют расширить не только производство оружия, но и области медицины.</p>
-
-
-
-	
-		<p><a href="/blog/vse-na-svete-iz-plastmassy/">Читать полностью &rarr;</a></p>
-	
-
 	<nav class="actions">
 		<time class="space-out-right-nano-xs"> 2 сентября 2017</time>
-
 		
 			
 			
@@ -179,6 +157,14 @@
 			
 		
 	</nav>
+
+	<p>Вот и настал тот день, когда будущее уже наступило и мы, с легкостью нажатия нескольких кнопок, можем печатать любые пластиковые изделия прямиком у себя дома. Технологии <span class="caps">3D</span> печати стремительно развиваются и открывают новые горизонты для творчества и технологии. Теперь, чтобы обзавестись люстрой или крючком для полотенец, больше не нужно идти в магазин, ведь все можно напечатать прямо у себя дома. В более глобальных масштабах технологии <span class="caps">3D</span> печати позволяют расширить не только производство оружия, но и области медицины.</p>
+
+
+
+	
+		<p><a href="/blog/vse-na-svete-iz-plastmassy/">Читать полностью &rarr;</a></p>
+	
 </article>
 
 
@@ -187,6 +173,20 @@
 	<h1>
 		<a class="link-title" href="/blog/aseprite/">Aseprite</a>
 	</h1>
+
+	<nav class="actions">
+		<time class="space-out-right-nano-xs">27 августа 2017</time>
+		
+			
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/пиксельная-графика/">Пиксельная&nbsp;графика,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/программа/">Программа,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/рисование/">Рисование</a>
+			
+		
+	</nav>
 
 	<p>Очередная замечательная программа на просторах <a href="http://store.steampowered.com/app/431730/Aseprite/" rel="nofollow" target="_blank">Steam</a>, идеальна для рисования и анимирования пиксель-артов. Имеет стандартный набор инструментов, готовые палитры, слои и временную линию для покадровой отрисвоки. В целом позволяет рисовать и анимировать даже при полном неумении этого делать, а при должном опыте и сноровке можно нарисовать по истине <a href="http://steamcommunity.com/app/431730/images/" rel="nofollow" target="_blank">отличные арты</a>. Работает на Windows, Linux и Mac<span class="caps">OS.</span> Сохраняет картинки во множестве форматов и даже в четырёхсот-процентном масштабе без потери качества. Словом, благодаря Aseprite можно нарисовать и анимировать свою собственную <a href="http://store.steampowered.com/app/105600/Terraria/" rel="nofollow" target="_blank">Terraria</a>.</p>
 
@@ -202,21 +202,6 @@
 
 
 	
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs">27 августа 2017</time>
-
-		
-			
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/пиксельная-графика/">Пиксельная&nbsp;графика,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/программа/">Программа,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/рисование/">Рисование</a>
-			
-		
-	</nav>
 </article>
 
 
@@ -225,6 +210,18 @@
 	<h1>
 		<a class="link-title" href="/blog/ujutnyj-jekyll/">Уютный&nbsp;Jekyll</a>
 	</h1>
+
+	<nav class="actions">
+		<time class="space-out-right-nano-xs">24 августа 2017</time>
+		
+			
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/cms/"><span class="caps">CMS</span>,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/jekyll/">Jekyll</a>
+			
+		
+	</nav>
 
 	<p>Внезапно, но блог сменил движок с <a href="/blog/egeya/">Эгеи</a> на Jekyll и тому было несколько причин. Во-первых, в блог я пишу не так часто, иногда и вовсе раз в несколько месяцев, поэтому нет смысла содержать полноценный хостинг. Во-вторых, Jekyll представляет собой статический сайт без какого-либо php и mysql, соответственно страницы загружаются если не моментально, то явно гораздо быстрее, в отличие от сайта на хостинге который, ко всему прочему, был не очень то быстр. В-третьих, Jekyll базируется на GitHub Pages, следовательно, не придется беспокоится об оплате хостинга, а сайт всегда будет доступен из репозитория.</p>
 
@@ -240,19 +237,6 @@
 
 
 	
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs">24 августа 2017</time>
-
-		
-			
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/cms/"><span class="caps">CMS</span>,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/jekyll/">Jekyll</a>
-			
-		
-	</nav>
 </article>
 
 
@@ -261,6 +245,22 @@
 	<h1>
 		<a class="link-title" href="/blog/the-long-dark-wintermute/">The Long Dark:&nbsp;Wintermute</a>
 	</h1>
+
+	<nav class="actions">
+		<time class="space-out-right-nano-xs"> 3 августа 2017</time>
+		
+			
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/выживание/">Выживание,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/крафтинг/">Крафтинг,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/открытый-мир/">Открытый&nbsp;мир,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/постапокалипсис/">Постапокалипсис</a>
+			
+		
+	</nav>
 
 	<p>Первого августа наконец таки вышел долгожданный сюжетный режим для <a href="/blog/the-long-dark/">The Long Dark</a> — симулятора выживания в диких условиях холодной Канады. Напомню, что игра разрабатывалась с двадцать второго сентября 2014 года и лишь первого августа 2017 вышла из стадии альфа-тестирования привнеся в себя сюжетный режим, новый игровой интерфейс и прочие мелочи.</p>
 
@@ -278,23 +278,6 @@
 	
 		<p><a href="/blog/the-long-dark-wintermute/">Читать полностью &rarr;</a></p>
 	
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs"> 3 августа 2017</time>
-
-		
-			
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/выживание/">Выживание,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/крафтинг/">Крафтинг,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/открытый-мир/">Открытый&nbsp;мир,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/постапокалипсис/">Постапокалипсис</a>
-			
-		
-	</nav>
 </article>
 
 
@@ -303,6 +286,28 @@
 	<h1>
 		<a class="link-title" href="/blog/stardew-valley/">Stardew&nbsp;Valley</a>
 	</h1>
+
+	<nav class="actions">
+		<time class="space-out-right-nano-xs">19 июня 2017</time>
+		
+			
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/изометрия/">Изометрия,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/квест/">Квест,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/крафтинг/">Крафтинг,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/открытый-мир/">Открытый&nbsp;мир,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/пиксельная-графика/">Пиксельная&nbsp;графика,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/приключение/">Приключение,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/ролевая-игра/">Ролевая&nbsp;игра</a>
+			
+		
+	</nav>
 
 	<p>Еще одна ламповая пиксельная игра на просторах <a href="http://store.steampowered.com/app/413150/" rel="nofollow" target="_blank">Steam</a> в жанре ролевой игры и крафтинга. В Stardew Valley игроку предстоит примерить на себя роль фермера — забросив тяготы городской жизни и рутинную работу в корпорации Joja, вы переезжаете на старую дедушкину ферму в долине Стардью, где вооружившись инструментами и терпением вам предстоит создать из заросшего пустыря процветающую ферму.</p>
 
@@ -338,29 +343,6 @@
 
 
 	
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs">19 июня 2017</time>
-
-		
-			
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/изометрия/">Изометрия,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/квест/">Квест,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/крафтинг/">Крафтинг,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/открытый-мир/">Открытый&nbsp;мир,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/пиксельная-графика/">Пиксельная&nbsp;графика,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/приключение/">Приключение,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/ролевая-игра/">Ролевая&nbsp;игра</a>
-			
-		
-	</nav>
 </article>
 
 
@@ -369,6 +351,22 @@
 	<h1>
 		<a class="link-title" href="/blog/what-remains-of-edith-finch/">What Remains of Edith&nbsp;Finch</a>
 	</h1>
+
+	<nav class="actions">
+		<time class="space-out-right-nano-xs"> 9 мая 2017</time>
+		
+			
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/интерактивный-фильм/">Интерактивный&nbsp;фильм,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/история/">История,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/квест/">Квест,</a>
+			
+				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/приключение/">Приключение</a>
+			
+		
+	</nav>
 
 	<p>Приключенческая игра от небольшой студии Giant Sparrow которая погрузит вас в красивейшую историю, рассказывающую о загадочной судьбе семейства Финчей. Приняв на себя роль Эдит Финч, последней представительницы рода — игрок вернется в фамильный особняк, дом ее детства, дабы раскрыть секреты родственников живших тут не одно поколение.</p>
 
@@ -386,23 +384,6 @@
 	
 		<p><a href="/blog/what-remains-of-edith-finch/">Читать полностью &rarr;</a></p>
 	
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs"> 9 мая 2017</time>
-
-		
-			
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/интерактивный-фильм/">Интерактивный&nbsp;фильм,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/история/">История,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/квест/">Квест,</a>
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/приключение/">Приключение</a>
-			
-		
-	</nav>
 </article>
 
 
@@ -412,17 +393,8 @@
 		<a class="link-title" href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для&nbsp;Эгеи</a>
 	</h1>
 
-	<p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.</p>
-
-
-
-	
-		<p><a href="/blog/pishem-svoy-shablon-dlya-egei/">Читать полностью &rarr;</a></p>
-	
-
 	<nav class="actions">
 		<time class="space-out-right-nano-xs">29 апреля 2017</time>
-
 		
 			
 			
@@ -432,6 +404,14 @@
 			
 		
 	</nav>
+
+	<p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.</p>
+
+
+
+	
+		<p><a href="/blog/pishem-svoy-shablon-dlya-egei/">Читать полностью &rarr;</a></p>
+	
 </article>
 
 
@@ -439,16 +419,16 @@
 </section>
 
 
-	<nav class="row row-between-sm space-in-bottom-kilo-xs space-in-bottom-mega-md pagination linel">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
+	<nav class="row row-between-sm space-in-bottom-kilo-xs space-in-bottom-mega-md pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
 			
 				<a class="link" rel="prev" href="/page-4/">&larr; Ранее</a>
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница: 3 из 7</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 3 из 7</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
 			
 				<a class="link" rel="next" href="/page-2/">Позднее &rarr;</a>
 			
@@ -456,7 +436,7 @@
 	</nav>
 
 
-<footer class="space-in-bottom-mili-xs linel">
+<footer class="space-in-bottom-mili-xs">
 	<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
 	
 	
@@ -492,8 +472,8 @@
 </ol>
 
 	<div class="space-in-top-mili-xs copyright">
-		Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" target="_blank" href="/feed">RSS</a><br />
-		Электропочта <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>.
+		Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a target="_blank" href="/feed">RSS</a><br />
+		Электропочта <a target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a> или телеграм <a target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a>
 	</div>
 
 	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
@@ -539,7 +519,6 @@
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
 
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
-<script type="text/javascript" src="/static/modules/hyphenator/hyphenator.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
