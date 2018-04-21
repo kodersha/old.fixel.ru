@@ -78,6 +78,21 @@ bundle exec jekyll serve
 Использованы материалы: [Инструкция с сайта Microsoft][3] и [Официальная документация][4] Jekyll.
 {: .aside}
 
+---
+{: .easy}
+
+Для одного из плагинов jekyll мне понадобился gem `nokogiri`, но при установке на Windows Ubuntu он выдавал ошибку. Решение:
+
+{% highlight shell %}
+apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clang
+{% endhighlight %}
+
+Затем сам nokogiri:
+
+{% highlight shell %}
+sudo gem install nokogiri -- --use-system-libraries
+{% endhighlight %}
+
 [1]:    http://jekyllrb.com/
 [2]:    https://pages.github.com/
 [3]:    https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun
