@@ -5005,9 +5005,13 @@ body.lb-disable-scrolling {
 .lightbox .lb-image {
   display: block;
   height: auto;
-  max-width: inherit;
+  max-width: 1432px;
   max-height: none;
   border-radius: 2px;
+  background-color: #000000;
+  -webkit-box-shadow: #464646 0px 0px 100px 0px;
+  -moz-box-shadow: #464646 0px 0px 100px 0px;
+  box-shadow: #464646 0px 0px 100px 0px;
 }
 .lb-dataContainer:after,
 .lb-outerContainer:after {
@@ -11845,7 +11849,7 @@ header .logo.animate a:hover .logotype .logotype-path {
     background-position: 0% 82%;
   }
 }
-@media (min-width: 1560px) {
+@media (min-width: 1580px) {
   header .space-logo {
     margin-left: -64px;
   }
