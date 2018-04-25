@@ -80,24 +80,24 @@ h6 {
 }
 @media (min-width: 43.75rem) {
   h1 {
-    font-size: 1.875em;
-    margin-top: 3.73333333em;
-    margin-bottom: 0.74666667em;
+    font-size: 1.725em;
+    margin-top: 4.05797101em;
+    margin-bottom: 0.8115942em;
   }
   h2 {
-    font-size: 1.575em;
-    margin-top: 3.55555556em;
-    margin-bottom: 0.88888889em;
+    font-size: 1.5em;
+    margin-top: 3.73333333em;
+    margin-bottom: 0.93333333em;
   }
   h3 {
-    font-size: 1.35em;
-    margin-top: 3.11111111em;
-    margin-bottom: 1.03703704em;
+    font-size: 1.275em;
+    margin-top: 3.29411765em;
+    margin-bottom: 1.09803922em;
   }
   h4 {
-    font-size: 1.2em;
-    margin-top: 2.33333333em;
-    margin-bottom: 1.16666667em;
+    font-size: 1.125em;
+    margin-top: 2.48888889em;
+    margin-bottom: 1.24444444em;
   }
 }
 h1:first-child,
@@ -11861,29 +11861,12 @@ header .logo-txt .logo-name {
 }
 header .clip-text {
   font-family: 'LatoWebBlack', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
-  font-size: 1.25em;
   letter-spacing: -0.05rem;
+  vertical-align: middle;
   line-height: 1;
   position: relative;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  text-align: center;
   color: #000000;
-  /* Color fallback */
-  background-image: url('/static/images/pattern.png');
-  background-position: center center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media (min-width: 768px) {
-  header .clip-text {
-    font-size: 1.475em;
-  }
-}
-header .clip-text a {
-  color: transparent;
-  border: 0;
 }
 .post {
   /* Grid */
