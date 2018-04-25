@@ -12,11 +12,5 @@ cover: '/static/images/about.jpg'
 
 Прокрастинирую.
 
----
-
-Электропочта [hello@milkleaks.ru][3] или телеграм [@sashatravkina][4].
-
 [1]:	/work
 [2]:	/blog
-[3]:	mailto:hello@milkleaks.ru
-[4]:	https://t.me/sashatravkina
