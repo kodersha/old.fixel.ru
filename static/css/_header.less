@@ -445,27 +445,10 @@
 
 .clip-text {
     font-family: @glob-header;
-    font-size: 1.25em;
     letter-spacing: -0.05rem;
+    vertical-align: middle;
     line-height: 1;
     position: relative;
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
     color: @black;
-    /* Color fallback */
-    background-image: url('/static/images/pattern.png');
-    background-position: center center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    @media @md {
-        font-size: 1.475em;
-    }
-
-    a {
-        color: transparent;
-        border: 0;
-    }
 }

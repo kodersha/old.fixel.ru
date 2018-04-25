@@ -3,7 +3,7 @@ description: Блог о компьютерных играх, фильмах, к
 author: Александра Травкина
 
 # Base
-url: https://milkleaks.ru
+url: http://milkleaks.ru
 baseurl:
 permalink: /blog/:title/
 markdown: kramdown
