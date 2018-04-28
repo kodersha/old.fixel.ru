@@ -2,70 +2,28 @@
 layout: default
 ---
 
-<article class="slide-up-fade-in space-in-v-kilo-xs space-in-v-mega-md space-minus-h-base-xl post">
-	
-    <h1>{{ page.title }}</h1>
+<section class="slide-up-fade-in space-in-v-kilo-xs content">
+    <article class="post">
+        <h1>{{ page.title }}</h1>
+        <div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
+            {% google_map width="100%" class="map" zoom="12" %}
+        </div>
 
-	<nav class="actions">
-        <time class="space-out-right-nano-xs">{{ page.date | russian_date }}</time>
-    </nav>
+        {% if page.toc == "true" %}
+            <div class="toc js-toc"></div>
+        {% endif %}
 
-    <div class="space-minus-h-mili-xs space-minus-h-base-sm space-out-h-zero-xl google-maps">
-        {% google_map width="100%" class="map" zoom="12" %}
-    </div>
+        {{ content | improve | extlinks }}
 
-	{% if page.toc == "true" %}
-		<div class="toc js-toc"></div>
-	{% endif %}
+    </article>
+</section>
 
-    {{ content | improve | extlinks }}
+{% for c in site.photos %}{% if c.title == page.title %}{% assign thisPost = c %}{% if forloop.index == 1 %}{% assign prevflag = 0 %}{% assign nextflag = 1 %}{% elsif forloop.index == forloop.length %}{% assign prevflag = 1 %}{% assign nextflag = 0 %}{% else %}{% assign prevflag = 1 %}{% assign nextflag = 1 %}{% endif %}{% endif %}{% endfor %}
+{% for c in site.photos %}{% if c.title == page.title %}{% assign prevflag = 0 %}{% endif %}{% if prevflag == 1 %}{% assign prevPost = c %}{% assign page.previous = c %}{% endif %}{% endfor %}
 
-</article>
+{% if nextflag == 1 %}{% for c in site.photos %}{% if foundPost == 1 %}{% assign getNext = 1 %}{% endif %}{% if c.title == page.title %}{% assign foundPost = 1 %}{% endif %}{% if getNext == 1%}{% assign nextPost = c %}{% assign page.next = c %}{% assign foundPost = 0 %}{% assign getNext = 0 %}{% endif %}{% endfor %}{% endif %}
 
-{% for c in site.photos %}
-{% if c.title == page.title %}
-  {% assign thisPost = c %}
-  {% if forloop.index == 1 %}
-	{% assign prevflag = 0 %}
-	{% assign nextflag = 1 %}
-  {% elsif forloop.index == forloop.length %}
-	{% assign prevflag = 1 %}
-	{% assign nextflag = 0 %}
-  {% else %}
-	{% assign prevflag = 1 %}
-	{% assign nextflag = 1 %}
-  {% endif %}
-{% endif %}
-{% endfor %}
-
-{% for c in site.photos %}
-  {% if c.title == page.title %}
-	{% assign prevflag = 0 %}
-  {% endif %}
-  {% if prevflag == 1 %}
-	{% assign prevPost = c %}
-	{% assign page.previous = c %}
-  {% endif %}
-{% endfor %}
-
-{% if nextflag == 1 %}
-  {% for c in site.photos %}
-	{% if foundPost == 1 %}
-	  {% assign getNext = 1 %}
-	{% endif %}
-	{% if c.title == page.title %}
-	  {% assign foundPost = 1 %}
-	{% endif %}
-	{% if getNext == 1%}
-	  {% assign nextPost = c %}
-	  {% assign page.next = c %}
-	  {% assign foundPost = 0 %}
-	  {% assign getNext = 0 %}
-	{% endif %}
-  {% endfor %}
-{% endif %}
-
-<nav class="row row-between-sm space-in-bottom-kilo-xs space-in-bottom-mega-md pagination">
+<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
 	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
         {% if prevPost.url %}
             <a class="link" rel="prev" href="{{ prevPost.url }}">&larr; Ранее</a>

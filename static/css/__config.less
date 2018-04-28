@@ -1,37 +1,38 @@
 .global-settings() {
-    @glob-text: @black;
-    @glob-subtext: @darkGray;
-
-    @glob-font: @latoMedium;
+    @glob-font: @global;
     @glob-font-size: 1rem;
+    @glob-font-color: @black;
+
+    @glob-subtext-size: 0.875rem;
+    @glob-subtext-color: @darkGray;
 
     @glob-header: @latoBlack;
 
-    @glob-linel: 43.75rem;
-    @glob-width: 94.5rem;
+    @glob-linel: 39.38rem;
+    @glob-width: 93.75rem;
 
     @fadeInSpeed: 0.1s;
 }
 
 .post-settings() {
     @post-top: 1rem;
-    @post-bottom: 0.5rem;
+    @post-bottom: 0;
     @post-linel: @glob-linel;
 
-    @post-text: @black;
+    @post-text-color: @black;
 
-    @post-subtext: @glob-subtext;
-    @post-subtext-size: 1rem;
-    @post-subtext-linel: 1.3;
+    @post-subtext-color: @glob-subtext-color;
+    @post-subtext-size: @glob-subtext-size;
+    @post-subtext-linel: 1.352;
     @post-subtext-weight: 400;
 }
 
 .post-grid() {
     @post-width: @glob-width;
 
-    @grid-edge: 2.5rem;
-    @grid-aside: minmax(15rem, 18.75rem);
-    @grid-inner: minmax(2.5rem, 1fr);
+    @grid-edge: 0;
+    @grid-aside: minmax(12.5rem, 18.75rem);
+    @grid-inner: minmax(0, 1fr);
     @grid-text: 2rem;
     @grid-main: @glob-linel;
 }
@@ -44,17 +45,17 @@
 
     .global-settings();
 
-    @fz: 13.333333333333px;                      // default font-size
-    @rythm: 18.666666666666px;                   // vertical rythm = line-height in pixels
-    @fz-small: 10px;                                // smaller font-size (px)
+    @fz: 16px;                                      // default font-size
+    @rythm: 23.392px;                               // vertical rythm = line-height in pixels
+    @fz-small: 13px;                                // smaller font-size (px)
     @linel: @glob-linel;                            // max-width for text (any css value)
 
-    @font-body: @gregor;                            // body
+    @font-body: @global;                            // body
     @font-headers: @glob-header;                    // headers
     @font-code: @code;                              // code (duplication is intentional)
 
     @scale1: 1.085;                    // header size multiplier for small screens
-    @scale2: 1.145;                    // header size multiplier for large screens
+    @scale2: 1.125;                    // header size multiplier for large screens
 
     // margin for body, articles and sections (any css value)
     @structure-margin: ~"calc(24px + 3vw)" 5vw;

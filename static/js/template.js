@@ -57,7 +57,7 @@ $(".post .youtube").each(function() {
 /* Добавляем классы */
 
 $( '[full], .full' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl');
-$( '[color] .highlight pre' ).addClass('space-out-h-micro-xs space-out-h-mili-md space-out-h-base-lg');
+$( '[color] .highlight pre' ).addClass('space-out-h-micro-xs space-out-h-mili-md space-out-h-base-lg space-out-h-zero-xl');
 
 /* Поиск */
 
@@ -116,62 +116,10 @@ tocbot.init({
 	headingSelector: 'h2, h3',
 });
 
-/* Прилепляем футер */
-
-;(function(window, $, undefined){
-	'use strict';
-	/**
-	 * @return {Object}
-	 */
-	$.fn.stickyFooter = function()
-	{
-		var windowHeight = 0,
-			offset = 0,
-			$div = this;
-		position();
-		$(window).bind('resize.stickyFooter', function(){
-			position();
-		});
-		/**
-		 * @return {void}
-		 */
-		function position(){
-			if( $div.css('position') !== 'static' )
-			{
-				offset = $div.outerHeight(true);
-			}else{
-				offset = 0;
-			}
-			windowHeight = window.innerHeight
-				? window.innerHeight
-				: $(window).height();
-			if( $('body').outerHeight(true) + offset < windowHeight ){
-				$div.css({
-					position	: 'fixed',
-					width		: '100%',
-					bottom		: 0
-				});
-			}else{
-				$div.css({
-					position	: 'static',
-					width		: 'auto'
-				});
-			}
-		}
-		return this;
-	};
-}(window, jQuery));
-
-$('footer').stickyFooter();
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
 } else {
 
-}
-
-function selectorFunction() {
-	return window.document.getElementsByClassName("hyphenate");
 }
 
 /* Кнопка вверх */

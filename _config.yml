@@ -17,8 +17,8 @@ telegram: sashatravkina
 
 # Cloudinary
 cloudinary: milkleaks
-cloudinary-size: c_limit,w_780
-cloudinary-big: w_1512
+cloudinary-size: c_limit,w_660
+cloudinary-big: w_1352
 
 # Jekyll
 safe: false
@@ -27,8 +27,12 @@ safe: false
 navigation:
   - title: Все записи
     url: /blog/all/
+  - title: Теги
+    url: /blog/tags/
   - title: Фотографии
     url: /photo/
+  - title: Работы
+    url: /work/
   - title: Об авторе
     url: /about/
   - title: Поддержать

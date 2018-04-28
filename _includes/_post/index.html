@@ -1,22 +1,18 @@
-<article class="space-in-top-kilo-xs space-in-top-mega-md{% if forloop.last == true %} space-in-bottom-kilo-xs space-in-bottom-mega-md{% endif %} space-minus-h-base-xl post">	
-	<h1>
-		<a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a>
-	</h1>
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs">{{ post.date | russian_date }}</time>
-		{% if post.tags.size > 0 %}
-			{% assign tags = post.tags | sort %}
-			{% for tag in tags %}
-				<a class="space-out-right-nano-xs link-tag tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
-			{% endfor %}
-		{% endif %}
-	</nav>
-
-	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
-
-	{% if post.content contains '<!-- more -->' %}
-		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
+<article class="{% if forloop.first == true %}space-in-bottom-nano-xs{% elsif forloop.last == true %}space-in-top-nano-xs{% else %}space-in-v-nano-xs{% endif %} item">	
+	<div class="title">
+		<a href="{{ post.url | prepend: site.baseurl }}">{% if post.description %}{{ post.description | improve }}{% else %}{{ post.title | improve }}{% endif %}</a>
+	</div>
+	{% if post.preview %}
+	<div class="space-out-v-nano-xs preview">
+		<a href="{{ post.url | prepend: site.baseurl }}"><img alt="{{ post.title }}" src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/{{ site.cloudinary-size }}/{{ post.preview }}"></a>
+	</div>
+	{% endif %}
+	{% if post.categories.size > 0 %}
+		{% for category in post.categories %}	
+		<div class="category">
+			<time>{{ post.date | russian_date }}</time><span class="space-in-h-nano-xs">&middot;</span><a href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/">{{ category }}</a>
+		</div>
+		{% endfor %}			
 	{% endif %}
 </article>
 

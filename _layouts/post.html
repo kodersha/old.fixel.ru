@@ -2,27 +2,15 @@
 layout: default
 ---
 
-<article class="slide-up-fade-in space-in-v-kilo-xs space-in-v-mega-md space-minus-h-base-xl post{% if page.toc == 'true' %} js-toc-content{% endif %}">
-	<h1>{{ page.title | improve }}</h1>
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs">{{ page.date | russian_date }}</time>
-		{% if page.tags.size > 0 %}
-			{% assign tags = page.tags | sort %}
-			{% for tag in tags %}
-				<a class="space-out-right-nano-xs link-tag tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}{% unless forloop.last %},{% endunless %}</a>
-			{% endfor %}
+<section class="slide-up-fade-in space-in-v-kilo-xs content">
+	<article class="post{% if page.toc == 'true' %} js-toc-content{% endif %}">
+		<h1>{{ page.title | improve }}</h1>
+		{% include _post/cover.html %}
+		{% if page.toc == "true" %}
+			<div class="toc js-toc"></div>
 		{% endif %}
-	</nav>
-
-	{% include _post/cover.html %}
-
-	{% if page.toc == "true" %}
-		<div class="toc js-toc"></div>
-	{% endif %}
-
-	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
-
-</article>
+		{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
+	</article>
+</section>
 
 {% include _post/pagination.html %}

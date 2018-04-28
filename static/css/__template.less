@@ -5,23 +5,20 @@
 .global-settings();
 
 html {
+    overflow-x: hidden;
+    overflow-y: auto;
     height: 100%;
 }
 
 body {
     -webkit-font-smoothing: subpixel-antialiased;
     text-rendering: optimizeLegibility;
-    font-display: optional;
-    max-width: @glob-width;
-    overflow-x: hidden;
-    color: @glob-text;
+    flex-direction: column;
+    color: @glob-font-color;
     cursor: default;
+    display: flex;
+    height: 100%;
     margin: 0;
-
-    @media @msm {
-        line-height: 1.35;
-        font-size: 1.1em;
-    }
 }
 
 input, textarea, select, button {
@@ -29,8 +26,14 @@ input, textarea, select, button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: @glob-text;
+    color: @glob-font-color;
     letter-spacing: -.05rem;
+}
+
+p {
+    .post-settings();
+
+    margin: @post-top 0 @post-bottom;
 }
 
 * {
@@ -45,26 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 .linel {
     max-width: @glob-linel;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-
-    &-extended {
-        max-width: calc(~'@{glob-linel} + @{micro} + @{micro}');
-        margin-right: auto;
-        margin-left: auto;
-        width: 100%;
-
-        @media @md {
-            max-width: calc(~'@{glob-linel} + @{mili} + @{mili}');
-        }
-
-        @media @lg {
-            max-width: calc(~'@{glob-linel} + @{base} + @{base}');
-        }
-    }
 }
 
 //
@@ -81,6 +70,7 @@ header {
 
 .post {
     .post-settings();
+    max-width: 80.75rem;
 
     /* Grid */
 
@@ -103,7 +93,7 @@ header {
 
     .link-title {
         border-bottom: none;
-        color: @glob-text;
+        color: @post-text-color;
 
         &:hover {
             color: @darkerGray;
@@ -113,8 +103,8 @@ header {
     /* Body */
 
     h1, h2, h3, h4, h5, h6 {
-        margin-bottom: @post-bottom;
         margin-left: -0.5px;
+        margin-bottom: @post-bottom;
         max-width: @post-linel;
         width: 100%;
 
@@ -127,7 +117,7 @@ header {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
         letter-spacing: -.003em;
-        color: @post-text;
+        color: @post-text-color;
         width: 100%;
     }
 
@@ -143,18 +133,15 @@ header {
         margin-top: @post-top;
         width: 100%;
 
-        font-family: @helvetica;
-        font-weight: 600;
-        font-size: 1rem;
         text-align: center;
-        color: @post-text;
+        color: @post-text-color;
         display: block;
         border: none;
         opacity: 1;
         
         &::before {
             position: relative;
-            content: "⌘ ⌘ ⌘";
+            content: "\2022 \2022 \2022";
         }
 
         &.easy {
@@ -176,7 +163,7 @@ header {
 
         li {
             letter-spacing: -.003em;
-            color: @post-text;
+            color: @post-text-color;
         }
 
         @media @xl {
@@ -204,16 +191,16 @@ header {
 
         p {
             font-family: @gregorIT;
-            font-size: @glob-font-size + 0.4rem;
+            font-size: @glob-font-size + 0.2rem;
             font-style: italic;
-            line-height: 1.3;
+            line-height: 1.352;
             letter-spacing: -.003em;
             max-width: 100%;
-            color: @post-text;
+            color: @post-text-color;
             margin: 0;
 
             @media @xl {
-                font-size: @glob-font-size + 0.6rem;
+                font-size: @glob-font-size + 0.3rem;
             }
         }
     }
@@ -244,7 +231,7 @@ header {
                 font-weight: @post-subtext-weight;
                 letter-spacing: normal;
                 line-height: @post-subtext-linel;
-                color: @post-subtext;
+                color: @post-subtext-color;
                 max-width: 100%;
                 margin-bottom: 0;
                 margin-top: 0.875rem; 
@@ -354,8 +341,8 @@ header {
         height: 100vh;
 
         @media @md {
-            min-height: 70vh;
-            height: 70vh;
+            min-height: 55vh;
+            height: 55vh;
         }
 
         img {
@@ -425,7 +412,7 @@ header {
             height: 100vh !important;
 
             @media @md {
-                height: 70vh !important;
+                height: 55vh !important;
             }
         }
     }
@@ -434,49 +421,7 @@ header {
         margin-top: @post-top;
         margin-bottom: @post-bottom;
     }
-
-    /* Actions */
-
-	.actions {
-        font-family: @glob-font;
-        font-size: @post-subtext-size;
-        line-height: 1.4;
-        color: @glob-text;
-        
-        margin-bottom: @post-bottom;
-        max-width: @post-linel;
-        width: 100%;
-
-        time {
-           color: @darkGray;
-        }
-    }
-
-    /* Comments */
-
-    .comments {
-        .thread {
-            position: relative;
-
-            iframe {
-                position: relative;
-                z-index: 10;
-            }
-        }
-    }
-
-    /* Related */
-
-    .related {
-        font-size: @glob-font-size;
-        font-family: @glob-font;
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    }
-
+    
     //
     // extended
     //
@@ -527,6 +472,38 @@ header {
     @import (less) "../static/css/_page.less";
 }
 
+.list {
+    .title {        
+        a {
+            display: inline-block;
+            border-bottom: 0;
+            color: @black;
+
+            &:hover {
+                color: @red;
+            }
+        }
+    }
+
+    .category {
+        font-family: @glob-font;
+        font-size: @glob-subtext-size;
+        line-height: 1;
+        color: @glob-subtext-color;
+        padding-top: 6px;
+
+        a {
+            border-bottom-color: @whiteGray;
+            color: @glob-subtext-color;
+
+            &:hover {
+                border-bottom-color: @lightGray;
+                color: @darkerGray;
+            }
+        }
+    }
+}
+
 //
 // .pagination
 //
@@ -534,7 +511,8 @@ header {
 .pagination {
     font-size: @glob-font-size;
     font-family: @glob-font;
-    line-height: 1.25;
+    line-height: 1;
+    flex-shrink: 0;
 
     p {
         margin-bottom: 0;

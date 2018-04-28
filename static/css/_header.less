@@ -167,6 +167,10 @@
     height: @logoSize;
     width: @logoSize;
 
+    img {
+        border-radius: 50%;
+    }
+
     a {
         text-decoration: none;
         position: absolute;
@@ -421,34 +425,23 @@
     }
 }
 
-.space-logo {
-    @media (min-width: 1580px) {
-        margin-left: -64px;
-    }
-}
-
 //
 // title
 //
 
 .logo-txt {
     .logo-name {
-        color: @glob-text;
-        letter-spacing: -.05rem;
+        color: @glob-font-color;
+        letter-spacing: -.02rem;
         font-family: @glob-header;
-        font-weight: 700;
-        font-size: 1.25rem;
+        font-size: @glob-font-size;
         line-height: 1;
         display: block;
     }
-}
 
-.clip-text {
-    font-family: @glob-header;
-    letter-spacing: -0.05rem;
-    vertical-align: middle;
-    line-height: 1;
-    position: relative;
-    display: inline-block;
-    color: @black;
+    .logo-description {
+        font-family: @glob-font;
+        font-size: @glob-subtext-size;
+        color: @glob-subtext-color;
+    }
 }

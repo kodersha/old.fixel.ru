@@ -5,12 +5,13 @@ title: Категории
 description: Список категорй блога
 ---
 
-<section class="slide-up-fade-in">
-{% assign categories_list = site.categories %}
-{% for category in categories_list %}
-	<article class="space-in-bottom-nano-xs {% if forloop.first == true %}space-out-top-mili-xs {% endif %}{% if forloop.last == true %}space-out-bottom-mili-xs {% endif %}item">
-		<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a>
-	</article>
-{% endfor %}
-{% assign categories_list = nil %}
+<section class="slide-up-fade-in space-in-v-kilo-xs content">
+	<h1>{{ page.title }}</h1>
+	{% assign categories_list = site.categories %}
+	{% for category in categories_list %}
+		<article class="{% if forloop.last == true %}space-out-bottom-zero-xs{% else %}space-in-bottom-nano-xs{% endif %} item">
+			<a href="{{ site.baseurl }}/blog/categories/{{ category | first | slugify }}/">{{ category[0] | capitalize }}</a>
+		</article>
+	{% endfor %}
+	{% assign categories_list = nil %}
 </section>
