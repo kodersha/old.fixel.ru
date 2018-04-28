@@ -106,10 +106,10 @@
 
 
 </script>
-
+		
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-auto-h-xl">
+	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
 <header class="space-in-top-mili-xs">
 	<div class="row row-reverse-xs row-middle-sm">
 		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
@@ -126,56 +126,30 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink">
-			<div class="row row-middle-sm">
-				<div class="col-xs-12 col-sm-shrink space-in-right-zero-md space-logo">
-					<div class="logo" data-js="logo">
-						<a class="link-logo" href="/">
-							<span></span>
-							<svg class="logotype" version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 120.000000 120.000000" preserveAspectRatio="xMidYMid meet">
-								<g class="logotype-path" transform="translate(0.000000,120.000000) scale(0.100000,-0.100000)" stroke="none">
-									<path d="M330 1186 c0 -7 -7 -20 -17 -27 -23 -19 -53 -88 -53 -123 0 -42 50 -102 142 -170 76 -56 117 -100 105 -112 -3 -3 -28 3 -56 13 -45 15 -53 16 -61 4 -13 -22 4 -45 55 -78 66 -42 59 -70 -32 -127 -49 -30 -53 -44 -20 -73 34 -31 60 -42 89 -36 20 4 30 1 34 -10 9 -25 -15 -84 -41 -101 -14 -9 -32 -30 -40 -46 -15 -28 -14 -33 10 -85 31 -64 168 -205 199 -205 25 0 95 83 128 150 47 97 27 320 -39 417 -31 46 -30 69 5 76 32 7 76 66 66 91 -7 19 -18 20 -43 4 -10 -6 -27 -8 -37 -4 -16 6 -13 12 26 44 144 119 182 180 161 257 -15 57 -78 124 -102 110 -6 -4 0 -19 15 -40 15 -19 26 -36 26 -39 0 -2 -16 -2 -35 1 -28 5 -35 2 -35 -11 0 -9 8 -19 18 -23 25 -9 52 -44 52 -69 0 -29 -27 -51 -42 -36 -23 23 -35 13 -34 -26 1 -46 -32 -83 -78 -87 -25 -2 -33 -8 -42 -34 -5 -17 -18 -39 -28 -49 -17 -16 -20 -15 -57 28 -21 25 -42 53 -45 62 -3 9 -20 22 -39 28 -18 6 -63 40 -99 75 -74 71 -82 97 -41 135 34 32 33 52 -2 44 -27 -7 -27 -6 -11 12 9 10 20 31 23 47 6 21 4 27 -9 27 -9 0 -16 -6 -16 -14z"/>
-								</g>
-							</svg>							
-						</a>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm space-in-top-micro-xs space-in-top-zero-md logo-txt">
-					<div class="clip-text">Запись 84</div>
-				</div>
-			</div>
+		<div class="col-xs-12 col-sm-shrink logo">
+			<a class="link-logo" href="/">
+				<img src="/static/images/avatar.png">						
+			</a>
 		</div>
 	</div>
 </header>
 
-<article class="slide-up-fade-in space-in-v-kilo-xs space-in-v-mega-md space-minus-h-base-xl post">
-	<h1>Jekyll и&nbsp;изображения</h1>
-
-	<nav class="actions">
-		<time class="space-out-right-nano-xs">13 марта 2018</time>
+<section class="slide-up-fade-in space-in-v-kilo-xs content">
+	<article class="post">
+		<h1>Jekyll и&nbsp;изображения</h1>
 		
-			
-			
-				<a class="space-out-right-nano-xs link-tag tag" href="/blog/tags/jekyll/">Jekyll</a>
-			
+	
+
 		
-	</nav>
-
-	
-	
-
-
-	
-
-	<p>Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в <a href="https://help.github.com/articles/what-is-github-pages/" rel="nofollow" target="_blank">справке</a> GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала <a href="https://imgur.com/" rel="nofollow" target="_blank">imgur</a>, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.</p>
+		<p>Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в <a href="https://help.github.com/articles/what-is-github-pages/" rel="nofollow" target="_blank">справке</a> GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала <a href="https://imgur.com/" rel="nofollow" target="_blank">imgur</a>, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.</p>
 
 <p>Например <a href="https://cloudinary.com/" rel="nofollow" target="_blank">Cloudinary</a> — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий <a href="https://nhoizey.github.io/jekyll-cloudinary/" rel="nofollow" target="_blank">плагин</a>, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде <a href="https://gist.github.com/sasha-travkina/851bba69a34801cdc342ff5b9c38fe58" rel="nofollow" target="_blank"><strong>плагина</strong></a> для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100.</p>
 
 
+	</article>
+</section>
 
-</article>
-
-<nav class="row row-between-sm space-in-bottom-kilo-xs space-in-bottom-mega-md pagination">
+<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
 	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
 		
 			<a title="Короткометражный фильм «Papers, Please»" class="link" href="/blog/papers-please-korotkometrazhyi-film/">&larr; Ранее</a>
@@ -189,7 +163,8 @@
 </nav>
 
 <footer class="space-in-bottom-mili-xs">
-	<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+	
+		<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
 	
 	
 		
@@ -245,15 +220,16 @@
 			</li>
 			
 </ol>
-
-	<div class="space-in-top-mili-xs copyright">
-		Александра Травкина &copy; 2015 - 2018<span class="space-in-h-nano-xs">&middot;</span><a target="_blank" href="/feed">RSS</a><br />
-		Электропочта <a target="_blank" href="mailto:hello@milkleaks.ru">hello@milkleaks.ru</a>, телеграм <a target="_blank" href="https://t.me/sashatravkina">@sashatravkina</a> или ICQ <a target="_blank" href="https://icq.com/people/633328999">633328999</a>.
-	</div>
+		
+		<div class="space-in-top-mili-xs copyright">
+			Александра Травкина &copy; 13 марта 2018<br />
+		</div>
+	
 
 	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
 	<nav class="col-xs-12 col-md-shrink menu" id="menu">
 		<ol class="menu-content">
+			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
 			
 			
 			
@@ -261,7 +237,15 @@
 			
 			
 			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/tags/">Теги</a></li>
+			
+			
+			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
