@@ -26,8 +26,11 @@ input, textarea, select, button {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    .post-settings();
+
     color: @glob-font-color;
     letter-spacing: -.05rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -500,6 +503,35 @@ header {
                 border-bottom-color: @lightGray;
                 color: @darkerGray;
             }
+        }
+    }
+}
+
+.about {
+    background-color: @action;
+    position: relative;
+
+    .item {
+        position: relative;
+        z-index: 10;
+    }
+
+    @media @xl {
+        &::before {
+            background-color: @action;
+            padding-right: 9999px;
+            margin-right: -9999px;
+            padding-left: 9999px;
+            margin-left: -9999px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            z-index: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
         }
     }
 }
