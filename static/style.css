@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'LatoWebBlack', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: bolder;
 }
 h1 {
@@ -11832,7 +11832,7 @@ header .logo.animate a:hover .logotype .logotype-path {
 header .logo-txt .logo-name {
   color: #000000;
   letter-spacing: -0.02rem;
-  font-family: 'LatoWebBlack', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 1;
   display: block;
@@ -12979,7 +12979,7 @@ header .logo-txt .logo-description {
 }
 .blog strong {
   font-size: 1rem;
-  font-family: 'LatoWebBlack', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Arial', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: -0.05rem;
   line-height: 1;
   display: block;
