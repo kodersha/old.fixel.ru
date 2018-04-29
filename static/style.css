@@ -11411,6 +11411,7 @@ h5,
 h6 {
   color: #000000;
   letter-spacing: -0.05rem;
+  margin-bottom: 1rem;
 }
 p {
   margin: 1rem 0 0;
@@ -12980,7 +12981,6 @@ header .logo-txt .logo-description {
 .blog strong {
   font-size: 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  letter-spacing: -0.05rem;
   line-height: 1;
   display: block;
 }
@@ -12992,11 +12992,7 @@ header .logo-txt .logo-description {
   font-size: 1rem;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   display: inline-block;
-  border-bottom: none;
-  color: #000000;
-}
-.blog .link-readmore:hover {
-  color: #c0392b;
+  line-height: 1;
 }
 .photos .item {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -13158,6 +13154,32 @@ header .logo-txt .logo-description {
 .list .category a:hover {
   border-bottom-color: #dddddd;
   color: #333333;
+}
+.about {
+  background-color: #f1f3f4;
+  position: relative;
+}
+.about .item {
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 1200px) {
+  .about::before {
+    background-color: #f1f3f4;
+    padding-right: 9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    margin-left: -9999px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
 }
 .pagination {
   font-size: 1rem;
