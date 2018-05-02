@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://milkleaks.ru/</link>
+    <link>https://milkleaks.ru/</link>
     <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
     <language>ru</language>
-    <atom:link href="http://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
     <yandex:analytics id="40455205" type="Yandex"></yandex:analytics>
     
       <item turbo="true">
         <title>Обход блокировки Telegram</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/obhod-blokirovki-telegram/</guid>
-        <link>http://milkleaks.ru/blog/obhod-blokirovki-telegram/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/obhod-blokirovki-telegram/</guid>
+        <link>https://milkleaks.ru/blog/obhod-blokirovki-telegram/</link>
         <description>&lt;p&gt;С 2017 года в мессенджере Telegram существует возможность обойти блокировки используя прокси сервер. Бесплатные адреса прокси можно получить, например, на &lt;a href=&quot;https://hideip.me/en/proxy/socks5list&quot;&gt;hideip.me&lt;/a&gt;. Чтобы указать прокси на мобильных устройствах откройте настройки:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -94,8 +94,8 @@
     
       <item turbo="true">
         <title>Перелёт OVB - DME - OVB или туда и обратно</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</guid>
-        <link>http://milkleaks.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</guid>
+        <link>https://milkleaks.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</link>
         <description>&lt;p&gt;Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -314,8 +314,8 @@
     
       <item turbo="true">
         <title>Сноски на полях в Эгее</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/snoski-na-poljah-v-egee/</guid>
-        <link>http://milkleaks.ru/blog/snoski-na-poljah-v-egee/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/snoski-na-poljah-v-egee/</guid>
+        <link>https://milkleaks.ru/blog/snoski-na-poljah-v-egee/</link>
         <description>&lt;p&gt;Вновь из вопросов в телеграм «Как сделать сноски на полях в Эгее?». Добавим немного магии и стилей в css файл вашего шаблона.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -482,8 +482,8 @@
     
       <item turbo="true">
         <title>Jekyll и изображения</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/jekyll-i-izobrazhenija/</guid>
-        <link>http://milkleaks.ru/blog/jekyll-i-izobrazhenija/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/jekyll-i-izobrazhenija/</guid>
+        <link>https://milkleaks.ru/blog/jekyll-i-izobrazhenija/</link>
         <description>&lt;p&gt;Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/&quot;&gt;справке&lt;/a&gt; GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала &lt;a href=&quot;https://imgur.com/&quot;&gt;imgur&lt;/a&gt;, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.&lt;/p&gt;
 
 &lt;p&gt;Например &lt;a href=&quot;https://cloudinary.com/&quot;&gt;Cloudinary&lt;/a&gt; — облачное хранилище, позволяет загружать и всячески взаимодействовать с изображениями. Бесплатный тариф включает в себя десять гигабайт свободного места или три сотни тысяч изображений — должно хватить для небольшого блога, после можно перейти на платный тариф или поискать другое облачное хранилище. В cloudinary изображения можно всячески редактировать, менять размеры, создавать превью, обрезать и применять эффекты (Каждое отредактированное или сгенерированное изображение считается за отдельное). Для Jekyll есть соответствующий &lt;a href=&quot;https://nhoizey.github.io/jekyll-cloudinary/&quot;&gt;плагин&lt;/a&gt;, он позволяет создавать превьюшки к изображениям из вашего блога. Минус в том, что исходные картинки хранятся на вашем хостинге, а генерация блога и изображений под разные размеры экранов занимает довольно продолжительное время. Я же пошла другим путём и заливаю изображения напрямую через админку cloudinary, а для встраивания их в записи написала костыли на ruby в виде &lt;a href=&quot;https://gist.github.com/sasha-travkina/851bba69a34801cdc342ff5b9c38fe58&quot;&gt;&lt;strong&gt;плагина&lt;/strong&gt;&lt;/a&gt; для Jekyll. Достаточно скопировать часть ссылки на изображение и вставить в тег — он автоматически создаёт превью по размерам указанным в конфиге блога, оборачивает прямой ссылкой на полное изображение, но при этом не сокращает время генерации Jekyll. Ко всему, можно добавить описание изображения (Поддерживает разметку markdown) и указать свои классы которыми оно будет обёрнуто, что добавляет простора для кастомизации. Благодаря тому, что в блоге теперь отображаются превьюшки, а не полные изображения — Google Page Speed выдает 90 баллов из 100.&lt;/p&gt;
@@ -500,8 +500,8 @@
     
       <item turbo="true">
         <title>Короткометражный фильм «Papers, Please»</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/papers-please-korotkometrazhyi-film/</guid>
-        <link>http://milkleaks.ru/blog/papers-please-korotkometrazhyi-film/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/papers-please-korotkometrazhyi-film/</guid>
+        <link>https://milkleaks.ru/blog/papers-please-korotkometrazhyi-film/</link>
         <description>&lt;p&gt;Наконец таки, спустя год съемочного процесса, вышел короткометражный фильм от российских режиссеров, Никиты Ордынского и Лилии Ткач в лице Kinodom Production, по мотивам одноименной игры Лукаса Поупа «Papers, Please». В главной роли инспектора - Игорь Савочкин. Критику, восхищения и пожелания авторам можно оставить в их &lt;a href=&quot;https://vk.com/paperspleasefilm&quot;&gt;официальной группе&lt;/a&gt;, а сам фильм можно &lt;a href=&quot;http://store.steampowered.com/app/804320/Papers_Please__The_Short_Film/&quot;&gt;добавить&lt;/a&gt; в свою коллекцию Steam.&lt;/p&gt;
 
 &lt;div class=&quot;full dark&quot;&gt;
@@ -538,8 +538,8 @@
     
       <item turbo="true">
         <title>Обновление блога</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/obnovlenie-bloga/</guid>
-        <link>http://milkleaks.ru/blog/obnovlenie-bloga/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/obnovlenie-bloga/</guid>
+        <link>https://milkleaks.ru/blog/obnovlenie-bloga/</link>
         <description>&lt;p&gt;Пока мне было лень писать новые посты я неспешно обновляла шаблон блога, полностью его переписав с использованием адаптивных фреймворков &lt;a href=&quot;http://paulradzkov.com/&quot;&gt;Павла Радькова&lt;/a&gt;. Теперь шаблон строится с использованием less и плагина для его поддержки - &lt;a href=&quot;https://github.com/zroger/jekyll-less&quot;&gt;jekyll-less&lt;/a&gt;, а не стандартного, для Jekyll, sass. Фреймворки же позволяют легко верстать страницы при помощи удобных, глобальных переменных, а сами содержат лишь основные стили для формирования тела сайта, блоков, отступов, заголовков и ссылок, без той излишней нагруженности, что есть, скажем, в Bootstrap. Что, в общем-то, в разы облегчает процесс написания шаблона. Так, например, самописный файл стилей сократился с двух тысяч, до семиста строк. Всё остальное подхватывается из подключенных модулей. Думаю, его можно было бы сократить и ещё.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -616,8 +616,8 @@
     
       <item turbo="true">
         <title>О любимых сериалах</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/o-ljubimyh-serialah/</guid>
-        <link>http://milkleaks.ru/blog/o-ljubimyh-serialah/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/o-ljubimyh-serialah/</guid>
+        <link>https://milkleaks.ru/blog/o-ljubimyh-serialah/</link>
         <description>&lt;blockquote&gt;
   &lt;p&gt;Удивительно, но я, как и многие, смотрю сериалы. А потому, хотелось бы рассказать о тех, которые так или иначе мне полюбились. О тех, которые были закончены и просмотрены целиком, либо всё ещё не заброшены, если новые сезоны до сих пор выходят и остаются на достойном уровне. Собственно, краткие обзоры без каких бы то ни было серьезных спойлеров.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -880,8 +880,8 @@
     
       <item turbo="true">
         <title>Кат в Эгее</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/kat-v-egee/</guid>
-        <link>http://milkleaks.ru/blog/kat-v-egee/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/kat-v-egee/</guid>
+        <link>https://milkleaks.ru/blog/kat-v-egee/</link>
         <description>&lt;p&gt;Как известно &lt;a href=&quot;https://blogengine.ru&quot;&gt;Эгея&lt;/a&gt; не имеет функции скрытия длинных постов под катом, в этой &lt;a href=&quot;https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/&quot;&gt;статье&lt;/a&gt; Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта &lt;a href=&quot;http://jedfoster.com/Readmore.js/&quot;&gt;readmore.js&lt;/a&gt;. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -1128,8 +1128,8 @@
     
       <item turbo="true">
         <title>Beat Cop</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/beat-cop/</guid>
-        <link>http://milkleaks.ru/blog/beat-cop/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/beat-cop/</guid>
+        <link>https://milkleaks.ru/blog/beat-cop/</link>
         <description>&lt;p&gt;Джек Келли - бывший детектив низвергнутый до простого патрульного Бруклинских улиц Нью-Йорка. Его подозревают в хищении бриллиантов у сенатора, ибо несмотря на то, что на последнем задании грабитель сенаторского особняка был пристрелен - кому-то всё же удалось опустошить сейф сенатора и скрыться безнаказанным, тем самым подставив незадачливого детектива. Теперь Келли вынужден патрулировать улицы, выполнять нормы по штрафам за неправильную парковку, травить тараканов в местной забегаловке, спасать самоубийц от самоподжога и задерживать мелких воришек - балансируя между конфликтующими бандами «макаронников» и «черномазых» в ожидании завершения расследования. Не забывая платить алименты бывшей жене, конечно же.&lt;/p&gt;
 
 &lt;figure class=&quot;picture&quot;&gt;
@@ -1180,8 +1180,8 @@
     
       <item turbo="true">
         <title>Новый, новый, новый год</title>
-        <guid isPermaLink="true">http://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
-        <link>http://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
+        <link>https://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
         <description>&lt;p&gt;Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард. Люди неистово закупают продукты, подарки и алкоголь, и вообще всячески пытаются веселится, о чём говорят их нетрезвые голоса под окнами. В конце уходящего года многие подводят его итоги - обдумывают и делятся прошедшими событиями в своих уютных блогах и соцсетях, а также строят грандиозные планы на год будущий. Поддавшись традиции я тоже решила подвести итоги две тысячи семнадцатого, пусть и не вдаваясь в подробности событий жизни вне Сети, не смотря на то, что и их было предостаточно.&lt;/p&gt;
 
 &lt;figure class=&quot;picture&quot;&gt;
