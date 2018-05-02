@@ -3,7 +3,7 @@
 		{% include breadcrumbs.html %}
 		
 		<div class="space-in-top-mili-xs copyright">
-			{{ site.author }} &copy; {% if page.path contains '_posts' %}{{ page.date | russian_date }}{% elsif page.path contains '_photos' %}{{ page.date | russian_date }}{% else %}2015 - {{ site.time | date: '%Y' }}{% endif %}
+			{{ site.author }} &copy; <time>{% if page.path contains '_posts' %}{{ page.date | russian_date }}{% elsif page.path contains '_photos' %}{{ page.date | russian_date }}{% else %}2015 - {{ site.time | date: '%Y' }}{% endif %}</time>
 		</div>
 	{% else %}
 		<div class="space-in-top-mili-xs copyright"></div>
