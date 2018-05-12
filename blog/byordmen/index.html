@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="Бёрдмэн &middot; Milkleaks">
 	<meta name="twitter:description" content="О «Бёрдмене» мне доводилось слышать еще в прошлом году, но до просмотра фильма дело так и не доходило, вероятно из-за невнятного постера или непривлекательного описания сюжета. Тем не менее, «Бёрдмэн» — фильм не о очередном супергерое, но трагикомедия о нелегкой...">
-	<meta name="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519010050/02_v5oyet.jpg">
+	<meta name="twitter:image" content="v1525702025/thumb_w7x763.png">
 
 	<meta property="og:title" content="Бёрдмэн &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/byordmen/">
 	<meta property="og:description" content="О «Бёрдмене» мне доводилось слышать еще в прошлом году, но до просмотра фильма дело так и не доходило, вероятно из-за невнятного постера или непривлекательного описания сюжета. Тем не менее, «Бёрдмэн» — фильм не о очередном супергерое, но трагикомедия о нелегкой..."/>
-	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519010050/02_v5oyet.jpg" />
+	<meta property="og:image" content="v1525702025/thumb_w7x763.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -67,8 +70,8 @@
 		"@type":"BlogPosting",
 		"headline":"Бёрдмэн",
 		"genre":"Фильмы",
-		"keywords":"",
-		"wordCount":"545",
+		"keywords":"На главной",
+		"wordCount":"548",
 		"url":"https://milkleaks.ru/blog/byordmen/",
 		"datePublished":"2016-01-09",
 		"dateModified":"2016-01-09",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519010050/02_v5oyet.jpg",
+			"contentUrl":"v1525702025/thumb_w7x763.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,46 +109,52 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="page-post">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>Бёрдмэн</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-
+			<h1>Бёрдмэн</h1>
+		
 		
 		<p>О «Бёрдмене» мне доводилось слышать еще в прошлом году, но до просмотра фильма дело так и не доходило, вероятно из-за невнятного постера или непривлекательного описания сюжета. Тем не менее, «Бёрдмэн» — фильм не о очередном супергерое, но трагикомедия о нелегкой судьбе актеров, о пристрастиях современного зрителя, о упадке интереса к театру в угоду «попкорновго» кино. Фильм о закулисных дрязгах, эгоизме, тщеславии, внутренних конфликтах и, разумеется, творчестве. Мнение без спойлеров.</p>
 
+
+
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519010050/01_fmawlc.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519010050/01_fmawlc.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519010050/01_fmawlc.jpg">
 				</a>
 				
 			</figure>
@@ -154,7 +163,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519010050/02_v5oyet.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519010050/02_v5oyet.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519010050/02_v5oyet.jpg">
 				</a>
 				
 			</figure>
@@ -167,90 +176,36 @@
 
 <p>Хочется сказать, что в целом «Бёрдмэн» неплохой, неоднозначный фильм, с хорошей актерской игрой и операторской работой, после просмотра которого есть над чем поразмыслить. Концовка слегка сумбурна, последние пять минут фильма кажутся не совсем к месту, в остальном сюжет завершен и отчетливо, хоть и весьма стремительно, показывает жизнь главного героя и театра со стороны сцены. Тем не менее в повторном просмотре «Бёрдмэн» не нуждается.</p>
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Как Windows 10 видеокарты убивал" class="link" href="/blog/kak-windows-10-videokarty-ubival/">&larr; Ранее</a>
+			<a title="Как Windows 10 видеокарты убивал" class="link" href="/blog/kak-windows-10-videokarty-ubival/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="«Роскомнадзор» и обход блокировок" class="link" href="/blog/roskomnadzor-i-obhod-blokirovok/">Позднее &rarr;</a>
+			<a title="«Роскомнадзор» и обход блокировок" class="link" href="/blog/roskomnadzor-i-obhod-blokirovok/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time> 9 января 2016</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/фильмы/"><span property="name">Фильмы</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Бёрдмэн</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time> 9 января 2016</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -263,10 +218,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -290,15 +241,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

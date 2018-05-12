@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="День женской солидарности &middot; Milkleaks">
 	<meta name="twitter:description" content="Календарное восьмое марта, он же «Международный женский день», прошло уже чуть более недели назад, но мой блог не был бы прокрастинирующим если бы я выражала свои размышления в тот же час, когда они оформились в слова и предложения. Собственно говоря,...">
-	<meta name="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519036081/01_nrbdlk.jpg">
+	<meta name="twitter:image" content="v1525701234/thumb_x7gnnp.png">
 
 	<meta property="og:title" content="День женской солидарности &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/den-zhenskoy-solidarnosti/">
 	<meta property="og:description" content="Календарное восьмое марта, он же «Международный женский день», прошло уже чуть более недели назад, но мой блог не был бы прокрастинирующим если бы я выражала свои размышления в тот же час, когда они оформились в слова и предложения. Собственно говоря,..."/>
-	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519036081/01_nrbdlk.jpg" />
+	<meta property="og:image" content="v1525701234/thumb_x7gnnp.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -67,8 +70,8 @@
 		"@type":"BlogPosting",
 		"headline":"День женской солидарности",
 		"genre":"Заметки",
-		"keywords":"",
-		"wordCount":"527",
+		"keywords":"На главной",
+		"wordCount":"530",
 		"url":"https://milkleaks.ru/blog/den-zhenskoy-solidarnosti/",
 		"datePublished":"2016-03-16",
 		"dateModified":"2016-03-16",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519036081/01_nrbdlk.jpg",
+			"contentUrl":"v1525701234/thumb_x7gnnp.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,46 +109,52 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="page-post">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>День женской&nbsp;солидарности</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-
+			<h1>День женской&nbsp;солидарности</h1>
+		
 		
 		<p>Календарное восьмое марта, он же «Международный женский день», прошло уже чуть более недели назад, но мой блог не был бы прокрастинирующим если бы я выражала свои размышления в тот же час, когда они оформились в слова и предложения. Собственно говоря, хотелось бы написать пару строк насчет этого исторического события столь тщательно отмечаемого каждый год, но весь смысл которого в Российских реалиях сошел на нет и превратился в день красоты, весны и Будда знает чего еще, с цветами, шампунями, комплиментами к платью, что никак не относящийся к изначальной сути праздника.</p>
 
+
+
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519036081/01_nrbdlk.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519036081/01_nrbdlk.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519036081/01_nrbdlk.jpg">
 				</a>
 				
 			</figure>
@@ -156,90 +165,36 @@
 
 <p>P. S. К слову, хочется сказать что мужчины также способны отстаивать свои права, например право не призываться в регулярную армию принудительно (Один из главных аргументов неравноправия мужчин по отношению к женщинам). Да, обязательный призыв в армию есть неравноправие по отношению к мужскому слою населения, но это неравноправие создано не женщинами в отношении мужчин, а мужчинами в отношении мужчин. Конкретнее, заявлением права государства на свободу личности и право распоряжения жизнью. И если представителей того или иного класса что-то не устраивает или угнетает, они собираются вместе и отстаивают свои права перед государством, как это делали в свое время женщины в Нью-Йорке тысяча девятьсот восьмого года, а позже в России семнадцатого.</p>
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Dying Light" class="link" href="/blog/dying-light/">&larr; Ранее</a>
+			<a title="Dying Light" class="link" href="/blog/dying-light/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="Мнение о The Witcher 3 Wild Hunt" class="link" href="/blog/mnenie-o-the-witcher-3-wild-hunt/">Позднее &rarr;</a>
+			<a title="Мнение о The Witcher 3 Wild Hunt" class="link" href="/blog/mnenie-o-the-witcher-3-wild-hunt/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>16 марта 2016</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/заметки/"><span property="name">Заметки</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">День женской солидарности</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>16 марта 2016</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -252,10 +207,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -279,15 +230,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

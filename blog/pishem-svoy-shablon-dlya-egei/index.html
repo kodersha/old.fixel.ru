@@ -12,7 +12,7 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -68,7 +71,7 @@
 		"headline":"Пишем свой шаблон для Эгеи",
 		"genre":"Веб",
 		"keywords":"Эгея, Гайд",
-		"wordCount":"1509",
+		"wordCount":"1485",
 		"url":"https://milkleaks.ru/blog/pishem-svoy-shablon-dlya-egei/",
 		"datePublished":"2017-04-29",
 		"dateModified":"2017-04-29",
@@ -106,40 +109,44 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="page-post">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post js-toc-content">
-		<h1>Пишем свой шаблон для&nbsp;Эгеи</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid js-toc-content">
 		
-	
-
+			<h1>Пишем свой шаблон для&nbsp;Эгеи</h1>
+		
 		
 			<div class="toc js-toc"></div>
 		
@@ -162,7 +169,7 @@
 
 <p>Называем свою тему для русской и английской версии для отображения в настройках сайта.</p>
 
-<h2 id="структура-папок">Структура папок</h2>
+<h3 id="структура-папок">Структура папок</h3>
 
 <div block="">
     <p><mark>../themes/ghost/images</mark> — Папка с изображениями темы.</p>
@@ -173,7 +180,7 @@
 
 <p>Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути <code class="highlighter-rouge">../system/theme</code>.</p>
 
-<h2 id="шаблоны">Шаблоны</h2>
+<h3 id="шаблоны">Шаблоны</h3>
 
 <p>Теперь стоит подробнее разобрать содержимое папки <code class="highlighter-rouge">../system/theme/templates</code> стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты.</p>
 
@@ -181,9 +188,9 @@
 
 <p><code class="highlighter-rouge">author-menu.tmpl.php</code> — Меню автора.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/01_u94w7j.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055157/01_u94w7j.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055157/01_u94w7j.png">
 				</a>
 				
 			</figure>
@@ -192,9 +199,9 @@
 
 <p><code class="highlighter-rouge">comments-heading.tmpl.php</code> — Заголовок списка комментариев с счетчиком их количества.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/02_dqegcp.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055157/02_dqegcp.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055157/02_dqegcp.png">
 				</a>
 				
 			</figure>
@@ -203,9 +210,9 @@
 
 <p><code class="highlighter-rouge">comments.tmpl.php</code> — Список комментариев.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/03_oiureh.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055157/03_oiureh.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055157/03_oiureh.png">
 				</a>
 				
 			</figure>
@@ -214,9 +221,9 @@
 
 <p><code class="highlighter-rouge">drafts.tmpl.php</code> — Список черновиков.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/04_gegc6o.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055157/04_gegc6o.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055157/04_gegc6o.png">
 				</a>
 				
 			</figure>
@@ -225,9 +232,9 @@
 
 <p><code class="highlighter-rouge">form-comment.tmpl.php</code> — Форма комментирования.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/05_iffrnu.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055157/05_iffrnu.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055157/05_iffrnu.png">
 				</a>
 				
 			</figure>
@@ -236,9 +243,9 @@
 
 <p><code class="highlighter-rouge">form-database.tmpl.php</code> — Форма подключения к базе данных.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055157/06_yor8w5.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055157/06_yor8w5.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055157/06_yor8w5.png">
 				</a>
 				
 			</figure>
@@ -251,9 +258,9 @@
 
 <p><code class="highlighter-rouge">form-login.tmpl.php</code> — Форма авторизации.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/07_tyqwia.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055158/07_tyqwia.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055158/07_tyqwia.png">
 				</a>
 				
 			</figure>
@@ -262,9 +269,9 @@
 
 <p><code class="highlighter-rouge">form-note-delete.tmpl.php</code> — Форма удаления поста.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/08_qujnf6.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055158/08_qujnf6.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055158/08_qujnf6.png">
 				</a>
 				
 			</figure>
@@ -273,9 +280,9 @@
 
 <p><code class="highlighter-rouge">form-note-publish.tmpl.php</code> — Кнопка публикации поста.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/09_li03z6.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055158/09_li03z6.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055158/09_li03z6.png">
 				</a>
 				
 			</figure>
@@ -284,9 +291,9 @@
 
 <p><code class="highlighter-rouge">form-note.tmpl.php</code> — Форма публикации поста.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/10_ufuc0b.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055158/10_ufuc0b.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055158/10_ufuc0b.png">
 				</a>
 				
 			</figure>
@@ -295,9 +302,9 @@
 
 <p><code class="highlighter-rouge">form-password.tmpl.php</code> — Форма смены админ-пароля.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055158/11_hhe2au.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055158/11_hhe2au.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055158/11_hhe2au.png">
 				</a>
 				
 			</figure>
@@ -306,9 +313,9 @@
 
 <p><code class="highlighter-rouge">form-preferences.tmpl.php</code> — Форма общих настроек блога.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/13_i8udli.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055160/13_i8udli.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055160/13_i8udli.png">
 				</a>
 				
 			</figure>
@@ -317,9 +324,9 @@
 
 <p><code class="highlighter-rouge">form-tag-delete.tmpl.php</code> — Форма удаления тега.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/14_jwipj8.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055159/14_jwipj8.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055159/14_jwipj8.png">
 				</a>
 				
 			</figure>
@@ -328,9 +335,9 @@
 
 <p><code class="highlighter-rouge">form-tag.tmpl.php</code> — Форма редактирования тега.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/15_p02lox.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055160/15_p02lox.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055160/15_p02lox.png">
 				</a>
 				
 			</figure>
@@ -343,9 +350,9 @@
 
 <p><code class="highlighter-rouge">heading.tmpl.php</code> — Заголовки.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/16_sxxqud.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055159/16_sxxqud.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055159/16_sxxqud.png">
 				</a>
 				
 			</figure>
@@ -362,9 +369,9 @@
 
 <p><code class="highlighter-rouge">login-element.tmpl.php</code> — Кнопка авторизации.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/17_gtjx4a.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055159/17_gtjx4a.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055159/17_gtjx4a.png">
 				</a>
 				
 			</figure>
@@ -385,9 +392,9 @@
 
 <p><code class="highlighter-rouge">pages-earlier.tmpl.php</code> — Кнопка к постам «Ранее».</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055159/18_z1fn67.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055159/18_z1fn67.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055159/18_z1fn67.png">
 				</a>
 				
 			</figure>
@@ -396,9 +403,9 @@
 
 <p><code class="highlighter-rouge">pages-later.tmpl.php</code> — Кнопка к постам «Позднее».</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/19_twa7wi.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055160/19_twa7wi.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055160/19_twa7wi.png">
 				</a>
 				
 			</figure>
@@ -407,9 +414,9 @@
 
 <p><code class="highlighter-rouge">pages.tmpl.php</code> — Навигация между постами.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055161/20_vsrib7.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055161/20_vsrib7.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055161/20_vsrib7.png">
 				</a>
 				
 			</figure>
@@ -418,9 +425,9 @@
 
 <p><code class="highlighter-rouge">popular.tmpl.php</code> — Блок популярных постов.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/21_ukwlhu.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055160/21_ukwlhu.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055160/21_ukwlhu.png">
 				</a>
 				
 			</figure>
@@ -429,9 +436,9 @@
 
 <p><code class="highlighter-rouge">search.tmpl.php</code> — Форма поиска и теги.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/22_r7lfmw.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055160/22_r7lfmw.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055160/22_r7lfmw.png">
 				</a>
 				
 			</figure>
@@ -440,9 +447,9 @@
 
 <p><code class="highlighter-rouge">tags-menu.tmpl.php</code> — Список избранных тегов.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055160/23_lbl7ii.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055160/23_lbl7ii.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055160/23_lbl7ii.png">
 				</a>
 				
 			</figure>
@@ -451,9 +458,9 @@
 
 <p><code class="highlighter-rouge">tags.tmpl.php</code> — Страница тегов.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055161/24_fldmsy.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055161/24_fldmsy.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055161/24_fldmsy.png">
 				</a>
 				
 			</figure>
@@ -462,9 +469,9 @@
 
 <p><code class="highlighter-rouge">user-blockture.tmpl.php</code> — Аватар блога.</p>
 
-<figure class="picture wrap left">
+<figure class="picture left">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519055161/25_zw1ide.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519055161/25_zw1ide.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519055161/25_zw1ide.png">
 				</a>
 				
 			</figure>
@@ -473,7 +480,7 @@
 
 <p>Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы <code class="highlighter-rouge">../system/theme/templates</code> в папку <code class="highlighter-rouge">templates</code> вашего шаблона и уже там производите все изменения.</p>
 
-<h2 id="подключение-частей-шаблона">Подключение частей шаблона</h2>
+<h3 id="подключение-частей-шаблона">Подключение частей шаблона</h3>
 
 <p>Официальная <a href="https://docs.google.com/document/d/1yn7KCHq47oli7IH--skhymjjj2OSlXjcyGOxZ2ZEPeA/edit#heading=h.j2h2wr6xhlie" rel="nofollow" target="_blank">документация</a> по шаблонам Эгеи сообщает:</p>
 
@@ -521,8 +528,8 @@ _X () — вставляет дополнительный блок (не заб�
 
 <p>Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный <code class="highlighter-rouge">layout.tmpl.php</code> с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.</p>
 
-<h2 id="подключение-собственных-js-и-css">Подключение собственных <span class="caps">JS</span> и <span class="caps">CSS</span>
-</h2>
+<h3 id="подключение-собственных-js-и-css">Подключение собственных <span class="caps">JS</span> и <span class="caps">CSS</span>
+</h3>
 
 <p>Для подключения <span class="caps">JS</span> и <span class="caps">CSS</span> в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <code class="highlighter-rouge">main.tmpl.php</code> и посмотрите в конец файла, после закрывающегося тега <code class="highlighter-rouge">body</code>:</p>
 
@@ -557,90 +564,36 @@ _X () — вставляет дополнительный блок (не заб�
 <p class="aside">Смотрите ещё: <a href="/blog/kat-v-egee">Кат в Эгее</a>, <a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a> и <a href="/blog/snoski-na-poljah-v-egee/">Сноски на полях в Эгее</a>.</p>
 
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Wallpaper Engine" class="link" href="/blog/wallpaper-engine/">&larr; Ранее</a>
+			<a title="Wallpaper Engine" class="link" href="/blog/wallpaper-engine/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="What Remains of Edith Finch" class="link" href="/blog/what-remains-of-edith-finch/">Позднее &rarr;</a>
+			<a title="What Remains of Edith Finch" class="link" href="/blog/what-remains-of-edith-finch/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>29 апреля 2017</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/веб/"><span property="name">Веб</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Пишем свой шаблон для Эгеи</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>29 апреля 2017</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -653,10 +606,6 @@ _X () — вставляет дополнительный блок (не заб�
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -680,15 +629,14 @@ _X () — вставляет дополнительный блок (не заб�
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

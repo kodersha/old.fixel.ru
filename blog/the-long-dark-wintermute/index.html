@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="The Long Dark: Wintermute &middot; Milkleaks">
 	<meta name="twitter:description" content="Первого августа наконец таки вышел долгожданный сюжетный режим для The Long Dark — симулятора выживания в диких условиях холодной Канады. Напомню, что игра разрабатывалась с двадцать второго сентября 2014 года и лишь первого августа 2017 вышла из стадии альфа-тестирования привнеся...">
-	<meta name="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519580639/thumb_cnlkq6.jpg">
+	<meta name="twitter:image" content="v1525626553/thumb_qfq6ou.png">
 
 	<meta property="og:title" content="The Long Dark: Wintermute &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/the-long-dark-wintermute/">
 	<meta property="og:description" content="Первого августа наконец таки вышел долгожданный сюжетный режим для The Long Dark — симулятора выживания в диких условиях холодной Канады. Напомню, что игра разрабатывалась с двадцать второго сентября 2014 года и лишь первого августа 2017 вышла из стадии альфа-тестирования привнеся..."/>
-	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519580639/thumb_cnlkq6.jpg" />
+	<meta property="og:image" content="v1525626553/thumb_qfq6ou.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -67,8 +70,8 @@
 		"@type":"BlogPosting",
 		"headline":"The Long Dark: Wintermute",
 		"genre":"Игры",
-		"keywords":"Постапокалипсис, Открытый мир, Выживание, Крафтинг",
-		"wordCount":"880",
+		"keywords":"Постапокалипсис, Открытый мир, Выживание, Крафтинг, На главной",
+		"wordCount":"883",
 		"url":"https://milkleaks.ru/blog/the-long-dark-wintermute/",
 		"datePublished":"2017-08-03",
 		"dateModified":"2017-08-03",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519580639/thumb_cnlkq6.jpg",
+			"contentUrl":"v1525626553/thumb_qfq6ou.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,51 +109,68 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
+	<body class="page-post">
+
+	<div class="cover">
+		<div class="bg"></div>
+
+		<section class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg head">
+			<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+				<div class="row row-reverse-xs row-middle-sm">
+					<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+						<div class="search space-auto-left-md">
+							<div class="search-form">
+								<input type="text" id="search-input" class="search-box" />
+								<span class="search-button">
+									<i class="fa fa-search open" aria-hidden="true"></i>
+									<i class="fa fa-times close" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="dropdown">
+								<ul class="results" id="results-container"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-shrink logo">
+						<a class="link-logo" href="/">
+							<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+						</a>
+					</div>
 				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+			</header>
+
+			<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg content">
+				<div class="space-in-bottom-mili-xs space-auto-h-xs linel max info">
+					<h1>The Long Dark: Wintermute</h1>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
+		</section>
+
+		<style type="text/css">
+			.cover .bg {
+				background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1519219750/cover_harzul.jpg');
+			}
+		</style>
 	</div>
-</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>The Long Dark:&nbsp;Wintermute</h1>
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+    <section class="slide-up-fade-in space-in-top-mili-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover">
-			<div class="hidden-upto-xl frame"></div>
-			<img alt="The Long Dark: Wintermute" src="https://res.cloudinary.com/milkleaks/image/upload/w_1291/v1519219750/cover_harzul.jpg">
-		</div>
-	
-
 		
 		<p>Первого августа наконец таки вышел долгожданный сюжетный режим для <a href="/blog/the-long-dark/">The Long Dark</a> — симулятора выживания в диких условиях холодной Канады. Напомню, что игра разрабатывалась с двадцать второго сентября 2014 года и лишь первого августа 2017 вышла из стадии альфа-тестирования привнеся в себя сюжетный режим, новый игровой интерфейс и прочие мелочи.</p>
 
+
+
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519057036/01_btmfo4.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519057036/01_btmfo4.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519057036/01_btmfo4.jpg">
 				</a>
 				
 			</figure>
@@ -159,19 +179,19 @@
 
 
 
-<h2 id="открытый-мир">Открытый мир?</h2>
+<h3 id="открытый-мир">Открытый мир?</h3>
 
 <p>Все, кто играл в режим Выживания, помнят, что мир The Long Dark был всецело открыт для игрока и он волен был пойти куда угодно, однако в режиме сюжета мы наблюдаем несколько иную картину. Во вступлении, после крушения самолета, игрок ограничен небольшой площадкой, где игра обучает его своим основам. «Разведите костер, забинтуйте покалеченную руку, найдите еды. Шиповник пока трогать не надо, сейчас он не нужен.» — говорит нам игра и не дает собрать пресловутый шиповник пока это не понадобится по сюжету. Надо сказать что и обучение здесь несколько неполноценно, если шиповник собрать нужно, то как его готовить игра умалчивает — ищите в инвентаре сами, перелистывая все вкладки, пока не найдете, что перед тем как заварить чай из шиповника его нужно нарезать. Все это происходит в разных вкладках инвентаря и ни одна из них не ссылается на другую. Не очень отзывчиво.</p>
 
 <p>После этапа обучения игрок наконец выбирается с утеса, но и тут повествование ведет его по заданным рельсам. Локация весьма ограниченна и продвигаться можно только вперед, по установленной конве сюжета. Даже с моментом того, как главный герой приходит в небольшой, покинутый городишко под названием Милтон, свободы не становится больше. Да, вы можете пойти прямо, до автозаправки, либо назад к церкви, либо дойти до опустевшей фермы, но перейти на другую локацию нельзя, пока не позволит сюжет. А о нем отдельно.</p>
 
-<h2 id="еще-одно-поселение-нуждается-в-вашей-помощи">Еще одно поселение нуждается в вашей помощи</h2>
+<h3 id="еще-одно-поселение-нуждается-в-вашей-помощи">Еще одно поселение нуждается в вашей помощи</h3>
 
 <p>Прибыв в Милтон, Уилл Маккензи находит единственного выжившего — старушку по прозвищу Серая Мать. Она же и дает ему первое задание — заготовить охапку дров дабы пережить зиму. Тут то и начинается «классика жанра» в виде квестов «пойди принеси», чтобы затем открыть еще немного сюжета. А потому, после того как игрок насобирает дров, следует другое, не менее скучное задание — заготовить старушке съедобных припасов. Здесь свобода выбора заключается лишь в том, как вы будете это делать — нарубите веток или мебель в покинутых домах, добудете провиант охотой или собирательством из тех же домов. Не то что бы это были самые плохие квесты, но как минимум от The Long Dark ожидаешь немного иного. Подобные же задания негативно влияют на атмосферу, ибо стараешься закончить со всем этим побыстрее пробежав по карте в поисках необходимого лута, чтобы получить очередную порцию истории.</p>
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519057037/02_dlckix.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519057037/02_dlckix.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519057037/02_dlckix.jpg">
 				</a>
 				<figcaption class="caption"><p>На момент релиза, кат-сцены, не смотря на свою симпатичность, грешат множеством багов. Обратите внимание на ногу Маккензи, проходящую сквозь стул.</p>
 </figcaption>
@@ -179,97 +199,43 @@
 
 <p>Так же хочется отметить и несовершенство искусственного интеллекта, а именно заскриптованность волков, которые бродят по главной улице Милтона. Так, например, один из них три дня кряду поедал бренную тушу оленя, пока я не продвинулась по сюжету дальше и его не отпустило. Реализм.</p>
 
-<h2 id="что-в-итоге">Что в итоге?</h2>
+<h3 id="что-в-итоге">Что в итоге?</h3>
 
 <p>Конечно стоит учитывать, что контора Hinterland Studio Inc., разрабатывающая The Long Dark, совсем не велика, а большинство багов будут исправлены следующими патчами, но лично я от «Wintermute» ожидала несколько иного. Пусть не открытый для исследования мир с возможностью выбрать для себя задание и место куда можно пойти, как это было в каком ни будь Fallout или <span class="caps">S.T.A.L.K.E.R.</span>, но и не линейность с псевдо-открытым миром, как это было в <a href="/blog/firewatch/">Firewatch</a>. А открытый мир режима выживания The Long Dark располагал именно к тому, что игрок будет волен выбирать что ему делать и куда идти, попутно встречая случайных выживших и выживая самому, выполняя квесты и открывая историю основного сюжета, но видимо увы. Что и говорить о том, что с технической точки зрения, на данный момент сюжетный режим выглядит довольно сырым — проблемы с анимацией, отсутствие вменяемой локализации субтитров на русский язык (Переведено лишь половина, не смотря на то, что русская локализация официально заявлена), отсутствие озвучивания и анимации персонажей в диалогах вне кат-сцен, логические нестыковки в виде невозможности согреться от горящих обломков самолета. Продолжительные загрузки между локациями, всеобщие лаги у многих игроков и тому подобное.</p>
 
 <p>Подводя итог, хочется сказать, что режим Выживания в The Long Dark имеет свою, непередаваемую атмосферу, пусть в нем нет сюжета и какой бы то ни было цели, однако я провела в нем не один час, спасаясь от холода, исследуя очередной дом, охотясь на оленя и залечивая раны от волков. Что же касается сюжетного режима, когда игра ведет тебя за руку по проторенной дороге — теряется атмосфера свободы путешествия и приключений, которая была в режиме выживания. Несомненно я пройду весь сюжет The Long Dark, однако лишь только для того, чтобы узнать чем закончилась история Уилла Маккензи и посмотреть, что могут (Или не могут) предложить разработчики. Пока, увы, не впечатлило.</p>
 
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Stardew Valley" class="link" href="/blog/stardew-valley/">&larr; Ранее</a>
+			<a title="Stardew Valley" class="link" href="/blog/stardew-valley/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="Уютный Jekyll" class="link" href="/blog/ujutnyj-jekyll/">Позднее &rarr;</a>
+			<a title="Уютный Jekyll" class="link" href="/blog/ujutnyj-jekyll/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time> 3 августа 2017</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/игры/"><span property="name">Игры</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">The Long Dark: Wintermute</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time> 3 августа 2017</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -282,10 +248,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -309,15 +271,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

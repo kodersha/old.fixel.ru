@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="Cities Skylines &middot; Milkleaks">
 	<meta name="twitter:description" content="Очередная игра о строительстве мегаполиса мечты, от создателей транспортного симулятора Cities in Motion, а именно, от мало кому известной финской студии «Colossal Order» — спешит завоевать сердца всех любителей SimCity 2013 беря все лучшее и исправляя недочеты прародительницы. В Cities...">
-	<meta name="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1518869125/cover_grcyi8.jpg">
+	<meta name="twitter:image" content="v1526056956/thumb_hlpvek.png">
 
 	<meta property="og:title" content="Cities Skylines &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/cities-skylines/">
 	<meta property="og:description" content="Очередная игра о строительстве мегаполиса мечты, от создателей транспортного симулятора Cities in Motion, а именно, от мало кому известной финской студии «Colossal Order» — спешит завоевать сердца всех любителей SimCity 2013 беря все лучшее и исправляя недочеты прародительницы. В Cities..."/>
-	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1518869125/cover_grcyi8.jpg" />
+	<meta property="og:image" content="v1526056956/thumb_hlpvek.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -66,9 +69,9 @@
 		"@context":"http://schema.org",
 		"@type":"BlogPosting",
 		"headline":"Cities Skylines",
-		"genre":"",
-		"keywords":"",
-		"wordCount":"1023",
+		"genre":"Игры",
+		"keywords":"Градостроительный симулятор, Менеджер, На главной",
+		"wordCount":"1026",
 		"url":"https://milkleaks.ru/blog/cities-skylines/",
 		"datePublished":"2015-03-11",
 		"dateModified":"2015-03-11",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1518869125/cover_grcyi8.jpg",
+			"contentUrl":"v1526056956/thumb_hlpvek.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,53 +109,70 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
+	<body class="page-post">
+
+	<div class="cover">
+		<div class="bg"></div>
+
+		<section class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg head">
+			<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+				<div class="row row-reverse-xs row-middle-sm">
+					<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+						<div class="search space-auto-left-md">
+							<div class="search-form">
+								<input type="text" id="search-input" class="search-box" />
+								<span class="search-button">
+									<i class="fa fa-search open" aria-hidden="true"></i>
+									<i class="fa fa-times close" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="dropdown">
+								<ul class="results" id="results-container"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-shrink logo">
+						<a class="link-logo" href="/">
+							<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+						</a>
+					</div>
 				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+			</header>
+
+			<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg content">
+				<div class="space-in-bottom-mili-xs space-auto-h-xs linel max info">
+					<h1>Cities Skylines</h1>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
+		</section>
+
+		<style type="text/css">
+			.cover .bg {
+				background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1518869125/cover_grcyi8.jpg');
+			}
+		</style>
 	</div>
-</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>Cities&nbsp;Skylines</h1>
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+    <section class="slide-up-fade-in space-in-top-mili-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover">
-			<div class="hidden-upto-xl frame"></div>
-			<img alt="Cities Skylines" src="https://res.cloudinary.com/milkleaks/image/upload/w_1291/v1518869125/cover_grcyi8.jpg">
-		</div>
-	
-
 		
 		<p>Очередная игра о строительстве мегаполиса мечты, от создателей транспортного симулятора Cities in Motion, а именно, от мало кому известной финской студии «Colossal Order» — спешит завоевать сердца всех любителей SimCity 2013 беря все лучшее и исправляя недочеты прародительницы. В Cities Skylines нам все так же предстоит прокладывать бессчетное количество дорог, размечать жилые, коммерческие и промышленные зоны, заботиться о транспортной системе, электроэнергии, следить за экономикой, и делать все то, что необходимо для развития виртуального города. Как, собственно, и во всех градостроительных симуляторах испокон веков.</p>
+
+
 
 <p>Истина познается в сравнении. Так в чем же отличие Cities Skylines от всем известной SimCity? Перво-наперво, начинаем игру на квадрате два на два километра, так же как в SimCity (Даже окантовка карты выполнена тем же штрихом), но разница в том, что здесь Вы имеете возможность докупать участки территории по мере развития численности населения города, что позволяет расширять владения в несколько раз больше. Что же касается SimCity, территория карты быстро заканчивалась и строить становилось попросту некуда — что в целом-то и являлось большой ошибкой Maxis, но исправление этой ошибки — есть большой плюс в пользу Cities Skylines. Что касается строительства, изначально, все виды построек заблокированы — построить атомную станцию, едва основав город, нельзя было и в SimCity, но здесь Вы не сможете соорудить даже двухполосного проспекта, пока в город не заселится достаточное количество жителей. Предосторожность это, от бесполезной траты бюджета, или нет, вопрос спорный.</p>
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518869125/01_apy7mm.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1518869125/01_apy7mm.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1518869125/01_apy7mm.jpg">
 				</a>
 				
 			</figure>
@@ -165,7 +185,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518869125/02_eoahnl.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1518869125/02_eoahnl.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1518869125/02_eoahnl.jpg">
 				</a>
 				
 			</figure>
@@ -181,86 +201,34 @@
 
 <p>Cities Skylines — хороший градостроительный симулятор для всех любителей подобного рода игр. Во многом, функционально, он лучше всем известного, последнего SimCity, так как исправляет его недочеты, но, в отличии от оного, Cities Skylines не хватает отточенности, выверенности и блеска. Графика в игре на порядок хуже чем в SimCity, автомобили и дома не особо-то детализированы, а при сильном приближении окружение размывается фильтром. К плюсам относится размер карты, больше чем в SimCity — меньше чем в Cities<span class="caps">XL</span>, в целом удачная середина. Несомненно радует наличие в игре Steam Workshop, что позволяет сообществу Steam создавать и загружать модификации, а они, в свою очередь, ключ к разнообразию и процветанию. В общем и целом, Cities Skylines имеет хорошую перспективу развития и стоит того, что бы в нее играть.</p>
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="State Of Decay: YOSE" class="link" href="/blog/state-of-deacy-yose/">Позднее &rarr;</a>
+			<a title="State Of Decay: YOSE" class="link" href="/blog/state-of-deacy-yose/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>11 марта 2015</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/dungeon/"><span property="name">Старые записи</span><meta property="position" content="3" /></a>
-			</li>
-		
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Cities Skylines</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>11 марта 2015</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -273,10 +241,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -300,15 +264,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

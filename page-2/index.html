@@ -12,16 +12,16 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
-	<meta name="twitter:title" content="Milkleaks">
+	<meta name="twitter:title" content="Milkleaks &middot; Milkleaks">
 	<meta name="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
 	<meta name="twitter:image" content="">
 
-	<meta property="og:title" content="Milkleaks" />
+	<meta property="og:title" content="Milkleaks &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/page-2/">
 	<meta property="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -83,262 +86,940 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<div class="space-in-bottom-kilo-xs list linel">
-		<h1 class="space-out-bottom-micro-xs">Свежее в блоге</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-auto-h-xs content max">
+	<div class="space-in-bottom-kilo-xs space-minus-top-nano-xs row list">
 		
+		
+			<article class="col-xs-12 col-md-8 col-lg-6 space-in-v-nano-xs item">
+	<a href="/blog/den-zhenskoy-solidarnosti/" class="link-photo">
+		<section class="thumbnail color-white post-43">
 			
-				<article class="space-in-bottom-nano-xs item">	
-	<div class="title">
-		<a href="/blog/obhod-blokirovki-telegram/">Обход блокировки&nbsp;Telegram</a>
-	</div>
-	
-	
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525701234/thumb_x7gnnp.png">
+				</div>
 			
-		<div class="category">
-			<time>12 апреля 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/">Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт&nbsp;Толмачёво.</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>28 марта 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/заметки/">Заметки</a>
-		</div>
+					<span class="category">Заметки</span>
+							
+								
+				<time class="time">16 марта 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>День женской солидарности</h1>
+				
+				<span class="space-out-top-nano-xs description">
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/snoski-na-poljah-v-egee/">Сноски на полях в&nbsp;Эгее</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>18 марта 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+						Первое упоминание восьмого марта датировано ста восемью годами ранее, а именно тысяча девятьсот восьмым годом, когда в Нью-Йорке прошел массовый митинг в лице пятнадцати тысяч женщин, с требованием равных условий оплаты труда и избирательного права.
 					
+				</span>
+				
+			</div>
+		</a>
+	</a>
 	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-43 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-43 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-
-			
 		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/dying-light/" class="link-photo">
+		<section class="thumbnail color-white post-42">
 			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/jekyll-i-izobrazhenija/">Jekyll и&nbsp;изображения</a>
-	</div>
-	
-	
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525701527/thumb_ytvfig.png">
+				</div>
 			
-		<div class="category">
-			<time>13 марта 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/papers-please-korotkometrazhyi-film/">Короткометражный фильм «Papers,&nbsp;Please»</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>26 февраля 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/фильмы/">Фильмы</a>
-		</div>
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">22 февраля 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Dying Light</h1>
+				
+				<span class="space-out-top-nano-xs description">
 					
-	
-</article>
-
-
-			
-		
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/o-ljubimyh-serialah/">Удивительно, но я, как и многие, смотрю сериалы. А потому, хотелось бы рассказать о тех, которые так или иначе мне полюбились. О тех, которые были закончены и просмотрены целиком, либо всё ещё не заброшены, если новые сезоны до сих пор выходят и остаются на достойном&nbsp;уровне.</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time> 9 февраля 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/фильмы/">Фильмы</a>
-		</div>
+						Dying Light можно назвать лучшей игрой в жанре зомби-апокалипсиса на данный момент. Она удачно вбирает в себя множество разнообразных аспектов: Обширный открытый мир, свобода передвижения, паркур, создание и ремонт холодного оружия...
 					
+				</span>
+				
+			</div>
+		</a>
+	</a>
 	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-42 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-42 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-
-			
 		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/firewatch/" class="link-photo">
+		<section class="thumbnail color-default post-40">
 			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/kat-v-egee/">Кат в&nbsp;Эгее</a>
-	</div>
-	
-	
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525701749/thumb_cxabcl.png">
+				</div>
 			
-		<div class="category">
-			<time>23 января 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/beat-cop/">Beat&nbsp;Cop</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time> 3 января 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/игры/">Игры</a>
-		</div>
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">12 февраля 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Firewatch</h1>
+				
+				<span class="space-out-top-nano-xs description">
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-top-nano-xs item">	
-	<div class="title">
-		<a href="/blog/novyj-novyj-novyj-god/">Новый, новый, новый&nbsp;год</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>31 декабря 2017</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/заметки/">Заметки</a>
-		</div>
+						Повествование строится на личной драме главного героя Генри, который вновь пытаясь найти себя и справится с проблемами уезжает работать дозорным в дикие леса Вайоминга.
 					
+				</span>
+				
+			</div>
+		</a>
+	</a>
 	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-40 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-40 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-
-			
 		
-		<div class="space-out-top-micro-xs">
-			<a href="/blog/">Далее &rarr;</a>
-		</div>
-	</div>
-
-	<div class="space-in-v-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-zero-xl about">
-		<div class="item linel">
-			<h1 class="space-out-bottom-micro-xs">Александра Травкина</h1>
-			<p>Веб-дизайнер. Блогер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. Верстаю шаблоны и придумываю дизайны. Пишу обзоры и статьи о играх.</p>
-			<p>Прокрастинирую.</p>
-			<p class="space-out-bottom-zero-xs">Для связи <a target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a target="_blank" href="https://icq.com/people/633328999">ICQ</a>.</p>
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/byordmen/" class="link-photo">
+		<section class="thumbnail color-white post-37">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525702025/thumb_w7x763.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Фильмы</span>
+							
+								
+				<time class="time"> 9 января 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Бёрдмэн</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						«Бёрдмэн» — фильм не о очередном супергерое, но трагикомедия о нелегкой судьбе актеров, о пристрастиях современного зрителя, о упадке интереса к театру в угоду «попкорновго» кино.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-37 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-37 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/s-novym-godom-damy-i-gospoda/" class="link-photo">
+		<section class="thumbnail color-white post-35">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/thumb_vowgnx.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Заметки</span>
+							
+								
+				<time class="time">31 декабря 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>С Новым Годом, Дамы и Господа</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вот и подошел к концу очередной год, на этот раз две тысячи пятнадцатый. Для кого-то он был счастливым, для кого-то не очень.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-35 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-35 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/marsianin/" class="link-photo">
+		<section class="thumbnail color-default post-34">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525702408/thumb_ixmo6u.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Фильмы</span>
+							
+								
+				<time class="time">28 декабря 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Марсианин · Мужик, у тебя изолента есть?</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Я с особым трепетом отношусь к научной фантастике, будь то к книгам или их экранизациям, а потому не могла пропустить фильм Ридли Скотта «Марсианин» по мотивам одноименной книги Энди Вейера.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-34 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-34 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/the-escapists/" class="link-photo">
+		<section class="thumbnail color-white post-31">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525702724/thumb_qydecp.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">17 декабря 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>The Escapists</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						В The Escapists вам предстоит примерить на себя роль не героя, но обычного заключенного, а что хочет заключенный? Верно, свободы.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-31 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-31 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/vampyr-novaya-igra-ot-dontnod/" class="link-photo">
+		<section class="thumbnail color-white post-30">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525706015/thumb_wz67ir.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 4 декабря 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Vampyr · Новая игра от Dontnod</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Разработчики полюбившейся многим интерактивной истории Life is Strange, студия Dontnod Entertainment, поделились некоторыми подробностями своей будущей игры, которая пока что находится на стадии ранней разработки.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-30 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-30 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 space-in-v-nano-xs item">
+	<a href="/blog/itogi-the-game-awards-2015/" class="link-photo">
+		<section class="thumbnail color-white post-29">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525706404/thumb_mrrzyx.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 4 декабря 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Итоги The Game Awards 2015</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вот и завершился The Game Awards 2015. За почти два с половиной часа YouTube эфира было анонсировано и показано множество игр, а так же представлены награды в различных номинациях…
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-29 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-29 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/fallout-4-vse-i-srazu/" class="link-photo">
+		<section class="thumbnail color-white post-28">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525706735/thumb_s4kxsn.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">12 ноября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Fallout 4 · Все и сразу</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Мир Fallout это огромный и проработанный мир. Здесь вы в праве примерить на себя роль честного праведника или обольстительного вора-карманника. Можете встать на сторону Братства Стали или стереть их с лица земли...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-28 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-28 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/life-is-strange-obzor/" class="link-photo">
+		<section class="thumbnail color-white post-27">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525707846/thumb_cd97kx.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 7 ноября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Life Is Strange</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Это детально проработанное, качественно поставленное интерактивное кино с запоминающимися персонажами, местами и событиями.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-27 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-27 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/retrospektiva-prey/" class="link-photo">
+		<section class="thumbnail color-white post-26">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525708140/thumb_nqmf5a.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">28 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Ретроспектива · Prey</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Пока свежие поделки игровой индустрии не спешат появляться на свет, хотелось бы вспомнить о такой значимой для всех любителей научной фантастики и шутеров, игре, как Prey.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-26 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-26 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/soma-transmission/" class="link-photo">
+		<section class="thumbnail color-white post-25">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525708311/thumb_vldl5j.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Фильмы</span>
+							
+								
+				<time class="time">16 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>SOMA · Transmission</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Фильм повествует о событиях происходящих на научной, подводной станции PATHOS-ll спустя год, после того как Земля подверглась падению астероида.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-25 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-25 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/minecraft-story-mode/" class="link-photo">
+		<section class="thumbnail color-white post-24">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525708724/thumb_r5gbyw.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">15 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Minecraft: Story Mode</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Telltale Games, известные своими интерактивными квестами по разнообразным франшизам, добрались и до ранее бессюжетной песочницы Minecraft.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-24 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-24 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/the-flame-in-the-flood/" class="link-photo">
+		<section class="thumbnail color-white post-23">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525709046/thumb_ubds2x.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">11 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>The Flame in the Flood</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						The Flame in the Flood непринужденно погружает в уютную атмосферу американской глубинки, ночных посиделок у костра, путешествий по стремительным, необузданным рекам на импровизированном плоту в компании четвероногого друга, ну и конечно же, выживания.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-23 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-23 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/retrospektiva-kosmicheskie-reyndzhery/" class="link-photo">
+		<section class="thumbnail color-white post-22">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525709485/thumb_hvfczm.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 7 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Ретроспектива · Космические рейнджеры</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Сюжет первой части происходит в далеком будущем тридцать первого века, когда гуманоиды уже перестали решать конфликты с помощью топоров и вил, а космические корабли повсеместно бороздят просторы галактик.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-22 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-22 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 space-in-v-nano-xs item">
+	<a href="/blog/the-beginners-guide/" class="link-photo">
+		<section class="thumbnail color-white post-21">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525709702/thumb_oz9wsh.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 3 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>The Beginner’s Guide</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Это одна из тех необычных игр в которой не будет разнообразных монстров, множества видов оружия и спасения Америки...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-21 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-21 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/armikrog-19-let-spustya/" class="link-photo">
+		<section class="thumbnail color-default post-20">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525709916/thumb_c1iqqg.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 1 октября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Armikrog · 19 лет спустя</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Наверное все непременно должны помнить такую старую и замечательную point-and-click игру, выполненную из пластеина, как The Neverhood. И вот, спустя девятнадцать лет, выходит её долгожданное, идейное продолжение под названием Armikrog.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-20 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-20 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/soma/" class="link-photo">
+		<section class="thumbnail color-white post-19">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525710320/thumb_s6iqco.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">23 сентября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>SOMA</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Когда самый обычный день оборачивается погружением в неизведанные, ледяные глубины. Когда нет уверенности кто есть кто на самом деле. Когда приходится лишать жизни ради своей собственной. Когда надо бежать и прятаться от ужасов подводной станции.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-19 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-19 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/the-long-dark/" class="link-photo">
+		<section class="thumbnail color-white post-18">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525711157/thumb_yttbty.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">19 сентября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>The Long Dark</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Атмосфера одиночества и пронизывающего, стылого ветра. Опасность переохлаждения, голода и жажды. Страх перед дикими хозяевами леса. Разведение костра с последней спички.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-18 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-18 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/dont-starve/" class="link-photo">
+		<section class="thumbnail color-white post-17">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525711534/thumb_y2owln.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 9 сентября 2015</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Don’t Starve</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Нехитрый сюжет Don’t Starve начинается с того, что наш главный герой по-имени Уилсон, услышал загадочную трансляцию голоса из радиоприемника и, будучи ученым, сконструировал машину которая перенесла его в странный, но не слишком добрый, мир.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-17 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-17 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+		<div class="col-xs-12 space-in-top-nano-xs">
+			Больше постов и заметок в <a href="/blog/">блоге</a>.
 		</div>
 	</div>
 </section>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
 
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
+	<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 			
-		
-
-		
-
-		
+				<a class="link" rel="prev" href="/page-3/">&lsaquo; Ранее</a>
 			
-
-	
-
-	
-	
+		</span>
 		
-
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница: 2 из 3</span>
 		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name"></span><meta property="position" content="2" />
-			</li>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>2015 - 2018</time>
-		</div>
-	
+				<a class="link" rel="next" href="/">Позднее &rsaquo;</a>
+			
+		</span>
+	</nav>
 
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>2015 - 2018</time>
+	</div>
+
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -351,10 +1032,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -378,15 +1055,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

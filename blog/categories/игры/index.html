@@ -12,7 +12,7 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -83,36 +86,45 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl blog">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="blog">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
 	<h1>Игры</h1>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/far-cry-5-sektantskaja-zhvachka/">Far Cry 5 · Сектантская&nbsp;жвачка</a>
+		</article>
 	
 		<article class="space-in-bottom-nano-xs item">
 			<a href="/blog/beat-cop/">Beat&nbsp;Cop</a>
@@ -174,85 +186,144 @@
 			<a href="/blog/firewatch/">Firewatch</a>
 		</article>
 	
-		<article class="space-out-bottom-zero-xs item">
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/the-escapists/">The&nbsp;Escapists</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/vampyr-novaya-igra-ot-dontnod/">Vampyr · Новая игра от&nbsp;Dontnod</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/itogi-the-game-awards-2015/">Итоги The Game Awards&nbsp;2015</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/fallout-4-vse-i-srazu/">Fallout 4 · Все и&nbsp;сразу</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/life-is-strange-obzor/">Life Is&nbsp;Strange</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/retrospektiva-prey/">Ретроспектива ·&nbsp;Prey</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/minecraft-story-mode/">Minecraft: Story&nbsp;Mode</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/the-flame-in-the-flood/">The Flame in the&nbsp;Flood</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/retrospektiva-kosmicheskie-reyndzhery/">Ретроспектива · Космические&nbsp;рейнджеры</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/the-beginners-guide/">The Beginner’s&nbsp;Guide</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/armikrog-19-let-spustya/">Armikrog · 19 лет&nbsp;спустя</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/soma/"><span class="caps">SOMA</span></a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/the-long-dark/">The Long&nbsp;Dark</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/dont-starve/">Don’t&nbsp;Starve</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/this-war-of-mine/">This War of&nbsp;Mine</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/batman-arkham-knight/">Batman: Arkham&nbsp;Knight</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/project-zomboid/">Project&nbsp;Zomboid</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/zombi/">Zombi</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/fallout-4-vse-chto-izvestno-na-danny-moment/">Fallout 4 · Все что известно на данный&nbsp;момент</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/fallout-shelter/">Fallout&nbsp;Shelter</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/sheltered/">Sheltered</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/knock-knock/">Knock-Knock</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/60-seconds/">60&nbsp;seconds!</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/retrospektiva-anabioz-son-razuma/">Ретроспектива · Анабиоз - Сон&nbsp;разума</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
 			<a href="/blog/cradle-razbor-koncovki-i-syuzheta/">Cradle · Разбор концовки и&nbsp;сюжета</a>
 		</article>
 	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/ne-vse-tak-idealno-v-cradle/">Не все так идеально в&nbsp;Cradle</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/cradle/">Cradle</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/call-of-duty-advanced-warfare/">Call Of Duty: Advanced&nbsp;Warfare</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/life-is-strange/">Life Is&nbsp;Strange</a>
+		</article>
+	
+		<article class="space-in-bottom-nano-xs item">
+			<a href="/blog/state-of-deacy-yose/">State Of Decay:&nbsp;<span class="caps">YOSE</span></a>
+		</article>
+	
+		<article class="space-out-bottom-zero-xs item">
+			<a href="/blog/cities-skylines/">Cities&nbsp;Skylines</a>
+		</article>
+	
 </section>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>2015 - 2018</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/categories/"><span property="name">Категории</span><meta property="position" content="3" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Игры</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>2015 - 2018</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -265,10 +336,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -292,15 +359,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

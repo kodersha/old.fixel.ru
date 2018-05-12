@@ -1,3 +1,17 @@
+//PARALLAX
+
+$(window).scroll(function(){
+	parallax();
+  });
+  
+  function parallax(){
+	var scrolled = $(window).scrollTop();
+	$('.bg').css('top',-(scrolled*0.02)+'px');
+	$('.head .info').css('top',100+(scrolled*0.02)+'%');
+	$('.head .info').css('opacity',1-(scrolled*0.01)/10);
+	$('.head .info').css('opacity',1-(scrolled*0.01)/10);
+};
+
 /* Лого */
 
 function logoAnimate() {
@@ -56,7 +70,6 @@ $(".post .youtube").each(function() {
 
 /* Добавляем классы */
 
-$( '[full], .full' ).addClass('space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl');
 $( '[color] .highlight pre' ).addClass('space-out-h-micro-xs space-out-h-mili-md space-out-h-base-lg space-out-h-zero-xl');
 
 /* Поиск */

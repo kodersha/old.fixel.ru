@@ -12,7 +12,7 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -68,7 +71,7 @@
 		"headline":"Wallpaper Engine",
 		"genre":"Заметки",
 		"keywords":"Программа",
-		"wordCount":"169",
+		"wordCount":"172",
 		"url":"https://milkleaks.ru/blog/wallpaper-engine/",
 		"datePublished":"2017-04-10",
 		"dateModified":"2017-04-10",
@@ -101,53 +104,57 @@
 			"@type":"WebPage",
 			"@id":"https://milkleaks.ru/"
 		},
-		"articleBody":"Наткнулась тут в Steam на программу для Windows — Wallpaper Engine, которая возвращает во времена Rainmeter и позволяет устанавливать в качестве фона рабочего стола зацикленные видео и прочие интерактивные вещи с возможностью тонкой настройки каждого валлпапера. Ко всему прочему обои можно создавать собственноручно (Для этого в Wallpaper Engine есть свой 3D редактор) — а потому, в мастерской Steam имеется больше семидесяти тысяч заставок созданных пользователями, начиная от аниме и мемов, заканчивая интерактивной моделью Солнечной системы в стиле пиксель-арт.К слову, аналогом данной программы для MacOS является — Ubersicht. Он, также как и Wallpaper Engine, позволяет устанавливать анимированные обои и прочие виджеты рабочего стола.																	Обоина Audio Eclipse реагирующая на проигрываемую музыку разноцветными вспышками.			Wallpaper Engine работает на многофункциональном движке Unity, а потому совершенно не нагружает систему, не требует постоянно запущенного Steam-клиента и вообще базируется в трее никого не беспокоя. Пожалуй, на данный момент — это лучшая утилита для того чтобы разнообразить стандартные обои."
+		"articleBody":"Наткнулась тут в Steam на программу для Windows — Wallpaper Engine, которая возвращает во времена Rainmeter и позволяет устанавливать в качестве фона рабочего стола зацикленные видео и прочие интерактивные вещи с возможностью тонкой настройки каждого валлпапера. Ко всему прочему обои можно создавать собственноручно (Для этого в Wallpaper Engine есть свой 3D редактор) — а потому, в мастерской Steam имеется больше семидесяти тысяч заставок созданных пользователями, начиная от аниме и мемов, заканчивая интерактивной моделью Солнечной системы в стиле пиксель-арт.																	Обоина Audio Eclipse реагирующая на проигрываемую музыку разноцветными вспышками.			Wallpaper Engine работает на многофункциональном движке Unity, а потому совершенно не нагружает систему, не требует постоянно запущенного Steam-клиента и вообще базируется в трее никого не беспокоя. Пожалуй, на данный момент — это лучшая утилита для того чтобы разнообразить стандартные обои.К слову, аналогом данной программы для MacOS является — Ubersicht. Он, также как и Wallpaper Engine, позволяет устанавливать анимированные обои и прочие виджеты рабочего стола."
 	}
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="page-post">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>Wallpaper&nbsp;Engine</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-
+			<h1>Wallpaper&nbsp;Engine</h1>
+		
 		
 		<p>Наткнулась тут <a href="http://store.steampowered.com/app/431960/" rel="nofollow" target="_blank">в Steam</a> на программу для Windows — Wallpaper Engine, которая возвращает во времена Rainmeter и позволяет устанавливать в качестве фона рабочего стола зацикленные видео и прочие интерактивные вещи с возможностью тонкой настройки каждого валлпапера. Ко всему прочему обои можно создавать собственноручно (Для этого в Wallpaper Engine есть свой <span class="caps">3D</span> редактор) — а потому, в мастерской Steam имеется больше семидесяти тысяч заставок созданных пользователями, начиная от аниме и мемов, заканчивая интерактивной моделью Солнечной системы в стиле пиксель-арт.</p>
 
-<p class="aside">К слову, аналогом данной программы для Mac<span class="caps">OS</span> является — <a href="http://tracesof.net/uebersicht/" rel="nofollow" target="_blank">Ubersicht</a>. Он, также как и Wallpaper Engine, позволяет устанавливать анимированные обои и прочие виджеты рабочего стола.</p>
+
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519054420/01_nmhwvs.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519054420/01_nmhwvs.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519054420/01_nmhwvs.png">
 				</a>
 				<figcaption class="caption"><p>Обоина <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=863568819" rel="nofollow" target="_blank">Audio Eclipse</a> реагирующая на проигрываемую музыку разноцветными вспышками.</p>
 </figcaption>
@@ -155,91 +162,39 @@
 
 <p>Wallpaper Engine работает на многофункциональном движке Unity, а потому совершенно не нагружает систему, не требует постоянно запущенного Steam-клиента и вообще базируется в трее никого не беспокоя. Пожалуй, на данный момент — это лучшая утилита для того чтобы разнообразить стандартные обои.</p>
 
+<p class="aside">К слову, аналогом данной программы для Mac<span class="caps">OS</span> является — <a href="http://tracesof.net/uebersicht/" rel="nofollow" target="_blank">Ubersicht</a>. Он, также как и Wallpaper Engine, позволяет устанавливать анимированные обои и прочие виджеты рабочего стола.</p>
 
+
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Peace, Death!" class="link" href="/blog/peace-death/">&larr; Ранее</a>
+			<a title="Peace, Death!" class="link" href="/blog/peace-death/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="Пишем свой шаблон для Эгеи" class="link" href="/blog/pishem-svoy-shablon-dlya-egei/">Позднее &rarr;</a>
+			<a title="Пишем свой шаблон для Эгеи" class="link" href="/blog/pishem-svoy-shablon-dlya-egei/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>10 апреля 2017</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/заметки/"><span property="name">Заметки</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Wallpaper Engine</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>10 апреля 2017</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -252,10 +207,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -279,15 +230,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

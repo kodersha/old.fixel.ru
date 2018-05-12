@@ -12,16 +12,16 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
-	<meta name="twitter:title" content="Milkleaks">
+	<meta name="twitter:title" content="Milkleaks &middot; Milkleaks">
 	<meta name="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
 	<meta name="twitter:image" content="">
 
-	<meta property="og:title" content="Milkleaks" />
+	<meta property="og:title" content="Milkleaks &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/">
 	<meta property="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -83,228 +86,938 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<div class="space-in-bottom-kilo-xs list linel">
-		<h1 class="space-out-bottom-micro-xs">Свежее в блоге</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-auto-h-xs content max">
+	<div class="space-in-bottom-kilo-xs space-minus-top-nano-xs row list">
 		
+		
+			<article class="col-xs-12 col-md-8 col-lg-6 space-in-v-nano-xs item">
+	<a href="/blog/far-cry-5-sektantskaja-zhvachka/" class="link-photo">
+		<section class="thumbnail color-white post-86">
 			
-				<article class="space-in-bottom-nano-xs item">	
-	<div class="title">
-		<a href="/blog/obhod-blokirovki-telegram/">Обход блокировки&nbsp;Telegram</a>
-	</div>
-	
-	
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1526057324/thumb_hnq1vy.png">
+				</div>
 			
-		<div class="category">
-			<time>12 апреля 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/">Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт&nbsp;Толмачёво.</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>28 марта 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/заметки/">Заметки</a>
-		</div>
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">12 мая 2018</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Far Cry 5 · Сектантская жвачка</h1>
+				
+				<span class="space-out-top-nano-xs description">
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/snoski-na-poljah-v-egee/">Сноски на полях в&nbsp;Эгее</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>18 марта 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+						Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц.
 					
+				</span>
+				
+			</div>
+		</a>
+	</a>
 	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-86 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-86 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-
-			
 		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/papers-please-korotkometrazhyi-film/" class="link-photo">
+		<section class="thumbnail color-white post-81">
 			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/jekyll-i-izobrazhenija/">Jekyll и&nbsp;изображения</a>
-	</div>
-	
-	
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525615432/thumb_xi1zty.png">
+				</div>
 			
-		<div class="category">
-			<time>13 марта 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/papers-please-korotkometrazhyi-film/">Короткометражный фильм «Papers,&nbsp;Please»</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>26 февраля 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/фильмы/">Фильмы</a>
-		</div>
+					<span class="category">Фильмы</span>
+							
+								
+				<time class="time">26 февраля 2018</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Короткометражный фильм «Papers, Please»</h1>
+				
+				<span class="space-out-top-nano-xs description">
 					
-	
-</article>
-
-
-			
-		
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/o-ljubimyh-serialah/">Удивительно, но я, как и многие, смотрю сериалы. А потому, хотелось бы рассказать о тех, которые так или иначе мне полюбились. О тех, которые были закончены и просмотрены целиком, либо всё ещё не заброшены, если новые сезоны до сих пор выходят и остаются на достойном&nbsp;уровне.</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time> 9 февраля 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/фильмы/">Фильмы</a>
-		</div>
+						Наконец таки, спустя год съемочного процесса, вышел короткометражный фильм от российских режиссеров, Никиты Ордынского и Лилии Ткач.
 					
+				</span>
+				
+			</div>
+		</a>
+	</a>
 	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-81 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-81 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-
-			
 		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/o-ljubimyh-serialah/" class="link-photo">
+		<section class="thumbnail color-white post-80">
 			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/kat-v-egee/">Кат в&nbsp;Эгее</a>
-	</div>
-	
-	
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525615343/thumb_qppeak.png">
+				</div>
 			
-		<div class="category">
-			<time>23 января 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/веб/">Веб</a>
-		</div>
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-v-nano-xs item">	
-	<div class="title">
-		<a href="/blog/beat-cop/">Beat&nbsp;Cop</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time> 3 января 2018</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/игры/">Игры</a>
-		</div>
+					<span class="category">Фильмы</span>
+							
+								
+				<time class="time"> 9 февраля 2018</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>О любимых сериалах</h1>
+				
+				<span class="space-out-top-nano-xs description">
 					
-	
-</article>
-
-
-			
-		
-			
-				<article class="space-in-top-nano-xs item">	
-	<div class="title">
-		<a href="/blog/novyj-novyj-novyj-god/">Новый, новый, новый&nbsp;год</a>
-	</div>
-	
-	
-			
-		<div class="category">
-			<time>31 декабря 2017</time><span class="space-in-h-nano-xs">&middot;</span><a href="/blog/categories/заметки/">Заметки</a>
-		</div>
+						Удивительно, но я, как и многие, смотрю сериалы. А потому, хотелось бы рассказать о тех, которые так или иначе мне полюбились.
 					
+				</span>
+				
+			</div>
+		</a>
+	</a>
 	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-80 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-80 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-
-			
 		
-		<div class="space-out-top-micro-xs">
-			<a href="/blog/">Далее &rarr;</a>
-		</div>
-	</div>
-
-	<div class="space-in-v-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-zero-xl about">
-		<div class="item linel">
-			<h1 class="space-out-bottom-micro-xs">Александра Травкина</h1>
-			<p>Веб-дизайнер. Блогер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. Верстаю шаблоны и придумываю дизайны. Пишу обзоры и статьи о играх.</p>
-			<p>Прокрастинирую.</p>
-			<p class="space-out-bottom-zero-xs">Для связи <a target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a target="_blank" href="https://icq.com/people/633328999">ICQ</a>.</p>
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/beat-cop/" class="link-photo">
+		<section class="thumbnail color-white post-78">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525615181/thumb_qpv304.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 3 января 2018</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Beat Cop</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Джек Келли - бывший детектив низвергнутый до простого патрульного Бруклинских улиц Нью-Йорка. Его подозревают в хищении бриллиантов у сенатора...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-78 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-78 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/novyj-novyj-novyj-god/" class="link-photo">
+		<section class="thumbnail color-white post-77">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525615081/thumb_l4mcig.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Заметки</span>
+							
+								
+				<time class="time">31 декабря 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Новый, новый, новый год</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-77 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-77 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/" class="link-photo">
+		<section class="thumbnail color-white post-76">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525618167/thumb_wbkmrb.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Заметки</span>
+							
+								
+				<time class="time">22 декабря 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Упрощаем получение карточек на распродаже Steam</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Как известно, каждый год в Steam стартуют две крупные распродажи - летняя и зимняя, где за просмотр списка рекомендаций можно получить по три карточки в день...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-76 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-76 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/elementary-os/" class="link-photo">
+		<section class="thumbnail color-white post-75">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525618742/thumb_vjda4h.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Заметки</span>
+							
+								
+				<time class="time">14 ноября 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>elementaryOS</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Создаваемая дизайнерами, бесплатная операционная система с открытым исходным кодом основанная на ubuntu 16.04. elementaryOS пожалуй один из самых красивых и быстрых дистрибутивов linux.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-75 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-75 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/va11halla/" class="link-photo">
+		<section class="thumbnail color-white post-74">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525619631/thumb_ycbakz.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 9 ноября 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>VA-11 Hall-A</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вдохновленная японской анимацией визуальная новелла от небольшой студии из Венесуэлы, где в кибернитезированном будущем...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-74 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-74 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 space-in-v-nano-xs item">
+	<a href="/blog/darkwood/" class="link-photo">
+		<section class="thumbnail color-white post-72">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525625907/thumb_jzdnvf.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 3 октября 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Darkwood</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Казалось бы, Darkwood всего лишь очередная инди поделка в жанре выживания, выполненная, как водится, в пиксельной графике с видом сверху...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-72 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-72 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/vse-na-svete-iz-plastmassy/" class="link-photo">
+		<section class="thumbnail color-white post-68">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525626151/thumb_x6pjcb.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Заметки</span>
+							
+								
+				<time class="time"> 2 сентября 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Все на свете из пластмассы</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вот и настал тот день, когда будущее уже наступило и мы, с легкостью нажатия нескольких кнопок, можем печатать любые пластиковые изделия прямиком у себя дома.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-68 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-68 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/the-long-dark-wintermute/" class="link-photo">
+		<section class="thumbnail color-white post-65">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525626553/thumb_qfq6ou.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 3 августа 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>The Long Dark: Wintermute</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Первого августа наконец таки вышел долгожданный сюжетный режим для The Long Dark — симулятора выживания в диких условиях холодной Канады.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-65 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-65 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/stardew-valley/" class="link-photo">
+		<section class="thumbnail color-white post-64">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525626991/thumb_t3cefr.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">19 июня 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Stardew Valley</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Еще одна ламповая пиксельная игра на просторах Steam в жанре ролевой игры и крафтинга, где игроку предстоит примерить на себя роль фермера...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-64 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-64 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/what-remains-of-edith-finch/" class="link-photo">
+		<section class="thumbnail color-white post-63">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525628956/thumb_mt9ckp.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 9 мая 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>What Remains of Edith Finch</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Приключенческая игра которая погрузит вас в красивейшую историю, рассказывающую о загадочной судьбе семейства Финчей.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-63 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-63 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/peace-death/" class="link-photo">
+		<section class="thumbnail color-white post-60">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525629878/thumb_ad0adk.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">29 марта 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Peace, Death!</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в корпорации «Апокалипсис Inc».
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-60 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-60 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/resident-evil-7/" class="link-photo">
+		<section class="thumbnail color-white post-57">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525631001/thumb_a4yqrx.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">10 марта 2017</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Resident Evil 7: Biohazard</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-57 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-57 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/no-mans-sky/" class="link-photo">
+		<section class="thumbnail color-default post-53">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525631720/thumb_zl9txb.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">28 августа 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>No Man’s Sky</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Проект ставший популярным еще задолго до своего релиза и некогда подающий большие надежды...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-53 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-53 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 space-in-v-nano-xs item">
+	<a href="/blog/batman-the-telltale-series/" class="link-photo">
+		<section class="thumbnail color-white post-52">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525631922/thumb_tomgwj.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 3 августа 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Batman: The Telltale Series</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вот и вышел первый эпизод интерактивной истории о Бэтмене где, как очевидно, игроку предстоит примерить на себя костюм Темного Рыцаря, распутать клубок преступных заговоров и, непременно, покарать всех злодеев.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-52 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-52 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/35mm/" class="link-photo">
+		<section class="thumbnail color-white post-49">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525632191/thumb_f49tpb.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 1 июня 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>35mm</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Повествование берет свое начало в типичной глубинке России, два путника, один из которых вы, ищут оставшиеся припасы в полуразвалившихся, покинутых деревенских избушках...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-49 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-49 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/homefront-the-revolution/" class="link-photo">
+		<section class="thumbnail color-white post-48">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525699782/thumb_chstel.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time">24 мая 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Homefront: The Revolution</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вышедшая в 2011 году, представляла собой среднестатистический шутер с не слишком запоминающимся сюжетом о противостоянии Америки и Северной Кореи но так или иначе понравившаяся некоторому количеству игроков. И вот, спустя пять лет...
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-48 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-48 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/party-hard/" class="link-photo">
+		<section class="thumbnail color-white post-46">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525700002/thumb_bakawc.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Игры</span>
+							
+								
+				<time class="time"> 8 апреля 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Party Hard</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						В один из самых обычных дней, наш главный протагонист уже было приготовился как следует выспаться после тяжелого рабочего дня, но не тут то было, какие-то злосчастные студенты устроили шумную вечеринку прямо возле дома.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-46 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-46 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-in-v-nano-xs item">
+	<a href="/blog/star-wars-the-force-awakens/" class="link-photo">
+		<section class="thumbnail color-white post-45">
+			
+				<div class="image">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525700181/thumb_ayjmwv.png">
+				</div>
+			
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				
+					
+					<span class="category">Фильмы</span>
+							
+								
+				<time class="time">28 марта 2016</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>Star Wars The Force Awakens</h1>
+				
+				<span class="space-out-top-nano-xs description">
+					
+						Вот и я добралась до просмотра новой части Star Wars за авторством Джей Джей Абрамса, а потому, хотелось бы немного рассказать о своих впечатлениях.
+					
+				</span>
+				
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-45 .image img').primaryColor(function(color) {
+				$('.thumbnail.post-45 .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
+</article>
+		
+		<div class="col-xs-12 space-in-top-nano-xs">
+			Больше постов и заметок в <a href="/blog/">блоге</a>.
 		</div>
 	</div>
 </section>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<div class="space-in-top-mili-xs copyright"></div>
-			Сайт работает на <a target="_blank" href="https://jekyllrb.com/">Jekyll</a> и <a target="_blank" href="https://pages.github.com/">GitHub Pages</a>.
-		</div>
-	
 
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
+			
+				<a class="link" rel="prev" href="/page-2/">&lsaquo; Ранее</a>
+			
+		</span>
+		
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница: 1 из 3</span>
+		
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
+			
+		</span>
+	</nav>
+
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>2015 - 2018</time>
+	</div>
+
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -317,10 +1030,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -344,15 +1053,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

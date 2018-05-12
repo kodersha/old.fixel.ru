@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="Resident Evil 7: Biohazard &middot; Milkleaks">
 	<meta name="twitter:description" content="Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений и всяческих обзоров предыдущих частей, разумеется. А потому, мое мнение в целом не будет основываться на предыдущих...">
-	<meta name="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519218558/cover_fydthv.jpg">
+	<meta name="twitter:image" content="v1525631001/thumb_a4yqrx.png">
 
 	<meta property="og:title" content="Resident Evil 7: Biohazard &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/resident-evil-7/">
 	<meta property="og:description" content="Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений и всяческих обзоров предыдущих частей, разумеется. А потому, мое мнение в целом не будет основываться на предыдущих..."/>
-	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519218558/cover_fydthv.jpg" />
+	<meta property="og:image" content="v1525631001/thumb_a4yqrx.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -67,7 +70,7 @@
 		"@type":"BlogPosting",
 		"headline":"Resident Evil 7: Biohazard",
 		"genre":"Игры",
-		"keywords":"Выживание, Хоррор",
+		"keywords":"Выживание, Хоррор, На главной",
 		"wordCount":"836",
 		"url":"https://milkleaks.ru/blog/resident-evil-7/",
 		"datePublished":"2017-03-10",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519218558/cover_fydthv.jpg",
+			"contentUrl":"v1525631001/thumb_a4yqrx.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,51 +109,66 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
+	<body class="page-post">
+
+	<div class="cover">
+		<div class="bg"></div>
+
+		<section class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg head">
+			<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+				<div class="row row-reverse-xs row-middle-sm">
+					<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+						<div class="search space-auto-left-md">
+							<div class="search-form">
+								<input type="text" id="search-input" class="search-box" />
+								<span class="search-button">
+									<i class="fa fa-search open" aria-hidden="true"></i>
+									<i class="fa fa-times close" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="dropdown">
+								<ul class="results" id="results-container"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-shrink logo">
+						<a class="link-logo" href="/">
+							<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+						</a>
+					</div>
 				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+			</header>
+
+			<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg content">
+				<div class="space-in-bottom-mili-xs space-auto-h-xs linel max info">
+					<h1>Resident Evil 7: Biohazard</h1>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
+		</section>
+
+		<style type="text/css">
+			.cover .bg {
+				background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1519218558/cover_fydthv.jpg');
+			}
+		</style>
 	</div>
-</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>Resident Evil 7:&nbsp;Biohazard</h1>
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+    <section class="slide-up-fade-in space-in-top-mili-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-		<div class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl cover">
-			<div class="hidden-upto-xl frame"></div>
-			<img alt="Resident Evil 7: Biohazard" src="https://res.cloudinary.com/milkleaks/image/upload/w_1291/v1519218558/cover_fydthv.jpg">
-		</div>
-	
-
 		
 		<p>Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений и всяческих обзоров предыдущих частей, разумеется. А потому, мое мнение в целом не будет основываться на предыдущих частях и станет по возможности максимально объективным, как об отдельно взятой игре. К слову, хочется отметить, что главная особенность Resident Evil 7 заключается в том, что это очередное переосмысление серии  — впервые появился вид от первого лица, а сама игра постаралась вернуться к истокам жанра: от экшена в сторону сурвайвл-хоррора, квеста с поиском предметов и бродилки в декорациях старого особняка.</p>
 
 
 
-<h2 id="сюжет">Сюжет</h2>
+<h3 id="сюжет">Сюжет</h3>
 
 <blockquote>
   <p>Resident Evil 7: Biohazard вышла 24 января 2017 на PlayStation 4 и Xbox One. 27 января игра стала доступна для Windows платформ.</p>
@@ -162,7 +180,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519048702/01_gy9wc6.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519048702/01_gy9wc6.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519048702/01_gy9wc6.jpg">
 				</a>
 				<figcaption class="caption"><p>В Resident Evil 7 отличный дизайн уровней, каждая деталь тщательно проработана, что создает уникальную атмосферу безысходности и запустения.</p>
 </figcaption>
@@ -170,13 +188,13 @@
 
 <p>Надо сказать, что Resident Evil 7 выглядит совершенно иначе, чем ее предшественники, будто то внешне или геймплейно. Главный герой, совершенно новый персонаж в серии, далеко не агент спецподразделения, не владеет стрельбой и навыками рукопашного боя да и вообще поначалу не имеет толком никакого оружия. А потому, добрую часть времени ему придется скрываться и убегать, ибо убить местных обитателей старого дома весьма проблематично, а иногда и вовсе бесполезно. Ко всему прочему инвентарь Итана довольно ограничен, патронов зачастую не хватает, смерть наступает буквально от нескольких пропущенных ударов а множество дверей, встречающихся на пути, закрыты — ключи от них еще придется поискать. И именно это делает игру классическим сурвайвл-хоррором, что в сочетании с давящей атмосферой заброшенности и гниения, клаустрофобии узких коридоров и заколоченных окон, создает по своему завораживающую картину.</p>
 
-<h2 id="игровые-механики">Игровые механики</h2>
+<h3 id="игровые-механики">Игровые механики</h3>
 
 <p>Что же касается геймплея, помимо исследования особняка и сбора предметов в <span class="caps">RE</span> 7 присутствует довольно много других игровых механик встречающихся у многих представителей жанра. Здесь и хоррор с «приведениями» — внезапными громкими звуками, шорохами и потусторонними шепотками, что можно сравнить с Layers of fear и Silent Hills <span class="caps">P.T.</span>, и выживание в стиле «кошки-мышки» на подобии Outlast, и забеги с огнеметом наперевес против полчищ насекомых, прямо как в Alien Isolation, и экшен с отстрелом монстров как в пятой-шестой части Resident Evil, и локации огромного корабля, что напоминают Resident Evil Revilations, и битвы с боссами как в первых частях серии, и квесты в стиле «Пилы», и множество чего еще. Однако не смотря на заимствование механик из других игр сурвайвл жанра, в Resident Evil 7 все весьма органично, да еще и разбавлено неплохим сюжетом, что в целом не дает заскучать на протяжении почти всей игры.</p>
 
 <figure class="picture aside">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519048702/02_tweomd.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519048702/02_tweomd.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519048702/02_tweomd.jpg">
 				</a>
 				<figcaption class="caption"><p>Глава семейства Бейкеров. В огне не горит и в воде не тонет.</p>
 </figcaption>
@@ -184,101 +202,47 @@
 
 <p>Тем не менее <span class="caps">RE</span> 7 нельзя назвать сто процентным хоррором как таковым, когда вы обзаведетесь дробовиком и убьете первого босса, станет ясно, что «это не меня заперли с вами, это вас заперли со мной». После чего градус хоррора понемногу сходит на нет, игры в прятки прекращаются, а неуязвимые враги начинают скорее раздражать, нежели пугать. До тех пор пока в одной из последних глав у вас снова не отнимут оружие, передав русло истории другому персонажу. Но и это не на долго. В целом, в седьмую часть играть не страшно, скорее интересно. К недостаткам стоит отнести лишь некоторую однообразность врагов — к ним быстро привыкаешь и они совершенно перестают пугать.</p>
 
-<h2 id="общее-впечатление">Общее впечатление</h2>
+<h3 id="общее-впечатление">Общее впечатление</h3>
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519048702/03_z0sggd.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519048702/03_z0sggd.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519048702/03_z0sggd.jpg">
 				</a>
 				
 			</figure>
 
 <p>В целом Resident Evil 7» вышла не плохим сурвайвл-хоррором и отличным переосмыслением серии, где вид от первого лица, сменивший классический, только добавил атмосферности, что вкупе с качественным дизайном уровней и хорошим амбиентом окружения отлично оживляет серию. К слову, седьмая часть придется по душе не только поклонникам этой линейки игр, но и тем, кто с Resident Evil знаком лишь понаслышке. Бесспорно она придется по душе любителям таких игр как Alien Isolation, Amnesia и Outlast.</p>
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Возобновление активности" class="link" href="/blog/vozobnovlenie-aktivnosti/">&larr; Ранее</a>
+			<a title="Возобновление активности" class="link" href="/blog/vozobnovlenie-aktivnosti/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="Знакомство с Mac" class="link" href="/blog/znakomstvo-s-mac/">Позднее &rarr;</a>
+			<a title="Знакомство с Mac" class="link" href="/blog/znakomstvo-s-mac/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>10 марта 2017</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/игры/"><span property="name">Игры</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Resident Evil 7: Biohazard</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>10 марта 2017</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -291,10 +255,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -318,15 +278,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

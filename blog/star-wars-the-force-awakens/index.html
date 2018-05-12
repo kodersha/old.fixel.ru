@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="Star Wars The Force Awakens &middot; Milkleaks">
 	<meta name="twitter:description" content="Вот и я добралась до просмотра новой части Star Wars за авторством Джей Джей Абрамса, а потому, хотелось бы немного рассказать о своих впечатлениях. В статье будут присутствовать спойлеры, а значит тем кто еще не смотрел новую часть лучше листать...">
-	<meta name="twitter:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519036222/01_rm8x6v.jpg">
+	<meta name="twitter:image" content="v1525700181/thumb_ayjmwv.png">
 
 	<meta property="og:title" content="Star Wars The Force Awakens &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/star-wars-the-force-awakens/">
 	<meta property="og:description" content="Вот и я добралась до просмотра новой части Star Wars за авторством Джей Джей Абрамса, а потому, хотелось бы немного рассказать о своих впечатлениях. В статье будут присутствовать спойлеры, а значит тем кто еще не смотрел новую часть лучше листать..."/>
-	<meta property="og:image" content="https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519036222/01_rm8x6v.jpg" />
+	<meta property="og:image" content="v1525700181/thumb_ayjmwv.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -67,7 +70,7 @@
 		"@type":"BlogPosting",
 		"headline":"Star Wars The Force Awakens",
 		"genre":"Фильмы",
-		"keywords":"",
+		"keywords":"На главной",
 		"wordCount":"1019",
 		"url":"https://milkleaks.ru/blog/star-wars-the-force-awakens/",
 		"datePublished":"2016-03-28",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"https://res.cloudinary.com/milkleaks/image/upload/c_thumb,h_360,q_100,w_640/v1519036222/01_rm8x6v.jpg",
+			"contentUrl":"v1525700181/thumb_ayjmwv.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,159 +109,109 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+	<body class="page-post">
+
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+		<div class="row row-reverse-xs row-middle-sm">
+			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+				<div class="search space-auto-left-md">
+					<div class="search-form">
+						<input type="text" id="search-input" class="search-box" />
+						<span class="search-button">
+							<i class="fa fa-search open" aria-hidden="true"></i>
+							<i class="fa fa-times close" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="dropdown">
+						<ul class="results" id="results-container"></ul>
+					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-sm-shrink logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
-	</div>
-</header>
+	</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>Star Wars The Force&nbsp;Awakens</h1>
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-
+			<h1>Star Wars The Force&nbsp;Awakens</h1>
+		
 		
 		<p>Вот и я добралась до просмотра новой части Star Wars за авторством Джей Джей Абрамса, а потому, хотелось бы немного рассказать о своих впечатлениях. В статье будут присутствовать спойлеры, а значит тем кто еще не смотрел новую часть лучше листать дальше. Собственно говоря, я никогда не была поклонницей серии, поэтому новая часть не стала для меня какой-то особенной только потому, что это «Звездные войны».</p>
 
 
 
-<h2 id="пробуждение-серии">Пробуждение серии</h2>
+<h3 id="пробуждение-серии">Пробуждение серии</h3>
 
 <p>Фильм начинает свое повествование спустя тридцать лет, после событий третьей части серии. Нас знакомят с новыми персонажами, серди которых лучший пилот Сопротивления по-имени По со своим шарообразным дроидом ВВ-8, не самый смелый штурмовик «Первого ордена» и мусорщица Рей с планеты Джакку. Собственно, на Джакку прибывает «Первый орден», дабы разыскать пилота По и его дроида, ведь у них имеются данные о местонахождении неизвестно куда пропавшего много лет назад Люка Скайоукера. Вместе с отрядом штурмовиков на планету высаживается и новый главный антагонист фильма, подражатель Дарту Вейдеру — молодой и кудрявый ситх Кайло Рен. Штурмовики берут По в плен, но дроиду удается сбежать. Тем временем, подобно карательному отряду фашистов, «Первый орден» расстреливает безоружных, мирных жителей планеты. Однако одному из штурмовиков, с кодовым именем <span class="caps">FN</span>-2187, совсем не хочется стрелять в безоружных, а потому, он великодушно опускает оружие. Вскоре дроид чудесным образом встречается с Рей, а на корабле Кайло Рена напуганный штурмовик <span class="caps">FN</span>-2187 дезертирует, попутно освобождая По из плена, вместе они угоняют СИД-Истребитель, безжалостно расстреливают беспомощных штурмовиков, а <span class="caps">FN</span>-2187 получает от По имя — Финн. После бравая команда терпит крушение на Джакке и они теряют друг друга. Вскоре Финн совершенно случайно встречает Рей с ВВ-8.</p>
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519036222/01_rm8x6v.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519036222/01_rm8x6v.jpg">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519036222/01_rm8x6v.jpg">
 				</a>
 				
 			</figure>
 
 <p>Уже с первых кадров «Пробуждение силы» копирует предыдущие части серии. Джакка — тот же пыльный Татуин, с точно таким же укладом жизни, населением и контингентом жителей. Та же «Звезда Смерти», но более глобальных масштабов, с теми же брешами в обороне. Девушка Рей, подобно юному Энакину Скайоукеру, превосходно разбирается в технике и пилотировании всевозможных звездолетов, но всю жизнь провела на планете. Кайло Рен импульсивная копирка Дарта Вейдера, который носит маску не из жизненно важной необходимости, а только лишь потому, что в ней встроен модулятор голоса (Вероятно что бы казаться могущественнее). Пилот По копирует собой лучшие годы Люка, который тот проводил истребляя штурмовиков на X-Wing’e. Дроид ВВ-8 походит на <span class="caps">R2D2.</span> Темнокожий, бывший штурмовик Финн… Впрочем, он здесь, на сколько это возможно, оригинальный персонаж. Все остальные герои фильма уже знакомы зрителю из прошлых частей «Звездных войн». Это, конечно же, неунывающий контрабандист Хан Соло, обаятельный и пушистый Чубакка, а также генерал Сопротивления — Лея.</p>
 
-<h2 id="рояль-в-кустах">Рояль в кустах</h2>
+<h3 id="рояль-в-кустах">Рояль в кустах</h3>
 
 <p>Не грешит фильм и множеством «Роялей в кустах». Так, убегая с планеты Джакка, Финн и Рей совершенно случайно натыкаются не на что иное, как на легендарный «Сокол Тысячелетия» и, разумеется, угоняют его. А затем, на бескрайних просторах космоса, не позже чем через пятнадцать минут, они сталкиваются ни с кем иным, как с Ханом Соло, который совершенно случайно свой легендарный корабль как раз искал. Скооперировавшись они прибывают на планету Таконада, дружная команда передает дроида мультяшному персонажу — Мазе Канату, с диснеевскими чертами, чтобы та доставила его к силам Сопротивления. И вновь по очередной, совершенной случайности, она хранит у себя световой меч Люка Скайоукера. Который, как водится, притягивает к себе Рей влиянием Силы. Но та не справляется с видениями, что вызывает у неё меч, впадает в панику и убегает. И меч, покамест, берет Финн. Между тем на планету высаживается «Первый орден». Финн, Хан Соло и Чубакка вступают в бой. Тем временем прибывают силы сопротивления на X-Wing’ах. Рей попадает в плен и оказывается на «Старкиллере», более мощном аналоге «Звезды Смерти». Однако Кайло Рену не удается что либо узнать у Рей. Она, без пяти минут узнав о своей Силе, успешно закрывается от воздействия Кайло Рена, а затем, совершенно случайно, применяет знаменитый джедайский прием и гипнотизируя штурмовика-охранника, освобождается. Рей довольно неплохо владеет Силой. Пусть старик Йода говорил, что юному Энакину в его возрасте уже поздно учится. Пусть Люк Скайоукер так усердно старался научится управлять своим даром, подолгу медитируя и тренируюсь поднимать в воздух камни. Ведь это не так важно, когда тебе дают легендарный световой меч и ты без какого либо обучения у великих магистров, вполне сносно владеешь как мечом, так и Силой.</p>
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519036223/02_iyd48k.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1519036223/02_iyd48k.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1519036223/02_iyd48k.png">
 				</a>
 				
 			</figure>
 
 <p>В завершении фильма Рей и Финн встречаются на «Старкиллере» и отключают силовые щиты. Тем временем Хан Соло с Чубаккой закладывают взрывчатку, дабы ослабить защиту и дать возможность отряду По на X-Wing’ах нанести решающий удар. Там же Хан Соло встречается со своим сыном — Кайло Реном, джедаем обучавшимся у Люка Скайуокера, но перешедшим на темную сторону. После непродолжительного диалога Кайло Рен убивает безоружного отца. Тем временем Чуббака ранит Рена из арбалета и взрывает заранее заложенную взрывчатку, что бы ослабить защиту «Старкиллера». Отряд По проводит успешную атаку и планетарный уничтожитель начинает рассыпаться на глазах. Тем временем на его поверхности в бой с Кайло Реном вступают сначала Финн, а затем, вооружившись световым мечом — Рей. Без каких либо навыков Рей довольно легко побеждает Кайло Рена. И тут возникает лишь два варианта, либо Рей все слишком легко дается, либо из Кайло Рена никчемный ситх. Затем следует скомканная концовка, <span class="caps">R2D2</span> и <span class="caps">BB</span>-8 сопоставляют свои звездные карты и находят местоположение Люка. Рей летит за ним и встречает одиноко смотрящего в даль Скайуокера на вершине скалистого острова, он снимает капюшон и многозначительно молчит. Конец.</p>
 
-<h2 id="итог">Итог</h2>
+<h3 id="итог">Итог</h3>
 
 <p>Какие в итоге впечатления я получила от просмотра «Пробуждения силы»? Не слишком впечатляющая игра новых актеров, диалоги всего фильма можно уместить на странице формата А4, предсказуемые сюжетные повороты, рояли в кустах, шутки уровня Disney. Сюжет также потерял какой либо смысл, если раньше были какие-то диалоги, политические споры, терзания героев и любовные линии, то здесь все довольно сумбурно, частые сражения, беготня и шутки. Хоть спецэффекты и выполнены на должном уровне, а сам фильм снят в стилистике первых частей, в нем так или иначе не хватает какой-то искры. Герои не вызывают сопереживания, антагонист скорее нелеп, чем харизматичен. Даже штурмовики стали еще более неорганизованными. В общем, как и ожидалось, продолжение уже казалось бы законченной серии «Звездных Войн» есть ни что иное, как выкачивание денег на ностальгии поклонников, с простым и наивным сюжетом. Пересматривать фильм явно не хочется. 6 из 10.</p>
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Мнение о The Witcher 3 Wild Hunt" class="link" href="/blog/mnenie-o-the-witcher-3-wild-hunt/">&larr; Ранее</a>
+			<a title="Мнение о The Witcher 3 Wild Hunt" class="link" href="/blog/mnenie-o-the-witcher-3-wild-hunt/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="Party Hard" class="link" href="/blog/party-hard/">Позднее &rarr;</a>
+			<a title="Party Hard" class="link" href="/blog/party-hard/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>28 марта 2016</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/фильмы/"><span property="name">Фильмы</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Star Wars The Force Awakens</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>28 марта 2016</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -271,10 +224,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -298,15 +247,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>

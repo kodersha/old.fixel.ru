@@ -12,20 +12,20 @@
 	<meta name="robots" content="index, follow" />
 
 	<meta name="author" content="Александра Травкина">
-	<meta name="generator" content="Jekyll v3.8.0" />
+	<meta name="generator" content="Jekyll v3.8.1" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Milkleaks">
 	<meta name="twitter:creator" content="@sasha_travkina">
 	<meta name="twitter:title" content="Перелёт OVB - DME - OVB или туда и обратно &middot; Milkleaks">
 	<meta name="twitter:description" content="Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о...">
-	<meta name="twitter:image" content="">
+	<meta name="twitter:image" content="v1525635378/thumb_l9eqw3.png">
 
 	<meta property="og:title" content="Перелёт OVB - DME - OVB или туда и обратно &middot; Milkleaks" />
 	<meta property="og:site_name" content="Milkleaks">	
 	<meta property="og:url" content="https://milkleaks.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/">
 	<meta property="og:description" content="Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о..."/>
-	<meta property="og:image" content="" />
+	<meta property="og:image" content="v1525635378/thumb_l9eqw3.png" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
 	<meta property="og:type" content="article">
@@ -56,6 +56,9 @@
 		<link rel="stylesheet" type="text/css" href="/static/style.css" />
 
 		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -68,7 +71,7 @@
 		"headline":"Перелёт OVB - DME - OVB или туда и обратно",
 		"genre":"Заметки",
 		"keywords":"Путешествие",
-		"wordCount":"1204",
+		"wordCount":"1203",
 		"url":"https://milkleaks.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/",
 		"datePublished":"2018-03-28",
 		"dateModified":"2018-03-28",
@@ -92,7 +95,7 @@
 		},
 		"image":{  
 			"@type":"ImageObject",
-			"contentUrl":"",
+			"contentUrl":"v1525635378/thumb_l9eqw3.png",
 			"url":"https://milkleaks.ru/",
 			"height":"360",
 			"width":"640"
@@ -106,48 +109,66 @@
 
 
 </script>
-		
+
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-mega-xl space-auto-h-xl">
-<header class="space-in-top-mili-xs">
-	<div class="row row-reverse-xs row-middle-sm">
-		<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-			<div class="search space-auto-left-md">
-				<div class="search-form">
-					<input type="text" id="search-input" class="search-box" />
-					<span class="search-button">
-						<i class="fa fa-search open" aria-hidden="true"></i>
-						<i class="fa fa-times close" aria-hidden="true"></i>
-					</span>
+	<body class="page-post">
+
+	<div class="cover">
+		<div class="bg"></div>
+
+		<section class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg head">
+			<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+				<div class="row row-reverse-xs row-middle-sm">
+					<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
+						<div class="search space-auto-left-md">
+							<div class="search-form">
+								<input type="text" id="search-input" class="search-box" />
+								<span class="search-button">
+									<i class="fa fa-search open" aria-hidden="true"></i>
+									<i class="fa fa-times close" aria-hidden="true"></i>
+								</span>
+							</div>
+							<div class="dropdown">
+								<ul class="results" id="results-container"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-shrink logo">
+						<a class="link-logo" href="/">
+							<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+						</a>
+					</div>
 				</div>
-				<div class="dropdown">
-					<ul class="results" id="results-container"></ul>
+			</header>
+
+			<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg content">
+				<div class="space-in-bottom-mili-xs space-auto-h-xs linel max info">
+					<h1>Перелёт OVB - DME - OVB или туда и обратно</h1>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-shrink logo">
-			<a class="link-logo" href="/">
-				<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-			</a>
-		</div>
+		</section>
+
+		<style type="text/css">
+			.cover .bg {
+				background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1522212388/04_kcbdv1.png');
+			}
+		</style>
 	</div>
-</header>
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<article class="post">
-		<h1>Перелёт <span class="caps">OVB</span> - <span class="caps">DME</span> - <span class="caps">OVB</span> или туда и&nbsp;обратно</h1>
+
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    
+    <section class="slide-up-fade-in space-in-top-mili-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
+	<article class="post grid">
 		
-	
-
 		
 		<p>Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.</p>
 
-
-
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522239032/01_v0guqp.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522239032/01_v0guqp.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522239032/01_v0guqp.png">
 				</a>
 				<figcaption class="caption"><p>«Покорение Сибири» скульптора Юнуса Сафардиара в аэропорту Толмачёво.</p>
 </figcaption>
@@ -157,7 +178,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522208119/02_r7xulk.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522208119/02_r7xulk.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522208119/02_r7xulk.png">
 				</a>
 				<figcaption class="caption"><p>Небольшая очередь в рентген кабинку и лента для просвечивания ручной клади.</p>
 </figcaption>
@@ -167,7 +188,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522209566/03_vzesbk.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522209566/03_vzesbk.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522209566/03_vzesbk.png">
 				</a>
 				<figcaption class="caption"><p>Airbus <span class="caps">A321</span>-211 в ливрее «Уральских Авиалиний». Регистрационный номер <span class="caps">VQ</span>-<span class="caps">BCX</span>, серийный номер 1720.</p>
 </figcaption>
@@ -177,7 +198,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522212388/04_kcbdv1.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522212388/04_kcbdv1.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522212388/04_kcbdv1.png">
 				</a>
 				
 			</figure>
@@ -188,7 +209,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522215619/05_brpefr.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522215619/05_brpefr.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522215619/05_brpefr.png">
 				</a>
 				<figcaption class="caption"><p>Касалетка с макаронами, кусочками морковки и говядины.</p>
 </figcaption>
@@ -198,7 +219,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522225516/06_sclvcr.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522225516/06_sclvcr.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522225516/06_sclvcr.png">
 				</a>
 				
 			</figure>
@@ -211,7 +232,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522226275/07_oxh7cm.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522226275/07_oxh7cm.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522226275/07_oxh7cm.png">
 				</a>
 				<figcaption class="caption"><p>Airbus <span class="caps">A319</span>-112 в ливрее «Уральских Авиалиний». Регистрационный номер <span class="caps">VQ</span>-<span class="caps">BTZ</span> серийный номер 3385.</p>
 </figcaption>
@@ -221,7 +242,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522228811/08_tgj2ea.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522228811/08_tgj2ea.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522228811/08_tgj2ea.png">
 				</a>
 				<figcaption class="caption"><p>Салон Airbus <span class="caps">A319</span> <span class="caps">VQ</span>-<span class="caps">BTZ.</span></p>
 </figcaption>
@@ -231,7 +252,7 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522230417/09_njqbli.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522230417/09_njqbli.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522230417/09_njqbli.png">
 				</a>
 				
 			</figure>
@@ -240,97 +261,43 @@
 
 <figure class="picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1522237622/10_gntqqv.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
-					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_630/v1522237622/10_gntqqv.png">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_592/v1522237622/10_gntqqv.png">
 				</a>
 				
 			</figure>
 
 <p>После посадки самолёт подали к телетрапу международного терминала, а пассажиров попросили пройти на улицу, до автобуса во внутренний терминал. Через два часа, этим же самолётом, китайцы вылетели в Харбин. А мы, тем временем, отправились домой отдыхать после суток без сна.</p>
 
+
+		
 	</article>
 </section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 		
-			<a title="Сноски на полях в Эгее" class="link" href="/blog/snoski-na-poljah-v-egee/">&larr; Ранее</a>
+			<a title="Сноски на полях в Эгее" class="link" href="/blog/snoski-na-poljah-v-egee/">&lsaquo; Ранее</a>
 		
 	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 		
-			<a title="Обход блокировки Telegram" class="link" href="/blog/obhod-blokirovki-telegram/">Позднее &rarr;</a>
+			<a title="Обход блокировки Telegram" class="link" href="/blog/obhod-blokirovki-telegram/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
+    <footer>	
+	<div class="space-auto-h-xs linel max copyright">
+		Александра Травкина &copy; <time>28 марта 2018</time>
+	</div>
 
-<footer class="space-in-bottom-mili-xs">
-	
-		<ol class="space-in-bottom-mili-xs breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-		
-
-		
-
-		
-
-		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-			<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-		</li>		
-	
-		
-
-		
-
-		
-			
-
-	
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/заметки/"><span property="name">Заметки</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-	
-		
-
-		
-	
-		
-
-		
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Перелёт OVB - DME - OVB или туда и обратно</span><meta property="position" content="4" />
-			</li>
-			
-</ol>
-		
-		<div class="space-in-top-mili-xs copyright">
-			Александра Травкина &copy; <time>28 марта 2018</time>
-		</div>
-	
-
-	<section class="space-in-top-mili-xs space-in-top-nano-md row row-middle-md">
-	<nav class="col-xs-12 col-md-shrink menu" id="menu">
+	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
+	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
 			
 			
 			
@@ -343,10 +310,6 @@
 			
 			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/work/">Работы</a></li>
 			
 			
 			
@@ -370,15 +333,14 @@
 	</div>
 </section>
 </footer>
+</div>
+
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
 <script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
