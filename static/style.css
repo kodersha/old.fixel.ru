@@ -11824,6 +11824,7 @@ header .logo-txt .logo-description {
 }
 .post .youtube img {
   vertical-align: middle;
+  position: relative;
   width: 100%;
 }
 .post .youtube.playing,
@@ -13205,12 +13206,9 @@ footer .copyright {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   line-height: 1.3;
 }
-footer .copyright a {
-  border-bottom-color: #dddddd;
-  color: #000000;
-}
-footer .copyright a:hover {
-  border-bottom-color: #000000;
+footer .copyright .contacts {
+  font-size: 0.875rem;
+  color: #999999;
 }
 footer .scroll-to-top {
   display: none;
