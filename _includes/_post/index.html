@@ -1,22 +1,42 @@
-<article class="{% if forloop.first == true %}space-in-bottom-nano-xs{% elsif forloop.last == true %}space-in-top-nano-xs{% else %}space-in-v-nano-xs{% endif %} item">	
-	<div class="title">
-		<a href="{{ post.url | prepend: site.baseurl }}">{% if post.description %}{{ post.description | improve }}{% else %}{{ post.title | improve }}{% endif %}</a>
-	</div>
-	{% if post.preview %}
-	<div class="space-out-v-nano-xs preview">
-		<a href="{{ post.url | prepend: site.baseurl }}"><img alt="{{ post.title }}" src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/{{ site.cloudinary-size }}/{{ post.preview }}"></a>
-	</div>
-	{% endif %}
-	{% if post.categories.size > 0 %}
-		{% for category in post.categories %}	
-		<div class="category">
-			<time>{{ post.date | russian_date }}</time><span class="space-in-h-nano-xs">&middot;</span><a href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/">{{ category }}</a>
-		</div>
-		{% endfor %}			
-	{% endif %}
+<article class="col-xs-12 {% if forloop.index == 1 %}col-md-8 col-lg-6{% elsif forloop.index == 9 %}col-sm-6{% elsif forloop.index == 10 %}col-sm-6 col-lg-3{% elsif forloop.index == 17 %}col-sm-6{% elsif forloop.index == 18 %}col-sm-6 col-lg-3{% else %}col-sm-6 col-md-4 col-lg-3{% endif %} space-in-v-nano-xs item">
+	<a href="{{ post.url }}" class="link-photo">
+		<section class="thumbnail color-{% if post.color == 'white' %}white{% else %}default{% endif %} post-{{ post.index }}">
+			{% if post.image %}
+				<div class="image">
+					<img src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/{{ post.image }}">
+				</div>
+			{% endif %}
+			<div class="frame"></div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs actions">
+				{% if post.categories.size > 0 %}
+				{% for category in post.categories %}	
+					<span class="category">{{ category }}</span>
+				{% endfor %}			
+				{% endif %}				
+				<time class="time">{{ post.date | russian_date }}</time>
+			</div>
+			<div class="space-in-h-micro-xs space-in-v-micro-xs info">
+				<h1>{{ post.title }}</h1>
+				{% if post.description != false %}
+				<span class="space-out-top-nano-xs description">
+					{% if post.description %}
+						{{ post.description }}
+					{% else %}
+						{{ post.content | strip_html | truncatewords: 35 }}
+					{% endif %}
+				</span>
+				{% endif %}
+			</div>
+		</a>
+	</a>
+	
+	<script type="text/javascript">
+		$(function() {
+			$('.thumbnail.post-{{ post.index }} .image img').primaryColor(function(color) {
+				$('.thumbnail.post-{{ post.index }} .frame').css({
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+				});
+			});
+		});
+	</script>
 </article>
-
-{% if page.url == "/" %}
-	{% if forloop.first == true %}
-	{% endif %}
-{% endif %}

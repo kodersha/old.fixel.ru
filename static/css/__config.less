@@ -1,29 +1,30 @@
 .global-settings() {
     @glob-font: @global;
     @glob-font-size: 1rem;
-    @glob-font-color: @black;
+    @glob-font-color: #313131;
 
     @glob-subtext-size: 0.875rem;
     @glob-subtext-color: @darkGray;
 
-    @glob-header: @headers;
+    @glob-header: @global;
 
-    @glob-linel: 39.38rem;
-    @glob-width: 93.75rem;
+    @glob-linel: 37rem;
+    @glob-width: 75rem;
 
     @fadeInSpeed: 0.1s;
 }
 
 .post-settings() {
-    @post-top: 1rem;
-    @post-bottom: 0;
+    @post-top: 0;
+    @post-bottom: 0.625rem;
+    @post-indent: 0.875rem;
     @post-linel: @glob-linel;
 
-    @post-text-color: @black;
+    @post-text-color: #313131;
 
     @post-subtext-color: @glob-subtext-color;
     @post-subtext-size: @glob-subtext-size;
-    @post-subtext-linel: 1.352;
+    @post-subtext-linel: 1.3;
     @post-subtext-weight: 400;
 }
 
@@ -31,9 +32,9 @@
     @post-width: @glob-width;
 
     @grid-edge: 0;
-    @grid-aside: minmax(12.5rem, 18.75rem);
+    @grid-aside: minmax(12.5rem, 18.25rem);
     @grid-inner: minmax(0, 1fr);
-    @grid-text: 2rem;
+    @grid-text: 1rem;
     @grid-main: @glob-linel;
 }
 
@@ -45,28 +46,28 @@
 
     .global-settings();
 
-    @fz: 16px;                                      // default font-size
-    @rythm: 23.392px;                               // vertical rythm = line-height in pixels
-    @fz-small: 13px;                                // smaller font-size (px)
+    @fz: 14.22222222222222px;                       // default font-size
+    @rythm: 20.79288888888889px;                    // vertical rythm = line-height in pixels
+    @fz-small: 14px;                                // smaller font-size (px)
     @linel: @glob-linel;                            // max-width for text (any css value)
 
     @font-body: @global;                            // body
     @font-headers: @glob-header;                    // headers
     @font-code: @code;                              // code (duplication is intentional)
 
-    @scale1: 1.085;                    // header size multiplier for small screens
-    @scale2: 1.125;                    // header size multiplier for large screens
+    @scale1: 1.093;                    // header size multiplier for small screens
+    @scale2: 1.093;                    // header size multiplier for large screens
 
     // margin for body, articles and sections (any css value)
-    @structure-margin: ~"calc(24px + 3vw)" 5vw;
+    @structure-margin: 0;
 
     @bettertext-breakpoint: ~"(min-width: @{glob-linel})"; // large screens starts from that value
 
     //redefining header margin-top
-    @h1-mt: 3em;
-    @h2-mt: 2.5em;
-    @h3-mt: 2em;
-    @h4-mt: 1.5em;
+    @h1-mt: 4rem;
+    @h2-mt: 3.5rem;
+    @h3-mt: 3rem;
+    @h4-mt: 2.5rem;
 }
 
 /*!
@@ -77,7 +78,7 @@
 
     // settings
     @grid-columns: 12;   // number of columns
-    @gutter-width: 32px; // gap between columns
+    @gutter-width: 16px; // gap between columns
 
     // media breakpoints (default: as on bootstrap)
     @breakpoints:

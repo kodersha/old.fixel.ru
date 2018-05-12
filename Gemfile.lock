@@ -9,14 +9,14 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.6)
+    eventmachine (1.2.7)
     ffi (1.9.23)
     forwardable-extended (2.6.0)
     github-markup (2.0.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.8.0)
+    jekyll (3.8.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -46,6 +46,8 @@ GEM
     jekyll-maps (2.3.0)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
+    jekyll-paginate-v2 (1.9.4)
+      jekyll (~> 3.0)
     jekyll-redirect-from (0.13.0)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
@@ -111,6 +113,7 @@ DEPENDENCIES
   jekyll-less
   jekyll-maps
   jekyll-paginate
+  jekyll-paginate-v2
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-typogrify

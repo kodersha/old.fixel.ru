@@ -1,7 +1,5 @@
 .highlight {
 	max-width: @post-linel;
-	margin-bottom: @post-bottom;
-	margin-top: @post-top;
 	position: relative;
 	display: grid;
 	
@@ -98,13 +96,18 @@
 .highlight .il { color: #FF6600 } /* Literal.Number.Integer.Long */
 
 [color] {
+	margin-bottom: @post-bottom + @post-top + @post-indent;
+	margin-top: @post-bottom + @post-top + @post-indent;
+
 	.highlight {
 		background-color: #3f3f3f;
+		margin-bottom: 0;
+		margin-top: 0;
 		color: @white;
 
 		pre {
-			margin-bottom: @post-bottom + @post-top;
-			margin-top: @post-bottom + @post-top;
+			margin-bottom: @post-bottom + @post-top + @post-indent;
+			margin-top: @post-bottom + @post-top + @post-indent;
 		}
 	}
 	.highlight .hll { background-color: #272822; }

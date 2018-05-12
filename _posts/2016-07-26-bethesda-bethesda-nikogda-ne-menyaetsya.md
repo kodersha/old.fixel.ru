@@ -1,10 +1,13 @@
 ---
-title: "Bethesda, Bethesda никогда не меняется"
-thumbnail: "v1519037345/01_zgz54f.jpg"
-category: "Заметки"
+title: Bethesda, Bethesda никогда не меняется
+category: Заметки
+
+image: v1525637911/thumb_tdfj1j.png
 ---
 
 Сегодня студия Bethesda выпустила очередное строительное дополнение для Fallout 4 под названием Vault-Tec Workshop, которое, аки в Fallout Shelter, позволит построить свое собственное, подземное убежище, населить его жителями и даже проводить над ними зловещие эксперименты в духе Vault-Tec.
+
+<!-- more -->
 
 {% cloudinary src:v1519037345/01_zgz54f.jpg %}
 

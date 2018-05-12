@@ -1,46 +1,46 @@
-[full], .full {
-    @media @xl {
-        grid-column: left / right;
+@media @xl {
+    [full], .full {
+        grid-column: left / edge-right;
     }
-}
 
-[main], .main {
-    @media @xl {
+    [main], .main {
         grid-column: text-left / inner-right;
     }
-}
 
-[big], .big {
-    @media @xl {
-        grid-column: text-left / edge-right;
+    [big], .big {
+        grid-column: left / right;
+    }
+
+    [big-outer], .big-outer {
+        grid-column: left / aside;  
     }
 }
 
-[big-outer], .big-outer {
-    @media @xl {
-        grid-column: left / aside;
-    }    
-}
-
-[full], .full,
-[main], .main,
-[big], .big,
-[big-outer], .big-outer {
-    margin-bottom: @post-bottom !important;
-    margin-top: @post-top !important;
+[full], .full, [main], .main, [big], .big, [big-outer], .big-outer {
+    max-width: none !important;
     position: relative;
 
     figure {
         max-width: none !important;
-
-        @media @md {
-            margin-bottom: 0 !important;
-            margin-top: 0 !important;
-        }
     }
 
     &.dark, &.light-dark {
-        @media @xl {
+        .youtube {
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 0;
+        }
+
+        .fotorama {
+            .fotorama__nav-wrap {
+                position: relative;
+                margin-top: -30px;
+                z-index: 10;
+            }
+        }
+
+        @media @md {
             &::before {
                 position: absolute;
                 padding-right: 9999px;
@@ -54,25 +54,10 @@
                 top: 0;
             }
         }
-
-        .youtube {
-            margin-top: 0;
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 0;
-        }
-
-        .fotorama {
-            .fotorama__nav-wrap {
-                position: relative;
-                margin-top: -30px;
-                z-index: 10;
-            }
-        }
     }
 
     &.dark {
-        @media @xl {
+        @media @md {
             &::before {
                 background-color: @black;
             }
@@ -80,7 +65,7 @@
     }
 
     &.light-dark {
-        @media @xl {
+        @media @md {
             &::before {
                 background-color: #3f3f3f;
             }
@@ -89,19 +74,13 @@
 }
 
 [row] {
-    margin-right: -16px;
-    margin-left: -16px;
-    margin-bottom: 0;
+    margin-right: -8px;
+    margin-left: -8px;
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 0 1 auto;
     display: flex;
-
-    figure {
-        margin-bottom: @post-bottom;
-        margin-top: @post-top;        
-    }
 }
 
 [base], [block] {
@@ -118,18 +97,21 @@
 
 [aside], .aside {
     position: relative;
+    margin-bottom: @post-bottom;
+    margin-top: @post-top;
     max-width: @post-linel;
     width: 100%;
 
     @media @xl {
-        grid-column: aside / inner-right;
+        grid-column: aside-right;
         height: fit-content;
+        padding-left: 1em;
     }
 
     &, p {
         font-family: @glob-font;
-        font-size: @post-subtext-size;
         font-weight: @post-subtext-weight;
+        font-size: @post-subtext-size;
         line-height: @post-subtext-linel;
         letter-spacing: normal;
         color: @post-subtext-color;
@@ -148,6 +130,21 @@
     &.gray {
         background-color: @action;
         padding: 1em;
+    }
+
+    @media @xl {
+        &::before {
+            position: absolute;
+            background-color: @action;
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(20%,@action),color-stop(80%,@action),to(#fff));
+            background-image: -webkit-linear-gradient(top,#fff,@action 20%,@action 80%,#fff);
+            background-image: linear-gradient(to bottom,#fff,@action 20%,@action 80%,#fff);
+            content: '';
+            height: 100%;
+            width: 1px;
+            left: 0;
+            top: 0;
+        }
     }
 }
 

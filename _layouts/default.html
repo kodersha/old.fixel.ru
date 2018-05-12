@@ -1,7 +1,10 @@
 {% include _index/header.html %}
-{% include header.html %}
+{% include _post/cover.html %}
 
-{{ content }}
+<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+</div>
 
-{% include footer.html %}
 {% include _index/footer.html %}

@@ -1,0 +1,60 @@
+{% if page.likes.size > 0 and page.dislikes.size > 0 %}
+<div class="space-in-top-base-xs full row gamecard">
+	{% if page.dislikes.size > 0 %}
+	<div class="col-xs-12 col-sm-6 col-md-5">
+		<div class="dislike">
+			<strong>Не понравилось</strong>
+			<ul>
+			{% for dislike in page.dislikes %}
+				<li>{{ dislike }}</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+	{% endif %}
+	{% if page.likes.size > 0 %}
+	<div class="col-xs-12 col-sm-6 col-md-5">
+		<div class="like">
+			<strong>Понравилось</strong>
+			<ul>
+			{% for like in page.likes %}
+				<li>{{ like }}</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+	{% endif %}
+	{% if page.vote %}
+	<div class="col-xs-12 col-sm-6 col-md-2">
+		<div class="space-auto-h-xs vote">
+			<div class="voted">{{ page.vote }} из 10</div>
+			<canvas id="chart-{{ page.index }}" width="180" height="180"></canvas>
+			<script type="text/javascript">
+				var ctx = document.getElementById("chart-{{ page.index }}");
+				var myChart = new Chart(ctx, {
+					type: 'doughnut',
+					data: {
+						datasets: [{
+							label: "Оценка игры",
+							data: ['{{ page.vote }}', '{{ 10 | minus: page.vote }}'],
+							backgroundColor: [
+								'#3498db',
+								'#f4f8fb'
+							],
+							borderWidth: 1,
+							borderColor: '#edf4f8',
+							cutoutPercentage: 10
+						}]
+					},
+					options: {
+						tooltips: {
+							enabled: false
+						}
+					}
+				});
+			</script>
+		</div>
+	</div>
+	{% endif %}
+</div>
+{% endif %}

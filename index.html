@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Milkleaks
 tags:
 - Alexandra Travkina
 - blog
@@ -9,27 +10,23 @@ tags:
 - игры
 - фильмы
 - книги
+pagination: 
+  enabled: true
+  per_page: 21
+  tag: 'На главной'
+id: index
 ---
 
-<section class="slide-up-fade-in space-in-v-kilo-xs content">
-	<div class="space-in-bottom-kilo-xs list linel">
-		<h1 class="space-out-bottom-micro-xs">Свежее в блоге</h1>
-		{% for post in site.posts limit:10 %}
-			{% if post.hidden != true %}
-				{% include _post/index.html %}
-			{% endif %}
+<section class="slide-up-fade-in space-in-top-base-xs space-auto-h-xs content max">
+	<div class="space-in-bottom-kilo-xs space-minus-top-nano-xs row list">
+		{% assign current_page_posts = paginator.posts | size %}
+		{% for post in paginator.posts %}
+			{% include _post/index.html %}
 		{% endfor %}
-		<div class="space-out-top-micro-xs">
-			<a href="/blog/">Далее &rarr;</a>
-		</div>
-	</div>
-
-	<div class="space-in-v-mili-xs space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-out-h-zero-xl space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-in-h-zero-xl about">
-		<div class="item linel">
-			<h1 class="space-out-bottom-micro-xs">Александра Травкина</h1>
-			<p>Веб-дизайнер. Блогер. Фотограф без фотоаппарата. Люблю компьютерные игры, книги, сериалы, рок музыку и кошек. Верстаю шаблоны и придумываю дизайны. Пишу обзоры и статьи о играх.</p>
-			<p>Прокрастинирую.</p>
-			<p class="space-out-bottom-zero-xs">Для связи <a target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a target="_blank" href="https://icq.com/people/633328999">ICQ</a>.</p>
+		<div class="col-xs-12 space-in-top-nano-xs">
+			Больше постов и заметок в <a href="{{ site.baseurl }}/blog/">блоге</a>.
 		</div>
 	</div>
 </section>
+
+{% include pagination.html %}

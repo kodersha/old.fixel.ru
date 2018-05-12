@@ -17,22 +17,22 @@ telegram: sashatravkina
 
 # Cloudinary
 cloudinary: milkleaks
-cloudinary-size: c_limit,w_630
-cloudinary-big: w_1291
+cloudinary-size: c_limit,w_592
+cloudinary-big: w_1200
 
 # Jekyll
 safe: false
 
 # Navigation
 navigation:
+  - title: Блог
+    url: /blog/
   - title: Все записи
     url: /blog/all/
   - title: Теги
     url: /blog/tags/
   - title: Фотографии
     url: /photo/
-  - title: Работы
-    url: /work/
   - title: Об авторе
     url: /about/
   - title: Поддержать
@@ -108,8 +108,12 @@ extlinks:
   rel_exclude: ['milkleaks.ru']
   
 # Pagination
-paginate: 8
-paginate_path: "/page-:num/"
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page-:num/'
+  title: ':title'
+  sort_reverse: true
 
 # Archives
 jekyll-archives:

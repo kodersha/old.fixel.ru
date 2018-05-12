@@ -18,6 +18,7 @@ group :jekyll_plugins do
    gem 'jekyll', '>=3.0'
    gem "jekyll-include-cache"
    gem "jekyll-redirect-from"
+   gem "jekyll-paginate-v2"
    gem "jekyll-auto-image"
    gem "jekyll-typogrify"
    gem "jekyll-paginate"

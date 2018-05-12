@@ -1,59 +1,14 @@
 ---
 layout: default
 title: Блог
-dscription: Последние десять записей из каждой категории
+pagination: 
+  enabled: true
 ---
 
-<div class="slide-up-fade-in space-in-v-kilo-xs content">
-	<h1>{{ page.title }}</h1>
-	<div class="row blog">
-		<!--[ Categories ]-->
-		{% for category in site.categories %}
-			<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-mili-xs">
-				{% capture category_name %}{{ category | first }}{% endcapture %}
-				<strong class="space-in-bottom-nano-xs">{{ category_name }}</strong>
-				{% for post in site.categories[category_name] limit: 10 %}
-					<article class="space-in-bottom-nano-xs item">
-						<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-					</article>
-				{% endfor %}
+<section class="slide-up-fade-in space-auto-h-xs content max blog-list">
+	{% for post in paginator.posts %}
+		{% include _post/blog.html %}
+	{% endfor %}
+</section>
 
-				<a class="link link-readmore" href="{{ site.baseurl }}/blog/categories/{{ category_name | replace:' ', '-' | downcase  }}/">&bull;&bull;&bull;</a>
-			</section>
-		{% endfor %}
-
-		<!--[ Hiddens ]-->
-		<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-mili-xs">
-			<strong class="space-in-bottom-nano-xs">Старые записи</strong>
-			{% assign olderPosts = site.posts | where: 'hidden', 'true' %}
-			{% for post in olderPosts limit: 10 %}
-				<article class="space-in-bottom-nano-xs item">
-					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-				</article>
-			{% endfor %}
-			<a class="link link-readmore" href="{{ site.baseurl }}/blog/dungeon/">&bull;&bull;&bull;</a>
-		</section>
-
-		<!--[ Photos ]-->
-		<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-mili-xs">
-			<strong class="space-in-bottom-nano-xs">Фотографии</strong>
-			{% for post in site.photos reversed limit: 10 %}
-				<article class="space-in-bottom-nano-xs item">
-					<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-				</article>
-			{% endfor %}
-			<a class="link link-readmore" href="{{ site.baseurl }}/photo/">&bull;&bull;&bull;</a>
-		</section>
-
-		<!--[ Works ]-->
-		<section class="col-xs-12 col-sm-6 col-md-4 col-lg-3 space-out-bottom-mili-xs">
-			<strong class="space-in-bottom-nano-xs">Работы</strong>
-			{% for post in site.works reversed limit: 10 %}
-				<article class="space-in-bottom-nano-xs item">
-					<a target="_blank" href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }} &middot; {{ post.description | improve }}</a>
-				</article>
-			{% endfor %}
-			<a class="link link-readmore" href="{{ site.baseurl }}/work/">&bull;&bull;&bull;</a>
-		</section>
-	</div>
-</div>
+{% include pagination.html %}

@@ -1,11 +1,19 @@
 ---
 title: "Call Of Duty: Advanced Warfare"
-cover: "v1518871048/cover_ypmylm.jpg"
-thumbnail: "v1518871047/02_xlfb1o.jpg"
-hidden: true
+category: Игры
+tags:
+- Экшен
+- На главной
+
+description: Очередная и одиннадцатая часть всем известного шутера от первого лица, за издательством Activision и разработкой студии Sledgehammer Games...
+image: v1526056119/thumb_i5tjdx.png
+cover: v1518871048/cover_ypmylm.jpg
+color: white
 ---
 
 Call of Duty: Advanced Warfare — очередная и одиннадцатая часть всем известного шутера от первого лица, за издательством Activision и разработкой студии Sledgehammer Games, что занимались в свое время Modern Warfare 3, совместно со студией High Moon Studios, что занимались Deadpool’ом и различными частями Transformers. Вышла игра не столь давно — 4 ноября 2014 года и в разработке пробыла аж целых три года, что само по себе обещает хорошее качество исполнения. Что касательно «трансформеров», их в Call of Duty: Advanced Warfare достаточно, ведь «Advanced Warfare» это война будущего, где на полях битвы взрывают друг друга войны в силовых костюмах, где каждый солдат гордо носит на своих плечах экзоскелет, а каждый второй двойным прыжком взмывает в небо посредством «бустеров».
+
+<!-- more -->
 
 {% cloudinary src:v1518871047/01_rjp56s.jpg %}
 

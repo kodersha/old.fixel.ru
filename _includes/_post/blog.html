@@ -1,0 +1,14 @@
+<article class="{% if forloop.first == true %}space-in-top-base-xs{% elsif forloop.last == true %}space-in-top-kilo-xs space-in-bottom-kilo-xs{% else %}space-in-top-kilo-xs{% endif %} post">
+	<h2><a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a></h2>
+	{% if post.image %}
+	<p class="space-in-v-nano-xs thumbnail">
+		<a href="{{ post.url }}" class="link-photo">
+			<img src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/{{ post.image }}">
+		</a>
+	</p>
+	{% endif %}
+	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
+	{% if post.content contains '<!-- more -->' %}
+		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
+	{% endif %}
+</article>

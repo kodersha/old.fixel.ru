@@ -1,4 +1,4 @@
-a {
+a, .link {
     border-bottom: 1px solid;
     border-bottom-color: rgba(41, 128, 185, .15);
     text-decoration: none;
@@ -40,6 +40,15 @@ a {
     }
 }
 
-.lightbox-image, .anchor {
+.link-title {
+    color: @glob-font-color;
+
+    &:hover {
+        color: @darkerGray;
+    }
+}
+
+.link-photo, .lightbox-image, .anchor {
     border-bottom: none;
+    color: transparent;
 }

@@ -1,30 +1,54 @@
-.menu {
+.navigation {
+    border-top: 1px solid @action;
     position: relative;
-    
-    .menu-content {
-        -webkit-transition: all 0.1s ease-out;
-        -moz-transition: all 0.1s ease-out;
-        transition: all 0.1s ease-out;
+
+    @media @xl {
+        &::before {
+            background-color: @action;
+            background-image: -webkit-gradient(linear,left top,right top,from(#fff),color-stop(20%,@action),color-stop(80%,@action),to(#fff));
+            background-image: -webkit-linear-gradient(left,#fff,@action 20%,@action 80%,#fff);
+            background-image: linear-gradient(to right,#fff,@action 20%,@action 80%,#fff);
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            content: '';
+            z-index: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: -1px;
+        }
+    }
+
+    .menu {
         position: relative;
-        display: table;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-
-        li {
-            .post-settings();
-
-            font-size: @post-subtext-size;
-            font-family: @glob-font;
-            font-weight: @post-subtext-weight;
-            line-height: @post-subtext-linel;
+        
+        .menu-content {
+            -webkit-transition: all 0.1s ease-out;
+            -moz-transition: all 0.1s ease-out;
+            transition: all 0.1s ease-out;
             position: relative;
-            list-style: none;
-            float: left;
+            display: table;
+            width: 100%;
+            padding: 0;
+            margin: 0;
 
-            @media @mmd {
-                width: 50%;
+            li {
+                .post-settings();
+
+                font-size: @post-subtext-size;
+                font-family: @glob-font;
+                font-weight: @post-subtext-weight;
+                line-height: @post-subtext-linel;
+                position: relative;
+                list-style: none;
+                float: left;
+
+                @media @mmd {
+                    width: 50%;
+                }
             }
         }
     }
+
 }

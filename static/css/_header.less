@@ -53,7 +53,7 @@
         }
 
         @media @mmd {
-            background-color: #f1f3f4;
+            background-color: #f4f8fb;
             max-width: 100%;
             width: 100%;
 
@@ -69,10 +69,11 @@
 
     &.open {
         .search-form {
-            background-color: #f1f3f4;
+            background-color: #f4f8fb;
             width: 100%;
 
             .search-box {
+                border: 1px solid #edf4f8;
                 visibility: visible;
             }
         }
@@ -97,6 +98,7 @@
             display: block;
 
             .results {
+                background-color: #f4f8fb;
                 display: block;
             }
         }
@@ -109,7 +111,6 @@
         z-index: 100;
         
         .results {
-            background-color: #fafafa;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             transition: all 0.5s ease;
@@ -120,7 +121,7 @@
             display: none;
             width: 100%;
             right: 0;
-            top: 0;
+            top: 20px;
 
             li {
                 font-size: @glob-font-size;
@@ -165,263 +166,20 @@
     position: relative;
     display: block;
     height: @logoSize;
-    width: @logoSize;
 
     img {
         border-radius: 50%;
+        height: @logoSize;
+        width: @logoSize;
     }
 
     a {
         text-decoration: none;
-        position: absolute;
+        position: relative;
         border-bottom: 0;
         cursor: pointer;
         display: block;
         outline: none;
-        height: @logoSize;
-        width: @logoSize;
-
-        &:before {
-            position: absolute;
-            border-radius: 50%;
-            height: @logoSize;
-            width: @logoSize;
-            content: '';
-        }
-
-        span {
-            -webkit-transform: scale(0);
-            -moz-transform: scale(0);
-            -ms-transform: scale(0);
-            -o-transform: scale(0);
-            transform: scale(0);
-            position: absolute;
-            display: block;
-            height: @logoSize;
-            width: @logoSize;
-
-            &:before {
-                -webkit-animation: rainbow 18s ease infinite;
-                -z-animation: rainbow 18s ease infinite;
-                -o-animation: rainbow 18s ease infinite;
-                animation: rainbow 18s ease infinite;
-                background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-                background-size: 1800% 1800%;
-                border-radius: 50%;
-                position: absolute;
-                height: @logoSize;
-                width: @logoSize;
-                content: '';
-            }
-        }
-    }
-
-    .logotype {
-        -webkit-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
-        position: relative;
-        padding: 4px;
-        height: @logoSize;
-        width: @logoSize;
-
-        .logotype-path {
-            -webkit-transition: all 0.25s ease-in-out;
-            transition: all 0.25s ease-in-out;
-            position: absolute;
-            height: @logoSize;
-            width: @logoSize;
-        }
-    }
-
-    &.animate {
-        a {
-            &:focus::before, &:hover::before {
-                transition: background-color 0.35s linear;
-                background-color: @white;
-            }
-            span {
-                -webkit-animation: easeInElastic 0.35s forwards;
-                animation: easeInElastic 0.35s forwards;
-            }
-
-            .logotype {
-                -webkit-animation: easeOutElasticVisible 0.5s forwards;
-                animation: easeOutElasticVisible 0.5s forwards;
-            }
-
-            &:focus, &:hover {
-                span {
-                    -webkit-animation: easeOutElastic 0.5s forwards;
-                    animation: easeOutElastic 0.5s forwards;                    
-                }
-
-                .logotype {
-                    -webkit-animation: easeInElasticVisible 0.35s forwards;
-                    animation: easeInElasticVisible 0.35s forwards;
-
-                    .logotype-path {
-                        fill: @white;
-                    }
-                }
-            }
-        }
-    }
-
-    @-webkit-keyframes easeInElastic {
-        0% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        25% {
-            -webkit-transform: scale(1.135);
-            transform: scale(1.135);
-        }
-        100% {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-        }
-    }
-    
-    @keyframes easeInElastic {
-        0% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        25% {
-            -webkit-transform: scale(1.135);
-            transform: scale(1.135);
-        }
-        100% {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-        }
-    }
-    
-    @-webkit-keyframes easeInElasticVisible {
-        0% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        25% {
-            -webkit-transform: scale(1.135);
-            transform: scale(1.135);
-        }
-        100% {
-            -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-        }
-    }
-    
-    @keyframes easeInElasticVisible {
-        0% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        25% {
-            -webkit-transform: scale(1.135);
-            transform: scale(1.135);
-        }
-        100% {
-            -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-        }
-    }
-    
-    @-webkit-keyframes easeOutElastic {
-        0% {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-        }
-        60% {
-            -webkit-transform: scale(1.135);
-            transform: scale(1.135);
-        }
-        80% {
-            -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-        }
-        100% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-    
-    @keyframes easeOutElastic {
-        0% {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-        }
-        60% {
-            -webkit-transform: scale(1.135);
-            transform: scale(1.135);
-        }
-        80% {
-            -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-        }
-        100% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-    
-    @-webkit-keyframes easeOutElasticVisible {
-        0% {
-            -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-        }
-        20% {
-            -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-        }
-        40% {
-            -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-        }
-        100% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-    
-    @keyframes easeOutElasticVisible {
-        0% {
-            -webkit-transform: scale(0.85);
-            transform: scale(0.85);
-        }
-        20% {
-            -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-        }
-        40% {
-            -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-        }
-        100% {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-    }
-
-    @-webkit-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-moz-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @-o-keyframes rainbow {
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
-    }
-    @keyframes rainbow { 
-        0%{background-position:0% 82%}
-        50%{background-position:100% 19%}
-        100%{background-position:0% 82%}
     }
 }
 
