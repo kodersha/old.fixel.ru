@@ -16,7 +16,7 @@ color: white
 
 <!-- more -->
 
-{% youtube id:HY4jCjufLG8 class:"full dark" %}
+{% youtube id:HY4jCjufLG8 %}
 
 ## Стройте
 

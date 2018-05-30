@@ -75,9 +75,6 @@ bundle exec jekyll serve
 
 Блог станет доступен по локальному адресу [localhost:4000][7].
 
-Использованы материалы: [Инструкция с сайта Microsoft][3] и [Официальная документация][4] Jekyll.
-{: .aside}
-
 ---
 {: .easy}
 
@@ -92,6 +89,9 @@ apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clang
 {% highlight shell %}
 sudo gem install nokogiri -- --use-system-libraries
 {% endhighlight %}
+
+Использованы материалы: [Инструкция с сайта Microsoft][3] и [Официальная документация][4] Jekyll.
+{: .subtext}
 
 [1]:    http://jekyllrb.com/
 [2]:    https://pages.github.com/

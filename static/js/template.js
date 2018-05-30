@@ -1,36 +1,11 @@
-//PARALLAX
+/* Меню */
 
-$(window).scroll(function(){
-	parallax();
-  });
-  
-  function parallax(){
-	var scrolled = $(window).scrollTop();
-	$('.bg').css('top',-(scrolled*0.02)+'px');
-	$('.head .info').css('top',100+(scrolled*0.02)+'%');
-	$('.head .info').css('opacity',1-(scrolled*0.01)/10);
-	$('.head .info').css('opacity',1-(scrolled*0.01)/10);
-};
-
-/* Лого */
-
-function logoAnimate() {
-	var logo = document.querySelector('[data-js="logo"]');
-	console.log(logo);
-	logo.addEventListener('mouseenter', function(e) {
-		e.target.classList.add('animate');
-	});
-};
-  
-window.onload = function() {
-	logoAnimate();
-};
-
-/* Шапка поста */
-
-$(function() {
-	$('.cover img').primaryColor(function(color) {
-		$('.cover .frame').css('background-color', 'rgb('+color+')');
+$(document).ready(function(){
+	$('.navigation').hide();
+	
+    $('.toggle-menu').click(function(){
+		$('.navigation').fadeToggle( 'fast', 'linear' );
+		$('html,body').animate({ scrollTop: $('.navigation').offset().top}, 'slow');
 	});
 });
 
@@ -58,7 +33,7 @@ $('.post .fotorama').fotorama({
 
 /* Подменяем youtube плеер картинкой */
 
-$(".post .youtube").each(function() {
+$(".video .youtube").each(function() {
 	$(document).delegate('#'+this.id, 'click', function() {
 		var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
 		if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
@@ -135,36 +110,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 }
 
-/* Кнопка вверх */
-
-jQuery.extend(jQuery.fn, {
-	toplinkwidth: function(){
-		var totalContentWidth = jQuery('').outerWidth();
-		var totalTopLinkWidth = jQuery(this).children('a').outerWidth(true);
-		var h = jQuery(window).width()/2-totalContentWidth/2-totalTopLinkWidth;
-		if(h<0){
-			jQuery(this).addClass('hide');
-			return false;
-		} else {
-			if(jQuery(window).scrollTop() >= 1200){
-				jQuery(this).addClass('show');
-			}
-			return true;
-		}
-	}
-});
-
-jQuery(function($){
-	var topLink = $('.scroll-to-top');
-	$(window).scroll(function() {
-		if($(window).scrollTop() >= 1200 && topLink.toplinkwidth()) {
-			topLink.fadeIn(300);
-		} else {
-			topLink.fadeOut(300);
-		}
-	});
-	topLink.click(function(e) {
-		$("html").animate({scrollTop: 0}, 1000);
-		return false;
-	});
+$('.post-short').readmore({
+	speed: 75,
+	collapsedHeight: 1080,
+	moreLink: '<div class="space-minus-h-micro-xs space-minus-h-base-sm more"><a class="space-out-h-micro-xs space-out-h-base-sm morelink">Показать полностью</a></div>',
+	lessLink: ''
 });

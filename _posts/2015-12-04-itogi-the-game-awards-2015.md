@@ -198,4 +198,4 @@ color: white
 
 Полную запись трансляции вы можете посмотреть ниже.
 
-{% youtube id:cJyLB9-y8bA class:"full dark" %}
+{% youtube id:cJyLB9-y8bA %}

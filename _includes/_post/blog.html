@@ -1,14 +1,14 @@
-<article class="{% if forloop.first == true %}space-in-top-base-xs{% elsif forloop.last == true %}space-in-top-kilo-xs space-in-bottom-kilo-xs{% else %}space-in-top-kilo-xs{% endif %} post">
-	<h2><a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a></h2>
+<article class="{% if forloop.first %}{% elsif forloop.last %}space-in-top-kilo-xs{% else %}space-in-top-kilo-xs{% endif %} space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a></h1>
 	{% if post.image %}
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="{{ post.url }}" class="link-photo">
 			<img src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/{{ post.image }}">
 		</a>
-	</p>
+	</figure>
 	{% endif %}
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
 	{% if post.content contains '<!-- more -->' %}
 		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
-	{% endif %}
+	{% endif %}	
 </article>

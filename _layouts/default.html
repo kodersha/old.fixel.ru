@@ -1,10 +1,15 @@
 {% include _index/header.html %}
-{% include _post/cover.html %}
 
-<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+<div class="row space-out-zero-xs height-full">
+    <div class="col-xs-12 col-md-4 space-in-zero-xs sidebar">
+        {% include sidebar.html %}
+    </div>
+    <div class="col-xs-12 col-md-8 space-in-h-zero-xs space-auto-left-lg height-full">
+        <div class="space-auto-h-xs space-out-h-zero-lg space-in-h-micro-xs space-in-h-base-sm space-in-bottom-base-xs wrapper {% if page.wrapper %}{{ page.wrapper }}{% endif %}">
+            {{ content }}
+            {% include footer.html %}
+        </div>
+    </div>
 </div>
 
 {% include _index/footer.html %}

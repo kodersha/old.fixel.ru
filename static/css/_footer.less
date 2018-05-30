@@ -1,5 +1,22 @@
 & {
+    position: relative;
+    overflow: hidden;
     flex-shrink: 0;
+}
+
+.toggle {
+    overflow: hidden;
+
+    .toggle-menu {
+        display: inline-block;
+        font-family: @glob-font;
+        font-size: 2.25em;
+        vertical-align: sub;
+        letter-spacing: -1px;
+        line-height: 0;
+        color: #a9b1b5;
+        cursor: pointer;
+    }
 }
 
 .copyright {
@@ -14,6 +31,7 @@
 }
 
 .scroll-to-top {
+    font-size: @glob-subtext-size;
     display: none;
 
     .show {
@@ -22,8 +40,6 @@
 
     a {
         color: #a9b1b5;
-        border-bottom: 0;
-        line-height: 0;
 
         &:hover {
             color: @actionColor;

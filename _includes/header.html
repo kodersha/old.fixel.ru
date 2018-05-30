@@ -1,10 +1,10 @@
-{% unless page.cover %}
-	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
+
+	<header class="space-in-top-mili-xs space-auto-h-xs linel{% if page.grid == 'extended' %} max{% endif %}">
 		<div class="row row-reverse-xs row-middle-sm">
 			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
 				<div class="search space-auto-left-md">
 					<div class="search-form">
-						<input type="text" id="search-input" class="search-box" />
+						<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
 						<span class="search-button">
 							<i class="fa fa-search open" aria-hidden="true"></i>
 							<i class="fa fa-times close" aria-hidden="true"></i>
@@ -22,4 +22,3 @@
 			</div>
 		</div>
 	</header>
-{% endunless %}

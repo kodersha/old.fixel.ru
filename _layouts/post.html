@@ -2,18 +2,14 @@
 layout: default
 ---
 
-<section class="slide-up-fade-in {% if page.cover %}space-in-top-mili-xs{% else %}space-in-top-base-xs{% endif %} space-in-bottom-kilo-xs space-auto-h-xs content max">
-	<article class="post grid{% if page.toc == 'true' %} js-toc-content{% endif %}">
-		{% unless page.cover %}
-			<h1>{{ page.title | improve }}</h1>
-		{% endunless %}
-		{% if page.toc == "true" %}
-			<div class="toc js-toc"></div>
-		{% endif %}
-		{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
+<article class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs content post{% if page.toc == 'true' %} js-toc-content{% endif %}">
+	<h1>{{ page.title | improve }}</h1>
+	{% if page.toc == "true" %}
+		<div class="toc js-toc"></div>
+	{% endif %}
+	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
 
-		{% include _post/gamecard.html %}
-	</article>
-</section>
+	{% include _post/gamecard.html %}
+</article>
 
 {% include _post/pagination.html %}

@@ -27,7 +27,7 @@ tags:
 
 Называем свою тему для русской и английской версии для отображения в настройках сайта.
 
-### Структура папок
+## Структура папок
 
 <div block>
     <p><mark>../themes/ghost/images</mark> — Папка с изображениями темы.</p>
@@ -38,7 +38,7 @@ tags:
 
 Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути `../system/theme`.
 
-### Шаблоны
+## Шаблоны
 
 Теперь стоит подробнее разобрать содержимое папки `../system/theme/templates` стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты.
 
@@ -47,42 +47,42 @@ tags:
 
 `author-menu.tmpl.php` — Меню автора.
 
-{% cloudinary src:v1519055157/01_u94w7j.png class:"left" %}
+{% cloudinary src:v1519055157/01_u94w7j.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `comments-heading.tmpl.php` — Заголовок списка комментариев с счетчиком их количества.
 
-{% cloudinary src:v1519055157/02_dqegcp.png class:"left" %}
+{% cloudinary src:v1519055157/02_dqegcp.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `comments.tmpl.php` — Список комментариев.
 
-{% cloudinary src:v1519055157/03_oiureh.png class:"left" %}
+{% cloudinary src:v1519055157/03_oiureh.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `drafts.tmpl.php` — Список черновиков.
 
-{% cloudinary src:v1519055157/04_gegc6o.png class:"left" %}
+{% cloudinary src:v1519055157/04_gegc6o.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-comment.tmpl.php` — Форма комментирования.
 
-{% cloudinary src:v1519055157/05_iffrnu.png class:"left" %}
+{% cloudinary src:v1519055157/05_iffrnu.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-database.tmpl.php` — Форма подключения к базе данных.
 
-{% cloudinary src:v1519055157/06_yor8w5.png class:"left" %}
+{% cloudinary src:v1519055157/06_yor8w5.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
@@ -94,56 +94,56 @@ tags:
 
 `form-login.tmpl.php` — Форма авторизации.
 
-{% cloudinary src:v1519055158/07_tyqwia.png class:"left" %}
+{% cloudinary src:v1519055158/07_tyqwia.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-note-delete.tmpl.php` — Форма удаления поста.
 
-{% cloudinary src:v1519055158/08_qujnf6.png class:"left" %}
+{% cloudinary src:v1519055158/08_qujnf6.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-note-publish.tmpl.php` — Кнопка публикации поста.
 
-{% cloudinary src:v1519055158/09_li03z6.png class:"left" %}
+{% cloudinary src:v1519055158/09_li03z6.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-note.tmpl.php` — Форма публикации поста.
 
-{% cloudinary src:v1519055158/10_ufuc0b.png class:"left" %}
+{% cloudinary src:v1519055158/10_ufuc0b.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-password.tmpl.php` — Форма смены админ-пароля.
 
-{% cloudinary src:v1519055158/11_hhe2au.png class:"left" %}
+{% cloudinary src:v1519055158/11_hhe2au.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-preferences.tmpl.php` — Форма общих настроек блога.
 
-{% cloudinary src:v1519055160/13_i8udli.png class:"left" %}
+{% cloudinary src:v1519055160/13_i8udli.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-tag-delete.tmpl.php` — Форма удаления тега.
 
-{% cloudinary src:v1519055159/14_jwipj8.png class:"left" %}
+{% cloudinary src:v1519055159/14_jwipj8.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `form-tag.tmpl.php` — Форма редактирования тега.
 
-{% cloudinary src:v1519055160/15_p02lox.png class:"left" %}
+{% cloudinary src:v1519055160/15_p02lox.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
@@ -155,7 +155,7 @@ tags:
 
 `heading.tmpl.php` — Заголовки.
 
-{% cloudinary src:v1519055159/16_sxxqud.png class:"left" %}
+{% cloudinary src:v1519055159/16_sxxqud.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
@@ -172,7 +172,7 @@ tags:
 
 `login-element.tmpl.php` — Кнопка авторизации.
 
-{% cloudinary src:v1519055159/17_gtjx4a.png class:"left" %}
+{% cloudinary src:v1519055159/17_gtjx4a.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
@@ -194,63 +194,63 @@ tags:
 
 `pages-earlier.tmpl.php` — Кнопка к постам «Ранее».
 
-{% cloudinary src:v1519055159/18_z1fn67.png class:"left" %}
+{% cloudinary src:v1519055159/18_z1fn67.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `pages-later.tmpl.php` — Кнопка к постам «Позднее».
 
-{% cloudinary src:v1519055160/19_twa7wi.png class:"left" %}
+{% cloudinary src:v1519055160/19_twa7wi.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `pages.tmpl.php` — Навигация между постами.
 
-{% cloudinary src:v1519055161/20_vsrib7.png class:"left" %}
+{% cloudinary src:v1519055161/20_vsrib7.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `popular.tmpl.php` — Блок популярных постов.
 
-{% cloudinary src:v1519055160/21_ukwlhu.png class:"left" %}
+{% cloudinary src:v1519055160/21_ukwlhu.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `search.tmpl.php` — Форма поиска и теги.
 
-{% cloudinary src:v1519055160/22_r7lfmw.png class:"left" %}
+{% cloudinary src:v1519055160/22_r7lfmw.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `tags-menu.tmpl.php` — Список избранных тегов.
 
-{% cloudinary src:v1519055160/23_lbl7ii.png class:"left" %}
+{% cloudinary src:v1519055160/23_lbl7ii.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `tags.tmpl.php` — Страница тегов.
 
-{% cloudinary src:v1519055161/24_fldmsy.png class:"left" %}
+{% cloudinary src:v1519055161/24_fldmsy.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 `user-blockture.tmpl.php` — Аватар блога.
 
-{% cloudinary src:v1519055161/25_zw1ide.png class:"left" %}
+{% cloudinary src:v1519055161/25_zw1ide.png class:"left wrap without-shadow" %}
 
 ---
 {: .easy}
 
 Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы `../system/theme/templates` в папку `templates` вашего шаблона и уже там производите все изменения.
 
-### Подключение частей шаблона
+## Подключение частей шаблона
 
 Официальная [документация][2] по шаблонам Эгеи сообщает:
 
@@ -263,7 +263,6 @@ tags:
 
 Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл `quote.tmpl.php` в `../themes/ghost/templates` со следующим несложным кодом:
 
-<div full color class="light-dark">
 {% highlight php %}
 <div class="e2-quote">
     <?php
@@ -283,7 +282,6 @@ tags:
     ?>
 </div>
 {% endhighlight %}
-</div>
 
 Теперь достаточно открыть `layout.tmpl.php` и где-нибудь перед footer’ом добавить вывод шаблона `quote.tmpl.php` средством специального макроса.
 
@@ -301,7 +299,7 @@ tags:
 
 Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный `layout.tmpl.php` с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.
 
-### Подключение собственных JS и CSS
+## Подключение собственных JS и CSS
 
 Для подключения JS и CSS в Эгее также существуют специальные макросы. Для наглядности откройте стандартный `main.tmpl.php` и посмотрите в конец файла, после закрывающегося тега `body`:
 
@@ -340,7 +338,7 @@ tags:
 Теперь остается открыть шаблон `notes.tmpl.php` и к основному div’у поста (18 строка) добавить класс `wow fadeIn`, а в `main.css` добавить `.wow { visibility: hidden; }`. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.
 
 Смотрите ещё: [Кат в Эгее][5], [Свои шрифты в Эгее][6] и [Сноски на полях в Эгее][7].
-{: .aside}
+{: .subtext}
 
 
 [1]:    http://blogengine.ru

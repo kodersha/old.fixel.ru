@@ -12,5 +12,9 @@ cover: '/static/images/about.jpg'
 
 Прокрастинирую.
 
+---
+
+Для связи <a target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a target="_blank" href="https://icq.com/people/633328999">ICQ</a>.
+
 [1]:	/work
 [2]:	/blog

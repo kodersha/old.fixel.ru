@@ -12,20 +12,19 @@ tags:
 - книги
 pagination: 
   enabled: true
-  per_page: 21
+  per_page: 13
   tag: 'На главной'
 id: index
+wrapper: extended color-gray
 ---
 
-<section class="slide-up-fade-in space-in-top-base-xs space-auto-h-xs content max">
-	<div class="space-in-bottom-kilo-xs space-minus-top-nano-xs row list">
-		{% assign current_page_posts = paginator.posts | size %}
-		{% for post in paginator.posts %}
-			{% include _post/index.html %}
-		{% endfor %}
-		<div class="col-xs-12 space-in-top-nano-xs">
-			Больше постов и заметок в <a href="{{ site.baseurl }}/blog/">блоге</a>.
-		</div>
+<section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-minus-top-nano-xs row list">
+	{% assign current_page_posts = paginator.posts | size %}
+	{% for post in paginator.posts %}
+		{% include _post/index.html %}
+	{% endfor %}
+	<div class="col-xs-12 space-in-top-nano-xs">
+		Больше постов и заметок в <a href="{{ site.baseurl }}/blog/">блоге</a>.
 	</div>
 </section>
 

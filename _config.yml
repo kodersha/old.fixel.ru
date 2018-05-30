@@ -17,8 +17,8 @@ telegram: sashatravkina
 
 # Cloudinary
 cloudinary: milkleaks
-cloudinary-size: c_limit,w_592
-cloudinary-big: w_1200
+cloudinary-size: c_limit,w_640
+cloudinary-big: c_limit,w_640
 
 # Jekyll
 safe: false
@@ -27,16 +27,16 @@ safe: false
 navigation:
   - title: Блог
     url: /blog/
-  - title: Все записи
+  - title: Все
     url: /blog/all/
   - title: Теги
     url: /blog/tags/
   - title: Фотографии
     url: /photo/
-  - title: Об авторе
-    url: /about/
   - title: Поддержать
     url: /donate/
+  - title: Об авторе
+    url: /about/
   - title: Магазин игр
     url: http://steambuy.com/partner/milkleaks
 

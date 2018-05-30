@@ -1,26 +1,9 @@
 .navigation {
-    border-top: 1px solid @action;
     position: relative;
-
-    @media @xl {
-        &::before {
-            background-color: @action;
-            background-image: -webkit-gradient(linear,left top,right top,from(#fff),color-stop(20%,@action),color-stop(80%,@action),to(#fff));
-            background-image: -webkit-linear-gradient(left,#fff,@action 20%,@action 80%,#fff);
-            background-image: linear-gradient(to right,#fff,@action 20%,@action 80%,#fff);
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            content: '';
-            z-index: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            top: -1px;
-        }
-    }
+    display: none;
 
     .menu {
+        border-top: 1px solid rgba(0,0,0,.05);
         position: relative;
         
         .menu-content {
@@ -36,9 +19,8 @@
             li {
                 .post-settings();
 
-                font-size: @post-subtext-size;
                 font-family: @glob-font;
-                font-weight: @post-subtext-weight;
+                font-size: @post-subtext-size;
                 line-height: @post-subtext-linel;
                 position: relative;
                 list-style: none;

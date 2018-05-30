@@ -23,7 +23,6 @@ color: white
 - В Safari `Cmd + Option + C`, предварительно включив режим разработчика `Настройки - Дополнения - Показывать меню «Разработка» в строке меню`.
 4. Скопировать и вставить скрипт в консоль, нажать `Enter` и немного подождать до обновления страницы.
 
-<div full color class="light-dark">
 {% highlight javascript %}
 var GenerateQueue = function( queueNumber )
 {
@@ -50,7 +49,6 @@ var GenerateQueue = function( queueNumber )
 };
 GenerateQueue( 0 );
 {% endhighlight %}
-</div>
 
 Собственно говоря, таким нехитрым образом можно получать все три распродажные карточки за считаные секунды, что ещё более актуально при наличии нескольких Steam аккаунтов. 
 

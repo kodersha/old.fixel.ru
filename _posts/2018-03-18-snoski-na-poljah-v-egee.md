@@ -100,7 +100,7 @@ tags:
 {% endhighlight %}
 
 Смотрите ещё: [Кат в Эгее][1], [Свои шрифты в Эгее][2] и [Пишем свой шаблон для Эгеи][3].
-{: .aside}
+{: .subtext}
 
 [1]:	/blog/kat-v-egee/
 [2]:	/blog/svoi-shrifty-v-egee/

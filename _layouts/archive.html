@@ -4,11 +4,13 @@ class: blog
 title: {{ page.title }}
 ---
 
-<section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
-	<h1>{{ page.title }}</h1>
-	{% for post in page.posts %}
-		<article class="{% if forloop.last == true %}space-out-bottom-zero-xs{% else %}space-in-bottom-nano-xs{% endif %} item">
-			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-		</article>
-	{% endfor %}
-</section>
+<div class="space-in-top-base-xs space-in-bottom-kilo-xs content">
+	<section class="slide-up-fade-in">
+		<h1>{{ page.title }}</h1>
+		{% for post in page.posts %}
+			<article class="{% if forloop.last == true %}space-out-bottom-zero-xs{% else %}space-in-bottom-nano-xs{% endif %} item">
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
+			</article>
+		{% endfor %}
+	</section>
+</div>

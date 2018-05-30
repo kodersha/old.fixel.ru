@@ -3,7 +3,7 @@
 //
 
 .search {
-    max-width: 18.125rem;
+    max-width: 18rem;
     position: relative;
     
     .search-form {
@@ -34,11 +34,11 @@
         }
         
         .search-button {
-            font-size: @glob-font-size;
-            padding-bottom: 16px;
-            padding-right: 16px;
-            padding-left: 16px;
-            padding-top: 16px;
+            font-size: @glob-subtext-size;
+            padding-bottom: 17px;
+            padding-right: 17px;
+            padding-left: 17px;
+            padding-top: 17px;
             position: absolute;
             color: #a9b1b5;
             line-height: 0;
@@ -53,7 +53,7 @@
         }
 
         @media @mmd {
-            background-color: #f4f8fb;
+            background-color: @white;
             max-width: 100%;
             width: 100%;
 
@@ -69,20 +69,19 @@
 
     &.open {
         .search-form {
-            background-color: #f4f8fb;
+            background-color: @white;
             width: 100%;
 
             .search-box {
-                border: 1px solid #edf4f8;
                 visibility: visible;
             }
         }
         
         .search-button {
-            padding-bottom: 16px;
-            padding-right: 18px;
-            padding-left: 18px;
-            padding-top: 16px;
+            padding-bottom: 17px;
+            padding-right: 19px;
+            padding-left: 19px;
+            padding-top: 17px;
             
             i.open {
                 display: none;
@@ -98,7 +97,6 @@
             display: block;
 
             .results {
-                background-color: #f4f8fb;
                 display: block;
             }
         }
@@ -111,6 +109,7 @@
         z-index: 100;
         
         .results {
+            background-color: @action;
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             transition: all 0.5s ease;
@@ -120,8 +119,14 @@
             padding-left: 0;
             display: none;
             width: 100%;
+            bottom: initial;
             right: 0;
-            top: 20px;
+            top: 24px;
+
+            @media @md {
+                bottom: 72px;
+                top: initial;
+            }
 
             li {
                 font-size: @glob-font-size;
@@ -165,7 +170,6 @@
 
     position: relative;
     display: block;
-    height: @logoSize;
 
     img {
         border-radius: 50%;
@@ -175,10 +179,10 @@
 
     a {
         text-decoration: none;
+        display: inline-block;
         position: relative;
         border-bottom: 0;
         cursor: pointer;
-        display: block;
         outline: none;
     }
 }

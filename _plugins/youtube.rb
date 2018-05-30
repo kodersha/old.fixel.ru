@@ -19,12 +19,14 @@ module Jekyll
 			# Get the path
 			@video = @attributes['id']
 			@thumbnail = @attributes['thumb'] ? "<img src=\"https://res.cloudinary.com/#{@cloud_name}/image/upload/#{@cloud_big}/#{@attributes['thumb']}\" class=\"thumbnail\">" : "<img src=\"https://img.youtube.com/vi/#{@attributes['id']}/maxresdefault.jpg\" class=\"thumbnail\">"
-			@class = @attributes['class'] ? " #{@attributes['class']}" : ''
+			@class = @attributes['class'] ? "#{@attributes['class']}" : "space-minus-h-micro-xs space-minus-h-base-sm"
 			"""
-				<figure id=\"#{@video}\" class=\"youtube#{@class}\">
-					<div class=\"play\"></div>
-					#{@thumbnail}
-					<noscript><div class=\"playing\"><iframe frameborder=\"0\" src=\"https://www.youtube.com/embed/#{@video}?autoplay=0&amp;autohide=1\"></iframe></div></noscript>
+				<figure class=\"#{@class} video\">
+					<div id=\"#{@video}\" class=\"youtube\">
+						<div class=\"play\"></div>
+						#{@thumbnail}
+						<noscript><div class=\"playing\"><iframe frameborder=\"0\" src=\"https://www.youtube.com/embed/#{@video}?autoplay=0&amp;autohide=1\"></iframe></div></noscript>
+					</div>
 				</figure>
 			""".strip
 		end
