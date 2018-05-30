@@ -59,6 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
+<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -92,226 +93,247 @@
 
 	<body class="blog">
 
-
-<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
-    
-	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
-		<div class="row row-reverse-xs row-middle-sm">
-			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-				<div class="search space-auto-left-md">
-					<div class="search-form">
-						<input type="text" id="search-input" class="search-box" />
-						<span class="search-button">
-							<i class="fa fa-search open" aria-hidden="true"></i>
-							<i class="fa fa-times close" aria-hidden="true"></i>
-						</span>
-					</div>
-					<div class="dropdown">
-						<ul class="results" id="results-container"></ul>
+<div class="row space-out-zero-xs height-full">
+    <div class="col-xs-12 col-md-4 space-in-zero-xs sidebar">
+        <section class="background">
+	<div class="bg"></div>
+	<div class="space-in-h-micro-xs space-in-h-base-sm content">
+		<header class="col-xs-12 space-auto-top-xs space-in-v-base-xs space-in-h-zero-xs space-auto-h-xs linel">
+			<div class="row row-middle-sm">
+				<div class="col-xs-12 col-sm-shrink space-in-bottom-mili-xs space-in-bottom-zero-md logo">
+					<a class="link-logo" href="/">
+						<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm">
+					<div class="search space-auto-left-md">
+						<div class="search-form">
+							<input type="text" id="search-input" class="search-box" />
+							<span class="search-button">
+								<i class="fa fa-search open" aria-hidden="true"></i>
+								<i class="fa fa-times close" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div class="dropdown">
+							<ul class="results" id="results-container"></ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-shrink logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
+		</header>
+	</div>
+</section>
+<style type="text/css">
+	.sidebar .background .bg {
+		
+			background-image: url('/static/images/bg.png');
+		
+	}
+</style>
+    </div>
+    <div class="col-xs-12 col-md-8 space-in-h-zero-xs space-auto-left-lg height-full">
+        <div class="space-auto-h-xs space-out-h-zero-lg space-in-h-micro-xs space-in-h-base-sm space-in-bottom-base-xs wrapper ">
+            <div class="space-in-top-base-xs space-in-bottom-kilo-xs content">
+	<section class="slide-up-fade-in">
+		<h1>Теги</h1>
+		
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/3d-печать/">3D печать</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/apple/">Apple</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/cms/">CMS</a> &middot; 3
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/it/">IT</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/jekyll/">Jekyll</a> &middot; 4
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/mac/">Mac</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/os/">OS</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/steam/">Steam</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/telegram/">Telegram</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/антиутопия/">Антиутопия</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/визуальная-новелла/">Визуальная новелла</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/выживаиние/">Выживаиние</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/выживание/">Выживание</a> &middot; 16
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/гайд/">Гайд</a> &middot; 10
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/гонка/">Гонка</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/градостроительный-симулятор/">Градостроительный симулятор</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/зомби/">Зомби</a> &middot; 4
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/изометрия/">Изометрия</a> &middot; 5
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/инди/">Инди</a> &middot; 5
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/интерактивный-фильм/">Интерактивный фильм</a> &middot; 5
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/история/">История</a> &middot; 8
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/квест/">Квест</a> &middot; 18
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/крафтинг/">Крафтинг</a> &middot; 13
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/менеджер/">Менеджер</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/на-главной/">На главной</a> &middot; 58
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/научная-фантастика/">Научная фантастика</a> &middot; 4
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/открытый-мир/">Открытый мир</a> &middot; 19
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/пиксельная-графика/">Пиксельная графика</a> &middot; 10
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/платформер/">Платформер</a> &middot; 6
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/постапокалипсис/">Постапокалипсис</a> &middot; 4
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/приключение/">Приключение</a> &middot; 9
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/программа/">Программа</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/путешествие/">Путешествие</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/ретроспектива/">Ретроспектива</a> &middot; 3
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/рисование/">Рисование</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/ролевая-игра/">Ролевая игра</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/саморазвитие/">Саморазвитие</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/симулятор/">Симулятор</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/статьи/">Статьи</a> &middot; 3
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/статья/">Статья</a> &middot; 2
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/фильм/">Фильм</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/хоррор/">Хоррор</a> &middot; 5
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/шаблон/">Шаблон</a> &middot; 1
+			</article>
+		
+			<article class="space-in-bottom-nano-xs item">
+				<a href="/blog/tags/эгея/">Эгея</a> &middot; 5
+			</article>
+		
+			<article class="space-out-bottom-zero-xs item">
+				<a href="/blog/tags/экшен/">Экшен</a> &middot; 9
+			</article>
+		
+	</section>
+</div>
+            <footer>	
+	<div class="space-out-bottom-micro-xs copyright">
+		<div class="row">
+			<div class="col-xs">
+			Александра Травкина &copy; <time>2015 - 2018</time>
+			</div>
+			<div class="col-xs-shrink toggle">
+				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
-	</header>
-
-    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
-	<h1>Теги</h1>
-	
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/3d-печать/">3D печать</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/apple/">Apple</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/cms/">CMS</a> &middot; 3
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/it/">IT</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/jekyll/">Jekyll</a> &middot; 4
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/mac/">Mac</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/os/">OS</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/steam/">Steam</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/telegram/">Telegram</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/антиутопия/">Антиутопия</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/визуальная-новелла/">Визуальная новелла</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/выживаиние/">Выживаиние</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/выживание/">Выживание</a> &middot; 16
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/гайд/">Гайд</a> &middot; 10
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/гонка/">Гонка</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/градостроительный-симулятор/">Градостроительный симулятор</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/зомби/">Зомби</a> &middot; 4
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/изометрия/">Изометрия</a> &middot; 5
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/инди/">Инди</a> &middot; 5
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/интерактивный-фильм/">Интерактивный фильм</a> &middot; 5
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/история/">История</a> &middot; 8
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/квест/">Квест</a> &middot; 18
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/крафтинг/">Крафтинг</a> &middot; 13
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/менеджер/">Менеджер</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/на-главной/">На главной</a> &middot; 58
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/научная-фантастика/">Научная фантастика</a> &middot; 4
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/открытый-мир/">Открытый мир</a> &middot; 19
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/пиксельная-графика/">Пиксельная графика</a> &middot; 10
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/платформер/">Платформер</a> &middot; 6
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/постапокалипсис/">Постапокалипсис</a> &middot; 4
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/приключение/">Приключение</a> &middot; 9
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/программа/">Программа</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/путешествие/">Путешествие</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/ретроспектива/">Ретроспектива</a> &middot; 3
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/рисование/">Рисование</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/ролевая-игра/">Ролевая игра</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/саморазвитие/">Саморазвитие</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/симулятор/">Симулятор</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/статьи/">Статьи</a> &middot; 3
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/статья/">Статья</a> &middot; 2
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/фильм/">Фильм</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/хоррор/">Хоррор</a> &middot; 5
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/шаблон/">Шаблон</a> &middot; 1
-		</article>
-	
-		<article class="space-in-bottom-nano-xs item">
-			<a href="/blog/tags/эгея/">Эгея</a> &middot; 5
-		</article>
-	
-		<article class="space-out-bottom-zero-xs item">
-			<a href="/blog/tags/экшен/">Экшен</a> &middot; 9
-		</article>
-	
-</section>
-    <footer>	
-	<div class="space-auto-h-xs linel max copyright">
-		Александра Травкина &copy; <time>2015 - 2018</time><br />
-		<div class="space-in-top-nano-xs contacts">Для связи <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a class="link-subcontrol" target="_blank" href="https://icq.com/people/633328999">ICQ</a>.</div>
 	</div>
 
-	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
-	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
+	<section class="navigation">
+	<nav class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-in-v-micro-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
 			
@@ -321,7 +343,7 @@
 			
 			
 			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все записи</a></li>
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все</a></li>
 			
 			
 			
@@ -333,11 +355,11 @@
 			
 			
 			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
-			
-			
-			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
 			
 			
 			
@@ -345,14 +367,10 @@
 			
 		</ol>
 	</nav>
-
-	<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg hidden-upto-md">
-		<div class="scroll-to-top">
-			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-		</div>
-	</div>
 </section>
 </footer>
+        </div>
+    </div>
 </div>
 
 		<!--[ JS ]-->

@@ -59,6 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
+<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -92,208 +93,229 @@
 
 	<body class="">
 
-
-<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
-    
-	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
-		<div class="row row-reverse-xs row-middle-sm">
-			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-				<div class="search space-auto-left-md">
-					<div class="search-form">
-						<input type="text" id="search-input" class="search-box" />
-						<span class="search-button">
-							<i class="fa fa-search open" aria-hidden="true"></i>
-							<i class="fa fa-times close" aria-hidden="true"></i>
-						</span>
-					</div>
-					<div class="dropdown">
-						<ul class="results" id="results-container"></ul>
+<div class="row space-out-zero-xs height-full">
+    <div class="col-xs-12 col-md-4 space-in-zero-xs sidebar">
+        <section class="background">
+	<div class="bg"></div>
+	<div class="space-in-h-micro-xs space-in-h-base-sm content">
+		<header class="col-xs-12 space-auto-top-xs space-in-v-base-xs space-in-h-zero-xs space-auto-h-xs linel">
+			<div class="row row-middle-sm">
+				<div class="col-xs-12 col-sm-shrink space-in-bottom-mili-xs space-in-bottom-zero-md logo">
+					<a class="link-logo" href="/">
+						<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm">
+					<div class="search space-auto-left-md">
+						<div class="search-form">
+							<input type="text" id="search-input" class="search-box" />
+							<span class="search-button">
+								<i class="fa fa-search open" aria-hidden="true"></i>
+								<i class="fa fa-times close" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div class="dropdown">
+							<ul class="results" id="results-container"></ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-shrink logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</div>
-		</div>
-	</header>
-
-    <section class="slide-up-fade-in space-auto-h-xs content max blog-list">
-	
-		<article class="space-in-top-base-xs post">
-	<h2><a class="link-title" href="/blog/ujutnyj-jekyll/">Уютный&nbsp;Jekyll</a></h2>
+		</header>
+	</div>
+</section>
+<style type="text/css">
+	.sidebar .background .bg {
+		
+			background-image: url('/static/images/bg.png');
+		
+	}
+</style>
+    </div>
+    <div class="col-xs-12 col-md-8 space-in-h-zero-xs space-auto-left-lg height-full">
+        <div class="space-auto-h-xs space-out-h-zero-lg space-in-h-micro-xs space-in-h-base-sm space-in-bottom-base-xs wrapper ">
+            <div class="content">
+    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs blog-list">
+        
+            <article class=" space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/ujutnyj-jekyll/">Уютный&nbsp;Jekyll</a></h1>
 	
 	<p>Внезапно, но блог сменил движок с <a href="/blog/egeya/">Эгеи</a> на Jekyll и тому было несколько причин. Во-первых, в блог я пишу не так часто, иногда и вовсе раз в несколько месяцев, поэтому нет смысла содержать полноценный хостинг. Во-вторых, Jekyll представляет собой статический сайт без какого-либо php и mysql, соответственно страницы загружаются если не моментально, то явно гораздо быстрее, в отличие от сайта на хостинге который, ко всему прочему, был не очень то быстр. В-третьих, Jekyll базируется на GitHub Pages, следовательно, не придется беспокоится об оплате хостинга, а сайт всегда будет доступен из репозитория.</p>
 
 
 	
 		<p><a href="/blog/ujutnyj-jekyll/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/the-long-dark-wintermute/">The Long Dark:&nbsp;Wintermute</a></h1>
 	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/the-long-dark-wintermute/">The Long Dark:&nbsp;Wintermute</a></h2>
-	
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="/blog/the-long-dark-wintermute/" class="link-photo">
 			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525626553/thumb_qfq6ou.png">
 		</a>
-	</p>
+	</figure>
 	
 	<p>Первого августа наконец таки вышел долгожданный сюжетный режим для <a href="/blog/the-long-dark/">The Long Dark</a> — симулятора выживания в диких условиях холодной Канады. Напомню, что игра разрабатывалась с двадцать второго сентября 2014 года и лишь первого августа 2017 вышла из стадии альфа-тестирования привнеся в себя сюжетный режим, новый игровой интерфейс и прочие мелочи.</p>
 
 
 	
 		<p><a href="/blog/the-long-dark-wintermute/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/stardew-valley/">Stardew&nbsp;Valley</a></h1>
 	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/stardew-valley/">Stardew&nbsp;Valley</a></h2>
-	
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="/blog/stardew-valley/" class="link-photo">
 			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525626991/thumb_t3cefr.png">
 		</a>
-	</p>
+	</figure>
 	
 	<p>Еще одна ламповая пиксельная игра на просторах <a href="http://store.steampowered.com/app/413150/" rel="nofollow" target="_blank">Steam</a> в жанре ролевой игры и крафтинга. В Stardew Valley игроку предстоит примерить на себя роль фермера — забросив тяготы городской жизни и рутинную работу в корпорации Joja, вы переезжаете на старую дедушкину ферму в долине Стардью, где вооружившись инструментами и терпением вам предстоит создать из заросшего пустыря процветающую ферму.</p>
 
 
 	
 		<p><a href="/blog/stardew-valley/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/what-remains-of-edith-finch/">What Remains of Edith&nbsp;Finch</a></h1>
 	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/what-remains-of-edith-finch/">What Remains of Edith&nbsp;Finch</a></h2>
-	
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="/blog/what-remains-of-edith-finch/" class="link-photo">
 			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525628956/thumb_mt9ckp.png">
 		</a>
-	</p>
+	</figure>
 	
 	<p>Приключенческая игра от небольшой студии Giant Sparrow которая погрузит вас в красивейшую историю, рассказывающую о загадочной судьбе семейства Финчей. Приняв на себя роль Эдит Финч, последней представительницы рода — игрок вернется в фамильный особняк, дом ее детства, дабы раскрыть секреты родственников живших тут не одно поколение.</p>
 
 
 	
 		<p><a href="/blog/what-remains-of-edith-finch/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
-	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для&nbsp;Эгеи</a></h2>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для&nbsp;Эгеи</a></h1>
 	
 	<p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.</p>
 
 
 	
 		<p><a href="/blog/pishem-svoy-shablon-dlya-egei/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
-	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/wallpaper-engine/">Wallpaper&nbsp;Engine</a></h2>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/wallpaper-engine/">Wallpaper&nbsp;Engine</a></h1>
 	
 	<p>Наткнулась тут <a href="http://store.steampowered.com/app/431960/" rel="nofollow" target="_blank">в Steam</a> на программу для Windows — Wallpaper Engine, которая возвращает во времена Rainmeter и позволяет устанавливать в качестве фона рабочего стола зацикленные видео и прочие интерактивные вещи с возможностью тонкой настройки каждого валлпапера. Ко всему прочему обои можно создавать собственноручно (Для этого в Wallpaper Engine есть свой <span class="caps">3D</span> редактор) — а потому, в мастерской Steam имеется больше семидесяти тысяч заставок созданных пользователями, начиная от аниме и мемов, заканчивая интерактивной моделью Солнечной системы в стиле пиксель-арт.</p>
 
 
 	
 		<p><a href="/blog/wallpaper-engine/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/peace-death/">Peace,&nbsp;Death!</a></h1>
 	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/peace-death/">Peace,&nbsp;Death!</a></h2>
-	
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="/blog/peace-death/" class="link-photo">
 			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525629878/thumb_ad0adk.png">
 		</a>
-	</p>
+	</figure>
 	
 	<p>Симпатичная пиксельная игра с говорящим названием от отечественных разработчиков совсем недавно вышедшая на просторах Steam. В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в корпорации «Апокалипсис Inc», ведь даже Жнецу нужно как-то зарабатывать на пропитание. Вашей главной задачей станет распределение умерших в Рай, Ад или Чистилище, соответственно.</p>
 
 
 	
 		<p><a href="/blog/peace-death/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
-	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/leaks-shablon-dlya-egei/">Leaks · Шаблон для&nbsp;Эгеи</a></h2>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/leaks-shablon-dlya-egei/">Leaks · Шаблон для&nbsp;Эгеи</a></h1>
 	
 	<p>Собственно говоря шаблонов для Эгеи мало, точнее их вовсе нет. А потому, я любезно выкладываю на <a href="https://github.com/sasha-travkina/blogengine-themes-leaks" rel="nofollow" target="_blank">github</a> шаблон Leaks который сваяла для своего блога на <a href="http://blogengine.ru/" rel="nofollow" target="_blank">Эгее <span class="caps">2.6</span></a>.</p>
 
 
 	
 		<p><a href="/blog/leaks-shablon-dlya-egei/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/znakomstvo-s-mac/">Знакомство с&nbsp;Mac</a></h1>
 	
-		<article class="space-in-top-kilo-xs post">
-	<h2><a class="link-title" href="/blog/znakomstvo-s-mac/">Знакомство с&nbsp;Mac</a></h2>
-	
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="/blog/znakomstvo-s-mac/" class="link-photo">
 			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525636500/thumb_wpv081.png">
 		</a>
-	</p>
+	</figure>
 	
 	<p>Надо сказать, что раньше пользоваться техникой небезызвестного бренда Apple мне не доводилось, да и мое отношение к ней было несколько предвзято, мол переоцененный бренд. Но вот случилось так, что волей случая в моем безвозмездном распоряжении оказался MacBook Air середины 2012 года с 11,6-дюймовым дисплеем (До него правда пару месяцев был Air конца 2010 с 13,3, но там говорить особо не о чем, ибо железо этого динозавра безнадежно устарело). А потому, спустя несколько месяцев использования, хотелось бы поделиться мнением о этой яблочной технике.</p>
 
 
 	
 		<p><a href="/blog/znakomstvo-s-mac/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
+        
+            <article class="space-in-top-kilo-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm post">
+	<h1><a class="link-title" href="/blog/resident-evil-7/">Resident Evil 7:&nbsp;Biohazard</a></h1>
 	
-		<article class="space-in-top-kilo-xs space-in-bottom-kilo-xs post">
-	<h2><a class="link-title" href="/blog/resident-evil-7/">Resident Evil 7:&nbsp;Biohazard</a></h2>
-	
-	<p class="space-in-v-nano-xs thumbnail">
+	<figure class="space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg thumbnail">
 		<a href="/blog/resident-evil-7/" class="link-photo">
 			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525631001/thumb_a4yqrx.png">
 		</a>
-	</p>
+	</figure>
 	
 	<p>Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений и всяческих обзоров предыдущих частей, разумеется. А потому, мое мнение в целом не будет основываться на предыдущих частях и станет по возможности максимально объективным, как об отдельно взятой игре. К слову, хочется отметить, что главная особенность Resident Evil 7 заключается в том, что это очередное переосмысление серии  — впервые появился вид от первого лица, а сама игра постаралась вернуться к истокам жанра: от экшена в сторону сурвайвл-хоррора, квеста с поиском предметов и бродилки в декорациях старого особняка.</p>
 
 
 	
 		<p><a href="/blog/resident-evil-7/">Читать полностью &rarr;</a></p>
-	
+		
 </article>
-	
-</section>
+        
+    </section>
 
-
-	<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
+    
+	<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
 			
 				<a class="link" rel="prev" href="/blog/page-4/">&lsaquo; Ранее</a>
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница: 3 из 9</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 3 из 9</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
 			
 				<a class="link" rel="next" href="/blog/page-2/">Позднее &rsaquo;</a>
 			
 		</span>
 	</nav>
 
-    <footer>	
-	<div class="space-auto-h-xs linel max copyright">
-		Александра Травкина &copy; <time>2015 - 2018</time><br />
-		<div class="space-in-top-nano-xs contacts">Для связи <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a class="link-subcontrol" target="_blank" href="https://icq.com/people/633328999">ICQ</a>.</div>
+</div>
+            <footer>	
+	<div class="space-out-bottom-micro-xs copyright">
+		<div class="row">
+			<div class="col-xs">
+			Александра Травкина &copy; <time>2015 - 2018</time>
+			</div>
+			<div class="col-xs-shrink toggle">
+				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
+			</div>
+		</div>
 	</div>
 
-	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
-	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
+	<section class="navigation">
+	<nav class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-in-v-micro-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
 			
@@ -303,7 +325,7 @@
 			
 			
 			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все записи</a></li>
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все</a></li>
 			
 			
 			
@@ -315,11 +337,11 @@
 			
 			
 			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
-			
-			
-			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
 			
 			
 			
@@ -327,14 +349,10 @@
 			
 		</ol>
 	</nav>
-
-	<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg hidden-upto-md">
-		<div class="scroll-to-top">
-			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-		</div>
-	</div>
 </section>
 </footer>
+        </div>
+    </div>
 </div>
 
 		<!--[ JS ]-->

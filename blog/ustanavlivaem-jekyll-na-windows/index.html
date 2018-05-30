@@ -59,6 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
+<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -104,7 +105,7 @@
 			"@type":"WebPage",
 			"@id":"https://milkleaks.ru/"
 		},
-		"articleBody":"По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте Параметры - Система - О системе. Если все в порядке, запустите PowerShell от администратора и введите:Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-LinuxКомпьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте Параметры - Обновление и безопасность - Для разработчиков и включите «Режим разработчика».Устанавливаем среду Ubuntu из Windows маркета, затем запускаем. Дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.Приступим к установке Jekyll. Но для начала обновим пакеты:sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -yТеперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий BrightBox оптимизированный для Ubuntu. Вводим команды:sudo apt-add-repository ppa:brightbox/ruby-ngsudo apt-get updatesudo apt-get install ruby2.5 ruby2.5-dev build-essentialОбновляем RubyGems.sudo gem updateТеперь осталось установить сам Jekyll.sudo gem install jekyll bundlerПроверить правильность установки можно командой:jekyll -vJekyll установлен. Теперь создайте свой блог.jekyll new my_blogПо умолчанию файлы блога  будут находиться по адресу C:/Пользователи/Имя_пользователя/my_blog, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:cd my_blogТеперь можно запустить Jekyll.bundle exec jekyll serveБлог станет доступен по локальному адресу localhost:4000.Использованы материалы: Инструкция с сайта Microsoft и Официальная документация Jekyll.Для одного из плагинов jekyll мне понадобился gem nokogiri, но при установке на Windows Ubuntu он выдавал ошибку. Решение:apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clangЗатем сам nokogiri:sudo gem install nokogiri -- --use-system-libraries"
+		"articleBody":"По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте Параметры - Система - О системе. Если все в порядке, запустите PowerShell от администратора и введите:Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-LinuxКомпьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте Параметры - Обновление и безопасность - Для разработчиков и включите «Режим разработчика».Устанавливаем среду Ubuntu из Windows маркета, затем запускаем. Дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.Приступим к установке Jekyll. Но для начала обновим пакеты:sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -yТеперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий BrightBox оптимизированный для Ubuntu. Вводим команды:sudo apt-add-repository ppa:brightbox/ruby-ngsudo apt-get updatesudo apt-get install ruby2.5 ruby2.5-dev build-essentialОбновляем RubyGems.sudo gem updateТеперь осталось установить сам Jekyll.sudo gem install jekyll bundlerПроверить правильность установки можно командой:jekyll -vJekyll установлен. Теперь создайте свой блог.jekyll new my_blogПо умолчанию файлы блога  будут находиться по адресу C:/Пользователи/Имя_пользователя/my_blog, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:cd my_blogТеперь можно запустить Jekyll.bundle exec jekyll serveБлог станет доступен по локальному адресу localhost:4000.Для одного из плагинов jekyll мне понадобился gem nokogiri, но при установке на Windows Ubuntu он выдавал ошибку. Решение:apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clangЗатем сам nokogiri:sudo gem install nokogiri -- --use-system-librariesИспользованы материалы: Инструкция с сайта Microsoft и Официальная документация Jekyll."
 	}
 
 
@@ -115,40 +116,50 @@
 
 	<body class="page-post">
 
-
-<div class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg container">
-    
-	<header class="space-in-top-mili-xs space-auto-h-xs linel max">
-		<div class="row row-reverse-xs row-middle-sm">
-			<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-md">
-				<div class="search space-auto-left-md">
-					<div class="search-form">
-						<input type="text" id="search-input" class="search-box" />
-						<span class="search-button">
-							<i class="fa fa-search open" aria-hidden="true"></i>
-							<i class="fa fa-times close" aria-hidden="true"></i>
-						</span>
-					</div>
-					<div class="dropdown">
-						<ul class="results" id="results-container"></ul>
+<div class="row space-out-zero-xs height-full">
+    <div class="col-xs-12 col-md-4 space-in-zero-xs sidebar">
+        <section class="background">
+	<div class="bg"></div>
+	<div class="space-in-h-micro-xs space-in-h-base-sm content">
+		<header class="col-xs-12 space-auto-top-xs space-in-v-base-xs space-in-h-zero-xs space-auto-h-xs linel">
+			<div class="row row-middle-sm">
+				<div class="col-xs-12 col-sm-shrink space-in-bottom-mili-xs space-in-bottom-zero-md logo">
+					<a class="link-logo" href="/">
+						<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm">
+					<div class="search space-auto-left-md">
+						<div class="search-form">
+							<input type="text" id="search-input" class="search-box" />
+							<span class="search-button">
+								<i class="fa fa-search open" aria-hidden="true"></i>
+								<i class="fa fa-times close" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div class="dropdown">
+							<ul class="results" id="results-container"></ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-shrink logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</div>
-		</div>
-	</header>
-
-    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content max">
-	<article class="post grid">
+		</header>
+	</div>
+</section>
+<style type="text/css">
+	.sidebar .background .bg {
 		
-			<h1>Устанавливаем Jekyll на&nbsp;Windows</h1>
+			background-image: url('/static/images/bg.png');
 		
-		
-		<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <code class="highlighter-rouge">master</code> ветке репозитория, а собранный сайт в ветке <code class="highlighter-rouge">gh-pages</code>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
+	}
+</style>
+    </div>
+    <div class="col-xs-12 col-md-8 space-in-h-zero-xs space-auto-left-lg height-full">
+        <div class="space-auto-h-xs space-out-h-zero-lg space-in-h-micro-xs space-in-h-base-sm space-in-bottom-base-xs wrapper ">
+            <article class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs content post">
+	<h1>Устанавливаем Jekyll на&nbsp;Windows</h1>
+	
+	<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <code class="highlighter-rouge">master</code> ветке репозитория, а собранный сайт в ветке <code class="highlighter-rouge">gh-pages</code>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
 
 
 
@@ -198,8 +209,6 @@
 
 <p>Блог станет доступен по локальному адресу <a href="http://localhost:4000" rel="nofollow" target="_blank">localhost:4000</a>.</p>
 
-<p class="aside">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun" rel="nofollow" target="_blank">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/" rel="nofollow" target="_blank">Официальная документация</a> Jekyll.</p>
-
 <hr class="easy">
 
 <p>Для одного из плагинов jekyll мне понадобился gem <code class="highlighter-rouge">nokogiri</code>, но при установке на Windows Ubuntu он выдавал ошибку. Решение:</p>
@@ -210,32 +219,42 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>gem <span class="nb">install </span>nokogiri <span class="nt">--</span> <span class="nt">--use-system-libraries</span></code></pre></figure>
 
+<p class="subtext">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun" rel="nofollow" target="_blank">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/" rel="nofollow" target="_blank">Официальная документация</a> Jekyll.</p>
 
 
-		
-	</article>
-</section>
 
-<nav class="row row-between-sm space-in-bottom-kilo-xs space-auto-h-xs linel max pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
+	
+</article>
+
+<nav class="row row-between-sm space-in-bottom-kilo-xs pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
 		
 			<a title="Все на свете из пластмассы" class="link" href="/blog/vse-na-svete-iz-plastmassy/">&lsaquo; Ранее</a>
 		
-	</span>	
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
+	</span>
+
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 70 из 87</span>
+
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
 		
 			<a title="Устанавливаем Jekyll на Mac OS" class="link" href="/blog/ustanavlivaem-jekyll-na-mac/">Позднее &rsaquo;</a>
 		
 	</span>
 </nav>
-    <footer>	
-	<div class="space-auto-h-xs linel max copyright">
-		Александра Травкина &copy; <time> 4 сентября 2017</time><br />
-		<div class="space-in-top-nano-xs contacts">Для связи <a class="link-subcontrol" target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a class="link-subcontrol" target="_blank" href="https://t.me/sashatravkina">телеграм</a> или <a class="link-subcontrol" target="_blank" href="https://icq.com/people/633328999">ICQ</a>.</div>
+            <footer>	
+	<div class="space-out-bottom-micro-xs copyright">
+		<div class="row">
+			<div class="col-xs">
+			Александра Травкина &copy; <time> 4 сентября 2017</time>
+			</div>
+			<div class="col-xs-shrink toggle">
+				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
+			</div>
+		</div>
 	</div>
 
-	<section class="space-out-top-micro-xs space-in-v-micro-xs space-auto-h-xs row row-middle-md linel max navigation">
-	<nav class="col-xs-12 col-md-shrink space-in-h-zero-xs menu" id="menu">
+	<section class="navigation">
+	<nav class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-in-v-micro-xs menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
 			
@@ -245,7 +264,7 @@
 			
 			
 			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все записи</a></li>
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/all/">Все</a></li>
 			
 			
 			
@@ -257,11 +276,11 @@
 			
 			
 			
-				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
-			
-			
-			
 				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
 			
 			
 			
@@ -269,14 +288,10 @@
 			
 		</ol>
 	</nav>
-
-	<div class="col-xs-12 col-md-shrink space-in-top-mili-xs space-in-top-zero-lg space-auto-left-lg hidden-upto-md">
-		<div class="scroll-to-top">
-			<a><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-		</div>
-	</div>
 </section>
 </footer>
+        </div>
+    </div>
 </div>
 
 		<!--[ JS ]-->
