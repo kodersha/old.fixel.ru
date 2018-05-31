@@ -5,12 +5,10 @@ pagination:
   enabled: true
 ---
 
-<div class="content">
-    <section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs blog-list">
-        {% for post in paginator.posts %}
-            {% include _post/blog.html %}
-        {% endfor %}
-    </section>
+<section class="slide-up-fade-in content blog-list">
+    {% for post in paginator.posts %}
+        {% include _post/blog.html %}
+    {% endfor %}
+</section>
 
-    {% include pagination.html %}
-</div>
+{% include pagination.html %}

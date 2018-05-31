@@ -1,9 +1,9 @@
 & {
     background-color: @black;
     position: relative;
-    height: 100vh;
+    overflow: hidden;
+    height: 45vh;
 
-    
     @media @lg {
         position: fixed;
         height: 100%;
@@ -22,8 +22,8 @@
     .content {
         position: relative;
         display: flex;
-        z-index: 1;
         height: 100%;
+        z-index: 1;
     }
 
     .bg {
@@ -44,6 +44,24 @@
             height: 100%;
             width: 100%;
             content: '';
+        }
+    }
+
+    header {
+        width: 100%;
+    }
+
+    @media @lg {
+        header {
+            transition: .5s ease-in;
+            opacity: .5;
+        }
+
+        &:hover {
+            header {
+                margin-bottom: @micro;
+                opacity: 1;
+            }
         }
     }
 }

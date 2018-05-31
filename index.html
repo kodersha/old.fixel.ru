@@ -18,7 +18,7 @@ id: index
 wrapper: extended color-gray
 ---
 
-<section class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-minus-top-nano-xs row list">
+<section class="slide-up-fade-in space-minus-top-nano-xs row list">
 	{% assign current_page_posts = paginator.posts | size %}
 	{% for post in paginator.posts %}
 		{% include _post/index.html %}

@@ -3,18 +3,16 @@ layout: default
 title: Фотографии
 ---
 
-<div class="slide-up-fade-in space-in-top-base-xs space-in-bottom-kilo-xs space-auto-h-xs content">
-	<div class="row photos">
-		{% for post in site.photos reversed %}
-			<article class="col-xs-12 col-sm-6 space-out-bottom-mili-xs item">
-				<a href="{{ post.url }}" class="link-photo">
-					<div class="thumbnail" {% if post.thumbnail %}style="background-image: url('https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_thumb,h_150,w_420/{{ post.thumbnail }}')"{% endif %}></div>
-				</a>
-				<div class="space-in-top-nano-xs meta">
-					<a href="{{ post.url }}">{{ post.title }}</a>
-					<time class="date">{{ post.date | russian_date }}</time>
-				</div>
-			</article>
-		{% endfor %}
-	</div>
-</div>
+<section class="slide-up-fade-in row content photos">
+	{% for post in site.photos reversed %}
+		<article class="col-xs-12 col-sm-6 space-out-bottom-mili-xs item">
+			<a href="{{ post.url }}" class="link-photo">
+				<div class="thumbnail" {% if post.thumbnail %}style="background-image: url('https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/c_thumb,h_150,w_420/{{ post.thumbnail }}')"{% endif %}></div>
+			</a>
+			<div class="space-in-top-nano-xs meta">
+				<a href="{{ post.url }}">{{ post.title }}</a>
+				<time class="date">{{ post.date | russian_date }}</time>
+			</div>
+		</article>
+	{% endfor %}
+</section>
