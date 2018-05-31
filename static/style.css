@@ -49,22 +49,22 @@ h6 {
 h1 {
   font-size: 1.1953125em;
   line-height: 1.1;
-  margin: 2rem 0 1.22311111em;
+  margin: 2.5rem 0 1.22311111em;
 }
 h2 {
   font-size: 1.125em;
   line-height: 1.2;
-  margin: 1.5rem 0 1.29955556em;
+  margin: 2rem 0 1.29955556em;
 }
 h3 {
   font-size: 1.0546875em;
   line-height: 1.3;
-  margin: 1rem 0 1.38619259em;
+  margin: 1.5rem 0 1.38619259em;
 }
 h4 {
   font-size: 1.0546875em;
   line-height: 1.4;
-  margin: 0.5rem 0 1.38619259em;
+  margin: 1rem 0 1.38619259em;
 }
 h5 {
   font-size: 0.984375em;
@@ -7949,10 +7949,13 @@ html {
   height: 100%;
 }
 body {
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  -webkit-text-size-adjust: none;
   background-color: #f1f1f1;
-  color: #313131;
+  color: #000000;
   cursor: default;
   height: 100%;
   margin: 0;
@@ -7969,7 +7972,6 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.03em;
   margin-bottom: 0.875rem;
 }
 p {
@@ -8166,7 +8168,7 @@ header .logo a {
   outline: none;
 }
 header .logo-txt .logo-name {
-  color: #313131;
+  color: #000000;
   letter-spacing: -0.02rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 1rem;
@@ -8322,7 +8324,7 @@ header .logo-txt .logo-description {
 }
 .post p {
   display: inline-block;
-  color: #313131;
+  color: #000000;
 }
 .post > :last-child {
   margin-bottom: 0 !important;
@@ -8335,7 +8337,7 @@ header .logo-txt .logo-description {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 1rem;
   text-align: center;
-  color: #313131;
+  color: #000000;
   display: block;
   border: none;
   opacity: 1;
@@ -8368,7 +8370,7 @@ header .logo-txt .logo-description {
 .post ol:not([class]) li {
   transform: translateX(1.2rem);
   letter-spacing: -0.003em;
-  color: #313131;
+  color: #000000;
 }
 .post ul:not([class]) ul:not([class]) li,
 .post ol:not([class]) ul:not([class]) li,
@@ -8432,10 +8434,9 @@ header .logo-txt .logo-description {
   display: block;
 }
 .post .picture .caption {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.4;
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
@@ -8565,7 +8566,6 @@ header .logo-txt .logo-description {
   margin-top: 0;
 }
 .post .subtext {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 1rem;
   color: #818181;
 }
@@ -9344,7 +9344,7 @@ header .logo-txt .logo-description {
 }
 .list .item .thumbnail .info .description {
   font-size: 0.875rem;
-  line-height: 1.3;
+  line-height: 1.4;
   display: block;
 }
 .list .item .thumbnail.color-white {
@@ -9555,8 +9555,8 @@ footer .toggle {
 }
 footer .toggle .toggle-menu {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 2.25em;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2em;
   vertical-align: sub;
   letter-spacing: -1px;
   line-height: 0;
@@ -9631,7 +9631,7 @@ footer .breadcrumb-item:last-of-type:after {
 .navigation .menu .menu-content li {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 0.875rem;
-  line-height: 1.3;
+  line-height: 1.4;
   position: relative;
   list-style: none;
   float: left;
@@ -9776,7 +9776,7 @@ a:hover,
   color: #969da0;
 }
 .link-title {
-  color: #313131;
+  color: #000000;
 }
 .link-title:hover {
   color: #333333;
