@@ -11,8 +11,11 @@ html {
 }
 
 body {
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: none;
     background-color: #f1f1f1;
     color: @glob-font-color;
     cursor: default;
@@ -26,7 +29,6 @@ input, textarea, select, button {
 
 h1, h2, h3, h4, h5, h6 {
     .post-settings();
-    letter-spacing: -0.03em;
     margin-bottom: @post-bottom;
 }
 
@@ -240,7 +242,6 @@ header {
         }
 
         .caption {
-            font-family: @glob-font;
             font-size: @post-subtext-size;
             font-weight: @post-subtext-weight;
             line-height: @post-subtext-linel;

@@ -62,7 +62,7 @@ GEM
     jgd (1.11)
       jekyll (>= 1.5.1)
       trollop (= 2.1.2)
-    kramdown (1.16.2)
+    kramdown (1.17.0)
     less (2.6.0)
       commonjs (~> 0.2.7)
     libv8 (3.16.14.19)

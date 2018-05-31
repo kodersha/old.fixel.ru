@@ -27,8 +27,6 @@ safe: false
 navigation:
   - title: Блог
     url: /blog/
-  - title: Все
-    url: /blog/all/
   - title: Теги
     url: /blog/tags/
   - title: Фотографии
