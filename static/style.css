@@ -7945,13 +7945,13 @@ body:after {
 /* Sizes */
 html {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100%;
 }
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   color: #313131;
   cursor: default;
   height: 100%;
@@ -8000,11 +8000,10 @@ p {
   max-width: 61.25rem;
 }
 .wrapper.color-gray {
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
 }
 .wrapper .content {
   flex: 1 0 auto;
-  width: 100%;
 }
 .linel {
   max-width: 35rem;
@@ -8182,7 +8181,8 @@ header .logo-txt .logo-description {
 .sidebar {
   background-color: #000000;
   position: relative;
-  height: 100vh;
+  overflow: hidden;
+  height: 45vh;
 }
 @media (min-width: 992px) {
   .sidebar {
@@ -8202,8 +8202,8 @@ header .logo-txt .logo-description {
 .sidebar .background .content {
   position: relative;
   display: flex;
-  z-index: 1;
   height: 100%;
+  z-index: 1;
 }
 .sidebar .background .bg {
   background-position: center center;
@@ -8223,6 +8223,19 @@ header .logo-txt .logo-description {
   height: 100%;
   width: 100%;
   content: '';
+}
+.sidebar .background header {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .sidebar .background header {
+    transition: 0.5s ease-in;
+    opacity: .5;
+  }
+  .sidebar .background:hover header {
+    margin-bottom: 16px;
+    opacity: 1;
+  }
 }
 .post {
   /* Body */
