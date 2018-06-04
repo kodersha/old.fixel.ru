@@ -7,6 +7,186 @@
     <atom:link href="https://milkleaks.ru/feed.xml" rel="self" type="application/rss+xml"/>
     
       <item>
+        <title>Хакинтош на PC</title>
+        <description>&lt;p&gt;Расставшись со своим тормозящим &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;MacBook Air&lt;/a&gt; в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
+				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528118833/01_rzfgsr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528118833/01_rzfgsr.png&quot; /&gt;
+				&lt;/a&gt;
+				
+			&lt;/figure&gt;
+
+&lt;p&gt;Собственно, характеристики компьютера на котором и был поднят hackintosh:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Корпус: Raijintek Metis Red.&lt;/li&gt;
+  &lt;li&gt;Материнская плата: ASRock Z370M-ITX/ac.&lt;/li&gt;
+  &lt;li&gt;Процессор: i7-8700T.&lt;/li&gt;
+  &lt;li&gt;Оперативная память: GoodRam DDR4 2133MHz 16GB Kit 2x8GB.&lt;/li&gt;
+  &lt;li&gt;SSD: KingDian N480 240GB, KingDian S280 480GB, Micron 1100 MTFDDAK256TBN Media.&lt;/li&gt;
+  &lt;li&gt;Wi-Fi: Broadcom BCM94352Z NGFF Dual Band 802.11ac 867M Wifi BT 4.0 Lenovo FRU 04X6020.&lt;/li&gt;
+  &lt;li&gt;Блок питания: Corsair RM550x.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;В качестве видеокарты пока используется встроенная Intel UHD630. А для того, чтобы Wi-Fi материнской платы заработал в hackintosh пришлось покупать &lt;a href=&quot;https://www.ebay.com/itm/Broadcom-BCM94352Z-NGFF-Dual-Band-802-11ac-867M-Wifi-BT-4-0-Lenovo-FRU-04X6020/191855727748?ssPageName=STRK:MEBIDX:IT&amp;amp;_trksid=p2060353.m2749.l2649&quot;&gt;на ebay&lt;/a&gt; новый модуль - Broadcom BCM4352, так как для стандартного модуля от Intel нет необходимых kext’ов.&lt;/p&gt;
+
+&lt;h3 id=&quot;образ-диска&quot;&gt;Образ диска&lt;/h3&gt;
+
+&lt;p&gt;Для установки hackintosh я скачала &lt;a href=&quot;https://rutracker.org/forum/viewtopic.php?t=5413589&quot;&gt;образ с High Sierra 10.13.4&lt;/a&gt; (Сейчас там более актуальная версия) с небезиветсного rutracker.org и по инструкции из темы записала его на флешку.&lt;/p&gt;
+
+&lt;h3 id=&quot;программы&quot;&gt;Программы&lt;/h3&gt;
+
+&lt;p&gt;Для установки и настройки OS X понадобится некоторый набор программ, которые ставятся после первого запуска операционной системы. Можно заранее скачать их на свободную флешку так как сразу после установки интернета еще не будет.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Clover EFI Bootloader&lt;/strong&gt; - Загрузчик EFI, позволяет запускать hackintosh, windows, linux и их вместе. (&lt;a href=&quot;https://sourceforge.net/projects/cloverefiboot/&quot;&gt;sourceforge.net&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clover Configurator&lt;/strong&gt; - Для более легкой правки config.plist Clover’a. (&lt;a href=&quot;https://www.tonymacx86.com/resources/clover-configurator.335/&quot;&gt;tonymacx86.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;EFI Mounter&lt;/strong&gt; - Программа для монтирования EFI раздела диска hackintosh. (&lt;a href=&quot;https://www.tonymacx86.com/resources/efi-mounter-v3.280/&quot;&gt;tonymacx86.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Kext Utility&lt;/strong&gt; - Утилита для установки kext’ов. (&lt;a href=&quot;https://www.insanelymac.com/forum/topic/140647-latest-kext-utility-macos-sierra-super-speed-edition/&quot;&gt;insanelymac.com&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;kext&quot;&gt;Kext&lt;/h3&gt;
+
+&lt;p&gt;Или «kernel extension», можно назвать их своего рода драйверами для hackintosh.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;FakeSMC&lt;/strong&gt; - эмулирует работу SMC контроллера который передает операционной системе информацию о компьютере, температуре процессора и т.д. Обязателен для запуска hackintosh. (&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/&quot;&gt;bitbucket.org&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;FakePCIID&lt;/strong&gt; - Перехватывает запросы PCI-ID, и возвращает значение, указанное через FakeID в Clover. Понадобится для работы некоторых kext’ов wi-fi и встроенной графики. (&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/&quot;&gt;bitbucket.org&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;BrcmPatchRAM&lt;/strong&gt; - Kext’ы для работы Wi-Fi модуля Broadcom. (&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/&quot;&gt;bitbucket.org&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;VoodooHD&lt;/strong&gt; - Универсальный kext для аудио. (&lt;a href=&quot;https://sourceforge.net/projects/voodoohda/files/latest/download&quot;&gt;sourceforge.net&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AppleALC&lt;/strong&gt; - Альтернативный kext аудио. (&lt;a href=&quot;https://github.com/vit9696/AppleALC/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IntelMausiEthernet&lt;/strong&gt; - Kext для запуска Intel ethernet. (&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-intel-network/downloads/&quot;&gt;bitbucket.org&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IntelGraphicsFixup&lt;/strong&gt; - Фикс для различных встроенных видеокарт от Intel. (&lt;a href=&quot;https://github.com/lvs1974/IntelGraphicsFixup/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Shiki&lt;/strong&gt; - Исправление возможных проблем с воспроизведеним видео. (&lt;a href=&quot;https://github.com/vit9696/Shiki/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt; Lilu&lt;/strong&gt; - Расширение для поддержки различных kext’ов. (&lt;a href=&quot;https://github.com/vit9696/Lilu/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;установка&quot;&gt;Установка&lt;/h3&gt;
+
+&lt;p&gt;Загрузившись с установочной флешки в режиме UEFI приступаем к установке. В окне Clover выбираем «Boot Mac OS from OS X Base System» и дожидаемся появления установки OS X, на что уйдет до пяти минут. Переходим в дисковую утилиту и форматируем нужный диск. На одном из SSD дисков я оставила уже установленную ранее Windows 10, а другой SSD отформатировала из установщика в формат &lt;code class=&quot;highlighter-rouge&quot;&gt;AFPS&lt;/code&gt; назвав его классическим &lt;code class=&quot;highlighter-rouge&quot;&gt;Macintosh HD&lt;/code&gt;. Устанавливаем OS X и дожидаемся перезагрузки. После перезагрузки вновь видим Clover.&lt;/p&gt;
+
+&lt;p&gt;Так как у меня встроенная видеокарта Intel UHD630 то мне пришлось прописать параметр загрузки &lt;code class=&quot;highlighter-rouge&quot;&gt;-disablegfxfirmware&lt;/code&gt; чтобы установка продолжилась дальше. Чтобы прописать параметр загрузки в Clover откройте раздел &lt;code class=&quot;highlighter-rouge&quot;&gt;Options&lt;/code&gt;, в строке &lt;code class=&quot;highlighter-rouge&quot;&gt;Boot Args&lt;/code&gt; впишите &lt;code class=&quot;highlighter-rouge&quot;&gt;-disablegfxfirmware&lt;/code&gt; и нажмите Enter.&lt;/p&gt;
+
+&lt;p&gt;После установки оказываемся в OS X и первым делом устанавливаем ранее скачанный &lt;strong&gt;Clover EFI Bootloader&lt;/strong&gt;. В пункте &lt;code class=&quot;highlighter-rouge&quot;&gt;Тип установки&lt;/code&gt; выбираем &lt;code class=&quot;highlighter-rouge&quot;&gt;Настройки&lt;/code&gt; и расставляем галочки:&lt;/p&gt;
+
+&lt;figure class=&quot;wrap picture&quot;&gt;
+				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528129979/02_z0qpep.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528129979/02_z0qpep.png&quot; /&gt;
+				&lt;/a&gt;
+				
+			&lt;/figure&gt;
+
+&lt;p&gt;Далее, устанавливаем и запускаем &lt;strong&gt;Kext Utility&lt;/strong&gt;, дожидаемся сообщения «Drag files on window to process them» и перетаскиваем прямо в окно программы необходимые kext’ы.&lt;/p&gt;
+
+&lt;figure class=&quot;wrap picture&quot;&gt;
+				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528130607/03_oqgzmz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528130607/03_oqgzmz.png&quot; /&gt;
+				&lt;/a&gt;
+				
+			&lt;/figure&gt;
+
+&lt;p&gt;Вот перечень kext’ов установленных у меня:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FakeSMC.kext&lt;/li&gt;
+  &lt;li&gt;FakeSMC_LPCSensors.kext&lt;/li&gt;
+  &lt;li&gt;FakeSMC_GPUSensors.kext&lt;/li&gt;
+  &lt;li&gt;FakeSMC_CPUSensors.kext&lt;/li&gt;
+  &lt;li&gt;FakeSMC_ACPISensors.kext&lt;/li&gt;
+  &lt;li&gt;FakePCIID.kext&lt;/li&gt;
+  &lt;li&gt;FakePCIID_Intel_HD_Graphics.kext&lt;/li&gt;
+  &lt;li&gt;FakePCIID_Broadcom_WiFi.kext&lt;/li&gt;
+  &lt;li&gt;BrcmFirmwareData.kext&lt;/li&gt;
+  &lt;li&gt;BrcmPatchRAM2.kext&lt;/li&gt;
+  &lt;li&gt;IntelGraphicsFixup.kext&lt;/li&gt;
+  &lt;li&gt;IntelMausiEthernet.kext&lt;/li&gt;
+  &lt;li&gt;VoodooHDA.kext&lt;/li&gt;
+  &lt;li&gt;Shiki.kext&lt;/li&gt;
+  &lt;li&gt;Lilu.kext&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Также поместите ваши kext’ы в папку &lt;code class=&quot;highlighter-rouge&quot;&gt;EFI/EFI/CLOVER/kexts/Other&lt;/code&gt; для загрузчика Clover.&lt;/p&gt;
+
+&lt;p&gt;Если диск отформатирован в &lt;code class=&quot;highlighter-rouge&quot;&gt;AFPS&lt;/code&gt; может понадобится исправить проблему с загрузкой:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;В Finder - Переход - Переход к папке&lt;/li&gt;
+  &lt;li&gt;Ввести &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/standalone/i386/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Скопировать &lt;code class=&quot;highlighter-rouge&quot;&gt;apfs.efi&lt;/code&gt; в &lt;code class=&quot;highlighter-rouge&quot;&gt;/EFI/EFI/CLOVER/drivers64UEFI/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Конфигурация Clover редактируется в файле &lt;code class=&quot;highlighter-rouge&quot;&gt;EFI/EFI/CLOVER/config.plist&lt;/code&gt;. Его можно править программой &lt;strong&gt;Clover Configurator&lt;/strong&gt; или вручную, с помощью &lt;strong&gt;Microsoft Visual Studio Code&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;исправление-совместимости-intel-uhd-630-на-coffee-lake&quot;&gt;Исправление совместимости Intel UHD 630 на Coffee Lake&lt;/h3&gt;
+
+&lt;p&gt;После установки в &lt;code class=&quot;highlighter-rouge&quot;&gt;config.plist&lt;/code&gt;, в раздел &lt;code class=&quot;highlighter-rouge&quot;&gt;Boot&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Arguments&lt;/code&gt; я добавила параметр &lt;code class=&quot;highlighter-rouge&quot;&gt;-disablegfxfirmware&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Возникшее мерцание изображения, на встроенной графике процессора поколения Coffee Lake, исправляется по несложной инструкции. Открыть терминал и ввести:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /System/Library/Extensions/AppleIntelKBLGraphics.kext/Contents/Info.plist&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;В открывшемся файле, в терминале, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, внизу файла. В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;wrap picture&quot;&gt;
+				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528140705/4_demf79.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528140705/4_demf79.png&quot; /&gt;
+				&lt;/a&gt;
+				
+			&lt;/figure&gt;
+
+&lt;p&gt;Сохраняем изменения файла комбинацией &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + X&lt;/code&gt;, соглашаемся с изменениями &lt;code class=&quot;highlighter-rouge&quot;&gt;Y&lt;/code&gt; и нажимаем &lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Далее, в терминале открываем файл:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /System/Library/Extensions/AppleIntelKBLGraphicsFramebuffer.kext/Contents/Info.plist&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;В котором ищем &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, где в конец строки &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt; добавляем &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086 0x3E928086&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;wrap picture&quot;&gt;
+				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528143221/5_lapvtp.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528143221/5_lapvtp.png&quot; /&gt;
+				&lt;/a&gt;
+				
+			&lt;/figure&gt;
+
+&lt;p&gt;Очищаем кеш командой:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;kextcache &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; /
+&lt;span class=&quot;nb&quot;&gt;sudo touch&lt;/span&gt; /System/Library/Extensions &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;kextcache &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; /&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;в-итоге&quot;&gt;В итоге&lt;/h3&gt;
+
+&lt;p&gt;Таким образом был установлен hackintosh 10.13.4, который вскоре, без каких либо проблем, обновился до 10.13.5.&lt;/p&gt;
+
+&lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
+				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528144018/6_allsho.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528144018/6_allsho.png&quot; /&gt;
+				&lt;/a&gt;
+				
+			&lt;/figure&gt;
+
+&lt;p&gt;Привязка к учетной записи, логин в iCloud и прочих Apple сервисах прошли без каких-либо проблем. Операционная система работает стабильно, а установка не столь сложна, как это казалось на первый взгляд. Проблемы возникли только с поддержкой Wi-Fi модуля, из-за чего пришлось покупать Broadcom BCM4352 и ждать его доставки из Китая. В итоге, на одном из SSD у меня установлен Windows 10 для игр, а на другом hackintosh, загружаемый по умолчанию. Выбор системы происходит при загрузке в Clover.&lt;/p&gt;
+
+&lt;h3 id=&quot;использовались-материалы&quot;&gt;Использовались материалы&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Статья с &lt;a href=&quot;https://habr.com/post/318448/&quot;&gt;habrahabr&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Опыт человека с аналогичной материнской платой на &lt;a href=&quot;https://www.tonymacx86.com/threads/eriks-tiny-but-mighty-htpc-asrock-z370m-itx-ac-i5-8400-uhd-630-graphics-high-sierra.239157/&quot;&gt;tonymacx86.com&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Инструкция по исправлению Intel UHD 630, на &lt;a href=&quot;https://hackintosher.com/forums/thread/coffee-lake-uhd-630-graphics-framebuffer-injection-0x3e918086-0x3e928086-for-high-sierra.210/&quot;&gt;hackintosher.com&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Образ с &lt;a href=&quot;https://rutracker.org/forum/viewtopic.php?t=5413589&quot;&gt;rutracker.org&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 04 Jun 2018 00:00:00 +0700</pubDate>
+        <link>https://milkleaks.ru/blog/hackintosh-na-pc/</link>
+        <guid isPermaLink="true">https://milkleaks.ru/blog/hackintosh-na-pc/</guid>
+        <category>Заметки</category>
+        <category>Mac</category><category>OS</category><category>Гайд</category>
+        <author>Александра Травкина</author>
+      </item>
+    
+      <item>
         <title>Far Cry 5 · Сектантская жвачка</title>
         <description>&lt;p&gt;Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц. На этом все достоинства Far Cry 5, к сожалению, заканчиваются.&lt;/p&gt;
 
@@ -14,18 +194,16 @@
 
 &lt;p&gt;Нововведением пятой части стало кооперативное прохождение и, как следствие, обезличивание главного героя. Если раньше мы играли за Аджая Гейла или Джейсона Броди — со своими целями, планами, чувствами и эмоциями, наблюдая за их постепенным становлением в качестве героев-освободителей, то здесь мы примеряем на себя роль безмолвного болванчика — Салаги, помощника шерифа. Вместе со своими коллегами мы отправляемся в американскую глубинку штата Монтана, округ Хоуп, дабы арестовать самого главного злодея, основателя террористической секты «Врата Эдема» — Иосифа Сида по прозвищу Отец. Но, как водится, всё идёт не по плану. Герои оказываются разобщены и взяты в плен, а Салага — единственный или единственная, в зависимости от выбора пола в начале игры, кому придётся разгребать всё это сектантское непотребство.&lt;/p&gt;
 
-&lt;p class=&quot;subtext&quot;&gt;Far Cry 5 вышла 27 марта 2018 и стала доступна для PC, PlayStation 4 и Xbox One.&lt;/p&gt;
-
 &lt;div class=&quot;row space outer&quot;&gt;
   &lt;figure class=&quot;col-xs-6 space-zero picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526062696/02_gtamem.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1526062696/02_gtamem.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526062696/02_gtamem.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
   &lt;figure class=&quot;col-xs-6 space-zero picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526069554/03_hfraue.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1526069554/03_hfraue.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526069554/03_hfraue.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -39,7 +217,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526067477/04_vt3hsl.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1526067477/04_vt3hsl.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526067477/04_vt3hsl.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -50,7 +228,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526059004/01_wsjpju.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1526059004/01_wsjpju.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526059004/01_wsjpju.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -122,9 +300,9 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522239032/01_v0guqp.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522239032/01_v0guqp.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522239032/01_v0guqp.png&quot; /&gt;
 				&lt;/a&gt;
-				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;«Покорение Сибири» скульптора Юнуса Сафардиара в аэропорту Толмачёво.&lt;/p&gt;
+				&lt;figcaption class=&quot;space-in-h-micro-xs space-in-h-base-sm caption&quot;&gt;&lt;p&gt;«Покорение Сибири» скульптора Юнуса Сафардиара в аэропорту Толмачёво.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
@@ -132,9 +310,9 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522208119/02_r7xulk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522208119/02_r7xulk.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522208119/02_r7xulk.png&quot; /&gt;
 				&lt;/a&gt;
-				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Небольшая очередь в рентген кабинку и лента для просвечивания ручной клади.&lt;/p&gt;
+				&lt;figcaption class=&quot;space-in-h-micro-xs space-in-h-base-sm caption&quot;&gt;&lt;p&gt;Небольшая очередь в рентген кабинку и лента для просвечивания ручной клади.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
@@ -142,9 +320,9 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522209566/03_vzesbk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522209566/03_vzesbk.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522209566/03_vzesbk.png&quot; /&gt;
 				&lt;/a&gt;
-				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Airbus A321-211 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BCX, серийный номер 1720.&lt;/p&gt;
+				&lt;figcaption class=&quot;space-in-h-micro-xs space-in-h-base-sm caption&quot;&gt;&lt;p&gt;Airbus A321-211 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BCX, серийный номер 1720.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
@@ -152,7 +330,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522212388/04_kcbdv1.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522212388/04_kcbdv1.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522212388/04_kcbdv1.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -163,9 +341,9 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522215619/05_brpefr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522215619/05_brpefr.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522215619/05_brpefr.png&quot; /&gt;
 				&lt;/a&gt;
-				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Касалетка с макаронами, кусочками морковки и говядины.&lt;/p&gt;
+				&lt;figcaption class=&quot;space-in-h-micro-xs space-in-h-base-sm caption&quot;&gt;&lt;p&gt;Касалетка с макаронами, кусочками морковки и говядины.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
@@ -173,7 +351,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522225516/06_sclvcr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522225516/06_sclvcr.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522225516/06_sclvcr.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -186,9 +364,9 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522226275/07_oxh7cm.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522226275/07_oxh7cm.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522226275/07_oxh7cm.png&quot; /&gt;
 				&lt;/a&gt;
-				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Airbus A319-112 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BTZ серийный номер 3385.&lt;/p&gt;
+				&lt;figcaption class=&quot;space-in-h-micro-xs space-in-h-base-sm caption&quot;&gt;&lt;p&gt;Airbus A319-112 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BTZ серийный номер 3385.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
@@ -196,9 +374,9 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522228811/08_tgj2ea.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522228811/08_tgj2ea.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522228811/08_tgj2ea.png&quot; /&gt;
 				&lt;/a&gt;
-				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Салон Airbus A319 VQ-BTZ.&lt;/p&gt;
+				&lt;figcaption class=&quot;space-in-h-micro-xs space-in-h-base-sm caption&quot;&gt;&lt;p&gt;Салон Airbus A319 VQ-BTZ.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
@@ -206,7 +384,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522230417/09_njqbli.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522230417/09_njqbli.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522230417/09_njqbli.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -215,7 +393,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522237622/10_gntqqv.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1522237622/10_gntqqv.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522237622/10_gntqqv.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -377,7 +555,7 @@
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm video&quot;&gt;
 					&lt;div id=&quot;0d1zpt6k5OI&quot; class=&quot;youtube&quot;&gt;
 						&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
-						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216868/video_01_pwvore.png&quot; class=&quot;thumbnail&quot; /&gt;
+						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216868/video_01_pwvore.png&quot; class=&quot;thumbnail&quot; /&gt;
 						&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0d1zpt6k5OI?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;/div&gt;
 				&lt;/figure&gt;
@@ -386,27 +564,12 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216775/01_bnj1ur.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216775/01_bnj1ur.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/01_bnj1ur.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;Не смотря на весь абсурд происходящего во вселенной «Готэма» - основанной по большей части на вольной интерпретации комиксов DC, где каждый из персонажей может быть убит и воскрешён, клонирован и одарён необычайными способностями по несколько раз за сезон - сериал смотрится цельно и органично, а каждая серия наполнена экшен сценами, а это, «просто праздник какой-то». Актёры, в ролях молодых героев и злодеев, подобраны почти идеально и практически все достойно справляются со своими ролями, а сам мрачный город отлично передан через визуальную составляющую, декорации и костюмы. Сюжет и его перипетии не заставляют скучать и к концу каждого сезона непременно хочется продолжения. Разочаровывает лишь то, что не смотря на все попытки злодеев убить Брюса Уэйна, мы так или иначе знаем, что умереть он не сможет - ведь ему ещё предстоит стать Тёмным Рыцарем, как и большинству антагонистов предстоит стать знаменитыми суперзлодеями, вечными противниками Бэтмена.&lt;/p&gt;
-
-&lt;div class=&quot;row space outer&quot;&gt;
-  &lt;figure class=&quot;col-xs-6 space-zero picture&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519217048/row_01_ptclcy.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519217048/row_01_ptclcy.png&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-  &lt;figure class=&quot;col-xs-6 space-zero picture&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519217050/row_02_umiuxg.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519217050/row_02_umiuxg.png&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-&lt;/div&gt;
 
 &lt;p&gt;Определенно, сериал стоит порекомендовать всем любителям вселенной DC и «Бэтмена» в частности. На данный момент существует три целых и половина четвертого, сезона которые пока что отлично держат планку. Остается надеяться, что в дальнейшем «Готэм» не сдаст своих позиций и останется таким же, по-хорошему безумным.&lt;/p&gt;
 
@@ -415,7 +578,7 @@
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm video&quot;&gt;
 					&lt;div id=&quot;w_BXG9up-oE&quot; class=&quot;youtube&quot;&gt;
 						&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
-						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216916/video_02_uzuhkn.png&quot; class=&quot;thumbnail&quot; /&gt;
+						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216916/video_02_uzuhkn.png&quot; class=&quot;thumbnail&quot; /&gt;
 						&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/w_BXG9up-oE?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;/div&gt;
 				&lt;/figure&gt;
@@ -424,7 +587,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216775/02_lf2lvz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216775/02_lf2lvz.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/02_lf2lvz.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -442,7 +605,7 @@
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm video&quot;&gt;
 					&lt;div id=&quot;0U989j62g20&quot; class=&quot;youtube&quot;&gt;
 						&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
-						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216951/video_03_rankfw.jpg&quot; class=&quot;thumbnail&quot; /&gt;
+						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216951/video_03_rankfw.jpg&quot; class=&quot;thumbnail&quot; /&gt;
 						&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/0U989j62g20?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;/div&gt;
 				&lt;/figure&gt;
@@ -451,7 +614,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216774/03_rzxuzi.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216774/03_rzxuzi.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216774/03_rzxuzi.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -469,7 +632,7 @@
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm video&quot;&gt;
 					&lt;div id=&quot;KTu8iDynwNc&quot; class=&quot;youtube&quot;&gt;
 						&lt;div class=&quot;play&quot;&gt;&lt;/div&gt;
-						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216987/video_04_d5eqx2.png&quot; class=&quot;thumbnail&quot; /&gt;
+						&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216987/video_04_d5eqx2.png&quot; class=&quot;thumbnail&quot; /&gt;
 						&lt;noscript&gt;&lt;div class=&quot;playing&quot;&gt;&lt;iframe frameborder=&quot;0&quot; src=&quot;https://www.youtube.com/embed/KTu8iDynwNc?autoplay=0&amp;amp;autohide=1&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/noscript&gt;
 					&lt;/div&gt;
 				&lt;/figure&gt;
@@ -478,7 +641,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216772/04_mxnlly.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216772/04_mxnlly.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/04_mxnlly.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -493,7 +656,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216772/05_lno5rf.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216772/05_lno5rf.jpg&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/05_lno5rf.jpg&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -612,7 +775,7 @@
 
 &lt;figure class=&quot;without-shadow picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216527/01_ooazsz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216527/01_ooazsz.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216527/01_ooazsz.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -638,7 +801,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216290/01_ruhqgg.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216290/01_ruhqgg.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216290/01_ruhqgg.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -649,7 +812,7 @@
 
 &lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
 				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216293/02_bqjuqd.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216293/02_bqjuqd.png&quot; /&gt;
+					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216293/02_bqjuqd.png&quot; /&gt;
 				&lt;/a&gt;
 				
 			&lt;/figure&gt;
@@ -661,36 +824,6 @@
         <guid isPermaLink="true">https://milkleaks.ru/blog/beat-cop/</guid>
         <category>Игры</category>
         <category>Пиксельная графика</category><category>Квест</category><category>Инди</category><category>На главной</category>
-        <author>Александра Травкина</author>
-      </item>
-    
-      <item>
-        <title>Новый, новый, новый год</title>
-        <description>&lt;p&gt;Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард. Люди неистово закупают продукты, подарки и алкоголь, и вообще всячески пытаются веселится, о чём говорят их нетрезвые голоса под окнами. В конце уходящего года многие подводят его итоги - обдумывают и делятся прошедшими событиями в своих уютных блогах и соцсетях, а также строят грандиозные планы на год будущий. Поддавшись традиции я тоже решила подвести итоги две тысячи семнадцатого, пусть и не вдаваясь в подробности событий жизни вне Сети, не смотря на то, что и их было предостаточно.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;figure class=&quot;space-minus-h-micro-xs space-minus-h-base-sm picture&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1519216008/01_i3skfm.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_640/v1519216008/01_i3skfm.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-
-&lt;p&gt;В первую очередь семнадцатый год был богат на различные игровые релизы, как среди ААА-проектов, так и в инди сегменте. Прямиком в начале года вышел &lt;a href=&quot;/blog/resident-evil-7/&quot;&gt;Resident Evil 7&lt;/a&gt;. Мы дождались выхода сюжетного режима &lt;a href=&quot;/blog/the-long-dark-wintermute/&quot;&gt;The Long Dark&lt;/a&gt;, пусть он оказался не таким захватывающим, как хотелось бы. Дождались новой части &lt;a href=&quot;/blog/retrospektiva-prey/&quot;&gt;старушки Prey&lt;/a&gt;, пусть в ней и не осталось ничего от индейцев. Увидели ремастер Full Throttle и спорную третью часть Syberia. Погрузились в захватывающую историю отношений Хлои Прайс и Рейчел Эмбер в приквеле Life is Strange. Bethesda порадовала второй частью The Evil Within, которая стала на голову лучше предыдущей, а также новой частью приключений Уильяма Джозефа Бласковица в Wolfenstein: The New Colossus. Поляки наконец доделали отличный инди-хоррор &lt;a href=&quot;/blog/darkwood/&quot;&gt;Darkwood&lt;/a&gt;, а студия Giant Sparrow подарила миру проникновенную визуальную историю &lt;a href=&quot;/blog/what-remains-of-edith-finch/&quot;&gt;What Remains of Edith Finch&lt;/a&gt;. Помимо вышеперечисленного было и множество других игр увидевших свет в уходящем году, что не может не радовать. А потому, остается надеется, что будущий год также будет разнообразен на различные интересные релизы. Как минимум я жду Metro: Exodus и Vampyr от DONTNOD.&lt;/p&gt;
-
-&lt;p&gt;Что же касается блога, в этому году я отказалась от платного хостинга и переехала с &lt;a href=&quot;/blog/egeya/&quot;&gt;Эгеи&lt;/a&gt; на &lt;a href=&quot;/blog/ujutnyj-jekyll/&quot;&gt;Jekyll&lt;/a&gt;, который размещается на бесплатном сервисе &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. Как оказалось Jekyll замечательный и гибкий движок, и отлично подходит для нужд моего блога, изучая его я получила опыт в верстке и дизайне, познакомилась с &lt;code class=&quot;highlighter-rouge&quot;&gt;sass&lt;/code&gt; и &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;. Помимо прочего, для подписчиков &lt;a href=&quot;https://sasha-travkina.tumblr.com/&quot;&gt;Tumblr&lt;/a&gt; я публикую свои посты и там, кроме специфических касающихся веб дизайна. Ohayo, подписчикам и команде Tumblr &lt;a href=&quot;https://komanda.tumblr.com/post/168430394913/игры-игры-и-еще-раз-игры-в-блоге&quot;&gt;упомянувшей&lt;/a&gt; мой блог в своём недавнем посте.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Относительно внешнего мира - в семнадцатом году произошло множество событий, веселых и не очень. Рассказывать о них я, конечно, не буду. Надеюсь, что в восемнадцатом будет меньше сложностей с государственной бюрократической машиной и вообще он станет разнообразнее на более позитивные события и впечатления. Как минимум, аки хипстер, я планирую путешествовать и фотографировать пейзажи на новоприобретенный Canon EOS 100D, писать больше полезных статей и обзоров игр. Но это не точно. В остальном же, осталось украсить квартиру разноцветной мишурой, купить вкусняшек и встретить Новый год за просмотром Доктора Хауса вместе со своей второй половинкой и кошками. Такие дела.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 31 Dec 2017 00:00:00 +0700</pubDate>
-        <link>https://milkleaks.ru/blog/novyj-novyj-novyj-god/</link>
-        <guid isPermaLink="true">https://milkleaks.ru/blog/novyj-novyj-novyj-god/</guid>
-        <category>Заметки</category>
-        <category>На главной</category>
         <author>Александра Травкина</author>
       </item>
     

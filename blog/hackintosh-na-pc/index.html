@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Хакинтош на PC</title>
+
+		<!--[ Meta ]-->
+			<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="robots" content="index, follow" />
+
+	<meta name="author" content="Александра Травкина">
+	<meta name="generator" content="Jekyll v3.8.2" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="Milkleaks">
+	<meta name="twitter:creator" content="@sasha_travkina">
+	<meta name="twitter:title" content="Хакинтош на PC &middot; Milkleaks">
+	<meta name="twitter:description" content="Расставшись со своим тормозящим MacBook Air в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна...">
+	<meta name="twitter:image" content="v1527834916/thumb_aykyor.png">
+
+	<meta property="og:title" content="Хакинтош на PC &middot; Milkleaks" />
+	<meta property="og:site_name" content="Milkleaks">	
+	<meta property="og:url" content="https://milkleaks.ru/blog/hackintosh-na-pc/">
+	<meta property="og:description" content="Расставшись со своим тормозящим MacBook Air в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна..."/>
+	<meta property="og:image" content="v1527834916/thumb_aykyor.png" />
+	<meta property="og:image:height" content="360">
+	<meta property="og:image:width" content="640">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru">
+
+	<!--[ Favicons ]-->
+	<link rel="icon" type="image/png" sizes="32x32" href="https://milkleaks.ru/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://milkleaks.ru/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://milkleaks.ru/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://milkleaks.ru/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://milkleaks.ru/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://milkleaks.ru/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://milkleaks.ru/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://milkleaks.ru/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://milkleaks.ru/apple-touch-icon-180x180.png">
+	<link rel="manifest" href="https://milkleaks.ru/manifest.json">
+	<link rel="mask-icon" href="https://milkleaks.ru/favicon.svg">
+
+	<!--[ Control ]-->
+	<meta name="yandex-verification" content="74c3b5c777ee0ba1" />
+	<meta name="google-site-verification" content="jqmtruexSTI1O_HYicSlVMgM4nNh_Di_7zlyTbYlMc8" />
+
+	<!--[ Feed ]-->
+	<link rel="canonical" href="https://milkleaks.ru/blog/hackintosh-na-pc/">
+	<link rel="alternate" type="application/rss+xml" title="Milkleaks" href="https://milkleaks.ru/feed.xml" />
+		
+		<!--[ CSS ]-->
+		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
+<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
+<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
+		<script type="application/ld+json">
+
+	
+	
+
+	{  
+		"@context":"http://schema.org",
+		"@type":"BlogPosting",
+		"headline":"Хакинтош на PC",
+		"genre":"Заметки",
+		"keywords":"Mac, OS, Гайд",
+		"wordCount":"1016",
+		"url":"https://milkleaks.ru/blog/hackintosh-na-pc/",
+		"datePublished":"2018-06-04",
+		"dateModified":"2018-06-04",
+		"author":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"publisher":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sasha-travkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"image":{  
+			"@type":"ImageObject",
+			"contentUrl":"v1527834916/thumb_aykyor.png",
+			"url":"https://milkleaks.ru/",
+			"height":"360",
+			"width":"640"
+		},
+		"mainEntityOfPage":{  
+			"@type":"WebPage",
+			"@id":"https://milkleaks.ru/"
+		},
+		"articleBody":"Расставшись со своим тормозящим MacBook Air в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.																				Собственно, характеристики компьютера на котором и был поднят hackintosh:  Корпус: Raijintek Metis Red.  Материнская плата: ASRock Z370M-ITX/ac.  Процессор: i7-8700T.  Оперативная память: GoodRam DDR4 2133MHz 16GB Kit 2x8GB.  SSD: KingDian N480 240GB, KingDian S280 480GB, Micron 1100 MTFDDAK256TBN Media.  Wi-Fi: Broadcom BCM94352Z NGFF Dual Band 802.11ac 867M Wifi BT 4.0 Lenovo FRU 04X6020.  Блок питания: Corsair RM550x.В качестве видеокарты пока используется встроенная Intel UHD630. А для того, чтобы Wi-Fi материнской платы заработал в hackintosh пришлось покупать на ebay новый модуль - Broadcom BCM4352, так как для стандартного модуля от Intel нет необходимых kext’ов.Образ дискаДля установки hackintosh я скачала образ с High Sierra 10.13.4 (Сейчас там более актуальная версия) с небезиветсного rutracker.org и по инструкции из темы записала его на флешку.ПрограммыДля установки и настройки OS X понадобится некоторый набор программ, которые ставятся после первого запуска операционной системы. Можно заранее скачать их на свободную флешку так как сразу после установки интернета еще не будет.  Clover EFI Bootloader - Загрузчик EFI, позволяет запускать hackintosh, windows, linux и их вместе. (sourceforge.net)  Clover Configurator - Для более легкой правки config.plist Clover’a. (tonymacx86.com)  EFI Mounter - Программа для монтирования EFI раздела диска hackintosh. (tonymacx86.com)  Kext Utility - Утилита для установки kext’ов. (insanelymac.com)KextИли «kernel extension», можно назвать их своего рода драйверами для hackintosh.  FakeSMC - эмулирует работу SMC контроллера который передает операционной системе информацию о компьютере, температуре процессора и т.д. Обязателен для запуска hackintosh. (bitbucket.org)  FakePCIID - Перехватывает запросы PCI-ID, и возвращает значение, указанное через FakeID в Clover. Понадобится для работы некоторых kext’ов wi-fi и встроенной графики. (bitbucket.org)  BrcmPatchRAM - Kext’ы для работы Wi-Fi модуля Broadcom. (bitbucket.org)  VoodooHD - Универсальный kext для аудио. (sourceforge.net)  AppleALC - Альтернативный kext аудио. (github.com)  IntelMausiEthernet - Kext для запуска Intel ethernet. (bitbucket.org)  IntelGraphicsFixup - Фикс для различных встроенных видеокарт от Intel. (github.com)  Shiki - Исправление возможных проблем с воспроизведеним видео. (github.com)   Lilu - Расширение для поддержки различных kext’ов. (github.com)УстановкаЗагрузившись с установочной флешки в режиме UEFI приступаем к установке. В окне Clover выбираем «Boot Mac OS from OS X Base System» и дожидаемся появления установки OS X, на что уйдет до пяти минут. Переходим в дисковую утилиту и форматируем нужный диск. На одном из SSD дисков я оставила уже установленную ранее Windows 10, а другой SSD отформатировала из установщика в формат AFPS назвав его классическим Macintosh HD. Устанавливаем OS X и дожидаемся перезагрузки. После перезагрузки вновь видим Clover.Так как у меня встроенная видеокарта Intel UHD630 то мне пришлось прописать параметр загрузки -disablegfxfirmware чтобы установка продолжилась дальше. Чтобы прописать параметр загрузки в Clover откройте раздел Options, в строке Boot Args впишите -disablegfxfirmware и нажмите Enter.После установки оказываемся в OS X и первым делом устанавливаем ранее скачанный Clover EFI Bootloader. В пункте Тип установки выбираем Настройки и расставляем галочки:																				Далее, устанавливаем и запускаем Kext Utility, дожидаемся сообщения «Drag files on window to process them» и перетаскиваем прямо в окно программы необходимые kext’ы.																				Вот перечень kext’ов установленных у меня:  FakeSMC.kext  FakeSMC_LPCSensors.kext  FakeSMC_GPUSensors.kext  FakeSMC_CPUSensors.kext  FakeSMC_ACPISensors.kext  FakePCIID.kext  FakePCIID_Intel_HD_Graphics.kext  FakePCIID_Broadcom_WiFi.kext  BrcmFirmwareData.kext  BrcmPatchRAM2.kext  IntelGraphicsFixup.kext  IntelMausiEthernet.kext  VoodooHDA.kext  Shiki.kext  Lilu.kextТакже поместите ваши kext’ы в папку EFI/EFI/CLOVER/kexts/Other для загрузчика Clover.Если диск отформатирован в AFPS может понадобится исправить проблему с загрузкой:  В Finder - Переход - Переход к папке  Ввести /usr/standalone/i386/  Скопировать apfs.efi в /EFI/EFI/CLOVER/drivers64UEFI/Конфигурация Clover редактируется в файле EFI/EFI/CLOVER/config.plist. Его можно править программой Clover Configurator или вручную, с помощью Microsoft Visual Studio Code.Исправление совместимости Intel UHD 630 на Coffee LakeПосле установки в config.plist, в раздел Boot - Arguments я добавила параметр -disablegfxfirmware.Возникшее мерцание изображения, на встроенной графике процессора поколения Coffee Lake, исправляется по несложной инструкции. Открыть терминал и ввести:sudo nano /System/Library/Extensions/AppleIntelKBLGraphics.kext/Contents/Info.plistВ открывшемся файле, в терминале, найти &amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;, внизу файла. В конце следующей строки - &amp;lt;string&amp;gt;, найти 0x3E928086 и перед ним добавить 0x3E918086.																				Сохраняем изменения файла комбинацией Ctrl + X, соглашаемся с изменениями Y и нажимаем Enter.Далее, в терминале открываем файл:sudo nano /System/Library/Extensions/AppleIntelKBLGraphicsFramebuffer.kext/Contents/Info.plistВ котором ищем &amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;, где в конец строки &amp;lt;string&amp;gt; добавляем 0x3E918086 0x3E928086.																				Очищаем кеш командой:sudo kextcache -i /sudo touch /System/Library/Extensions &amp;amp;&amp;amp; sudo kextcache -u /В итогеТаким образом был установлен hackintosh 10.13.4, который вскоре, без каких либо проблем, обновился до 10.13.5.																				Привязка к учетной записи, логин в iCloud и прочих Apple сервисах прошли без каких-либо проблем. Операционная система работает стабильно, а установка не столь сложна, как это казалось на первый взгляд. Проблемы возникли только с поддержкой Wi-Fi модуля, из-за чего пришлось покупать Broadcom BCM4352 и ждать его доставки из Китая. В итоге, на одном из SSD у меня установлен Windows 10 для игр, а на другом hackintosh, загружаемый по умолчанию. Выбор системы происходит при загрузке в Clover.Использовались материалы  Статья с habrahabr.  Опыт человека с аналогичной материнской платой на tonymacx86.com.  Инструкция по исправлению Intel UHD 630, на hackintosher.com.  Образ с rutracker.org."
+	}
+
+
+</script>
+
+	</head>
+
+	<body class="page-post">
+
+<div class="row space-out-zero-xs height-full">
+    <div class="col-xs-12 col-xl-4 space-in-zero-xs sidebar">
+        <section class="background">
+	<div class="bg"></div>
+	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content row row-reverse-xs">
+		<header class="col-xs-12 col-last-xl space-auto-top-xl space-in-top-mili-xs space-in-top-zero-xl space-in-bottom-mili-xl space-in-h-zero-xs space-auto-h-xs linel">
+			<div class="row row-reverse-xs row-middle-sm">
+				<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-sm">
+					<div class="search space-auto-left-sm">
+						<div class="search-form">
+							<input type="text" id="search-input" class="search-box" />
+							<span class="search-button">
+								<i class="fa fa-search open" aria-hidden="true"></i>
+								<i class="fa fa-times close" aria-hidden="true"></i>
+							</span>
+						</div>
+						<div class="dropdown">
+							<ul class="results" id="results-container"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-shrink logo">
+					<a class="link-logo" href="/">
+						<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="col-xs-12 col-first-xl space-auto-top-xs space-out-v-zero-xl space-in-bottom-mili-xs space-in-bottom-zero-xs space-in-top-mili-xl space-in-h-zero-xs space-auto-h-xs linel">
+		</div>
+	</div>
+</section>
+<style type="text/css">
+	.sidebar .background .bg {
+		
+			background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1527834435/cover_tnntj8.png');
+		
+	}
+</style>
+    </div>
+    <div class="col-xs-12 col-xl-8 col-xl-offset-4 space-in-h-zero-xs height-full">
+        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-v-mili-xs wrapper ">
+            <article class="slide-up-fade-in content post">
+	<h1 class="title">Хакинтош на PC</h1>
+	
+	<p>Расставшись со своим тормозящим <a href="/blog/znakomstvo-s-mac/">MacBook Air</a> в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной <span class="caps">OS</span> X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный <span class="caps">PC.</span> Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.
+</p>
+
+<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1528118833/01_rzfgsr.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528118833/01_rzfgsr.png">
+				</a>
+				
+			</figure>
+
+<p>Собственно, характеристики компьютера на котором и был поднят hackintosh:</p>
+
+<ul>
+  <li>Корпус: Raijintek Metis Red.</li>
+  <li>Материнская плата: ASRock <span class="caps">Z370M</span>-<span class="caps">ITX</span>/ac.</li>
+  <li>Процессор: i7-<span class="caps">8700T.</span>
+</li>
+  <li>Оперативная память: GoodRam <span class="caps">DDR4</span> 2133MHz <span class="caps">16GB</span> Kit 2x<span class="caps">8GB.</span>
+</li>
+  <li>
+<span class="caps">SSD</span>: KingDian <span class="caps">N480</span> <span class="caps">240GB</span>, KingDian <span class="caps">S280</span> <span class="caps">480GB</span>, Micron 1100 <span class="caps">MTFDDAK256TBN</span> Media.</li>
+  <li>Wi-Fi: Broadcom <span class="caps">BCM94352Z</span> <span class="caps">NGFF</span> Dual Band 802.11ac <span class="caps">867M</span> Wifi <span class="caps">BT</span> <span class="caps">4.0</span> Lenovo <span class="caps">FRU</span> <span class="caps">04X6020.</span>
+</li>
+  <li>Блок питания: Corsair RM550x.</li>
+</ul>
+
+<p>В качестве видеокарты пока используется встроенная Intel <span class="caps">UHD630.</span> А для того, чтобы Wi-Fi материнской платы заработал в hackintosh пришлось покупать <a href="https://www.ebay.com/itm/Broadcom-BCM94352Z-NGFF-Dual-Band-802-11ac-867M-Wifi-BT-4-0-Lenovo-FRU-04X6020/191855727748?ssPageName=STRK:MEBIDX:IT&amp;_trksid=p2060353.m2749.l2649" rel="nofollow" target="_blank">на ebay</a> новый модуль - Broadcom <span class="caps">BCM4352</span>, так как для стандартного модуля от Intel нет необходимых kext’ов.</p>
+
+<h3 id="образ-диска">Образ диска</h3>
+
+<p>Для установки hackintosh я скачала <a href="https://rutracker.org/forum/viewtopic.php?t=5413589" rel="nofollow" target="_blank">образ с High Sierra <span class="caps">10.13.4</span></a> (Сейчас там более актуальная версия) с небезиветсного rutracker.org и по инструкции из темы записала его на флешку.</p>
+
+<h3 id="программы">Программы</h3>
+
+<p>Для установки и настройки <span class="caps">OS</span> X понадобится некоторый набор программ, которые ставятся после первого запуска операционной системы. Можно заранее скачать их на свободную флешку так как сразу после установки интернета еще не будет.</p>
+
+<ul>
+  <li>
+<strong>Clover <span class="caps">EFI</span> Bootloader</strong> - Загрузчик <span class="caps">EFI</span>, позволяет запускать hackintosh, windows, linux и их вместе. (<a href="https://sourceforge.net/projects/cloverefiboot/" rel="nofollow" target="_blank">sourceforge.net</a>)</li>
+  <li>
+<strong>Clover Configurator</strong> - Для более легкой правки config.plist Clover’a. (<a href="https://www.tonymacx86.com/resources/clover-configurator.335/" rel="nofollow" target="_blank">tonymacx86.com</a>)</li>
+  <li>
+<strong><span class="caps">EFI</span> Mounter</strong> - Программа для монтирования <span class="caps">EFI</span> раздела диска hackintosh. (<a href="https://www.tonymacx86.com/resources/efi-mounter-v3.280/" rel="nofollow" target="_blank">tonymacx86.com</a>)</li>
+  <li>
+<strong>Kext Utility</strong> - Утилита для установки kext’ов. (<a href="https://www.insanelymac.com/forum/topic/140647-latest-kext-utility-macos-sierra-super-speed-edition/" rel="nofollow" target="_blank">insanelymac.com</a>)</li>
+</ul>
+
+<h3 id="kext">Kext</h3>
+
+<p>Или «kernel extension», можно назвать их своего рода драйверами для hackintosh.</p>
+
+<ul>
+  <li>
+<strong>Fake<span class="caps">SMC</span></strong> - эмулирует работу <span class="caps">SMC</span> контроллера который передает операционной системе информацию о компьютере, температуре процессора и т.д. Обязателен для запуска hackintosh. (<a href="https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/" rel="nofollow" target="_blank">bitbucket.org</a>)</li>
+  <li>
+<strong>Fake<span class="caps">PCIID</span></strong> - Перехватывает запросы <span class="caps">PCI</span>-<span class="caps">ID</span>, и возвращает значение, указанное через Fake<span class="caps">ID</span> в Clover. Понадобится для работы некоторых kext’ов wi-fi и встроенной графики. (<a href="https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/" rel="nofollow" target="_blank">bitbucket.org</a>)</li>
+  <li>
+<strong>BrcmPatch<span class="caps">RAM</span></strong> - Kext’ы для работы Wi-Fi модуля Broadcom. (<a href="https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/" rel="nofollow" target="_blank">bitbucket.org</a>)</li>
+  <li>
+<strong>Voodoo<span class="caps">HD</span></strong> - Универсальный kext для аудио. (<a href="https://sourceforge.net/projects/voodoohda/files/latest/download" rel="nofollow" target="_blank">sourceforge.net</a>)</li>
+  <li>
+<strong>Apple<span class="caps">ALC</span></strong> - Альтернативный kext аудио. (<a href="https://github.com/vit9696/AppleALC/releases" rel="nofollow" target="_blank">github.com</a>)</li>
+  <li>
+<strong>IntelMausiEthernet</strong> - Kext для запуска Intel ethernet. (<a href="https://bitbucket.org/RehabMan/os-x-intel-network/downloads/" rel="nofollow" target="_blank">bitbucket.org</a>)</li>
+  <li>
+<strong>IntelGraphicsFixup</strong> - Фикс для различных встроенных видеокарт от Intel. (<a href="https://github.com/lvs1974/IntelGraphicsFixup/releases" rel="nofollow" target="_blank">github.com</a>)</li>
+  <li>
+<strong>Shiki</strong> - Исправление возможных проблем с воспроизведеним видео. (<a href="https://github.com/vit9696/Shiki/releases" rel="nofollow" target="_blank">github.com</a>)</li>
+  <li>
+<strong> Lilu</strong> - Расширение для поддержки различных kext’ов. (<a href="https://github.com/vit9696/Lilu/releases" rel="nofollow" target="_blank">github.com</a>)</li>
+</ul>
+
+<h3 id="установка">Установка</h3>
+
+<p>Загрузившись с установочной флешки в режиме <span class="caps">UEFI</span> приступаем к установке. В окне Clover выбираем «Boot Mac <span class="caps">OS</span> from <span class="caps">OS</span> X Base System» и дожидаемся появления установки <span class="caps">OS</span> X, на что уйдет до пяти минут. Переходим в дисковую утилиту и форматируем нужный диск. На одном из <span class="caps">SSD</span> дисков я оставила уже установленную ранее Windows 10, а другой <span class="caps">SSD</span> отформатировала из установщика в формат <code class="highlighter-rouge">AFPS</code> назвав его классическим <code class="highlighter-rouge">Macintosh HD</code>. Устанавливаем <span class="caps">OS</span> X и дожидаемся перезагрузки. После перезагрузки вновь видим Clover.</p>
+
+<p>Так как у меня встроенная видеокарта Intel <span class="caps">UHD630</span> то мне пришлось прописать параметр загрузки <code class="highlighter-rouge">-disablegfxfirmware</code> чтобы установка продолжилась дальше. Чтобы прописать параметр загрузки в Clover откройте раздел <code class="highlighter-rouge">Options</code>, в строке <code class="highlighter-rouge">Boot Args</code> впишите <code class="highlighter-rouge">-disablegfxfirmware</code> и нажмите Enter.</p>
+
+<p>После установки оказываемся в <span class="caps">OS</span> X и первым делом устанавливаем ранее скачанный <strong>Clover <span class="caps">EFI</span> Bootloader</strong>. В пункте <code class="highlighter-rouge">Тип установки</code> выбираем <code class="highlighter-rouge">Настройки</code> и расставляем галочки:</p>
+
+<figure class="wrap picture">
+				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1528129979/02_z0qpep.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528129979/02_z0qpep.png">
+				</a>
+				
+			</figure>
+
+<p>Далее, устанавливаем и запускаем <strong>Kext Utility</strong>, дожидаемся сообщения «Drag files on window to process them» и перетаскиваем прямо в окно программы необходимые kext’ы.</p>
+
+<figure class="wrap picture">
+				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1528130607/03_oqgzmz.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528130607/03_oqgzmz.png">
+				</a>
+				
+			</figure>
+
+<p>Вот перечень kext’ов установленных у меня:</p>
+
+<ul>
+  <li>Fake<span class="caps">SMC</span>.kext</li>
+  <li>FakeSMC_LPCSensors.kext</li>
+  <li>FakeSMC_GPUSensors.kext</li>
+  <li>FakeSMC_CPUSensors.kext</li>
+  <li>FakeSMC_ACPISensors.kext</li>
+  <li>Fake<span class="caps">PCIID</span>.kext</li>
+  <li>FakePCIID_Intel_HD_Graphics.kext</li>
+  <li>FakePCIID_Broadcom_WiFi.kext</li>
+  <li>BrcmFirmwareData.kext</li>
+  <li>BrcmPatch<span class="caps">RAM2</span>.kext</li>
+  <li>IntelGraphicsFixup.kext</li>
+  <li>IntelMausiEthernet.kext</li>
+  <li>Voodoo<span class="caps">HDA</span>.kext</li>
+  <li>Shiki.kext</li>
+  <li>Lilu.kext</li>
+</ul>
+
+<p>Также поместите ваши kext’ы в папку <code class="highlighter-rouge">EFI/EFI/CLOVER/kexts/Other</code> для загрузчика Clover.</p>
+
+<p>Если диск отформатирован в <code class="highlighter-rouge">AFPS</code> может понадобится исправить проблему с загрузкой:</p>
+<ul>
+  <li>В Finder - Переход - Переход к папке</li>
+  <li>Ввести <code class="highlighter-rouge">/usr/standalone/i386/</code>
+</li>
+  <li>Скопировать <code class="highlighter-rouge">apfs.efi</code> в <code class="highlighter-rouge">/EFI/EFI/CLOVER/drivers64UEFI/</code>
+</li>
+</ul>
+
+<p>Конфигурация Clover редактируется в файле <code class="highlighter-rouge">EFI/EFI/CLOVER/config.plist</code>. Его можно править программой <strong>Clover Configurator</strong> или вручную, с помощью <strong>Microsoft Visual Studio Code</strong>.</p>
+
+<h3 id="исправление-совместимости-intel-uhd-630-на-coffee-lake">Исправление совместимости Intel <span class="caps">UHD</span> 630 на Coffee Lake</h3>
+
+<p>После установки в <code class="highlighter-rouge">config.plist</code>, в раздел <code class="highlighter-rouge">Boot</code> - <code class="highlighter-rouge">Arguments</code> я добавила параметр <code class="highlighter-rouge">-disablegfxfirmware</code>.</p>
+
+<p>Возникшее мерцание изображения, на встроенной графике процессора поколения Coffee Lake, исправляется по несложной инструкции. Открыть терминал и ввести:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>nano /System/Library/Extensions/AppleIntelKBLGraphics.kext/Contents/Info.plist</code></pre></figure>
+
+<p>В открывшемся файле, в терминале, найти <code class="highlighter-rouge">&lt;key&gt;IOPCIPrimaryMatch&lt;/key&gt;</code>, внизу файла. В конце следующей строки - <code class="highlighter-rouge">&lt;string&gt;</code>, найти <code class="highlighter-rouge">0x3E928086</code> и перед ним добавить <code class="highlighter-rouge">0x3E918086</code>.</p>
+
+<figure class="wrap picture">
+				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1528140705/4_demf79.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528140705/4_demf79.png">
+				</a>
+				
+			</figure>
+
+<p>Сохраняем изменения файла комбинацией <code class="highlighter-rouge">Ctrl + X</code>, соглашаемся с изменениями <code class="highlighter-rouge">Y</code> и нажимаем <code class="highlighter-rouge">Enter</code>.</p>
+
+<p>Далее, в терминале открываем файл:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>nano /System/Library/Extensions/AppleIntelKBLGraphicsFramebuffer.kext/Contents/Info.plist</code></pre></figure>
+
+<p>В котором ищем <code class="highlighter-rouge">&lt;key&gt;IOPCIPrimaryMatch&lt;/key&gt;</code>, где в конец строки <code class="highlighter-rouge">&lt;string&gt;</code> добавляем <code class="highlighter-rouge">0x3E918086 0x3E928086</code>.</p>
+
+<figure class="wrap picture">
+				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1528143221/5_lapvtp.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528143221/5_lapvtp.png">
+				</a>
+				
+			</figure>
+
+<p>Очищаем кеш командой:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>kextcache <span class="nt">-i</span> /
+<span class="nb">sudo touch</span> /System/Library/Extensions <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>kextcache <span class="nt">-u</span> /</code></pre></figure>
+
+<h3 id="в-итоге">В итоге</h3>
+
+<p>Таким образом был установлен hackintosh <span class="caps">10.13.4</span>, который вскоре, без каких либо проблем, обновился до <span class="caps">10.13.5.</span></p>
+
+<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1528144018/6_allsho.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
+					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528144018/6_allsho.png">
+				</a>
+				
+			</figure>
+
+<p>Привязка к учетной записи, логин в iCloud и прочих Apple сервисах прошли без каких-либо проблем. Операционная система работает стабильно, а установка не столь сложна, как это казалось на первый взгляд. Проблемы возникли только с поддержкой Wi-Fi модуля, из-за чего пришлось покупать Broadcom <span class="caps">BCM4352</span> и ждать его доставки из Китая. В итоге, на одном из <span class="caps">SSD</span> у меня установлен Windows 10 для игр, а на другом hackintosh, загружаемый по умолчанию. Выбор системы происходит при загрузке в Clover.</p>
+
+<h3 id="использовались-материалы">Использовались материалы</h3>
+
+<ul>
+  <li>Статья с <a href="https://habr.com/post/318448/" rel="nofollow" target="_blank">habrahabr</a>.</li>
+  <li>Опыт человека с аналогичной материнской платой на <a href="https://www.tonymacx86.com/threads/eriks-tiny-but-mighty-htpc-asrock-z370m-itx-ac-i5-8400-uhd-630-graphics-high-sierra.239157/" rel="nofollow" target="_blank">tonymacx86.com</a>.</li>
+  <li>Инструкция по исправлению Intel <span class="caps">UHD</span> 630, на <a href="https://hackintosher.com/forums/thread/coffee-lake-uhd-630-graphics-framebuffer-injection-0x3e918086-0x3e928086-for-high-sierra.210/" rel="nofollow" target="_blank">hackintosher.com</a>.</li>
+  <li>Образ с <a href="https://rutracker.org/forum/viewtopic.php?t=5413589" rel="nofollow" target="_blank">rutracker.org</a>.</li>
+</ul>
+
+
+
+	
+</article>
+
+<nav class="row row-between-sm space-in-top-kilo-xs pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+		
+			<a title="Far Cry 5 · Сектантская жвачка" class="link" href="/blog/far-cry-5-sektantskaja-zhvachka/">&lsaquo; Ранее</a>
+		
+	</span>
+
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 88 из 88</span>
+
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+		
+	</span>
+</nav>
+            <footer class="space-in-top-kilo-xs">	
+	<div class="space-out-bottom-micro-xs copyright">
+		<div class="row">
+			<div class="col-xs">
+			Александра Травкина &copy; <time> 4 июня 2018</time>
+			</div>
+			<div class="col-xs-shrink toggle">
+				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
+			</div>
+		</div>
+	</div>
+
+	<section class="navigation">
+	<nav class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-in-v-micro-xs menu" id="menu">
+		<ol class="menu-content">
+			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/blog/tags/">Теги</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/photo/">Фотографии</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
+			
+			
+			
+				<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a class="link-subcontrol" href="http://steambuy.com/partner/milkleaks">Магазин игр</a></li>
+			
+		</ol>
+	</nav>
+</section>
+</footer>
+        </div>
+    </div>
+</div>
+
+		<!--[ JS ]-->
+		<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
+<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
+<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
+
+<script type="text/javascript" src="/static/js/template.js"></script>
+
+<!--[ Lightbox ]-->
+		
+	</body>
+</html>

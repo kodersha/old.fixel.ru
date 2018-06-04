@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Хакинтош на PC",
+      "category" : "Заметки",
+      "tags"     : "Mac, OS, and Гайд",
+      "url"      : "/blog/hackintosh-na-pc/",
+      "date"     : "2018-06-04 00:00:00 +0700"
+    } ,
+  
+    {
       "title"    : "Far Cry 5 · Сектантская жвачка",
       "category" : "Игры",
       "tags"     : "Открытый мир, Экшен, and На главной",

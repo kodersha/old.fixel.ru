@@ -3,8 +3,8 @@
 */
 /*! bettertext.css v2.0.4 | MIT License | github.com/paulradzkov/bettertext.css */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 1.125em;
+  font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 1.25em;
   line-height: 1.462;
 }
 body:not([class]),
@@ -23,7 +23,7 @@ section:not([class]) section:not([class]) {
 }
 p {
   margin: 0 0 1.462em;
-  max-width: 35rem;
+  max-width: 45rem;
 }
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
 p:before,
@@ -43,38 +43,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: bolder;
 }
 h1 {
-  font-size: 1.1953125em;
+  font-size: 1.171875em;
   line-height: 1.1;
-  margin: 2.5rem 0 1.22311111em;
+  margin: 2.5rem 0 1.24757333em;
 }
 h2 {
-  font-size: 1.125em;
+  font-size: 1.09375em;
   line-height: 1.2;
-  margin: 2rem 0 1.29955556em;
+  margin: 2rem 0 1.33668571em;
 }
 h3 {
-  font-size: 1.0546875em;
+  font-size: 1.09375em;
   line-height: 1.3;
-  margin: 1.5rem 0 1.38619259em;
+  margin: 1.5rem 0 1.33668571em;
 }
 h4 {
-  font-size: 1.0546875em;
+  font-size: 1.015625em;
   line-height: 1.4;
-  margin: 1rem 0 1.38619259em;
+  margin: 1rem 0 1.43950769em;
 }
 h5 {
-  font-size: 0.984375em;
+  font-size: 1.015625em;
   line-height: 1.462;
-  margin: 2.22780952em 0 1.48520635em;
+  margin: 2.15926154em 0 1.43950769em;
 }
 h6 {
-  font-size: 0.984375em;
-  line-height: 1.48520635;
-  margin: 1.48520635em 0 0;
+  font-size: 1.09375em;
+  line-height: 1.33668571;
+  margin: 1.33668571em 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -97,17 +97,17 @@ h3 + h4 {
   margin-top: 1.4em;
 }
 h4 + h5 {
-  margin-top: 1.48520635em;
+  margin-top: 1.43950769em;
 }
 h5 + h6 {
-  margin-top: 1.48520635em;
+  margin-top: 1.33668571em;
 }
 /* lists */
 /* lists without classes */
 ul:not([class]),
 ol:not([class]) {
   margin: 0 0 1.462em;
-  max-width: calc(32.5rem);
+  max-width: calc(42.5rem);
   padding-left: 0;
   padding-right: 2.5em;
 }
@@ -143,13 +143,13 @@ figure:not([class]) {
   margin: 2.924em 0;
 }
 figure:not([class]) > p {
-  max-width: 26.25rem;
-  font-size: 0.984375em;
+  max-width: 33.75rem;
+  font-size: 1.09375em;
   margin: 0.5em 0 0;
 }
 figcaption {
-  max-width: 26.25rem;
-  font-size: 0.984375em;
+  max-width: 33.75rem;
+  font-size: 1.09375em;
   margin: 0.5em 0 2.924em;
 }
 figcaption > p {
@@ -157,7 +157,7 @@ figcaption > p {
 }
 /* blockquotes */
 blockquote {
-  max-width: calc(30rem);
+  max-width: calc(40rem);
   margin: 0 0 1.462em;
   padding: 1.462em 2.5em;
 }
@@ -167,7 +167,7 @@ blockquote > p:last-child {
 blockquote > footer,
 blockquote > cite {
   display: block;
-  font-size: 0.984375em;
+  font-size: 1.09375em;
 }
 /* code */
 pre {
@@ -187,7 +187,7 @@ table:not([class]) {
 }
 table:not([class]) caption {
   text-align: left;
-  font-size: 0.984375em;
+  font-size: 1.09375em;
   margin-bottom: 0.625em;
 }
 table:not([class]) td,
@@ -206,7 +206,7 @@ table:not([class]) thead th {
 }
 /* definition lists */
 dl:not([class]) {
-  max-width: 35rem;
+  max-width: 45rem;
   margin: 0 0 1.462em;
 }
 dl:not([class]) dt:not([class]) {
@@ -220,7 +220,7 @@ hr:not([class]) {
   border: 0;
   border-bottom: 1px solid;
   margin: 1.462em 0;
-  max-width: 35rem;
+  max-width: 45rem;
   opacity: .1;
 }
 abbr {
@@ -3797,9 +3797,9 @@ samp {
 .flex-grow-xs {
   flex-grow: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 750px;
+    max-width: 100%;
   }
   .row-reverse-sm {
     flex-direction: row-reverse;
@@ -3957,9 +3957,9 @@ samp {
     flex-grow: 1;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 970px;
+    max-width: 750px;
   }
   .row-reverse-md {
     flex-direction: row-reverse;
@@ -4117,9 +4117,9 @@ samp {
     flex-grow: 1;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container {
-    max-width: 1170px;
+    max-width: 970px;
   }
   .row-reverse-lg {
     flex-direction: row-reverse;
@@ -4274,6 +4274,326 @@ samp {
     align-items: stretch;
   }
   .flex-grow-lg {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .row-reverse-xl {
+    flex-direction: row-reverse;
+  }
+  .row-start-xl {
+    justify-content: flex-start;
+  }
+  .row-center-xl {
+    justify-content: center;
+  }
+  .row-end-xl {
+    justify-content: flex-end;
+  }
+  .row-top-xl {
+    align-items: flex-start;
+  }
+  .row-middle-xl {
+    align-items: center;
+  }
+  .row-bottom-xl {
+    align-items: flex-end;
+  }
+  .row-around-xl {
+    justify-content: space-around;
+  }
+  .row-between-xl {
+    justify-content: space-between;
+  }
+  .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12,
+  .col-xl-shrink,
+  .col-xl-min,
+  .col-xl {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .col-xl-1 {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+  .col-xl-2 {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+  .col-xl-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-xl-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+  .col-xl-5 {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+  }
+  .col-xl-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-xl-7 {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+  }
+  .col-xl-8 {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+  .col-xl-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-xl-10 {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+  .col-xl-11 {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+  }
+  .col-xl-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .col-xl-offset-0 {
+    margin-left: 0%;
+  }
+  .col-xl-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-xl-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+  .col-xl-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-xl-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+  .col-xl-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-xl-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+  .col-xl-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-xl-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-xl-offset-12 {
+    margin-left: 100%;
+  }
+  .col-xl {
+    flex-grow: 1;
+    flex-basis: 0%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .col-xl-shrink {
+    flex-grow: 0;
+    flex-basis: auto;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .col-xl-min {
+    flex-grow: 0;
+    flex-basis: 0%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .col-first-xl {
+    order: -1;
+  }
+  .col-last-xl {
+    order: 1;
+  }
+  .col-flex-xl {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flex-grow-xl {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px;
+  }
+  .row-reverse-ex {
+    flex-direction: row-reverse;
+  }
+  .row-start-ex {
+    justify-content: flex-start;
+  }
+  .row-center-ex {
+    justify-content: center;
+  }
+  .row-end-ex {
+    justify-content: flex-end;
+  }
+  .row-top-ex {
+    align-items: flex-start;
+  }
+  .row-middle-ex {
+    align-items: center;
+  }
+  .row-bottom-ex {
+    align-items: flex-end;
+  }
+  .row-around-ex {
+    justify-content: space-around;
+  }
+  .row-between-ex {
+    justify-content: space-between;
+  }
+  .col-ex-1, .col-ex-2, .col-ex-3, .col-ex-4, .col-ex-5, .col-ex-6, .col-ex-7, .col-ex-8, .col-ex-9, .col-ex-10, .col-ex-11, .col-ex-12,
+  .col-ex-shrink,
+  .col-ex-min,
+  .col-ex {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  .col-ex-1 {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+  .col-ex-2 {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+  .col-ex-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .col-ex-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+  .col-ex-5 {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+  }
+  .col-ex-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .col-ex-7 {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+  }
+  .col-ex-8 {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+  .col-ex-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+  .col-ex-10 {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+  .col-ex-11 {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+  }
+  .col-ex-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .col-ex-offset-0 {
+    margin-left: 0%;
+  }
+  .col-ex-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-ex-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-ex-offset-3 {
+    margin-left: 25%;
+  }
+  .col-ex-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-ex-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-ex-offset-6 {
+    margin-left: 50%;
+  }
+  .col-ex-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-ex-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-ex-offset-9 {
+    margin-left: 75%;
+  }
+  .col-ex-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-ex-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-ex-offset-12 {
+    margin-left: 100%;
+  }
+  .col-ex {
+    flex-grow: 1;
+    flex-basis: 0%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .col-ex-shrink {
+    flex-grow: 0;
+    flex-basis: auto;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .col-ex-min {
+    flex-grow: 0;
+    flex-basis: 0%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .col-first-ex {
+    order: -1;
+  }
+  .col-last-ex {
+    order: 1;
+  }
+  .col-flex-ex {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flex-grow-ex {
     flex-grow: 1;
   }
 }
@@ -4980,10 +5300,9 @@ body:after {
 .lightbox .lb-image {
   display: block;
   height: auto;
-  max-width: 1352px;
+  max-width: inherit;
   max-height: none;
   border-radius: 2px;
-  background-color: #000000;
 }
 .lb-dataContainer:after,
 .lb-outerContainer:after {
@@ -7741,203 +8060,105 @@ body:after {
   font-weight: normal;
   font-style: italic;
 }
-/* Webfont: Lato-Black */
 @font-face {
-  font-family: 'latoWebBlack';
-  src: url('../static/fonts/lato/Lato-Black.eot');
-  src: local('latoWebBlack'), url('../static/fonts/lato/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Black.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Black.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Black.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.eot');
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-BlackItalic */
 @font-face {
-  font-family: 'latoWebBlack';
-  src: url('../static/fonts/lato/Lato-BlackItalic.eot');
-  src: local('latoWebBlack'), url('../static/fonts/lato/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-BlackItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BlackItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BlackItalic.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.eot');
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-300italic.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-Bold */
 @font-face {
-  font-family: 'latoWebBold';
-  src: url('../static/fonts/lato/Lato-Bold.eot');
-  src: local('latoWebBold'), url('../static/fonts/lato/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Bold.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Bold.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-regular.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-BoldItalic */
 @font-face {
-  font-family: 'latoWebBold';
-  src: url('../static/fonts/lato/Lato-BoldItalic.eot');
-  src: local('latoWebBold'), url('../static/fonts/lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-BoldItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BoldItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-BoldItalic.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.eot');
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-italic.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-Hairline */
 @font-face {
-  font-family: 'latoWebHairline';
-  src: url('../static/fonts/lato/Lato-Hairline.eot');
-  src: local('latoWebHairline'), url('../static/fonts/lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Hairline.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Hairline.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Hairline.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 600;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.eot');
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-HairlineItalic */
 @font-face {
-  font-family: 'latoWebHairline';
-  src: url('../static/fonts/lato/Lato-HairlineItalic.eot');
-  src: local('latoWebHairline'), url('../static/fonts/lato/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-HairlineItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HairlineItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HairlineItalic.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 600;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.eot');
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-600italic.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-Heavy */
 @font-face {
-  font-family: 'latoWebHeavy';
-  src: url('../static/fonts/lato/Lato-Heavy.eot');
-  src: local('latoWebHeavy'), url('../static/fonts/lato/Lato-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Heavy.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Heavy.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Heavy.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 700;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.eot');
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-HeavyItalic */
 @font-face {
-  font-family: 'latoWebHeavy';
-  src: url('../static/fonts/lato/Lato-HeavyItalic.eot');
-  src: local('latoWebHeavy'), url('../static/fonts/lato/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-HeavyItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HeavyItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-HeavyItalic.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 700;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.eot');
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-700italic.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-Italic */
 @font-face {
-  font-family: 'latoWeb';
-  src: url('../static/fonts/lato/Lato-Italic.eot');
-  src: local('latoWeb'), url('../static/fonts/lato/Lato-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Italic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Italic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-Light */
-@font-face {
-  font-family: 'latoWebLight';
-  src: url('../static/fonts/lato/Lato-Light.eot');
-  src: local('latoWebLight'), url('../static/fonts/lato/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Light.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Light.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Light.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 800;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.eot');
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-/* Webfont: Lato-LightItalic */
 @font-face {
-  font-family: 'latoWebLight';
-  src: url('../static/fonts/lato/Lato-LightItalic.eot');
-  src: local('latoWebLight'), url('../static/fonts/lato/Lato-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-LightItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-LightItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-LightItalic.ttf') format('truetype');
+  font-family: 'Open Sans';
   font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+  font-weight: 800;
+  src: url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.eot');
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */ url('../static/fonts/open-sans/open-sans-v15-cyrillic_latin-800italic.svg#OpenSans') format('svg');
   
   /* IE9 Compat Modes */
-}
-/* Webfont: Lato-Medium */
-@font-face {
-  font-family: 'latoWebMedium';
-  src: url('../static/fonts/lato/Lato-Medium.eot');
-  src: local('latoWebMedium'), url('../static/fonts/lato/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Medium.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Medium.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-MediumItalic */
-@font-face {
-  font-family: 'latoWebMedium';
-  src: url('../static/fonts/lato/Lato-MediumItalic.eot');
-  src: local('latoWebMedium'), url('../static/fonts/lato/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-MediumItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-MediumItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-MediumItalic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-Regular */
-@font-face {
-  font-family: 'latoWeb';
-  src: url('../static/fonts/lato/Lato-Regular.eot');
-  src: local('latoWeb'), url('../static/fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Regular.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Regular.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-Semibold */
-@font-face {
-  font-family: 'latoWebSemibold';
-  src: url('../static/fonts/lato/Lato-Semibold.eot');
-  src: local('latoWebSemibold'), url('../static/fonts/lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Semibold.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Semibold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-SemiboldItalic */
-@font-face {
-  font-family: 'latoWebSemibold';
-  src: url('../static/fonts/lato/Lato-SemiboldItalic.eot');
-  src: local('latoWebSemibold'), url('../static/fonts/lato/Lato-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-SemiboldItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-SemiboldItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-SemiboldItalic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-Thin */
-@font-face {
-  font-family: 'latoWebThin';
-  src: url('../static/fonts/lato/Lato-Thin.eot');
-  src: local('latoWebThin'), url('../static/fonts/lato/Lato-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-Thin.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Thin.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-Thin.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
-}
-/* Webfont: Lato-ThinItalic */
-@font-face {
-  font-family: 'latoWebThin';
-  src: url('../static/fonts/lato/Lato-ThinItalic.eot');
-  src: local('latoWebThin'), url('../static/fonts/lato/Lato-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../static/fonts/lato/Lato-ThinItalic.woff2') format('woff2'), /* Modern Browsers */ url('../static/fonts/lato/Lato-ThinItalic.woff') format('woff'), /* Modern Browsers */ url('../static/fonts/lato/Lato-ThinItalic.ttf') format('truetype');
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  
-  /* IE9 Compat Modes */
+  /* Legacy iOS */
 }
 /* Fonts */
 /* Colors */
@@ -7954,17 +8175,23 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
-  background-color: #f1f1f1;
   color: #000000;
+  font-weight: 400;
   cursor: default;
   height: 100%;
   margin: 0;
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
 }
 input,
 textarea,
 select,
 button {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 h1,
 h2,
@@ -7973,6 +8200,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.875rem;
+  letter-spacing: -0.04rem;
 }
 p {
   margin: 0 0 0.875rem 0;
@@ -7994,21 +8222,18 @@ p {
   background-color: #ffffff;
   flex-direction: column;
   min-height: 100%;
-  max-width: 40rem;
+  max-width: 50rem;
   display: flex;
   width: 100%;
 }
 .wrapper.extended {
-  max-width: 61.25rem;
-}
-.wrapper.color-gray {
-  background-color: #f1f1f1;
+  max-width: 78.125rem;
 }
 .wrapper .content {
   flex: 1 0 auto;
 }
 .linel {
-  max-width: 35rem;
+  max-width: 45rem;
 }
 header .search {
   max-width: 18rem;
@@ -8056,7 +8281,7 @@ header .search .search-form .search-button {
 header .search .search-form .search-button i.close {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   header .search .search-form {
     background-color: #ffffff;
     max-width: 100%;
@@ -8116,7 +8341,7 @@ header .search .dropdown .results {
   right: 0;
   top: 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header .search .dropdown .results {
     bottom: 72px;
     top: initial;
@@ -8124,7 +8349,7 @@ header .search .dropdown .results {
 }
 header .search .dropdown .results li {
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   padding-bottom: 10px;
   padding-right: 25px;
   padding-left: 25px;
@@ -8136,7 +8361,7 @@ header .search .dropdown .results li:first-of-type {
 header .search .dropdown .results li:last-of-type {
   padding-bottom: 25px;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   header .search .dropdown {
     visibility: visible;
     display: block;
@@ -8145,7 +8370,7 @@ header .search .dropdown .results li:last-of-type {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   header .search {
     max-width: 100%;
   }
@@ -8170,34 +8395,36 @@ header .logo a {
 header .logo-txt .logo-name {
   color: #000000;
   letter-spacing: -0.02rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   line-height: 1;
   display: block;
 }
 header .logo-txt .logo-description {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 0.875rem;
-  color: #818181;
+  color: #738a94;
 }
 .sidebar {
   background-color: #000000;
   position: relative;
-  overflow: hidden;
-  height: 45vh;
+  min-height: 350px;
+  height: 50vh;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .sidebar {
     position: fixed;
     height: 100%;
     width: 100%;
     bottom: 0;
+    right: 0;
     left: 0;
     top: 0;
   }
 }
 .sidebar .background {
   position: relative;
+  overflow: hidden;
   height: 100%;
   width: 100%;
 }
@@ -8229,14 +8456,33 @@ header .logo-txt .logo-description {
 .sidebar .background header {
   width: 100%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .sidebar .background header {
     transition: 0.5s ease-in;
     opacity: .5;
   }
   .sidebar .background:hover header {
-    margin-bottom: 16px;
+    transform: translateY(-16px);
     opacity: 1;
+  }
+}
+.sidebar .background .title {
+  text-align: left;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+@media (min-width: 576px) {
+  .sidebar .background .title {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar .background .title {
+    text-align: right;
+    font-size: 1.8em;
+    margin-left: auto;
+    margin-top: -5px;
+    width: 90%;
   }
 }
 .post {
@@ -8309,9 +8555,10 @@ header .logo-txt .logo-description {
   /* Name.Variable.Instance */
   /* Literal.Number.Integer.Long */
 }
-.post h1:first-of-type {
-  margin-top: -5px;
-  font-size: 1.295em;
+@media (min-width: 1200px) {
+  .post .title:first-of-type {
+    font-size: 1.425em;
+  }
 }
 .post h1,
 .post h2,
@@ -8326,13 +8573,21 @@ header .logo-txt .logo-description {
   display: inline-block;
   color: #000000;
 }
+.post > :first-child {
+  margin-top: 0 !important;
+}
 .post > :last-child {
   margin-bottom: 0 !important;
+}
+@media (min-width: 576px) {
+  .post > figure img {
+    border-radius: 2px;
+  }
 }
 .post hr {
   margin-bottom: 0.875rem;
   margin-top: 0;
-  max-width: 35rem;
+  max-width: 45rem;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 1rem;
@@ -8346,7 +8601,7 @@ header .logo-txt .logo-description {
   content: "\2022 \2022 \2022";
 }
 .post hr.easy {
-  background-color: #ecf0f1;
+  background-color: #e9eff3;
   height: 1px;
   width: 100%;
 }
@@ -8363,7 +8618,7 @@ header .logo-txt .logo-description {
 .post ol:not([class]) {
   margin-bottom: 0.875rem;
   margin-top: 0;
-  max-width: 35rem;
+  max-width: 45rem;
   width: 100%;
 }
 .post ul:not([class]) li,
@@ -8379,35 +8634,22 @@ header .logo-txt .logo-description {
   transform: none;
 }
 .post blockquote {
-  margin-bottom: 0.875rem;
-  margin-top: 0;
-  max-width: 35rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.625rem;
+  max-width: 45rem;
   display: inline-block;
   padding: 0;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .post blockquote {
-    margin-bottom: 1.5rem;
-    margin-top: 0.625rem;
-  }
-}
 .post blockquote p {
   font-family: 'GregorIT', 'Georgia', 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   font-style: italic;
-  line-height: 1.3;
-  color: #567;
   margin: 0;
 }
-@media (min-width: 768px) {
-  .post blockquote p {
-    font-size: 1.4rem;
-  }
-}
 .post figure {
-  margin-bottom: 0.875rem;
-  margin-top: 0;
+  margin-bottom: 1.5rem;
+  margin-top: 0.625rem;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -8415,39 +8657,41 @@ header .logo-txt .logo-description {
   width: -webkit-fill-available;
   width: fill-available;
 }
-@media (min-width: 768px) {
-  .post figure {
-    margin-bottom: 1.5rem;
-    margin-top: 0.625rem;
-  }
+.post .picture {
+  position: relative;
 }
 .post .picture img {
-  background-color: #fafafa;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
+  position: relative;
   display: block;
+  margin: 0 auto;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  70%,
+  100% {
+    transform: rotate(90deg);
+  }
 }
 .post .picture .lightbox-image {
   cursor: zoom-in;
   display: block;
 }
 .post .picture .caption {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.4;
   margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0.875rem;
-  max-width: 35rem;
-  color: #818181;
+  margin-top: 0;
+  max-width: 100%;
   width: 100%;
 }
 .post .picture .caption p {
-  margin: 0;
-  color: #818181;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.42857;
+  color: #738a94;
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
 .post .picture.left img {
   margin-right: auto;
@@ -8465,8 +8709,8 @@ header .logo-txt .logo-description {
   cursor: pointer;
 }
 .post .youtube img {
-  background-color: #000000;
   vertical-align: middle;
+  border-radius: 2px;
   position: relative;
   width: 100%;
 }
@@ -8517,7 +8761,7 @@ header .logo-txt .logo-description {
 }
 .post .gamecard .like,
 .post .gamecard .dislike {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
 }
 .post .gamecard .like strong,
@@ -8534,7 +8778,7 @@ header .logo-txt .logo-description {
 .post .gamecard .vote .voted {
   position: absolute;
   transform: translate(-50%, -50%);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 0.875rem;
   left: 50%;
   top: 50%;
@@ -8543,6 +8787,7 @@ header .logo-txt .logo-description {
   .post .gamecard {
     margin-bottom: 1.5rem;
     margin-top: 0.625rem;
+    border-radius: 2px;
   }
 }
 .post > .row {
@@ -8566,8 +8811,10 @@ header .logo-txt .logo-description {
   margin-top: 0;
 }
 .post .subtext {
-  font-size: 1rem;
-  color: #818181;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.42857;
+  color: #738a94;
 }
 @media (min-width: 768px) {
   .post .subtext {
@@ -8576,7 +8823,7 @@ header .logo-txt .logo-description {
   }
 }
 .post .subtext p {
-  color: #818181;
+  color: #738a94;
 }
 .post .shadow {
   -webkit-box-shadow: #464646 0px 0px 100px 0px;
@@ -8628,7 +8875,7 @@ header .logo-txt .logo-description {
 }
 .post .toc li {
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   transform: translateX(1.1rem);
   list-style: decimal;
   line-height: 1.4;
@@ -8646,7 +8893,7 @@ header .logo-txt .logo-description {
   top: 0;
 }
 .post .highlight {
-  max-width: 35rem;
+  max-width: 45rem;
   position: relative;
   display: grid;
 }
@@ -8672,9 +8919,10 @@ header .logo-txt .logo-description {
 }
 .post .highlighter-rouge,
 .post mark {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
   background-color: #fef7cf;
   word-wrap: break-word;
+  white-space: nowrap;
   border-radius: 0.125em;
 }
 .post .highlight .hll {
@@ -9149,7 +9397,7 @@ header .logo-txt .logo-description {
   color: #a6e22e;
 }
 .photos .item {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -9172,7 +9420,7 @@ header .logo-txt .logo-description {
   display: block;
 }
 .works .item {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -9294,7 +9542,7 @@ header .logo-txt .logo-description {
 }
 .list .item .thumbnail {
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   height: 320px;
 }
 .list .item .thumbnail .image {
@@ -9344,7 +9592,7 @@ header .logo-txt .logo-description {
 }
 .list .item .thumbnail .info .description {
   font-size: 0.875rem;
-  line-height: 1.4;
+  line-height: 1.42857;
   display: block;
 }
 .list .item .thumbnail.color-white {
@@ -9396,7 +9644,7 @@ header .logo-txt .logo-description {
   left: 0;
 }
 .blog-list .more a {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 0.875rem;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -9441,7 +9689,7 @@ header .logo-txt .logo-description {
 }
 .pagination {
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
   flex-shrink: 0;
 }
@@ -9465,7 +9713,7 @@ header .logo-txt .logo-description {
 }
 .divider {
   background-color: #ecf0f1;
-  max-width: 35rem;
+  max-width: 45rem;
   border: none;
   height: 1px;
   width: 100%;
@@ -9474,7 +9722,7 @@ button {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   vertical-align: middle;
   position: relative;
   background: none;
@@ -9535,7 +9783,7 @@ button.slider .link-button {
   border-radius: 50px !important;
   border: 2px solid #4183c4;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   text-decoration: none;
   width: fit-content;
   overflow: hidden;
@@ -9555,22 +9803,22 @@ footer .toggle {
 }
 footer .toggle .toggle-menu {
   display: inline-block;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 2em;
+  letter-spacing: -2px;
   vertical-align: sub;
-  letter-spacing: -1px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 2em;
   line-height: 0;
   color: #a9b1b5;
   cursor: pointer;
 }
 footer .copyright {
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.3;
 }
 footer .copyright .contacts {
   font-size: 0.875rem;
-  color: #818181;
+  color: #738a94;
 }
 footer .scroll-to-top {
   font-size: 0.875rem;
@@ -9587,7 +9835,7 @@ footer .scroll-to-top a:hover {
 }
 footer .breadcrumb {
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -9615,7 +9863,7 @@ footer .breadcrumb-item:last-of-type:after {
   display: none;
 }
 .navigation .menu {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #e9eff3;
   position: relative;
 }
 .navigation .menu .menu-content {
@@ -9629,9 +9877,9 @@ footer .breadcrumb-item:last-of-type:after {
   margin: 0;
 }
 .navigation .menu .menu-content li {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.4;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.42857;
   position: relative;
   list-style: none;
   float: left;
@@ -9688,7 +9936,7 @@ footer .breadcrumb-item:last-of-type:after {
 }
 .modal .place {
   background-color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
   border-radius: 2px;
   overflow: hidden;
@@ -9709,7 +9957,7 @@ footer .breadcrumb-item:last-of-type:after {
   display: block;
 }
 .modal .place-content .likely .likely__widget {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   border-radius: 2px;
   padding: 3px 6px;
   height: auto;
@@ -9744,7 +9992,7 @@ a,
   border-bottom: 1px solid;
   border-bottom-color: rgba(41, 128, 185, 0.1);
   text-decoration: none;
-  color: #2980b9;
+  color: #40a4d0;
   cursor: pointer;
 }
 a:hover,
@@ -9754,7 +10002,7 @@ a:hover,
 }
 .link-subcontrol {
   border-bottom-color: rgba(157, 168, 176, 0.1);
-  color: #818181;
+  color: #738a94;
 }
 .link-subcontrol:hover {
   border-bottom-color: rgba(102, 102, 102, 0.1);
@@ -9810,7 +10058,7 @@ a:hover,
 }
 [tooltip]::after {
   content: attr(tooltip);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
   text-align: center;
   min-width: 3em;
