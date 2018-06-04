@@ -27,9 +27,12 @@
 }
 
 .highlighter-rouge, mark {
-    font-family: @global;
+	.bettertext-settings();
+	
+    font-family: @font-body;
     background-color: @mark;
 	word-wrap: break-word;
+	white-space: nowrap;
     border-radius: 0.125em;
 }
 

@@ -17,8 +17,8 @@ telegram: sashatravkina
 
 # Cloudinary
 cloudinary: milkleaks
-cloudinary-size: c_limit,w_640
-cloudinary-big: c_limit,w_640
+cloudinary-size: c_limit,w_800
+cloudinary-big: c_limit,w_800
 
 # Jekyll
 safe: false

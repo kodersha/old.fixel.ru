@@ -9,12 +9,10 @@ image: v1525637623/thumb_dacobv.png
 
 <!-- more -->
 
-<div full class="outer space">
-	<div class="fotorama">
-		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046136/01_suakvv.png" />
-		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/02_beqdwp.png" />
-		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046129/03_ramzq7.png" />
-		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/04_oa3ri1.png" />
-		<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046126/05_egdfsf.png" />
-	</div>
+<div class="fotorama space">
+	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046136/01_suakvv.png" />
+	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/02_beqdwp.png" />
+	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046129/03_ramzq7.png" />
+	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/04_oa3ri1.png" />
+	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046126/05_egdfsf.png" />
 </div>

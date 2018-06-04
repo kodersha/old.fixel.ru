@@ -16,11 +16,18 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
     font-smoothing: subpixel-antialiased;
     -webkit-text-size-adjust: none;
-    background-color: #f1f1f1;
     color: @glob-font-color;
+    font-weight: 400;
     cursor: default;
     height: 100%;
     margin: 0;
+}
+
+@media @msm {
+    body {
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
 }
 
 input, textarea, select, button {
@@ -30,6 +37,7 @@ input, textarea, select, button {
 h1, h2, h3, h4, h5, h6 {
     .post-settings();
     margin-bottom: @post-bottom;
+    letter-spacing: -.04rem;
 }
 
 p {
@@ -67,10 +75,6 @@ p {
         max-width: @glob-width + 5;
     }
 
-    &.color-gray {
-        background-color: #f1f1f1;
-    }
-
     .content {
         flex: 1 0 auto;
     }
@@ -105,10 +109,11 @@ header {
 
     /* Body */
 
-    h1 {
+    .title {
         &:first-of-type {
-            margin-top: -5px;
-            font-size: 1.295em;
+            @media @xl {
+                font-size: 1.425em;
+            }
         }
     }
 
@@ -122,8 +127,20 @@ header {
         color: @post-text-color;
     }
 
+    & > :first-child {
+        margin-top: 0 !important;
+    }
+
     & > :last-child {
         margin-bottom: 0 !important;
+    }
+
+    @media @sm {
+        & > figure {
+            img {
+                border-radius: 2px;
+            }
+        }
     }
 
     hr {
@@ -145,7 +162,7 @@ header {
         }
 
         &.easy {
-            background-color: @action;
+            background-color: #e9eff3;
             height: 1px;
             width: 100%;
 
@@ -182,58 +199,51 @@ header {
     /* blockquote */
 
     blockquote {
-        margin-bottom: @post-bottom;
-        margin-top: @post-top;
+        margin-bottom: @post-bottom + @post-indent;
+        margin-top: @post-top + @post-indent;
         max-width: @post-linel;
         display: inline-block;
         padding: 0;
         width: 100%;
 
-        @media @md {
-            margin-bottom: @post-bottom + @post-indent;
-            margin-top: @post-top + @post-indent;
-        }
-
         p {
             font-family: @gregorIT;
-            font-size: @glob-font-size + 0.2;
+            font-size: @glob-font-size + 0.45;
             font-style: italic;
-            line-height: 1.3;
-            color: #567;
             margin: 0;
-
-            @media @md {
-                font-size: @glob-font-size + 0.4;
-            }
         }
     }
 
     figure {
-        margin-bottom: @post-bottom;
-        margin-top: @post-top;
+        margin-bottom: @post-bottom + @post-indent;
+        margin-top: @post-top + @post-indent;
         position: relative;
         display: inline-block;
         width: 100%;
         width: -moz-available;
         width: -webkit-fill-available;
         width: fill-available;
-
-        @media @md {
-            margin-bottom: @post-bottom + @post-indent;
-            margin-top: @post-top + @post-indent;
-        }
     }
 
     /* picture */
 
     .picture {
+        position: relative;
+    
         img {
-            background-color: #fafafa;
-            margin-bottom: 0;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 0;
+            position: relative;
             display: block;
+            margin: 0 auto;
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            70%,
+            100% {
+                transform: rotate(90deg);
+            }
         }
 
         .lightbox-image {
@@ -242,20 +252,19 @@ header {
         }
 
         .caption {
-            font-size: @post-subtext-size;
-            font-weight: @post-subtext-weight;
-            line-height: @post-subtext-linel;
             margin-bottom: 0;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 0.875rem;
-            max-width: @post-linel;
-            color: @post-subtext-color;
+            margin-top: 0;
+            max-width: 100%;
             width: 100%;
 
             p {
-                margin: 0;
+                font-family: @glob-font;
+                font-size: @post-subtext-size;
+                font-weight: @post-subtext-weight;
+                line-height: @post-subtext-linel;
                 color: @post-subtext-color;
+                margin-bottom: 0;
+                margin-top: 1rem;
             }
         }
         
@@ -285,8 +294,8 @@ header {
         cursor: pointer;
 
         img {
-            background-color: @black;
             vertical-align: middle;
+            border-radius: 2px;
             position: relative;
             width: 100%;
         }
@@ -374,6 +383,7 @@ header {
         @media @sm {
             margin-bottom: @post-bottom + @post-indent;
             margin-top: @post-top + @post-indent;
+            border-radius: 2px;
         }
     }
 

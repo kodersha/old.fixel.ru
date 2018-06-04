@@ -17,12 +17,12 @@ module Jekyll
 			# Get the path
 			@image = @attributes['src']
 			@class = @attributes['class'] ? "#{@attributes['class']}" : "space-minus-h-micro-xs space-minus-h-base-sm"
-			@alt = @attributes['alt'] ? "<figcaption class=\"caption\">#{GitHub::Markup.render_s(GitHub::Markups::MARKUP_MARKDOWN, @attributes['alt'])}</figcaption>" : ''
+			@alt = @attributes['alt'] ? "<figcaption class=\"space-in-h-micro-xs space-in-h-base-sm caption\">#{GitHub::Markup.render_s(GitHub::Markups::MARKUP_MARKDOWN, @attributes['alt'])}</figcaption>" : ''
 
 			"""
 			<figure class=\"picture #{@class}\">
 				<a href=\"#{@image}\" class=\"lightbox-image\" data-lightbox=\"image\">
-					<img src=\"#{@image}\">
+					<img src=\"#{@image}\" />
 				</a>
 				#{@alt}
 			</figure>

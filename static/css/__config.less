@@ -1,15 +1,15 @@
 .global-settings() {
-    @glob-font: @global;
+    @glob-font: @openSans;
     @glob-font-size: 1rem;
     @glob-font-color: @black;
 
     @glob-subtext-size: 0.875rem;
     @glob-subtext-color: @darkGray;
 
-    @glob-header: @global;
+    @glob-header: @openSans;
 
-    @glob-linel: 35rem;
-    @glob-width: 56.25rem;
+    @glob-linel: 45rem;
+    @glob-width: 73.125rem;
 
     @fadeInSpeed: 0.1s;
 }
@@ -24,7 +24,7 @@
 
     @post-subtext-color: @glob-subtext-color;
     @post-subtext-size: @glob-subtext-size;
-    @post-subtext-linel: 1.4;
+    @post-subtext-linel: 1.42857;
     @post-subtext-weight: 400;
 }
 
@@ -42,17 +42,17 @@
 
     .global-settings();
 
-    @fz: 14.22222222222222px;                       // default font-size
-    @rythm: 20.79288888888889px;                    // vertical rythm = line-height in pixels
+    @fz: 12.8px;                                    // default font-size
+    @rythm: 18.7136px;                                 // vertical rythm = line-height in pixels
     @fz-small: 14px;                                // smaller font-size (px)
     @linel: @glob-linel;                            // max-width for text (any css value)
 
-    @font-body: @global;                            // body
+    @font-body: @gregor;                            // body
     @font-headers: @glob-header;                    // headers
     @font-code: @code;                              // code (duplication is intentional)
 
-    @scale1: 1.043;                    // header size multiplier for small screens
-    @scale2: 1.043;                    // header size multiplier for large screens
+    @scale1: 1.040;                    // header size multiplier for small screens
+    @scale2: 1.040;                    // header size multiplier for large screens
 
     // margin for body, articles and sections (any css value)
     @structure-margin: 0;
@@ -78,18 +78,22 @@
 
     // media breakpoints (default: as on bootstrap)
     @breakpoints:
+        ~"(min-width: 576px)",
         ~"(min-width: 768px)",
         ~"(min-width: 992px)",
-        ~"(min-width: 1200px)";
+        ~"(min-width: 1200px)",
+        ~"(min-width: 1600px)";
 
     // max-width of containers according breakpoints
     @container-maw:
+        100%,
         750px,
         970px,
-        1170px;
+        1170px,
+        1540px;
 
     // names for breakpoint suffixes
-    @suffixes: xs, sm, md, lg;
+    @suffixes: xs, sm, md, lg, xl, ex;
 
     // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
     // suffixes-count = breakpoints-count + 1
