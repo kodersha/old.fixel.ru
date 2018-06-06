@@ -11,7 +11,7 @@ tags:
 
 description: В один из самых обычных дней, наш главный протагонист уже было приготовился как следует выспаться после тяжелого рабочего дня, но не тут то было, какие-то злосчастные студенты устроили шумную вечеринку прямо возле дома.
 image: v1525700002/thumb_bakawc.png
-cover: v1519221171/cover_umgrtf.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519221171/cover_umgrtf.jpg
 color: white
 ---
 

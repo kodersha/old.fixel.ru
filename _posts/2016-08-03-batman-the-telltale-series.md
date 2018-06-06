@@ -9,7 +9,7 @@ tags:
 
 description: Вот и вышел первый эпизод интерактивной истории о Бэтмене где, как очевидно, игроку предстоит примерить на себя костюм Темного Рыцаря, распутать клубок преступных заговоров и, непременно, покарать всех злодеев.
 image: v1525631922/thumb_tomgwj.png
-cover: v1519220746/cover_m7wotb.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519220746/cover_m7wotb.jpg
 color: white
 ---
 

@@ -10,7 +10,7 @@ tags:
 
 description: Это детально проработанное, качественно поставленное интерактивное кино с запоминающимися персонажами, местами и событиями.
 image: v1525707846/thumb_cd97kx.png
-cover: v1518878689/cover_cd4kfc.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1518878689/cover_cd4kfc.jpg
 color: white
 ---
 

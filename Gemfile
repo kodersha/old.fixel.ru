@@ -27,7 +27,6 @@ group :jekyll_plugins do
    gem "jekyll-sitemap"
    gem "github-markup"
    gem "jekyll-feed"
-   gem "jekyll-maps"
    gem "jekyll-less"
    gem "therubyracer"
    gem "kramdown"

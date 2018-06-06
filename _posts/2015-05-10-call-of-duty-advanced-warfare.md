@@ -7,7 +7,7 @@ tags:
 
 description: Очередная и одиннадцатая часть всем известного шутера от первого лица, за издательством Activision и разработкой студии Sledgehammer Games...
 image: v1526056119/thumb_i5tjdx.png
-cover: v1518871048/cover_ypmylm.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1518871048/cover_ypmylm.jpg
 color: white
 ---
 

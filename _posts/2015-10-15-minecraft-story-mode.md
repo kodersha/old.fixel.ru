@@ -10,7 +10,7 @@ tags:
 
 description: Telltale Games, известные своими интерактивными квестами по разнообразным франшизам, добрались и до ранее бессюжетной песочницы Minecraft.
 image: v1525708724/thumb_r5gbyw.png
-cover: v1518878130/cover_eflh1q.png
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1518878130/cover_eflh1q.png
 color: white
 ---
 

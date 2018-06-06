@@ -8,7 +8,7 @@ tags:
 
 description: В Cities Skylines нам все так же предстоит прокладывать бессчетное количество дорог, размечать жилые, коммерческие и промышленные зоны, заботиться о транспортной системе, электроэнергии, следить за экономикой, и делать все то, что необходимо для развития виртуального города.
 image: v1526056956/thumb_hlpvek.png
-cover: v1518869125/cover_grcyi8.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1518869125/cover_grcyi8.jpg
 color: white
 ---
 

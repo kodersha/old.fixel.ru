@@ -6,7 +6,7 @@ tags:
 
 description: Удивительно, но я, как и многие, смотрю сериалы. А потому, хотелось бы рассказать о тех, которые так или иначе мне полюбились.
 image: v1525615343/thumb_qppeak.png
-cover: v1526048488/cover_bxq03v.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1526048488/cover_bxq03v.jpg
 color: white
 ---
 

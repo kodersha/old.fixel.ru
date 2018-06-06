@@ -6,7 +6,6 @@ description: Список категорй блога
 ---
 
 <section class="slide-up-fade-in content">
-	<h1>{{ page.title }}</h1>
 	{% assign categories_list = site.categories %}
 	{% for category in categories_list %}
 		<article class="{% if forloop.last == true %}space-out-bottom-zero-xs{% else %}space-in-bottom-nano-xs{% endif %} item">

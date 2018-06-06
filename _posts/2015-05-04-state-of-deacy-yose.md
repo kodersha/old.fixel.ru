@@ -10,7 +10,7 @@ tags:
 
 description: Несомненно, интересная игра о выживании во времена зомби-апокалипсиса и будь в ней кооператив, хорошая графика и поменьше багов, цены бы ей не было.
 image: v1526056783/thumb_tn5mbw.png
-cover: v1518869854/cover_kfhddy.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1518869854/cover_kfhddy.jpg
 color: white
 ---
 

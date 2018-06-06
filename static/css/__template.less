@@ -60,6 +60,21 @@ p {
 }
 
 //
+// body
+//
+
+body {
+    &.black {
+        background-color: @black;
+        color: @white;
+
+        .divider-black {
+            border-color: @white;
+        }
+    }
+}
+
+//
 // main
 //
 
@@ -71,12 +86,18 @@ p {
     display: flex;
     width: 100%;
 
-    &.extended {
-        max-width: @glob-width + 5;
+    @media @xl {
+        &.extended {
+            max-width: @glob-width + 5;
+        }
     }
 
     .content {
         flex: 1 0 auto;
+    }
+
+    &.black {
+        background-color: @black;
     }
 }
 
@@ -207,7 +228,6 @@ header {
         width: 100%;
 
         p {
-            font-family: @gregorIT;
             font-size: @glob-font-size + 0.45;
             font-style: italic;
             margin: 0;
@@ -337,18 +357,6 @@ header {
         }
     }
 
-    /* google maps */
-    
-    .google-maps {
-        background-color: @action;
-        position: relative;
-
-        .map {
-            min-height: 340px;
-            height: 340px !important;
-        }
-    }
-
     .gamecard {
         margin-bottom: @post-bottom;
         margin-top: @post-top;
@@ -405,10 +413,6 @@ header {
 
     @import (less) "../static/css/_post.less";
 
-    /* Tocbot */
-
-    @import (less) "../static/modules/tocbot/_tocbot.less";
-
     /* Highlights */
 
     @import (less) "../static/css/_highlights.less";
@@ -448,12 +452,14 @@ header {
 }
 
 .list {
-    @height: 320px;
+    @height: 420px;
 
     .item {
         .thumbnail {
             position: relative;
             font-family: @glob-font;
+            border-radius: 2px;
+            overflow: hidden;
             height: @height;
 
             .image {
@@ -504,6 +510,7 @@ header {
 
                 h1 {
                     font-size: 1.125em;
+                    font-weight: 600;
                     margin-bottom: 0;
                     margin-top: 0;
                 }
@@ -521,7 +528,7 @@ header {
                 background-color: @black;
 
                 .frame {
-                    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,.85) 50%);
+                    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 50%);
                 }
 
                 .actions, .info, .info h1 {
@@ -662,12 +669,15 @@ header {
 // .divider
 //
 
-.divider {
-    background-color: @action;
-    max-width: @glob-linel;
-    border: none;
-    height: 1px;
-    width: 100%;
+@media @xl {
+    .divider {
+        &-white {
+            border-bottom: 2px solid @white;
+        }
+        &-black {
+            border-bottom: 2px solid @black;
+        }
+    }
 }
 
 //
@@ -777,6 +787,7 @@ footer {
 @import (less) "../static/css/_links.less";
 @import (less) "../static/css/_tooltip.less";
 @import (less) "../static/css/_animations.less";
+@import (less) "../static/modules/tocbot/_tocbot.less";
 
 //
 // stuff

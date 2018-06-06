@@ -84,7 +84,6 @@ plugins:
   - jekyll-extlinks
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-maps
   - jekyll-less
 
 # Set the Sass partials directory, as we're using @imports
@@ -94,11 +93,6 @@ sass:
 less:
   entrypoint: "static/style.less"
   less_dir: static
-
-# Google maps
-maps:
-  google:
-    api_key: AIzaSyCdzBPyxAeuk-0bG2pyMbO8d32PMBKgcRo
 
 # Extlinks
 extlinks:

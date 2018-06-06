@@ -10,7 +10,7 @@ tags:
 
 description: Приключенческая игра которая погрузит вас в красивейшую историю, рассказывающую о загадочной судьбе семейства Финчей.
 image: v1525628956/thumb_mt9ckp.png
-cover: v1519056402/cover_ri7rsq.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519056402/cover_ri7rsq.jpg
 color: white
 ---
 

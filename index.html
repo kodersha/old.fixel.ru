@@ -12,10 +12,12 @@ tags:
 - книги
 pagination: 
   enabled: true
-  per_page: 21
+  per_page: 13
   tag: 'На главной'
 id: index
-wrapper: extended
+class: black
+wrapper: black
+cover: /static/images/background/bg.png
 ---
 
 <section class="slide-up-fade-in space-minus-top-nano-xs row list">
@@ -23,9 +25,9 @@ wrapper: extended
 	{% for post in paginator.posts %}
 		{% include _post/index.html %}
 	{% endfor %}
-	<div class="col-xs-12 space-in-top-nano-xs">
-		Больше постов и заметок в <a href="{{ site.baseurl }}/blog/">блоге</a>.
-	</div>
 </section>
+<div class="space-in-top-nano-xs">
+	*Больше постов и заметок в <a href="{{ site.baseurl }}/blog/">блоге</a>.
+</div>
 
 {% include pagination.html %}

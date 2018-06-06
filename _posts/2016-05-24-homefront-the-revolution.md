@@ -8,7 +8,7 @@ tags:
 
 description: Вышедшая в 2011 году, представляла собой среднестатистический шутер с не слишком запоминающимся сюжетом о противостоянии Америки и Северной Кореи но так или иначе понравившаяся некоторому количеству игроков. И вот, спустя пять лет...
 image: v1525699782/thumb_chstel.png
-cover: v1519221004/cover_fjj6nb.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519221004/cover_fjj6nb.jpg
 color: white
 ---
 

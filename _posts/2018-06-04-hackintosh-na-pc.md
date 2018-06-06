@@ -6,10 +6,8 @@ tags:
 - OS
 - Гайд
 
-description: 
 image: v1527834916/thumb_aykyor.png
-cover: v1527834435/cover_tnntj8.png
-color: white
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1527834435/cover_tnntj8.png
 ---
 
 Расставшись со своим тормозящим [MacBook Air][1] в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.
@@ -60,7 +58,7 @@ color: white
 
 Загрузившись с установочной флешки в режиме UEFI приступаем к установке. В окне Clover выбираем «Boot Mac OS from OS X Base System» и дожидаемся появления установки OS X, на что уйдет до пяти минут. Переходим в дисковую утилиту и форматируем нужный диск. На одном из SSD дисков я оставила уже установленную ранее Windows 10, а другой SSD отформатировала из установщика в формат `AFPS` назвав его классическим `Macintosh HD`. Устанавливаем OS X и дожидаемся перезагрузки. После перезагрузки вновь видим Clover.
 
-Так как у меня встроенная видеокарта Intel UHD630 то мне пришлось прописать параметр загрузки `-disablegfxfirmware` чтобы установка продолжилась дальше. Чтобы прописать параметр загрузки в Clover откройте раздел `Options`, в строке `Boot Args` впишите `-disablegfxfirmware` и нажмите Enter.
+Так как у меня встроенная видеокарта Intel UHD630, то мне пришлось прописать параметр загрузки `-disablegfxfirmware` чтобы установка продолжилась дальше после циклической перезагрузки с ошибкой «Begin Gfx firmware load process». Чтобы прописать параметр загрузки в Clover откройте раздел `Options`, в строке `Boot Args` впишите `-disablegfxfirmware` и нажмите Enter.
 
 После установки оказываемся в OS X и первым делом устанавливаем ранее скачанный **Clover EFI Bootloader**. В пункте `Тип установки` выбираем `Настройки` и расставляем галочки:
 
@@ -129,6 +127,27 @@ sudo nano /System/Library/Extensions/AppleIntelKBLGraphicsFramebuffer.kext/Conte
 sudo kextcache -i /
 sudo touch /System/Library/Extensions && sudo kextcache -u /
 {% endhighlight %}
+
+### Исправление громкости VoodooHDA.kext
+
+Иногда VoodooHDA.kext выдает звук тише, чем в Windows 10. Исправить можно открыв kext правой кнопко мыши `Показать содержимое пакета` - Папка `Contents` - Открыть редактором файл `Info.plist`.
+
+Найти строку `VoodooHDAEnableHalfVolumeFix` и изменить занчение следующей строки на `<true/>`.
+
+Если значительных изменеий не произолшло, можно найти блок:
+
+{% highlight xml %}
+<key>PCM</key>
+<integer>90</integer>
+<key>Rec</key>
+<integer>90</integer>
+<key>iGain</key>
+<integer>90</integer>
+<key>iMix</key>
+<integer>90</integer>
+{% endhighlight %}
+
+И изменить все `90` на `100`, затем переустановить kext.
 
 ### В итоге
 

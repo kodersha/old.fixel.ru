@@ -7,7 +7,7 @@ tags:
 
 description: Наконец таки, спустя год съемочного процесса, вышел короткометражный фильм от российских режиссеров, Никиты Ордынского и Лилии Ткач.
 image: v1525615432/thumb_xi1zty.png
-cover: v1526048256/cover_olpmb7.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1526048256/cover_olpmb7.jpg
 color: white
 ---
 

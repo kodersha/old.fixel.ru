@@ -1,7 +1,7 @@
 <article class="{% unless forloop.first %}space-in-top-kilo-xs{% endunless %} post">
 	<h1><a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a></h1>
 	{% if post.image %}
-	<figure class="space-minus-h-micro-xs space-minus-h-base-sm thumbnail">
+	<figure class="thumbnail">
 		<a href="{{ post.url }}" class="link-photo">
 			<img src="https://res.cloudinary.com/{{ site.cloudinary }}/image/upload/{{ post.image }}">
 		</a>

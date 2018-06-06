@@ -1,6 +1,4 @@
 .toc {
-	margin-bottom: @post-bottom;
-	margin-top: @post-top;
 	width: 100%;
 }
 
@@ -18,6 +16,15 @@
 	transform: translateX(1.1rem);
 	list-style: decimal;
 	line-height: 1.4;
+	color: @lightGray;
+
+	a {
+		color: @white;
+
+		&:hover {
+			color: @lightGray;
+		}
+	}
 }
 
 .is-collapsible {

@@ -1,4 +1,4 @@
-<article class="col-xs-12 {% if forloop.index == 1 %}col-lg-8 col-ex-6{% elsif forloop.index == 9 %}col-md-6{% elsif forloop.index == 10 %}col-md-6 col-ex-3{% elsif forloop.index == 17 %}col-md-6{% elsif forloop.index == 18 %}col-md-6 col-ex-3{% else %}col-md-6 col-lg-4 col-ex-3{% endif %} space-in-v-nano-xs item">
+<article class="col-xs-12 {% if forloop.index == 1 %}col-lg-12{% elsif forloop.index == 9 %}col-md-6{% elsif forloop.index == 10 %}col-md-6{% elsif forloop.index == 17 %}col-md-6{% elsif forloop.index == 18 %}col-md-6{% else %}col-md-6{% endif %} space-in-v-nano-xs item">
 	<a href="{{ post.url }}" class="link-photo">
 		<section class="thumbnail color-{% if post.color == 'white' %}white{% else %}default{% endif %} post-{{ post.index }}">
 			{% if post.image %}
@@ -27,14 +27,14 @@
 				</span>
 				{% endif %}
 			</div>
-		</a>
+		</section>
 	</a>
 	
 	<script type="text/javascript">
 		$(function() {
 			$('.thumbnail.post-{{ post.index }} .image img').primaryColor(function(color) {
 				$('.thumbnail.post-{{ post.index }} .frame').css({
-					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',.85) 50%)'
+					'background': 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba('+color+',1) 50%)'
 				});
 			});
 		});

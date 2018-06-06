@@ -1,7 +1,6 @@
 ---
-title: "Leaks · Шаблон для Эгеи"
-thumbnail: "v1519053899/01_iwr5sk.png"
-category: "Веб"
+title: Leaks · Шаблон для Эгеи
+category: Веб
 tags:
 - CMS
 - Эгея

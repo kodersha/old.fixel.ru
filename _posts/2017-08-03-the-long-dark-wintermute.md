@@ -10,7 +10,7 @@ tags:
 
 description: Первого августа наконец таки вышел долгожданный сюжетный режим для The Long Dark — симулятора выживания в диких условиях холодной Канады. 
 image: v1525626553/thumb_qfq6ou.png
-cover: v1519219750/cover_harzul.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519219750/cover_harzul.jpg
 color: white
 ---
 

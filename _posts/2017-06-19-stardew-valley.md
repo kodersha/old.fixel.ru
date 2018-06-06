@@ -13,7 +13,7 @@ tags:
 
 description: Еще одна ламповая пиксельная игра на просторах Steam в жанре ролевой игры и крафтинга, где игроку предстоит примерить на себя роль фермера...
 image: v1525626991/thumb_t3cefr.png
-cover: v1519056663/cover_jj769v.png
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519056663/cover_jj769v.png
 color: white
 ---
 

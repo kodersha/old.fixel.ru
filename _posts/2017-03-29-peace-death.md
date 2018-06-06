@@ -9,7 +9,7 @@ tags:
 
 description: В Peace, Death! вам предстоит взять на себя роль Жнеца и поработать на Смерть (А также Голод, Войну и Чуму) в корпорации «Апокалипсис Inc».
 image: v1525629878/thumb_ad0adk.png
-cover: v1519218309/cover_f0twip.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519218309/cover_f0twip.jpg
 color: white
 ---
 

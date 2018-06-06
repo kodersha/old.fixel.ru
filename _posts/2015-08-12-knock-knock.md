@@ -9,7 +9,7 @@ tags:
 
 description: Наш главный герой, или же Жилец, уже которую ночь страдает бессонницей и мигренью. Его внешний вид оставляет желать лучшего, волосы взъерошены, а под глазами залегли глубокие тени, да еще проблемы с памятью, как следствие плохого сна.
 image: v1526054621/thumb_qfp8hw.png
-cover: v1526054568/cover_f8vexm.png
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1526054568/cover_f8vexm.png
 color: white
 ---
 

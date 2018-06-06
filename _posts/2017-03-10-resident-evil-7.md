@@ -8,7 +8,7 @@ tags:
 
 description: Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений...
 image: v1525631001/thumb_a4yqrx.png
-cover: v1519218558/cover_fydthv.jpg
+cover: https://res.cloudinary.com/milkleaks/image/upload/v1519218558/cover_fydthv.jpg
 color: white
 ---
 

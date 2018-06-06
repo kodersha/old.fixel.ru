@@ -1,12 +1,11 @@
 & {
-    background-color: @black;
     position: relative;
     min-height: 350px;
-    height: 50vh;
+    height: 80vh;
 
     @media @xl {
         position: fixed;
-        height: 100%;
+        height: 100vh;
         width: 100%;
         bottom: 0;
         right: 0;
@@ -16,13 +15,19 @@
 }
 
 .background {
+    background-color: @black;
     position: relative;
     overflow: hidden;
     height: 100%;
     width: 100%;
 
+    .linel {
+        width: 100%;
+    }
+
     .content {
         position: relative;
+        flex-direction: column;
         display: flex;
         height: 100%;
         z-index: 1;
@@ -30,6 +35,7 @@
 
     .bg {
         background-position: center center;
+        background-attachment: scroll;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
@@ -38,10 +44,10 @@
         width: 100%;
 
         &::before {
-            background: -webkit-linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75));
-            background: -o-linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75));
-            background: -moz-linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75));
-            background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.75));
+            background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent);
+            background: -o-linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent);
+            background: -moz-linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent);
             position: absolute;
             height: 100%;
             width: 100%;
@@ -50,6 +56,7 @@
     }
 
     header {
+        flex: 1 0 auto;
         width: 100%;
     }
 
@@ -61,27 +68,48 @@
 
         &:hover {
             header {
-                transform: translateY(-16px);
                 opacity: 1;
             }
         }
     }
 
     .title {
-        text-align: left;
-        font-size: 1.4em;
-        color: @white;
+        position: relative;
 
-        @media @sm {
-            font-size: 1.6em;
+        @media @mxl {
+            flex-shrink: 0;
         }
 
-        @media @xl {
-            text-align: right;
-            font-size: 1.8em;
-            margin-left: auto;
-            margin-top: -5px;
-            width: 90%;
+        h1 {
+            text-align: left;
+            font-size: 1.6em;
+            font-weight: 600;
+            color: @white;
+
+            @media @sm {
+                font-size: 1.8em;
+            }
+
+            @media @xl {
+                text-align: left;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .pagination.aside {
+        color: @white;
+
+        .page-number {
+            text-align: left;
+        }
+
+        a {
+            color: @white;
+
+            &:hover {
+                color: @lightGray;
+            }
         }
     }
 }
