@@ -116,50 +116,59 @@
 	<body class="page-post">
 
 <div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-4 space-in-zero-xs sidebar">
+    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
         <section class="background">
 	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content row row-reverse-xs">
-		<header class="col-xs-12 col-last-xl space-auto-top-xl space-in-top-mili-xs space-in-top-zero-xl space-in-bottom-mili-xl space-in-h-zero-xs space-auto-h-xs linel">
-			<div class="row row-reverse-xs row-middle-sm">
-				<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-sm">
-					<div class="search space-auto-left-sm">
-						<div class="search-form">
-							<input type="text" id="search-input" class="search-box" />
-							<span class="search-button">
-								<i class="fa fa-search open" aria-hidden="true"></i>
-								<i class="fa fa-times close" aria-hidden="true"></i>
-							</span>
-						</div>
-						<div class="dropdown">
-							<ul class="results" id="results-container"></ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-shrink logo">
-					<a class="link-logo" href="/">
-						<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-					</a>
-				</div>
-			</div>
-		</header>
-		<div class="col-xs-12 col-first-xl space-auto-top-xs space-out-v-zero-xl space-in-bottom-mili-xs space-in-bottom-zero-xs space-in-top-mili-xl space-in-h-zero-xs space-auto-h-xs linel">
+	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
+		<div class="space-in-v-mili-xs space-in-h-zero-xs space-out-bottom-kilo-xl space-auto-h-xs divider-white linel">
+			<header class="logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</header>
+		</div>
+		<div class="space-auto-top-xs space-out-top-zero-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
+			<h1 class="space-out-v-zero-xs">Устанавливаем Jekyll на Windows</h1>
+			
+		</div>
+		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
+			<nav class="row row-between-sm pagination aside">			
+				
+				<span class="col-xl-4 page-number">Запись: 70 из 88</span>
+				<span class="col-xl-8 previous next">
+					
+						<a title="Все на свете из пластмассы" class="link" href="/blog/vse-na-svete-iz-plastmassy/" rel="prev">&lsaquo; Ранее</a>
+					
+					
+						<a title="Устанавливаем Jekyll на Mac OS" class="space-in-left-nano-xs link" href="/blog/ustanavlivaem-jekyll-na-mac/" rel="next">Позднее &rsaquo;</a>
+					
+				</span>
+				
+			</nav>
+		
 		</div>
 	</div>
 </section>
-<style type="text/css">
-	.sidebar .background .bg {
-		
-			background-image: url('/static/images/bg.png');
-		
-	}
-</style>
+
+
     </div>
-    <div class="col-xs-12 col-xl-8 col-xl-offset-4 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-v-mili-xs wrapper ">
+    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
+        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-bottom-base-xs wrapper ">
+            <header class="col-last-xs col-first-xl space-in-top-mili-xs space-in-top-zero-xl space-out-bottom-kilo-xl space-in-bottom-mili-xl divider-black linel">
+	<div class="search space-auto-left-md">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
+		</div>
+	</div>
+</header>
             <article class="slide-up-fade-in content post">
-	<h1 class="title">Устанавливаем Jekyll на Windows</h1>
-	
 	<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <code class="highlighter-rouge">master</code> ветке репозитория, а собранный сайт в ветке <code class="highlighter-rouge">gh-pages</code>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
 
 
@@ -227,7 +236,7 @@
 	
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs pagination">
+<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
 	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
 		
 			<a title="Все на свете из пластмассы" class="link" href="/blog/vse-na-svete-iz-plastmassy/">&lsaquo; Ранее</a>
@@ -243,7 +252,7 @@
 	</span>
 </nav>
             <footer class="space-in-top-kilo-xs">	
-	<div class="space-out-bottom-micro-xs copyright">
+	<div class="copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time> 4 сентября 2017</time>
@@ -255,7 +264,7 @@
 	</div>
 
 	<section class="navigation">
-	<nav class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-in-v-micro-xs menu" id="menu">
+	<nav class="space-out-top-micro-xs space-in-top-micro-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
 			

@@ -88,235 +88,69 @@
 
 </script>
 
-	<script type='text/javascript'>
-  /* global google */
-/* global MarkerClusterer */
-// eslint-disable-next-line no-unused-vars
-var jekyllMaps = (function() {
-  'use strict'
-  var clusterSettings = {}
-  var clusterReady = false
-  var mapReady = false
-  var options = {}
-  var data = []
-  var maps = []
-
-  return {
-    initializeMap: initializeMap,
-    initializeCluster: initializeCluster,
-    register: register
-  }
-
-  /**
-   * Setup Google Maps options and call renderer.
-   */
-  function initializeMap() {
-    options = {
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: new google.maps.LatLng(0, 0)
-    }
-    mapReady = true
-    render()
-  }
-
-  /**
-   * Register map data to be rendered once Google Maps API is loaded.
-   *
-   * @param string id
-   * @param Array locations
-   * @param Object settings
-   */
-  function register(id, locations, options) {
-    data.push({ id: id, locations: locations, options: options })
-    render()
-  }
-
-  /**
-   * Render maps data if Google Maps API is loaded.
-   */
-  function render() {
-    if (!mapReady) return
-
-    while (data.length > 0) {
-      var item = data.pop()
-      var bounds = new google.maps.LatLngBounds()
-      var mapOptions = Object.assign({}, options, item.options)
-      var map = new google.maps.Map(
-        document.getElementById(item.id),
-        mapOptions
-      )
-      var infoWindow = new google.maps.InfoWindow()
-      var markers = item.locations.map(createMarker)
-
-      map.fitBounds(bounds)
-      google.maps.event.addListenerOnce(map, 'idle', function() {
-        if (this.customZoom) this.setZoom(this.customZoom)
-      })
-      if (mapOptions.useCluster) {
-        maps.push({ map: map, markers: markers })
-        processCluster()
-      }
-    }
-
-    function createMarker(location) {
-      var position = new google.maps.LatLng(
-        location.latitude,
-        location.longitude
-      )
-      bounds.extend(position)
-      if (!mapOptions.showMarker) return false
-
-      var marker = new google.maps.Marker({
-        position: position,
-        title: location.title,
-        image: location.image,
-        icon: location.icon || mapOptions.markerIcon,
-        url: markerUrl(mapOptions.baseUrl, location.url),
-        url_text: location.url_text,
-        map: map
-      })
-      if (mapOptions.showMarkerPopup) marker.addListener('click', markerPopup)
-
-      return marker
-    }
-
-    function markerUrl(baseUrl, url) {
-      if (/^(https?|\/\/)/.test(url)) return url
-
-      return url.length > 0 ? baseUrl + url : ''
-    }
-
-    function markerPopup() {
-      var content = '<div class="map-info-window"><h5>' + this.title + '</h5>'
-      var imageTag =
-        this.image.length > 0 &&
-        '<img src="' + this.image + '" alt="' + this.title + '"/>'
-      if (this.url.length > 0) {
-        var linkContent = imageTag || this.url_text || 'View'
-        content += '<a href="' + this.url + '">' + linkContent + '</a>'
-      } else if (imageTag) {
-        content += imageTag
-      }
-      content += '</div>'
-      infoWindow.setContent(content)
-      infoWindow.open(map, this)
-    }
-  }
-
-  function initializeCluster(settings) {
-    clusterReady = true
-    clusterSettings = settings || {}
-    processCluster()
-  }
-
-  function processCluster() {
-    if (!clusterReady) return
-
-    while (maps.length > 0) {
-      var obj = maps.pop()
-      // eslint-disable-next-line no-new
-      new MarkerClusterer(obj.map, obj.markers, {
-        gridSize: clusterSettings.grid_size || 25,
-        imagePath:
-          'https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/images/m'
-      })
-    }
-  }
-})()
-/* Object.assign polyfill */
-if (typeof Object.assign !== 'function') {
-  Object.assign = function(target) {
-    'use strict'
-    if (target == null) {
-      throw new TypeError('Cannot convert undefined or null to object')
-    }
-
-    target = Object(target)
-    for (var index = 1; index < arguments.length; index++) {
-      var source = arguments[index]
-      if (source != null) {
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key]
-          }
-        }
-      }
-    }
-    return target
-  }
-}
-
-</script>
-<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCdzBPyxAeuk-0bG2pyMbO8d32PMBKgcRo&callback=jekyllMaps.initializeMap'></script>
-
-<script async defer src='https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js'
-        onload='jekyllMaps.initializeCluster({})'></script>
-
-</head>
+	</head>
 
 	<body class="">
 
 <div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-4 space-in-zero-xs sidebar">
+    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
         <section class="background">
 	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content row row-reverse-xs">
-		<header class="col-xs-12 col-last-xl space-auto-top-xl space-in-top-mili-xs space-in-top-zero-xl space-in-bottom-mili-xl space-in-h-zero-xs space-auto-h-xs linel">
-			<div class="row row-reverse-xs row-middle-sm">
-				<div class="col-xs-12 col-sm space-in-bottom-mili-xs space-in-bottom-zero-sm">
-					<div class="search space-auto-left-sm">
-						<div class="search-form">
-							<input type="text" id="search-input" class="search-box" />
-							<span class="search-button">
-								<i class="fa fa-search open" aria-hidden="true"></i>
-								<i class="fa fa-times close" aria-hidden="true"></i>
-							</span>
-						</div>
-						<div class="dropdown">
-							<ul class="results" id="results-container"></ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-shrink logo">
-					<a class="link-logo" href="/">
-						<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-					</a>
-				</div>
-			</div>
-		</header>
-		<div class="col-xs-12 col-first-xl space-auto-top-xs space-out-v-zero-xl space-in-bottom-mili-xs space-in-bottom-zero-xs space-in-top-mili-xl space-in-h-zero-xs space-auto-h-xs linel">
+	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
+		<div class="space-in-v-mili-xs space-in-h-zero-xs space-out-bottom-kilo-xl space-auto-h-xs divider-white linel">
+			<header class="logo">
+				<a class="link-logo" href="/">
+					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+				</a>
+			</header>
+		</div>
+		<div class="space-auto-top-xs space-out-top-zero-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
+			<h1 class="space-out-v-zero-xs">Иваньковское водохранилище</h1>
+			
+		</div>
+		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
+			<nav class="row row-between-sm pagination aside">			
+				
+				<span class="col-xl-4 page-number"></span>
+				<span class="col-xl-4 previous next">
+					
+					
+					
+					
+						<a class="link" href="/photo/novosibirsk-ploshhad-lenina/" rel="prev">&lsaquo; Ранее</a>
+					
+					
+				</span>				
+				
+			</nav>
+		
 		</div>
 	</div>
 </section>
-<style type="text/css">
-	.sidebar .background .bg {
-		
-			background-image: url('/static/images/bg.png');
-		
-	}
-</style>
-    </div>
-    <div class="col-xs-12 col-xl-8 col-xl-offset-4 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-v-mili-xs wrapper ">
-            <article class="slide-up-fade-in content post">
-    
-        <div class="space-out-bottom-mili-xs space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-mili-xs google-maps">
-            <div id='dadf0f2f-516a-4440-a83a-1941bbcb3c30' style='width:100%;height:400px;' class='map'></div>
-<script type='text/javascript'>
-  jekyllMaps.register(
-    'dadf0f2f-516a-4440-a83a-1941bbcb3c30',
-    [{"latitude":56.5990938,"longitude":36.3508798,"title":"Иваньковское водохранилище","icon":null,"url":"/photo/ivankovskoe-vodohranilishhe/","url_text":null,"image":""}],
-    {"baseUrl":"/","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"customZoom":12}
-  );
-</script>
 
-        </div>
-        
-    <h1>Иваньковское&nbsp;водохранилище</h1>
+
+    </div>
+    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
+        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-bottom-base-xs wrapper ">
+            <header class="col-last-xs col-first-xl space-in-top-mili-xs space-in-top-zero-xl space-out-bottom-kilo-xl space-in-bottom-mili-xl divider-black linel">
+	<div class="search space-auto-left-md">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
+		</div>
+	</div>
+</header>
+            <article class="slide-up-fade-in content post"> 
     
     <p>Недалеко от Москвы есть искусственное водохранилище образованное в верхнем течении реки Волги. Примечательно своими немалыми размерами, шириной от двух до пяти километров и протяженностью около ста двадцати километров. Другое название Иваньковского водохранилища - Московское море.</p>
 
-<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+<figure class=" picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1520095293/01_ba8eyf.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1520095293/01_ba8eyf.jpg">
 				</a>
@@ -325,7 +159,7 @@ if (typeof Object.assign !== 'function') {
 
 <p>Существует и одноименная железнодорожная платформа - Московское море.</p>
 
-<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+<figure class=" picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1520095294/02_ys4nav.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1520095294/02_ys4nav.jpg">
 				</a>
@@ -334,7 +168,7 @@ if (typeof Object.assign !== 'function') {
 
 <p>Недалеко от платформы можно увидеть несколько оленят.</p>
 
-<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+<figure class=" picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1520095308/03_nsrq8k.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1520095308/03_nsrq8k.jpg">
 				</a>
@@ -343,7 +177,7 @@ if (typeof Object.assign !== 'function') {
 
 <p>Канал вдоль железнодорожной насыпи с цветущей жижей.</p>
 
-<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+<figure class=" picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1520095302/04_xoarss.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1520095302/04_xoarss.jpg">
 				</a>
@@ -352,7 +186,7 @@ if (typeof Object.assign !== 'function') {
 
 <p>Порой попадаются весьма живописные места.</p>
 
-<figure class="space-minus-h-micro-xs space-minus-h-base-sm picture">
+<figure class=" picture">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1520095295/05_agnkxp.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1520095295/05_agnkxp.jpg">
 				</a>
@@ -363,14 +197,13 @@ if (typeof Object.assign !== 'function') {
 
 </article>
 
-
-
-
-
-<nav class="row row-between-sm space-in-top-kilo-xs pagination">
+<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
+    
+    
+    
 	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
         
-            <a class="link" rel="prev" href="/photo/novosibirsk-ploshhad-lenina/">&larr; Ранее</a>
+            <a class="link" rel="prev" href="/photo/novosibirsk-ploshhad-lenina/">&lsaquo; Ранее</a>
         
     </span>
     <span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
@@ -378,7 +211,7 @@ if (typeof Object.assign !== 'function') {
     </span>
 </nav>
             <footer class="space-in-top-kilo-xs">	
-	<div class="space-out-bottom-micro-xs copyright">
+	<div class="copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time> 1 июня 2014</time>
@@ -390,7 +223,7 @@ if (typeof Object.assign !== 'function') {
 	</div>
 
 	<section class="navigation">
-	<nav class="space-in-h-micro-xs space-in-h-mili-md space-in-h-base-lg space-minus-h-micro-xs space-minus-h-mili-md space-minus-h-base-lg space-in-v-micro-xs menu" id="menu">
+	<nav class="space-out-top-micro-xs space-in-top-micro-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm menu" id="menu">
 		<ol class="menu-content">
 			<li class="space-in-right-micro-md space-in-bottom-nano-xs space-in-bottom-zero-md"><a target="_blank" href="/feed">RSS</a></li>
 			
