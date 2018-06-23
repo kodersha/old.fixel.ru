@@ -1,5 +1,11 @@
 <section class="background">
-	<div class="bg"></div>
+	<div class="bg {% if page.id == 'index' %}stars{% endif %}">
+		{% if page.id == 'index' %}
+			<div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div>
+		{% endif %}
+	</div>
 	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
 		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs {% if page.id != 'index' %}hidden-from-xl{% endif %} linel">
 			<header class="logo">
