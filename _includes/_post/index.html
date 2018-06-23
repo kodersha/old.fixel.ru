@@ -1,4 +1,13 @@
-<article class="col-xs-12 {% if forloop.index == 1 %}col-lg-12{% elsif forloop.index == 9 %}col-md-6{% elsif forloop.index == 10 %}col-md-6{% elsif forloop.index == 17 %}col-md-6{% elsif forloop.index == 18 %}col-md-6{% else %}col-md-6{% endif %} space-in-v-nano-xs item">
+<article class="
+col-xs-12
+{% if forloop.index == 1 %}col-lg-8 col-xl-6
+{% elsif forloop.index == 9 %}col-sm-6
+{% elsif forloop.index == 10 %}col-sm-6 col-xl-3
+{% elsif forloop.index == 17 %}col-sm-6
+{% elsif forloop.index == 18 %}col-sm-6 col-xl-3
+{% else %}col-sm-6 col-lg-4 col-xl-3
+{% endif %}
+space-in-v-nano-xs item">
 	<a href="{{ post.url }}" class="link-photo">
 		<section class="thumbnail color-{% if post.color == 'white' %}white{% else %}default{% endif %} post-{{ post.index }}">
 			{% if post.image %}
