@@ -8460,6 +8460,7 @@ header .logo-txt .logo-description {
   color: #738a94;
 }
 .sidebar {
+  background-color: #000000;
   position: relative;
   min-height: 350px;
   height: 80vh;
@@ -8467,6 +8468,7 @@ header .logo-txt .logo-description {
 @media (min-width: 1200px) {
   .sidebar {
     position: fixed;
+    z-index: 100;
     height: 100vh;
     width: 100%;
     bottom: 0;
@@ -8516,15 +8518,6 @@ header .logo-txt .logo-description {
   flex: 1 0 auto;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  .sidebar .background header {
-    transition: 0.5s ease-in;
-    opacity: .5;
-  }
-  .sidebar .background:hover header {
-    opacity: 1;
-  }
-}
 .sidebar .background .title {
   position: relative;
 }
@@ -8546,6 +8539,7 @@ header .logo-txt .logo-description {
 }
 @media (min-width: 1200px) {
   .sidebar .background .title h1 {
+    margin-top: -5px;
     text-align: left;
     font-size: 2em;
   }
@@ -8557,9 +8551,11 @@ header .logo-txt .logo-description {
   text-align: left;
 }
 .sidebar .background .pagination.aside a {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
 .sidebar .background .pagination.aside a:hover {
+  border-bottom-color: rgba(221, 221, 221, 0.1);
   color: #dddddd;
 }
 .post {
@@ -8717,6 +8713,7 @@ header .logo-txt .logo-description {
   width: 100%;
 }
 .post blockquote p {
+  font-family: 'PT Serif', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 1.45rem;
   font-style: italic;
   margin: 0;
@@ -9831,9 +9828,27 @@ button.slider .link-button {
 .button a:hover {
   border-color: #4183c4;
 }
+.breadcrumbs .breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs .breadcrumb::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.breadcrumbs .breadcrumb-item {
+  float: left;
+}
+.breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.3rem;
+  padding-left: 0.5rem;
+  content: '\00B7';
+}
 footer {
   position: relative;
-  overflow: hidden;
   flex-shrink: 0;
 }
 footer .toggle {
@@ -9897,11 +9912,28 @@ footer .breadcrumb-item:last-of-type:after {
   content: none;
 }
 .navigation {
+  border-top: 1px solid #ecf0f1;
   position: relative;
   display: none;
 }
+@media (min-width: 768px) {
+  .navigation::before {
+    background-color: #ecf0f1;
+    padding-right: 9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    margin-left: -9999px;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    content: '';
+    z-index: 0;
+    right: 0;
+    left: 0;
+    top: -1px;
+  }
+}
 .navigation .menu {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .navigation .menu .menu-content {
@@ -9926,6 +9958,155 @@ footer .breadcrumb-item:last-of-type:after {
   .navigation .menu .menu-content li {
     width: 50%;
   }
+}
+.navigation .menu .menu-content li.rss-link .rss {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: #ff5020;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  padding: 5px 10px;
+  color: #ffffff;
+  border: 0;
+}
+.navigation .menu .menu-content li.rss-link .rss:hover {
+  background-color: #a03000;
+}
+@media (min-width: 768px) {
+  .navigation .menu .menu-content li.rss-link {
+    float: right;
+  }
+}
+@media (max-width: 768px) {
+  .navigation .menu .menu-content li.rss-link {
+    width: 100%;
+  }
+}
+.navigation .search {
+  position: relative;
+}
+.navigation .search .search-form {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #ecf0f1;
+  border-radius: 50px;
+  position: relative;
+  margin-left: auto;
+  overflow: hidden;
+  max-width: 100%;
+  height: 48px;
+  width: 100%;
+}
+.navigation .search .search-form .search-box {
+  font-size: 1rem;
+  background: transparent;
+  visibility: visible;
+  padding-right: 48px;
+  padding-left: 25px;
+  box-shadow: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+.navigation .search .search-form .search-box:focus {
+  outline: none;
+}
+.navigation .search .search-form .search-button {
+  font-size: 0.875rem;
+  padding-bottom: 17px;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 17px;
+  pointer-events: none;
+  position: absolute;
+  color: #a9b1b5;
+  line-height: 0;
+  cursor: pointer;
+  display: block;
+  right: 0;
+  top: 0;
+}
+.navigation .search .search-form .search-button i.close {
+  display: none;
+}
+.navigation .search.open .search-form {
+  background-color: #ecf0f1;
+  width: 100%;
+}
+.navigation .search.open .search-form .search-box {
+  visibility: visible;
+}
+.navigation .search.open .search-button {
+  padding-bottom: 17px;
+  padding-right: 19px;
+  padding-left: 19px;
+  padding-top: 17px;
+}
+.navigation .search.open .search-button i.open {
+  display: none;
+}
+.navigation .search.open .search-button i.close {
+  display: block;
+}
+.navigation .search.open .dropdown {
+  visibility: visible;
+  display: block;
+}
+.navigation .search.open .dropdown .results {
+  display: block;
+}
+.navigation .search .dropdown {
+  visibility: visible;
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+.navigation .search .dropdown .results {
+  background-color: #ecf0f1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 2px;
+  position: absolute;
+  list-style: none;
+  padding-left: 0;
+  display: block;
+  width: 100%;
+  bottom: 64px;
+  right: 0;
+}
+.navigation .search .dropdown .results li {
+  font-size: 1rem;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding-bottom: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+.navigation .search .dropdown .results li:first-of-type {
+  padding-top: 25px;
+}
+.navigation .search .dropdown .results li:last-of-type {
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .black .navigation::before {
+    background-color: #111;
+  }
+}
+.black .navigation .search .search-form {
+  background-color: #111;
+}
+.black .navigation .search .search-form .search-button {
+  color: #333;
+}
+.black .navigation .search .search-form .search-box {
+  color: #ffffff;
+}
+.black .navigation .search .dropdown .results {
+  background-color: #111;
 }
 .modal > .modal-trigger {
   display: none;
