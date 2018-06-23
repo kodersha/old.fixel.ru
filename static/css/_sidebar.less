@@ -1,10 +1,12 @@
 & {
+    background-color: @black;
     position: relative;
     min-height: 350px;
     height: 80vh;
 
     @media @xl {
         position: fixed;
+        z-index: 100;
         height: 100vh;
         width: 100%;
         bottom: 0;
@@ -60,19 +62,6 @@
         width: 100%;
     }
 
-    @media @xl {
-        header {
-            transition: .5s ease-in;
-            opacity: .5;
-        }
-
-        &:hover {
-            header {
-                opacity: 1;
-            }
-        }
-    }
-
     .title {
         position: relative;
 
@@ -91,6 +80,7 @@
             }
 
             @media @xl {
+                margin-top: -5px;
                 text-align: left;
                 font-size: 2em;
             }
@@ -105,9 +95,11 @@
         }
 
         a {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
             color: @white;
 
             &:hover {
+                border-bottom-color: rgba(221, 221, 221, 0.1);
                 color: @lightGray;
             }
         }

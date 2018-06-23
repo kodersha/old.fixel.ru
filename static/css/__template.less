@@ -228,6 +228,7 @@ header {
         width: 100%;
 
         p {
+            font-family: @ptSerif;
             font-size: @glob-font-size + 0.45;
             font-style: italic;
             margin: 0;
@@ -768,6 +769,35 @@ button {
             border-color: #4183c4;
         }
     }
+}
+
+//
+// .breadcrumbs
+//
+
+.breadcrumbs {
+	.breadcrumb {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+		&::after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+		&-item {
+			float: left;
+		}
+	}
+
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: inline-block;
+		padding-right: 0.3rem;
+		padding-left: 0.5rem;
+        content: '\00B7';
+	}
 }
 
 //

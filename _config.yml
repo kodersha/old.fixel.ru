@@ -25,18 +25,16 @@ safe: false
 
 # Navigation
 navigation:
+  - title: Главная
+    url: /
   - title: Блог
     url: /blog/
   - title: Теги
     url: /blog/tags/
-  - title: Фотографии
-    url: /photo/
   - title: Поддержать
     url: /donate/
   - title: Об авторе
     url: /about/
-  - title: Магазин игр
-    url: http://steambuy.com/partner/milkleaks
 
 # Deafults layout
 defaults:

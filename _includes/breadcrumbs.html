@@ -22,29 +22,46 @@
 	{% if page.path contains '_posts' %}
 		{% if page.hidden == true %}
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/dungeon/"><span property="name">Старые записи</span><meta property="position" content="{{ position }}" /></a>
+				<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/dungeon/"><span property="name">Старые записи</span><meta property="position" content="{{ position | plus: 1 }}" /></a>
+			</li>
+		{% else %}
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/"><span property="name">Блог</span><meta property="position" content="{{ position | plus: 1 }}" /></a>
 			</li>
 		{% endif %}
 		{% if page.categories.size > 0 %}
 			{% for category in page.categories %}	
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/"><span property="name">{{ category }}</span><meta property="position" content="{{ position }}" /></a>
+				<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/categories/{{ category | replace:' ', '-' | downcase }}/"><span property="name">{{ category }}</span><meta property="position" content="{{ position | plus: 2 }}" /></a>
 			</li>
 			{% endfor %}			
 		{% endif %}
 	{% endif %}
 
+	{% if page.class == 'blog' %}
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/"><span property="name">Блог</span><meta property="position" content="{{ position | plus: 1 }}" /></a>
+		</li>
+	{% endif %}
+
+	{% if page.layout == 'archive' %}
+		<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+			<a property="item" typeof="WebPage" href="{{ site.baseurl }}/blog/"><span property="name">Блог</span><meta property="position" content="{{ position | plus: 1 }}" /></a>
+		</li>
+	{% endif %}
+
+
 	{% if page.path contains '_posts' %}
-		{% assign position = 1 %}
+		{% assign position = 3 %}
 	{% else %}
-		{% assign position = 0 %}
+		{% assign position = 1 %}
 	{% endif %}
 	{% for crumbitem in breadcrumbs %}
 		{% assign position = position | plus: 1 %}
 
 		{% if forloop.last %}
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">{{ page.title }}</span><meta property="position" content="{{ position }}" />
+				<span property="name">{% if page.path contains '_posts' %}Запись {{ page.index | plus: 1 }}{% else %}{{ page.title }}{% endif %}</span><meta property="position" content="{{ position }}" />
 			</li>
 			{% continue %}
 		{% endif %}
