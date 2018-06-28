@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -88,16 +88,31 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="black">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper">
 
-<div class="stars">
-	<div id='stars'></div>
-	<div id='stars2'></div>
-    <div id='stars3'></div>
-</div>
-<div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper max color-none">
+<div class="space-auto-h-xs home">
+    <header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
+		</div>
+	</div>
+</header>
     <section class="slide-up-fade-in space-minus-top-nano-xs row list">
 	
 	
@@ -821,28 +836,31 @@ space-in-v-nano-xs item">
 	</script>
 </article>
 	
+	<a class="pagination__next" href=""></a>
 </section>
-<div class="space-in-top-nano-xs">
+<div class="space-in-top-nano-xs space-in-bottom-kilo-xs">
 	*Больше постов и заметок в <a href="/blog/">блоге</a>.
 </div>
 
-
-	<nav class="row row-between-sm space-in-top-kilo-xs pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<noscript>
+	
+	<nav class="row row-between-sm space-auto-h-xs space-in-bottom-kilo-xs pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 3 из 3</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница 3 из 3</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 			
 				<a class="link" rel="next" href="/page-2/">Позднее &rsaquo;</a>
 			
 		</span>
 	</nav>
 
-    <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+</noscript>
+    <footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time>2015 - 2018</time>
@@ -852,8 +870,8 @@ space-in-v-nano-xs item">
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -879,18 +897,6 @@ space-in-v-nano-xs item">
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
 </div>
@@ -908,6 +914,5 @@ space-in-v-nano-xs item">
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

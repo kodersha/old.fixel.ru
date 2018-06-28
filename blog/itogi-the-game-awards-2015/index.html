@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -72,7 +72,7 @@
 		"headline":"Итоги The Game Awards 2015",
 		"genre":"Игры",
 		"keywords":"Статья, На главной",
-		"wordCount":"710",
+		"wordCount":"709",
 		"url":"https://milkleaks.ru/blog/itogi-the-game-awards-2015/",
 		"datePublished":"2015-12-04",
 		"dateModified":"2015-12-04",
@@ -111,90 +111,38 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page-post">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Итоги The Game Awards 2015</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-			</li>
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/игры/"><span property="name">Игры</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Запись 30</span><meta property="position" content="4" />
-			</li>
-			
-</ol></span>
-				<span class="col-xl-shrink previous next">
-					
-						<a title="Fallout 4 · Все и сразу" class="link" href="/blog/fallout-4-vse-i-srazu/" rel="prev">&lsaquo; Ранее</a>
-					
-					
-						<a title="Vampyr · Новая игра от Dontnod" class="space-out-left-nano-xs link" href="/blog/vampyr-novaya-igra-ot-dontnod/" rel="next">Позднее &rsaquo;</a>
-					
-				</span>
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <article class="slide-up-fade-in content post">
+</header>
+<article class="slide-up-fade-in space-auto-h-xs content post">
+	<time class="single"> 4 декабря 2015</time>
+	
+		<h1 class="title">Итоги The Game Awards&nbsp;2015</h1>
+	
+	
+    
+	
 	<blockquote>
   <p>Вот и завершился The Game Awards 2015. За почти два с половиной часа YouTube эфира было анонсировано и показано множество игр, а так же представлены награды в различных номинациях…</p>
 </blockquote>
@@ -225,7 +173,7 @@
   <p><strong>Победитель:</strong> <span class="caps">CD</span> Projekt Red.</p>
 </div>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518879256/01_lepj5p.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518879256/01_lepj5p.jpg">
 				</a>
@@ -256,7 +204,7 @@
   <p><strong>Победитель:</strong> Metal Gear Solid V: The Phantom Pain.</p>
 </div>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518879256/02_cslpur.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518879256/02_cslpur.jpg">
 				</a>
@@ -287,7 +235,7 @@
   <p><strong>Победитель:</strong> Ori and the Blind Forest.</p>
 </div>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518879256/03_iqnl1i.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518879256/03_iqnl1i.jpg">
 				</a>
@@ -318,7 +266,7 @@
   <p><strong>Победитель:</strong> Life is Strange.</p>
 </div>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518879257/04_vnryeh.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518879257/04_vnryeh.png">
 				</a>
@@ -349,7 +297,7 @@
   <p><strong>Победитель:</strong> No Man’s Sky.</p>
 </div>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518879258/05_cguore.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518879258/05_cguore.png">
 				</a>
@@ -380,7 +328,7 @@
   <p><strong>Победитель:</strong> Rocket League.</p>
 </div>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518879256/06_ldovvs.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518879256/06_ldovvs.jpg">
 				</a>
@@ -415,7 +363,7 @@
 
 <p>Полную запись трансляции вы можете посмотреть ниже.</p>
 
-<figure class=" video">
+<figure class="video">
 					<div id="cJyLB9-y8bA" class="youtube">
 						<div class="play"></div>
 						<img src="https://img.youtube.com/vi/cJyLB9-y8bA/maxresdefault.jpg" class="thumbnail">
@@ -427,34 +375,32 @@
 	
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		
-			<a title="Fallout 4 · Все и сразу" class="link" href="/blog/fallout-4-vse-i-srazu/">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="/blog/fallout-4-vse-i-srazu/">&lsaquo; Fallout 4 · Все и сразу</a><br>
 		
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 30 из 88</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		
-			<a title="Vampyr · Новая игра от Dontnod" class="link" href="/blog/vampyr-novaya-igra-ot-dontnod/">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="/blog/vampyr-novaya-igra-ot-dontnod/">Vampyr · Новая игра от Dontnod &rsaquo;</a>
 		
 	</span>
 </nav>
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
-			Александра Травкина &copy; <time> 4 декабря 2015</time>
+			Александра Травкина &copy; <time>2015 - 2018</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -480,23 +426,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -511,6 +442,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

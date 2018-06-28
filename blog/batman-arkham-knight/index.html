@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -111,97 +111,45 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page-post">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Batman: Arkham Knight</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-			</li>
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/игры/"><span property="name">Игры</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Запись 16</span><meta property="position" content="4" />
-			</li>
-			
-</ol></span>
-				<span class="col-xl-shrink previous next">
-					
-						<a title="Project Zomboid" class="link" href="/blog/project-zomboid/" rel="prev">&lsaquo; Ранее</a>
-					
-					
-						<a title="This War of Mine" class="space-out-left-nano-xs link" href="/blog/this-war-of-mine/" rel="next">Позднее &rsaquo;</a>
-					
-				</span>
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <article class="slide-up-fade-in content post">
+</header>
+<article class="slide-up-fade-in space-auto-h-xs content post">
+	<time class="single">27 августа 2015</time>
+	
+		<h1 class="title">Batman: Arkham&nbsp;Knight</h1>
+	
+	
+    
+	
 	<p>Заключительная и четвертая часть игр серии от студии Rocksteady. Arkham Knight вышла 23 июня 2015 года и стала доступна на новое поколение консолей и <span class="caps">PC.</span> Сюжет повествует о событиях происходящих спустя год после Arkham City. На этот раз главными антагонистами выступают Пугало, который уже встречался в первой части Arkham Asylum, и Рыцарь Аркхема — по словам Rocksteady, новый, доселе не встречавшийся в комиксах персонаж (Но те кто прошли игру, знают).</p>
 
 
 
 <p>Сюжет в Arkham Knight начинается достаточно тривиально, Пугало и прочие злодеи Готэма захватывают город, улицы наводняют убийцы, бандиты, алкоголики и тунеядцы, а так же, солдаты и беспилотная техника Рыцаря Аркхема. Все они, разумеется, мечтают убить Бэтмена. Пугало намеревается распылить токсин страха по всему городу, по аналогии с Нолановским фильмом «Бэтмен: Начало». Темный Рыцарь, пытаясь предотвратить распыление токсина, попадает под воздействие и ему начинают мерещиться воспоминания из прошлого и кошмары в лице Джокера, без которого и в этой части игры не обошлось. По ходу сюжета, как и заведено, воображаемый Джокер будет отпускать колкие остроты полные сарказма и черного юмора, играя роль совести Бэтмена и пытаясь склонить на «темную сторону». Помимо борьбы с собственным сумасшествием, Бэтмену придется сражаться с неизвестным Рыцарем Аркхема и его многочисленными войсками, а так же, выручать тех кто попал под удар злодеев. Но не все будут врагами, некоторые злодеи перестанут быть злодеями и встанут на защиту Готэма. Но, не стоит раскрывать всех особенностей сценарных поворотов. Хочется сказать, что сюжет Arkham Knight вышел не менее интересным, а в каком-то роде даже более хорошим, в сравнении с предыдущими частями. По крайней мере, тот же Arkham Origins был не столь увлекательным в сравнении с Arkham Knight. А вкупе с новыми технологиями, бэтмобилем, огромным открытым миром — который стал чуточку проработаннее и живее (Благодаря автомобилям на улицах города и полицейским погоням), игра получается совершенно замечательной.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518875392/01_t3afh7.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518875392/01_t3afh7.png">
 				</a>
@@ -214,7 +162,7 @@
   <p>Что же касается атмосферы, то она здесь, как и во всех играх серии передана отлично и не вызывает никаких нареканий. Дождливый Готэм, как всегда, мрачен и тёмен, как и дела, что творятся на его улицах.</p>
 </blockquote>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518875387/02_vg5una.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518875387/02_vg5una.png">
 				</a>
@@ -225,7 +173,7 @@
 
 <p>Помимо основных злодеев Темному Рыцарю будут противостоять и множество других, собранных под предводительством Пугала, антигероев. Например Загадочник, Двуликий, Пингвин, Светлячок и прочие, уже известные из прошлых частей серии. Можно сразиться и победить каждого из них, выполняя сторонние задания, коих в Arkham Knight не мало. Многие из побочных квестов стали разнообразнее. Так, скажем, задания Загадочника перестали заключаться только в скучном собирании трофеев спрятанных по всему городу, а получили разнообразие в виде, своего рода сюжетной линии, в которой вам придется решать различные головоломки с помощью бэтмобиля разбавленные рукопашными боями и лабиринтами, а так же, проходить сложные гоночные трассы на время. Однако другие сторонние квесты могут показаться однообразными, например спасение n-ного количества пожарных из рук бандитов. Пожарные будут разбросаны по всему городу в различных местах, зачастую искать их предстоит самостоятельно, но ежели вам лень, игра периодически будет давать «наводку» на очередного заложника. Интересно, но повторять весь процесс спасения раз за разом весьма наскучивает.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518875389/03_dpfgte.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518875389/03_dpfgte.png">
 				</a>
@@ -238,7 +186,7 @@
 
 <p>Что касается нововведений, город в Arkham Knight в три раза больше чем в Arkham Citty, что не может не радовать, поэтому путешествовать по его просторам вы можете не только с помощью крюка, но и на бэтмобиле. Так же, множество заданий в игре завязано на бэтмобиль, будь-то решения головоломок, погони или противостояние беспилотникам. Добавилось и множество новых гаджетов, синтезатор голоса — дабы приманивать противника, удаленный дешифратор — при помощи которого можно «хакать» различные вражеские гаджеты и устраивать ловушки, новый деструктор — который позволяет обезвреживать огнестрельное оружие, глушилки «детективного зрения», минировать ящики с оружием и прочее. Не обошлось и без спец. вооружения бэтмобиля, помимо 60-мм пушки и пушки для разгона толпы, существуют ракеты с самонаведением, ЭМИ и взлом вражеских беспилотников. К бэтмобилю добавилась и разрушаемость города — сносите заборы, парковые лавочки, углы зданий и ценные памятники архитектуры.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518875387/04_brh6ba.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518875387/04_brh6ba.png">
 				</a>
@@ -253,34 +201,32 @@
 	
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		
-			<a title="Project Zomboid" class="link" href="/blog/project-zomboid/">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="/blog/project-zomboid/">&lsaquo; Project Zomboid</a><br>
 		
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 16 из 88</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		
-			<a title="This War of Mine" class="link" href="/blog/this-war-of-mine/">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="/blog/this-war-of-mine/">This War of Mine &rsaquo;</a>
 		
 	</span>
 </nav>
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
-			Александра Травкина &copy; <time>27 августа 2015</time>
+			Александра Травкина &copy; <time>2015 - 2018</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -306,23 +252,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -337,6 +268,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

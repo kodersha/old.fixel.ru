@@ -1,3 +1,22 @@
+$('.posts').infiniteScroll({
+	path: '.pagination__next',
+	append: '.post',
+	checkLastPage: true,
+	history: 'replace',
+	historyTitle: true,
+	hideNav: undefined,
+	scrollThreshold: 1000, 
+});
+
+$('.list').infiniteScroll({
+	path: '.pagination__next',
+	append: '.item',
+	checkLastPage: true,
+	history: false,
+	hideNav: undefined,
+	scrollThreshold: 1000, 
+});
+
 /* Меню */
 
 $(document).ready(function(){

@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -111,90 +111,38 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page-post">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Кат в Эгее</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-			</li>
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/веб/"><span property="name">Веб</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Запись 80</span><meta property="position" content="4" />
-			</li>
-			
-</ol></span>
-				<span class="col-xl-shrink previous next">
-					
-						<a title="Beat Cop" class="link" href="/blog/beat-cop/" rel="prev">&lsaquo; Ранее</a>
-					
-					
-						<a title="О любимых сериалах" class="space-out-left-nano-xs link" href="/blog/o-ljubimyh-serialah/" rel="next">Позднее &rsaquo;</a>
-					
-				</span>
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <article class="slide-up-fade-in content post">
+</header>
+<article class="slide-up-fade-in space-auto-h-xs content post">
+	<time class="single">23 января 2018</time>
+	
+		<h1 class="title">Кат в&nbsp;Эгее</h1>
+	
+	
+    
+	
 	<p>Как известно <a href="https://blogengine.ru" rel="nofollow" target="_blank">Эгея</a> не имеет функции скрытия длинных постов под катом, в этой <a href="https://ilyabirman.ru/meanwhile/all/no-cut-in-aegea/" rel="nofollow" target="_blank">статье</a> Илья Бирман объясняет почему. Тем не менее, многие нуждаются в сокращении слишком длинных постов, а потому, в этой заметке я расскажу как «прикрутить» кат к Эгее с использованием скрипта <a href="http://jedfoster.com/Readmore.js/" rel="nofollow" target="_blank">readmore.js</a>. Особенность readmore.js в том, что раскрывать длинные записи для чтения можно без перезагрузки страницы и новых вкладок в браузере, нечто подобное используется, например, ВКонтакте или на Пикабу.</p>
 
 
@@ -295,7 +243,7 @@
 
 <p>Таким образом мы добавили кат в Эгею.</p>
 
-<figure class="without-shadow picture">
+<figure class="picture  without-shadow">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216527/01_ooazsz.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216527/01_ooazsz.png">
 				</a>
@@ -311,34 +259,32 @@
 	
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		
-			<a title="Beat Cop" class="link" href="/blog/beat-cop/">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="/blog/beat-cop/">&lsaquo; Beat Cop</a><br>
 		
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 80 из 88</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		
-			<a title="О любимых сериалах" class="link" href="/blog/o-ljubimyh-serialah/">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="/blog/o-ljubimyh-serialah/">О любимых сериалах &rsaquo;</a>
 		
 	</span>
 </nav>
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
-			Александра Травкина &copy; <time>23 января 2018</time>
+			Александра Травкина &copy; <time>2015 - 2018</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -364,23 +310,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -395,6 +326,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

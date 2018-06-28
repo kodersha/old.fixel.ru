@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -111,96 +111,42 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page-post">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">О любимых сериалах</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-			</li>
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/фильмы/"><span property="name">Фильмы</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Запись 81</span><meta property="position" content="4" />
-			</li>
-			
-</ol></span>
-				<span class="col-xl-shrink previous next">
-					
-						<a title="Кат в Эгее" class="link" href="/blog/kat-v-egee/" rel="prev">&lsaquo; Ранее</a>
-					
-					
-						<a title="Короткометражный фильм «Papers, Please»" class="space-out-left-nano-xs link" href="/blog/papers-please-korotkometrazhyi-film/" rel="next">Позднее &rsaquo;</a>
-					
-				</span>
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-<style type="text/css">
-	.sidebar .background .bg {
-		background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1526048488/cover_bxq03v.jpg');
-	}
-</style>
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <article class="slide-up-fade-in content post">
+</header>
+<article class="slide-up-fade-in space-auto-h-xs content post">
+	<time class="single"> 9 февраля 2018</time>
+	
+		<h1 class="title">О любимых&nbsp;сериалах</h1>
+	
+	
+		<figure class="cover">
+			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1526048488/cover_bxq03v.jpg">
+		</figure>
+	
+    
+	
 	<blockquote>
   <p>Удивительно, но я, как и многие, смотрю сериалы. А потому, хотелось бы рассказать о тех, которые так или иначе мне полюбились. О тех, которые были закончены и просмотрены целиком, либо всё ещё не заброшены, если новые сезоны до сих пор выходят и остаются на достойном уровне. Собственно, краткие обзоры без каких бы то ни было серьезных спойлеров.</p>
 </blockquote>
@@ -209,7 +155,7 @@
 
 <h2 id="готэм">Готэм</h2>
 
-<figure class=" video">
+<figure class="video full">
 					<div id="0d1zpt6k5OI" class="youtube">
 						<div class="play"></div>
 						<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216868/video_01_pwvore.png" class="thumbnail">
@@ -219,7 +165,7 @@
 
 <p>Сериал повествует о становлении юного Брюса Уэйна в качестве Бэтмена, а также рассказывает о том, как многочисленные антигерои и немногочисленные герои вселенной стали такими, какими они стали. Изначально планировался как процедурал, где молодой Джим Гордон каждую серию расследовал новое дело в борьбе с коррупцией и преступностью, но после половины первого сезона авторы перешли к линейному развитию событий. Готэм, как ему и положено, чуть больше чем полностью наполнен гениальными и харизматичными преступниками, среди ключевых - Освальд Кобблпот, Эдвард Нигма, Кармайн Фальконе, Селина Кайл и Ядовитый Плющ, а также, порой встречающиеся Мистер Фриз, Светлячок, Виктор Зсасз и множество злодеев помельче. Есть и те, кто выдуман авторами сериала, как, например, Фиш Муни или Барбара Кин - не слишком удачные злодеи в плане сюжета.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216775/01_bnj1ur.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/01_bnj1ur.png">
 				</a>
@@ -232,7 +178,7 @@
 
 <h2 id="мистер-робот">Мистер Робот</h2>
 
-<figure class=" video">
+<figure class="video full">
 					<div id="w_BXG9up-oE" class="youtube">
 						<div class="play"></div>
 						<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216916/video_02_uzuhkn.png" class="thumbnail">
@@ -242,7 +188,7 @@
 
 <p>Эллиот Алдерсон - Замкнутый и одинокий инженер кибербезопастности «Allsafe Cybersecurity» и по совместительству хакер в антиправительственной группировке «Нахрен общество». Верит в теорию заговора и ненавидит социум, имеет проблемы с психикой, страдает паранойей. «Мистер Робот» - сериал о хакерах, интернете, тоталитарном правительстве, современном обществе и человеческой психологии, соответственно.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216775/02_lf2lvz.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216775/02_lf2lvz.png">
 				</a>
@@ -259,7 +205,7 @@
 
 <h2 id="доктор-хаус">Доктор Хаус</h2>
 
-<figure class=" video">
+<figure class="video full">
 					<div id="0U989j62g20" class="youtube">
 						<div class="play"></div>
 						<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216951/video_03_rankfw.jpg" class="thumbnail">
@@ -269,7 +215,7 @@
 
 <p>Сложно предположить, что «Доктор Хаус» может нуждаться в представлении, ибо за всё время своего существования стал классикой сериального жанра. Настолько, что российские сериалоделы купили права у Дэвида Шора, автора оригинальной идеи, и снимают свою богомерзкую «адаптацию». Однако, если вы каким-то образом пропустили этот медицинский процедурал со сквозным сюжетом, смело можете добавлять «House <span class="caps">M.D.</span>» в чек-лист. Собственно говоря, сюжет повествует о докторе Грегори Хаусе, в исполнении Хью Лори - харизматичном враче возглавляющим диагностический центр в больнице «Принстон Плейнсборо». Как правило Хаус берет только особенных пациентов, диагностировать причину болезни которых не сумели обычные врачи.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216774/03_rzxuzi.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216774/03_rzxuzi.png">
 				</a>
@@ -286,7 +232,7 @@
 
 <h2 id="остаться-в-живых">Остаться в живых</h2>
 
-<figure class=" video">
+<figure class="video full">
 					<div id="KTu8iDynwNc" class="youtube">
 						<div class="play"></div>
 						<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216987/video_04_d5eqx2.png" class="thumbnail">
@@ -296,7 +242,7 @@
 
 <p>Пожалуй не менее культовое явление в сфере сериалов. С <span class="caps">LOST</span> мне довелось познакомится еще в те времена, когда его транслировали по «Первому». Сериал повествует о пассажирах рейса Oceanic 815 переживших авиакатастрофу и оказавшихся где-то на далёком острове в Тихом океане. Однако, помимо проблем выживания в виде отсутствия медикаментов, еды, воды и ночлега, уцелевшие пассажиры борта 815 сталкиваются со всяческими неизведанными аномалиями и загадками таинственного острова.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216772/04_mxnlly.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/04_mxnlly.jpg">
 				</a>
@@ -311,7 +257,7 @@
 
 <p>Принцип построения серий «Лоста» во многом завязан на флешбеках. Каждую серию мы наблюдаем не только за ключевым персонажем эпизода, но и за его прошлым, которое, в дальнейшем, позволяет выстраивать причинно-следственную связь с людьми и событиями происходящими на острове. В итоге, картина сюжета складывается из так называемых «кусочков мозаики» и превращается в нечто целое, но строго отведенными сценаристами порциями. Порой, чтобы понять как и с чем связана та или иная ситуация, приходится вспоминать события прошлых серий и сезонов.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1519216772/05_lno5rf.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1519216772/05_lno5rf.jpg">
 				</a>
@@ -324,34 +270,32 @@
 	
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		
-			<a title="Кат в Эгее" class="link" href="/blog/kat-v-egee/">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="/blog/kat-v-egee/">&lsaquo; Кат в Эгее</a><br>
 		
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 81 из 88</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		
-			<a title="Короткометражный фильм «Papers, Please»" class="link" href="/blog/papers-please-korotkometrazhyi-film/">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="/blog/papers-please-korotkometrazhyi-film/">Короткометражный фильм «Papers, Please» &rsaquo;</a>
 		
 	</span>
 </nav>
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
-			Александра Травкина &copy; <time> 9 февраля 2018</time>
+			Александра Травкина &copy; <time>2015 - 2018</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -377,23 +321,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -408,6 +337,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

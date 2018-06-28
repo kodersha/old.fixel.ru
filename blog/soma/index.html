@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -111,97 +111,45 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page-post">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">SOMA</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-			</li>
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/игры/"><span property="name">Игры</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Запись 20</span><meta property="position" content="4" />
-			</li>
-			
-</ol></span>
-				<span class="col-xl-shrink previous next">
-					
-						<a title="The Long Dark" class="link" href="/blog/the-long-dark/" rel="prev">&lsaquo; Ранее</a>
-					
-					
-						<a title="Armikrog · 19 лет спустя" class="space-out-left-nano-xs link" href="/blog/armikrog-19-let-spustya/" rel="next">Позднее &rsaquo;</a>
-					
-				</span>
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <article class="slide-up-fade-in content post">
+</header>
+<article class="slide-up-fade-in space-auto-h-xs content post">
+	<time class="single">23 сентября 2015</time>
+	
+		<h1 class="title"><span class="caps">SOMA</span></h1>
+	
+	
+    
+	
 	<p>Когда самый обычный день оборачивается погружением в неизведанные, ледяные глубины. Когда нет уверенности кто есть кто на самом деле. Когда приходится лишать жизни ради своей собственной. Когда надо бежать и прятаться от ужасов подводной станции. <span class="caps">SOMA</span> — это атмосферное, научно-фантастическое приключение с элементами страха и ужаса. Долгожданная игра от шведской студии Frictional Games вышедшая 22 сентября этого года.</p>
 
 
 
 <p>Сюжет повествует о молодом человеке по имени Саймон Джаррет, который волею судьбы был вовлечен в череду странных и пугающих событий. Некогда ранее Саймон пережил автомобильную катастрофу. Потеряв возлюбленную и получив серьезные повреждения мозга, после которых в его черепной коробке постоянно скапливается кровь, а так же мучают мигрени, он вынужден прибегнуть к помощи специалистов. Посему, Саймон отправится на прием к доктору, для сканирования мозга, однако безболезненная процедура сканирования внезапно оборачивается весьма странными событиями. Саймон внезапно осознает себя в заброшенном и жутком месте, а именно, на подводной станции Pathos <span class="caps">II.</span> Не зная как тут оказался и что вообще происходит, он вынужден самостоятельно искать спасения и выяснять почему вокруг нет ни одной живой души, откуда здесь столько мертвых и изувеченных тел, а также, что за странные машины, считающие себя людьми, встречаются на его пути. За каждым поворотом бесконечных помещений станции Саймона ждет смертельное приключение.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518877288/01_mieusw.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518877288/01_mieusw.jpg">
 				</a>
@@ -212,7 +160,7 @@
 
 <p>Стилистика игры чем-то напоминает Alien: Isolation, чем-то Doom 3, отчасти первый Bioshock и Prey — а в общем типичный ретрофутуризм. Однако если сходства и заимствования из других игр есть, то это ничуть не портит общее впечатление. <span class="caps">SOMA</span> в меру страшна, в меру темна и депрессивна. Что же о звуковом сопровождении? Надо заверить, выполнено оно на должном уровне. Frictional Games потрудились над окружающими звуками так, что каждый шорох, скрежет, стук, царапанье, падение и всё прочее — еще глубже погрузит вас в атмосферу безысходности и клаустрофобии. Завораживает и сопроводительный эмбиент от композитора Mikko Tarmia. К слову говоря, озвучивание персонажей так же не вызывает нареканий. Кстати и наш главный герой не безмолвен, однако зачастую не многословен.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518877288/02_dbk430.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518877288/02_dbk430.jpg">
 				</a>
@@ -223,7 +171,7 @@
 
 <p>Что же касается технической стороны, можно сказать — игра оптимизирована на среднем уровне. Выдает стабильные сорок кадров в секунду при самых максимальных настройках графики на ноутбуке Clevo p150em. Провисает во время автосохранения и при подгрузке локаций. Местами встречаются текстуры низкого разрешения, что возвращает нас во времена pastgen’a, но это не столь сильно портит общее впечатление. В общем же, не стоит ждать от графики чего-то инновационного. Что же касается искусственного интеллекта врагов, то в этом плане не все так однозначно. Скажем, от некоторого монстра можно бегать вокруг стола или ящика и он не сможет вас достать. Это порой не только забавляет, но и облегчает геймплей. В остальном же, все вполне замечательно, разработчики заметно потрудились над освещением и проработанностью уровней в плане дизайна, а посему, атмосфера удалась на отлично.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1518877288/03_sniayh.jpg" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1518877288/03_sniayh.jpg">
 				</a>
@@ -236,34 +184,32 @@
 	
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		
-			<a title="The Long Dark" class="link" href="/blog/the-long-dark/">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="/blog/the-long-dark/">&lsaquo; The Long Dark</a><br>
 		
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 20 из 88</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		
-			<a title="Armikrog · 19 лет спустя" class="link" href="/blog/armikrog-19-let-spustya/">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="/blog/armikrog-19-let-spustya/">Armikrog · 19 лет спустя &rsaquo;</a>
 		
 	</span>
 </nav>
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
-			Александра Травкина &copy; <time>23 сентября 2015</time>
+			Александра Травкина &copy; <time>2015 - 2018</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -289,23 +235,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -320,6 +251,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

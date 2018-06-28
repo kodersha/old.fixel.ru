@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -72,7 +72,7 @@
 		"headline":"Far Cry 5 · Сектантская жвачка",
 		"genre":"Игры",
 		"keywords":"Открытый мир, Экшен, На главной",
-		"wordCount":"950",
+		"wordCount":"948",
 		"url":"https://milkleaks.ru/blog/far-cry-5-sektantskaja-zhvachka/",
 		"datePublished":"2018-05-12",
 		"dateModified":"2018-05-12",
@@ -111,110 +111,56 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page-post">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Far Cry 5 · Сектантская жвачка</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/"><span property="name">Блог</span><meta property="position" content="2" /></a>
-			</li>
-		
-		
-				
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/blog/categories/игры/"><span property="name">Игры</span><meta property="position" content="3" /></a>
-			</li>
-						
-		
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Запись 87</span><meta property="position" content="4" />
-			</li>
-			
-</ol></span>
-				<span class="col-xl-shrink previous next">
-					
-						<a title="Обход блокировки Telegram" class="link" href="/blog/obhod-blokirovki-telegram/" rel="prev">&lsaquo; Ранее</a>
-					
-					
-						<a title="Хакинтош на PC" class="space-out-left-nano-xs link" href="/blog/hackintosh-na-pc/" rel="next">Позднее &rsaquo;</a>
-					
-				</span>
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-<style type="text/css">
-	.sidebar .background .bg {
-		background-image: url('https://res.cloudinary.com/milkleaks/image/upload/v1526068114/cover_r3bcrq.png');
-	}
-</style>
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <article class="slide-up-fade-in content post">
+</header>
+<article class="slide-up-fade-in space-auto-h-xs content post">
+	<time class="single">12 мая 2018</time>
+	
+		<h1 class="title">Far Cry 5 · Сектантская&nbsp;жвачка</h1>
+	
+	
+		<figure class="cover">
+			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1526068114/cover_r3bcrq.png">
+		</figure>
+	
+    
+	
 	<p>Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц. На этом все достоинства Far Cry 5, к сожалению, заканчиваются.</p>
 
 
 
 <p>Нововведением пятой части стало кооперативное прохождение и, как следствие, обезличивание главного героя. Если раньше мы играли за Аджая Гейла или Джейсона Броди — со своими целями, планами, чувствами и эмоциями, наблюдая за их постепенным становлением в качестве героев-освободителей, то здесь мы примеряем на себя роль безмолвного болванчика — Салаги, помощника шерифа. Вместе со своими коллегами мы отправляемся в американскую глубинку штата Монтана, округ Хоуп, дабы арестовать самого главного злодея, основателя террористической секты «Врата Эдема» — Иосифа Сида по прозвищу Отец. Но, как водится, всё идёт не по плану. Герои оказываются разобщены и взяты в плен, а Салага — единственный или единственная, в зависимости от выбора пола в начале игры, кому придётся разгребать всё это сектантское непотребство.</p>
 
-<div class="row space space-out-h-zero-xs">
-  <figure class="col-xs-6 space-zero picture">
+<div class="row">
+  <figure class="picture  col-xs-6 space-out-v-zero-xs">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1526062696/02_gtamem.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526062696/02_gtamem.png">
 				</a>
 				
 			</figure>
-  <figure class="col-xs-6 space-zero picture">
+  <figure class="picture  col-xs-6 space-out-v-zero-xs">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1526069554/03_hfraue.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526069554/03_hfraue.png">
 				</a>
@@ -228,7 +174,7 @@
 
 <p>С другой стороны, той, что за «Хороших парней и девчонок», аналогично нет запоминающихся и ярких персонажей. Главный герой лишён голоса, души и всяческой предыстории, а его компаньонам, которых можно брать с собой в напарники, отведено минимум диалогов и сюжета. Из девяти возможных напарников у каждого есть по две совместные миссии, связанные, как водится, с отстрелом сектантов. Из всех запомнились лишь миссия Ника Райя, с полётами на кукурузнике и беременной женой, да отстрел всего живого в компании неизменного Хёрка Драбмена-младшего с его плоскими шуточками. Ещё, пожалуй, запомнился шериф Эрл Уайтхорс, за свою шерифскую шляпу и усы, жаль лишь, что полноценного раскрытия, как персонажа, ему тоже не досталось. Да и в напарники его взять нельзя. Так или иначе, сюжетная смерть очередного положительного героя не вызывает никаких эмоций.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1526067477/04_vt3hsl.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526067477/04_vt3hsl.png">
 				</a>
@@ -239,7 +185,7 @@
 
 <p>Ко всему прочему, в пятой части серии появились варианты причёсок, одежда и различные аксессуары к ней, что не мудрено в условиях кооперативной игры. Возможность покупки автомобилей, вертолётов и немногочисленного оружия с различными модификациями к нему. Можно купить цветастую раскраску, глушитель и снайперский прицел на дробовик, например. Несмотря на то, что внутриигровой валюты хватает с избытком, в игре есть возможность покупки предметов и раскрасок за реальные деньги. Возможно, разработчики пока лишь прощупывают почву микротранзакций на территории Far Cry и в следующих частях заполучить какой нибудь вертолёт без доната или многочасового гринда уже не выйдет. Но это не точно.</p>
 
-<figure class=" picture">
+<figure class="picture ">
 				<a href="https://res.cloudinary.com/milkleaks/image/upload/v1526059004/01_wsjpju.png" class="lightbox-image" data-lightbox="image" rel="nofollow" target="_blank">
 					<img src="https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526059004/01_wsjpju.png">
 				</a>
@@ -252,7 +198,7 @@
 
 	
 <section class="space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm gamecard">
-	<div class="space-out-h-zero-xs space-in-v-mili-xs row linel">
+	<div class="space-auto-h-xs space-in-v-mili-xs row linel">
 		
 		<div class="col-xs-12 col-sm-6 space-in-h-zero-xs space-in-left-zero-sm space-in-right-nano-sm">
 			<div class="dislike">
@@ -293,9 +239,9 @@
 		<div class="space-in-top-mili-xs space-in-h-zero-xs space-h-auto-xs col-xs-12">
 			<div class="space-auto-h-xs vote">
 				<div class="voted">3.5 из 10</div>
-				<canvas id="chart-86" width="180" height="180"></canvas>
+				<canvas id="chart-85" width="180" height="180"></canvas>
 				<script type="text/javascript">
-					var ctx = document.getElementById("chart-86");
+					var ctx = document.getElementById("chart-85");
 					var myChart = new Chart(ctx, {
 						type: 'doughnut',
 						data: {
@@ -326,34 +272,32 @@
 
 </article>
 
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		
-			<a title="Обход блокировки Telegram" class="link" href="/blog/obhod-blokirovki-telegram/">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/">&lsaquo; Перелёт OVB - DME - OVB или туда и обратно</a><br>
 		
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: 87 из 88</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		
-			<a title="Хакинтош на PC" class="link" href="/blog/hackintosh-na-pc/">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="/blog/hackintosh-na-pc/">Хакинтош на PC &rsaquo;</a>
 		
 	</span>
 </nav>
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
-			Александра Травкина &copy; <time>12 мая 2018</time>
+			Александра Травкина &copy; <time>2015 - 2018</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -379,23 +323,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -410,6 +339,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

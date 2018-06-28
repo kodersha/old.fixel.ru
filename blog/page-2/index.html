@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -88,104 +88,34 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Блог</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Блог</span><meta property="position" content="2" />
-			</li>
-			
-</ol></span>
-					
-					<span class="col-xl-shrink previous next">
-						
-							<a class="link" href="/blog/page-3/" rel="prev">&lsaquo; Ранее</a>
-						
-						
-							<a class="space-out-left-nano-xs link" href="/blog/" rel="next">Позднее &rsaquo;</a>
-						
-					</span>
-					
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-<style type="text/css">
-	.sidebar .background .bg {
-		background-image: url('/static/images/background/bg2.jpg');
-	}
-</style>
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <section class="slide-up-fade-in content blog-list">
+</header>
+<section class="slide-up-fade-in space-auto-h-xs content blog-list posts linel">
     
-        <article class=" post">
-	<h1><a class="link-title" href="/blog/novyj-novyj-novyj-god/">Новый, новый, новый&nbsp;год</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/novyj-novyj-novyj-god/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525615081/thumb_l4mcig.png">
-		</a>
-	</figure>
-	
-	<p>Поговаривают, что вот уже сегодня Новый год, две тысячи восемнадцатый. По этому случаю за окном началась локальная Вьетнамская война из китайских фейерверков и всевозможных петард. Люди неистово закупают продукты, подарки и алкоголь, и вообще всячески пытаются веселится, о чём говорят их нетрезвые голоса под окнами. В конце уходящего года многие подводят его итоги - обдумывают и делятся прошедшими событиями в своих уютных блогах и соцсетях, а также строят грандиозные планы на год будущий. Поддавшись традиции я тоже решила подвести итоги две тысячи семнадцатого, пусть и не вдаваясь в подробности событий жизни вне Сети, не смотря на то, что и их было предостаточно.</p>
-
-
-	
-		<p><a href="/blog/novyj-novyj-novyj-god/">Читать полностью &rarr;</a></p>
-		
-</article>
-    
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>22 декабря 2017</time>
 	<h1><a class="link-title" href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Упрощаем получение карточек на распродаже&nbsp;Steam</a></h1>
 	
 	<figure class="thumbnail">
@@ -198,11 +128,12 @@
 
 
 	
-		<p><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>14 ноября 2017</time>
 	<h1><a class="link-title" href="/blog/elementary-os/">elementary<span class="caps">OS</span></a></h1>
 	
 	<figure class="thumbnail">
@@ -215,11 +146,12 @@
 
 
 	
-		<p><a href="/blog/elementary-os/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/elementary-os/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 9 ноября 2017</time>
 	<h1><a class="link-title" href="/blog/va11halla/"><span class="caps">VA</span>-11&nbsp;Hall-A</a></h1>
 	
 	<figure class="thumbnail">
@@ -232,22 +164,24 @@
 
 
 	
-		<p><a href="/blog/va11halla/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/va11halla/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 8 октября 2017</time>
 	<h1><a class="link-title" href="/blog/svoi-shrifty-v-egee/">Свои шрифты в&nbsp;Эгее</a></h1>
 	
 	<p>Меня тут спрашивают «Как прикрутить свои шрифты к Эгее, но не от Google Fonts?», а потому, расскажу на примере стандартного шаблона <code class="highlighter-rouge">plain</code> и движка стабильной версии <code class="highlighter-rouge">3118</code>.</p>
 
 
 	
-		<p><a href="/blog/svoi-shrifty-v-egee/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/svoi-shrifty-v-egee/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 3 октября 2017</time>
 	<h1><a class="link-title" href="/blog/darkwood/">Darkwood</a></h1>
 	
 	<figure class="thumbnail">
@@ -260,44 +194,48 @@
 
 
 	
-		<p><a href="/blog/darkwood/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/darkwood/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 1 октября 2017</time>
 	<h1><a class="link-title" href="/blog/uiljam-zinser-kak-pisat-horosho/">Уильям Зинсер «Как писать&nbsp;хорошо»</a></h1>
 	
 	<p>Читая различных блогеров так или иначе стала сталкиваться с упоминаниями книги Уиляма Зинсера «Как писать хорошо», как практическое руководство к написанию самых лучших статей, заметок, репортажей и прочих нехудожественных текстов. А потому, тоже не смогла обойти её стороной. В своей книге, впервые появившейся на свет еще в эпоху печатных машинок, в далеком 1976 году, переизданной и дополненной около тридцати раз, Уильям Зинсер рассказывает и приводит примеры правильного текста, дает советы о том как писать интересно и избавится от «воды». В целом, «Как писать хорошо» сама по себе является примером того, как стоит писать нехудожественную литературу - она написана понятным и простым языком в форме непринужденной беседы автора с читателем. На протяжении всей книги автор дает множество полезных советов и примеров, которые могут помочь сделать текст лучше.</p>
 
 
 	
-		<p><a href="/blog/uiljam-zinser-kak-pisat-horosho/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/uiljam-zinser-kak-pisat-horosho/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>16 сентября 2017</time>
 	<h1><a class="link-title" href="/blog/ustanavlivaem-jekyll-na-mac/">Устанавливаем Jekyll на Mac&nbsp;<span class="caps">OS</span></a></h1>
 	
 	<p>В продолжении темы локальной установки Jekyll, на этот раз небольшой гайд для пользователей Mac <span class="caps">OS.</span></p>
 
 
 	
-		<p><a href="/blog/ustanavlivaem-jekyll-na-mac/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/ustanavlivaem-jekyll-na-mac/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 4 сентября 2017</time>
 	<h1><a class="link-title" href="/blog/ustanavlivaem-jekyll-na-windows/">Устанавливаем Jekyll на&nbsp;Windows</a></h1>
 	
 	<p>По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на <a href="http://jekyllrb.com/" rel="nofollow" target="_blank">Jekyll</a>, а значит ограничиваться <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a> стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в <code class="highlighter-rouge">master</code> ветке репозитория, а собранный сайт в ветке <code class="highlighter-rouge">gh-pages</code>, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.</p>
 
 
 	
-		<p><a href="/blog/ustanavlivaem-jekyll-na-windows/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/ustanavlivaem-jekyll-na-windows/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 2 сентября 2017</time>
 	<h1><a class="link-title" href="/blog/vse-na-svete-iz-plastmassy/">Все на свете из&nbsp;пластмассы</a></h1>
 	
 	<figure class="thumbnail">
@@ -310,31 +248,47 @@
 
 
 	
-		<p><a href="/blog/vse-na-svete-iz-plastmassy/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/vse-na-svete-iz-plastmassy/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
+        <article class="space-in-v-kilo-xs post">
+	<time>27 августа 2017</time>
+	<h1><a class="link-title" href="/blog/aseprite/">Aseprite</a></h1>
+	
+	<p>Очередная замечательная программа на просторах <a href="http://store.steampowered.com/app/431730/Aseprite/" rel="nofollow" target="_blank">Steam</a>, идеальна для рисования и анимирования пиксель-артов. Имеет стандартный набор инструментов, готовые палитры, слои и временную линию для покадровой отрисвоки. В целом позволяет рисовать и анимировать даже при полном неумении этого делать, а при должном опыте и сноровке можно нарисовать по истине <a href="http://steamcommunity.com/app/431730/images/" rel="nofollow" target="_blank">отличные арты</a>. Работает на Windows, Linux и Mac<span class="caps">OS.</span> Сохраняет картинки во множестве форматов и даже в четырёхсот-процентном масштабе без потери качества. Словом, благодаря Aseprite можно нарисовать и анимировать свою собственную <a href="http://store.steampowered.com/app/105600/Terraria/" rel="nofollow" target="_blank">Terraria</a>.</p>
+
+
+	
+		<p><a href="/blog/aseprite/">Читать полностью &rsaquo;</a></p>
+		
+</article>
+    
+
+    <a class="pagination__next" href="/blog/page-3/"></a>
 </section>
 
-
-	<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<noscript>
+    
+	<nav class="row row-between-sm space-auto-h-xs space-in-bottom-kilo-xs linel pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 			
 				<a class="link" rel="prev" href="/blog/page-3/">&lsaquo; Ранее</a>
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 2 из 9</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница 2 из 9</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 			
 				<a class="link" rel="next" href="/blog/">Позднее &rsaquo;</a>
 			
 		</span>
 	</nav>
 
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+</noscript>
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time>2015 - 2018</time>
@@ -344,8 +298,8 @@
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -371,23 +325,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -402,6 +341,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

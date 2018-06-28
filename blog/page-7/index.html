@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -88,104 +88,34 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Блог</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Блог</span><meta property="position" content="2" />
-			</li>
-			
-</ol></span>
-					
-					<span class="col-xl-shrink previous next">
-						
-							<a class="link" href="/blog/page-8/" rel="prev">&lsaquo; Ранее</a>
-						
-						
-							<a class="space-out-left-nano-xs link" href="/blog/page-6/" rel="next">Позднее &rsaquo;</a>
-						
-					</span>
-					
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-<style type="text/css">
-	.sidebar .background .bg {
-		background-image: url('/static/images/background/bg2.jpg');
-	}
-</style>
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <section class="slide-up-fade-in content blog-list">
+</header>
+<section class="slide-up-fade-in space-auto-h-xs content blog-list posts linel">
     
-        <article class=" post">
-	<h1><a class="link-title" href="/blog/life-is-strange-obzor/">Life Is&nbsp;Strange</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/life-is-strange-obzor/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525707846/thumb_cd97kx.png">
-		</a>
-	</figure>
-	
-	<p>Вот и подошла к концу полюбившаяся многим приключенческая история от французской студии Dontnod Entertainment. Life is Strange детально проработанное, качественно поставленное интерактивное кино с запоминающимися персонажами, местами и событиями. С выходом последнего, пятого эпизода, хотелось бы рассмотреть все аспекты этого уникального игрового произведения.</p>
-
-
-	
-		<p><a href="/blog/life-is-strange-obzor/">Читать полностью &rarr;</a></p>
-		
-</article>
-    
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>28 октября 2015</time>
 	<h1><a class="link-title" href="/blog/retrospektiva-prey/">Ретроспектива ·&nbsp;Prey</a></h1>
 	
 	<figure class="thumbnail">
@@ -198,11 +128,12 @@
 
 
 	
-		<p><a href="/blog/retrospektiva-prey/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/retrospektiva-prey/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>16 октября 2015</time>
 	<h1><a class="link-title" href="/blog/soma-transmission/"><span class="caps">SOMA</span> ·&nbsp;Transmission</a></h1>
 	
 	<figure class="thumbnail">
@@ -215,11 +146,12 @@
 
 
 	
-		<p><a href="/blog/soma-transmission/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/soma-transmission/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>15 октября 2015</time>
 	<h1><a class="link-title" href="/blog/minecraft-story-mode/">Minecraft: Story&nbsp;Mode</a></h1>
 	
 	<figure class="thumbnail">
@@ -236,11 +168,12 @@
 
 
 	
-		<p><a href="/blog/minecraft-story-mode/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/minecraft-story-mode/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>11 октября 2015</time>
 	<h1><a class="link-title" href="/blog/the-flame-in-the-flood/">The Flame in the&nbsp;Flood</a></h1>
 	
 	<figure class="thumbnail">
@@ -253,11 +186,12 @@
 
 
 	
-		<p><a href="/blog/the-flame-in-the-flood/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/the-flame-in-the-flood/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 7 октября 2015</time>
 	<h1><a class="link-title" href="/blog/retrospektiva-kosmicheskie-reyndzhery/">Ретроспектива · Космические&nbsp;рейнджеры</a></h1>
 	
 	<figure class="thumbnail">
@@ -270,11 +204,12 @@
 
 
 	
-		<p><a href="/blog/retrospektiva-kosmicheskie-reyndzhery/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/retrospektiva-kosmicheskie-reyndzhery/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 3 октября 2015</time>
 	<h1><a class="link-title" href="/blog/the-beginners-guide/">The Beginner’s&nbsp;Guide</a></h1>
 	
 	<figure class="thumbnail">
@@ -287,11 +222,12 @@
 
 
 	
-		<p><a href="/blog/the-beginners-guide/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/the-beginners-guide/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 1 октября 2015</time>
 	<h1><a class="link-title" href="/blog/armikrog-19-let-spustya/">Armikrog · 19 лет&nbsp;спустя</a></h1>
 	
 	<figure class="thumbnail">
@@ -304,11 +240,12 @@
 
 
 	
-		<p><a href="/blog/armikrog-19-let-spustya/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/armikrog-19-let-spustya/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>23 сентября 2015</time>
 	<h1><a class="link-title" href="/blog/soma/"><span class="caps">SOMA</span></a></h1>
 	
 	<figure class="thumbnail">
@@ -321,11 +258,12 @@
 
 
 	
-		<p><a href="/blog/soma/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/soma/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>19 сентября 2015</time>
 	<h1><a class="link-title" href="/blog/the-long-dark/">The Long&nbsp;Dark</a></h1>
 	
 	<figure class="thumbnail">
@@ -338,31 +276,53 @@
 
 
 	
-		<p><a href="/blog/the-long-dark/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/the-long-dark/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
+        <article class="space-in-v-kilo-xs post">
+	<time> 9 сентября 2015</time>
+	<h1><a class="link-title" href="/blog/dont-starve/">Don’t&nbsp;Starve</a></h1>
+	
+	<figure class="thumbnail">
+		<a href="/blog/dont-starve/" class="link-photo">
+			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525711534/thumb_y2owln.png">
+		</a>
+	</figure>
+	
+	<p>Приключенческая, изометрическая игра в жанре выживания. Don’t Starve создавалась независимой студией Klei Entertainment и вышла в релиз уже довольно давно, а именно, 23 апреля 2013. Игра имеет открытый, случайно генерируемый мир, а также roguelike составляющую. А в общем, является довольно милой, но сложной выживалкой.</p>
+
+
+	
+		<p><a href="/blog/dont-starve/">Читать полностью &rsaquo;</a></p>
+		
+</article>
+    
+
+    <a class="pagination__next" href="/blog/page-8/"></a>
 </section>
 
-
-	<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<noscript>
+    
+	<nav class="row row-between-sm space-auto-h-xs space-in-bottom-kilo-xs linel pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 			
 				<a class="link" rel="prev" href="/blog/page-8/">&lsaquo; Ранее</a>
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 7 из 9</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница 7 из 9</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 			
 				<a class="link" rel="next" href="/blog/page-6/">Позднее &rsaquo;</a>
 			
 		</span>
 	</nav>
 
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+</noscript>
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time>2015 - 2018</time>
@@ -372,8 +332,8 @@
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -399,23 +359,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -430,6 +375,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

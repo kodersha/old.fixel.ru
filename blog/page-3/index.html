@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -88,109 +88,46 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Блог</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Блог</span><meta property="position" content="2" />
-			</li>
-			
-</ol></span>
-					
-					<span class="col-xl-shrink previous next">
-						
-							<a class="link" href="/blog/page-4/" rel="prev">&lsaquo; Ранее</a>
-						
-						
-							<a class="space-out-left-nano-xs link" href="/blog/page-2/" rel="next">Позднее &rsaquo;</a>
-						
-					</span>
-					
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-<style type="text/css">
-	.sidebar .background .bg {
-		background-image: url('/static/images/background/bg2.jpg');
-	}
-</style>
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <section class="slide-up-fade-in content blog-list">
+</header>
+<section class="slide-up-fade-in space-auto-h-xs content blog-list posts linel">
     
-        <article class=" post">
-	<h1><a class="link-title" href="/blog/aseprite/">Aseprite</a></h1>
-	
-	<p>Очередная замечательная программа на просторах <a href="http://store.steampowered.com/app/431730/Aseprite/" rel="nofollow" target="_blank">Steam</a>, идеальна для рисования и анимирования пиксель-артов. Имеет стандартный набор инструментов, готовые палитры, слои и временную линию для покадровой отрисвоки. В целом позволяет рисовать и анимировать даже при полном неумении этого делать, а при должном опыте и сноровке можно нарисовать по истине <a href="http://steamcommunity.com/app/431730/images/" rel="nofollow" target="_blank">отличные арты</a>. Работает на Windows, Linux и Mac<span class="caps">OS.</span> Сохраняет картинки во множестве форматов и даже в четырёхсот-процентном масштабе без потери качества. Словом, благодаря Aseprite можно нарисовать и анимировать свою собственную <a href="http://store.steampowered.com/app/105600/Terraria/" rel="nofollow" target="_blank">Terraria</a>.</p>
-
-
-	
-		<p><a href="/blog/aseprite/">Читать полностью &rarr;</a></p>
-		
-</article>
-    
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>24 августа 2017</time>
 	<h1><a class="link-title" href="/blog/ujutnyj-jekyll/">Уютный&nbsp;Jekyll</a></h1>
 	
 	<p>Внезапно, но блог сменил движок с <a href="/blog/egeya/">Эгеи</a> на Jekyll и тому было несколько причин. Во-первых, в блог я пишу не так часто, иногда и вовсе раз в несколько месяцев, поэтому нет смысла содержать полноценный хостинг. Во-вторых, Jekyll представляет собой статический сайт без какого-либо php и mysql, соответственно страницы загружаются если не моментально, то явно гораздо быстрее, в отличие от сайта на хостинге который, ко всему прочему, был не очень то быстр. В-третьих, Jekyll базируется на GitHub Pages, следовательно, не придется беспокоится об оплате хостинга, а сайт всегда будет доступен из репозитория.</p>
 
 
 	
-		<p><a href="/blog/ujutnyj-jekyll/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/ujutnyj-jekyll/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 3 августа 2017</time>
 	<h1><a class="link-title" href="/blog/the-long-dark-wintermute/">The Long Dark:&nbsp;Wintermute</a></h1>
 	
 	<figure class="thumbnail">
@@ -203,11 +140,12 @@
 
 
 	
-		<p><a href="/blog/the-long-dark-wintermute/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/the-long-dark-wintermute/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>19 июня 2017</time>
 	<h1><a class="link-title" href="/blog/stardew-valley/">Stardew&nbsp;Valley</a></h1>
 	
 	<figure class="thumbnail">
@@ -220,11 +158,12 @@
 
 
 	
-		<p><a href="/blog/stardew-valley/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/stardew-valley/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 9 мая 2017</time>
 	<h1><a class="link-title" href="/blog/what-remains-of-edith-finch/">What Remains of Edith&nbsp;Finch</a></h1>
 	
 	<figure class="thumbnail">
@@ -237,33 +176,36 @@
 
 
 	
-		<p><a href="/blog/what-remains-of-edith-finch/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/what-remains-of-edith-finch/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>29 апреля 2017</time>
 	<h1><a class="link-title" href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для&nbsp;Эгеи</a></h1>
 	
 	<p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.</p>
 
 
 	
-		<p><a href="/blog/pishem-svoy-shablon-dlya-egei/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/pishem-svoy-shablon-dlya-egei/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>10 апреля 2017</time>
 	<h1><a class="link-title" href="/blog/wallpaper-engine/">Wallpaper&nbsp;Engine</a></h1>
 	
 	<p>Наткнулась тут <a href="http://store.steampowered.com/app/431960/" rel="nofollow" target="_blank">в Steam</a> на программу для Windows — Wallpaper Engine, которая возвращает во времена Rainmeter и позволяет устанавливать в качестве фона рабочего стола зацикленные видео и прочие интерактивные вещи с возможностью тонкой настройки каждого валлпапера. Ко всему прочему обои можно создавать собственноручно (Для этого в Wallpaper Engine есть свой <span class="caps">3D</span> редактор) — а потому, в мастерской Steam имеется больше семидесяти тысяч заставок созданных пользователями, начиная от аниме и мемов, заканчивая интерактивной моделью Солнечной системы в стиле пиксель-арт.</p>
 
 
 	
-		<p><a href="/blog/wallpaper-engine/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/wallpaper-engine/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>29 марта 2017</time>
 	<h1><a class="link-title" href="/blog/peace-death/">Peace,&nbsp;Death!</a></h1>
 	
 	<figure class="thumbnail">
@@ -276,22 +218,24 @@
 
 
 	
-		<p><a href="/blog/peace-death/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/peace-death/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>26 марта 2017</time>
 	<h1><a class="link-title" href="/blog/leaks-shablon-dlya-egei/">Leaks · Шаблон для&nbsp;Эгеи</a></h1>
 	
 	<p>Собственно говоря шаблонов для Эгеи мало, точнее их вовсе нет. А потому, я любезно выкладываю на <a href="https://github.com/sasha-travkina/blogengine-themes-leaks" rel="nofollow" target="_blank">github</a> шаблон Leaks который сваяла для своего блога на <a href="http://blogengine.ru/" rel="nofollow" target="_blank">Эгее <span class="caps">2.6</span></a>.</p>
 
 
 	
-		<p><a href="/blog/leaks-shablon-dlya-egei/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/leaks-shablon-dlya-egei/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>18 марта 2017</time>
 	<h1><a class="link-title" href="/blog/znakomstvo-s-mac/">Знакомство с&nbsp;Mac</a></h1>
 	
 	<figure class="thumbnail">
@@ -304,31 +248,53 @@
 
 
 	
-		<p><a href="/blog/znakomstvo-s-mac/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/znakomstvo-s-mac/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
+        <article class="space-in-v-kilo-xs post">
+	<time>10 марта 2017</time>
+	<h1><a class="link-title" href="/blog/resident-evil-7/">Resident Evil 7:&nbsp;Biohazard</a></h1>
+	
+	<figure class="thumbnail">
+		<a href="/blog/resident-evil-7/" class="link-photo">
+			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525631001/thumb_a4yqrx.png">
+		</a>
+	</figure>
+	
+	<p>Седьмая часть из серии игр Resident Evil стала той частью, с которой началось мое знакомство с серией в целом, не считая отрывков видеопрохождений и всяческих обзоров предыдущих частей, разумеется. А потому, мое мнение в целом не будет основываться на предыдущих частях и станет по возможности максимально объективным, как об отдельно взятой игре. К слову, хочется отметить, что главная особенность Resident Evil 7 заключается в том, что это очередное переосмысление серии  — впервые появился вид от первого лица, а сама игра постаралась вернуться к истокам жанра: от экшена в сторону сурвайвл-хоррора, квеста с поиском предметов и бродилки в декорациях старого особняка.</p>
+
+
+	
+		<p><a href="/blog/resident-evil-7/">Читать полностью &rsaquo;</a></p>
+		
+</article>
+    
+
+    <a class="pagination__next" href="/blog/page-4/"></a>
 </section>
 
-
-	<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<noscript>
+    
+	<nav class="row row-between-sm space-auto-h-xs space-in-bottom-kilo-xs linel pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 			
 				<a class="link" rel="prev" href="/blog/page-4/">&lsaquo; Ранее</a>
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 3 из 9</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница 3 из 9</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 			
 				<a class="link" rel="next" href="/blog/page-2/">Позднее &rsaquo;</a>
 			
 		</span>
 	</nav>
 
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+</noscript>
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time>2015 - 2018</time>
@@ -338,8 +304,8 @@
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -365,23 +331,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -396,6 +347,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -88,19 +88,19 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="page">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page">
 
-<section class="container">
-	<div class="space-auto-h-xs content linel">
-		<header class="space-in-v-mili-xs home">
-			<a class="link-home" href="/" title="Назад"><i class="fa fa-chevron-left"></i></a>
-		</header>
+<section class="space-auto-h-xs content linel">
+	<header class="space-in-v-mili-xs home">
+		<a class="link-home" href="/" title="Назад"><i class="fa fa-chevron-left"></i></a>
+	</header>
 
-		<div class="space-in-v-kilo-xl content">
-			<article class="slide-up-fade-in message">
-				<h1 id="привет">Привет</h1>
+	<div class="space-in-v-kilo-xl content">
+		<article class="slide-up-fade-in message">
+			<h1 id="привет">Привет</h1>
 
 <p>Меня зовут Александра Травкина.</p>
 
@@ -110,16 +110,20 @@
 
 <hr>
 
-<p>Для связи <a target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a target="_blank" href="https://t.me/sashatravkina" rel="nofollow">телеграм</a> или <a target="_blank" href="https://icq.com/people/633328999" rel="nofollow"><span class="caps">ICQ</span></a>.</p>
+<div class="post">
+    <div block="">
+        <p>Для связи <a target="_blank" href="mailto:hello@milkleaks.ru">электропочта</a>, <a target="_blank" href="https://t.me/sashatravkina" rel="nofollow">телеграм</a> или <a target="_blank" href="https://icq.com/people/633328999" rel="nofollow"><span class="caps">ICQ</span></a>.</p>
+        <p>Еще вы можете <a href="/donate">пожертвовать</a> мне на булочку.</p>
+    </div>
+</div>
 
 
-			</article>
-		</div>
+		</article>
 	</div>
 </section>
 
 <style type="text/css">
-	.container {
+	body {
 		background-image: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url('/static/images/about.jpg');
 	}
 </style>
@@ -137,6 +141,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>

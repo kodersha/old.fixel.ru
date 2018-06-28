@@ -59,7 +59,7 @@
 		<script type="text/javascript" src="/static/js/jquery.js"></script>
 <script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
 <script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/readmore/readmore.js"></script>
+<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
 		<script type="text/javascript">base_url = "https://milkleaks.ru";</script>
 		<script type="application/ld+json">
 
@@ -88,98 +88,34 @@
 
 </script>
 
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 
-	<body class="">
+	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper">
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        <section class="background">
-	<div class="bg"></div>
-	<div class="space-in-h-micro-xs space-in-h-base-sm space-out-h-zero-xs content">
-		<div class="space-in-v-mili-xs space-in-v-base-xl space-in-h-zero-xs space-auto-h-xs hidden-from-xl linel">
-			<header class="logo">
-				<a class="link-logo" href="/">
-					<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
-				</a>
-			</header>
+<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
+	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
+		<a class="link-logo" href="/blog/">
+			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Milkleaks">					
+		</a>
+	</div>
+	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
+		<div class="search-form">
+			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
+			<span class="search-button">
+				<i class="fa fa-search open" aria-hidden="true"></i>
+				<i class="fa fa-times close" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div class="space-auto-top-xs space-out-top-zero-xl space-in-top-base-xl space-in-bottom-mili-xs space-in-bottom-zero-xl space-auto-h-xs linel title">
-			<h1 class="space-out-v-zero-xs">Блог</h1>
-			
-		</div>
-		<div class="space-auto-top-xs space-in-bottom-base-xl space-in-h-zero-xs space-auto-h-xs hidden-upto-xl linel">
-			<nav class="row row-between-sm pagination aside">			
-				
-				<span class="col-xl breadcrumbs page-number"><ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="https://milkleaks.ru"><span property="name">Главная</span><meta property="position" content="1" /></a>
-			</li>
-			
-
-	
-
-	
-
-	
-
-
-	
-	
-		
-
-		
-			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<span property="name">Блог</span><meta property="position" content="2" />
-			</li>
-			
-</ol></span>
-					
-					<span class="col-xl-shrink previous next">
-						
-							<a class="link" href="/blog/page-6/" rel="prev">&lsaquo; Ранее</a>
-						
-						
-							<a class="space-out-left-nano-xs link" href="/blog/page-4/" rel="next">Позднее &rsaquo;</a>
-						
-					</span>
-					
-				
-			</nav>
-		
+		<div class="dropdown">
+			<ul class="results" id="results-container"></ul>
 		</div>
 	</div>
-</section>
-
-
-<style type="text/css">
-	.sidebar .background .bg {
-		background-image: url('/static/images/background/bg2.jpg');
-	}
-</style>
-
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper ">
-            <section class="slide-up-fade-in content blog-list">
+</header>
+<section class="slide-up-fade-in space-auto-h-xs content blog-list posts linel">
     
-        <article class=" post">
-	<h1><a class="link-title" href="/blog/seriya-knig-metro-dmitriya-gluhovskogo/">Дмитрий Глуховский&nbsp;«Метро»</a></h1>
-	
-	<p>Одним из моих любимых жанров в книгах, фильмах и играх является постапокалипсис, а потому, я не могла не полюбить такую атмосферную, загадочную и противоречивую вселенную как «Метро 2033». Мое знакомство с ней началось с игр и вскоре продолжилось книгами вселенной от всевозможных вольных авторов, с персональным виденьем вселенной, разномастными персонажами и качеством повествования. Однако до чтения оригинальных произведений Глуховского, положившего начало целой вселенной, дело почему-то так и не доходило. И вот в очередной раз перепройдя Metro Last Light, я все же решилась открыть для себя и эти три книги.</p>
-
-
-	
-		<p><a href="/blog/seriya-knig-metro-dmitriya-gluhovskogo/">Читать полностью &rarr;</a></p>
-		
-</article>
-    
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time> 8 апреля 2016</time>
 	<h1><a class="link-title" href="/blog/party-hard/">Party&nbsp;Hard</a></h1>
 	
 	<figure class="thumbnail">
@@ -192,11 +128,12 @@
 
 
 	
-		<p><a href="/blog/party-hard/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/party-hard/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>28 марта 2016</time>
 	<h1><a class="link-title" href="/blog/star-wars-the-force-awakens/">Star Wars The Force&nbsp;Awakens</a></h1>
 	
 	<figure class="thumbnail">
@@ -209,22 +146,24 @@
 
 
 	
-		<p><a href="/blog/star-wars-the-force-awakens/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/star-wars-the-force-awakens/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>19 марта 2016</time>
 	<h1><a class="link-title" href="/blog/mnenie-o-the-witcher-3-wild-hunt/">Мнение о The Witcher 3 Wild&nbsp;Hunt</a></h1>
 	
 	<p>Не так давно закончила прохождение основной сюжетной линии The Witcher 3 — Wild Hunt, а потому не могу не выразить своих о ней впечатлений. Надо сказать, что до «Дикой охоты» я не была знакома ни с самой серией игр, ни с серией романов Анджея Сапковского, да и в целом относилась к мирам «Ведьмака» довольно прохладно. Однако я так или иначе люблю всяческие Action <span class="caps">RPG</span> игры, игры с правом выбора и различными концовками (Например Mass Effect одна из любимых серий). И вот однажды, уже далеко после релиза, я все же надумала познакомится с «Ведьмаком» поближе, дабы узнать, не даром ли «Дикая охота» заслужила звание «Игры года», а вокруг неё образовалось столько обсуждений, всяческих похвал и яростной критики.</p>
 
 
 	
-		<p><a href="/blog/mnenie-o-the-witcher-3-wild-hunt/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/mnenie-o-the-witcher-3-wild-hunt/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>16 марта 2016</time>
 	<h1><a class="link-title" href="/blog/den-zhenskoy-solidarnosti/">День женской&nbsp;солидарности</a></h1>
 	
 	<figure class="thumbnail">
@@ -237,11 +176,12 @@
 
 
 	
-		<p><a href="/blog/den-zhenskoy-solidarnosti/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/den-zhenskoy-solidarnosti/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>22 февраля 2016</time>
 	<h1><a class="link-title" href="/blog/dying-light/">Dying&nbsp;Light</a></h1>
 	
 	<figure class="thumbnail">
@@ -254,11 +194,12 @@
 
 
 	
-		<p><a href="/blog/dying-light/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/dying-light/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>21 февраля 2016</time>
 	<h1><a class="link-title" href="/blog/dzhordzh-orujell-1984/">Джордж Оруэлл&nbsp;«1984»</a></h1>
 	
 	<figure class="thumbnail">
@@ -271,11 +212,12 @@
 
 
 	
-		<p><a href="/blog/dzhordzh-orujell-1984/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/dzhordzh-orujell-1984/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>12 февраля 2016</time>
 	<h1><a class="link-title" href="/blog/firewatch/">Firewatch</a></h1>
 	
 	<figure class="thumbnail">
@@ -288,22 +230,24 @@
 
 
 	
-		<p><a href="/blog/firewatch/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/firewatch/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>17 января 2016</time>
 	<h1><a class="link-title" href="/blog/ustanovka-flarum-na-centos-7/">Установка flarum на&nbsp;cent<span class="caps">OS</span></a></h1>
 	
 	<p>Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — <a href="http://flarum.org/" rel="nofollow" target="_blank">flarum</a>. Судя по тому, что уже есть, <span class="caps">CMS</span> довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на cent<span class="caps">OS</span> 7.</p>
 
 
 	
-		<p><a href="/blog/ustanovka-flarum-na-centos-7/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/ustanovka-flarum-na-centos-7/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
-        <article class="space-in-top-kilo-xs post">
+        <article class="space-in-v-kilo-xs post">
+	<time>10 января 2016</time>
 	<h1><a class="link-title" href="/blog/roskomnadzor-i-obhod-blokirovok/">«Роскомнадзор» и обход&nbsp;блокировок</a></h1>
 	
 	<p>Все чаще приходится сталкиваться с новостями о блокировке тех или иных сайтов, то торрент-трекеры, то lostfilm, то еще что нибудь. Законодательство старается ограничить доступ к бесплатному контенту, книгам, фильмам и играм, либо попросту блокирует сайты за неугодный контент, куда попадает все что заблагорассудится, от недовольства нынешним режимом власти, до ню фурри-арта, например. Лично мне кажется, что интернет должен быть свободным и никто не в праве решать, кому и что смотреть.
@@ -311,31 +255,53 @@
 
 
 	
-		<p><a href="/blog/roskomnadzor-i-obhod-blokirovok/">Читать полностью &rarr;</a></p>
+		<p><a href="/blog/roskomnadzor-i-obhod-blokirovok/">Читать полностью &rsaquo;</a></p>
 		
 </article>
     
+        <article class="space-in-v-kilo-xs post">
+	<time> 9 января 2016</time>
+	<h1><a class="link-title" href="/blog/byordmen/">Бёрдмэн</a></h1>
+	
+	<figure class="thumbnail">
+		<a href="/blog/byordmen/" class="link-photo">
+			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525702025/thumb_w7x763.png">
+		</a>
+	</figure>
+	
+	<p>О «Бёрдмене» мне доводилось слышать еще в прошлом году, но до просмотра фильма дело так и не доходило, вероятно из-за невнятного постера или непривлекательного описания сюжета. Тем не менее, «Бёрдмэн» — фильм не о очередном супергерое, но трагикомедия о нелегкой судьбе актеров, о пристрастиях современного зрителя, о упадке интереса к театру в угоду «попкорновго» кино. Фильм о закулисных дрязгах, эгоизме, тщеславии, внутренних конфликтах и, разумеется, творчестве. Мнение без спойлеров.</p>
+
+
+	
+		<p><a href="/blog/byordmen/">Читать полностью &rsaquo;</a></p>
+		
+</article>
+    
+
+    <a class="pagination__next" href="/blog/page-6/"></a>
 </section>
 
-
-	<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<noscript>
+    
+	<nav class="row row-between-sm space-auto-h-xs space-in-bottom-kilo-xs linel pagination">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
 			
 				<a class="link" rel="prev" href="/blog/page-6/">&lsaquo; Ранее</a>
 			
 		</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Страница: 5 из 9</span>
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница 5 из 9</span>
 		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
 			
 				<a class="link" rel="next" href="/blog/page-4/">Позднее &rsaquo;</a>
 			
 		</span>
 	</nav>
 
-            <footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+</noscript>
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
 		<div class="row">
 			<div class="col-xs">
 			Александра Травкина &copy; <time>2015 - 2018</time>
@@ -345,8 +311,8 @@
 			</div>
 		</div>
 	</div>
-	<section class="space-out-top-mili-xs space-in-top-mili-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm navigation">
-	<nav class="space-minus-top-nano-xs menu" id="menu">
+	<section class="space-auto-h-xs linel navigation">
+	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
 		<ol class="menu-content">
 			
 			
@@ -372,23 +338,8 @@
 			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
 		</ol>
 	</nav>
-	<div class="space-in-top-mili-xs search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
 </section>
 </footer>
-        </div>
-    </div>
-</div>
 
 		<!--[ JS ]-->
 		<!--[if lt IE 9]>
@@ -403,6 +354,5 @@
 <script type="text/javascript" src="/static/js/template.js"></script>
 
 <!--[ Lightbox ]-->
-		
 	</body>
 </html>
