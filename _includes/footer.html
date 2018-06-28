@@ -1,8 +1,8 @@
-<footer class="space-in-top-kilo-xs">	
-	<div class="copyright">
+<footer>	
+	<div class="space-auto-h-xs space-in-bottom-base-xs {% if page.id != 'index' %}linel {% endif %}copyright">
 		<div class="row">
 			<div class="col-xs">
-			{{ site.author }} &copy; <time>{% if page.path contains '_posts' %}{{ page.date | russian_date }}{% elsif page.path contains '_photos' %}{{ page.date | russian_date }}{% else %}2015 - {{ site.time | date: '%Y' }}{% endif %}</time>
+			{{ site.author }} &copy; <time>2015 - {{ site.time | date: '%Y' }}</time>
 			</div>
 			<div class="col-xs-shrink toggle">
 				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>

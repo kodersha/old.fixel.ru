@@ -1,11 +1,7 @@
 {% include _index/header.html %}
 
-<div class="stars">
-	<div id='stars'></div>
-	<div id='stars2'></div>
-    <div id='stars3'></div>
-</div>
-<div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper {% if page.wrapper %}{{ page.wrapper }}{% endif %}">
+<div class="space-auto-h-xs home">
+    {% include header.html %}
     {{ content }}
     {% include footer.html %}
 </div>

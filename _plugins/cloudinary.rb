@@ -21,11 +21,11 @@ module Jekyll
 
 			# Get the path
 			@image = @attributes['src']
-			@class = @attributes['class'] ? "#{@attributes['class']}" : ""
+			@class = @attributes['class'] ? " #{@attributes['class']}" : ""
 			@alt = @attributes['alt'] ? "<figcaption class=\"caption\">#{GitHub::Markup.render_s(GitHub::Markups::MARKUP_MARKDOWN, @attributes['alt'])}</figcaption>" : ""
 
 			"""
-			<figure class=\"#{@class} picture\">
+			<figure class=\"picture #{@class}\">
 				<a href=\"https://res.cloudinary.com/#{@cloud_name}/image/upload/#{@image}\" class=\"lightbox-image\" data-lightbox=\"image\">
 					<img src=\"https://res.cloudinary.com/#{@cloud_name}/image/upload/#{@cloud_size}/#{@image}\" />
 				</a>

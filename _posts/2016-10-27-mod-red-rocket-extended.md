@@ -9,7 +9,7 @@ image: v1525637623/thumb_dacobv.png
 
 <!-- more -->
 
-<div class="fotorama space">
+<div class="fotorama space full">
 	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046136/01_suakvv.png" />
 	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046130/02_beqdwp.png" />
 	<img src="https://res.cloudinary.com/milkleaks/image/upload/v1519046129/03_ramzq7.png" />

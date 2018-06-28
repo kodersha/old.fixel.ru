@@ -1,4 +1,9 @@
 .toc {
+	margin-bottom: @post-indent-bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: @post-indent-top;
+	max-width: @post-linel;
 	width: 100%;
 }
 
@@ -16,15 +21,6 @@
 	transform: translateX(1.1rem);
 	list-style: decimal;
 	line-height: 1.4;
-	color: @lightGray;
-
-	a {
-		color: @white;
-
-		&:hover {
-			color: @lightGray;
-		}
-	}
 }
 
 .is-collapsible {

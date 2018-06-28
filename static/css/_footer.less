@@ -47,37 +47,159 @@
 }
 
 //
-// .breadcrumbs
+// .search
 //
 
-.breadcrumb {
-    font-size: @glob-font-size;
-    font-family: @glob-font;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.search {
+    position: relative;
+    max-width: 18.75rem;
+    width: 100%;
     
-    &:after {
-        display: table;
-        clear: both;
-        content: '';
+    .search-form {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        border-radius: 50px;
+        position: relative;
+        margin-left: auto;
+        overflow: hidden;
+        height: 48px;
+        width: 48px;
+
+        .search-box {
+            font-size: @glob-font-size;
+            background: transparent;
+            visibility: hidden;
+            padding-right: 48px;
+            padding-left: 25px;
+            box-shadow: none;
+            border: none;
+            height: 100%;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+        .search-button {
+            font-size: @glob-subtext-size;
+            padding-bottom: 17px;
+            padding-right: 17px;
+            padding-left: 17px;
+            padding-top: 17px;
+            position: absolute;
+            color: #a9b1b5;
+            line-height: 0;
+            cursor: pointer;
+            display: block;
+            right: 0;
+            top: 0;
+            
+            i.close {
+                display: none;
+            }
+        }
+
+        @media @mmd {
+            background-color: @action;
+            max-width: 100%;
+            width: 100%;
+
+            .search-box {
+                visibility: visible;
+            }
+
+            .search-button {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.open {
+        .search-form {
+            background-color: @action;
+            width: 100%;
+
+            .search-box {
+                visibility: visible;
+            }
+        }
+        
+        .search-button {
+            padding-bottom: 17px;
+            padding-right: 19px;
+            padding-left: 19px;
+            padding-top: 17px;
+            
+            i.open {
+                display: none;
+            }
+            
+            i.close {
+                display: block;
+            }
+        }
+        
+        .dropdown {
+            visibility: visible;
+            display: block;
+
+            .results {
+                display: block;
+            }
+        }
     }
     
-    &-item {
-        line-height: 1.4;
-        float: left;
-    }
-}
+    .dropdown {
+        visibility: hidden;
+        position: relative;
+        display: none;
+        z-index: 100;
+        
+        .results {
+            background-color: @action;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            border-radius: 2px;
+            position: absolute;
+            list-style: none;
+            padding-left: 0;
+            display: none;
+            width: 100%;
+            bottom: 64px;
+            right: 0;
 
-.breadcrumb-item {
-    &:after {
-        display: inline-block;
-        padding-right: @nano;
-        padding-left: @nano;
-        content: '\00B7';
+            li {
+                font-size: @glob-font-size;
+                font-family: @glob-font;
+                padding-bottom: 10px;
+                padding-right: 25px;
+                padding-left: 25px;
+                padding-top: 10x;
+                
+                &:first-of-type {
+                    padding-top: 25px;
+                }
+                
+                &:last-of-type {
+                    padding-bottom: 25px;
+                }
+            }
+        }
+
+        @media @mmd {
+            visibility: visible;
+            display: block;
+
+            .results {
+                display: block;
+            }
+        }
     }
 
-    &:last-of-type:after {
-        content: none;
+    @media @mmd {
+        max-width: 100%;
     }
 }

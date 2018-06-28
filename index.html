@@ -15,8 +15,6 @@ pagination:
   per_page: 21
   tag: 'На главной'
 id: index
-class: black
-wrapper: max color-none
 ---
 
 <section class="slide-up-fade-in space-minus-top-nano-xs row list">
@@ -24,9 +22,12 @@ wrapper: max color-none
 	{% for post in paginator.posts %}
 		{% include _post/index.html %}
 	{% endfor %}
+	<a class="pagination__next" href="{{ paginator.next_page_path | beautify_url }}"></a>
 </section>
-<div class="space-in-top-nano-xs">
+<div class="space-in-top-nano-xs space-in-bottom-kilo-xs">
 	*Больше постов и заметок в <a href="{{ site.baseurl }}/blog/">блоге</a>.
 </div>
 
-{% include pagination.html %}
+<noscript>
+	{% include pagination.html %}
+</noscript>

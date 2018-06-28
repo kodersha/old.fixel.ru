@@ -1,15 +1,13 @@
-<nav class="row row-between-sm space-in-top-kilo-xs hidden-from-xl pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md previous">
+<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs {% if page.id != 'index' %}linel {% endif %}pagination">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
 		{% if page.previous.url %}
-			<a title="{{ page.previous.title }}" class="link" href="{{ page.previous.url }}">&lsaquo; Ранее</a>
+			<a class="link-subcontrol" href="{{ page.previous.url }}">&lsaquo; {{ page.previous.title }}</a><br>
 		{% endif %}
 	</span>
 
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md page-number">Запись: {{ page.index | plus: 1 }} из {{ site.posts | size }}</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md next">
+	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
 		{% if page.next.url %}
-			<a title="{{ page.next.title }}" class="link" href="{{ page.next.url }}">Позднее &rsaquo;</a>
+			<a class="link-subcontrol" href="{{ page.next.url }}">{{ page.next.title }} &rsaquo;</a>
 		{% endif %}
 	</span>
 </nav>

@@ -16,4 +16,4 @@ color: white
 
 <!-- more -->
 
-{% youtube id:nsgQcRxf3e0 %}
+{% youtube id:nsgQcRxf3e0 class:full %}

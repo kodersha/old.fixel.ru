@@ -7,7 +7,7 @@
 //
 
 .search {
-    max-width: 21.375rem;
+    max-width: 17.5rem;
     position: relative;
     
     .search-form {
@@ -56,7 +56,7 @@
             }
         }
 
-        @media @mxl {
+        @media @mmd {
             background-color: @action;
             max-width: 100%;
             width: 100%;
@@ -126,7 +126,7 @@
             bottom: 72px;
             right: 0;
 
-            @media @xl {
+            @media @md {
                 top: 24px;
                 bottom: inherit;
             }
@@ -149,7 +149,7 @@
             }
         }
 
-        @media @mxl {
+        @media @mmd {
             visibility: visible;
             display: block;
 
@@ -159,7 +159,7 @@
         }
     }
 
-    @media @mxl {
+    @media @mmd {
         max-width: 100%;
     }
 }
@@ -170,9 +170,7 @@
 
 &.logo {
     @logoSize: 48px;
-
     position: relative;
-    display: block;
 
     img {
         border-radius: 50%;

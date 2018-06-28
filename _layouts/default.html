@@ -1,15 +1,7 @@
 {% include _index/header.html %}
 
-<div class="row space-out-zero-xs height-full">
-    <div class="col-xs-12 col-xl-6 space-in-zero-xs sidebar">
-        {% include sidebar.html %}
-    </div>
-    <div class="col-xs-12 col-xl-6 col-xl-offset-6 space-in-h-zero-xs height-full">
-        <div class="space-auto-h-xs space-in-h-micro-xs space-in-h-base-sm space-in-top-mili-xs space-in-top-base-xl space-in-bottom-base-xs wrapper {% if page.wrapper %}{{ page.wrapper }}{% endif %}">
-            {{ content }}
-            {% include footer.html %}
-        </div>
-    </div>
-</div>
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
 
 {% include _index/footer.html %}

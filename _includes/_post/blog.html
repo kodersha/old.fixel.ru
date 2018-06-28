@@ -1,4 +1,5 @@
-<article class="{% unless forloop.first %}space-in-top-kilo-xs{% endunless %} post">
+<article class="space-in-v-kilo-xs post">
+	<time>{{ post.date | russian_date }}</time>
 	<h1><a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a></h1>
 	{% if post.image %}
 	<figure class="thumbnail">
@@ -9,6 +10,6 @@
 	{% endif %}
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
 	{% if post.content contains '<!-- more -->' %}
-		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rarr;</a></p>
+		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rsaquo;</a></p>
 	{% endif %}	
 </article>

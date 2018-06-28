@@ -14,9 +14,8 @@
     line-height: @post-subtext-linel;
     color: @post-subtext-color;
 
-    @media @md {
-        margin-bottom: @post-bottom + @post-indent;
-        margin-top: @post-top + @post-indent;
+    @media @xl {
+        grid-column: aside;
     }
 
     p {
@@ -35,8 +34,8 @@
     margin-top: @post-top;
 
     @media @sm {
-        margin-bottom: @post-bottom + @post-indent;
-        margin-top: @post-top + @post-indent;
+        margin-bottom: @post-indent-bottom;
+        margin-top: @post-indent-top;
     }
 
     &-zero {
@@ -60,3 +59,10 @@
         margin-left: -@base;
     }    
 }
+
+.full {
+    @media @xl {
+        grid-column: left / right;
+        max-width: none;
+    }
+} 

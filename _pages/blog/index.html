@@ -3,13 +3,16 @@ layout: default
 title: Блог
 pagination: 
   enabled: true
-cover: /static/images/background/bg2.jpg
 ---
 
-<section class="slide-up-fade-in content blog-list">
+<section class="slide-up-fade-in space-auto-h-xs content blog-list posts linel">
     {% for post in paginator.posts %}
         {% include _post/blog.html %}
     {% endfor %}
+
+    <a class="pagination__next" href="{{ paginator.next_page_path | beautify_url }}"></a>
 </section>
 
-{% include pagination.html %}
+<noscript>
+    {% include pagination.html %}
+</noscript>

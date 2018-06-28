@@ -6,25 +6,26 @@
     @glob-subtext-size: 0.875rem;
     @glob-subtext-color: @darkGray;
 
-    @glob-header: @openSans;
+    @glob-header: 'FuturaDemiC', sans-serif;
 
     @glob-linel: 43.75rem;
-    @glob-width: 50rem;
+    @glob-width: 75rem;
 
     @fadeInSpeed: 0.1s;
 }
 
 .post-settings() {
-    @post-top: 0;
-    @post-bottom: 0.875rem;
-    @post-indent: 0.625rem;
+    @post-top: 1rem;
+    @post-bottom: 1rem;
+    @post-indent-top: 2rem;
+    @post-indent-bottom: 2rem;
     @post-linel: @glob-linel;
 
     @post-text-color: @black;
 
     @post-subtext-color: @glob-subtext-color;
     @post-subtext-size: @glob-subtext-size;
-    @post-subtext-linel: 1.42857;
+    @post-subtext-linel: 1.4;
     @post-subtext-weight: 400;
 }
 
@@ -42,17 +43,17 @@
 
     .global-settings();
 
-    @fz: 12.8px;                                    // default font-size
-    @rythm: 19.2px;                                 // vertical rythm = line-height in pixels
+    @fz: 14.222222222222222px;                                      // default font-size
+    @rythm: 22.755555555555556px;                                   // vertical rythm = line-height in pixels
     @fz-small: 14px;                                // smaller font-size (px)
     @linel: @glob-linel;                            // max-width for text (any css value)
 
-    @font-body: @ptSerif;                            // body
+    @font-body: @openSans;                            // body
     @font-headers: @glob-header;                    // headers
     @font-code: @code;                              // code (duplication is intentional)
 
-    @scale1: 1.040;                    // header size multiplier for small screens
-    @scale2: 1.040;                    // header size multiplier for large screens
+    @scale1: 1.090;                    // header size multiplier for small screens
+    @scale2: 1.140;                    // header size multiplier for large screens
 
     // margin for body, articles and sections (any css value)
     @structure-margin: 0;

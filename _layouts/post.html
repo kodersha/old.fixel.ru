@@ -2,7 +2,20 @@
 layout: default
 ---
 
-<article class="slide-up-fade-in content post{% if page.toc == 'true' %} js-toc-content{% endif %}">
+<article class="slide-up-fade-in space-auto-h-xs content post{% if page.toc == 'true' %} js-toc-content{% endif %}">
+	<time class="single">{{ page.date | russian_date }}</time>
+	{% if page.title %}
+		<h1 class="title">{{ page.title | improve }}</h1>
+	{% endif %}
+	{% if page.cover %}
+		<figure class="cover">
+			<img src="{{ page.cover }}">
+		</figure>
+	{% endif %}
+    {% if page.toc == "true" %}
+        <div class="toc js-toc"></div>
+	{% endif %}
+	
 	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
 
 	{% include _post/gamecard.html %}

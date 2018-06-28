@@ -13,20 +13,19 @@ html {
 body {
     -webkit-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
     color: @glob-font-color;
+    letter-spacing: 0.004em;
     font-weight: 400;
     cursor: default;
-    height: 100%;
-    margin: 0;
 }
 
 @media @msm {
     body {
-        font-size: 1.1em;
-        line-height: 1.4;
+        font-size: 1em;
+        line-height: 1.5;
     }
 }
 
@@ -36,8 +35,10 @@ input, textarea, select, button {
 
 h1, h2, h3, h4, h5, h6 {
     .post-settings();
-    margin-bottom: @post-bottom;
-    letter-spacing: -.04rem;
+
+    letter-spacing: -0.02em;
+    max-width: @post-linel;
+    margin-bottom: @post-bottom;  
 }
 
 p {
@@ -75,6 +76,10 @@ body {
         .toggle-menu {
             color: @white !important;
         }
+
+        .link-about {
+            color: @white;
+        }
     }
 }
 
@@ -83,40 +88,25 @@ body {
 //
 
 .wrapper {
-    background-color: @white;
+    max-width: @glob-width;
     flex-direction: column;
     min-height: 100%;
-    max-width: @glob-linel + 5;
     display: flex;
+    margin: 0 auto;
     width: 100%;
-
-    @media @xl {
-        &.extended {
-            max-width: @glob-width + 5;
-        }
-    }
 
     .content {
         flex: 1 0 auto;
     }
 
     &.max {
-        max-width: 90rem;
-    }
-
-    &.color {
-        &-black {
-            background-color: @black;
-        }
-
-        &-none {
-            background-color: transparent;
-        }
+        max-width: @glob-width;
     }
 }
 
 .linel {
     max-width: @glob-linel;
+    width: 100%;
 }
 
 //
@@ -141,24 +131,61 @@ header {
 
 .post {
     .post-settings();
+    width: 100%;
 
     /* Body */
 
-    .title {
-        &:first-of-type {
-            @media @xl {
-                font-size: 1.425em;
+    time {
+        margin-bottom: @post-bottom - 0.5;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 43.75rem;
+        width: 100%;
+
+        font-family: @glob-font;
+        font-size: @glob-subtext-size;
+        color: @glob-subtext-color;
+        display: block;
+
+        @media @md {
+            &.single {
+                text-align: center;
             }
         }
     }
 
+    .title {
+        @media @xl {
+            font-size: 2.25em;
+        }
+        @media @md {
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
     h1, h2, h3, h4, h5, h6 {
-        display: inline-block;
+        margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: @post-linel;
         width: 100%;
     }
 
     p {
-        display: inline-block;
+        margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: @post-top;
+        max-width: @post-linel;
+        width: 100%;
+
         color: @post-text-color;
     }
 
@@ -173,13 +200,15 @@ header {
     @media @sm {
         & > figure {
             img {
-                border-radius: 2px;
+                border-radius: 3px;
             }
         }
     }
 
     hr {
         margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
         max-width: @post-linel;
         width: 100%;
@@ -199,21 +228,23 @@ header {
         &.easy {
             background-color: #e9eff3;
             height: 1px;
-            width: 100%;
+            width: 10%;
 
             &::before {
                 content: none;
             }
 
             @media @md {
-                margin-bottom: @post-bottom + @post-indent;
-                margin-top: @post-top + @post-indent;
+                margin-bottom: @post-indent-bottom;
+                margin-top: @post-indent-top;
             }
         }
     }
 
     ul:not([class]), ol:not([class]) {
         margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
         max-width: @post-linel;
         width: 100%;
@@ -231,33 +262,64 @@ header {
         }
     }
 
+    p, li  {
+        a {
+            vertical-align: bottom;
+            display: inline-block;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            outline: none;
+            border: 0;
+
+            &::before {
+                background-color: rgba(41, 128, 185, .10);
+                -webkit-transition: -webkit-transform 0.2s;
+                transition: transform 0.2s;
+                -webkit-transform: translateY(95%);
+                transform: translateY(95%);
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                left: 0;
+                top: 0;
+            }
+
+            &:hover::before {
+                background-color: rgba(192, 57, 43, .10);
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+    }
+
     /* blockquote */
 
     blockquote {
-        margin-bottom: @post-bottom + @post-indent;
-        margin-top: @post-top + @post-indent;
+        margin-bottom: @post-indent-bottom;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: @post-indent-top;
         max-width: @post-linel;
-        display: inline-block;
-        padding: 0;
         width: 100%;
+        padding: 0;
 
         p {
-            font-family: @ptSerif;
-            font-size: @glob-font-size + 0.45;
-            font-style: italic;
+            font-size: @glob-font-size + 0.3;
+            line-height: 1.5;
             margin: 0;
         }
     }
 
     figure {
-        margin-bottom: @post-bottom + @post-indent;
-        margin-top: @post-top + @post-indent;
-        position: relative;
-        display: inline-block;
+        margin-bottom: @post-indent-bottom;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: @post-indent-top;
         width: 100%;
-        width: -moz-available;
-        width: -webkit-fill-available;
-        width: fill-available;
     }
 
     /* picture */
@@ -282,8 +344,17 @@ header {
         }
 
         .lightbox-image {
+            border-bottom: 0;
             cursor: zoom-in;
             display: block;
+        
+            &:hover {
+                border-bottom: 0;
+            }
+
+            &::before {
+                content: none;
+            }
         }
 
         .caption {
@@ -298,6 +369,7 @@ header {
                 font-weight: @post-subtext-weight;
                 line-height: @post-subtext-linel;
                 color: @post-subtext-color;
+                text-align: center;
                 margin-bottom: 0;
                 margin-top: 1rem;
             }
@@ -311,8 +383,10 @@ header {
         }
 
         &.wrap {
-            margin-right: 0;
-            margin-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 43.75rem;
+            width: 100%;
         }
 
         &.without-shadow {
@@ -330,7 +404,7 @@ header {
 
         img {
             vertical-align: middle;
-            border-radius: 2px;
+            border-radius: 3px;
             position: relative;
             width: 100%;
         }
@@ -372,10 +446,24 @@ header {
         }
     }
 
+    .cover {
+        img {
+            border-radius: 4px;
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+    }
+
     .gamecard {
         margin-bottom: @post-bottom;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: @post-top;
+        width: 100%;
+
         background: #f4f8fb;
+        position: relative;
 
         .like, .dislike {
             font-family: @glob-font;
@@ -404,9 +492,24 @@ header {
         }
 
         @media @sm {
-            margin-bottom: @post-bottom + @post-indent;
-            margin-top: @post-top + @post-indent;
-            border-radius: 2px;
+            margin-bottom: @post-indent-bottom;
+            margin-top: @post-indent-top;
+            border-radius: 3px;
+        }
+    }
+
+    .cover {
+        position: relative;
+            
+        &::before {
+            background-image: url(/static/images/lines.png);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            z-index: -1;
+            left: -1rem;
+            top: -1rem;
         }
     }
 
@@ -415,8 +518,8 @@ header {
         margin-top: @post-top;
 
         @media @sm {
-            margin-bottom: @post-bottom + @post-indent;
-            margin-top: @post-top + @post-indent;
+            margin-bottom: @post-indent-bottom;
+            margin-top: @post-indent-top;
         }
     }
     
@@ -431,6 +534,10 @@ header {
     /* Highlights */
 
     @import (less) "../static/css/_highlights.less";
+
+    /* Tocbot */
+
+    @import (less) "../static/modules/tocbot/_tocbot.less";
 
 }
 
@@ -467,13 +574,15 @@ header {
 }
 
 .list {
-    @height: 420px;
+    @height: 380px;
 
     .item {
         .thumbnail {
             position: relative;
+            -webkit-font-smoothing: subpixel-antialiased;
+            font-smoothing: subpixel-antialiased;
             font-family: @glob-font;
-            border-radius: 2px;
+            border-radius: 3px;
             overflow: hidden;
             height: @height;
 
@@ -525,7 +634,6 @@ header {
 
                 h1 {
                     font-size: 1.125em;
-                    font-weight: 600;
                     margin-bottom: 0;
                     margin-top: 0;
                 }
@@ -567,6 +675,37 @@ header {
 }
 
 .blog-list {
+    .post {
+        border-top: 1px solid #eaecf0;
+
+        &:nth-child(1) {
+            border-top: 0;
+            padding-top: 0;
+        }
+
+        .thumbnail {
+            position: relative;
+
+            &::before {
+                background-image: url(/static/images/lines.png);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                content: '';
+                z-index: -1;
+                left: -1rem;
+                top: -1rem;
+            }
+
+            img {
+                border-radius: 4px;
+                object-fit: cover;
+                height: 238px;
+                width: 100%;
+            }
+        }
+    }
+
     .post-short {
         transition: height 200ms;
 
@@ -599,9 +738,9 @@ header {
         a {
             font-family: @glob-font;
             font-size: @glob-subtext-size;
-            -webkit-border-radius: 2px;
-            -moz-border-radius: 2px;
-            border-radius: 2px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
             background: #f1f3f4;
             text-align: center;
             position: relative;
@@ -654,7 +793,7 @@ header {
 .pagination {
     font-size: @glob-font-size;
     font-family: @glob-font;
-    line-height: 1;
+    line-height: 1.5;
     flex-shrink: 0;
 
     p {
@@ -665,7 +804,7 @@ header {
         min-width: 85px;
     }
 
-    @media @md {
+    @media @sm {
         .previous {
             text-align: left;
         }
@@ -790,9 +929,11 @@ button {
 //
 
 .breadcrumbs {
+    font-family: @glob-font;
+    font-size: @glob-font-size;
+
 	.breadcrumb {
 		list-style: none;
-		padding: 0;
 		margin: 0;
 		
 		&::after {
@@ -811,7 +952,11 @@ button {
 		padding-right: 0.3rem;
 		padding-left: 0.5rem;
         content: '\00B7';
-	}
+    }
+}
+
+.home {
+    width: 100%;
 }
 
 .stars {
@@ -819,9 +964,13 @@ button {
     overflow: hidden;
     -webkit-filter: none;
     filter: none;
+    z-index: -10;
     height: 100%;
     width: 100%;
-    z-index: -10;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
       
     #stars {
         width: 1px;
@@ -898,7 +1047,6 @@ footer {
 @import (less) "../static/css/_links.less";
 @import (less) "../static/css/_tooltip.less";
 @import (less) "../static/css/_animations.less";
-@import (less) "../static/modules/tocbot/_tocbot.less";
 
 //
 // stuff
