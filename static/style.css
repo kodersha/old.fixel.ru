@@ -8899,6 +8899,10 @@ header .logo-txt .logo-description {
   }
 }
 .post .picture .lightbox-image {
+  width: 100%;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
   border-bottom: 0;
   cursor: zoom-in;
   display: block;
@@ -8979,6 +8983,9 @@ header .logo-txt .logo-description {
 }
 .post .youtube:hover .play {
   background-position: 0 0;
+}
+.post .cover {
+  width: 100%;
 }
 .post .cover img {
   border-radius: 4px;
@@ -9118,6 +9125,7 @@ header .logo-txt .logo-description {
   max-width: 43.75rem;
   position: relative;
   display: grid;
+  width: 100%;
 }
 .post .highlight pre {
   position: relative;
@@ -9621,6 +9629,7 @@ header .logo-txt .logo-description {
 }
 .blog-list .post .thumbnail {
   position: relative;
+  width: 100%;
 }
 .blog-list .post .thumbnail::before {
   background-image: url(/static/images/lines.png);
