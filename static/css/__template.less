@@ -344,6 +344,10 @@ header {
         }
 
         .lightbox-image {
+            width: 100%;
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
             border-bottom: 0;
             cursor: zoom-in;
             display: block;
@@ -447,6 +451,8 @@ header {
     }
 
     .cover {
+        width: 100%;
+
         img {
             border-radius: 4px;
             object-fit: cover;
@@ -685,6 +691,7 @@ header {
 
         .thumbnail {
             position: relative;
+            width: 100%;
 
             &::before {
                 background-image: url(/static/images/lines.png);
