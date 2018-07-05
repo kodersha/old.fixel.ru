@@ -9414,6 +9414,14 @@ header .logo-txt .logo-description {
   border-bottom: 0;
   display: block;
 }
+.draws .post .action {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 0.875rem;
+  color: #738a94;
+}
+.draws .post .action time {
+  display: initial;
+}
 .works .item {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
