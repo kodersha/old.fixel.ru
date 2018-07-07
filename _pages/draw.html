@@ -14,7 +14,7 @@ pagination:
 	</div>
     {% for draw in paginator.posts %}
 		<article class="space-in-v-kilo-xs post">
-			{{ draw.content | improve }}
+			{{ draw.content | improve | extlinks }}
 			<div class="action">
 				<time>{{ draw.date | russian_date }}</time><span class="space-in-h-nano-xs">&middot;</span><a class="link-subcontrol" href="{{ draw.url | prepend: site.baseurl }}">{{ draw.title }}</a>
 			</div>
