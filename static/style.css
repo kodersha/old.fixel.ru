@@ -9639,18 +9639,8 @@ header .logo-txt .logo-description {
   position: relative;
   width: 100%;
 }
-.blog-list .post .thumbnail::before {
-  background-image: url(/static/images/lines.png);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  content: '';
-  z-index: -1;
-  left: -1rem;
-  top: -1rem;
-}
 .blog-list .post .thumbnail img {
-  border-radius: 4px;
+  border-radius: 3px;
   object-fit: cover;
   height: 238px;
   width: 100%;
