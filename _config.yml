@@ -45,11 +45,6 @@ defaults:
       layout: post
   - scope:
       path: ""
-      type: draws
-    values:
-      layout: post
-  - scope:
-      path: ""
       type: works
     values:
       layout: work
@@ -67,9 +62,6 @@ collections:
   works:
     output: true
     permalink: /work/:title/
-  draws:
-    output: true
-    permalink: /draw/:title/
 
 
 # Exclude these files from your production _site
