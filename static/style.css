@@ -9033,19 +9033,6 @@ header .logo-txt .logo-description {
     border-radius: 3px;
   }
 }
-.post .cover {
-  position: relative;
-}
-.post .cover::before {
-  background-image: url(/static/images/lines.png);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  content: '';
-  z-index: -1;
-  left: -1rem;
-  top: -1rem;
-}
 .post > .row {
   margin-bottom: 1rem;
   margin-top: 1rem;
