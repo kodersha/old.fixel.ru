@@ -1,9 +1,9 @@
-name: Milkleaks
+name: Fixel
 description: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.
 author: Александра Травкина
 
 # Base
-url: https://milkleaks.ru
+url: https://fixel.ru
 baseurl:
 permalink: /blog/:title/
 markdown: kramdown
@@ -11,7 +11,7 @@ disqus: milkleaks-ru
 image:
 
 # Socail
-github: sasha-travkina
+github: sashatravkina
 twitter: sasha_travkina
 telegram: sashatravkina
 
@@ -96,7 +96,7 @@ less:
 # Extlinks
 extlinks:
   attributes: {rel: nofollow, target: _blank} 
-  rel_exclude: ['milkleaks.ru']
+  rel_exclude: ['fixel.ru']
   
 # Pagination
 pagination:
