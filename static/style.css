@@ -9834,6 +9834,11 @@ button.slider .link-button {
 .home {
   width: 100%;
 }
+.home .help {
+  background-color: #fbfaec;
+  border: 1px solid #FFD532;
+  border-radius: 2px;
+}
 .stars {
   position: fixed;
   overflow: hidden;
