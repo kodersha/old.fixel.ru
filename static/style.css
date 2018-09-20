@@ -3,9 +3,9 @@
 */
 /*! bettertext.css v2.0.4 | MIT License | github.com/paulradzkov/bettertext.css */
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 1.125em;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 body:not([class]),
 article:not([class]),
@@ -22,7 +22,7 @@ section:not([class]) section:not([class]) {
   margin-right: 0;
 }
 p {
-  margin: 0 0 1.6em;
+  margin: 0 0 1.5em;
   max-width: 43.75rem;
 }
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
@@ -49,55 +49,55 @@ h6 {
 h1 {
   font-size: 1.40625em;
   line-height: 1.1;
-  margin: 2.5rem 0 1.13777778em;
+  margin: 2.5rem 0 1.06666667em;
 }
 h2 {
   font-size: 1.265625em;
   line-height: 1.2;
-  margin: 2rem 0 1.26419753em;
+  margin: 2rem 0 1.18518519em;
 }
 h3 {
   font-size: 1.1953125em;
   line-height: 1.3;
-  margin: 1.5rem 0 1.33856209em;
+  margin: 1.5rem 0 1.25490196em;
 }
 h4 {
   font-size: 1.125em;
   line-height: 1.4;
-  margin: 1rem 0 1.42222222em;
+  margin: 1rem 0 1.33333333em;
 }
 h5 {
   font-size: 0.984375em;
-  line-height: 1.6;
-  margin: 2.43809524em 0 1.62539683em;
+  line-height: 1.5;
+  margin: 2.28571429em 0 1.52380952em;
 }
 h6 {
   font-size: 0.984375em;
-  line-height: 1.62539683;
-  margin: 1.62539683em 0 0;
+  line-height: 1.52380952;
+  margin: 1.52380952em 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 @media (min-width: 43.75rem) {
   h1 {
     font-size: 1.6875em;
-    margin-top: 4.74074074em;
-    margin-bottom: 0.94814815em;
+    margin-top: 4.44444444em;
+    margin-bottom: 0.88888889em;
   }
   h2 {
     font-size: 1.4765625em;
-    margin-top: 4.33439153em;
-    margin-bottom: 1.08359788em;
+    margin-top: 4.06349206em;
+    margin-bottom: 1.01587302em;
   }
   h3 {
     font-size: 1.265625em;
-    margin-top: 3.79259259em;
-    margin-bottom: 1.26419753em;
+    margin-top: 3.55555556em;
+    margin-bottom: 1.18518519em;
   }
   h4 {
     font-size: 1.125em;
-    margin-top: 2.84444444em;
-    margin-bottom: 1.42222222em;
+    margin-top: 2.66666667em;
+    margin-bottom: 1.33333333em;
   }
 }
 h1:first-child,
@@ -119,16 +119,16 @@ h3 + h4 {
   margin-top: 1.4em;
 }
 h4 + h5 {
-  margin-top: 1.62539683em;
+  margin-top: 1.52380952em;
 }
 h5 + h6 {
-  margin-top: 1.62539683em;
+  margin-top: 1.52380952em;
 }
 /* lists */
 /* lists without classes */
 ul:not([class]),
 ol:not([class]) {
-  margin: 0 0 1.6em;
+  margin: 0 0 1.5em;
   max-width: calc(41.25rem);
   padding-left: 0;
   padding-right: 2.5em;
@@ -162,7 +162,7 @@ p img:not(:only-child) {
   vertical-align: baseline;
 }
 figure:not([class]) {
-  margin: 3.2em 0;
+  margin: 3em 0;
 }
 figure:not([class]) > p {
   max-width: 32.8125rem;
@@ -172,7 +172,7 @@ figure:not([class]) > p {
 figcaption {
   max-width: 32.8125rem;
   font-size: 0.984375em;
-  margin: 0.5em 0 3.2em;
+  margin: 0.5em 0 3em;
 }
 figcaption > p {
   margin: 0.5em 0 0;
@@ -180,8 +180,8 @@ figcaption > p {
 /* blockquotes */
 blockquote {
   max-width: calc(38.75rem);
-  margin: 0 0 1.6em;
-  padding: 1.6em 2.5em;
+  margin: 0 0 1.5em;
+  padding: 1.5em 2.5em;
 }
 blockquote > p:last-child {
   margin-bottom: 0;
@@ -193,7 +193,7 @@ blockquote > cite {
 }
 /* code */
 pre {
-  margin: 1.6em 0;
+  margin: 1.5em 0;
   white-space: pre-wrap;
 }
 p code {
@@ -202,8 +202,8 @@ p code {
 }
 /* tables */
 table:not([class]) {
-  margin-top: 3.2em;
-  margin-bottom: 3.2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   border-collapse: separate;
   border-spacing: 0;
 }
@@ -229,19 +229,19 @@ table:not([class]) thead th {
 /* definition lists */
 dl:not([class]) {
   max-width: 43.75rem;
-  margin: 0 0 1.6em;
+  margin: 0 0 1.5em;
 }
 dl:not([class]) dt:not([class]) {
   font-weight: bolder;
 }
 dl:not([class]) dd:not([class]) {
-  margin: 0 0 1.6em;
+  margin: 0 0 1.5em;
 }
 /* other tags */
 hr:not([class]) {
   border: 0;
   border-bottom: 1px solid;
-  margin: 1.6em 0;
+  margin: 1.5em 0;
   max-width: 43.75rem;
   opacity: .1;
 }
@@ -8290,8 +8290,8 @@ html {
 body {
   -webkit-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
   color: #000000;
   letter-spacing: 0.004em;
@@ -8316,6 +8316,8 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   letter-spacing: -0.02em;
   max-width: 43.75rem;
   margin-bottom: 1rem;
@@ -8724,11 +8726,6 @@ header .logo-txt .logo-description {
   color: #738a94;
   display: block;
 }
-@media (min-width: 768px) {
-  .post time.single {
-    text-align: center;
-  }
-}
 @media (min-width: 1200px) {
   .post .title {
     font-size: 2.25em;
@@ -8736,8 +8733,7 @@ header .logo-txt .logo-description {
 }
 @media (min-width: 768px) {
   .post .title {
-    margin-bottom: 1em;
-    text-align: center;
+    margin-bottom: 1rem;
   }
 }
 .post h1:first-of-type {
@@ -8870,8 +8866,9 @@ header .logo-txt .logo-description {
   padding: 0;
 }
 .post blockquote p {
+  font-family: 'GregorIT', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 0;
 }
 .post figure {
@@ -8928,6 +8925,10 @@ header .logo-txt .logo-description {
   text-align: center;
   margin-bottom: 0;
   margin-top: 1rem;
+}
+.post .picture.left a {
+  margin-right: auto;
+  margin-left: 0;
 }
 .post .picture.left img {
   margin-right: auto;
@@ -8998,7 +8999,9 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
+  max-width: 43.75rem;
   width: 100%;
+  border: 1px solid #b5c7d4;
   background: #f4f8fb;
   position: relative;
 }
@@ -9042,6 +9045,10 @@ header .logo-txt .logo-description {
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
+}
+.post .readmore {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
 }
 .post [base],
 .post [block] {
@@ -9129,7 +9136,7 @@ header .logo-txt .logo-description {
 }
 .post .highlighter-rouge,
 .post mark {
-  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
   background-color: #fef7cf;
   word-wrap: break-word;
   white-space: nowrap;
@@ -9832,6 +9839,7 @@ button.slider .link-button {
   content: '\00B7';
 }
 .home {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   width: 100%;
 }
 .home .help {
