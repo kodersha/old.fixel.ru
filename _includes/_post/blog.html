@@ -10,6 +10,6 @@
 	{% endif %}
 	{{ post.content | improve | extlinks | split: '<!-- more -->' | first }}
 	{% if post.content contains '<!-- more -->' %}
-		<p><a href="{{ post.url | prepend: site.baseurl }}">Читать полностью &rsaquo;</a></p>
+		<p><a href="{{ post.url | prepend: site.baseurl }}" class="readmore">Читать полностью &rsaquo;</a></p>
 	{% endif %}	
 </article>

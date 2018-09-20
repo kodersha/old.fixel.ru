@@ -13,8 +13,8 @@ html {
 body {
     -webkit-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
     -webkit-text-size-adjust: none;
     color: @glob-font-color;
     letter-spacing: 0.004em;
@@ -34,6 +34,9 @@ input, textarea, select, button {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    
     .post-settings();
 
     letter-spacing: -0.02em;
@@ -149,7 +152,7 @@ header {
 
         @media @md {
             &.single {
-                text-align: center;
+
             }
         }
     }
@@ -159,8 +162,7 @@ header {
             font-size: 2.25em;
         }
         @media @md {
-            margin-bottom: 1em;
-            text-align: center;
+            margin-bottom: 1rem;
         }
     }
 
@@ -308,8 +310,9 @@ header {
         padding: 0;
 
         p {
+            font-family: @gregorIT;
             font-size: @glob-font-size + 0.3;
-            line-height: 1.5;
+            line-height: 1.4;
             margin: 0;
         }
     }
@@ -380,6 +383,10 @@ header {
         }
         
         &.left {
+            a {
+                margin-right: auto;
+                margin-left: 0;                
+            }
             img {
                 margin-right: auto;
                 margin-left: 0;
@@ -466,8 +473,10 @@ header {
         margin-right: auto;
         margin-left: auto;
         margin-top: @post-top;
+        max-width: @glob-linel;
         width: 100%;
 
+        border: 1px solid #b5c7d4;
         background: #f4f8fb;
         position: relative;
 
@@ -512,6 +521,11 @@ header {
             margin-bottom: @post-indent-bottom;
             margin-top: @post-indent-top;
         }
+    }
+
+    .readmore {
+        font-family: @glob-font;
+        font-size: @glob-font-size;
     }
     
     //
@@ -941,6 +955,7 @@ button {
 }
 
 .home {
+    font-family: @glob-font;
     width: 100%;
 
     .help {
