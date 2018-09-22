@@ -5,7 +5,7 @@
 body {
   font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 1.125em;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 body:not([class]),
 article:not([class]),
@@ -22,7 +22,7 @@ section:not([class]) section:not([class]) {
   margin-right: 0;
 }
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.4em;
   max-width: 43.75rem;
 }
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
@@ -49,55 +49,55 @@ h6 {
 h1 {
   font-size: 1.40625em;
   line-height: 1.1;
-  margin: 2.5rem 0 1.06666667em;
+  margin: 2.5rem 0 0.99555556em;
 }
 h2 {
   font-size: 1.265625em;
   line-height: 1.2;
-  margin: 2rem 0 1.18518519em;
+  margin: 2rem 0 1.10617284em;
 }
 h3 {
   font-size: 1.1953125em;
   line-height: 1.3;
-  margin: 1.5rem 0 1.25490196em;
+  margin: 1.5rem 0 1.17124183em;
 }
 h4 {
   font-size: 1.125em;
   line-height: 1.4;
-  margin: 1rem 0 1.33333333em;
+  margin: 1rem 0 1.24444444em;
 }
 h5 {
   font-size: 0.984375em;
-  line-height: 1.5;
-  margin: 2.28571429em 0 1.52380952em;
+  line-height: 1.4;
+  margin: 2.13333333em 0 1.42222222em;
 }
 h6 {
   font-size: 0.984375em;
-  line-height: 1.52380952;
-  margin: 1.52380952em 0 0;
+  line-height: 1.42222222;
+  margin: 1.42222222em 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 @media (min-width: 43.75rem) {
   h1 {
     font-size: 1.6875em;
-    margin-top: 4.44444444em;
-    margin-bottom: 0.88888889em;
+    margin-top: 4.14814815em;
+    margin-bottom: 0.82962963em;
   }
   h2 {
     font-size: 1.4765625em;
-    margin-top: 4.06349206em;
-    margin-bottom: 1.01587302em;
+    margin-top: 3.79259259em;
+    margin-bottom: 0.94814815em;
   }
   h3 {
     font-size: 1.265625em;
-    margin-top: 3.55555556em;
-    margin-bottom: 1.18518519em;
+    margin-top: 3.31851852em;
+    margin-bottom: 1.10617284em;
   }
   h4 {
     font-size: 1.125em;
-    margin-top: 2.66666667em;
-    margin-bottom: 1.33333333em;
+    margin-top: 2.48888889em;
+    margin-bottom: 1.24444444em;
   }
 }
 h1:first-child,
@@ -119,16 +119,16 @@ h3 + h4 {
   margin-top: 1.4em;
 }
 h4 + h5 {
-  margin-top: 1.52380952em;
+  margin-top: 1.42222222em;
 }
 h5 + h6 {
-  margin-top: 1.52380952em;
+  margin-top: 1.42222222em;
 }
 /* lists */
 /* lists without classes */
 ul:not([class]),
 ol:not([class]) {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.4em;
   max-width: calc(41.25rem);
   padding-left: 0;
   padding-right: 2.5em;
@@ -162,7 +162,7 @@ p img:not(:only-child) {
   vertical-align: baseline;
 }
 figure:not([class]) {
-  margin: 3em 0;
+  margin: 2.8em 0;
 }
 figure:not([class]) > p {
   max-width: 32.8125rem;
@@ -172,7 +172,7 @@ figure:not([class]) > p {
 figcaption {
   max-width: 32.8125rem;
   font-size: 0.984375em;
-  margin: 0.5em 0 3em;
+  margin: 0.5em 0 2.8em;
 }
 figcaption > p {
   margin: 0.5em 0 0;
@@ -180,8 +180,8 @@ figcaption > p {
 /* blockquotes */
 blockquote {
   max-width: calc(38.75rem);
-  margin: 0 0 1.5em;
-  padding: 1.5em 2.5em;
+  margin: 0 0 1.4em;
+  padding: 1.4em 2.5em;
 }
 blockquote > p:last-child {
   margin-bottom: 0;
@@ -193,7 +193,7 @@ blockquote > cite {
 }
 /* code */
 pre {
-  margin: 1.5em 0;
+  margin: 1.4em 0;
   white-space: pre-wrap;
 }
 p code {
@@ -202,8 +202,8 @@ p code {
 }
 /* tables */
 table:not([class]) {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 2.8em;
+  margin-bottom: 2.8em;
   border-collapse: separate;
   border-spacing: 0;
 }
@@ -229,19 +229,19 @@ table:not([class]) thead th {
 /* definition lists */
 dl:not([class]) {
   max-width: 43.75rem;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.4em;
 }
 dl:not([class]) dt:not([class]) {
   font-weight: bolder;
 }
 dl:not([class]) dd:not([class]) {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.4em;
 }
 /* other tags */
 hr:not([class]) {
   border: 0;
   border-bottom: 1px solid;
-  margin: 1.5em 0;
+  margin: 1.4em 0;
   max-width: 43.75rem;
   opacity: .1;
 }
