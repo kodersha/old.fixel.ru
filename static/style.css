@@ -4,7 +4,7 @@
 /*! bettertext.css v2.0.4 | MIT License | github.com/paulradzkov/bettertext.css */
 body {
   font-family: 'Gregor', 'Georgia', 'Times New Roman', Times, serif;
-  font-size: 1.125em;
+  font-size: 1.25em;
   line-height: 1.4;
 }
 body:not([class]),
@@ -23,7 +23,7 @@ section:not([class]) section:not([class]) {
 }
 p {
   margin: 0 0 1.4em;
-  max-width: 43.75rem;
+  max-width: 50rem;
 }
 /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
 p:before,
@@ -52,52 +52,52 @@ h1 {
   margin: 2.5rem 0 0.99555556em;
 }
 h2 {
-  font-size: 1.265625em;
+  font-size: 1.328125em;
   line-height: 1.2;
-  margin: 2rem 0 1.10617284em;
+  margin: 2rem 0 1.05411765em;
 }
 h3 {
-  font-size: 1.1953125em;
+  font-size: 1.171875em;
   line-height: 1.3;
-  margin: 1.5rem 0 1.17124183em;
+  margin: 1.5rem 0 1.19466667em;
 }
 h4 {
-  font-size: 1.125em;
+  font-size: 1.09375em;
   line-height: 1.4;
-  margin: 1rem 0 1.24444444em;
+  margin: 1rem 0 1.28em;
 }
 h5 {
-  font-size: 0.984375em;
+  font-size: 1.015625em;
   line-height: 1.4;
-  margin: 2.13333333em 0 1.42222222em;
+  margin: 2.06769231em 0 1.37846154em;
 }
 h6 {
-  font-size: 0.984375em;
-  line-height: 1.42222222;
-  margin: 1.42222222em 0 0;
+  font-size: 1.09375em;
+  line-height: 1.28;
+  margin: 1.28em 0 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-@media (min-width: 43.75rem) {
+@media (min-width: 50rem) {
   h1 {
-    font-size: 1.6875em;
-    margin-top: 4.14814815em;
-    margin-bottom: 0.82962963em;
+    font-size: 1.71875em;
+    margin-top: 4.07272727em;
+    margin-bottom: 0.81454545em;
   }
   h2 {
-    font-size: 1.4765625em;
-    margin-top: 3.79259259em;
-    margin-bottom: 0.94814815em;
+    font-size: 1.484375em;
+    margin-top: 3.77263158em;
+    margin-bottom: 0.94315789em;
   }
   h3 {
-    font-size: 1.265625em;
-    margin-top: 3.31851852em;
-    margin-bottom: 1.10617284em;
+    font-size: 1.328125em;
+    margin-top: 3.16235294em;
+    margin-bottom: 1.05411765em;
   }
   h4 {
-    font-size: 1.125em;
-    margin-top: 2.48888889em;
-    margin-bottom: 1.24444444em;
+    font-size: 1.171875em;
+    margin-top: 2.38933333em;
+    margin-bottom: 1.19466667em;
   }
 }
 h1:first-child,
@@ -119,17 +119,17 @@ h3 + h4 {
   margin-top: 1.4em;
 }
 h4 + h5 {
-  margin-top: 1.42222222em;
+  margin-top: 1.37846154em;
 }
 h5 + h6 {
-  margin-top: 1.42222222em;
+  margin-top: 1.28em;
 }
 /* lists */
 /* lists without classes */
 ul:not([class]),
 ol:not([class]) {
   margin: 0 0 1.4em;
-  max-width: calc(41.25rem);
+  max-width: calc(47.5rem);
   padding-left: 0;
   padding-right: 2.5em;
 }
@@ -165,13 +165,13 @@ figure:not([class]) {
   margin: 2.8em 0;
 }
 figure:not([class]) > p {
-  max-width: 32.8125rem;
-  font-size: 0.984375em;
+  max-width: 37.5rem;
+  font-size: 1.09375em;
   margin: 0.5em 0 0;
 }
 figcaption {
-  max-width: 32.8125rem;
-  font-size: 0.984375em;
+  max-width: 37.5rem;
+  font-size: 1.09375em;
   margin: 0.5em 0 2.8em;
 }
 figcaption > p {
@@ -179,7 +179,7 @@ figcaption > p {
 }
 /* blockquotes */
 blockquote {
-  max-width: calc(38.75rem);
+  max-width: calc(45rem);
   margin: 0 0 1.4em;
   padding: 1.4em 2.5em;
 }
@@ -189,7 +189,7 @@ blockquote > p:last-child {
 blockquote > footer,
 blockquote > cite {
   display: block;
-  font-size: 0.984375em;
+  font-size: 1.09375em;
 }
 /* code */
 pre {
@@ -209,7 +209,7 @@ table:not([class]) {
 }
 table:not([class]) caption {
   text-align: left;
-  font-size: 0.984375em;
+  font-size: 1.09375em;
   margin-bottom: 0.625em;
 }
 table:not([class]) td,
@@ -228,7 +228,7 @@ table:not([class]) thead th {
 }
 /* definition lists */
 dl:not([class]) {
-  max-width: 43.75rem;
+  max-width: 50rem;
   margin: 0 0 1.4em;
 }
 dl:not([class]) dt:not([class]) {
@@ -242,7 +242,7 @@ hr:not([class]) {
   border: 0;
   border-bottom: 1px solid;
   margin: 1.4em 0;
-  max-width: 43.75rem;
+  max-width: 50rem;
   opacity: .1;
 }
 abbr {
@@ -8318,8 +8318,8 @@ h5,
 h6 {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  letter-spacing: -0.02em;
-  max-width: 43.75rem;
+  letter-spacing: -0.05em;
+  max-width: 50rem;
   margin-bottom: 1rem;
 }
 p {
@@ -8352,7 +8352,7 @@ body.black .link-about {
   color: #ffffff;
 }
 .wrapper {
-  max-width: 75rem;
+  max-width: 80rem;
   flex-direction: column;
   min-height: 100%;
   display: flex;
@@ -8363,10 +8363,10 @@ body.black .link-about {
   flex: 1 0 auto;
 }
 .wrapper.max {
-  max-width: 75rem;
+  max-width: 80rem;
 }
 .linel {
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
 }
 header {
@@ -8719,7 +8719,7 @@ header .logo-txt .logo-description {
   margin-bottom: 0.5rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 0.875rem;
@@ -8748,7 +8748,7 @@ header .logo-txt .logo-description {
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
 }
 .post p {
@@ -8756,7 +8756,7 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
   color: #000000;
 }
@@ -8776,7 +8776,7 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 1rem;
@@ -8809,7 +8809,7 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
 }
 .post ul:not([class]) li,
@@ -8861,7 +8861,7 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 2rem;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
   padding: 0;
 }
@@ -8999,7 +8999,7 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1rem;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
   border: 1px solid #b5c7d4;
   background: #f4f8fb;
@@ -9116,7 +9116,7 @@ header .logo-txt .logo-description {
   }
 }
 .post .highlight {
-  max-width: 43.75rem;
+  max-width: 50rem;
   position: relative;
   display: grid;
   width: 100%;
@@ -9355,7 +9355,7 @@ header .logo-txt .logo-description {
   margin-right: auto;
   margin-left: auto;
   margin-top: 2rem;
-  max-width: 43.75rem;
+  max-width: 50rem;
   width: 100%;
 }
 .post .toc > ul {
@@ -9591,7 +9591,8 @@ header .logo-txt .logo-description {
   left: 0;
 }
 .list .item .thumbnail .info h1 {
-  font-size: 1.125em;
+  letter-spacing: -0.02em;
+  line-height: 1;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -9840,12 +9841,18 @@ button.slider .link-button {
 }
 .home {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
   width: 100%;
 }
 .home .help {
   background-color: #fbfaec;
   border: 1px solid #FFD532;
   border-radius: 2px;
+}
+@media (min-width: 992px) {
+  .home .text-right {
+    text-align: right;
+  }
 }
 .stars {
   position: fixed;
