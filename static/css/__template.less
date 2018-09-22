@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .post-settings();
 
-    letter-spacing: -0.02em;
+    letter-spacing: -0.05em;
     max-width: @post-linel;
     margin-bottom: @post-bottom;  
 }
@@ -142,7 +142,7 @@ header {
         margin-bottom: @post-bottom - 0.5;
         margin-right: auto;
         margin-left: auto;
-        max-width: 43.75rem;
+        max-width: @glob-linel;
         width: 100%;
 
         font-family: @glob-font;
@@ -642,7 +642,8 @@ header {
                 left: 0;
 
                 h1 {
-                    font-size: 1.125em;
+                    letter-spacing: -0.02em;
+                    line-height: 1;
                     margin-bottom: 0;
                     margin-top: 0;
                 }
@@ -956,12 +957,19 @@ button {
 
 .home {
     font-family: @glob-font;
+    font-size: @glob-font-size;
     width: 100%;
 
     .help {
         background-color: #fbfaec;
         border: 1px solid #FFD532;
         border-radius: 2px;
+    }
+
+    @media @lg {
+        .text-right {
+            text-align: right;
+        }
     }
 }
 
