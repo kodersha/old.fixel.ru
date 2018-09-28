@@ -5,10 +5,6 @@
 	- https://yuukithemes.com/
 */
 
-$(document).ready(function() {
-    $("#message").removeClass("hidden");
-});
-
 var msg1=Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 var msg2=Math.random().toString(36).substring(2, 7);
 var e=document.getElementById("money");e.setAttribute("id", msg1);
