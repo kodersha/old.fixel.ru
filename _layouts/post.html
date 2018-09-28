@@ -18,11 +18,10 @@ layout: default
 	
 	{{ content | improve | extlinks | replace: '<!-- more -->', '' }}
 
-	<div class="linel">
-		{% include ads.html %}
-	</div>
-
 	{% include _post/gamecard.html %}
+
+	{% include ads.html %}
+
 </article>
 
 {% include _post/pagination.html %}

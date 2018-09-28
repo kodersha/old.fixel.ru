@@ -544,6 +544,11 @@ header {
 
     @import (less) "../static/modules/tocbot/_tocbot.less";
 
+    div[class^="money_"] {
+        max-width: @glob-linel;
+        margin: 2rem auto 0;
+    }
+
 }
 
 //
@@ -1068,4 +1073,39 @@ footer {
 
 .height-full {
     height: 100%;
+}
+
+//
+// ads
+//
+
+div[class^="money_"] {
+    background-color: #f1f3f4;
+    border-radius: 3px;
+    min-height: 90px;
+    height: 100%;
+    width: 100%;
+
+    #message {
+        visibility: hidden;
+        display: none;
+    }
+
+    .message {
+        min-height: 90px;
+        height: 100%;
+        width: 100%;
+
+        .text {
+            font-family: @glob-font;
+            font-size: @glob-font-size;
+            vertical-align: middle;
+            display: table-cell;
+            text-align: center;
+        }
+    }
+}
+
+.hidden {
+    display: none;
 }
