@@ -9385,6 +9385,10 @@ header .logo-txt .logo-description {
   position: fixed !important;
   top: 0;
 }
+.post div[class^="money_"] {
+  max-width: 50rem;
+  margin: 2rem auto 0;
+}
 .photos .item {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1rem;
@@ -10721,6 +10725,32 @@ a:hover,
 }
 .height-full {
   height: 100%;
+}
+div[class^="money_"] {
+  background-color: #f1f3f4;
+  border-radius: 3px;
+  min-height: 90px;
+  height: 100%;
+  width: 100%;
+}
+div[class^="money_"] #message {
+  visibility: hidden;
+  display: none;
+}
+div[class^="money_"] .message {
+  min-height: 90px;
+  height: 100%;
+  width: 100%;
+}
+div[class^="money_"] .message .text {
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1rem;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+.hidden {
+  display: none;
 }
 /*!
 * Bettertext
