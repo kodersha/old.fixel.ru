@@ -570,19 +570,19 @@ _X () — вставляет дополнительный блок (не заб�
 				Ya.Context.AdvManager.render({
 					blockId: "R-A-321345-1",
 					renderTo: "yandex_rtb_R-A-321345-1",
-					async: true
+					async: false
 				});
 			});
 			t = d.getElementsByTagName("script")[0];
 			s = d.createElement("script");
 			s.type = "text/javascript";
 			s.src = "//an.yandex.ru/system/context.js";
-			s.async = true;
+			s.async = false;
 			t.parentNode.insertBefore(s, t);
 		})(this, this.document, "yandexContextAsyncCallbacks");
 	</script>
 
-	<div id="message" class="message hidden">
+	<div id="message" class="message preload">
 		<div class="text">
 			Этот блог существует благодаря ненавязчивой рекламе.<br>
 			Пожалуйста, добавьте его в исключения своего блокировщика рекламы.
@@ -657,6 +657,8 @@ _X () — вставляет дополнительный блок (не заб�
 <script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
 
 <script type="text/javascript" src="/static/js/template.js"></script>
+
+<!--[ AdBlock ]-->
 
 <script type="text/javascript" src="https://cdn.rawgit.com/Yuukithemes/yuukithemes.github.io/92c11f42/js/advertisement.js"></script>
 <script type="text/javascript" src="/static/js/ads.js"></script>

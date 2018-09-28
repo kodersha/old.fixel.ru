@@ -10733,10 +10733,6 @@ div[class^="money_"] {
   height: 100%;
   width: 100%;
 }
-div[class^="money_"] #message {
-  visibility: hidden;
-  display: none;
-}
 div[class^="money_"] .message {
   min-height: 90px;
   height: 100%;
@@ -10749,7 +10745,7 @@ div[class^="money_"] .message .text {
   display: table-cell;
   text-align: center;
 }
-.hidden {
+#message {
   display: none;
 }
 /*!
