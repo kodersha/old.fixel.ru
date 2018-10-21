@@ -2,10 +2,6 @@
 .global-colors();
 
 html {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
-    overflow-y: scroll;
-
     @media @md {
         width: 100vw;
     }
@@ -20,6 +16,12 @@ body {
     -webkit-text-size-adjust: none;
     overflow-x: hidden;
     cursor: default;
+}
+@media @mmd {
+    .m-scrollable-filter {
+        -webkit-overflow-scrolling: touch !important;
+        overflow-y: scroll !important;
+    }
 }
 body {
     flex-direction: column;
@@ -149,7 +151,10 @@ time {
 .end {
     font-family: @global-font-family;
     font-size: @global-font-size - 0.15;
-    text-align: center;
+
+    @media @md {
+        text-align: center;
+    }
 }
 .message {
     text-align: center;
