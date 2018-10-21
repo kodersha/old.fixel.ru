@@ -9,13 +9,6 @@ layout: null
       "tags"     : "{{ post.tags | array_to_sentence_string }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}"
-    } ,
-  {% endfor %}
-  {% for photo in site.photos %}
-    {
-      "title"    : "{{ photo.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ photo.url }}",
-      "date"     : "{{ photo.date }}"
     } {% unless forloop.last %},{% endunless %}
-  {% endfor %}  
+  {% endfor %}
 ]

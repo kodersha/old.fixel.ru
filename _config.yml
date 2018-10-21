@@ -1,80 +1,30 @@
-name: Fixel
-description: Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.
+title: Блог Александры Травкиной
+email: mrs.cuteshy@gmail.com
+description: Блог о веб-дизайне, компьютерах и компьютерных играх
 author: Александра Травкина
-
-# Base
 url: https://fixel.ru
-baseurl:
 permalink: /blog/:title/
-markdown: kramdown
-disqus: milkleaks-ru
-image:
+baseurl:
+
+# Jekyll
+safe: false
 
 # Socail
 github: sashatravkina
 twitter: sasha_travkina
 telegram: sashatravkina
 
-# Cloudinary
-cloudinary: milkleaks
-cloudinary-size: c_limit,w_800
-cloudinary-big: c_limit,w_800
-
-# Jekyll
-safe: false
-
-# Navigation
-navigation:
-  - title: Главная
-    url: /
-  - title: Блог
-    url: /blog/
-  - title: Теги
-    url: /blog/tags/
-  - title: Поддержать
-    url: /donate/
-  - title: Об авторе
-    url: /about/
-
 # Deafults layout
 defaults:
-  - scope:
-      path: ""
-      type: photos
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: works
-    values:
-      layout: work
   - scope:
       path: ""
       type: posts
     values:
       layout: post
 
-# Collections     
-collections:
-  photos:
-    output: true
-    permalink: /photo/:title/
-  works:
-    output: true
-    permalink: /work/:title/
-
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - node_modules/
-
-## Plugins
+# Build settings
+markdown: kramdown
 plugins:
-  - jekyll-redirect-from
   - jekyll-include-cache
   - jekyll-auto-image
   - jekyll-typogrify
@@ -83,21 +33,18 @@ plugins:
   - jekyll-extlinks
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-less
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: compressed
-
-less:
-  entrypoint: "static/style.less"
-  less_dir: static
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
 
 # Extlinks
 extlinks:
   attributes: {rel: nofollow, target: _blank} 
   rel_exclude: ['fixel.ru']
-  
+
 # Pagination
 pagination:
   enabled: true

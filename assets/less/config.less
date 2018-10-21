@@ -1,0 +1,92 @@
+.global-settings() {
+    @width-body: 52.8125rem;
+
+    @code-font-family: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier New', 'Courier', 'Droid Sans Mono', monospace, serif;
+
+    @global-font-family: 'LatoWeb', -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @global-font-size: 1rem;
+    @global-line-height: 1.4;
+
+    @title-font-family: 'LatoWebBlack', sans-serif;
+    @title-font-size: 3.5em;
+
+    @post-font-family: 'PT Serif', 'Georgia', serif;
+    @post-font-size: 1.269em;
+    @post-line-height: 30px;
+
+    @margin-top: 30px;
+    @margin-bottom: 20px;
+
+    @border-radius: 2px;
+}
+
+.global-colors() {
+    @link-color:        #337ab7;
+    @color-accent:      #dde4e6;
+}
+
+/*! fixgrid.css */
+
+.grid-settings() {
+
+    // settings
+    @grid-columns: 12;   // number of columns
+    @gutter-width: 30px; // gap between columns
+
+    // media breakpoints (default: as on bootstrap)
+    @breakpoints:
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)";
+
+    // max-width of containers according breakpoints
+    @container-maw:
+        750px,
+        970px,
+        1170px;
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+
+}
+
+/*! space.less v0.0.2 | MIT License | github.com/paulradzkov/space.less */
+
+.space-settings() {
+
+    @spaces: 0, 8px, 16px, 24px, 40px, 64px, 104px, 168px;
+    @spacealias: zero, nano, micro, mili, base, kilo, mega, giga;
+
+    // media breakpoints
+    @breakpoints:
+        ~"(min-width: 576px)",
+        ~"(min-width: 768px)",
+        ~"(min-width: 992px)",
+        ~"(min-width: 1200px)";
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg, xl;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+}
+
+/*! hidden.less v0.0.1 | MIT License | github.com/paulradzkov/hidden.less */
+
+.hidden-settings() {
+    // media breakpoints
+    @breakpoints:
+        576px,
+        768px,
+        992px,
+        1200px;
+
+    // names for breakpoint suffixes
+    @suffixes: xs, sm, md, lg, xl;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+}

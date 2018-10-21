@@ -1,0 +1,314 @@
+---
+title: Пишем свой шаблон для Эгеи
+tags:
+- Веб
+- Эгея
+- Гайды
+---
+
+Написать свой шаблон для [Эгеи][1] не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.
+
+* Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» — ../themes/ghost.
+* Файл с каринкой-превьюшкой вашего шаблона должен называться preview@2x.png и находится в корне шаблона.
+* Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в себе:
+
+{% highlight php %}
+<?php return array (
+    'display_name' => array (
+        'en' => 'Ghost',
+        'ru' => 'Призрак',
+    ),
+); ?>
+{% endhighlight %}
+
+Называем свою тему для русской и английской версии для отображения в настройках сайта.
+
+## Структура папок
+
+<div class="block">
+    <p><mark>../themes/ghost/images</mark> — Папка с изображениями темы.</p>
+    <p><mark>../themes/ghost/js</mark> — Папка со скриптами.</p>
+    <p><mark>../themes/ghost/styles</mark> — Папка со стилями.</p>
+    <p><mark>../themes/ghost/templates</mark> — Файлы шаблона.</p>
+</div>
+
+Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути `../system/theme`.
+
+## Шаблоны
+
+Теперь стоит подробнее разобрать содержимое папки `../system/theme/templates` стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты.
+
+---
+
+`author-menu.tmpl.php` — Меню автора.
+
+{% image src:056.jpg class:position-left %}
+
+---
+
+`comments-heading.tmpl.php` — Заголовок списка комментариев с счетчиком их количества.
+
+{% image src:057.jpg class:position-left %}
+
+---
+
+`comments.tmpl.php` — Список комментариев.
+
+{% image src:058.jpg class:position-left %}
+
+---
+
+`drafts.tmpl.php` — Список черновиков.
+
+{% image src:059.jpg class:position-left %}
+
+---
+
+`form-comment.tmpl.php` — Форма комментирования.
+
+{% image src:060.jpg class:position-left %}
+
+---
+
+`form-database.tmpl.php` — Форма подключения к базе данных.
+
+{% image src:061.jpg class:position-left %}
+
+---
+
+`form-install.tmpl.php` — Форма установки Эгеи.
+
+---
+
+`form-login.tmpl.php` — Форма авторизации.
+
+{% image src:062.jpg class:position-left %}
+
+---
+
+`form-note-delete.tmpl.php` — Форма удаления поста.
+
+{% image src:063.jpg class:position-left %}
+
+---
+
+`form-note-publish.tmpl.php` — Кнопка публикации поста.
+
+{% image src:064.jpg class:position-left %}
+
+---
+
+`form-note.tmpl.php` — Форма публикации поста.
+
+{% image src:065.jpg class:position-left %}
+
+---
+
+`form-password.tmpl.php` — Форма смены админ-пароля.
+
+{% image src:066.jpg class:position-left %}
+
+---
+
+`form-preferences.tmpl.php` — Форма общих настроек блога.
+
+{% image src:067.jpg class:position-left %}
+
+---
+
+`form-tag-delete.tmpl.php` — Форма удаления тега.
+
+{% image src:068.jpg class:position-left %}
+
+---
+
+`form-tag.tmpl.php` — Форма редактирования тега.
+
+{% image src:069.jpg class:position-left %}
+
+---
+
+`head.tmpl.php` — Метатеги в head.
+
+---
+
+`heading.tmpl.php` — Заголовки.
+
+{% image src:070.jpg class:position-left %}
+
+---
+
+`init-script.tmpl.php` — Подключение дополнительных скриптов.
+
+---
+
+`layout.tmpl.php` — Основная разметка шаблона внтури body.
+
+---
+
+`login-element.tmpl.php` — Кнопка авторизации.
+
+{% image src:071.jpg class:position-left %}
+
+---
+
+`main.tmpl.php` — Общая разметка, подключение скриптов.
+
+---
+
+`notes-list.tmpl.php` — Список избранных постов.
+
+---
+
+`notes.tmpl.php` — Шаблон поста. Заголовок, текст, дата, теги, ссылка на комментарии.
+
+---
+
+`pages-earlier.tmpl.php` — Кнопка к постам «Ранее».
+
+{% image src:072.jpg class:position-left %}
+
+---
+
+`pages-later.tmpl.php` — Кнопка к постам «Позднее».
+
+{% image src:073.jpg class:position-left %}
+
+---
+
+`pages.tmpl.php` — Навигация между постами.
+
+{% image src:074.jpg class:position-left %}
+
+---
+
+`popular.tmpl.php` — Блок популярных постов.
+
+{% image src:075.jpg class:position-left %}
+
+---
+
+`search.tmpl.php` — Форма поиска и теги.
+
+{% image src:076.jpg class:position-left %}
+
+---
+
+`tags-menu.tmpl.php` — Список избранных тегов.
+
+{% image src:077.jpg class:position-left %}
+
+---
+
+`tags.tmpl.php` — Страница тегов.
+
+{% image src:078.jpg class:position-left %}
+
+---
+
+`user-blockture.tmpl.php` — Аватар блога.
+
+{% image src:079.jpg class:position-left %}
+
+---
+
+Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы `../system/theme/templates` в папку `templates` вашего шаблона и уже там производите все изменения.
+
+## Подключение частей шаблона
+
+Официальная [документация][2] по шаблонам Эгеи сообщает:
+
+
+> Шаблон может вызывать другие шаблоны для отображения конкретного фрагмента:
+> _T () — вызывает шаблон по имени.
+> _T_FOR () — вызывает шаблон по имени, если в массиве $content есть ключ с таким именем.
+> _X () — вставляет дополнительный блок (не забывайте это использовать в своих шаблонах там, где это делают комплектные).
+> Шаблон layout.tmpl.php «срабатывает» потому, что main.tmpl.php вызывает его для формирования тела страницы.
+
+Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл `quote.tmpl.php` в `../themes/ghost/templates` со следующим несложным кодом:
+
+{% highlight php %}
+<div class="e2-quote">
+    <?php
+        $quotes[] = '
+        <p>Ибо здесь, похоже, мы не найдем ничего, кроме, как сказала бы Мильва, ремонтизма.</p>
+        <span>Анджей Сапковский - Владычица Озера</span>';
+        $quotes[] = '
+        <p>Цири громко чертыхнулась, повторив любимое выражение Весемира, значение которого было ей не вполне ясно. Потом добавила еще несколько слов, услышанных от Ярпена Зигрина, значение которых было для нее вообще полнейшей загадкой.</p>
+        <span>Анджей Сапковский - Кровь Эльфов</span>';
+        $quotes[] = '
+        <p>Весемир кивал, время от времени вставляя замечания, из которых следовало только то, что «в его времена» все было лучше, логичнее, приличнее и здоровее.</p>
+        <span>Анджей Сапковский - Последнее Желание</span>';
+
+        srand ((double) microtime() * 1000000);
+        $random_number = rand(0,count($quotes)-1);
+        echo ($quotes[$random_number]);
+    ?>
+</div>
+{% endhighlight %}
+
+Теперь достаточно открыть `layout.tmpl.php` и где-нибудь перед footer’ом добавить вывод шаблона `quote.tmpl.php` средством специального макроса.
+
+{% highlight php %}
+<?php _T ('quote') ?>
+{% endhighlight %}
+
+Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим параметром:
+
+{% highlight php %}
+<?php if ($content['class'] == 'frontpage') { ?>
+    <?php _T ('quote') ?>
+<?php } ?>
+{% endhighlight %}
+
+Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный `layout.tmpl.php` с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.
+
+## Подключение собственных JS и CSS
+
+Для подключения JS и CSS в Эгее также существуют специальные макросы. Для наглядности откройте стандартный `main.tmpl.php` и посмотрите в конец файла, после закрывающегося тега `body`:
+
+{% highlight php %}
+<?php _CSS ('main') ?>
+<?php _JS ('main') ?>
+{% endhighlight %}
+
+Здесь подхватываются `../js/main.js` и `../styles/main.css` из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью [wow.js][3]. Скачайте сам wow.js и положите в папку `js` вашего шаблона. Также скачайте [animate.css][4] и разместите в папке `styles`. Откройте `main.tmpl.php` и подключите их:
+
+{% highlight php %}
+<?php _CSS ('animate') ?>
+<?php _JS ('wow') ?>
+{% endhighlight %}
+
+Далее в файл `init-script.tmpl.php` понадобится добавить следующий код с настройками `wow.js`:
+
+{% highlight html %}
+<script type="text/javascript">
+    var wow = new WOW(
+        {
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function(box) {
+            },
+            scrollContainer: null
+        }
+    );
+    wow.init();
+</script>
+{% endhighlight %}
+
+Теперь остается открыть шаблон `notes.tmpl.php` и к основному div’у поста (18 строка) добавить класс `wow fadeIn`, а в `main.css` добавить `.wow { visibility: hidden; }`. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.
+
+Смотрите ещё: [Кат в Эгее][5], [Свои шрифты в Эгее][6] и [Сноски на полях в Эгее][7].
+{: .subtext}
+
+
+[1]:    http://blogengine.ru
+[2]:    https://docs.google.com/document/d/1yn7KCHq47oli7IH--skhymjjj2OSlXjcyGOxZ2ZEPeA/edit#heading=h.j2h2wr6xhlie
+[3]:    https://github.com/matthieua/WOW
+[4]:    https://github.com/daneden/animate.css
+[5]:    /blog/kat-v-egee
+[6]:    /blog/svoi-shrifty-v-egee/
+[7]:    /blog/snoski-na-poljah-v-egee/

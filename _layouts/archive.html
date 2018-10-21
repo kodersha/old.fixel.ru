@@ -1,14 +1,16 @@
----
-layout: default
-class: blog
-title: {{ page.title }}
----
+{% include header.html %}
+{% include banner.html %}
 
-<section class="slide-up-fade-in space-auto-h-xs space-in-bottom-kilo-xs content linel">
-    <h1 class="title">{{ page.title | improve }}</h1>
-    {% for post in page.posts %}
-        <article class="{% if forloop.last == true %}space-out-bottom-zero-xs{% else %}space-in-bottom-nano-xs{% endif %} item">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | improve }}</a>
-        </article>
-    {% endfor %}
-</section>
+<main id="blog" class="wrapper main" role="main">
+    <section class="space-in-bottom-mili-xs row">
+        <form class="col-xs-12 search">
+            <input id="search-input" class="search-box form-control fa" placeholder="&#xf002;" onblur="this.placeholder = ''" onfocus="this.placeholder = ''" type="text" autocomplete="off" autocapitalize="off" required>
+            <ul class="dropdown results" id="results-container"></ul>
+        </form>
+        {% for post in page.posts %}
+            {% include list.html %}
+        {% endfor %}
+    </section>
+</main>
+
+{% include footer.html %}

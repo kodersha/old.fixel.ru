@@ -1,0 +1,7 @@
+<header class="space-in-v-mili-xs header" role="banner">
+    <div class="space-auto-h-xs logo">
+        <a href="{% if page.layout == 'blog' %}{{ site.baseurl }}/{% elsif page.layout == 'portfolio'%}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/blog/{% endif %}">
+            <img srcset="{{ site.baseurl }}/assets/images/avatar_96x96.png 2x, {{ site.baseurl }}/assets/images/avatar_192x192.png 4x" src="{{ site.baseurl }}/assets/images/avatar_64x64.png" width="64" height="64" alt="{{ site.title }}">
+        </a>
+    </div>
+</header>

@@ -1,0 +1,20 @@
+{% include header.html %}
+
+<main class="space-auto-h-xs wrapper home" role="main">
+    <section class="welcome">
+        <div class="space-out-bottom-mili-xs avatar motion" id="motion" style="--dy:0; --dx:0;">
+            <a href="{{ site.baseurl }}/blog/">
+                <img srcset="{{ site.baseurl }}/assets/images/avatar_96x96.png 2x, {{ site.baseurl }}/assets/images/avatar_192x192.png 4x" src="{{ site.baseurl }}/assets/images/avatar_192x192.png" width="192" height="192" alt="{{ site.title }}">
+            </a>
+        </div>
+        {{ content }}
+        <nav class="space-out-top-base-xs">
+            <ul>
+                <li><a target="_blank" href="https://github.com/sashatravkina">GitHub</a></li> &middot;
+                <li><a href="{{ site.baseurl }}/portfolio/" title="Которое портфолио">Фортполио</a></li>
+            </ul>
+        </nav>
+    </section>
+</main>
+
+{% include footer.html %}

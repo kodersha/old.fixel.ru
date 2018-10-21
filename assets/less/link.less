@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+    border-bottom: 1px solid fade(@link-color, 5%);
+    color: @link-color;
+
+    &:hover {
+        color: spin(@link-color, 180);
+        border-color: fade(spin(@link-color, 180), 10%);
+    }
+}
