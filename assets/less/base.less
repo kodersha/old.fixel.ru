@@ -2,7 +2,13 @@
 .global-colors();
 
 html {
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
+    overflow-y: scroll;
+
+    @media @md {
+        width: 100vw;
+    }
 }
 html, body {
     height: 100%;
@@ -11,9 +17,7 @@ body {
     -webkit-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: subpixel-antialiased;
-    font-smoothing: subpixel-antialiased;
     -webkit-text-size-adjust: none;
-    text-size-adjust: none;
     overflow-x: hidden;
     cursor: default;
 }
@@ -141,6 +145,11 @@ time {
             padding: 0 20px;
         }
     }
+}
+.end {
+    font-family: @global-font-family;
+    font-size: @global-font-size - 0.15;
+    text-align: center;
 }
 .message {
     text-align: center;
