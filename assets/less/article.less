@@ -357,54 +357,62 @@ article {
             margin-bottom: 8px;
             margin-top: 4px;
         }
-        &::before {
-            background-color: #ffffff;
-            position: absolute;
-            border-radius: 50%;
-            border: 2px solid @color-accent;
-            z-index: 10;
-            content: '';
-            height: 2px;
-            width: 2px;
-            top: 15px;
-        }
-        &::after {
-            border-right: 2px solid @color-accent;
-            position: absolute;
-            height: 100%;
-            content: '';
-            top: 0;
-        }
-        &.even {
-            text-align: left;
 
-            &::after {
-                left: -1px;
-            }
+        @media @md {
             &::before {
-                left: -3px;
+                background-color: #ffffff;
+                position: absolute;
+                border-radius: 50%;
+                border: 2px solid @color-accent;
+                z-index: 10;
+                content: '';
+                height: 2px;
+                width: 2px;
+                top: 15px;
             }
-        }
-        &.odd {
-            text-align: right;
+            &::after {
+                border-right: 2px solid @color-accent;
+                position: absolute;
+                height: 100%;
+                content: '';
+                top: 0;
+            }
+            &.even {
+                text-align: left;
 
-            &::after {
-                right: -1px;
+                &::after {
+                    left: -1px;
+                }
+                &::before {
+                    left: -3px;
+                }
             }
-            &::before {
-                right: -3px;
+            &.odd {
+                text-align: right;
+
+                &::after {
+                    right: -1px;
+                }
+                &::before {
+                    right: -3px;
+                }
+            }
+            .end {
+                font-size: @global-font-size - 0.15;
+                text-align: center;
             }
         }
         .tags {
-            margin-bottom: 10px;
-            margin-right: -2px;
-            margin-left: -2px;
+            margin-bottom: 8px;
+            margin-right: -1px;
+            margin-left: -1px;
 
             a {
                 background-color: @color-accent;
                 padding: 5px 8px 4px;
-                margin-right: 2px;
-                margin-left: 2px;
+                margin-bottom: 2px;
+                margin-right: 1px;
+                margin-left: 1px;
                 border-bottom: 0;
                 border-radius: 20px;
                 font-size: @global-font-size - 0.35;
