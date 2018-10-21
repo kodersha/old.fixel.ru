@@ -15,14 +15,14 @@
 	<meta name="generator" content="Jekyll v3.8.4" />
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="Fixel">
+	<meta name="twitter:site" content="">
 	<meta name="twitter:creator" content="@sasha_travkina">
-	<meta name="twitter:title" content="Установка flarum на centOS &middot; Fixel">
+	<meta name="twitter:title" content="Установка flarum на centOS &middot; ">
 	<meta name="twitter:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся....">
 	<meta name="twitter:image" content="">
 
-	<meta property="og:title" content="Установка flarum на centOS &middot; Fixel" />
-	<meta property="og:site_name" content="Fixel">	
+	<meta property="og:title" content="Установка flarum на centOS &middot; " />
+	<meta property="og:site_name" content="">	
 	<meta property="og:url" content="https://fixel.ru/blog/ustanovka-flarum-na-centos-7/">
 	<meta property="og:description" content="Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — flarum. Судя по тому, что уже есть, CMS довольно перспективная, симпатичная и вообще быстро развивающаяся...."/>
 	<meta property="og:image" content="" />
@@ -47,33 +47,33 @@
 	<!--[ Control ]-->
 	<meta name="yandex-verification" content="f96ef0e811161c03" />
 	<meta name="google-site-verification" content="dwjd3hkjvkoN4sqwgiC9Mgf5tTpjN8XDhuYDWACpsII" />
-	<meta name="rp95a13c119f7d4fcfb88ed46bb0810c2a" content="e1e609e1b17a97c3d4820f986ce8cd52" />
 
 	<!--[ Feed ]-->
 	<link rel="canonical" href="https://fixel.ru/blog/ustanovka-flarum-na-centos-7/">
-	<link rel="alternate" type="application/rss+xml" title="Fixel" href="https://fixel.ru/feed.xml" />
+	<link rel="alternate" type="application/rss+xml" title="" href="https://fixel.ru/feed.xml" />
 		
 		<!--[ CSS ]-->
-		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/style.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/zoom.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/fotorama.css" />
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
-<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
-		<script type="text/javascript">base_url = "https://fixel.ru";</script>
+		<script type="text/javascript" src="/assets/js/jquery.js"></script>
+        <script type="text/javascript">base_url = "https://fixel.ru";</script>
+        
+        <!--[ Schema ]-->
 		<script type="application/ld+json">
 
 	
 	
-
 	{  
 		"@context":"http://schema.org",
 		"@type":"BlogPosting",
 		"headline":"Установка flarum на centOS",
-		"genre":"Веб",
-		"keywords":"Гайд",
-		"wordCount":"544",
+		"genre":"",
+		"keywords":"Веб, Гайды",
+		"wordCount":"541",
 		"url":"https://fixel.ru/blog/ustanovka-flarum-na-centos-7/",
 		"datePublished":"2016-01-17",
 		"dateModified":"2016-01-17",
@@ -111,51 +111,33 @@
 
 
 </script>
+		
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper page-post">
-
-<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
-	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
-		<a class="link-logo" href="/">
-			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Fixel">					
-		</a>
-	</div>
-	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
+	<body class="space-out-h-zero-xs space-out-v-zero-xs space-in-h-mili-xs space-in-h-zero-lg">
+<header class="space-in-v-mili-xs header" role="banner">
+    <div class="space-auto-h-xs logo">
+        <a href="/blog/">
+            <img srcset="/assets/images/avatar_96x96.png 2x, /assets/images/avatar_192x192.png 4x" src="/assets/images/avatar_64x64.png" width="64" height="64" alt="Блог Александры Травкиной">
+        </a>
+    </div>
 </header>
-<article class="slide-up-fade-in space-auto-h-xs content post">
-	<time class="single">17 января 2016</time>
-	
-		<h1 class="title">Установка flarum на&nbsp;cent<span class="caps">OS</span></h1>
-	
-	
-    
-	
-	<p>Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — <a href="http://flarum.org/" rel="nofollow" target="_blank">flarum</a>. Судя по тому, что уже есть, <span class="caps">CMS</span> довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на cent<span class="caps">OS</span> 7.</p>
 
+<main class="main" role="main">
+    <article class="article">
+        <time>17 января 2016</time>
+        <h1>Установка flarum на&nbsp;cent<span class="caps">OS</span></h1>
+        <p>Все же если есть блог, стоит в него что нибудь написать. Так вот, не так давно на просторах сети повстречала относительно новый форумный движок — <a href="http://flarum.org/" rel="nofollow" target="_blank">flarum</a>. Судя по тому, что уже есть, <span class="caps">CMS</span> довольно перспективная, симпатичная и вообще быстро развивающаяся. Не смотря на то, что flarum все еще в бета-версии, захотелось поставить её на поддомен и посмотреть чуть более детально. Собственно говоря, в этой статье я описываю процесс установки flarum’a на cent<span class="caps">OS</span>&nbsp;7.</p>
 
+<p>Ставилась flarum на cent<span class="caps">OS</span> 7 самого обычного <a href="https://www.ihor.ru/vds" rel="nofollow" target="_blank"><span class="caps">VDS</span> хостинга</a>. Для установки требуется Apache (с mod_rewrite), Nginx и Lighttpd. <span class="caps">PHP</span> версии <span class="caps">5.5</span> и выше, My<span class="caps">SQL</span> <span class="caps">5.5</span> и конечно же <span class="caps">SSH</span> консоль, так как ставится flarum через&nbsp;Сomposer.</p>
 
-<p>Ставилась flarum на cent<span class="caps">OS</span> 7 самого обычного <a href="https://www.ihor.ru/vds" rel="nofollow" target="_blank"><span class="caps">VDS</span> хостинга</a>. Для установки требуется Apache (с mod_rewrite), Nginx и Lighttpd. <span class="caps">PHP</span> версии <span class="caps">5.5</span> и выше, My<span class="caps">SQL</span> <span class="caps">5.5</span> и конечно же <span class="caps">SSH</span> консоль, так как ставится flarum через Сomposer.</p>
+<h2 id="обновляем-php">Обновляем&nbsp;<span class="caps">PHP</span></h2>
 
-<h2 id="обновляем-php">Обновляем <span class="caps">PHP</span>
-</h2>
-
-<p>Так как на сервере стоял <span class="caps">PHP</span> версии <span class="caps">5.4</span> нам придется его обновить. Открываем консоль и добавляем репозиторий:</p>
+<p>Так как на сервере стоял <span class="caps">PHP</span> версии <span class="caps">5.4</span> нам придется его обновить. Открываем консоль и добавляем&nbsp;репозиторий:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">rpm <span class="nt">-Uvh</span> http://rpms.famillecollet.com/enterprise/remi-release-7.rpm</code></pre></figure>
 
-<p>После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем секцию:</p>
+<p>После добавления репозитория на сервере появится папка /etc/yum.repos.d, переходим в папку и редактируем файл remi.repo. Ищем&nbsp;секцию:</p>
 
 <figure class="highlight"><pre><code class="language-conf" data-lang="conf">[<span class="n">remi</span>-<span class="n">php56</span>]
 <span class="n">name</span>=<span class="n">Les</span> <span class="n">RPM</span> <span class="n">de</span> <span class="n">remi</span> <span class="n">de</span> <span class="n">PHP</span> <span class="m">5</span>.<span class="m">6</span> <span class="n">pour</span> <span class="n">Enterprise</span> <span class="n">Linux</span> <span class="m">6</span> - $<span class="n">basearch</span>&amp;<span class="n">nbsp</span>
@@ -166,54 +148,54 @@
 <span class="n">gpgcheck</span>=<span class="m">1</span> 
 <span class="n">gpgkey</span>=<span class="n">file</span>:///<span class="n">etc</span>/<span class="n">pki</span>/<span class="n">rpm</span>-<span class="n">gpg</span>/<span class="n">RPM</span>-<span class="n">GPG</span>-<span class="n">KEY</span>-<span class="n">remi</span></code></pre></figure>
 
-<p>И меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с <span class="caps">PHP</span> версии <span class="caps">5.4</span> до <span class="caps">5.5</span> в соответствующей секции remi-php55.</p>
+<p>И меняем параметр enabled=0 на enabled=1. Аналогично можно обновится с <span class="caps">PHP</span> версии <span class="caps">5.4</span> до <span class="caps">5.5</span> в соответствующей секции&nbsp;remi-php55.</p>
 
-<p>Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится следующее:</p>
+<p>Далее редактируем /etc/httpd/conf.d/phpmyadmin.conf. Находим строку с параметром php_admin_value open_basedir и добавляем :/usr/share/doc/. Должно получится&nbsp;следующее:</p>
 
 <figure class="highlight"><pre><code class="language-conf" data-lang="conf"><span class="n">php_admin_value</span> <span class="n">open_basedir</span> <span class="s2">"/usr/share/phpMyAdmin/:/etc/phpMyAdmin/:/var/lib/phpMyAdmin/:/tmp/:/usr/share/php/:/var/lib/php/session/:/usr/share/doc/"</span></code></pre></figure>
 
-<p>Делается это для того, что бы не возникло проблем при обновлении phpmyadmin.</p>
+<p>Делается это для того, что бы не возникло проблем при обновлении&nbsp;phpmyadmin.</p>
 
-<p>Теперь в консоль можно ввести следующее:</p>
+<p>Теперь в консоль можно ввести&nbsp;следующее:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">yum <span class="nb">install </span>php <span class="nt">-y</span></code></pre></figure>
 
-<p>И <span class="caps">PHP</span> обновится до <span class="caps">5.6</span> версии, соответственно. Проверяем:</p>
+<p>И <span class="caps">PHP</span> обновится до <span class="caps">5.6</span> версии, соответственно.&nbsp;Проверяем:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">php <span class="nt">-v</span></code></pre></figure>
 
-<h2 id="обновляем-остальные-пакеты">Обновляем остальные пакеты</h2>
+<h2 id="обновляем-остальные-пакеты">Обновляем остальные&nbsp;пакеты</h2>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">уum update</code></pre></figure>
 
-<h2 id="устанавливаем-lighttpd">Устанавливаем Lighttpd</h2>
+<h2 id="устанавливаем-lighttpd">Устанавливаем&nbsp;Lighttpd</h2>
 
-<p>Ставим wget:</p>
+<p>Ставим&nbsp;wget:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum <span class="nb">install </span>wget</code></pre></figure>
 
-<p>Обновляем репозитории:</p>
+<p>Обновляем&nbsp;репозитории:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>rpm <span class="nt">--import</span> https://fedoraproject.org/static/0608B895.txt
 <span class="nb">sudo </span>wget http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 <span class="nb">sudo </span>rpm <span class="nt">-ivh</span> epel-release-6-8.noarch.rpm</code></pre></figure>
 
-<p>Устанавливаем lighttpd:</p>
+<p>Устанавливаем&nbsp;lighttpd:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>yum <span class="nb">install </span>lighttpd</code></pre></figure>
 
-<p>Прописываем автостарт:</p>
+<p>Прописываем&nbsp;автостарт:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>chkconfig <span class="nt">--levels</span> 235 lighttpd on</code></pre></figure>
 
-<p>Запускаем и проверяем:</p>
+<p>Запускаем и&nbsp;проверяем:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>service lighttpd start
 <span class="nb">sudo </span>service lighttpd status</code></pre></figure>
 
-<h2 id="устанавливаем-composer">Устанавливаем Composer</h2>
+<h2 id="устанавливаем-composer">Устанавливаем&nbsp;Composer</h2>
 
-<p>Установка composer предельно проста:</p>
+<p>Установка composer предельно&nbsp;проста:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">curl <span class="nt">-sS</span> https://getcomposer.org/installer | php
 <span class="nb">mv </span>composer.phar /usr/local/bin/composer</code></pre></figure>
@@ -222,106 +204,48 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer <span class="nt">-v</span></code></pre></figure>
 
-<h2 id="устанавливаем-flarum">Устанавливаем Flarum</h2>
+<h2 id="устанавливаем-flarum">Устанавливаем&nbsp;Flarum</h2>
 
-<p>Если все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с сайтом:</p>
+<p>Если все сделано правильно, то вы смело можете приступать к установке flarum. Переходим в папку с&nbsp;сайтом:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /var/www/имя/data/www/домен</code></pre></figure>
 
-<p>Папка домена должна быть пуста. Вводим:</p>
+<p>Папка домена должна быть пуста.&nbsp;Вводим:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell">composer create-project flarum/flarum <span class="nb">.</span> <span class="nt">--stability</span><span class="o">=</span>beta</code></pre></figure>
 
-<p>Начнется установка flarum. После завершения установки откройте сайт в браузере и завершите установку flarum.</p>
+<p>Начнется установка flarum. После завершения установки откройте сайт в браузере и завершите установку&nbsp;flarum.</p>
 
-<h2 id="возникающие-ошибки">Возникающие ошибки</h2>
+<h2 id="возникающие-ошибки">Возникающие&nbsp;ошибки</h2>
 
 <div block="">
-<p><b>Q</b>: Нет доступа к сайту, в логах ссылается на «Option Multiviews not allowed here».</p>
-<p><b>A</b>: Править /etc/httpd/conf.d/z1_home.conf, изменить значение параметра AllowOverride на All.</p>
-<p><b>Q</b>: При установке flarum composer выдает ошибку: <span class="caps">PHP</span> Fatal error: Uncaught exception ‘ErrorException’ with message ’proc_open(): fork failed — Cannot allocate memory’ in phar</p>
+<p><b>Q</b>: Нет доступа к сайту, в логах ссылается на «Option Multiviews not allowed&nbsp;here».</p>
+<p><b>A</b>: Править /etc/httpd/conf.d/z1_home.conf, изменить значение параметра AllowOverride на&nbsp;All.</p>
+<p><b>Q</b>: При установке flarum composer выдает ошибку: <span class="caps">PHP</span> Fatal error: Uncaught exception ‘ErrorException’ with message ’proc_open(): fork failed — Cannot allocate memory’ in&nbsp;phar</p>
 <p><b>A</b>: Смотрите заметку на <a href="https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors" rel="nofollow" target="_blank">getcomposer.org</a></p>
 </div>
 
 
+    </article>
+    <nav class="row row-between-xs row-middle-xs space-auto-h-xs space-in-v-kilo-xs wrapper bloglinks">
+        <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs previous">
+            
+                <a href="/blog/roskomnadzor-i-obhod-blokirovok/">&lsaquo; «Роскомнадзор» и обход блокировок</a><br>
+            
+        </span>
+    
+        <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs next">
+            
+                <a href="/blog/firewatch/">Firewatch &rsaquo;</a>
+            
+        </span>
+    </nav>
+</main>
 
-	
-
-	
-
-</article>
-
-<nav class="row row-between-sm row-middle-sm space-auto-h-xs space-in-v-kilo-xs linel pagination">
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs previous">
-		
-			<a class="link-subcontrol" href="/blog/roskomnadzor-i-obhod-blokirovok/">&lsaquo; «Роскомнадзор» и обход блокировок</a><br>
-		
-	</span>
-
-	<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-sm space-in-h-zero-xs next">
-		
-			<a class="link-subcontrol" href="/blog/firewatch/">Firewatch &rsaquo;</a>
-		
-	</span>
-</nav>
-<footer>
-	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
-		<div class="row">
-			<div class="col-xs">
-			Александра Травкина &copy; <time>2015 - 2018</time>
-			</div>
-			<div class="col-xs-shrink toggle">
-				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
-			</div>
-		</div>
-	</div>
-	<section class="space-auto-h-xs linel navigation">
-	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
-		<ol class="menu-content">
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs active"><a class="link-subcontrol" href="/">Главная</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs"><a class="link-subcontrol" href="/blog/tags/">Теги</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
-			
-			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
-		</ol>
-	</nav>
-</section>
-</footer>
-
-		<!--[ JS ]-->
-		<!--[if lt IE 9]>
-<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
-<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
-<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
-
-<script type="text/javascript" src="/static/js/template.js"></script>
-
-<!--[ AdBlock ]-->
-
-<script type="text/javascript" src="https://cdn.rawgit.com/Yuukithemes/yuukithemes.github.io/92c11f42/js/advertisement.js"></script>
-<script type="text/javascript" src="/static/js/ads.js"></script>
-
-<!--[ Lightbox ]-->
+		<!-- JS -->
+		<script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
+		<script type="text/javascript" src="/assets/js/zoom.js"></script>
+		<script type="text/javascript" src="/assets/js/fotorama.js"></script>
+		<script type="text/javascript" src="/assets/js/template.js"></script>
 	</body>
 </html>

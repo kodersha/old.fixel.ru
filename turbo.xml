@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>Блог Александры Травкиной</title>
     <link>https://fixel.ru/</link>
-    <description>Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.</description>
+    <description>Блог о веб-дизайне, компьютерах и компьютерных играх</description>
     <language>ru</language>
     <atom:link href="https://fixel.ru/feed.xml" rel="self" type="application/rss+xml"/>
     <yandex:analytics id="40455205" type="Yandex"></yandex:analytics>
@@ -14,14 +14,10 @@
         <link>https://fixel.ru/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/</link>
         <description>&lt;p&gt;Вот уже в конце недели, 30 сентября, с момента выхода Fallout 2 пройдет без малого ровно двадцать лет. Но даже сейчас ее проработанность мира, насыщенность сюжета и вариативность прохождения сложно переоценить. Однако, если классическая вторая часть приключений на постядерных пустошах уже была пройдена вдоль и поперек, ее всегда можно разнообразить глобальными, сюжетными модами.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;h2 id=&quot;fallout-of-nevada&quot;&gt;Fallout of Nevada&lt;/h2&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537802271/01_dojhat.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537802271/01_dojhat.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/001.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -33,10 +29,8 @@
 
 &lt;h2 id=&quot;fallout-15-resurrection&quot;&gt;Fallout 1.5: Resurrection&lt;/h2&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537802362/03_gaauc9.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537802362/03_gaauc9.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/002.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -48,10 +42,8 @@
 
 &lt;h2 id=&quot;olympus-2207&quot;&gt;Olympus 2207&lt;/h2&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537802771/02_e92tmi.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537802771/02_e92tmi.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/003.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -64,14 +56,10 @@
         <pubDate>Mon, 24 Sep 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Вот уже в конце недели, 30 сентября, с момента выхода Fallout 2 пройдет без малого ровно двадцать лет. Но даже сейчас ее проработанность мира, насыщенность сюжета и вариативность прохождения сложно переоценить. Однако, если классическая вторая часть приключений на постядерных пустошах уже была пройдена вдоль и поперек, ее всегда можно разнообразить глобальными, сюжетными модами.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;h2 id=&quot;fallout-of-nevada&quot;&gt;Fallout of Nevada&lt;/h2&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537802271/01_dojhat.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537802271/01_dojhat.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/001.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -83,10 +71,8 @@
 
 &lt;h2 id=&quot;fallout-15-resurrection&quot;&gt;Fallout 1.5: Resurrection&lt;/h2&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537802362/03_gaauc9.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537802362/03_gaauc9.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/002.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -98,10 +84,8 @@
 
 &lt;h2 id=&quot;olympus-2207&quot;&gt;Olympus 2207&lt;/h2&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537802771/02_e92tmi.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537802771/02_e92tmi.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/003.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -120,16 +104,12 @@
         <link>https://fixel.ru/blog/graveyard-keeper/</link>
         <description>&lt;p&gt;Волею несправедливой судьбы главный герой в одночасье оказывается в странном мире, лишь на первый взгляд похожем на наш. Там правят времена феодализма и алхимии, процветает земледелие и скотоводство, ведьм сжигают на костре силами святой инквизиции, а навыками чтения и письма владеет далеко не каждый.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Оказавшись вырванным из привычной жизни незадачливый главный герой поневоле становится смотрителем кладбища, приняв на себя все тяготы этой профессии вместо предыдущего, неизвестно куда исчезнувшего, смотрителя. А помогать в нелегком похоронном деле новому смотрителю будет говорящий череп по имени Гэрри страдающий хроническим алкоголизмом и чрезмерной словоохотливостью. Помимо черепа придется познакомится и с местным церковным епископом — своим косвенным начальством.&lt;/p&gt;
 
 &lt;p&gt;В обязанности смотрителя кладбища, как очевидно, входит нелегкая работа по выкапыванию могил и закапыванию безвременно почивших (Но можно и наоборот). Вверенную территорию необходимо содержать в надлежащем порядке — устанавливать надгробья, кресты и ограды, для изготовления которых необходимо немалое количество древесины и камня. Со временем тела можно будет не только предавать земле, но и кремировать, а значит понадобится колумбарий и прочие сопутствующие заботы. Не выйдет забыть и о пропитании — выращивать овощные культуры, заботится о пчелиных ульях, заниматься рыбалкой — все это не говоря о квестах и поручениях жителей местной деревни. Но главной задачей смотрителя-по-неволе будет попытка выяснить, как он оказался в этом чужом мире и каким образом можно вернуться домой.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537649441/01_cvzijq.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537649441/01_cvzijq.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/010.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -139,10 +119,8 @@
 
 &lt;p&gt;Относительно самих квестов — вся их сложность заключается в сборе ресурсов которые накапливаются весьма медленно и неудобно. За той же древесиной или камнями приходится ходить не по одному разу и не через одну локацию, энергия персонажа расходуется семимильными шагами, а автоматизации процесса нет. И если в начале игры все это кажется довольно увлекательным, то уже через несколько часов превращается в рутину и однообразие.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537649528/02_caghgg.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537649528/02_caghgg.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/011.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -151,16 +129,12 @@
         <pubDate>Sun, 23 Sep 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Волею несправедливой судьбы главный герой в одночасье оказывается в странном мире, лишь на первый взгляд похожем на наш. Там правят времена феодализма и алхимии, процветает земледелие и скотоводство, ведьм сжигают на костре силами святой инквизиции, а навыками чтения и письма владеет далеко не каждый.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Оказавшись вырванным из привычной жизни незадачливый главный герой поневоле становится смотрителем кладбища, приняв на себя все тяготы этой профессии вместо предыдущего, неизвестно куда исчезнувшего, смотрителя. А помогать в нелегком похоронном деле новому смотрителю будет говорящий череп по имени Гэрри страдающий хроническим алкоголизмом и чрезмерной словоохотливостью. Помимо черепа придется познакомится и с местным церковным епископом — своим косвенным начальством.&lt;/p&gt;
 
 &lt;p&gt;В обязанности смотрителя кладбища, как очевидно, входит нелегкая работа по выкапыванию могил и закапыванию безвременно почивших (Но можно и наоборот). Вверенную территорию необходимо содержать в надлежащем порядке — устанавливать надгробья, кресты и ограды, для изготовления которых необходимо немалое количество древесины и камня. Со временем тела можно будет не только предавать земле, но и кремировать, а значит понадобится колумбарий и прочие сопутствующие заботы. Не выйдет забыть и о пропитании — выращивать овощные культуры, заботится о пчелиных ульях, заниматься рыбалкой — все это не говоря о квестах и поручениях жителей местной деревни. Но главной задачей смотрителя-по-неволе будет попытка выяснить, как он оказался в этом чужом мире и каким образом можно вернуться домой.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537649441/01_cvzijq.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537649441/01_cvzijq.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/010.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -170,10 +144,8 @@
 
 &lt;p&gt;Относительно самих квестов — вся их сложность заключается в сборе ресурсов которые накапливаются весьма медленно и неудобно. За той же древесиной или камнями приходится ходить не по одному разу и не через одну локацию, энергия персонажа расходуется семимильными шагами, а автоматизации процесса нет. И если в начале игры все это кажется довольно увлекательным, то уже через несколько часов превращается в рутину и однообразие.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537649528/02_caghgg.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537649528/02_caghgg.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/011.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -188,29 +160,23 @@
         <link>https://fixel.ru/blog/60-parsecs/</link>
         <description>&lt;p&gt;Спустя три года после выхода «&lt;a href=&quot;/blog/60-seconds/&quot;&gt;60 seconds!&lt;/a&gt;», инди-студия Robot Gentleman наконец-то выпустила вторую часть приключенческого текстового квеста. Но на этот раз, группа выживших в ядерной войне оказывается не на Земле, а в глубоком космосе на борту единственно уцелевшего спасательного шаттла, за шестьдесят далеких парсек от родной планеты.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Как и в «60 seconds!» у вас есть лишь шестьдесят секунд на то, чтобы собрать необходимые для выживания припасы, некоторых членов команды, и успеть запрыгнуть в спасательный шаттл. Прихватив с собой запасы драгоценного консервированного супа вам и вашей команде предстоит выжить как можно дольше и, как знать, может быть вас спасут.&lt;/p&gt;
+
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/012.jpg&quot; data-action=&quot;zoom&quot; /&gt;
+				
+			&lt;/figure&gt;
 
 &lt;p&gt;Первое, что хочется отметить, игра стала гораздо приятнее, как в визуальном плане, так и в плане геймплея. Он, в свою очередь, обзавелся рядом новых механик. Теперь у каждого из выживших есть свои, определенные характеристики, такие как — ловкость, интеллект и сила. Некоторые события могут решаться с применением тех или иных особенностей капитана — вашего главного героя. Использовать интеллект или силу в починке шаттла? Использовать силу или ловкость уклоняясь от случайного метеорита? Так или иначе особенности капитана влияют на решение самых различных ситуаций.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537520238/001_k3w2a1.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537520238/001_k3w2a1.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-
 &lt;p&gt;Ко всеобщей тенденции, игра обзавелась системой крафта. Вы можете разбирать предметы на ресурсы и создавать предметы из ресурсов. Сами ресурсы можно собирать на близлежащих планетах, отправляя в экспедицию одного из выживших. Так что когда закончатся запасы супа можно будет разобрать все подручные средства и скрафтить из них суп. Кстати, места экспедиций по планете можно выбирать из нескольких предложенных — от выбранного места будет зависеть то, какие ресурсы вы получите, какая опасность может встретится незадачливому исследователю и то, насколько продолжительной будет вылазка. Отправив выжившего без должного снаряжения или оружия, есть большой риск его потерять.&lt;/p&gt;
 
-&lt;p&gt;Единственное, что можно отнести к минусам геймплея, в отличии от предыдущей части, суп больше нельзя делить на порции. Если раньше можно было накормить одной банкой несколько человек, то здесь одна полная банка на одного человека — в итоге запасы стремительно убывают. Да и от воды здесь решили избавиться, теперь для выживания она не нужна. В целом геймплей стал, пожалуй, сложнее, однако баланс еще могут исправить патчами.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537522806/002_nd6oyp.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537522806/002_nd6oyp.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/013.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+
+&lt;p&gt;Единственное, что можно отнести к минусам геймплея, в отличии от предыдущей части, суп больше нельзя делить на порции. Если раньше можно было накормить одной банкой несколько человек, то здесь одна полная банка на одного человека — в итоге запасы стремительно убывают. Да и от воды здесь решили избавиться, теперь для выживания она не нужна. В целом геймплей стал, пожалуй, сложнее, однако баланс еще могут исправить патчами.&lt;/p&gt;
 
 &lt;p&gt;В итоге, «60 Parsecs!» стала объемнее, разнообразнее, целостнее и симпатичнее, при этом фирменный юмор, неочевидные выборы и атмосфера никуда не делись. Пожалуй, вышло весьма достойное продолжение первой части.&lt;/p&gt;
 
@@ -218,29 +184,23 @@
         <pubDate>Fri, 21 Sep 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Спустя три года после выхода «&lt;a href=&quot;/blog/60-seconds/&quot;&gt;60 seconds!&lt;/a&gt;», инди-студия Robot Gentleman наконец-то выпустила вторую часть приключенческого текстового квеста. Но на этот раз, группа выживших в ядерной войне оказывается не на Земле, а в глубоком космосе на борту единственно уцелевшего спасательного шаттла, за шестьдесят далеких парсек от родной планеты.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Как и в «60 seconds!» у вас есть лишь шестьдесят секунд на то, чтобы собрать необходимые для выживания припасы, некоторых членов команды, и успеть запрыгнуть в спасательный шаттл. Прихватив с собой запасы драгоценного консервированного супа вам и вашей команде предстоит выжить как можно дольше и, как знать, может быть вас спасут.&lt;/p&gt;
+
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/012.jpg&quot; data-action=&quot;zoom&quot; /&gt;
+				
+			&lt;/figure&gt;
 
 &lt;p&gt;Первое, что хочется отметить, игра стала гораздо приятнее, как в визуальном плане, так и в плане геймплея. Он, в свою очередь, обзавелся рядом новых механик. Теперь у каждого из выживших есть свои, определенные характеристики, такие как — ловкость, интеллект и сила. Некоторые события могут решаться с применением тех или иных особенностей капитана — вашего главного героя. Использовать интеллект или силу в починке шаттла? Использовать силу или ловкость уклоняясь от случайного метеорита? Так или иначе особенности капитана влияют на решение самых различных ситуаций.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537520238/001_k3w2a1.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537520238/001_k3w2a1.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-
 &lt;p&gt;Ко всеобщей тенденции, игра обзавелась системой крафта. Вы можете разбирать предметы на ресурсы и создавать предметы из ресурсов. Сами ресурсы можно собирать на близлежащих планетах, отправляя в экспедицию одного из выживших. Так что когда закончатся запасы супа можно будет разобрать все подручные средства и скрафтить из них суп. Кстати, места экспедиций по планете можно выбирать из нескольких предложенных — от выбранного места будет зависеть то, какие ресурсы вы получите, какая опасность может встретится незадачливому исследователю и то, насколько продолжительной будет вылазка. Отправив выжившего без должного снаряжения или оружия, есть большой риск его потерять.&lt;/p&gt;
 
-&lt;p&gt;Единственное, что можно отнести к минусам геймплея, в отличии от предыдущей части, суп больше нельзя делить на порции. Если раньше можно было накормить одной банкой несколько человек, то здесь одна полная банка на одного человека — в итоге запасы стремительно убывают. Да и от воды здесь решили избавиться, теперь для выживания она не нужна. В целом геймплей стал, пожалуй, сложнее, однако баланс еще могут исправить патчами.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1537522806/002_nd6oyp.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1537522806/002_nd6oyp.jpg&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/013.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+
+&lt;p&gt;Единственное, что можно отнести к минусам геймплея, в отличии от предыдущей части, суп больше нельзя делить на порции. Если раньше можно было накормить одной банкой несколько человек, то здесь одна полная банка на одного человека — в итоге запасы стремительно убывают. Да и от воды здесь решили избавиться, теперь для выживания она не нужна. В целом геймплей стал, пожалуй, сложнее, однако баланс еще могут исправить патчами.&lt;/p&gt;
 
 &lt;p&gt;В итоге, «60 Parsecs!» стала объемнее, разнообразнее, целостнее и симпатичнее, при этом фирменный юмор, неочевидные выборы и атмосфера никуда не делись. Пожалуй, вышло весьма достойное продолжение первой части.&lt;/p&gt;
 
@@ -254,14 +214,10 @@
         <link>https://fixel.ru/blog/stay/</link>
         <description>&lt;p&gt;Своего рода визуальная новелла, выполненная, как и положено современной инди игре, в весьма детальной пиксельной графике под аккомпанемент красивейшей музыки. В STAY вам предстоит взять на себя роль самого себя и попытаться помочь незнакомцу, оказавшемуся в плену неизвестного похитителя.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Главный герой, помимо Игрока, парень по имени Квинн, страдающий от одиночества, бессонницы, депрессии и суицидальных мыслей. В один из дней он, по обыкновению, ложиться спать в четыре утра, а просыпается от того, что в его спальню врывается неизвестный в маске. Квинн приходит в себя в одной пижаме, в классическом, для триллера с похищением, темном и сыром подвале. Непроглядную тьму рассеивает лишь слабый свет монитора старого компьютера, который оказывается подключен, посредством текстового чата, напрямую к незадачливому Игроку.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1534067100/001_ss6ovj.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1534067100/001_ss6ovj.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/014.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -269,10 +225,8 @@
 
 &lt;p&gt;Само место, в котором оказывается Квинн, полно загадок. По мере исследования он будет находить различные предметы, открывать тайные комнаты и решать различные головоломки, коих в игре предостаточно. Неизвестный похититель отводит своему пленнику всего чуть больше тринадцати часов. Время в STAY играет важную роль, выключая игру оно не останавливается — вы оставляете Квинна в одиночестве, а таймер все также неумолимо приближается к своему истечению.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1534068809/003_jmqzkx.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1534068809/003_jmqzkx.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/015.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -280,10 +234,8 @@
 
 &lt;p&gt;Следить за настроениями подопечного можно на специальной странице, там отображена текущая степень доверия, настроение и прочие состояния, из которых можно делать вывод о том, какую фразу лучше сказать и в каком русле вести дальнейший диалог. Сам же Квинн, довольно самобытный персонаж, он не всегда захочет следовать светам Игрока, а порой может и соврать.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1534070571/005_aawuzk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1534070571/005_aawuzk.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/016.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -294,14 +246,10 @@
         <pubDate>Sun, 12 Aug 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Своего рода визуальная новелла, выполненная, как и положено современной инди игре, в весьма детальной пиксельной графике под аккомпанемент красивейшей музыки. В STAY вам предстоит взять на себя роль самого себя и попытаться помочь незнакомцу, оказавшемуся в плену неизвестного похитителя.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Главный герой, помимо Игрока, парень по имени Квинн, страдающий от одиночества, бессонницы, депрессии и суицидальных мыслей. В один из дней он, по обыкновению, ложиться спать в четыре утра, а просыпается от того, что в его спальню врывается неизвестный в маске. Квинн приходит в себя в одной пижаме, в классическом, для триллера с похищением, темном и сыром подвале. Непроглядную тьму рассеивает лишь слабый свет монитора старого компьютера, который оказывается подключен, посредством текстового чата, напрямую к незадачливому Игроку.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1534067100/001_ss6ovj.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1534067100/001_ss6ovj.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/014.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -309,10 +257,8 @@
 
 &lt;p&gt;Само место, в котором оказывается Квинн, полно загадок. По мере исследования он будет находить различные предметы, открывать тайные комнаты и решать различные головоломки, коих в игре предостаточно. Неизвестный похититель отводит своему пленнику всего чуть больше тринадцати часов. Время в STAY играет важную роль, выключая игру оно не останавливается — вы оставляете Квинна в одиночестве, а таймер все также неумолимо приближается к своему истечению.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1534068809/003_jmqzkx.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1534068809/003_jmqzkx.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/015.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -320,10 +266,8 @@
 
 &lt;p&gt;Следить за настроениями подопечного можно на специальной странице, там отображена текущая степень доверия, настроение и прочие состояния, из которых можно делать вывод о том, какую фразу лучше сказать и в каком русле вести дальнейший диалог. Сам же Квинн, довольно самобытный персонаж, он не всегда захочет следовать светам Игрока, а порой может и соврать.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1534070571/005_aawuzk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1534070571/005_aawuzk.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/016.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -340,58 +284,34 @@
         <link>https://fixel.ru/blog/graficheskij-planshet-xp-pen-star-g640/</link>
         <description>&lt;p&gt;Решила вспомнить свое увлечение рисованием и таки попытаться научиться рисовать, для чего мне понадобился хоть какой-нибудь графический планшет. Выбор пал на китайский Xp-Pen Star G640, который и был благополучно заказан на AliExpress, не покупать же Wacom в самом деле. Спустя две недели планшет пришел по почте.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1530806323/001_bni0ok.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1530806323/001_bni0ok.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-
 &lt;p&gt;Комплектация оказалась довольно незамысловата — сам графический планшет, кабель питания, безбатарейный и беспроводной стилус, двадцать сменных наконечников и зажим для их смены. Ко всему — буклет-инструкция и различные рекламные флаеры производителя.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1530806325/002_ogoem8.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1530806325/002_ogoem8.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
 
 &lt;p&gt;В целом, сам планшет весьма обычный, рисовать за своего владельца, увы, не умеет и художественным навыкам не обучит. В остальном, его толщина всего два миллиметра, а размер — средние шесть на четыре дюйма. Стилус довольно удобно лежит в руке — после стилусов с батарейками вообще отлично. Поверхность, пожалуй, не очень удачна — оставляет на себе отпечатки и очень быстро царапается стилусом, однако, на производительность и чувствительность это никак не влияет. Но, если хочется сохранить первозданный вид, лучше обклеить рабочую поверхность пленкой или любой защитной приспособой.&lt;/p&gt;
 
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/017.jpg&quot; data-action=&quot;zoom&quot; /&gt;
+				
+			&lt;/figure&gt;
+
 &lt;p&gt;Сам стилус имеет 8192 степени нажатия, что позволяет рисовать как очень тонкие штрихи, так и жирные контуры. На нем, ко всему прочему, имеются две программируемые кнопки — их можно настроить на отмену действия, переключение кисти, правую кнопку мыши и вообще все, что понадобится «под рукой». На самом планшете, кстати, нет ни одной кнопки.&lt;/p&gt;
 
-&lt;p&gt;После нескольких дней «тестирования» планшета можно сказать, что для моих нужд начинающей рисовальщицы он подходит идеально. К слову, свои попытки научится рисовать я буду  выкладывать &lt;a href=&quot;https://drawing.milkleaks.ru&quot;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;После нескольких дней «тестирования» планшета можно сказать, что для моих нужд начинающей рисовальщицы он подходит идеально.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Jul 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Решила вспомнить свое увлечение рисованием и таки попытаться научиться рисовать, для чего мне понадобился хоть какой-нибудь графический планшет. Выбор пал на китайский Xp-Pen Star G640, который и был благополучно заказан на AliExpress, не покупать же Wacom в самом деле. Спустя две недели планшет пришел по почте.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1530806323/001_bni0ok.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1530806323/001_bni0ok.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
-
 &lt;p&gt;Комплектация оказалась довольно незамысловата — сам графический планшет, кабель питания, безбатарейный и беспроводной стилус, двадцать сменных наконечников и зажим для их смены. Ко всему — буклет-инструкция и различные рекламные флаеры производителя.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1530806325/002_ogoem8.jpg&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1530806325/002_ogoem8.jpg&quot; /&gt;
-				&lt;/a&gt;
-				
-			&lt;/figure&gt;
 
 &lt;p&gt;В целом, сам планшет весьма обычный, рисовать за своего владельца, увы, не умеет и художественным навыкам не обучит. В остальном, его толщина всего два миллиметра, а размер — средние шесть на четыре дюйма. Стилус довольно удобно лежит в руке — после стилусов с батарейками вообще отлично. Поверхность, пожалуй, не очень удачна — оставляет на себе отпечатки и очень быстро царапается стилусом, однако, на производительность и чувствительность это никак не влияет. Но, если хочется сохранить первозданный вид, лучше обклеить рабочую поверхность пленкой или любой защитной приспособой.&lt;/p&gt;
 
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/017.jpg&quot; data-action=&quot;zoom&quot; /&gt;
+				
+			&lt;/figure&gt;
+
 &lt;p&gt;Сам стилус имеет 8192 степени нажатия, что позволяет рисовать как очень тонкие штрихи, так и жирные контуры. На нем, ко всему прочему, имеются две программируемые кнопки — их можно настроить на отмену действия, переключение кисти, правую кнопку мыши и вообще все, что понадобится «под рукой». На самом планшете, кстати, нет ни одной кнопки.&lt;/p&gt;
 
-&lt;p&gt;После нескольких дней «тестирования» планшета можно сказать, что для моих нужд начинающей рисовальщицы он подходит идеально. К слову, свои попытки научится рисовать я буду  выкладывать &lt;a href=&quot;https://drawing.milkleaks.ru&quot;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;После нескольких дней «тестирования» планшета можно сказать, что для моих нужд начинающей рисовальщицы он подходит идеально.&lt;/p&gt;
 </turbo:content>
         <author>Александра Травкина</author>
       </item>
@@ -400,13 +320,10 @@
         <title>Хакинтош на PC</title>
         <guid isPermaLink="true">https://fixel.ru/blog/hackintosh-na-pc/</guid>
         <link>https://fixel.ru/blog/hackintosh-na-pc/</link>
-        <description>&lt;p&gt;Расставшись со своим тормозящим &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;MacBook Air&lt;/a&gt; в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.
-&lt;!-- more --&gt;&lt;/p&gt;
+        <description>&lt;p&gt;Расставшись со своим тормозящим &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;MacBook Air&lt;/a&gt; в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528118833/01_rzfgsr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528118833/01_rzfgsr.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/004.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -424,11 +341,11 @@
 
 &lt;p&gt;В качестве видеокарты пока используется встроенная Intel UHD630. А для того, чтобы Wi-Fi материнской платы заработал в hackintosh пришлось покупать &lt;a href=&quot;https://www.ebay.com/itm/Broadcom-BCM94352Z-NGFF-Dual-Band-802-11ac-867M-Wifi-BT-4-0-Lenovo-FRU-04X6020/191855727748?ssPageName=STRK:MEBIDX:IT&amp;amp;_trksid=p2060353.m2749.l2649&quot;&gt;на ebay&lt;/a&gt; новый модуль - Broadcom BCM4352, так как для стандартного модуля от Intel нет необходимых kext’ов.&lt;/p&gt;
 
-&lt;h3 id=&quot;образ-диска&quot;&gt;Образ диска&lt;/h3&gt;
+&lt;h2 id=&quot;образ-диска&quot;&gt;Образ диска&lt;/h2&gt;
 
 &lt;p&gt;Для установки hackintosh я скачала &lt;a href=&quot;https://rutracker.org/forum/viewtopic.php?t=5413589&quot;&gt;образ с High Sierra 10.13.4&lt;/a&gt; (Сейчас там более актуальная версия) с небезиветсного rutracker.org и по инструкции из темы записала его на флешку.&lt;/p&gt;
 
-&lt;h3 id=&quot;программы&quot;&gt;Программы&lt;/h3&gt;
+&lt;h2 id=&quot;программы&quot;&gt;Программы&lt;/h2&gt;
 
 &lt;p&gt;Для установки и настройки OS X понадобится некоторый набор программ, которые ставятся после первого запуска операционной системы. Можно заранее скачать их на свободную флешку так как сразу после установки интернета еще не будет.&lt;/p&gt;
 
@@ -439,7 +356,7 @@
   &lt;li&gt;&lt;strong&gt;Kext Utility&lt;/strong&gt; - Утилита для установки kext’ов. (&lt;a href=&quot;https://www.insanelymac.com/forum/topic/140647-latest-kext-utility-macos-sierra-super-speed-edition/&quot;&gt;insanelymac.com&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;kext&quot;&gt;Kext&lt;/h3&gt;
+&lt;h2 id=&quot;kext&quot;&gt;Kext&lt;/h2&gt;
 
 &lt;p&gt;Или «kernel extension», можно назвать их своего рода драйверами для hackintosh.&lt;/p&gt;
 
@@ -455,7 +372,7 @@
   &lt;li&gt;&lt;strong&gt; Lilu&lt;/strong&gt; - Расширение для поддержки различных kext’ов. (&lt;a href=&quot;https://github.com/vit9696/Lilu/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;установка&quot;&gt;Установка&lt;/h3&gt;
+&lt;h2 id=&quot;установка&quot;&gt;Установка&lt;/h2&gt;
 
 &lt;p&gt;Загрузившись с установочной флешки в режиме UEFI приступаем к установке. В окне Clover выбираем «Boot Mac OS from OS X Base System» и дожидаемся появления установки OS X, на что уйдет до пяти минут. Переходим в дисковую утилиту и форматируем нужный диск. На одном из SSD дисков я оставила уже установленную ранее Windows 10, а другой SSD отформатировала из установщика в формат &lt;code class=&quot;highlighter-rouge&quot;&gt;AFPS&lt;/code&gt; назвав его классическим &lt;code class=&quot;highlighter-rouge&quot;&gt;Macintosh HD&lt;/code&gt;. Устанавливаем OS X и дожидаемся перезагрузки. После перезагрузки вновь видим Clover.&lt;/p&gt;
 
@@ -463,19 +380,15 @@
 
 &lt;p&gt;После установки оказываемся в OS X и первым делом устанавливаем ранее скачанный &lt;strong&gt;Clover EFI Bootloader&lt;/strong&gt;. В пункте &lt;code class=&quot;highlighter-rouge&quot;&gt;Тип установки&lt;/code&gt; выбираем &lt;code class=&quot;highlighter-rouge&quot;&gt;Настройки&lt;/code&gt; и расставляем галочки:&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528129979/02_z0qpep.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528129979/02_z0qpep.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/005.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;Далее, устанавливаем и запускаем &lt;strong&gt;Kext Utility&lt;/strong&gt;, дожидаемся сообщения «Drag files on window to process them» и перетаскиваем прямо в окно программы необходимые kext’ы.&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528130607/03_oqgzmz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528130607/03_oqgzmz.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/006.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -510,7 +423,7 @@
 
 &lt;p&gt;Конфигурация Clover редактируется в файле &lt;code class=&quot;highlighter-rouge&quot;&gt;EFI/EFI/CLOVER/config.plist&lt;/code&gt;. Его можно править программой &lt;strong&gt;Clover Configurator&lt;/strong&gt; или вручную, с помощью &lt;strong&gt;Microsoft Visual Studio Code&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;исправление-совместимости-intel-uhd-630-на-coffee-lake&quot;&gt;Исправление совместимости Intel UHD 630 на Coffee Lake&lt;/h3&gt;
+&lt;h2 id=&quot;исправление-совместимости-intel-uhd-630-на-coffee-lake&quot;&gt;Исправление совместимости Intel UHD 630 на Coffee Lake&lt;/h2&gt;
 
 &lt;p&gt;После установки в &lt;code class=&quot;highlighter-rouge&quot;&gt;config.plist&lt;/code&gt;, в раздел &lt;code class=&quot;highlighter-rouge&quot;&gt;Boot&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Arguments&lt;/code&gt; я добавила параметр &lt;code class=&quot;highlighter-rouge&quot;&gt;-disablegfxfirmware&lt;/code&gt;.&lt;/p&gt;
 
@@ -520,10 +433,8 @@
 
 &lt;p&gt;В открывшемся файле, в терминале, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, внизу файла. В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528140705/4_demf79.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528140705/4_demf79.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/007.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -535,10 +446,8 @@
 
 &lt;p&gt;В котором ищем &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, где в конец строки &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt; добавляем &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086 0x3E928086&lt;/code&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528143221/5_lapvtp.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528143221/5_lapvtp.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/008.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -547,7 +456,7 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;kextcache &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; /
 &lt;span class=&quot;nb&quot;&gt;sudo touch&lt;/span&gt; /System/Library/Extensions &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;kextcache &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; /&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;исправление-громкости-voodoohdakext&quot;&gt;Исправление громкости VoodooHDA.kext&lt;/h3&gt;
+&lt;h2 id=&quot;исправление-громкости-voodoohdakext&quot;&gt;Исправление громкости VoodooHDA.kext&lt;/h2&gt;
 
 &lt;p&gt;Иногда VoodooHDA.kext выдает звук тише, чем в Windows 10. Исправить можно открыв kext правой кнопко мыши &lt;code class=&quot;highlighter-rouge&quot;&gt;Показать содержимое пакета&lt;/code&gt; - Папка &lt;code class=&quot;highlighter-rouge&quot;&gt;Contents&lt;/code&gt; - Открыть редактором файл &lt;code class=&quot;highlighter-rouge&quot;&gt;Info.plist&lt;/code&gt;.&lt;/p&gt;
 
@@ -566,20 +475,18 @@
 
 &lt;p&gt;И изменить все &lt;code class=&quot;highlighter-rouge&quot;&gt;90&lt;/code&gt; на &lt;code class=&quot;highlighter-rouge&quot;&gt;100&lt;/code&gt;, затем переустановить kext.&lt;/p&gt;
 
-&lt;h3 id=&quot;в-итоге&quot;&gt;В итоге&lt;/h3&gt;
+&lt;h2 id=&quot;в-итоге&quot;&gt;В итоге&lt;/h2&gt;
 
 &lt;p&gt;Таким образом был установлен hackintosh 10.13.4, который вскоре, без каких либо проблем, обновился до 10.13.5.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528144018/6_allsho.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528144018/6_allsho.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/009.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;Привязка к учетной записи, логин в iCloud и прочих Apple сервисах прошли без каких-либо проблем. Операционная система работает стабильно, а установка не столь сложна, как это казалось на первый взгляд. Проблемы возникли только с поддержкой Wi-Fi модуля, из-за чего пришлось покупать Broadcom BCM4352 и ждать его доставки из Китая. В итоге, на одном из SSD у меня установлен Windows 10 для игр, а на другом hackintosh, загружаемый по умолчанию. Выбор системы происходит при загрузке в Clover.&lt;/p&gt;
 
-&lt;h3 id=&quot;использовались-материалы&quot;&gt;Использовались материалы&lt;/h3&gt;
+&lt;h2 id=&quot;использовались-материалы&quot;&gt;Использовались материалы&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Статья с &lt;a href=&quot;https://habr.com/post/318448/&quot;&gt;habrahabr&lt;/a&gt;.&lt;/li&gt;
@@ -590,13 +497,10 @@
 
 </description>
         <pubDate>Mon, 04 Jun 2018 00:00:00 +0700</pubDate>
-        <turbo:content>&lt;p&gt;Расставшись со своим тормозящим &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;MacBook Air&lt;/a&gt; в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.
-&lt;!-- more --&gt;&lt;/p&gt;
+        <turbo:content>&lt;p&gt;Расставшись со своим тормозящим &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;MacBook Air&lt;/a&gt; в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528118833/01_rzfgsr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528118833/01_rzfgsr.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/004.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -614,11 +518,11 @@
 
 &lt;p&gt;В качестве видеокарты пока используется встроенная Intel UHD630. А для того, чтобы Wi-Fi материнской платы заработал в hackintosh пришлось покупать &lt;a href=&quot;https://www.ebay.com/itm/Broadcom-BCM94352Z-NGFF-Dual-Band-802-11ac-867M-Wifi-BT-4-0-Lenovo-FRU-04X6020/191855727748?ssPageName=STRK:MEBIDX:IT&amp;amp;_trksid=p2060353.m2749.l2649&quot;&gt;на ebay&lt;/a&gt; новый модуль - Broadcom BCM4352, так как для стандартного модуля от Intel нет необходимых kext’ов.&lt;/p&gt;
 
-&lt;h3 id=&quot;образ-диска&quot;&gt;Образ диска&lt;/h3&gt;
+&lt;h2 id=&quot;образ-диска&quot;&gt;Образ диска&lt;/h2&gt;
 
 &lt;p&gt;Для установки hackintosh я скачала &lt;a href=&quot;https://rutracker.org/forum/viewtopic.php?t=5413589&quot;&gt;образ с High Sierra 10.13.4&lt;/a&gt; (Сейчас там более актуальная версия) с небезиветсного rutracker.org и по инструкции из темы записала его на флешку.&lt;/p&gt;
 
-&lt;h3 id=&quot;программы&quot;&gt;Программы&lt;/h3&gt;
+&lt;h2 id=&quot;программы&quot;&gt;Программы&lt;/h2&gt;
 
 &lt;p&gt;Для установки и настройки OS X понадобится некоторый набор программ, которые ставятся после первого запуска операционной системы. Можно заранее скачать их на свободную флешку так как сразу после установки интернета еще не будет.&lt;/p&gt;
 
@@ -629,7 +533,7 @@
   &lt;li&gt;&lt;strong&gt;Kext Utility&lt;/strong&gt; - Утилита для установки kext’ов. (&lt;a href=&quot;https://www.insanelymac.com/forum/topic/140647-latest-kext-utility-macos-sierra-super-speed-edition/&quot;&gt;insanelymac.com&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;kext&quot;&gt;Kext&lt;/h3&gt;
+&lt;h2 id=&quot;kext&quot;&gt;Kext&lt;/h2&gt;
 
 &lt;p&gt;Или «kernel extension», можно назвать их своего рода драйверами для hackintosh.&lt;/p&gt;
 
@@ -645,7 +549,7 @@
   &lt;li&gt;&lt;strong&gt; Lilu&lt;/strong&gt; - Расширение для поддержки различных kext’ов. (&lt;a href=&quot;https://github.com/vit9696/Lilu/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;установка&quot;&gt;Установка&lt;/h3&gt;
+&lt;h2 id=&quot;установка&quot;&gt;Установка&lt;/h2&gt;
 
 &lt;p&gt;Загрузившись с установочной флешки в режиме UEFI приступаем к установке. В окне Clover выбираем «Boot Mac OS from OS X Base System» и дожидаемся появления установки OS X, на что уйдет до пяти минут. Переходим в дисковую утилиту и форматируем нужный диск. На одном из SSD дисков я оставила уже установленную ранее Windows 10, а другой SSD отформатировала из установщика в формат &lt;code class=&quot;highlighter-rouge&quot;&gt;AFPS&lt;/code&gt; назвав его классическим &lt;code class=&quot;highlighter-rouge&quot;&gt;Macintosh HD&lt;/code&gt;. Устанавливаем OS X и дожидаемся перезагрузки. После перезагрузки вновь видим Clover.&lt;/p&gt;
 
@@ -653,19 +557,15 @@
 
 &lt;p&gt;После установки оказываемся в OS X и первым делом устанавливаем ранее скачанный &lt;strong&gt;Clover EFI Bootloader&lt;/strong&gt;. В пункте &lt;code class=&quot;highlighter-rouge&quot;&gt;Тип установки&lt;/code&gt; выбираем &lt;code class=&quot;highlighter-rouge&quot;&gt;Настройки&lt;/code&gt; и расставляем галочки:&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528129979/02_z0qpep.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528129979/02_z0qpep.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/005.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;Далее, устанавливаем и запускаем &lt;strong&gt;Kext Utility&lt;/strong&gt;, дожидаемся сообщения «Drag files on window to process them» и перетаскиваем прямо в окно программы необходимые kext’ы.&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528130607/03_oqgzmz.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528130607/03_oqgzmz.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/006.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -700,7 +600,7 @@
 
 &lt;p&gt;Конфигурация Clover редактируется в файле &lt;code class=&quot;highlighter-rouge&quot;&gt;EFI/EFI/CLOVER/config.plist&lt;/code&gt;. Его можно править программой &lt;strong&gt;Clover Configurator&lt;/strong&gt; или вручную, с помощью &lt;strong&gt;Microsoft Visual Studio Code&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;исправление-совместимости-intel-uhd-630-на-coffee-lake&quot;&gt;Исправление совместимости Intel UHD 630 на Coffee Lake&lt;/h3&gt;
+&lt;h2 id=&quot;исправление-совместимости-intel-uhd-630-на-coffee-lake&quot;&gt;Исправление совместимости Intel UHD 630 на Coffee Lake&lt;/h2&gt;
 
 &lt;p&gt;После установки в &lt;code class=&quot;highlighter-rouge&quot;&gt;config.plist&lt;/code&gt;, в раздел &lt;code class=&quot;highlighter-rouge&quot;&gt;Boot&lt;/code&gt; - &lt;code class=&quot;highlighter-rouge&quot;&gt;Arguments&lt;/code&gt; я добавила параметр &lt;code class=&quot;highlighter-rouge&quot;&gt;-disablegfxfirmware&lt;/code&gt;.&lt;/p&gt;
 
@@ -710,10 +610,8 @@
 
 &lt;p&gt;В открывшемся файле, в терминале, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, внизу файла. В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528140705/4_demf79.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528140705/4_demf79.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/007.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -725,10 +623,8 @@
 
 &lt;p&gt;В котором ищем &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, где в конец строки &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt; добавляем &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086 0x3E928086&lt;/code&gt;.&lt;/p&gt;
 
-&lt;figure class=&quot;picture  wrap&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528143221/5_lapvtp.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528143221/5_lapvtp.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/008.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -737,7 +633,7 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;kextcache &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; /
 &lt;span class=&quot;nb&quot;&gt;sudo touch&lt;/span&gt; /System/Library/Extensions &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;kextcache &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; /&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;исправление-громкости-voodoohdakext&quot;&gt;Исправление громкости VoodooHDA.kext&lt;/h3&gt;
+&lt;h2 id=&quot;исправление-громкости-voodoohdakext&quot;&gt;Исправление громкости VoodooHDA.kext&lt;/h2&gt;
 
 &lt;p&gt;Иногда VoodooHDA.kext выдает звук тише, чем в Windows 10. Исправить можно открыв kext правой кнопко мыши &lt;code class=&quot;highlighter-rouge&quot;&gt;Показать содержимое пакета&lt;/code&gt; - Папка &lt;code class=&quot;highlighter-rouge&quot;&gt;Contents&lt;/code&gt; - Открыть редактором файл &lt;code class=&quot;highlighter-rouge&quot;&gt;Info.plist&lt;/code&gt;.&lt;/p&gt;
 
@@ -756,20 +652,18 @@
 
 &lt;p&gt;И изменить все &lt;code class=&quot;highlighter-rouge&quot;&gt;90&lt;/code&gt; на &lt;code class=&quot;highlighter-rouge&quot;&gt;100&lt;/code&gt;, затем переустановить kext.&lt;/p&gt;
 
-&lt;h3 id=&quot;в-итоге&quot;&gt;В итоге&lt;/h3&gt;
+&lt;h2 id=&quot;в-итоге&quot;&gt;В итоге&lt;/h2&gt;
 
 &lt;p&gt;Таким образом был установлен hackintosh 10.13.4, который вскоре, без каких либо проблем, обновился до 10.13.5.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1528144018/6_allsho.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1528144018/6_allsho.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/009.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;Привязка к учетной записи, логин в iCloud и прочих Apple сервисах прошли без каких-либо проблем. Операционная система работает стабильно, а установка не столь сложна, как это казалось на первый взгляд. Проблемы возникли только с поддержкой Wi-Fi модуля, из-за чего пришлось покупать Broadcom BCM4352 и ждать его доставки из Китая. В итоге, на одном из SSD у меня установлен Windows 10 для игр, а на другом hackintosh, загружаемый по умолчанию. Выбор системы происходит при загрузке в Clover.&lt;/p&gt;
 
-&lt;h3 id=&quot;использовались-материалы&quot;&gt;Использовались материалы&lt;/h3&gt;
+&lt;h2 id=&quot;использовались-материалы&quot;&gt;Использовались материалы&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Статья с &lt;a href=&quot;https://habr.com/post/318448/&quot;&gt;habrahabr&lt;/a&gt;.&lt;/li&gt;
@@ -788,48 +682,40 @@
         <link>https://fixel.ru/blog/far-cry-5-sektantskaja-zhvachka/</link>
         <description>&lt;p&gt;Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц. На этом все достоинства Far Cry 5, к сожалению, заканчиваются.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Нововведением пятой части стало кооперативное прохождение и, как следствие, обезличивание главного героя. Если раньше мы играли за Аджая Гейла или Джейсона Броди — со своими целями, планами, чувствами и эмоциями, наблюдая за их постепенным становлением в качестве героев-освободителей, то здесь мы примеряем на себя роль безмолвного болванчика — Салаги, помощника шерифа. Вместе со своими коллегами мы отправляемся в американскую глубинку штата Монтана, округ Хоуп, дабы арестовать самого главного злодея, основателя террористической секты «Врата Эдема» — Иосифа Сида по прозвищу Отец. Но, как водится, всё идёт не по плану. Герои оказываются разобщены и взяты в плен, а Салага — единственный или единственная, в зависимости от выбора пола в начале игры, кому придётся разгребать всё это сектантское непотребство.&lt;/p&gt;
 
+&lt;div class=&quot;wrapper-frame&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-  &lt;figure class=&quot;picture  col-xs-6 space-out-v-zero-xs&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526062696/02_gtamem.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526062696/02_gtamem.png&quot; /&gt;
-				&lt;/a&gt;
+    &lt;figure class=&quot;picture col-xs-6 space-out-v-zero-xs&quot;&gt;
+				&lt;img src=&quot;/media/018.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
-  &lt;figure class=&quot;picture  col-xs-6 space-out-v-zero-xs&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526069554/03_hfraue.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526069554/03_hfraue.png&quot; /&gt;
-				&lt;/a&gt;
+    &lt;figure class=&quot;picture col-xs-6 space-out-v-zero-xs&quot;&gt;
+				&lt;img src=&quot;/media/019.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Но, прежде чем покарать Иосифа Сида, придётся сразиться и победить всех его &lt;del&gt;бывших&lt;/del&gt;, не менее верующих, членов семьи. Всего их трое – Вера, Иаков и Иоанн Сиды. Каждому из них принадлежит свой регион, каждый по-своему вербует новых сектантов и досаждает мирным жителям подконтрольного региона, и каждый из них имеет свой укреплённый бункер, который, в итоге, нужно будет зачистить и взорвать. Но прежде, придется выполнить некоторое количество однообразных заданий. Захват аванпостов и грузовиков с припасами, разрушение десятка сектантских алтарей, освобождение пленников — в общем всё то, что поможет набрать определённое количество очков для встречи с очередным злодеем. Две встречи, после которых вас отпускают или спасают реднеки-выживальщики, и третья, после которой состоится битва с «боссом» региона. Затем, зачистка бункера и спасение одного из бравой команды коллег-полицейских. И если первый захват региона и победа довольно увлекательны, то повторённое ещё два раза становится рутиной.&lt;/p&gt;
 
 &lt;p&gt;Относительно самих злодеев и их «харизмы» сложно сказать что-то определённое, они довольно одинаковы. Во время встреч с Салагой каждый из них рассказывает историю своего тяжёлого прошлого и то, как и почему они безоговорочно верят в Отца. Опять же, если Ваас Монтенегро и Пэйган Мин имели харизму, обаяние и экспрессивный характер, то антагонисты пятой части кроме скучнейших монологов и сектантских увещеваний предложить ничего не могут. Больше никаких «Беги, Форест, беги!» и убийств ручкой, главный злодей пятой части эпатирует только внешностью Джареда Лето, обнажённым торсом, хипстерской бородой и модными очками-авиаторами, а его сообщники даже этого предложить не могут.&lt;/p&gt;
 
-&lt;p&gt;С другой стороны, той, что за «Хороших парней и девчонок», аналогично нет запоминающихся и ярких персонажей. Главный герой лишён голоса, души и всяческой предыстории, а его компаньонам, которых можно брать с собой в напарники, отведено минимум диалогов и сюжета. Из девяти возможных напарников у каждого есть по две совместные миссии, связанные, как водится, с отстрелом сектантов. Из всех запомнились лишь миссия Ника Райя, с полётами на кукурузнике и беременной женой, да отстрел всего живого в компании неизменного Хёрка Драбмена-младшего с его плоскими шуточками. Ещё, пожалуй, запомнился шериф Эрл Уайтхорс, за свою шерифскую шляпу и усы, жаль лишь, что полноценного раскрытия, как персонажа, ему тоже не досталось. Да и в напарники его взять нельзя. Так или иначе, сюжетная смерть очередного положительного героя не вызывает никаких эмоций.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526067477/04_vt3hsl.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526067477/04_vt3hsl.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/020.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+
+&lt;p&gt;С другой стороны, той, что за «Хороших парней и девчонок», аналогично нет запоминающихся и ярких персонажей. Главный герой лишён голоса, души и всяческой предыстории, а его компаньонам, которых можно брать с собой в напарники, отведено минимум диалогов и сюжета. Из девяти возможных напарников у каждого есть по две совместные миссии, связанные, как водится, с отстрелом сектантов. Из всех запомнились лишь миссия Ника Райя, с полётами на кукурузнике и беременной женой, да отстрел всего живого в компании неизменного Хёрка Драбмена-младшего с его плоскими шуточками. Ещё, пожалуй, запомнился шериф Эрл Уайтхорс, за свою шерифскую шляпу и усы, жаль лишь, что полноценного раскрытия, как персонажа, ему тоже не досталось. Да и в напарники его взять нельзя. Так или иначе, сюжетная смерть очередного положительного героя не вызывает никаких эмоций.&lt;/p&gt;
 
 &lt;p&gt;Не смотря на общую однообразность процесса, в Far Cry 5 вполне можно насладиться открытым миром. Здесь он довольно красив и детален, не смотря на отсутствие каких бы то ни было погодных условий, дождя или тумана, например. Изучать окрестности округа Хоуп порой интереснее, чем следовать сюжету, а некоторые побочные миссии могут быть увлекательнее основных. Например, можно заняться поисками тайников выживальщиков или собрать инопланетные артефакты и помочь Ларри Паркеру закончить пространственный телепорт. Можно спасти собаку, приручить пуму по-имени Персик или медведя Чизбургера — животные здесь, одни из самых милых компаньонов. Можно заняться рыбной ловлей, прямо как в каком нибудь &lt;a href=&quot;/blog/stardew-valley/&quot;&gt;Stardew Valley&lt;/a&gt;, а потом продать улов. Можно захватить очередной аванпост не покидая кабины вертолёта или выполнить парочку челленджей Клатча Никсона на самолёте. Можно заняться покатушками на тягаче оснащенном пулемётами, под аккомпанемент Heart - Barracuda. Игроку дан весьма обширный открытый мир, но искать развлечения в нём придётся самостоятельно, благо концентрация опасностей в виде сектантов и диких животных, на квадратный километр, зашкаливает. В совместной игре градус веселья, разумеется, возрастает, но и в нём хватает недостатков.&lt;/p&gt;
 
-&lt;p&gt;Ко всему прочему, в пятой части серии появились варианты причёсок, одежда и различные аксессуары к ней, что не мудрено в условиях кооперативной игры. Возможность покупки автомобилей, вертолётов и немногочисленного оружия с различными модификациями к нему. Можно купить цветастую раскраску, глушитель и снайперский прицел на дробовик, например. Несмотря на то, что внутриигровой валюты хватает с избытком, в игре есть возможность покупки предметов и раскрасок за реальные деньги. Возможно, разработчики пока лишь прощупывают почву микротранзакций на территории Far Cry и в следующих частях заполучить какой нибудь вертолёт без доната или многочасового гринда уже не выйдет. Но это не точно.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526059004/01_wsjpju.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526059004/01_wsjpju.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/021.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+
+&lt;p&gt;Ко всему прочему, в пятой части серии появились варианты причёсок, одежда и различные аксессуары к ней, что не мудрено в условиях кооперативной игры. Возможность покупки автомобилей, вертолётов и немногочисленного оружия с различными модификациями к нему. Можно купить цветастую раскраску, глушитель и снайперский прицел на дробовик, например. Несмотря на то, что внутриигровой валюты хватает с избытком, в игре есть возможность покупки предметов и раскрасок за реальные деньги. Возможно, разработчики пока лишь прощупывают почву микротранзакций на территории Far Cry и в следующих частях заполучить какой нибудь вертолёт без доната или многочасового гринда уже не выйдет. Но это не точно.&lt;/p&gt;
 
 &lt;p&gt;В целом, Far Cry 5 не про сюжет. Ubisoft изменили направление и введя кооперативное прохождение урезали историю. Само повествование, злодеи и противоборствующие стороны, здесь скорее для галочки. Подверглись даунгрейду и многие другие аспекты игры, например анимация — если в четвёртой части Аджай Гейл вправлял себе вывихнутые пальцы и вынимал из тела пули, то здесь для лечения всего одна анимация. Физика в Far Cry 5 и вовсе живёт по своим собственным законам. В остальном, это песочница для веселья, покатушек на джипах, отстрела всего живого и «рофла» с многочисленных багов и беспросветной глупости местного ИИ.&lt;/p&gt;
 
@@ -837,48 +723,40 @@
         <pubDate>Sat, 12 May 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц. На этом все достоинства Far Cry 5, к сожалению, заканчиваются.&lt;/p&gt;
 
-&lt;!-- more --&gt;
-
 &lt;p&gt;Нововведением пятой части стало кооперативное прохождение и, как следствие, обезличивание главного героя. Если раньше мы играли за Аджая Гейла или Джейсона Броди — со своими целями, планами, чувствами и эмоциями, наблюдая за их постепенным становлением в качестве героев-освободителей, то здесь мы примеряем на себя роль безмолвного болванчика — Салаги, помощника шерифа. Вместе со своими коллегами мы отправляемся в американскую глубинку штата Монтана, округ Хоуп, дабы арестовать самого главного злодея, основателя террористической секты «Врата Эдема» — Иосифа Сида по прозвищу Отец. Но, как водится, всё идёт не по плану. Герои оказываются разобщены и взяты в плен, а Салага — единственный или единственная, в зависимости от выбора пола в начале игры, кому придётся разгребать всё это сектантское непотребство.&lt;/p&gt;
 
+&lt;div class=&quot;wrapper-frame&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-  &lt;figure class=&quot;picture  col-xs-6 space-out-v-zero-xs&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526062696/02_gtamem.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526062696/02_gtamem.png&quot; /&gt;
-				&lt;/a&gt;
+    &lt;figure class=&quot;picture col-xs-6 space-out-v-zero-xs&quot;&gt;
+				&lt;img src=&quot;/media/018.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
-  &lt;figure class=&quot;picture  col-xs-6 space-out-v-zero-xs&quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526069554/03_hfraue.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526069554/03_hfraue.png&quot; /&gt;
-				&lt;/a&gt;
+    &lt;figure class=&quot;picture col-xs-6 space-out-v-zero-xs&quot;&gt;
+				&lt;img src=&quot;/media/019.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Но, прежде чем покарать Иосифа Сида, придётся сразиться и победить всех его &lt;del&gt;бывших&lt;/del&gt;, не менее верующих, членов семьи. Всего их трое – Вера, Иаков и Иоанн Сиды. Каждому из них принадлежит свой регион, каждый по-своему вербует новых сектантов и досаждает мирным жителям подконтрольного региона, и каждый из них имеет свой укреплённый бункер, который, в итоге, нужно будет зачистить и взорвать. Но прежде, придется выполнить некоторое количество однообразных заданий. Захват аванпостов и грузовиков с припасами, разрушение десятка сектантских алтарей, освобождение пленников — в общем всё то, что поможет набрать определённое количество очков для встречи с очередным злодеем. Две встречи, после которых вас отпускают или спасают реднеки-выживальщики, и третья, после которой состоится битва с «боссом» региона. Затем, зачистка бункера и спасение одного из бравой команды коллег-полицейских. И если первый захват региона и победа довольно увлекательны, то повторённое ещё два раза становится рутиной.&lt;/p&gt;
 
 &lt;p&gt;Относительно самих злодеев и их «харизмы» сложно сказать что-то определённое, они довольно одинаковы. Во время встреч с Салагой каждый из них рассказывает историю своего тяжёлого прошлого и то, как и почему они безоговорочно верят в Отца. Опять же, если Ваас Монтенегро и Пэйган Мин имели харизму, обаяние и экспрессивный характер, то антагонисты пятой части кроме скучнейших монологов и сектантских увещеваний предложить ничего не могут. Больше никаких «Беги, Форест, беги!» и убийств ручкой, главный злодей пятой части эпатирует только внешностью Джареда Лето, обнажённым торсом, хипстерской бородой и модными очками-авиаторами, а его сообщники даже этого предложить не могут.&lt;/p&gt;
 
-&lt;p&gt;С другой стороны, той, что за «Хороших парней и девчонок», аналогично нет запоминающихся и ярких персонажей. Главный герой лишён голоса, души и всяческой предыстории, а его компаньонам, которых можно брать с собой в напарники, отведено минимум диалогов и сюжета. Из девяти возможных напарников у каждого есть по две совместные миссии, связанные, как водится, с отстрелом сектантов. Из всех запомнились лишь миссия Ника Райя, с полётами на кукурузнике и беременной женой, да отстрел всего живого в компании неизменного Хёрка Драбмена-младшего с его плоскими шуточками. Ещё, пожалуй, запомнился шериф Эрл Уайтхорс, за свою шерифскую шляпу и усы, жаль лишь, что полноценного раскрытия, как персонажа, ему тоже не досталось. Да и в напарники его взять нельзя. Так или иначе, сюжетная смерть очередного положительного героя не вызывает никаких эмоций.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526067477/04_vt3hsl.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526067477/04_vt3hsl.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/020.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+
+&lt;p&gt;С другой стороны, той, что за «Хороших парней и девчонок», аналогично нет запоминающихся и ярких персонажей. Главный герой лишён голоса, души и всяческой предыстории, а его компаньонам, которых можно брать с собой в напарники, отведено минимум диалогов и сюжета. Из девяти возможных напарников у каждого есть по две совместные миссии, связанные, как водится, с отстрелом сектантов. Из всех запомнились лишь миссия Ника Райя, с полётами на кукурузнике и беременной женой, да отстрел всего живого в компании неизменного Хёрка Драбмена-младшего с его плоскими шуточками. Ещё, пожалуй, запомнился шериф Эрл Уайтхорс, за свою шерифскую шляпу и усы, жаль лишь, что полноценного раскрытия, как персонажа, ему тоже не досталось. Да и в напарники его взять нельзя. Так или иначе, сюжетная смерть очередного положительного героя не вызывает никаких эмоций.&lt;/p&gt;
 
 &lt;p&gt;Не смотря на общую однообразность процесса, в Far Cry 5 вполне можно насладиться открытым миром. Здесь он довольно красив и детален, не смотря на отсутствие каких бы то ни было погодных условий, дождя или тумана, например. Изучать окрестности округа Хоуп порой интереснее, чем следовать сюжету, а некоторые побочные миссии могут быть увлекательнее основных. Например, можно заняться поисками тайников выживальщиков или собрать инопланетные артефакты и помочь Ларри Паркеру закончить пространственный телепорт. Можно спасти собаку, приручить пуму по-имени Персик или медведя Чизбургера — животные здесь, одни из самых милых компаньонов. Можно заняться рыбной ловлей, прямо как в каком нибудь &lt;a href=&quot;/blog/stardew-valley/&quot;&gt;Stardew Valley&lt;/a&gt;, а потом продать улов. Можно захватить очередной аванпост не покидая кабины вертолёта или выполнить парочку челленджей Клатча Никсона на самолёте. Можно заняться покатушками на тягаче оснащенном пулемётами, под аккомпанемент Heart - Barracuda. Игроку дан весьма обширный открытый мир, но искать развлечения в нём придётся самостоятельно, благо концентрация опасностей в виде сектантов и диких животных, на квадратный километр, зашкаливает. В совместной игре градус веселья, разумеется, возрастает, но и в нём хватает недостатков.&lt;/p&gt;
 
-&lt;p&gt;Ко всему прочему, в пятой части серии появились варианты причёсок, одежда и различные аксессуары к ней, что не мудрено в условиях кооперативной игры. Возможность покупки автомобилей, вертолётов и немногочисленного оружия с различными модификациями к нему. Можно купить цветастую раскраску, глушитель и снайперский прицел на дробовик, например. Несмотря на то, что внутриигровой валюты хватает с избытком, в игре есть возможность покупки предметов и раскрасок за реальные деньги. Возможно, разработчики пока лишь прощупывают почву микротранзакций на территории Far Cry и в следующих частях заполучить какой нибудь вертолёт без доната или многочасового гринда уже не выйдет. Но это не точно.&lt;/p&gt;
-
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1526059004/01_wsjpju.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1526059004/01_wsjpju.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/021.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
+
+&lt;p&gt;Ко всему прочему, в пятой части серии появились варианты причёсок, одежда и различные аксессуары к ней, что не мудрено в условиях кооперативной игры. Возможность покупки автомобилей, вертолётов и немногочисленного оружия с различными модификациями к нему. Можно купить цветастую раскраску, глушитель и снайперский прицел на дробовик, например. Несмотря на то, что внутриигровой валюты хватает с избытком, в игре есть возможность покупки предметов и раскрасок за реальные деньги. Возможно, разработчики пока лишь прощупывают почву микротранзакций на территории Far Cry и в следующих частях заполучить какой нибудь вертолёт без доната или многочасового гринда уже не выйдет. Но это не точно.&lt;/p&gt;
 
 &lt;p&gt;В целом, Far Cry 5 не про сюжет. Ubisoft изменили направление и введя кооперативное прохождение урезали историю. Само повествование, злодеи и противоборствующие стороны, здесь скорее для галочки. Подверглись даунгрейду и многие другие аспекты игры, например анимация — если в четвёртой части Аджай Гейл вправлял себе вывихнутые пальцы и вынимал из тела пули, то здесь для лечения всего одна анимация. Физика в Far Cry 5 и вовсе живёт по своим собственным законам. В остальном, это песочница для веселья, покатушек на джипах, отстрела всего живого и «рофла» с многочисленных багов и беспросветной глупости местного ИИ.&lt;/p&gt;
 
@@ -890,42 +768,34 @@
         <title>Перелёт OVB - DME - OVB или туда и обратно</title>
         <guid isPermaLink="true">https://fixel.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</guid>
         <link>https://fixel.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</link>
-        <description>&lt;p&gt;Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству.&lt;!-- more --&gt; На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.&lt;/p&gt;
+        <description>&lt;p&gt;Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522239032/01_v0guqp.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522239032/01_v0guqp.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/022.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;«Покорение Сибири» скульптора Юнуса Сафардиара в аэропорту Толмачёво.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;На стойке регистрации предъявили паспорта и взвесив ручную кладь в виде небольшого рюкзака, получили посадочные талоны и бирку ручной клади на рюкзак. Затем отправились к нужному гейту, указанному на талонах, для прохождения предполётного досмотра.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522208119/02_r7xulk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522208119/02_r7xulk.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/023.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Небольшая очередь в рентген кабинку и лента для просвечивания ручной клади.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;Процесс досмотра довольно прост, рюкзаки и сумки проходят через ленту рентгена, а будущие пассажиры могут либо пройти сканирование в рентген кабинке, либо сняв верхнюю одежду и обувь прогнать её через ленту вместе с ручной кладью. Кабинка быстрее и удобнее, но большинство, боясь обзавестись лишней парой рук, предпочитает второй способ. Пройдя этот нехитрый досмотр мы отправились ждать посадки в самолёт.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522209566/03_vzesbk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522209566/03_vzesbk.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/024.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Airbus A321-211 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BCX, серийный номер 1720.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;В Москву предстояло лететь на шестнадцатилетнем Airbus A321, когда-то он принадлежал британской компании First Choice Airways. «Уральские Авиалинии» эксплуатируют самолёт с 2009 года. В Толмачёво его подали к телетрапу, после предъявления посадочных талонов нас пустили в недра салона. Салон, конечно-же, оказался не новым. Кое-где отсутствовали декоративные стекла на иллюминаторах, подлокотник соседнего кресла не фиксировался при откидывании, а обеденный столик был слегка поломан на один крепёж. Тем не менее, внутри чисто и более чем тепло, а тем, кому тепло не было, предложили пледы. К единственному минусу можно отнести малое расстояние между креслами, людям с ростом сто семьдесят, вроде меня, и выше, приходится сидеть в импровизированной позе эмбриона, особенно, если впередисидящий откидывает спинку кресла, впрочем сия особенность лоукостеров была нам известна.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522212388/04_kcbdv1.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522212388/04_kcbdv1.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/025.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -933,20 +803,16 @@
 
 &lt;p&gt;Вскоре, после взлёта и набора высоты, пассажирам дозволили перемещаться по салону и они стройными рядами отправились в туалет, а бортпроводницы стали разносить напитки. Можно было выбрать томатный или апельсиновый сок из тетрапаков «Добрый», либо обычную минералку. После напитков перешли к раздаче обеда, он включён во все тарифы авиакомпании, так как рейс четырехчасовой пассажирам было предложено «горячее» — с курицей, говядиной или рыбой на выбор.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522215619/05_brpefr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522215619/05_brpefr.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/026.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Касалетка с макаронами, кусочками морковки и говядины.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;Помимо касалетки с основным блюдом выдают фирменную коробку, в ней упаковка с одноразовыми ложкой, вилкой и ножом, влажная салфетка, пакетик с чаем и сахаром. Небольшой контейнер с двумя кусочками огурца, долькой помидора и листиком петрушки, булка и вафля со сгущёнкой. Разумеется, это не ресторанная еда, но для лоукостера хорошо даже то, что она вообще есть и в целом не плоха и вполне съедобна. После обеда раздавали стаканчик с кипятком и набор с порошковым кофе, сухими сливками и сахаром, либо пакетик чая с сахаром, на выбор.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522225516/06_sclvcr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522225516/06_sclvcr.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/027.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -956,81 +822,65 @@
 
 &lt;p&gt;Закончив то, зачем прилетели в Москву, мы вновь отправились в Домодедово. Предполётный досмотр происходил практически также как в Толмачёво, но служба безопасности здесь более пристальная — ощупывают руками, всматриваются в содержимое ручной клади на экранах, могут уточнять содержимое вещей. После прохождения всех формальностей нас погрузили в автобус который двадцать минут простоял у терминала, а затем долго везли по аэропорту куда-то на его задворки. Самолёт вылетел с задержкой, но прибыл в Толмачёво на сорок минут раньше.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522226275/07_oxh7cm.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522226275/07_oxh7cm.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/028.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Airbus A319-112 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BTZ серийный номер 3385.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;На ночной рейс выпал более компактный борт Airbus A319. Самолёту чуть более десяти лет, с 2014 года он принадлежит «Уральским Авиалиниям», ранее был во владении лизинговой компании AerCap и пакистанской авиакомпании AirBlue.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522228811/08_tgj2ea.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522228811/08_tgj2ea.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/029.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Салон Airbus A319 VQ-BTZ.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;В отличии от VQ-BCX этот борт оказался более целым, здесь ничего не отваливалось, а сам салон показался куда качественнее и новее, однако расстояние между креслами по прежнему маленькое, что не удивительно. Из бонусов — во время полёта не было турбулентности, воздушных ям и прочей болтанки, лёгкий взлет и мягкая посадка. Зависит ли это от состояния самолёта или опытности пилота по прежнему неизвестно. В качестве попутчиков нам достались, по большей части, китайцы. Один из компании занял место рядом с нами, но бортпроводница разрешила ему пересесть к своим и мы летели без соседей, что не может не радовать. В целом, самолёт оказался полупустым, сидящий спереди также куда-то пересел, а один из китайцев сзади разложился спать на все три сиденья.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522230417/09_njqbli.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522230417/09_njqbli.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/030.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;По обыкновению, вскоре после взлёта разносили соки-воды, затем ужин — рис с курицей или рыбой, на выбор. Китайцы выбрали рыбу. Имелась и традиционная коробка с одноразовыми приборами, овощами и овсяной печенькой вместо вафли. Для китайских товарищей на коробке были иероглифы. После стаканчика кофе свет в самолёте приглушили и все улеглись спать.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522237622/10_gntqqv.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522237622/10_gntqqv.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/031.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;После посадки самолёт подали к телетрапу международного терминала, а пассажиров попросили пройти на улицу, до автобуса во внутренний терминал. Через два часа, этим же самолётом, китайцы вылетели в Харбин. А мы, тем временем, отправились домой отдыхать после суток без сна.&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Mar 2018 00:00:00 +0700</pubDate>
-        <turbo:content>&lt;p&gt;Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству.&lt;!-- more --&gt; На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.&lt;/p&gt;
+        <turbo:content>&lt;p&gt;Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522239032/01_v0guqp.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522239032/01_v0guqp.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/022.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;«Покорение Сибири» скульптора Юнуса Сафардиара в аэропорту Толмачёво.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;На стойке регистрации предъявили паспорта и взвесив ручную кладь в виде небольшого рюкзака, получили посадочные талоны и бирку ручной клади на рюкзак. Затем отправились к нужному гейту, указанному на талонах, для прохождения предполётного досмотра.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522208119/02_r7xulk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522208119/02_r7xulk.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/023.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Небольшая очередь в рентген кабинку и лента для просвечивания ручной клади.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;Процесс досмотра довольно прост, рюкзаки и сумки проходят через ленту рентгена, а будущие пассажиры могут либо пройти сканирование в рентген кабинке, либо сняв верхнюю одежду и обувь прогнать её через ленту вместе с ручной кладью. Кабинка быстрее и удобнее, но большинство, боясь обзавестись лишней парой рук, предпочитает второй способ. Пройдя этот нехитрый досмотр мы отправились ждать посадки в самолёт.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522209566/03_vzesbk.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522209566/03_vzesbk.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/024.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Airbus A321-211 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BCX, серийный номер 1720.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;В Москву предстояло лететь на шестнадцатилетнем Airbus A321, когда-то он принадлежал британской компании First Choice Airways. «Уральские Авиалинии» эксплуатируют самолёт с 2009 года. В Толмачёво его подали к телетрапу, после предъявления посадочных талонов нас пустили в недра салона. Салон, конечно-же, оказался не новым. Кое-где отсутствовали декоративные стекла на иллюминаторах, подлокотник соседнего кресла не фиксировался при откидывании, а обеденный столик был слегка поломан на один крепёж. Тем не менее, внутри чисто и более чем тепло, а тем, кому тепло не было, предложили пледы. К единственному минусу можно отнести малое расстояние между креслами, людям с ростом сто семьдесят, вроде меня, и выше, приходится сидеть в импровизированной позе эмбриона, особенно, если впередисидящий откидывает спинку кресла, впрочем сия особенность лоукостеров была нам известна.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522212388/04_kcbdv1.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522212388/04_kcbdv1.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/025.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -1038,20 +888,16 @@
 
 &lt;p&gt;Вскоре, после взлёта и набора высоты, пассажирам дозволили перемещаться по салону и они стройными рядами отправились в туалет, а бортпроводницы стали разносить напитки. Можно было выбрать томатный или апельсиновый сок из тетрапаков «Добрый», либо обычную минералку. После напитков перешли к раздаче обеда, он включён во все тарифы авиакомпании, так как рейс четырехчасовой пассажирам было предложено «горячее» — с курицей, говядиной или рыбой на выбор.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522215619/05_brpefr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522215619/05_brpefr.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/026.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Касалетка с макаронами, кусочками морковки и говядины.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;Помимо касалетки с основным блюдом выдают фирменную коробку, в ней упаковка с одноразовыми ложкой, вилкой и ножом, влажная салфетка, пакетик с чаем и сахаром. Небольшой контейнер с двумя кусочками огурца, долькой помидора и листиком петрушки, булка и вафля со сгущёнкой. Разумеется, это не ресторанная еда, но для лоукостера хорошо даже то, что она вообще есть и в целом не плоха и вполне съедобна. После обеда раздавали стаканчик с кипятком и набор с порошковым кофе, сухими сливками и сахаром, либо пакетик чая с сахаром, на выбор.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522225516/06_sclvcr.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522225516/06_sclvcr.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/027.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -1061,39 +907,31 @@
 
 &lt;p&gt;Закончив то, зачем прилетели в Москву, мы вновь отправились в Домодедово. Предполётный досмотр происходил практически также как в Толмачёво, но служба безопасности здесь более пристальная — ощупывают руками, всматриваются в содержимое ручной клади на экранах, могут уточнять содержимое вещей. После прохождения всех формальностей нас погрузили в автобус который двадцать минут простоял у терминала, а затем долго везли по аэропорту куда-то на его задворки. Самолёт вылетел с задержкой, но прибыл в Толмачёво на сорок минут раньше.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522226275/07_oxh7cm.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522226275/07_oxh7cm.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/028.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Airbus A319-112 в ливрее «Уральских Авиалиний». Регистрационный номер VQ-BTZ серийный номер 3385.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;На ночной рейс выпал более компактный борт Airbus A319. Самолёту чуть более десяти лет, с 2014 года он принадлежит «Уральским Авиалиниям», ранее был во владении лизинговой компании AerCap и пакистанской авиакомпании AirBlue.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522228811/08_tgj2ea.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522228811/08_tgj2ea.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/029.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				&lt;figcaption class=&quot;caption&quot;&gt;&lt;p&gt;Салон Airbus A319 VQ-BTZ.&lt;/p&gt;
 &lt;/figcaption&gt;
 			&lt;/figure&gt;
 
 &lt;p&gt;В отличии от VQ-BCX этот борт оказался более целым, здесь ничего не отваливалось, а сам салон показался куда качественнее и новее, однако расстояние между креслами по прежнему маленькое, что не удивительно. Из бонусов — во время полёта не было турбулентности, воздушных ям и прочей болтанки, лёгкий взлет и мягкая посадка. Зависит ли это от состояния самолёта или опытности пилота по прежнему неизвестно. В качестве попутчиков нам достались, по большей части, китайцы. Один из компании занял место рядом с нами, но бортпроводница разрешила ему пересесть к своим и мы летели без соседей, что не может не радовать. В целом, самолёт оказался полупустым, сидящий спереди также куда-то пересел, а один из китайцев сзади разложился спать на все три сиденья.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522230417/09_njqbli.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522230417/09_njqbli.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/030.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
 &lt;p&gt;По обыкновению, вскоре после взлёта разносили соки-воды, затем ужин — рис с курицей или рыбой, на выбор. Китайцы выбрали рыбу. Имелась и традиционная коробка с одноразовыми приборами, овощами и овсяной печенькой вместо вафли. Для китайских товарищей на коробке были иероглифы. После стаканчика кофе свет в самолёте приглушили и все улеглись спать.&lt;/p&gt;
 
-&lt;figure class=&quot;picture &quot;&gt;
-				&lt;a href=&quot;https://res.cloudinary.com/milkleaks/image/upload/v1522237622/10_gntqqv.png&quot; class=&quot;lightbox-image&quot; data-lightbox=&quot;image&quot;&gt;
-					&lt;img src=&quot;https://res.cloudinary.com/milkleaks/image/upload/c_limit,w_800/v1522237622/10_gntqqv.png&quot; /&gt;
-				&lt;/a&gt;
+&lt;figure class=&quot;picture&quot;&gt;
+				&lt;img src=&quot;/media/031.jpg&quot; data-action=&quot;zoom&quot; /&gt;
 				
 			&lt;/figure&gt;
 
@@ -1107,8 +945,6 @@
         <guid isPermaLink="true">https://fixel.ru/blog/snoski-na-poljah-v-egee/</guid>
         <link>https://fixel.ru/blog/snoski-na-poljah-v-egee/</link>
         <description>&lt;p&gt;Вновь из вопросов в телеграм «Как сделать сноски на полях в Эгее?». Добавим немного магии и стилей в css файл вашего шаблона.&lt;/p&gt;
-
-&lt;!-- more --&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1050px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nc&quot;&gt;.e2-text&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.aside&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -1188,8 +1024,6 @@
 </description>
         <pubDate>Sun, 18 Mar 2018 00:00:00 +0700</pubDate>
         <turbo:content>&lt;p&gt;Вновь из вопросов в телеграм «Как сделать сноски на полях в Эгее?». Добавим немного магии и стилей в css файл вашего шаблона.&lt;/p&gt;
-
-&lt;!-- more --&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1050px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nc&quot;&gt;.e2-text&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.aside&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;

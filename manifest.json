@@ -1,9 +1,9 @@
 {
-  "name": "Fixel",
-  "short_name": "Fixel",
+  "name": "",
+  "short_name": "",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.",
+  "description": "Блог о веб-дизайне, компьютерах и компьютерных играх",
   "icons": [{
     "src": "android-icon-192x192.png",
     "sizes": "192x192",

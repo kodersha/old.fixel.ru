@@ -15,16 +15,16 @@
 	<meta name="generator" content="Jekyll v3.8.4" />
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="Fixel">
+	<meta name="twitter:site" content="">
 	<meta name="twitter:creator" content="@sasha_travkina">
-	<meta name="twitter:title" content="Блог &middot; Fixel">
-	<meta name="twitter:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем.">
+	<meta name="twitter:title" content="Блог &middot; ">
+	<meta name="twitter:description" content="Блог о веб-дизайне, компьютерах и компьютерных играх">
 	<meta name="twitter:image" content="">
 
-	<meta property="og:title" content="Блог &middot; Fixel" />
-	<meta property="og:site_name" content="Fixel">	
+	<meta property="og:title" content="Блог &middot; " />
+	<meta property="og:site_name" content="">	
 	<meta property="og:url" content="https://fixel.ru/blog/">
-	<meta property="og:description" content="Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."/>
+	<meta property="og:description" content="Блог о веб-дизайне, компьютерах и компьютерных играх"/>
 	<meta property="og:image" content="" />
 	<meta property="og:image:height" content="360">
 	<meta property="og:image:width" content="640">
@@ -47,21 +47,22 @@
 	<!--[ Control ]-->
 	<meta name="yandex-verification" content="f96ef0e811161c03" />
 	<meta name="google-site-verification" content="dwjd3hkjvkoN4sqwgiC9Mgf5tTpjN8XDhuYDWACpsII" />
-	<meta name="rp95a13c119f7d4fcfb88ed46bb0810c2a" content="e1e609e1b17a97c3d4820f986ce8cd52" />
 
 	<!--[ Feed ]-->
 	<link rel="canonical" href="https://fixel.ru/blog/">
-	<link rel="alternate" type="application/rss+xml" title="Fixel" href="https://fixel.ru/feed.xml" />
+	<link rel="alternate" type="application/rss+xml" title="" href="https://fixel.ru/feed.xml" />
 		
 		<!--[ CSS ]-->
-		<link rel="stylesheet" type="text/css" href="/static/style.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/style.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/zoom.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/fotorama.css" />
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 		<!--[ JS ]-->
-		<script type="text/javascript" src="/static/js/jquery.js"></script>
-<script type="text/javascript" src="/static/modules/primarycolor/primarycolor.js"></script>
-<script type="text/javascript" src="/static/modules/chart/chart.min.js"></script>
-<script type="text/javascript" src="/static/modules/infinite-scroll/infinite-scroll.pkgd.min.js"></script>
-		<script type="text/javascript">base_url = "https://fixel.ru";</script>
+		<script type="text/javascript" src="/assets/js/jquery.js"></script>
+        <script type="text/javascript">base_url = "https://fixel.ru";</script>
+        
+        <!--[ Schema ]-->
 		<script type="application/ld+json">
 
 
@@ -83,274 +84,1400 @@
 				"https://t.me/sashatravkina"
 			]
 		},
-		"description": "Блог о компьютерных играх, фильмах, книгах, вебе и всем прочем."
+		"description": "Блог о веб-дизайне, компьютерах и компьютерных играх"
 	}
 
 
 </script>
+		
 	</head>
 
-	<body class="space-in-h-micro-xs space-in-h-base-sm wrapper">
-
-<header class="row row-middle-md space-auto-h-xs space-in-top-mili-xs space-in-bottom-base-xs space-in-bottom-kilo-xl linel logo">
-	<div class="col-lase-xs col-first-md col-xs-12 col-md-shrink space-in-h-zero-xs space-auto-right-md">
-		<a class="link-logo" href="/">
-			<img srcset="/static/images/avatar_96x96.png 2x, /static/images/avatar_192x192.png 4x" src="/static/images/avatar_48x48.png" width="48" height="48" alt="Fixel">					
-		</a>
-	</div>
-	<div class="col-first-xs col-last-md col-xs-12 col-md space-in-bottom-mili-xs space-in-bottom-zero-md space-in-h-zero-xs space-auto-left-md search">
-		<div class="search-form">
-			<input type="text" id="search-input" autocomplete="off" autocapitalize="off" class="search-box">
-			<span class="search-button">
-				<i class="fa fa-search open" aria-hidden="true"></i>
-				<i class="fa fa-times close" aria-hidden="true"></i>
-			</span>
-		</div>
-		<div class="dropdown">
-			<ul class="results" id="results-container"></ul>
-		</div>
-	</div>
+	<body class="space-out-h-zero-xs space-out-v-zero-xs space-in-h-mili-xs space-in-h-zero-lg">
+<header class="space-in-v-mili-xs header" role="banner">
+    <div class="space-auto-h-xs logo">
+        <a href="/">
+            <img srcset="/assets/images/avatar_96x96.png 2x, /assets/images/avatar_192x192.png 4x" src="/assets/images/avatar_64x64.png" width="64" height="64" alt="Блог Александры Травкиной">
+        </a>
+    </div>
 </header>
-<section class="slide-up-fade-in space-auto-h-xs content blog-list posts linel">
+
+<main id="blog" class="wrapper main" role="main">
+    <section class="space-in-bottom-mili-xs row">
+        <form class="col-xs-12 search">
+            <input id="search-input" class="search-box form-control fa" placeholder="&#xf002;" onblur="this.placeholder = ''" onfocus="this.placeholder = ''" type="text" autocomplete="off" autocapitalize="off" required>
+            <ul class="dropdown results" id="results-container"></ul>
+        </form>
+        
+            <article class="col-xs-6 preview odd">
+    <time>24 сентября 2018</time>
+    <p><a href="/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/">Fallout 2 · Лучшие модификации для нестареющей&nbsp;классики</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>24 сентября 2018</time>
-	<h1><a class="link-title" href="/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/">Fallout 2 · Лучшие модификации для нестареющей&nbsp;классики</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1537802265/image_utci0x.jpg">
-		</a>
-	</figure>
-	
-	<p>Вот уже в конце недели, 30 сентября, с момента выхода Fallout 2 пройдет без малого ровно двадцать лет. Но даже сейчас ее проработанность мира, насыщенность сюжета и вариативность прохождения сложно переоценить. Однако, если классическая вторая часть приключений на постядерных пустошах уже была пройдена вдоль и поперек, ее всегда можно разнообразить глобальными, сюжетными модами.</p>
-
-
-	
-		<p><a href="/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/статьи/">Статьи</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview even">
+    <time>23 сентября 2018</time>
+    <p><a href="/blog/graveyard-keeper/">Graveyard Keeper · Не очень веселая&nbsp;ферма</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>23 сентября 2018</time>
-	<h1><a class="link-title" href="/blog/graveyard-keeper/">Graveyard Keeper · Не очень веселая&nbsp;ферма</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/graveyard-keeper/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1537652866/image_d71c25.jpg">
-		</a>
-	</figure>
-	
-	<p>Волею несправедливой судьбы главный герой в одночасье оказывается в странном мире, лишь на первый взгляд похожем на наш. Там правят времена феодализма и алхимии, процветает земледелие и скотоводство, ведьм сжигают на костре силами святой инквизиции, а навыками чтения и письма владеет далеко не каждый.</p>
-
-
-	
-		<p><a href="/blog/graveyard-keeper/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>21 сентября 2018</time>
+    <p><a href="/blog/60-parsecs/">60 Parsecs! · Космический&nbsp;постапокалипсис</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>21 сентября 2018</time>
-	<h1><a class="link-title" href="/blog/60-parsecs/">60 Parsecs! · Космический&nbsp;постапокалипсис</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/60-parsecs/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1537514513/image_vgdsny.png">
-		</a>
-	</figure>
-	
-	<p>Спустя три года после выхода «<a href="/blog/60-seconds/">60 seconds!</a>», инди-студия Robot Gentleman наконец-то выпустила вторую часть приключенческого текстового квеста. Но на этот раз, группа выживших в ядерной войне оказывается не на Земле, а в глубоком космосе на борту единственно уцелевшего спасательного шаттла, за шестьдесят далеких парсек от родной планеты.</p>
-
-
-	
-		<p><a href="/blog/60-parsecs/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview even">
+    <time>12 августа 2018</time>
+    <p><a href="/blog/stay/"><span class="caps">STAY</span></a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>12 августа 2018</time>
-	<h1><a class="link-title" href="/blog/stay/"><span class="caps">STAY</span></a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/stay/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1534064027/image_kt0ju7.png">
-		</a>
-	</figure>
-	
-	<p>Своего рода визуальная новелла, выполненная, как и положено современной инди игре, в весьма детальной пиксельной графике под аккомпанемент красивейшей музыки. В <span class="caps">STAY</span> вам предстоит взять на себя роль самого себя и попытаться помочь незнакомцу, оказавшемуся в плену неизвестного похитителя.</p>
-
-
-	
-		<p><a href="/blog/stay/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 5 июля 2018</time>
+    <p><a href="/blog/graficheskij-planshet-xp-pen-star-g640/">Графический планшет Xp-Pen Star&nbsp;<span class="caps">G640</span></a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time> 5 июля 2018</time>
-	<h1><a class="link-title" href="/blog/graficheskij-planshet-xp-pen-star-g640/">Графический планшет Xp-Pen Star&nbsp;<span class="caps">G640</span></a></h1>
-	
-	<p>Решила вспомнить свое увлечение рисованием и таки попытаться научиться рисовать, для чего мне понадобился хоть какой-нибудь графический планшет. Выбор пал на китайский Xp-Pen Star <span class="caps">G640</span>, который и был благополучно заказан на AliExpress, не покупать же Wacom в самом деле. Спустя две недели планшет пришел по почте.</p>
-
-
-	
-		<p><a href="/blog/graficheskij-planshet-xp-pen-star-g640/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 4 июня 2018</time>
+    <p><a href="/blog/hackintosh-na-pc/">Хакинтош на&nbsp;<span class="caps">PC</span></a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time> 4 июня 2018</time>
-	<h1><a class="link-title" href="/blog/hackintosh-na-pc/">Хакинтош на&nbsp;<span class="caps">PC</span></a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/hackintosh-na-pc/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1527834916/thumb_aykyor.png">
-		</a>
-	</figure>
-	
-	<p>Расставшись со своим тормозящим <a href="/blog/znakomstvo-s-mac/">MacBook Air</a> в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной <span class="caps">OS</span> X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный <span class="caps">PC.</span> Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.
-
-	
-		<p><a href="/blog/hackintosh-na-pc/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+            <a class="tags" href="/blog/tags/ос/">ОС</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>12 мая 2018</time>
+    <p><a href="/blog/far-cry-5-sektantskaja-zhvachka/">Far Cry 5 · Сектантская&nbsp;жвачка</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>12 мая 2018</time>
-	<h1><a class="link-title" href="/blog/far-cry-5-sektantskaja-zhvachka/">Far Cry 5 · Сектантская&nbsp;жвачка</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/far-cry-5-sektantskaja-zhvachka/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1526057324/thumb_hnq1vy.png">
-		</a>
-	</figure>
-	
-	<p>Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц. На этом все достоинства Far Cry 5, к сожалению, заканчиваются.</p>
-
-
-	
-		<p><a href="/blog/far-cry-5-sektantskaja-zhvachka/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview even">
+    <time>28 марта 2018</time>
+    <p><a href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/">Перелёт <span class="caps">OVB</span> - <span class="caps">DME</span> - <span class="caps">OVB</span> или туда и&nbsp;обратно</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>28 марта 2018</time>
-	<h1><a class="link-title" href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/">Перелёт <span class="caps">OVB</span> - <span class="caps">DME</span> - <span class="caps">OVB</span> или туда и&nbsp;обратно</a></h1>
-	
-	<figure class="thumbnail">
-		<a href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/" class="link-photo">
-			<img src="https://res.cloudinary.com/milkleaks/image/upload/v1525635378/thumb_l9eqw3.png">
-		</a>
-	</figure>
-	
-	<p>Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству.
-	
-		<p><a href="/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/путешествия/">Путешествия</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>18 марта 2018</time>
+    <p><a href="/blog/snoski-na-poljah-v-egee/">Сноски на полях в&nbsp;Эгее</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>18 марта 2018</time>
-	<h1><a class="link-title" href="/blog/snoski-na-poljah-v-egee/">Сноски на полях в&nbsp;Эгее</a></h1>
-	
-	<p>Вновь из вопросов в телеграм «Как сделать сноски на полях в Эгее?». Добавим немного магии и стилей в css файл вашего шаблона.</p>
-
-
-	
-		<p><a href="/blog/snoski-na-poljah-v-egee/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+            <a class="tags" href="/blog/tags/эгея/">Эгея</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview even">
+    <time>13 марта 2018</time>
+    <p><a href="/blog/jekyll-i-izobrazhenija/">Jekyll и&nbsp;изображения</a></p>
     
-        <article class="space-in-v-kilo-xs post">
-	<time>13 марта 2018</time>
-	<h1><a class="link-title" href="/blog/jekyll-i-izobrazhenija/">Jekyll и&nbsp;изображения</a></h1>
-	
-	<p>Несколько месяцев назад мне на почту пришло письмо с вопросом о том, какой хостинг изображений можно использовать для Jekyll блога на GitHub Pages. Кто-то просто использует папку images и заливает всё на GitHub, но тогда время сборки сайта и его отправки на хостинг растёт в геометрической прогрессии, да и в <a href="https://help.github.com/articles/what-is-github-pages/" rel="nofollow" target="_blank">справке</a> GitHub Pages указан лимит в один гигабайт для сайта. Кто-то использует сторонние хранилища изображений. Так, например я, до недавнего времени, использовала <a href="https://imgur.com/" rel="nofollow" target="_blank">imgur</a>, но меня предостерегли о том, что imgur может забанить за использование себя в качестве хостинга картинок для личного сайта. Пришлось поискать альтернативы.</p>
-
-
-	
-		<p><a href="/blog/jekyll-i-izobrazhenija/" class="readmore">Читать полностью &rsaquo;</a></p>
-		
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/jekyll/">Jekyll</a>
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+    </div>
+    
 </article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>26 февраля 2018</time>
+    <p><a href="/blog/papers-please-korotkometrazhyi-film/">Короткометражный фильм «Papers,&nbsp;Please»</a></p>
     
-
-    <a class="pagination__next" href="/blog/page-2/"></a>
-</section>
-
-<noscript>
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
     
-	<nav class="row row-between-sm space-auto-h-xs space-in-bottom-kilo-xs linel pagination">
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs previous">
-			
-				<a class="link" rel="prev" href="/blog/page-2/">&lsaquo; Ранее</a>
-			
-		</span>
-		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs page-number">Страница 1 из 10</span>
-		
-		<span class="col-xs-12 col-sm-4 space-in-v-nano-xs space-in-v-zero-md space-in-h-zero-xs next">
-			
-		</span>
-	</nav>
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 9 февраля 2018</time>
+    <p><a href="/blog/o-ljubimyh-serialah/">О любимых&nbsp;сериалах</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>23 января 2018</time>
+    <p><a href="/blog/kat-v-egee/">Кат в&nbsp;Эгее</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+            <a class="tags" href="/blog/tags/эгея/">Эгея</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 3 января 2018</time>
+    <p><a href="/blog/beat-cop/">Beat&nbsp;Cop</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>31 декабря 2017</time>
+    <p><a href="/blog/novyj-novyj-novyj-god/">Новый, новый, новый&nbsp;год</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>22 декабря 2017</time>
+    <p><a href="/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/">Упрощаем получение карточек на распродаже&nbsp;Steam</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>14 ноября 2017</time>
+    <p><a href="/blog/elementary-os/">elementary<span class="caps">OS</span></a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/ос/">ОС</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 9 ноября 2017</time>
+    <p><a href="/blog/va11halla/"><span class="caps">VA</span>-11&nbsp;Hall-A</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 8 октября 2017</time>
+    <p><a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в&nbsp;Эгее</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+            <a class="tags" href="/blog/tags/эгея/">Эгея</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 3 октября 2017</time>
+    <p><a href="/blog/darkwood/">Darkwood</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 1 октября 2017</time>
+    <p><a href="/blog/uiljam-zinser-kak-pisat-horosho/">Уильям Зинсер «Как писать&nbsp;хорошо»</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/книги/">Книги</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>16 сентября 2017</time>
+    <p><a href="/blog/ustanavlivaem-jekyll-na-mac/">Устанавливаем Jekyll на Mac&nbsp;<span class="caps">OS</span></a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/jekyll/">Jekyll</a>
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 4 сентября 2017</time>
+    <p><a href="/blog/ustanavlivaem-jekyll-na-windows/">Устанавливаем Jekyll на&nbsp;Windows</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/jekyll/">Jekyll</a>
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 2 сентября 2017</time>
+    <p><a href="/blog/vse-na-svete-iz-plastmassy/">Все на свете из&nbsp;пластмассы</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>27 августа 2017</time>
+    <p><a href="/blog/aseprite/">Aseprite</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/программы/">Программы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>24 августа 2017</time>
+    <p><a href="/blog/ujutnyj-jekyll/">Уютный&nbsp;Jekyll</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/jekyll/">Jekyll</a>
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 3 августа 2017</time>
+    <p><a href="/blog/the-long-dark-wintermute/">The Long Dark:&nbsp;Wintermute</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>19 июня 2017</time>
+    <p><a href="/blog/stardew-valley/">Stardew&nbsp;Valley</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 9 мая 2017</time>
+    <p><a href="/blog/what-remains-of-edith-finch/">What Remains of Edith&nbsp;Finch</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>29 апреля 2017</time>
+    <p><a href="/blog/pishem-svoy-shablon-dlya-egei/">Пишем свой шаблон для&nbsp;Эгеи</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+            <a class="tags" href="/blog/tags/эгея/">Эгея</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>10 апреля 2017</time>
+    <p><a href="/blog/wallpaper-engine/">Wallpaper&nbsp;Engine</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/программы/">Программы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>29 марта 2017</time>
+    <p><a href="/blog/peace-death/">Peace,&nbsp;Death!</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>26 марта 2017</time>
+    <p><a href="/blog/leaks-shablon-dlya-egei/">Leaks · Шаблон для&nbsp;Эгеи</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/шаблоны/">Шаблоны</a>
+        
+            <a class="tags" href="/blog/tags/эгея/">Эгея</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>18 марта 2017</time>
+    <p><a href="/blog/znakomstvo-s-mac/">Знакомство с&nbsp;Mac</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>10 марта 2017</time>
+    <p><a href="/blog/resident-evil-7/">Resident Evil 7:&nbsp;Biohazard</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 8 марта 2017</time>
+    <p><a href="/blog/vozobnovlenie-aktivnosti/">Возобновление&nbsp;активности</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>27 октября 2016</time>
+    <p><a href="/blog/mod-red-rocket-extended/">Мод «Red Rocket&nbsp;Extended»</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>26 октября 2016</time>
+    <p><a href="/blog/egeya/">Эгея</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/эгея/">Эгея</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>28 августа 2016</time>
+    <p><a href="/blog/no-mans-sky/">No Man’s&nbsp;Sky</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 3 августа 2016</time>
+    <p><a href="/blog/batman-the-telltale-series/">Batman: The Telltale&nbsp;Series</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>28 июля 2016</time>
+    <p><a href="/blog/pervy-opyt-v-creation-kit/">Первый опыт в Creation&nbsp;Kit</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>26 июля 2016</time>
+    <p><a href="/blog/bethesda-bethesda-nikogda-ne-menyaetsya/">Bethesda, Bethesda никогда не&nbsp;меняется</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 1 июня 2016</time>
+    <p><a href="/blog/35mm/">35mm</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>24 мая 2016</time>
+    <p><a href="/blog/homefront-the-revolution/">Homefront: The&nbsp;Revolution</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>16 мая 2016</time>
+    <p><a href="/blog/seriya-knig-metro-dmitriya-gluhovskogo/">Дмитрий Глуховский&nbsp;«Метро»</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/книги/">Книги</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 8 апреля 2016</time>
+    <p><a href="/blog/party-hard/">Party&nbsp;Hard</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>28 марта 2016</time>
+    <p><a href="/blog/star-wars-the-force-awakens/">Star Wars The Force&nbsp;Awakens</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>19 марта 2016</time>
+    <p><a href="/blog/mnenie-o-the-witcher-3-wild-hunt/">Мнение о The Witcher 3 Wild&nbsp;Hunt</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>16 марта 2016</time>
+    <p><a href="/blog/den-zhenskoy-solidarnosti/">День женской&nbsp;солидарности</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>22 февраля 2016</time>
+    <p><a href="/blog/dying-light/">Dying&nbsp;Light</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>21 февраля 2016</time>
+    <p><a href="/blog/dzhordzh-orujell-1984/">Джордж Оруэлл&nbsp;«1984»</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/книги/">Книги</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>12 февраля 2016</time>
+    <p><a href="/blog/firewatch/">Firewatch</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>17 января 2016</time>
+    <p><a href="/blog/ustanovka-flarum-na-centos-7/">Установка flarum на&nbsp;cent<span class="caps">OS</span></a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+            <a class="tags" href="/blog/tags/гайды/">Гайды</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>10 января 2016</time>
+    <p><a href="/blog/roskomnadzor-i-obhod-blokirovok/">«Роскомнадзор» и обход&nbsp;блокировок</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/веб/">Веб</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 9 января 2016</time>
+    <p><a href="/blog/byordmen/">Бёрдмэн</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 1 января 2016</time>
+    <p><a href="/blog/kak-windows-10-videokarty-ubival/">Как Windows 10 видеокарты&nbsp;убивал</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>31 декабря 2015</time>
+    <p><a href="/blog/s-novym-godom-damy-i-gospoda/">С Новым Годом, Дамы и&nbsp;Господа</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>28 декабря 2015</time>
+    <p><a href="/blog/marsianin/">Марсианин · Мужик, у тебя изолента&nbsp;есть?</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>25 декабря 2015</time>
+    <p><a href="/blog/o-koshkah-i-allergii/">О кошках и&nbsp;аллергии</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>19 декабря 2015</time>
+    <p><a href="/blog/star-wars-i-sedmoy-epizod/">Star Wars и седьмой&nbsp;эпизод</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/заметки/">Заметки</a>
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>17 декабря 2015</time>
+    <p><a href="/blog/the-escapists/">The&nbsp;Escapists</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 4 декабря 2015</time>
+    <p><a href="/blog/vampyr-novaya-igra-ot-dontnod/">Vampyr · Новая игра от&nbsp;Dontnod</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/статьи/">Статьи</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 4 декабря 2015</time>
+    <p><a href="/blog/itogi-the-game-awards-2015/">Итоги The Game Awards&nbsp;2015</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/статьи/">Статьи</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>12 ноября 2015</time>
+    <p><a href="/blog/fallout-4-vse-i-srazu/">Fallout 4 · Все и&nbsp;сразу</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 7 ноября 2015</time>
+    <p><a href="/blog/life-is-strange-obzor/">Life Is&nbsp;Strange</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>28 октября 2015</time>
+    <p><a href="/blog/retrospektiva-prey/">Ретроспектива ·&nbsp;Prey</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+            <a class="tags" href="/blog/tags/ретроспектива/">Ретроспектива</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>16 октября 2015</time>
+    <p><a href="/blog/soma-transmission/"><span class="caps">SOMA</span> ·&nbsp;Transmission</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/фильмы/">Фильмы</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>15 октября 2015</time>
+    <p><a href="/blog/minecraft-story-mode/">Minecraft: Story Mode · Эпизод&nbsp;первый</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>11 октября 2015</time>
+    <p><a href="/blog/the-flame-in-the-flood/">The Flame in the Flood · Ранний&nbsp;доступ</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 7 октября 2015</time>
+    <p><a href="/blog/retrospektiva-kosmicheskie-reyndzhery/">Ретроспектива · Космические&nbsp;рейнджеры</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+            <a class="tags" href="/blog/tags/ретроспектива/">Ретроспектива</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 3 октября 2015</time>
+    <p><a href="/blog/the-beginners-guide/">The Beginner’s&nbsp;Guide</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 1 октября 2015</time>
+    <p><a href="/blog/armikrog-19-let-spustya/">Armikrog · 19 лет&nbsp;спустя</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>23 сентября 2015</time>
+    <p><a href="/blog/soma/"><span class="caps">SOMA</span></a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>19 сентября 2015</time>
+    <p><a href="/blog/the-long-dark/">The Long Dark · Ранний&nbsp;доступ</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 9 сентября 2015</time>
+    <p><a href="/blog/dont-starve/">Don’t&nbsp;Starve</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>28 августа 2015</time>
+    <p><a href="/blog/this-war-of-mine/">This War of&nbsp;Mine</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>27 августа 2015</time>
+    <p><a href="/blog/batman-arkham-knight/">Batman: Arkham&nbsp;Knight</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>23 августа 2015</time>
+    <p><a href="/blog/project-zomboid/">Project Zomboid · Ранний&nbsp;доступ</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>19 августа 2015</time>
+    <p><a href="/blog/zombi/">Zombi</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>19 августа 2015</time>
+    <p><a href="/blog/fallout-4-vse-chto-izvestno-na-danny-moment/">Fallout 4 · Все что известно на данный&nbsp;момент</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/статьи/">Статьи</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>15 августа 2015</time>
+    <p><a href="/blog/fallout-shelter/">Fallout&nbsp;Shelter</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>13 августа 2015</time>
+    <p><a href="/blog/sheltered/">Sheltered</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>12 августа 2015</time>
+    <p><a href="/blog/knock-knock/">Knock-Knock</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 8 августа 2015</time>
+    <p><a href="/blog/60-seconds/">60&nbsp;seconds!</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 5 августа 2015</time>
+    <p><a href="/blog/retrospektiva-anabioz-son-razuma/">Ретроспектива · Анабиоз - Сон&nbsp;разума</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+            <a class="tags" href="/blog/tags/ретроспектива/">Ретроспектива</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>31 июля 2015</time>
+    <p><a href="/blog/cradle-razbor-koncovki-i-syuzheta/">Cradle · Разбор концовки и&nbsp;сюжета</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>28 июля 2015</time>
+    <p><a href="/blog/ne-vse-tak-idealno-v-cradle/">Не все так идеально в&nbsp;Cradle</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/статьи/">Статьи</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>27 июля 2015</time>
+    <p><a href="/blog/cradle/">Cradle</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time>10 мая 2015</time>
+    <p><a href="/blog/call-of-duty-advanced-warfare/">Call Of Duty: Advanced&nbsp;Warfare</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time> 8 мая 2015</time>
+    <p><a href="/blog/life-is-strange/">Life Is Strange · Эпизод&nbsp;первый</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview odd">
+    <time> 4 мая 2015</time>
+    <p><a href="/blog/state-of-deacy-yose/">State Of Decay:&nbsp;<span class="caps">YOSE</span></a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+            <article class="col-xs-6 preview even">
+    <time>11 марта 2015</time>
+    <p><a href="/blog/cities-skylines/">Cities&nbsp;Skylines</a></p>
+    
+    <div class="tags">
+        
+        
+            <a class="tags" href="/blog/tags/игры/">Игры</a>
+        
+            <a class="tags" href="/blog/tags/обзоры/">Обзоры</a>
+        
+    </div>
+    
+</article>
+        
+        <div class="space-in-top-mili-xs col-xs-12" style="text-align: center;">[ это конец ]</div>
+    </section>
+</main>
 
-</noscript>
-<footer>
-	<div class="space-auto-h-xs space-in-bottom-base-xs linel copyright">
-		<div class="row">
-			<div class="col-xs">
-			Александра Травкина &copy; <time>2015 - 2018</time>
-			</div>
-			<div class="col-xs-shrink toggle">
-				<span class="toggle-menu menu-bottom">&middot;&middot;&middot;</span>
-			</div>
-		</div>
-	</div>
-	<section class="space-auto-h-xs linel navigation">
-	<nav class=" space-in-v-base-xs space-in-h-micro-xs space-in-h-base-sm space-minus-h-micro-xs space-minus-h-base-sm space-minus-top-nano-xs menu" id="menu">
-		<ol class="menu-content">
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs active"><a class="link-subcontrol" href="/">Главная</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs active"><a class="link-subcontrol" href="/blog/">Блог</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs"><a class="link-subcontrol" href="/blog/tags/">Теги</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs"><a class="link-subcontrol" href="/donate/">Поддержать</a></li>
-			
-			
-			
-				<li class="space-in-right-micro-md space-in-top-nano-xs"><a class="link-subcontrol" href="/about/">Об авторе</a></li>
-			
-			<li class="space-in-top-micro-xs space-in-top-nano-md rss-link"><a target="_blank" href="/feed">RSS</a></li>
-		</ol>
-	</nav>
-</section>
-</footer>
-
-		<!--[ JS ]-->
-		<!--[if lt IE 9]>
-<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<script type="text/javascript" src="/static/js/jekyll-search.js"></script>
-<script type="text/javascript" src="/static/modules/fotorama/fotorama.js"></script>
-<script type="text/javascript" src="/static/modules/lightbox/lightbox.js"></script>
-<script type="text/javascript" src="/static/modules/tocbot/tocbot.js"></script>
-
-<script type="text/javascript" src="/static/js/template.js"></script>
-
-<!--[ AdBlock ]-->
-
-<script type="text/javascript" src="https://cdn.rawgit.com/Yuukithemes/yuukithemes.github.io/92c11f42/js/advertisement.js"></script>
-<script type="text/javascript" src="/static/js/ads.js"></script>
-
-<!--[ Lightbox ]-->
+		<!-- JS -->
+		<script type="text/javascript" src="/assets/js/jekyll-search.js"></script>
+		<script type="text/javascript" src="/assets/js/zoom.js"></script>
+		<script type="text/javascript" src="/assets/js/fotorama.js"></script>
+		<script type="text/javascript" src="/assets/js/template.js"></script>
 	</body>
 </html>

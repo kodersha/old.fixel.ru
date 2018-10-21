@@ -2,72 +2,72 @@
   
     {
       "title"    : "Fallout 2 · Лучшие модификации для нестареющей классики",
-      "category" : "Игры",
-      "tags"     : "Постапокалипсис, Выживание, Открытый мир, Ролевая игра, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Статьи",
       "url"      : "/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/",
       "date"     : "2018-09-24 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Graveyard Keeper · Не очень веселая ферма",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Крафтинг, Инди, Менеджер, Ролевая игра, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/graveyard-keeper/",
       "date"     : "2018-09-23 00:00:00 +0700"
     } ,
   
     {
       "title"    : "60 Parsecs! · Космический постапокалипсис",
-      "category" : "Игры",
-      "tags"     : "Текстовый квест, Квест, Инди, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/60-parsecs/",
       "date"     : "2018-09-21 00:00:00 +0700"
     } ,
   
     {
       "title"    : "STAY",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Квест, Инди, История, Приключение, Визуальная новелла, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/stay/",
       "date"     : "2018-08-12 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Графический планшет Xp-Pen Star G640",
-      "category" : "Заметки",
-      "tags"     : "Рисование",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/graficheskij-planshet-xp-pen-star-g640/",
       "date"     : "2018-07-05 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Хакинтош на PC",
-      "category" : "Заметки",
-      "tags"     : "Mac, OS, and Гайд",
+      "category" : "",
+      "tags"     : "Гайды and ОС",
       "url"      : "/blog/hackintosh-na-pc/",
       "date"     : "2018-06-04 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Far Cry 5 · Сектантская жвачка",
-      "category" : "Игры",
-      "tags"     : "Открытый мир, Экшен, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/far-cry-5-sektantskaja-zhvachka/",
       "date"     : "2018-05-12 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Перелёт OVB - DME - OVB или туда и обратно",
-      "category" : "Заметки",
-      "tags"     : "Путешествие",
+      "category" : "",
+      "tags"     : "Заметки and Путешествия",
       "url"      : "/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/",
       "date"     : "2018-03-28 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Сноски на полях в Эгее",
-      "category" : "Веб",
-      "tags"     : "Эгея and Гайд",
+      "category" : "",
+      "tags"     : "Веб, Эгея, and Гайды",
       "url"      : "/blog/snoski-na-poljah-v-egee/",
       "date"     : "2018-03-18 00:00:00 +0700"
     } ,
@@ -75,479 +75,479 @@
     {
       "title"    : "Jekyll и изображения",
       "category" : "Веб",
-      "tags"     : "Jekyll",
+      "tags"     : "Jekyll and Веб",
       "url"      : "/blog/jekyll-i-izobrazhenija/",
       "date"     : "2018-03-13 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Короткометражный фильм «Papers, Please»",
-      "category" : "Фильмы",
-      "tags"     : "Антиутопия and На главной",
+      "category" : "",
+      "tags"     : "Игры and Фильмы",
       "url"      : "/blog/papers-please-korotkometrazhyi-film/",
       "date"     : "2018-02-26 00:00:00 +0700"
     } ,
   
     {
       "title"    : "О любимых сериалах",
-      "category" : "Фильмы",
-      "tags"     : "На главной",
+      "category" : "",
+      "tags"     : "Фильмы",
       "url"      : "/blog/o-ljubimyh-serialah/",
       "date"     : "2018-02-09 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Кат в Эгее",
-      "category" : "Веб",
-      "tags"     : "Гайд and Эгея",
+      "category" : "",
+      "tags"     : "Веб, Гайды, and Эгея",
       "url"      : "/blog/kat-v-egee/",
       "date"     : "2018-01-23 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Beat Cop",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Квест, Инди, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/beat-cop/",
       "date"     : "2018-01-03 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Новый, новый, новый год",
-      "category" : "Заметки",
-      "tags"     : "На главной",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/novyj-novyj-novyj-god/",
       "date"     : "2017-12-31 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Упрощаем получение карточек на распродаже Steam",
-      "category" : "Заметки",
-      "tags"     : "Steam, Гайд, and На главной",
+      "category" : "",
+      "tags"     : "Заметки and Гайды",
       "url"      : "/blog/uproshhaem-poluchenie-kartochek-na-rasprodazhe-steam/",
       "date"     : "2017-12-22 00:00:00 +0700"
     } ,
   
     {
       "title"    : "elementaryOS",
-      "category" : "Заметки",
-      "tags"     : "OS and На главной",
+      "category" : "",
+      "tags"     : "Заметки and ОС",
       "url"      : "/blog/elementary-os/",
       "date"     : "2017-11-14 00:00:00 +0700"
     } ,
   
     {
       "title"    : "VA-11 Hall-A",
-      "category" : "Игры",
-      "tags"     : "Инди, Квест, Визуальная новелла, Пиксельная графика, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/va11halla/",
       "date"     : "2017-11-09 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Свои шрифты в Эгее",
-      "category" : "Веб",
-      "tags"     : "Эгея and Гайд",
+      "category" : "",
+      "tags"     : "Веб, Эгея, and Гайды",
       "url"      : "/blog/svoi-shrifty-v-egee/",
       "date"     : "2017-10-08 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Darkwood",
-      "category" : "Игры",
-      "tags"     : "Выживание, Крафтинг, Квест, Инди, Хоррор, Открытый мир, Пиксельная графика, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/darkwood/",
       "date"     : "2017-10-03 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Уильям Зинсер «Как писать хорошо»",
-      "category" : "Книги",
-      "tags"     : "Саморазвитие",
+      "category" : "",
+      "tags"     : "Книги",
       "url"      : "/blog/uiljam-zinser-kak-pisat-horosho/",
       "date"     : "2017-10-01 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Устанавливаем Jekyll на Mac OS",
-      "category" : "Веб",
-      "tags"     : "Гайд and Jekyll",
+      "category" : "",
+      "tags"     : "Веб, Jekyll, and Гайды",
       "url"      : "/blog/ustanavlivaem-jekyll-na-mac/",
       "date"     : "2017-09-16 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Устанавливаем Jekyll на Windows",
-      "category" : "Веб",
-      "tags"     : "Гайд and Jekyll",
+      "category" : "",
+      "tags"     : "Веб, Гайды, and Jekyll",
       "url"      : "/blog/ustanavlivaem-jekyll-na-windows/",
       "date"     : "2017-09-04 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Все на свете из пластмассы",
-      "category" : "Заметки",
-      "tags"     : "3D печать and На главной",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/vse-na-svete-iz-plastmassy/",
       "date"     : "2017-09-02 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Aseprite",
-      "category" : "Заметки",
-      "tags"     : "Программа, Рисование, and Пиксельная графика",
+      "category" : "",
+      "tags"     : "Заметки and Программы",
       "url"      : "/blog/aseprite/",
       "date"     : "2017-08-27 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Уютный Jekyll",
-      "category" : "Заметки",
-      "tags"     : "Jekyll and CMS",
+      "category" : "",
+      "tags"     : "Заметки and Jekyll",
       "url"      : "/blog/ujutnyj-jekyll/",
       "date"     : "2017-08-24 00:00:00 +0700"
     } ,
   
     {
       "title"    : "The Long Dark: Wintermute",
-      "category" : "Игры",
-      "tags"     : "Постапокалипсис, Открытый мир, Выживание, Крафтинг, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/the-long-dark-wintermute/",
       "date"     : "2017-08-03 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Stardew Valley",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Открытый мир, Ролевая игра, Приключение, Изометрия, Крафтинг, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/stardew-valley/",
       "date"     : "2017-06-19 00:00:00 +0700"
     } ,
   
     {
       "title"    : "What Remains of Edith Finch",
-      "category" : "Игры",
-      "tags"     : "Интерактивный фильм, Приключение, История, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/what-remains-of-edith-finch/",
       "date"     : "2017-05-09 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Пишем свой шаблон для Эгеи",
-      "category" : "Веб",
-      "tags"     : "Эгея and Гайд",
+      "category" : "",
+      "tags"     : "Веб, Эгея, and Гайды",
       "url"      : "/blog/pishem-svoy-shablon-dlya-egei/",
       "date"     : "2017-04-29 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Wallpaper Engine",
-      "category" : "Заметки",
-      "tags"     : "Программа",
+      "category" : "",
+      "tags"     : "Заметки and Программы",
       "url"      : "/blog/wallpaper-engine/",
       "date"     : "2017-04-10 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Peace, Death!",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Платформер, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/peace-death/",
       "date"     : "2017-03-29 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Leaks · Шаблон для Эгеи",
-      "category" : "Веб",
-      "tags"     : "CMS, Эгея, and Шаблон",
+      "category" : "",
+      "tags"     : "Веб, Эгея, and Шаблоны",
       "url"      : "/blog/leaks-shablon-dlya-egei/",
       "date"     : "2017-03-26 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Знакомство с Mac",
-      "category" : "Заметки",
-      "tags"     : "IT, Mac, and Apple",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/znakomstvo-s-mac/",
       "date"     : "2017-03-18 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Resident Evil 7: Biohazard",
-      "category" : "Игры",
-      "tags"     : "Выживание, Хоррор, and На главной",
+      "category" : "",
+      "tags"     : "Обзоры and Игры",
       "url"      : "/blog/resident-evil-7/",
       "date"     : "2017-03-10 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Возобновление активности",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/vozobnovlenie-aktivnosti/",
       "date"     : "2017-03-08 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Мод «Red Rocket Extended»",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/mod-red-rocket-extended/",
       "date"     : "2016-10-27 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Эгея",
-      "category" : "Заметки",
-      "tags"     : "CMS",
+      "category" : "",
+      "tags"     : "Эгея and Заметки",
       "url"      : "/blog/egeya/",
       "date"     : "2016-10-26 00:00:00 +0700"
     } ,
   
     {
       "title"    : "No Man’s Sky",
-      "category" : "Игры",
-      "tags"     : "Научная фантастика, Открытый мир, Симулятор, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/no-mans-sky/",
       "date"     : "2016-08-28 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Batman: The Telltale Series",
-      "category" : "Игры",
-      "tags"     : "Интерактивный фильм, История, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/batman-the-telltale-series/",
       "date"     : "2016-08-03 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Первый опыт в Creation Kit",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/pervy-opyt-v-creation-kit/",
       "date"     : "2016-07-28 00:00:00 +0700"
     } ,
   
     {
       "title"    : "Bethesda, Bethesda никогда не меняется",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Игры and Заметки",
       "url"      : "/blog/bethesda-bethesda-nikogda-ne-menyaetsya/",
       "date"     : "2016-07-26 00:00:00 +0700"
     } ,
   
     {
       "title"    : "35mm",
-      "category" : "Игры",
-      "tags"     : "Постапокалипсис, История, Квест, Экшен, Инди, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/35mm/",
       "date"     : "2016-06-01 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Homefront: The Revolution",
-      "category" : "Игры",
-      "tags"     : "Открытый мир, Экшен, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/homefront-the-revolution/",
       "date"     : "2016-05-24 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Дмитрий Глуховский «Метро»",
-      "category" : "Книги",
-      "tags"     : "Постапокалипсис",
+      "category" : "",
+      "tags"     : "Книги",
       "url"      : "/blog/seriya-knig-metro-dmitriya-gluhovskogo/",
       "date"     : "2016-05-16 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Party Hard",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Изометрия, Экшен, Квест, Инди, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/party-hard/",
       "date"     : "2016-04-08 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Star Wars The Force Awakens",
-      "category" : "Фильмы",
-      "tags"     : "На главной",
+      "category" : "",
+      "tags"     : "Фильмы",
       "url"      : "/blog/star-wars-the-force-awakens/",
       "date"     : "2016-03-28 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Мнение о The Witcher 3 Wild Hunt",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Заметки and Игры",
       "url"      : "/blog/mnenie-o-the-witcher-3-wild-hunt/",
       "date"     : "2016-03-19 00:00:00 +0600"
     } ,
   
     {
       "title"    : "День женской солидарности",
-      "category" : "Заметки",
-      "tags"     : "На главной",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/den-zhenskoy-solidarnosti/",
       "date"     : "2016-03-16 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Dying Light",
-      "category" : "Игры",
-      "tags"     : "Выживание, Зомби, Хоррор, Открытый мир, Гонка, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/dying-light/",
       "date"     : "2016-02-22 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Джордж Оруэлл «1984»",
-      "category" : "Книги",
-      "tags"     : "Антиутопия",
+      "category" : "",
+      "tags"     : "Книги",
       "url"      : "/blog/dzhordzh-orujell-1984/",
       "date"     : "2016-02-21 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Firewatch",
-      "category" : "Игры",
-      "tags"     : "Приключение, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/firewatch/",
       "date"     : "2016-02-12 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Установка flarum на centOS",
-      "category" : "Веб",
-      "tags"     : "Гайд",
+      "category" : "",
+      "tags"     : "Веб and Гайды",
       "url"      : "/blog/ustanovka-flarum-na-centos-7/",
       "date"     : "2016-01-17 00:00:00 +0600"
     } ,
   
     {
       "title"    : "«Роскомнадзор» и обход блокировок",
-      "category" : "Веб",
-      "tags"     : "Гайд",
+      "category" : "",
+      "tags"     : "Веб",
       "url"      : "/blog/roskomnadzor-i-obhod-blokirovok/",
       "date"     : "2016-01-10 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Бёрдмэн",
-      "category" : "Фильмы",
-      "tags"     : "На главной",
+      "category" : "",
+      "tags"     : "Фильмы",
       "url"      : "/blog/byordmen/",
       "date"     : "2016-01-09 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Как Windows 10 видеокарты убивал",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/kak-windows-10-videokarty-ubival/",
       "date"     : "2016-01-01 00:00:00 +0600"
     } ,
   
     {
       "title"    : "С Новым Годом, Дамы и Господа",
-      "category" : "Заметки",
-      "tags"     : "На главной",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/s-novym-godom-damy-i-gospoda/",
       "date"     : "2015-12-31 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Марсианин · Мужик, у тебя изолента есть?",
-      "category" : "Фильмы",
-      "tags"     : "Научная фантастика and На главной",
+      "category" : "",
+      "tags"     : "Фильмы",
       "url"      : "/blog/marsianin/",
       "date"     : "2015-12-28 00:00:00 +0600"
     } ,
   
     {
       "title"    : "О кошках и аллергии",
-      "category" : "Заметки",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Заметки",
       "url"      : "/blog/o-koshkah-i-allergii/",
       "date"     : "2015-12-25 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Star Wars и седьмой эпизод",
-      "category" : "Фильмы",
-      "tags"     : "",
+      "category" : "",
+      "tags"     : "Фильмы and Заметки",
       "url"      : "/blog/star-wars-i-sedmoy-epizod/",
       "date"     : "2015-12-19 00:00:00 +0600"
     } ,
   
     {
       "title"    : "The Escapists",
-      "category" : "Игры",
-      "tags"     : "Пиксельная графика, Выживание, Крафтинг, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/the-escapists/",
       "date"     : "2015-12-17 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Vampyr · Новая игра от Dontnod",
-      "category" : "Игры",
-      "tags"     : "Статья and На главной",
+      "category" : "",
+      "tags"     : "Статьи and Игры",
       "url"      : "/blog/vampyr-novaya-igra-ot-dontnod/",
       "date"     : "2015-12-04 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Итоги The Game Awards 2015",
-      "category" : "Игры",
-      "tags"     : "Статья and На главной",
+      "category" : "",
+      "tags"     : "Статьи and Игры",
       "url"      : "/blog/itogi-the-game-awards-2015/",
       "date"     : "2015-12-04 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Fallout 4 · Все и сразу",
-      "category" : "Игры",
-      "tags"     : "Открытый мир, Выживание, Постапокалипсис, Крафтинг, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/fallout-4-vse-i-srazu/",
       "date"     : "2015-11-12 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Life Is Strange",
-      "category" : "Игры",
-      "tags"     : "Интерактивный фильм, История, Приключение, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/life-is-strange-obzor/",
       "date"     : "2015-11-07 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Ретроспектива · Prey",
-      "category" : "Игры",
-      "tags"     : "Ретроспектива, Экшен, and На главной",
+      "category" : "",
+      "tags"     : "Ретроспектива, Игры, and Обзоры",
       "url"      : "/blog/retrospektiva-prey/",
       "date"     : "2015-10-28 00:00:00 +0600"
     } ,
   
     {
       "title"    : "SOMA · Transmission",
-      "category" : "Фильмы",
-      "tags"     : "Фильм, Хоррор, Научная фантастика, and На главной",
+      "category" : "",
+      "tags"     : "Фильмы and Игры",
       "url"      : "/blog/soma-transmission/",
       "date"     : "2015-10-16 00:00:00 +0600"
     } ,
   
     {
-      "title"    : "Minecraft: Story Mode",
-      "category" : "Игры",
-      "tags"     : "Интерактивный фильм, Квест, Крафтинг, Приключение, and На главной",
+      "title"    : "Minecraft: Story Mode · Эпизод первый",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/minecraft-story-mode/",
       "date"     : "2015-10-15 00:00:00 +0600"
     } ,
   
     {
-      "title"    : "The Flame in the Flood",
+      "title"    : "The Flame in the Flood · Ранний доступ",
       "category" : "Игры",
-      "tags"     : "Приключение, Открытый мир, Изометрия, and На главной",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/the-flame-in-the-flood/",
       "date"     : "2015-10-11 00:00:00 +0600"
     } ,
@@ -555,198 +555,185 @@
     {
       "title"    : "Ретроспектива · Космические рейнджеры",
       "category" : "Игры",
-      "tags"     : "Квест, Открытый мир, Ролевая игра, Ретроспектива, and На главной",
+      "tags"     : "Ретроспектива, Игры, and Обзоры",
       "url"      : "/blog/retrospektiva-kosmicheskie-reyndzhery/",
       "date"     : "2015-10-07 00:00:00 +0600"
     } ,
   
     {
       "title"    : "The Beginner’s Guide",
-      "category" : "Игры",
-      "tags"     : "История and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/the-beginners-guide/",
       "date"     : "2015-10-03 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Armikrog · 19 лет спустя",
-      "category" : "Игры",
-      "tags"     : "Квест, Платформер, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/armikrog-19-let-spustya/",
       "date"     : "2015-10-01 00:00:00 +0600"
     } ,
   
     {
       "title"    : "SOMA",
-      "category" : "Игры",
-      "tags"     : "Выживание, Хоррор, История, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/soma/",
       "date"     : "2015-09-23 00:00:00 +0600"
     } ,
   
     {
-      "title"    : "The Long Dark",
-      "category" : "Игры",
-      "tags"     : "Выживание, Открытый мир, Крафтинг, and На главной",
+      "title"    : "The Long Dark · Ранний доступ",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/the-long-dark/",
       "date"     : "2015-09-19 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Don’t Starve",
-      "category" : "Игры",
-      "tags"     : "Изометрия, Выживание, Открытый мир, Крафтинг, Приключение, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/dont-starve/",
       "date"     : "2015-09-09 00:00:00 +0600"
     } ,
   
     {
       "title"    : "This War of Mine",
-      "category" : "Игры",
-      "tags"     : "Выживание, Платформер, Крафтинг, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/this-war-of-mine/",
       "date"     : "2015-08-28 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Batman: Arkham Knight",
-      "category" : "Игры",
-      "tags"     : "Открытый мир, Экшен, Гонка, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/batman-arkham-knight/",
       "date"     : "2015-08-27 00:00:00 +0600"
     } ,
   
     {
-      "title"    : "Project Zomboid",
-      "category" : "Игры",
-      "tags"     : "Изометрия, Выживание, Крафтинг, Открытый мир, Зомби, Пиксельная графика, and На главной",
+      "title"    : "Project Zomboid · Ранний доступ",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/project-zomboid/",
       "date"     : "2015-08-23 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Zombi",
-      "category" : "Игры",
-      "tags"     : "Экшен, Выживание, Крафтинг, Открытый мир, Зомби, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/zombi/",
       "date"     : "2015-08-19 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Fallout 4 · Все что известно на данный момент",
-      "category" : "Игры",
-      "tags"     : "Статьи and На главной",
+      "category" : "",
+      "tags"     : "Игры and Статьи",
       "url"      : "/blog/fallout-4-vse-chto-izvestno-na-danny-moment/",
       "date"     : "2015-08-19 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Fallout Shelter",
-      "category" : "Игры",
-      "tags"     : "Выживаиние, Менеджер, Платформер, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/fallout-shelter/",
       "date"     : "2015-08-15 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Sheltered",
-      "category" : "Игры",
-      "tags"     : "Выживание, Крафтинг, Платформер, Открытый мир, Пиксельная графика, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/sheltered/",
       "date"     : "2015-08-13 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Knock-Knock",
-      "category" : "Игры",
-      "tags"     : "Выживаиние, Квест, Платформер, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/knock-knock/",
       "date"     : "2015-08-12 00:00:00 +0600"
     } ,
   
     {
       "title"    : "60 seconds!",
-      "category" : "Игры",
-      "tags"     : "Квест, Выживание, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/60-seconds/",
       "date"     : "2015-08-08 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Ретроспектива · Анабиоз - Сон разума",
-      "category" : "Игры",
-      "tags"     : "Экшен, Выживание, Ретроспектива, and На главной",
+      "category" : "",
+      "tags"     : "Игры, Обзоры, and Ретроспектива",
       "url"      : "/blog/retrospektiva-anabioz-son-razuma/",
       "date"     : "2015-08-05 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Cradle · Разбор концовки и сюжета",
-      "category" : "Игры",
-      "tags"     : "Квест, Статьи, Приключение, Открытый мир, Научная фантастика, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/cradle-razbor-koncovki-i-syuzheta/",
       "date"     : "2015-07-31 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Не все так идеально в Cradle",
-      "category" : "Игры",
-      "tags"     : "Статьи",
+      "category" : "",
+      "tags"     : "Игры and Статьи",
       "url"      : "/blog/ne-vse-tak-idealno-v-cradle/",
       "date"     : "2015-07-28 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Cradle",
-      "category" : "Игры",
-      "tags"     : "Открытый мир, История, Квест, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/cradle/",
       "date"     : "2015-07-27 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Call Of Duty: Advanced Warfare",
-      "category" : "Игры",
-      "tags"     : "Экшен and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/call-of-duty-advanced-warfare/",
       "date"     : "2015-05-10 00:00:00 +0600"
     } ,
   
     {
-      "title"    : "Life Is Strange",
-      "category" : "Игры",
-      "tags"     : "Интерактивный фильм, История, Приключение, and На главной",
+      "title"    : "Life Is Strange · Эпизод первый",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/life-is-strange/",
       "date"     : "2015-05-08 00:00:00 +0600"
     } ,
   
     {
       "title"    : "State Of Decay: YOSE",
-      "category" : "Игры",
-      "tags"     : "Выживание, Открытый мир, Крафтинг, Зомби, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/state-of-deacy-yose/",
       "date"     : "2015-05-04 00:00:00 +0600"
     } ,
   
     {
       "title"    : "Cities Skylines",
-      "category" : "Игры",
-      "tags"     : "Градостроительный симулятор, Менеджер, and На главной",
+      "category" : "",
+      "tags"     : "Игры and Обзоры",
       "url"      : "/blog/cities-skylines/",
       "date"     : "2015-03-11 00:00:00 +0600"
-    } ,
-  
-  
-    {
-      "title"    : "Новосибирск · Площадь Ленина",
-      "url"      : "/photo/novosibirsk-ploshhad-lenina/",
-      "date"     : "2014-03-07 00:00:00 +0700"
-    } ,
-  
-    {
-      "title"    : "Иваньковское водохранилище",
-      "url"      : "/photo/ivankovskoe-vodohranilishhe/",
-      "date"     : "2014-06-01 00:00:00 +0700"
     } 
-    
+  
 ]
