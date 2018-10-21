@@ -1,6 +1,6 @@
-<article class="col-xs-6 preview {% cycle 'odd', 'even' %}">
+<article class="col-xs-12 col-sm-6 preview {% cycle 'odd', 'even' %}">
     <time>{{ post.date | russian_date }}</time>
-    <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | improve }}</a></p>
+    <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
     {% if post.tags.size > 0 %}
     <div class="tags">
         {% assign tags = post.tags | sort %}

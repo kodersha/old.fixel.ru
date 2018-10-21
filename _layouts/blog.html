@@ -3,14 +3,14 @@
 
 <main id="blog" class="wrapper main" role="main">
     <section class="space-in-bottom-mili-xs row">
-        <form class="col-xs-12 search">
+        <form class="space-out-bottom-micro-xs space-out-bottom-zero-md col-xs-12 search">
             <input id="search-input" class="search-box form-control fa" placeholder="&#xf002;" onblur="this.placeholder = ''" onfocus="this.placeholder = ''" type="text" autocomplete="off" autocapitalize="off" required>
             <ul class="dropdown results" id="results-container"></ul>
         </form>
         {% for post in site.posts %}
             {% include list.html %}
         {% endfor %}
-        <div class="space-in-top-mili-xs col-xs-12" style="text-align: center;">[ это конец ]</div>
+        <div class="space-in-top-mili-xs col-xs-12 end">[ это конец ]</div>
     </section>
 </main>
 
