@@ -149,7 +149,10 @@ time {
 .end {
     font-family: @global-font-family;
     font-size: @global-font-size - 0.15;
-    text-align: center;
+
+    @media @md {
+        text-align: center;
+    }
 }
 .message {
     text-align: center;
