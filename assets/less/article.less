@@ -275,148 +275,108 @@ article {
             }
         }
     }
-    &.portfolio {
-        p {
-            max-width: @width-body;
-            margin-bottom: 0.5rem;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 0;
-        }
-        h2 {
-            max-width: @width-body;
-            margin-bottom: @margin-bottom / 2;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: @margin-top * 2;            
-        }
-        figure {
-            margin-bottom: @margin-top;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: @margin-top;
+    &.preview {
+        position: relative;
 
-            img {
-                margin-right: auto;
-                margin-left: auto;
-                max-width: 100%;
-                display: block;
-                height: auto; 
-                width: auto; 
-            }
+        &:first-of-type {
+            .content {
+                padding-top: 15px;
 
-            figcaption {
-                p {
-                    font-family: @global-font-family;
-                    font-size: @global-font-size;
-                    line-height: @global-line-height;
-                    margin-bottom: 0;
-                    margin-top: @margin-top / 2;
-                    color: darken(@color-accent, 20%);
-                }
-            }
-
-            &.picture {
-                max-width: @width-body + 10;
-
-                img {
-                    border-radius: @border-radius;
-                    margin-right: auto;
-                    margin-left: auto;
-                    cursor: zoom-in;
-                    height: auto; 
-                    width: auto; 
-                }
-
-                &.position-left {
-                    max-width: @width-body;
-
-                    img {
-                        margin-left: 0;
+                @media @md {
+                    &::before {
+                        top: 30px;
                     }
                 }
             }
         }
-        .fotorama {
-            max-width: @width-body + 10;
-            margin-bottom: @margin-bottom;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: @margin-top;      
+        &:last-of-type {
+            .content {
+                padding-bottom: 15px;
+            }
         }
-    }
-    &.preview {
-        position: relative;
 
-        time {
-            font-size: @global-font-size - 0.15;
-            margin-top: 10px;
-            display: block;
-        }
-        p {
-            margin-bottom: 8px;
-            margin-top: 4px;
+        .content {
+            position: relative;
+
+            time {
+                font-size: @global-font-size - 0.15;
+                display: block;
+            }
+            p {
+                margin-bottom: 8px;
+                margin-top: 4px;
+            }
+            .tags {
+                margin-bottom: 0;
+            }
+
+            @media @md {
+                &::before {
+                    background-color: #ffffff;
+                    position: absolute;
+                    border-radius: 50%;
+                    border: 2px solid @color-accent;
+                    z-index: 10;
+                    content: '';
+                    height: 2px;
+                    width: 2px;
+                    top: 15px;
+                }
+                &::after {
+                    border-right: 2px solid @color-accent;
+                    position: absolute;
+                    height: 100%;
+                    content: '';
+                    top: 0;
+                }
+            }
         }
 
         @media @md {
-            &::before {
-                background-color: #ffffff;
-                position: absolute;
-                border-radius: 50%;
-                border: 2px solid @color-accent;
-                z-index: 10;
-                content: '';
-                height: 2px;
-                width: 2px;
-                top: 15px;
-            }
-            &::after {
-                border-right: 2px solid @color-accent;
-                position: absolute;
-                height: 100%;
-                content: '';
-                top: 0;
-            }
             &.even {
                 text-align: left;
 
-                &::after {
-                    left: -1px;
-                }
-                &::before {
-                    left: -3px;
+                .content {
+                    &::after {
+                        left: -1px;
+                    }
+                    &::before {
+                        left: -3px;
+                    }
                 }
             }
             &.odd {
                 text-align: right;
 
-                &::after {
-                    right: -1px;
-                }
-                &::before {
-                    right: -3px;
+                .content {
+                    &::after {
+                        right: -1px;
+                    }
+                    &::before {
+                        right: -3px;
+                    }
                 }
             }
         }
-        .tags {
-            margin-bottom: 8px;
-            margin-right: -1px;
-            margin-left: -1px;
+    }
+    .tags {
+        margin-bottom: 8px;
+        margin-right: -1px;
+        margin-left: -1px;
 
-            a {
-                background-color: @color-accent;
-                padding: 5px 8px 4px;
-                margin-bottom: 2px;
-                margin-right: 1px;
-                margin-left: 1px;
-                border-bottom: 0;
-                border-radius: 20px;
-                font-size: @global-font-size - 0.35;
-                color: darken(@color-accent, 60%);
+        a {
+            background-color: @color-accent;
+            padding: 5px 8px 4px;
+            margin-bottom: 2px;
+            margin-right: 1px;
+            margin-left: 1px;
+            border-bottom: 0;
+            border-radius: 20px;
+            font-size: @global-font-size - 0.35;
+            color: darken(@color-accent, 60%);
 
-                &:hover {
-                    background-color: darken(@color-accent, 5%);
-                }
+            &:hover {
+                background-color: darken(@color-accent, 5%);
             }
         }
     }

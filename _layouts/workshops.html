@@ -1,0 +1,16 @@
+{% include header.html %}
+{% include banner.html %}
+
+<main id="blog" class="wrapper main" role="main">
+    <section class="space-in-bottom-kilo-xs workshops">
+        {{ content | extlinks | improve }}
+    </section>            
+    <section class="space-in-bottom-mili-xs">
+        {% for workshop in site.workshops reversed %}
+            {% include workshop.html %}
+        {% endfor %}
+        <div class="space-in-top-mili-xs end">[ это начало ]</div>
+    </section>
+</main>
+
+{% include footer.html %}

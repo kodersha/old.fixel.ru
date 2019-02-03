@@ -15,6 +15,12 @@ github: sashatravkina
 twitter: sasha_travkina
 telegram: sashatravkina
 
+# Collections
+collections:
+  workshops:
+    output: true
+    permalink: /workshop/:title/
+
 # Deafults layout
 defaults:
   - scope:
@@ -22,9 +28,15 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: workshops
+    values:
+      layout: workshop
 
 # Build settings
 markdown: kramdown
+
 plugins:
   - jekyll-include-cache
   - jekyll-auto-image
