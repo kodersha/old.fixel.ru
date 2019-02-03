@@ -364,7 +364,7 @@ article {
         margin-right: -1px;
         margin-left: -1px;
 
-        a {
+        a, span {
             background-color: @color-accent;
             padding: 5px 8px 4px;
             margin-bottom: 2px;
@@ -374,7 +374,9 @@ article {
             border-radius: 20px;
             font-size: @global-font-size - 0.35;
             color: darken(@color-accent, 60%);
+        }
 
+        a {
             &:hover {
                 background-color: darken(@color-accent, 5%);
             }

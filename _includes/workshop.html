@@ -1,12 +1,16 @@
 <article class="preview {% cycle 'odd row row-start-xs', 'even row row-end-xs' %}">
     <section class="col-xs-12 col-sm-6 content">
         <time>{{ workshop.date | russian_date }}</time>
-        <p><a href="{{ workshop.url | prepend: site.baseurl }}">{{ workshop.title }}</a></p>
+        {% if workshop.clickable == false %}
+            <p>{{ workshop.title }}</p>
+        {% else %}
+            <p><a href="{{ workshop.url | prepend: site.baseurl }}">{{ workshop.title }}</a></p>
+        {% endif %}
         {% if workshop.tags.size > 0 %}
         <div class="tags">
             {% assign tags = workshop.tags | sort %}
             {% for tag in tags %}
-                <a class="tags" href="{{ site.baseurl }}/workshop/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}</a>
+                <span class="tags">{{ tag | improve }}</span>
             {% endfor %}
         </div>
         {% endif %}

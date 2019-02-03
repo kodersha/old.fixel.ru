@@ -4,4 +4,5 @@ tags:
 - Дизайн
 - Заказ
 - Kirby
+clickable: false
 ---
