@@ -20,6 +20,9 @@ collections:
   workshops:
     output: true
     permalink: /workshop/:title/
+  streams:
+    output: true
+    permalink: /stream/:title/
 
 # Deafults layout
 defaults:
@@ -33,6 +36,11 @@ defaults:
       type: workshops
     values:
       layout: workshop
+  - scope:
+      path: ""
+      type: streams
+    values:
+      layout: stream
 
 # Build settings
 markdown: kramdown

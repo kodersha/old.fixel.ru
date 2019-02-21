@@ -7,12 +7,12 @@
                 <img src="{{ site.baseurl }}/assets/images/avatar_192x192.png" width="192" height="192" alt="{{ site.title }}">
             </a>
         </div>
-        {{ content }}
+        {{ content | extlinks }}
         <nav class="space-out-top-base-xs">
             <ul>
                 <li><a href="{{ site.baseurl }}/blog/">Блог</a></li> &middot;
                 <li><a href="{{ site.baseurl }}/workshop/">Мастерская</a></li> &middot;
-                <li><a target="_blank" href="https://www.youtube.com/user/TravkinaPlay">Стримы</a></li> &middot;
+                <li><a href="{{ site.baseurl }}/stream/">Стримы</a></li> &middot;
                 <li><a target="_blank" href="https://www.donationalerts.com/r/sherrycubby">Поддержать</a></li>
             </ul>
         </nav>
