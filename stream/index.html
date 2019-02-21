@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Главная</title>
+		<title>Стримы</title>
 
 		<!--[ Meta ]-->
 			<meta charset="utf-8" />
@@ -17,13 +17,13 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="Fixel">
 	<meta name="twitter:creator" content="@sasha_travkina">
-	<meta name="twitter:title" content="Главная &middot; Fixel">
+	<meta name="twitter:title" content="Стримы &middot; Fixel">
 	<meta name="twitter:description" content="Блог о веб-дизайне, компьютерах и компьютерных играх">
 	<meta name="twitter:image" content="">
 
-	<meta property="og:title" content="Главная &middot; Fixel" />
+	<meta property="og:title" content="Стримы &middot; Fixel" />
 	<meta property="og:site_name" content="Fixel">	
-	<meta property="og:url" content="https://fixel.ru/">
+	<meta property="og:url" content="https://fixel.ru/stream/">
 	<meta property="og:description" content="Блог о веб-дизайне, компьютерах и компьютерных играх"/>
 	<meta property="og:image" content="" />
 	<meta property="og:image:height" content="360">
@@ -49,7 +49,7 @@
 	<meta name="google-site-verification" content="Jsg0E4pNBManXIvFa392tyJVX2TK-cLaDt2zBf4xvm0" />
 
 	<!--[ Feed ]-->
-	<link rel="canonical" href="https://fixel.ru/">
+	<link rel="canonical" href="https://fixel.ru/stream/">
 	<link rel="alternate" type="application/rss+xml" title="Fixel" href="https://fixel.ru/feed.xml" />
 		
 		<!--[ CSS ]-->
@@ -69,11 +69,11 @@
 	{
 		"@context": "http://schema.org", 
 		"@type": "Blog",
-		"keywords": "Александра Травкина, Alexandra Travkina, web-developer, web-designer, blogengine, jekyll, blog, cms, блог", 
-		"url": "https://fixel.ru/",
+		"keywords": "", 
+		"url": "https://fixel.ru/stream/",
 		"mainEntityOfPage": {
 			"@type": "WebPage",
-			"@id": "https://fixel.ru/"
+			"@id": "https://fixel.ru/stream/"
 		},
 		"author": {
 			"@type": "Person",
@@ -92,35 +92,21 @@
 		
 	</head>
 
-	<body class="themplate-index space-out-h-zero-xs space-out-v-zero-xs space-in-h-mili-xs space-in-h-zero-lg m-scrollable-filter">
+	<body class="themplate-streams space-out-h-zero-xs space-out-v-zero-xs space-in-h-mili-xs space-in-h-zero-lg m-scrollable-filter">
+<header class="space-in-v-mili-xs header" role="banner">
+    <div class="space-auto-h-xs logo">
+        <a href="/">
+            <img srcset="/assets/images/avatar_96x96.png 2x, /assets/images/avatar_192x192.png 4x" src="/assets/images/avatar_64x64.png" width="64" height="64" alt="Блог Александры Травкиной">
+        </a>
+    </div>
+</header>
 
-<main class="space-auto-h-xs wrapper home" role="main">
-    <section class="welcome">
-        <div class="space-out-bottom-mili-xs avatar motion" id="motion" style="--dy:0; --dx:0;">
-            <a href="/blog/">
-                <img src="/assets/images/avatar_192x192.png" width="192" height="192" alt="Блог Александры Травкиной">
-            </a>
-        </div>
-        <p><strong>Ohayo!</strong> Меня зовут Александра Травкина.</p>
+<main class="main" role="main">
+    <section class="wrapper">
+        <iframe src="https://player.twitch.tv/?channel=sherrycubby" frameborder="0" allowfullscreen="true" scrolling="no" height="475" width="845"></iframe>
 
-<p>Я веб-дизайнер, верстаю шаблоны и делаю сайты на заказ.</p>
+<p>Смотреть: <a target="_blank" href="https://www.twitch.tv/sherrycubby">twitch</a> · <a target="_blank" href="https://www.youtube.com/user/TravkinaPlay/">youtube</a></p>
 
-<p>Люблю компьютерные игры. Иногда пишу о них в <a href="/blog/">блог</a>.</p>
-
-<p>Но чаще стримлю прохождения на <a href="https://www.twitch.tv/sherrycubby" rel="nofollow" target="_blank">twitch</a>.</p>
-
-<p><br></p>
-
-<p>Для связи <a href="mailto:hello@fixel.ru">электропочта</a> или <a href="http://t.me/sashatravkina" rel="nofollow" target="_blank">телеграм</a>.</p>
-
-        <nav class="space-out-top-base-xs">
-            <ul>
-                <li><a href="/blog/">Блог</a></li> &middot;
-                <li><a href="/workshop/">Мастерская</a></li> &middot;
-                <li><a href="/stream/">Стримы</a></li> &middot;
-                <li><a target="_blank" href="https://www.donationalerts.com/r/sherrycubby">Поддержать</a></li>
-            </ul>
-        </nav>
     </section>
 </main>
 
