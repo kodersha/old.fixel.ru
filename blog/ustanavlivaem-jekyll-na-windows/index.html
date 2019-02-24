@@ -73,7 +73,7 @@
 		"headline":"Устанавливаем Jekyll на Windows",
 		"genre":"",
 		"keywords":"Веб, Гайды, Jekyll",
-		"wordCount":"486",
+		"wordCount":"535",
 		"url":"https://fixel.ru/blog/ustanavlivaem-jekyll-na-windows/",
 		"datePublished":"2017-09-04",
 		"dateModified":"2017-09-04",
@@ -106,7 +106,7 @@
 			"@type":"WebPage",
 			"@id":"https://fixel.ru/"
 		},
-		"articleBody":"По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте Параметры - Система - О системе. Если все в порядке, запустите PowerShell от администратора и введите:Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-LinuxКомпьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте Параметры - Обновление и безопасность - Для разработчиков и включите «Режим разработчика».Устанавливаем среду Ubuntu из Windows маркета, затем запускаем. Дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.Приступим к установке Jekyll. Но для начала обновим пакеты:sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -yТеперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий BrightBox оптимизированный для Ubuntu. Вводим команды:sudo apt-add-repository ppa:brightbox/ruby-ngsudo apt-get updatesudo apt-get install ruby2.5 ruby2.5-dev build-essentialОбновляем RubyGems.sudo gem updateТеперь осталось установить сам Jekyll.sudo gem install jekyll bundlerПроверить правильность установки можно командой:jekyll -vJekyll установлен. Теперь создайте свой блог.jekyll new my_blogПо умолчанию файлы блога  будут находиться по адресу C:/Пользователи/Имя_пользователя/my_blog, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:cd my_blogТеперь можно запустить Jekyll.bundle exec jekyll serveБлог станет доступен по локальному адресу localhost:4000.Для одного из плагинов jekyll мне понадобился gem nokogiri, но при установке на Windows Ubuntu он выдавал ошибку. Решение:apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clangЗатем сам nokogiri:sudo gem install nokogiri -- --use-system-librariesИспользованы материалы: Инструкция с сайта Microsoft и Официальная документация Jekyll."
+		"articleBody":"По мере настройки и доведения блога до ума я столкнулась с необходимостью установки тех или иных плагинов на Jekyll, а значит ограничиваться GitHub Pages стало нельзя. А потому, я решила собирать сайт локально и отправлять на GitHub Pages уже готовое. Минусы - Сайт привязан к компьютеру, если Windows слетит настраивать придется заново. Плюсы - Можно использовать любые плагины, редактировать сайт локально прежде чем выпустить в свет. В целом, за сохранность блога можно не беспокоится, исходные файлы хранится в master ветке репозитория, а собранный сайт в ветке gh-pages, до кучи мой сайт хранятся еще и в Dropbox, таким образом его можно синхронизировать между компьютерами, но на каждый из них придется ставить Ruby и прочие дистрибутивы.  В общем, для себя и для вас написала этот гайд по установке Jekyll на Windows.Для установки Jekyll на Windows у вас должна быть 64-разрядная Windows 10 старше версии 1607 Anniversary Update. Чтобы узнать версию своей операционной системы откройте Параметры - Система - О системе. Если все в порядке, запустите PowerShell от администратора и введите:Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-LinuxКомпьютер перезагрузится. Далее, чтобы установить среду Ubuntu в Windows понадобится включить режим разработчика, откройте Параметры - Обновление и безопасность - Для разработчиков и включите «Режим разработчика».Устанавливаем среду Ubuntu из Windows маркета, затем запускаем. Дождитесь окончания установки. После её завершения будет предложено ввести имя пользователя и пароль которые могут пригодиться в будущем.Приступим к установке Jekyll. Но для начала обновим пакеты:sudo apt-get update -y &amp;amp;&amp;amp; sudo apt-get upgrade -yТеперь можно установить Ruby на котором работает Jekyll. Для этого используем репозиторий BrightBox оптимизированный для Ubuntu. Вводим команды:sudo apt-add-repository ppa:brightbox/ruby-ngsudo apt-get updatesudo apt-get install ruby2.6 ruby2.6-dev build-essentialОбновляем RubyGems.sudo gem updateТеперь осталось установить сам Jekyll.sudo gem install jekyll bundlerПроверить правильность установки можно командой:jekyll -vJekyll установлен. Теперь создайте свой блог.jekyll new my_blogПо умолчанию файлы блога  будут находиться по адресу C:/Пользователи/Имя_пользователя/my_blog, но его можно размещать и в любой другой папке, на любом диске. Чтобы ничего не потерялось и можно было синхронизироваться между компьютерами я размещаю и использую блог прямо из папки Dropbox’a. Далее переходим в папку с блогом:cd my_blogТеперь можно запустить Jekyll.bundle exec jekyll serveБлог станет доступен по локальному адресу localhost:4000.Для одного из плагинов jekyll мне понадобился gem nokogiri, но при установке на Windows Ubuntu он выдавал ошибку. Решение:sudo apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clangЗатем сам nokogiri:sudo gem install nokogiri -- --use-system-librariesОт проблемы Temporary failure resolving поможет правка файла:sudo nano /etc/resolv.conf Добавить в файл:nameserver 8.8.8.8nameserver 8.8.4.4И обновить.sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgradeИспользованы материалы: Инструкция с сайта Microsoft и Официальная документация Jekyll."
 	}
 
 
@@ -147,7 +147,7 @@
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-add-repository ppa:brightbox/ruby-ng
 <span class="nb">sudo </span>apt-get update
-<span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby2.5 ruby2.5-dev build-essential</code></pre></figure>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby2.6 ruby2.6-dev build-essential</code></pre></figure>
 
 <p>Обновляем&nbsp;RubyGems.</p>
 
@@ -179,11 +179,28 @@
 
 <p>Для одного из плагинов jekyll мне понадобился gem <code class="highlighter-rouge">nokogiri</code>, но при установке на Windows Ubuntu он выдавал ошибку.&nbsp;Решение:</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell">apt <span class="nb">install </span>ruby-dev libxml2-dev libxslt-dev pkg-config make clang</code></pre></figure>
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt <span class="nb">install </span>ruby-dev libxml2-dev libxslt-dev pkg-config make clang</code></pre></figure>
 
 <p>Затем сам&nbsp;nokogiri:</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>gem <span class="nb">install </span>nokogiri <span class="nt">--</span> <span class="nt">--use-system-libraries</span></code></pre></figure>
+
+<hr class="easy">
+
+<p>От проблемы <code class="highlighter-rouge">Temporary failure resolving</code> поможет правка&nbsp;файла:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>nano /etc/resolv.conf </code></pre></figure>
+
+<p>Добавить в&nbsp;файл:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">nameserver 8.8.8.8
+nameserver 8.8.4.4</code></pre></figure>
+
+<p>И&nbsp;обновить.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt-get upgrade</code></pre></figure>
+
+<hr>
 
 <p class="subtext">Использованы материалы: <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide#for-anniversary-update-and-creators-update-install-using-lxrun" rel="nofollow" target="_blank">Инструкция с сайта Microsoft</a> и <a href="https://jekyllrb.com/docs/windows/" rel="nofollow" target="_blank">Официальная документация</a>&nbsp;Jekyll.</p>
 
