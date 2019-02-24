@@ -31,7 +31,7 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 {% highlight shell %}
 sudo apt-add-repository ppa:brightbox/ruby-ng
 sudo apt-get update
-sudo apt-get install ruby2.5 ruby2.5-dev build-essential
+sudo apt-get install ruby2.6 ruby2.6-dev build-essential
 {% endhighlight %}
 
 Обновляем RubyGems.
@@ -78,7 +78,7 @@ bundle exec jekyll serve
 Для одного из плагинов jekyll мне понадобился gem `nokogiri`, но при установке на Windows Ubuntu он выдавал ошибку. Решение:
 
 {% highlight shell %}
-apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clang
+sudo apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clang
 {% endhighlight %}
 
 Затем сам nokogiri:
@@ -86,6 +86,30 @@ apt install ruby-dev libxml2-dev libxslt-dev pkg-config make clang
 {% highlight shell %}
 sudo gem install nokogiri -- --use-system-libraries
 {% endhighlight %}
+
+---
+{: .easy}
+
+От проблемы `Temporary failure resolving` поможет правка файла:
+
+{% highlight shell %}
+sudo nano /etc/resolv.conf 
+{% endhighlight %}
+
+Добавить в файл:
+
+{% highlight shell %}
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+{% endhighlight %}
+
+И обновить.
+
+{% highlight shell %}
+sudo apt-get update && sudo apt-get upgrade
+{% endhighlight %}
+
+---
 
 Использованы материалы: [Инструкция с сайта Microsoft][3] и [Официальная документация][4] Jekyll.
 {: .subtext}

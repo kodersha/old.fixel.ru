@@ -19,7 +19,7 @@ tags:
 
 Люблю компьютерные игры. Иногда пишу о них в [блог](/blog/).
 
-Но чаще стримлю прохождения на [twitch](https://www.twitch.tv/sherrycubby).
+Но чаще стримлю прохождения на [youtube](https://www.youtube.com/sherrycubby).
 
 <br>
 

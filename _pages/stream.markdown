@@ -3,6 +3,10 @@ layout: streams
 title: Стримы
 ---
 
-<iframe src="https://player.twitch.tv/?channel=sherrycubby" frameborder="0" allowfullscreen="true" scrolling="no" height="475" width="845"></iframe>
+<figure class="video">
+    <div class="youtube">
+        <iframe frameborder="0" src="https://www.youtube.com/embed/live_stream?channel=UCo8rf9C6JMUqZFXvibb0WGA&amp;autoplay=1&autohide=1"></iframe>
+    </div>
+</figure>
 
-Смотреть: <a target="_blank" href="https://www.twitch.tv/sherrycubby">twitch</a> &middot; <a target="_blank" href="https://www.youtube.com/user/TravkinaPlay/">youtube</a>
+Смотреть:  <a target="_blank" href="https://www.youtube.com/sherrycubby">youtube</a> &middot; <a target="_blank" href="https://www.twitch.tv/sherrycubby">twitch</a>
