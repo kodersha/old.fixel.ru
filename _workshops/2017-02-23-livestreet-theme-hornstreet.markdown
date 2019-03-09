@@ -1,5 +1,6 @@
 ---
 title: HornStreet · Шаблон для LiveStreet
+link: https://catalog.livestreetcms.com/addon/view/551/
 tags:
 - Шаблон
 - LiveStreet

@@ -1,18 +1,27 @@
 <article class="preview {% cycle 'odd row row-start-xs', 'even row row-end-xs' %}">
-    <section class="col-xs-12 col-sm-6 content">
+    <section class="space-in-top-micro-xs space-in-top-zero-md col-xs-12 col-sm-6 content">
         <time>{{ workshop.date | russian_date }}</time>
         {% if workshop.clickable == false %}
             <p>{{ workshop.title }}</p>
         {% else %}
             <p><a href="{{ workshop.url | prepend: site.baseurl }}">{{ workshop.title }}</a></p>
         {% endif %}
-        {% if workshop.tags.size > 0 %}
-        <div class="tags">
-            {% assign tags = workshop.tags | sort %}
-            {% for tag in tags %}
-                <span class="tags">{{ tag | improve }}</span>
-            {% endfor %}
+        <div class="row row-middle-xs">
+            {% if workshop.tags.size > 0 %}
+            <div class="{% cycle 'space-auto-left-md', 'space-auto-right-md' %} col-xs-shrink">
+                <div class="tags">
+                    {% assign tags = workshop.tags | sort %}
+                    {% for tag in tags %}
+                        <span class="tags">{{ tag | improve }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+            {% if workshop.link %}
+            <div class="{% cycle 'col-last-sm', 'col-first-sm' %} col-xs-shrink">
+                <a class="workshop-site" target="_blank" href="{{ workshop.link }}"><i class="fas fa-link"></i></a>
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </section>
 </article>

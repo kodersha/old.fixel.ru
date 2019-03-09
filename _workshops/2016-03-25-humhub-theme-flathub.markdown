@@ -1,5 +1,6 @@
 ---
 title: FlatHub · Шаблон для HumHub
+link: https://github.com/sashatravkina/humhub-themes-flathub
 tags:
 - Шаблон
 - HumHub

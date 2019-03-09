@@ -1,5 +1,6 @@
 ---
-title: Leaks · Шаблон для Эгеи
+title: Leaks · Шаблон для Эгеи 2.6
+link: https://github.com/sashatravkina/blogengine-themes-leaks
 tags:
 - Шаблон
 - Эгея

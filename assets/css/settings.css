@@ -1,0 +1,11 @@
+:root {
+    /* Fonts */
+    --mainFontFamily: LatoWeb, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --mainFontSize: 1rem;
+    --mainLineHeight: 1.4;
+
+    /* Some shit */
+    --dy: 1;
+	--dx: 1;
+	--dz: 0;
+}

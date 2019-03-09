@@ -1,5 +1,6 @@
 ---
 title: FlatStreet · Шаблон для LiveStreet
+link: https://catalog.livestreetcms.com/addon/view/544/
 tags:
 - Шаблон
 - LiveStreet

@@ -103,7 +103,7 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 {% endhighlight %}
 
-И обновить.
+И обновить
 
 {% highlight shell %}
 sudo apt-get update && sudo apt-get upgrade
