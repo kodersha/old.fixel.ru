@@ -183,15 +183,38 @@ article {
             }
         }
         blockquote {
-            max-width: @width-body + 10;
-            margin-bottom: @margin-bottom;
+            max-width: @width-body;
+            margin-bottom: var(--noteMediaMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;
+            margin-top: var(--noteMediaMarginTop);
+            position: relative;
 
             p {
+                line-height: normal;
+                text-align: center;
                 font-style: italic;
-                max-width: 100%;
+                max-width: 85%;
+                margin-bottom: 0;
+                margin-top: 0;
+
+                &::before, &::after {
+                    font-family: var(--mainFontFamily);
+                    position: absolute;
+                    font-size: 5em;
+                    line-height: 0;
+                    color: var(--actionColor);
+                }
+                &::before {
+                    content: '\201C';
+                    left: 0;
+                    top: var(--noteMediaMarginTop);
+                }
+                &::after {
+                    content: '\201D';
+                    bottom: ~'calc(var(--noteMediaMarginBottom) * -1)';
+                    right: 0;                    
+                }
             }
         }
         code, kbd, pre, samp {
