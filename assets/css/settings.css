@@ -4,6 +4,20 @@
     --mainFontSize: 1rem;
     --mainLineHeight: 1.4;
 
+    /* Note */
+    --noteMarginTop: 20px;
+    --noteMarginBottom: 20px;
+    --noteMediaMarginTop: 40px;
+    --noteMediaMarginBottom: 40px;
+
+    /* Colors */
+    --mainColor: #000000;
+    --markColor: #ffefaa;
+    --actionColor: #e3e6ea;
+
+    /* Link */
+    --linkColor: ;
+
     /* Some shit */
     --dy: 1;
 	--dx: 1;
