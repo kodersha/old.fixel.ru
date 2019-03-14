@@ -6,7 +6,7 @@
         <div class="tags">
             {% assign tags = post.tags | sort %}
             {% for tag in tags %}
-                <a class="tags" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}</a>
+                <a class="tag" href="{{ site.baseurl }}/blog/tags/{{ tag | replace:' ', '-' | downcase }}/">{{ tag | improve }}</a>
             {% endfor %}
         </div>
         {% endif %}

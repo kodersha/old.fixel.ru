@@ -5,9 +5,9 @@
     <article class="article">
         <time>{{ page.date | russian_date }}</time>
         <h1>{{ page.title }}</h1>
-        {{ content | extlinks | improve }}
+        {{ content | extlinks | improve | hyphenate }}
     </article>
-    <nav class="row row-between-xs row-middle-xs space-auto-h-xs space-in-v-kilo-xs wrapper bloglinks">
+    <nav class="row row-between-xs row-middle-xs space-in-v-kilo-xs wrapper bloglinks">
         <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs previous">
             {% if page.previous.url %}
                 <a href="{{ page.previous.url }}">&lsaquo; {{ page.previous.title }}</a><br>

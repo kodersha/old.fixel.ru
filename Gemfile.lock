@@ -5,7 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     backports (3.12.0)
     colorator (1.1.0)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -43,8 +43,6 @@ GEM
       nokogiri (~> 1.6)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
-    jekyll-include-cache (0.1.0)
-      jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -62,7 +60,7 @@ GEM
       trollop (= 2.1.2)
     kramdown (1.17.0)
     libv8 (3.16.14.19)
-    liquid (4.0.1)
+    liquid (4.0.3)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -108,6 +106,7 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
+    text-hyphen (1.4.1)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
@@ -122,19 +121,21 @@ PLATFORMS
 
 DEPENDENCIES
   github-markup
-  jekyll (~> 3.8.4)
+  i18n
+  jekyll
   jekyll-admin
   jekyll-archives
   jekyll-auto-image
   jekyll-extlinks
   jekyll-feed
-  jekyll-include-cache
   jekyll-paginate
   jekyll-sitemap
   jekyll-typogrify
   jgd
   kramdown
-  minima (~> 2.0)
+  minima
+  nokogiri
+  text-hyphen
   therubyracer
   tzinfo-data
 

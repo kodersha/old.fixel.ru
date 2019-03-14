@@ -1,3 +1,9 @@
+/* Переносы */
+
+$(function(){
+  $('.article > p').hyphenate();
+});
+
 /* Поиск */
 
 SimpleJekyllSearch({

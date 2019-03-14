@@ -1,42 +1,48 @@
 article {
     &.article {
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+
         & > :last-child {
             margin-bottom: 0;
         }
         h1, h2, h2, h3, h4, h5, h6 {
-            max-width: @width-body;
+            max-width: var(--widthBody);
             margin-right: auto;
             margin-left: auto;
         }
         h1 {
             &:first-of-type {
-                font-size: @title-font-size - 1;
+                font-size: ~'calc(var(--noteTitleFontSize) / 1.5)';
                 text-align: center;
                 margin-top: 0;
 
                 @media @lg {
-                    font-size: @title-font-size;
+                    font-size: var(--noteTitleFontSize);
                 }
             }
         }
         h2 {
-            margin-bottom: @margin-bottom;
+            margin-bottom: var(--noteMarginBottom);
             margin-top: 100px;
             font-size: 2em;
+            color: var(--mainColor);
         }
         time {
-            color: @color-accent;
-            margin-bottom: @margin-bottom;
+            color: var(--actionColor);
+            margin-bottom: var(--noteMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;
+            margin-top: var(--noteMarginTop);
             display: table;
         }
         figure {
-            margin-bottom: @margin-top;
+            margin-bottom: var(--noteMediaMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;
+            margin-top: var(--noteMediaMarginTop);
 
             img {
                 margin-right: auto;
@@ -49,20 +55,21 @@ article {
 
             figcaption {
                 p {
-                    font-family: @global-font-family;
-                    font-size: @global-font-size;
-                    line-height: @global-line-height;
+                    font-family: var(--mainFontFamily);
+                    font-size: var(--smallFontSize);
+                    line-height: var(--smallLineHeight);
+                    margin-top: ~'calc(var(--noteMarginTop) / 2)';
                     margin-bottom: 0;
-                    margin-top: @margin-top / 2;
-                    color: darken(@color-accent, 20%);
+
+                    color: var(--tagColor);
                 }
             }
 
             &.picture {
-                max-width: @width-body + 10;
+                max-width: var(--widthBody);
 
                 img {
-                    border-radius: @border-radius;
+                    border-radius: var(--borderRadius);
                     margin-right: auto;
                     margin-left: auto;
                     cursor: zoom-in;
@@ -71,53 +78,107 @@ article {
                 }
 
                 &.position-left {
-                    max-width: @width-body;
+                    max-width: var(--widthBody);
 
                     img {
                         margin-left: 0;
                     }
                 }
             }
+            &.video {
+                max-width: var(--widthBody);
+                border-radius: var(--borderRadius);
+                position: relative;
+                overflow: hidden;
+            }
         }
         hr {
-            max-width: @width-body;
-            margin-bottom: @margin-bottom;
+            max-width: var(--widthBody);
+            margin-bottom: var(--noteMediaMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;
+            margin-top: var(--noteMediaMarginTop);
+
+            position: relative;
+            overflow: visible;
+            color: var(--actionColor);
+            height: 2px;
             
-            border-bottom: 1px solid @color-accent;
+            border-bottom: 0;
             border-right: 0;
             border-left: 0;
             border-top: 0;
-        }
-        p {
-            font-family: @post-font-family;
-            font-size: @post-font-size - 0.2;
-            line-height: @post-line-height - 1;
 
-            @media @lg {
-                font-size: @post-font-size;
-                line-height: @post-line-height;
+            &::before {
+                background: linear-gradient(to right, transparent, currentColor, transparent);
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                content: '';
+                left: 0;
             }
 
-            max-width: @width-body;
-            margin-bottom: @margin-bottom;
+            [data-content] {
+                text-align: center;
+
+                &::after {
+                    content: attr(data-content);
+                    position: relative;
+                    background: var(--actionColor);
+                    padding: 0 1.5rem;
+                    top: -0.475em;
+                    font-size: 3em;
+                    line-height: 1;
+                    font-family: serif;
+                    font-style: italic;
+                    color: currentColor;
+                }
+            }
+        }
+        & > p:nth-of-type(1) {
+            &:first-letter {
+                float: left;
+                font-size: 2.9rem;
+                line-height: normal;
+                margin-right: 10px;
+                margin-top: 5px;
+                font-family: var(--noteTitleFontFamily);
+            }
+        }
+        p {
+            font-family: var(--noteFontFamily);
+            font-size: 1.2rem;
+            line-height: 1.5;
+            text-align: justify;
+            color: var(--mainColor);
+
+            @media @lg {
+                font-size: var(--noteFontSize);
+                line-height: var(--noteLineHeight);
+            }
+
+            max-width: var(--widthBody);
+            margin-bottom: var(--noteMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;
+            margin-top: var(--noteMarginTop);
 
             code {
-                border-radius: @border-radius;
+                border-radius: var(--borderRadius);
                 background-color: rgba(0,0,0,.05);
-                font-family: @post-font-family;
-                border-radius: 0.125em;
+                font-size: 1em;
+                font-family: var(--noteFontFamily);
+                line-height: ~'calc(var(--noteLineHeight) / 1.5)';
+                border-radius: var(--borderRadius);
                 word-wrap: break-word;
-                white-space: nowrap;
+            }
+
+            em {
+                font-family: var(--quoteFontFamily);
             }
 
             mark {
-                border-radius: @border-radius;
+                border-radius: var(--borderRadius);
                 background-color: rgba(0,0,0,.05);
             }
 
@@ -127,79 +188,70 @@ article {
             }
         }
         ul, ol {
-            max-width: @width-body;
-            margin-bottom: @margin-bottom;
+            max-width: var(--widthBody);
+            margin-bottom: var(--noteMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;
+            margin-top: var(--noteMarginTop);
 
             li {
-                font-family: @post-font-family;
-                font-size: @post-font-size;
-                line-height: @post-line-height;
+                font-family: var(--noteFontFamily);
+                font-size: var(--noteFontSize);
+                line-height: var(--noteLineHeight);
 
                 code {
-                    border-radius: @border-radius;
+                    border-radius: var(--borderRadius);
                     background-color: rgba(0,0,0,.05);
-                    font-family: @post-font-family;
-                    border-radius: 0.125em;
+                    font-family: var(--noteFontFamily);
+                    border-radius: var(--borderRadius);
+                    font-size: 1em;
                     word-wrap: break-word;
                     white-space: nowrap;
                 }
             }
 
             ul {
-                margin-top: @margin-top / 2;
+                margin-top: ~'calc(var(--noteMarginTop) / 2)';
 
                 li {
-                    font-family: @post-font-family;
+                    font-family: var(--noteFontFamily);
                     font-size: 1em;
-                    line-height: @post-line-height;
+                    line-height: var(--noteLineHeight);
                 }
             }
         }
         pre {
-            border-radius: @border-radius;
-            background-color: rgba(0,0,0,.05);
-            max-width: @width-body + 10;
-            margin-bottom: @margin-bottom;
+            max-width: var(--widthBody);
+            margin-bottom: var(--noteMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top; 
+            margin-top: var(--noteMarginTop); 
             overflow-y: auto;
-            
-            code {
-                max-width: @width-body;
-                margin-bottom: @margin-top;
-                margin-right: auto;
-                margin-left: auto;
-                margin-top: @margin-top;
-                display: block;
-                
-                @media @mlg {
-                    padding-left: @margin-top;
-                    padding-right: @margin-top;
-                }
-            }
         }
         blockquote {
-            max-width: @width-body;
-            margin-bottom: var(--noteMediaMarginBottom);
+            max-width: var(--widthBody);
+            margin-bottom: ~'calc(var(--noteMediaMarginBottom) * 2)';
             margin-right: auto;
             margin-left: auto;
-            margin-top: var(--noteMediaMarginTop);
+            margin-top: ~'calc(var(--noteMediaMarginTop) * 2)';
             position: relative;
 
             p {
-                line-height: normal;
+                font-family: var(--quoteFontFamily);
+                font-size: 1.2rem;
+                line-height: 1.5;
                 text-align: center;
                 font-style: italic;
-                max-width: 85%;
                 margin-bottom: 0;
                 margin-top: 0;
+                max-width: 85%;
+
+                @media @lg {
+                    font-size: ~'calc(var(--noteFontSize) * 1.2)';
+                }
 
                 &::before, &::after {
-                    font-family: var(--mainFontFamily);
+                    font-family: var(--noteTitleFontFamily);
                     position: absolute;
                     font-size: 5em;
                     line-height: 0;
@@ -218,7 +270,7 @@ article {
             }
         }
         code, kbd, pre, samp {
-            font-family: @code-font-family;
+            font-family: var(--noteCodeFontFamily);
         }
         .block {
             p {
@@ -226,21 +278,15 @@ article {
                 margin-top: 0;
 
                 &:first-of-type {
-                    margin-top: @margin-top;
+                    margin-top: var(--noteMarginTop);
                 }
 
                 &:last-of-type {
-                    margin-bottom: @margin-bottom;
+                    margin-bottom: var(--noteMarginBottom);
                 }
             }
         }
         .youtube {
-            background-color: #000;
-            margin-bottom: @margin-bottom;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: @margin-top;
-
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
@@ -282,19 +328,19 @@ article {
             }
         }
         .fotorama {
-            max-width: @width-body + 10;
-            margin-bottom: @margin-bottom;
+            max-width: var(--widthBody);
+            margin-bottom: var(--noteMediaMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: @margin-top;      
+            margin-top: var(--noteMediaMarginTop);      
         }
         .wrapper {
-            margin-bottom: @margin-bottom;
-            margin-top: @margin-top;
+            margin-bottom: var(--noteMediaMarginBottom);
+            margin-top: var(--noteMediaMarginTop);
 
             &-frame {
-                margin-bottom: @margin-bottom;
-                margin-top: @margin-top;
+                margin-bottom: var(--noteMediaMarginBottom);
+                margin-top: var(--noteMediaMarginTop);
             }
         }
     }
@@ -322,15 +368,23 @@ article {
             position: relative;
 
             time {
-                font-size: @global-font-size - 0.15;
+                font-size: var(--smallFontSize);
+                line-height: var(--smallLineHeight);
                 display: block;
             }
             p {
+                font-size: var(--mainFontSize);
+                line-height: var(--mainLineHeight);
                 margin-bottom: 8px;
-                margin-top: 4px;
+                margin-top: 8px;
             }
             .tags {
                 margin-bottom: 0;
+
+                .tag {
+                    font-size: var(--tagFontSize);
+                    line-height: var(--tagLineHeight);
+                }
             }
 
             @media @md {
@@ -338,7 +392,7 @@ article {
                     background-color: #ffffff;
                     position: absolute;
                     border-radius: 50%;
-                    border: 2px solid @color-accent;
+                    border: 2px solid var(--actionColor);
                     z-index: 10;
                     content: '';
                     height: 2px;
@@ -346,7 +400,7 @@ article {
                     top: 15px;
                 }
                 &::after {
-                    border-right: 2px solid @color-accent;
+                    border-right: 2px solid var(--actionColor);
                     position: absolute;
                     height: 100%;
                     content: '';
@@ -388,20 +442,21 @@ article {
         margin-left: -1px;
 
         a, span {
-            background-color: @color-accent;
+            background-color: var(--actionColor);
             padding: 5px 8px 4px;
             margin-bottom: 2px;
             margin-right: 1px;
             margin-left: 1px;
             border-bottom: 0;
             border-radius: 20px;
-            font-size: @global-font-size - 0.35;
-            color: darken(@color-accent, 60%);
+            font-size: var(--tagFontSize);
+            line-height: var(--tagLineHeight);
+            color: var(--tagColor);
         }
 
         a {
             &:hover {
-                background-color: darken(@color-accent, 5%);
+                background-color: var(--tagBackgroundHoverColor);
             }
         }
     }

@@ -46,7 +46,6 @@ defaults:
 markdown: kramdown
 
 plugins:
-  - jekyll-include-cache
   - jekyll-auto-image
   - jekyll-typogrify
   - jekyll-paginate
@@ -78,7 +77,6 @@ pagination:
 jekyll-archives:
   enabled:
     - tags
-    - categories
   layout: archive
   permalinks:
     year: "/blog/:year/"

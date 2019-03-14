@@ -99,7 +99,13 @@ tags:
 sudo nano /System/Library/Extensions/AppleIntelKBLGraphics.kext/Contents/Info.plist
 {% endhighlight %}
 
-В открывшемся файле, в терминале, найти `<key>IOPCIPrimaryMatch</key>`, внизу файла. В конце следующей строки - `<string>`, найти `0x3E928086` и перед ним добавить `0x3E918086`.
+В открывшемся файле, в терминале, найти внизу файла:
+
+{% highlight shell %}
+<key>IOPCIPrimaryMatch</key>
+{% endhighlight %}
+
+В конце следующей строки - `<string>`, найти `0x3E928086` и перед ним добавить `0x3E918086`.
 
 {% image src:007.jpg %}
 
