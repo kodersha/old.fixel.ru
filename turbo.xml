@@ -455,7 +455,11 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /System/Library/Extensions/AppleIntelKBLGraphics.kext/Contents/Info.plist&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;В открывшемся файле, в терминале, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, внизу файла. В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;В открывшемся файле, в терминале, найти внизу файла:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;img src=&quot;/media/007.jpg&quot; data-action=&quot;zoom&quot; /&gt;
@@ -632,7 +636,11 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;nano /System/Library/Extensions/AppleIntelKBLGraphics.kext/Contents/Info.plist&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;В открывшемся файле, в терминале, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;, внизу файла. В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;В открывшемся файле, в терминале, найти внизу файла:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&amp;lt;key&amp;gt;IOPCIPrimaryMatch&amp;lt;/key&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;В конце следующей строки - &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;string&amp;gt;&lt;/code&gt;, найти &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E928086&lt;/code&gt; и перед ним добавить &lt;code class=&quot;highlighter-rouge&quot;&gt;0x3E918086&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;picture&quot;&gt;
 				&lt;img src=&quot;/media/007.jpg&quot; data-action=&quot;zoom&quot; /&gt;
