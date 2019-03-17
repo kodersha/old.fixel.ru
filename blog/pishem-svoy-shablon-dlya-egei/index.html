@@ -136,12 +136,12 @@
     <article class="article">
         <time>29 апреля 2017</time>
         <h1>Пишем свой шаблон для Эгеи</h1>
-        <p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.</p>
+        <p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые&nbsp;примеры.</p>
 
 <ul>
-  <li>Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» — ../themes/ghost.</li>
-  <li>Файл с каринкой-превьюшкой вашего шаблона должен называться preview@2x.png и находится в корне шаблона.</li>
-  <li>Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в себе:</li>
+  <li>Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» —&nbsp;../themes/ghost.</li>
+  <li>Файл с каринкой-превьюшкой вашего шаблона должен называться preview@2x.png и находится в корне&nbsp;шаблона.</li>
+  <li>Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в&nbsp;себе:</li>
 </ul>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">return</span> <span class="k">array</span> <span class="p">(</span>
@@ -151,26 +151,26 @@
     <span class="p">),</span>
 <span class="p">);</span> <span class="cp">?&gt;</span></code></pre></figure>
 
-<p>Назы&shy;ваем свою тему для рус&shy;ской и англий&shy;ской вер&shy;сии для отоб&shy;ра&shy;же&shy;ния в настройках сайта.</p>
+<p>Называем свою тему для русской и английской версии для отображения в настройках&nbsp;сайта.</p>
 
-<h2 id="структура-папок">Структура папок</h2>
+<h2 id="структура-папок">Структура&nbsp;папок</h2>
 
 <div class="block">
-    <p><mark>../themes/ghost/images</mark> — Папка с изображениями темы.</p>
-    <p><mark>../themes/ghost/js</mark> — Папка со скриптами.</p>
-    <p><mark>../themes/ghost/styles</mark> — Папка со стилями.</p>
-    <p><mark>../themes/ghost/templates</mark> — Файлы шаблона.</p>
+    <p><mark>../themes/ghost/images</mark> — Папка с изображениями&nbsp;темы.</p>
+    <p><mark>../themes/ghost/js</mark> — Папка со&nbsp;скриптами.</p>
+    <p><mark>../themes/ghost/styles</mark> — Папка со&nbsp;стилями.</p>
+    <p><mark>../themes/ghost/templates</mark> — Файлы&nbsp;шаблона.</p>
 </div>
 
-<p>Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути <code class="highlighter-rouge">../system/theme</code>.</p>
+<p>Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути&nbsp;<code class="highlighter-rouge">../system/theme</code>.</p>
 
 <h2 id="шаблоны">Шаблоны</h2>
 
-<p>Теперь стоит подробнее разобрать содержимое папки <code class="highlighter-rouge">../system/theme/templates</code> стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты.</p>
+<p>Теперь стоит подробнее разобрать содержимое папки <code class="highlighter-rouge">../system/theme/templates</code> стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила&nbsp;скриншоты.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">author-menu.tmpl.php</code> — Меню автора.</p>
+<p><code class="highlighter-rouge">author-menu.tmpl.php</code> — Меню&nbsp;автора.</p>
 
 <figure class="picture position-left">
 				<img src="/media/056.jpg" data-action="zoom">
@@ -179,7 +179,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">comments-heading.tmpl.php</code> — Заголовок списка комментариев с счетчиком их количества.</p>
+<p><code class="highlighter-rouge">comments-heading.tmpl.php</code> — Заголовок списка комментариев с счетчиком их&nbsp;количества.</p>
 
 <figure class="picture position-left">
 				<img src="/media/057.jpg" data-action="zoom">
@@ -188,7 +188,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">comments.tmpl.php</code> — Список комментариев.</p>
+<p><code class="highlighter-rouge">comments.tmpl.php</code> — Список&nbsp;комментариев.</p>
 
 <figure class="picture position-left">
 				<img src="/media/058.jpg" data-action="zoom">
@@ -197,7 +197,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">drafts.tmpl.php</code> — Список черновиков.</p>
+<p><code class="highlighter-rouge">drafts.tmpl.php</code> — Список&nbsp;черновиков.</p>
 
 <figure class="picture position-left">
 				<img src="/media/059.jpg" data-action="zoom">
@@ -206,7 +206,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-comment.tmpl.php</code> — Форма комментирования.</p>
+<p><code class="highlighter-rouge">form-comment.tmpl.php</code> — Форма&nbsp;комментирования.</p>
 
 <figure class="picture position-left">
 				<img src="/media/060.jpg" data-action="zoom">
@@ -215,7 +215,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-database.tmpl.php</code> — Форма подключения к базе данных.</p>
+<p><code class="highlighter-rouge">form-database.tmpl.php</code> — Форма подключения к базе&nbsp;данных.</p>
 
 <figure class="picture position-left">
 				<img src="/media/061.jpg" data-action="zoom">
@@ -224,11 +224,11 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-install.tmpl.php</code> — Форма установки Эгеи.</p>
+<p><code class="highlighter-rouge">form-install.tmpl.php</code> — Форма установки&nbsp;Эгеи.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">form-login.tmpl.php</code> — Форма авторизации.</p>
+<p><code class="highlighter-rouge">form-login.tmpl.php</code> — Форма&nbsp;авторизации.</p>
 
 <figure class="picture position-left">
 				<img src="/media/062.jpg" data-action="zoom">
@@ -237,7 +237,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-note-delete.tmpl.php</code> — Форма удаления поста.</p>
+<p><code class="highlighter-rouge">form-note-delete.tmpl.php</code> — Форма удаления&nbsp;поста.</p>
 
 <figure class="picture position-left">
 				<img src="/media/063.jpg" data-action="zoom">
@@ -246,7 +246,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-note-publish.tmpl.php</code> — Кнопка публикации поста.</p>
+<p><code class="highlighter-rouge">form-note-publish.tmpl.php</code> — Кнопка публикации&nbsp;поста.</p>
 
 <figure class="picture position-left">
 				<img src="/media/064.jpg" data-action="zoom">
@@ -255,7 +255,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-note.tmpl.php</code> — Форма публикации поста.</p>
+<p><code class="highlighter-rouge">form-note.tmpl.php</code> — Форма публикации&nbsp;поста.</p>
 
 <figure class="picture position-left">
 				<img src="/media/065.jpg" data-action="zoom">
@@ -264,7 +264,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-password.tmpl.php</code> — Форма смены админ-пароля.</p>
+<p><code class="highlighter-rouge">form-password.tmpl.php</code> — Форма смены&nbsp;админ-пароля.</p>
 
 <figure class="picture position-left">
 				<img src="/media/066.jpg" data-action="zoom">
@@ -273,7 +273,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-preferences.tmpl.php</code> — Форма общих настроек блога.</p>
+<p><code class="highlighter-rouge">form-preferences.tmpl.php</code> — Форма общих настроек&nbsp;блога.</p>
 
 <figure class="picture position-left">
 				<img src="/media/067.jpg" data-action="zoom">
@@ -282,7 +282,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-tag-delete.tmpl.php</code> — Форма удаления тега.</p>
+<p><code class="highlighter-rouge">form-tag-delete.tmpl.php</code> — Форма удаления&nbsp;тега.</p>
 
 <figure class="picture position-left">
 				<img src="/media/068.jpg" data-action="zoom">
@@ -291,7 +291,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">form-tag.tmpl.php</code> — Форма редактирования тега.</p>
+<p><code class="highlighter-rouge">form-tag.tmpl.php</code> — Форма редактирования&nbsp;тега.</p>
 
 <figure class="picture position-left">
 				<img src="/media/069.jpg" data-action="zoom">
@@ -300,11 +300,11 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">head.tmpl.php</code> — Метатеги в head.</p>
+<p><code class="highlighter-rouge">head.tmpl.php</code> — Метатеги в&nbsp;head.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">heading.tmpl.php</code> — Заголовки.</p>
+<p><code class="highlighter-rouge">heading.tmpl.php</code> —&nbsp;Заголовки.</p>
 
 <figure class="picture position-left">
 				<img src="/media/070.jpg" data-action="zoom">
@@ -313,15 +313,15 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">init-script.tmpl.php</code> — Подключение дополнительных скриптов.</p>
+<p><code class="highlighter-rouge">init-script.tmpl.php</code> — Подключение дополнительных&nbsp;скриптов.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">layout.tmpl.php</code> — Основная разметка шаблона внтури body.</p>
+<p><code class="highlighter-rouge">layout.tmpl.php</code> — Основная разметка шаблона внтури&nbsp;body.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">login-element.tmpl.php</code> — Кнопка авторизации.</p>
+<p><code class="highlighter-rouge">login-element.tmpl.php</code> — Кнопка&nbsp;авторизации.</p>
 
 <figure class="picture position-left">
 				<img src="/media/071.jpg" data-action="zoom">
@@ -330,19 +330,19 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">main.tmpl.php</code> — Общая разметка, подключение скриптов.</p>
+<p><code class="highlighter-rouge">main.tmpl.php</code> — Общая разметка, подключение&nbsp;скриптов.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">notes-list.tmpl.php</code> — Список избранных постов.</p>
+<p><code class="highlighter-rouge">notes-list.tmpl.php</code> — Список избранных&nbsp;постов.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">notes.tmpl.php</code> — Шаблон поста. Заголовок, текст, дата, теги, ссылка на комментарии.</p>
+<p><code class="highlighter-rouge">notes.tmpl.php</code> — Шаблон поста. Заголовок, текст, дата, теги, ссылка на&nbsp;комментарии.</p>
 
 <hr>
 
-<p><code class="highlighter-rouge">pages-earlier.tmpl.php</code> — Кнопка к постам «Ранее».</p>
+<p><code class="highlighter-rouge">pages-earlier.tmpl.php</code> — Кнопка к постам&nbsp;«Ранее».</p>
 
 <figure class="picture position-left">
 				<img src="/media/072.jpg" data-action="zoom">
@@ -351,7 +351,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">pages-later.tmpl.php</code> — Кнопка к постам «Позднее».</p>
+<p><code class="highlighter-rouge">pages-later.tmpl.php</code> — Кнопка к постам&nbsp;«Позднее».</p>
 
 <figure class="picture position-left">
 				<img src="/media/073.jpg" data-action="zoom">
@@ -360,7 +360,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">pages.tmpl.php</code> — Навигация между постами.</p>
+<p><code class="highlighter-rouge">pages.tmpl.php</code> — Навигация между&nbsp;постами.</p>
 
 <figure class="picture position-left">
 				<img src="/media/074.jpg" data-action="zoom">
@@ -369,7 +369,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">popular.tmpl.php</code> — Блок популярных постов.</p>
+<p><code class="highlighter-rouge">popular.tmpl.php</code> — Блок популярных&nbsp;постов.</p>
 
 <figure class="picture position-left">
 				<img src="/media/075.jpg" data-action="zoom">
@@ -378,7 +378,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">search.tmpl.php</code> — Форма поиска и теги.</p>
+<p><code class="highlighter-rouge">search.tmpl.php</code> — Форма поиска и&nbsp;теги.</p>
 
 <figure class="picture position-left">
 				<img src="/media/076.jpg" data-action="zoom">
@@ -387,7 +387,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">tags-menu.tmpl.php</code> — Список избранных тегов.</p>
+<p><code class="highlighter-rouge">tags-menu.tmpl.php</code> — Список избранных&nbsp;тегов.</p>
 
 <figure class="picture position-left">
 				<img src="/media/077.jpg" data-action="zoom">
@@ -396,7 +396,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">tags.tmpl.php</code> — Страница тегов.</p>
+<p><code class="highlighter-rouge">tags.tmpl.php</code> — Страница&nbsp;тегов.</p>
 
 <figure class="picture position-left">
 				<img src="/media/078.jpg" data-action="zoom">
@@ -405,7 +405,7 @@
 
 <hr>
 
-<p><code class="highlighter-rouge">user-blockture.tmpl.php</code> — Аватар блога.</p>
+<p><code class="highlighter-rouge">user-blockture.tmpl.php</code> — Аватар&nbsp;блога.</p>
 
 <figure class="picture position-left">
 				<img src="/media/079.jpg" data-action="zoom">
@@ -414,21 +414,21 @@
 
 <hr>
 
-<p>Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы <code class="highlighter-rouge">../system/theme/templates</code> в папку <code class="highlighter-rouge">templates</code> вашего шаблона и уже там производите все изменения.</p>
+<p>Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы <code class="highlighter-rouge">../system/theme/templates</code> в папку <code class="highlighter-rouge">templates</code> вашего шаблона и уже там производите все&nbsp;изменения.</p>
 
-<h2 id="подключение-частей-шаблона">Подключение частей шаблона</h2>
+<h2 id="подключение-частей-шаблона">Подключение частей&nbsp;шаблона</h2>
 
-<p>Официальная <a href="https://docs.google.com/document/d/1yn7KCHq47oli7IH--skhymjjj2OSlXjcyGOxZ2ZEPeA/edit#heading=h.j2h2wr6xhlie" rel="nofollow" target="_blank">документация</a> по шаблонам Эгеи сообщает:</p>
+<p>Официальная <a href="https://docs.google.com/document/d/1yn7KCHq47oli7IH--skhymjjj2OSlXjcyGOxZ2ZEPeA/edit#heading=h.j2h2wr6xhlie" rel="nofollow" target="_blank">документация</a> по шаблонам Эгеи&nbsp;сообщает:</p>
 
 <blockquote>
-  <p>Шаблон может вызывать другие шаблоны для отображения конкретного фрагмента:
-_T () — вызывает шаблон по имени.
-_T_<span class="caps">FOR</span> () — вызывает шаблон по имени, если в массиве $content есть ключ с таким именем.
-_X () — вставляет дополнительный блок (не забывайте это использовать в своих шаблонах там, где это делают комплектные).
-Шаблон layout.tmpl.php «срабатывает» потому, что main.tmpl.php вызывает его для формирования тела страницы.</p>
+  <p>Шаблон может вызывать другие шаблоны для отображения конкретного&nbsp;фрагмента:
+_T () — вызывает шаблон по&nbsp;имени.
+_T_<span class="caps">FOR</span> () — вызывает шаблон по имени, если в массиве $content есть ключ с таким&nbsp;именем.
+_X () — вставляет дополнительный блок (не забывайте это использовать в своих шаблонах там, где это делают&nbsp;комплектные).
+Шаблон layout.tmpl.php «срабатывает» потому, что main.tmpl.php вызывает его для формирования тела&nbsp;страницы.</p>
 </blockquote>
 
-<p>Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл <code class="highlighter-rouge">quote.tmpl.php</code> в <code class="highlighter-rouge">../themes/ghost/templates</code> со следующим несложным кодом:</p>
+<p>Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл <code class="highlighter-rouge">quote.tmpl.php</code> в <code class="highlighter-rouge">../themes/ghost/templates</code> со следующим несложным&nbsp;кодом:</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e2-quote"</span><span class="nt">&gt;</span>
     <span class="cp">&lt;?php</span>
@@ -448,32 +448,31 @@ _X () — вставляет дополнительный блок (не заб�
     <span class="cp">?&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Теперь достаточно открыть <code class="highlighter-rouge">layout.tmpl.php</code> и где-нибудь перед footer’ом добавить вывод шаблона <code class="highlighter-rouge">quote.tmpl.php</code> средством специального макроса.</p>
+<p>Теперь достаточно открыть <code class="highlighter-rouge">layout.tmpl.php</code> и где-нибудь перед footer’ом добавить вывод шаблона <code class="highlighter-rouge">quote.tmpl.php</code> средством специального&nbsp;макроса.</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
-<p>Чтобы блок с слу&shy;чай&shy;ными цита&shy;тами отоб&shy;ра&shy;жался только на глав&shy;ной стра&shy;нице обер&shy;ните его соответствующим параметром:</p>
+<p>Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим&nbsp;параметром:</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$content</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'frontpage'</span><span class="p">)</span> <span class="p">{</span> <span class="cp">?&gt;</span>
     <span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="cp">?&gt;</span>
 <span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span></code></pre></figure>
 
-<p>Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный <code class="highlighter-rouge">layout.tmpl.php</code> с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.</p>
+<p>Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный <code class="highlighter-rouge">layout.tmpl.php</code> с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны&nbsp;сайта.</p>
 
-<h2 id="подключение-собственных-js-и-css">Подключение собственных <span class="caps">JS</span> и <span class="caps">CSS</span>
-</h2>
+<h2 id="подключение-собственных-js-и-css">Подключение собственных <span class="caps">JS</span> и&nbsp;<span class="caps">CSS</span></h2>
 
-<p>Для подключения <span class="caps">JS</span> и <span class="caps">CSS</span> в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <code class="highlighter-rouge">main.tmpl.php</code> и посмотрите в конец файла, после закрывающегося тега <code class="highlighter-rouge">body</code>:</p>
+<p>Для подключения <span class="caps">JS</span> и <span class="caps">CSS</span> в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <code class="highlighter-rouge">main.tmpl.php</code> и посмотрите в конец файла, после закрывающегося тега&nbsp;<code class="highlighter-rouge">body</code>:</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span>
 <span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
-<p>Здесь подхватываются <code class="highlighter-rouge">../js/main.js</code> и <code class="highlighter-rouge">../styles/main.css</code> из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью <a href="https://github.com/matthieua/WOW" rel="nofollow" target="_blank">wow.js</a>. Скачайте сам wow.js и положите в папку <code class="highlighter-rouge">js</code> вашего шаблона. Также скачайте <a href="https://github.com/daneden/animate.css" rel="nofollow" target="_blank">animate.css</a> и разместите в папке <code class="highlighter-rouge">styles</code>. Откройте <code class="highlighter-rouge">main.tmpl.php</code> и подключите их:</p>
+<p>Здесь подхватываются <code class="highlighter-rouge">../js/main.js</code> и <code class="highlighter-rouge">../styles/main.css</code> из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью <a href="https://github.com/matthieua/WOW" rel="nofollow" target="_blank">wow.js</a>. Скачайте сам wow.js и положите в папку <code class="highlighter-rouge">js</code> вашего шаблона. Также скачайте <a href="https://github.com/daneden/animate.css" rel="nofollow" target="_blank">animate.css</a> и разместите в папке <code class="highlighter-rouge">styles</code>. Откройте <code class="highlighter-rouge">main.tmpl.php</code> и подключите&nbsp;их:</p>
 
 <figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'animate'</span><span class="p">)</span> <span class="cp">?&gt;</span>
 <span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'wow'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
 
-<p>Далее в файл <code class="highlighter-rouge">init-script.tmpl.php</code> понадобится добавить следующий код с настройками <code class="highlighter-rouge">wow.js</code>:</p>
+<p>Далее в файл <code class="highlighter-rouge">init-script.tmpl.php</code> понадобится добавить следующий код с настройками&nbsp;<code class="highlighter-rouge">wow.js</code>:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
     <span class="kd">var</span> <span class="nx">wow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WOW</span><span class="p">(</span>
@@ -491,7 +490,7 @@ _X () — вставляет дополнительный блок (не заб�
     <span class="nx">wow</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
 <span class="nt">&lt;/script&gt;</span></code></pre></figure>
 
-<p>Теперь остается открыть шаблон <code class="highlighter-rouge">notes.tmpl.php</code> и к основному div’у поста (18 строка) добавить класс <code class="highlighter-rouge">wow fadeIn</code>, а в <code class="highlighter-rouge">main.css</code> добавить <code class="highlighter-rouge">.wow { visibility: hidden; }</code>. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.</p>
+<p>Теперь остается открыть шаблон <code class="highlighter-rouge">notes.tmpl.php</code> и к основному div’у поста (18 строка) добавить класс <code class="highlighter-rouge">wow fadeIn</code>, а в <code class="highlighter-rouge">main.css</code> добавить <code class="highlighter-rouge">.wow { visibility: hidden; }</code>. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и&nbsp;стили.</p>
 
 <p class="subtext">Смотрите ещё: <a href="/blog/kat-v-egee">Кат в Эгее</a>, <a href="/blog/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a> и <a href="/blog/snoski-na-poljah-v-egee/">Сноски на полях в Эгее</a>.</p>
 
