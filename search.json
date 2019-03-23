@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Устанавливаем Ghost на Windows",
+      "category" : "",
+      "tags"     : "Веб, Ghost, Гайды, and CMS",
+      "url"      : "/blog/ustanavlivaem-ghost-na-windows/",
+      "date"     : "2019-03-21 00:00:00 +0700"
+    } ,
+  
+    {
       "title"    : "Стримлю игры",
       "category" : "",
       "tags"     : "Игры and Заметки",
@@ -179,7 +187,7 @@
     {
       "title"    : "Устанавливаем Jekyll на Mac OS",
       "category" : "",
-      "tags"     : "Веб, Jekyll, and Гайды",
+      "tags"     : "Веб, Jekyll, Гайды, and CMS",
       "url"      : "/blog/ustanavlivaem-jekyll-na-mac/",
       "date"     : "2017-09-16 00:00:00 +0700"
     } ,
@@ -187,7 +195,7 @@
     {
       "title"    : "Устанавливаем Jekyll на Windows",
       "category" : "",
-      "tags"     : "Веб, Гайды, and Jekyll",
+      "tags"     : "Веб, Гайды, Jekyll, and CMS",
       "url"      : "/blog/ustanavlivaem-jekyll-na-windows/",
       "date"     : "2017-09-04 00:00:00 +0700"
     } ,
