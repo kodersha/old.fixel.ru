@@ -15,11 +15,11 @@ tags:
 
 **Ohayo!** Меня зовут Александра Травкина.
 
-Я веб-дизайнер, верстаю шаблоны и делаю сайты на заказ.
+Я веб-дизайнер, верстаю шаблоны и [делаю](/workshop/) сайты на заказ.
 
 Люблю компьютерные игры. Иногда пишу о них в [блог](/blog/).
 
-Но чаще стримлю прохождения на [youtube](https://www.youtube.com/sherrycubby).
+Но чаще стримлю прохождения на [youtube](https://www.youtube.com/sherrycubby) и [twitch](https://www.twitch.tv/sherrycubby).
 
 <br>
 
