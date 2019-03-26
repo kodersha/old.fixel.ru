@@ -137,4 +137,116 @@
           border-radius: ~'33% 67% 58% 42%/63% 68% 32% 37%';
         }
     }
+
+
+    #app {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        max-width: 1160px;
+        width: 100%;
+        margin: 24px auto 0;
+        padding: 32px;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+    
+    .tabs-wrapper {
+        height: 100%;
+    }
+    
+    .tabs {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        background: transparent;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #E3E8EB;
+        background: transparent;
+        padding: 0;
+    }
+    
+    .tab {
+        color: #4F5E65;
+        padding-bottom: 16px;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        margin-right: 16px;
+        cursor: pointer;
+        transition: all 275ms ease;
+    
+        &.is-active {
+            font-weight: 500;
+            color: #09161D;
+        }
+        
+        &:nth-last-child(-n + 2) {
+            margin-right: 0;
+        }
+    }
+    
+    .tab-content {
+        position: relative;
+        overflow-y: auto;
+        padding-top: 24px;
+    
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .tab-selected-border {
+        position: absolute;
+        bottom: -1px;
+        height: 2px;
+        width: 50px;
+        background-color: #09161D;;
+        transition: all 275ms ease;
+    }
+    
+    .slot-content {
+        animation: fade-content-out 1s ease forwards;
+        display: none;
+    }
+    
+    .active-content {
+        display: block;
+        animation: fade-content-in 1s ease forwards;
+    }
+    
+    @keyframes fade-content-out {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    
+    @keyframes fade-content-in {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    
+    .night-theme {
+        .tabs {
+            border-color: #2B383F;
+        }
+        
+        .tab {
+            color: #BDC2C4;
+        
+            &.is-active {
+                color: #ffffff;
+                border-color: #ffffff;
+            }
+        }
+    }
 }
