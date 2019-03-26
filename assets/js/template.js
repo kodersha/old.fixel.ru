@@ -1,7 +1,120 @@
-/* Переносы */
+Vue.component('Tabs', {
+  props: {
+    tabs: {
+      type: Array,
+    },
+    value: {
+      type: String,
+    },
+    className: {
+      type: String,
+    },
+    hideContent: {
+      type: Boolean,
+    }
+  },
+  
+  template: `
+    <div class="tabs-wrapper">
+      <div ref="tabs" class="tabs" :class="className">
+        <div
+          v-for="tab in tabs"
+          :key="tab.value"
+          :ref="tab.value"
+          class="tab"
+          :class="{ 'is-active': tab.value === value }"
+          @click="showTab(tab.value)">
+          {{ tab.name }}
+        </div>
+        <div
+          class="tab-selected-border"
+          :style="{
+            width: bWidth + 'px',
+            left: bLeft + 'px',
+          }"></div>
+      </div>
+      <div class="tab-content" v-if="!hideContent">
+        <div
+          v-for="(tab, idx) in tabs"
+          class="slot-content"
+          :class="{'active-content': tab.value === value}"
+          :key="idx">        
+          <slot :name="tab.value"/>
+        </div>
+      </div>
+    </div>`,
+  
+  data() {
+    return {
+      bWidth: 0,
+      bLeft: 0
+    }
+  },
+  
+  mounted() {
+    if (!this.value) this.showTab(this.tabs[0].value);
+    
+    this.$nextTick(() => {
+      this.bWidth = this.$refs[this.value][0].getBoundingClientRect().width;
+      this.bLeft = this.$refs[this.value][0].offsetLeft;
+    });
+  },
+  
+  watch: {
+    value() {
+      this.bWidth = this.$refs[this.value][0].getBoundingClientRect().width;
+      this.bLeft = this.$refs[this.value][0].offsetLeft;
+    }
+  },
+  
+  methods: {
+    showTab(tab) {
+      this.$emit("input", tab);
+    },
+  }
+});
 
-$(function(){
-  $('.article > p').hyphenate();
+
+let app = new Vue({
+  el: '#app',
+   
+  data() {
+    return {
+      tabs: [
+        {
+          name: "General",
+          value: "general"
+        },
+        {
+          name: "Advanced",
+          value: "advanced"
+        },
+        {
+          name: "Something",
+          value: "something"
+        },
+        {
+          name: "Anything",
+          value: "anything"
+        },
+        {
+          name: "Streamlabs",
+          value: "streamlabs"
+        },
+        {
+          name: "Really Long Name Thing",
+          value: "reallylongnamething"
+        }
+      ],
+      selectedTab: "general",
+    }
+  },
+      
+  methods: {
+    onSelectTabHandler(tab) {
+      this.selectedTab = tab;
+    }
+  }
 });
 
 /* Поиск */

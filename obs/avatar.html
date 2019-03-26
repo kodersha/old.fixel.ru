@@ -15,40 +15,13 @@
         <script type="text/javascript" src="../assets/js/jquery.js"></script>
     </head>
     <body>
-        <div class="avatar">
-            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" overflow="hidden">
-                <defs>
-                <clipPath id="svg-clip">
-                    <rect x="0" y="0" width="300" height="300" />
-                </clipPath>
-                
-                <pattern id="pattern" x="0" y="0" width="0.025" height="0.025">
-                    <rect id="block1" x="3" y="3" width="1.5" height="1.5" fill="#aaaaaa" />
-                    <rect id="block2" x="3" y="3" width="1.5" height="1.5" fill="#aaaaaa" />
-                </pattern>
-                
-                <mask id="mask">
-                    <rect x="0" y="0" width="300" height="300" fill="#000000" />
-                    <circle id="c1" cx="150" cy="150" r="210" fill="#ffffff" />
-                    <circle id="c2" cx="150" cy="150" r="180" fill="#000000" />
-                    <circle id="c3" cx="150" cy="150" r="150" fill="#ffffff" />
-                    <circle id="c4" cx="150" cy="150" r="120" fill="#000000" />
-                    <circle id="c5" cx="150" cy="150" r="90" fill="#ffffff" />
-                    <circle id="c6" cx="150" cy="150" r="60" fill="#000000" />
-                    <circle id="c7" cx="150" cy="150" r="30" fill="#ffffff" />
-                    <circle id="c8" cx="150" cy="150" r="0" fill="#000000" />
-                    <circle id="c9" cx="150" cy="150" r="0" fill="#ffffff" />
-                </mask>
-                
-                </defs>
-                <g id="container" class="hitarea">
-                <rect x="0" y="0" width="300" height="300" fill="transparent" />
-                <rect x="0" y="0" width="300" height="300" fill="url(#pattern)" mask="url(#mask)" />
-                </g>
-            </svg>
+        <div class="container">
+            <div class="sky">
+                <div class="stars"></div>
+                <div class="stars1"></div>
+                <div class="stars2"></div>
+                <div class="shooting-stars"></div>
+            </div>
         </div>
-
-        <script type="text/javascript" src="../assets/obs/avatar.js"></script>
-
     </body>
 </html>
