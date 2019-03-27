@@ -1,4 +1,3 @@
-+function ($) {
   window.raf = (function() {
     return window.requestAnimationFrame ||
       window.webkitRequestAnimationFrame ||
@@ -41,8 +40,8 @@
   
       // check if the elapsed time in minutes is more than an hour
       // and convert the raw seconds to hours, minutes & seconds
-      if (minutes > 60) {
-        hours = Math.floor(seconds / 3600);
+      if (minutes > 3000) {
+        hours = Math.floor(seconds / 180000);
         minutes = seconds - hours * 60;
         seconds = seconds - minutes * 3600;
       }
@@ -71,6 +70,3 @@
     output.textContent = time.hours + ':' + time.minutes + ':' + time.seconds;
     raf(update);
   })();
-
-  Splitting();
-}(jQuery);

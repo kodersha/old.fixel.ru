@@ -65,11 +65,14 @@ body {
 }
 .meta {
     position:absolute;
-    bottom:0px;
+    bottom:20px;
     right:30px;
     color:#fff;
     font-size:20px;
     letter-spacing:1px;
+}
+.meta p {
+    margin: 0;
 }
 .exposure {
     border: 2px solid #fff;
@@ -115,11 +118,106 @@ body {
     left:30px;
     color:#fff;
     font-size:20px;
-    letter-spacing:1px;
 }
 .clip-text {
     position: relative;
     display: inline-block;
     user-select: none;
     color: white;
+}
+
+
+.timer__title {
+    font-size:20px;
+    font-weight: 300;
+}
+
+.timer .dots {
+    letter-spacing: -2px;
+}
+  
+.minutes:before,
+.minutes:after,
+.seconds:before,
+.seconds:after,
+.miliseconds:before,
+.miliseconds:after {
+    content: "0";
+}
+  
+.minutes:left {
+    animation: left 3600s infinite step-end;
+}
+  
+.minutes:after {
+    animation: right 600s infinite step-end;
+}
+  
+.seconds:before {
+    animation: left 60s infinite step-end;
+}
+  
+.seconds:after {
+    animation: right 10s infinite step-end;
+}
+  
+.miliseconds:before {
+    animation: right 1s infinite step-end;
+}
+  
+.miliseconds:after {
+    animation: right 0.1s infinite step-end;
+}
+  
+@keyframes left {
+    16.67% {
+        content: "1";
+    }
+    33.33% {
+        content: "2";
+    }
+    50% {
+        content: "3";
+    }
+    66.67% {
+        content: "4";
+    }
+    83.33% {
+        content: "5";
+    }
+    100% {
+        content: "0";
+    }
+}
+@keyframes right {
+    10% {
+        content: "1";
+    }
+    20% {
+        content: "2";
+    }
+    30% {
+        content: "3";
+    }
+    40% {
+        content: "4";
+    }
+    50% {
+        content: "5";
+    }
+    60% {
+        content: "6";
+    }
+    70% {
+        content: "7";
+    }
+    80% {
+        content: "8";
+    }
+    90% {
+        content: "9";
+    }
+    100% {
+        content: "0";
+    }
 }
