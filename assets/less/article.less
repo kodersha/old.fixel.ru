@@ -1,5 +1,10 @@
 article {
     &.article {
+        .head {
+            max-width: var(--widthBody);
+            margin-right: auto;
+            margin-left: auto;
+        }
         & > :last-child {
             margin-bottom: 0;
         }
@@ -11,7 +16,6 @@ article {
         h1 {
             &:first-of-type {
                 font-size: ~'calc(var(--noteTitleFontSize) / 1.5)';
-                text-align: center;
                 margin-top: 0;
 
                 @media @lg {
@@ -26,12 +30,14 @@ article {
             color: var(--mainColor);
         }
         time {
-            color: var(--actionColor);
+            max-width: var(--widthBody);
             margin-bottom: var(--noteMarginBottom);
             margin-right: auto;
             margin-left: auto;
             margin-top: var(--noteMarginTop);
-            display: table;
+            display: block;
+
+            color: var(--actionColor);
         }
         figure {
             margin-bottom: var(--noteMediaMarginBottom);
@@ -55,8 +61,6 @@ article {
                     line-height: var(--smallLineHeight);
                     margin-top: ~'calc(var(--noteMarginTop) / 2)';
                     margin-bottom: 0;
-
-                    color: var(--tagColor);
                 }
             }
 
@@ -64,7 +68,6 @@ article {
                 max-width: var(--widthBody);
 
                 img {
-                    border-radius: var(--borderRadius);
                     margin-right: auto;
                     margin-left: auto;
                     cursor: zoom-in;
@@ -82,7 +85,6 @@ article {
             }
             &.video {
                 max-width: var(--widthBody);
-                border-radius: var(--borderRadius);
                 position: relative;
                 overflow: hidden;
             }
@@ -143,8 +145,8 @@ article {
         } */
         p {
             font-family: var(--noteFontFamily);
-            font-size: 1.2rem;
-            line-height: 1.5;
+            font-size: 1em;
+            line-height: 1.4;
             color: var(--mainColor);
 
             @media @lg {
@@ -189,6 +191,8 @@ article {
             margin-left: auto;
             margin-top: var(--noteMarginTop);
 
+            padding-left: 0;
+
             li {
                 font-family: var(--noteFontFamily);
                 font-size: var(--noteFontSize);
@@ -216,12 +220,10 @@ article {
             }
         }
         pre {
-            max-width: var(--widthBody);
-            margin-bottom: var(--noteMarginBottom);
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: var(--noteMarginTop); 
+            background-color: rgba(0,0,0,.05);
+            border-radius: var(--borderRadius);
             overflow-y: auto;
+            padding: 1em 1.5em;
         }
         blockquote {
             max-width: var(--widthBody);

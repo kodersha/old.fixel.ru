@@ -46,7 +46,7 @@ tags:
 - **IntelMausiEthernet** - Kext для запуска Intel ethernet. ([bitbucket.org][13])
 - **IntelGraphicsFixup** - Фикс для различных встроенных видеокарт от Intel. ([github.com][14])
 - **Shiki** - Исправление возможных проблем с воспроизведеним видео. ([github.com][15])
-- ** Lilu** - Расширение для поддержки различных kext’ов. ([github.com][16])
+- **Lilu** - Расширение для поддержки различных kext’ов. ([github.com][16])
 
 ## Установка
 

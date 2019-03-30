@@ -1,10 +1,24 @@
 {% include header.html %}
-{% include banner.html %}
 
 <main class="main" role="main">
     <article class="article">
-        <time>{{ page.date | russian_date }}</time>
-        <h1>{{ page.title }}</h1>
+        <section class="head">
+            <div class="row">
+                <div class="col-xs-12 col-lg-shrink">
+                        <header class="header" role="banner">
+                            <div class="logo">
+                                <a href="/{{ site.baseurl }}/blog/">
+                                    <img srcset="{{ site.baseurl }}/assets/images/avatar_96x96.png 2x, {{ site.baseurl }}/assets/images/avatar_192x192.png 4x" src="{{ site.baseurl }}/assets/images/avatar_64x64.png" width="64" height="64" alt="{{ site.title }}">
+                                </a>
+                            </div>
+                        </header>
+                </div>
+                <div class="col-xs-12 col-lg">
+                    <time>{{ page.date | russian_date }}</time>
+                    <h1>{{ page.title }}</h1>
+                </div>
+            </div>
+        </section>
         {{ content | extlinks | improve }}
     </article>
     <nav class="row row-between-xs row-middle-xs space-in-v-kilo-xs wrapper bloglinks">
