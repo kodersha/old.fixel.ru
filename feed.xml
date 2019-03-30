@@ -259,7 +259,7 @@
   &lt;li&gt;&lt;strong&gt;IntelMausiEthernet&lt;/strong&gt; - Kext для запуска Intel ethernet. (&lt;a href=&quot;https://bitbucket.org/RehabMan/os-x-intel-network/downloads/&quot;&gt;bitbucket.org&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;IntelGraphicsFixup&lt;/strong&gt; - Фикс для различных встроенных видеокарт от Intel. (&lt;a href=&quot;https://github.com/lvs1974/IntelGraphicsFixup/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Shiki&lt;/strong&gt; - Исправление возможных проблем с воспроизведеним видео. (&lt;a href=&quot;https://github.com/vit9696/Shiki/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt; Lilu&lt;/strong&gt; - Расширение для поддержки различных kext’ов. (&lt;a href=&quot;https://github.com/vit9696/Lilu/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lilu&lt;/strong&gt; - Расширение для поддержки различных kext’ов. (&lt;a href=&quot;https://github.com/vit9696/Lilu/releases&quot;&gt;github.com&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;установка&quot;&gt;Установка&lt;/h2&gt;

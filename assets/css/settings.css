@@ -1,16 +1,16 @@
 :root {
     /* Width */
-    --widthBody:                    52.5rem;
+    --widthBody:                    57.5rem;
 
     /* Global */
     --mainFontFamily:               LatoWeb, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --mainFontSize:                 1rem;
-    --mainLineHeight:               1.4;
+    --mainFontSize:                 1.125em;
+    --mainLineHeight:               1.4em;
 
     /* Note */
-    --noteFontFamily:               Gregor, Georgia, serif;
-    --noteFontSize:                 1.269em;
-    --noteLineHeight:               30px;
+    --noteFontFamily:               'PT Sans', -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --noteFontSize:                 1.295em;
+    --noteLineHeight:               1.4em;
 
     --noteTitleFontFamily:          LatoWebBlack, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --noteTitleFontSize:            3.5em;
@@ -24,21 +24,21 @@
     --noteMarginTop:                1.25rem;
 
     /* Tags */
-    --tagFontSize:                  10px;
-    --tagLineHeight:                1.4;
+    --tagFontSize:                  0.625em;
+    --tagLineHeight:                1.4em;
 
     /* Small */
-    --smallFontSize:                13px;
-    --smallLineHeight:              1.4;
+    --smallFontSize:                0.750em;
+    --smallLineHeight:              1.4em;
 
     /* Quote */
     --quoteFontFamily:              GregorIT, Gregor, Georgia, serif;
 
     /* Radius */
-    --borderRadius:                 0;
+    --borderRadius:                 6px;
 
     /* Colors */
-    --mainColor:                  hsla(270,14.531692384000001%,0%,0.84);
+    --mainColor:                  rgb(0, 0, 0);
     --actionColor:                rgb(227, 230, 234);
     --sidebarColor:               rgb(246, 247, 248);
 
