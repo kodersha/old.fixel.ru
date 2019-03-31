@@ -32,7 +32,7 @@
     --smallLineHeight:              1.4em;
 
     /* Quote */
-    --quoteFontFamily:              GregorIT, Gregor, Georgia, serif;
+    --quoteFontFamily:              'PT Serif', Gregor, Georgia, serif;
 
     /* Radius */
     --borderRadius:                 6px;
