@@ -1,38 +1,40 @@
 :root {
     /* Width */
-    --widthBody:                    57.5rem;
+    --widthBody:                    52.5rem;
 
     /* Global */
     --mainFontFamily:               LatoWeb, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --mainFontSize:                 1.125em;
+    --mainFontSize:                 1em;
     --mainLineHeight:               1.4em;
 
     /* Note */
-    --noteFontFamily:               'PT Sans', -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --noteFontSize:                 1.295em;
+    --noteFontFamily:               Gregor, Georgia, serif;
+    --noteFontSize:                 1.250em;
     --noteLineHeight:               1.4em;
 
     --noteTitleFontFamily:          LatoWebBlack, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --noteSubtitleFontFamily:       LatoWebBold, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
     --noteTitleFontSize:            3.5em;
     --noteTitleLineHeight:          normal;
 
     --noteCodeFontFamily:           Consolas, 'Liberation Mono', Menlo, 'Courier New', Courier, 'Droid Sans Mono', monospace;
 
-    --noteMediaMarginBottom:        1.875rem;
-    --noteMediaMarginTop:           1.875rem;
-    --noteMarginBottom:             1.25rem;
-    --noteMarginTop:                1.25rem;
+    --noteMediaMarginBottom:        1.925rem;
+    --noteMediaMarginTop:           1.925rem;
+    --noteMarginBottom:             0.875rem;
+    --noteMarginTop:                0.875rem;
 
     /* Tags */
     --tagFontSize:                  0.625em;
     --tagLineHeight:                1.4em;
 
     /* Small */
-    --smallFontSize:                0.750em;
+    --smallFontSize:                0.875em;
     --smallLineHeight:              1.4em;
 
     /* Quote */
-    --quoteFontFamily:              'PT Serif', Gregor, Georgia, serif;
+    --quoteFontFamily:              GregorIT, Gregor, Georgia, serif;
 
     /* Radius */
     --borderRadius:                 6px;

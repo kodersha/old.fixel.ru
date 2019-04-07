@@ -30,9 +30,19 @@ article {
         }
         h2 {
             margin-bottom: var(--noteMarginBottom);
-            margin-top: 100px;
-            font-size: 2em;
+            margin-top: 3.725rem;
+
+            font-family: var(--noteSubtitleFontFamily);
+            font-size: 1.125em;
+            line-height: 1.4em;
             color: var(--mainColor);
+
+            @media @lg {
+                font-size: var(--noteFontSize);
+                line-height: var(--noteLineHeight);
+            }
+
+
         }
         time {
             max-width: var(--widthBody);
@@ -66,6 +76,7 @@ article {
                     font-family: var(--mainFontFamily);
                     font-size: var(--smallFontSize);
                     line-height: var(--smallLineHeight);
+
                     margin-top: ~'calc(var(--noteMarginTop) / 2)';
                     margin-bottom: 0;
                 }
@@ -112,32 +123,6 @@ article {
             border-right: 0;
             border-left: 0;
             border-top: 0;
-
-            &::before {
-                background: linear-gradient(to right, transparent, currentColor, transparent);
-                position: absolute;
-                height: 2px;
-                width: 100%;
-                content: '';
-                left: 0;
-            }
-
-            [data-content] {
-                text-align: center;
-
-                &::after {
-                    content: attr(data-content);
-                    position: relative;
-                    background: var(--actionColor);
-                    padding: 0 1.5rem;
-                    top: -0.475em;
-                    font-size: 3em;
-                    line-height: 1;
-                    font-family: serif;
-                    font-style: italic;
-                    color: currentColor;
-                }
-            }
         }
         /*
         & > p:nth-of-type(1) {
@@ -152,8 +137,8 @@ article {
         } */
         p {
             font-family: var(--noteFontFamily);
-            font-size: 1em;
-            line-height: 1.4;
+            font-size: 1.125em;
+            line-height: 1.4em;
             color: var(--mainColor);
 
             @media @lg {
@@ -168,12 +153,12 @@ article {
             margin-top: var(--noteMarginTop);
 
             code {
-                border-radius: var(--borderRadius);
-                background-color: rgba(0,0,0,.05);
-                font-size: 1em;
+                background-color: var(--markColor);
+
                 font-family: var(--noteFontFamily);
-                line-height: ~'calc(var(--noteLineHeight) / 1.5)';
-                border-radius: var(--borderRadius);
+                font-size: 1em;
+                line-height: var(--noteLineHeight);
+
                 word-wrap: break-word;
             }
 
@@ -182,8 +167,7 @@ article {
             }
 
             mark {
-                border-radius: var(--borderRadius);
-                background-color: rgba(0,0,0,.05);
+                background-color: var(--markColor);
             }
 
             img {
@@ -198,7 +182,7 @@ article {
             margin-left: auto;
             margin-top: var(--noteMarginTop);
 
-            padding-left: 0;
+            padding-inline-start: 2.875em;
 
             li {
                 font-family: var(--noteFontFamily);
@@ -206,10 +190,8 @@ article {
                 line-height: var(--noteLineHeight);
 
                 code {
-                    border-radius: var(--borderRadius);
-                    background-color: rgba(0,0,0,.05);
+                    background-color: var(--markColor);
                     font-family: var(--noteFontFamily);
-                    border-radius: var(--borderRadius);
                     font-size: 1em;
                     word-wrap: break-word;
                     white-space: nowrap;
@@ -227,17 +209,14 @@ article {
             }
         }
         pre {
-            background-color: rgba(0,0,0,.05);
-            border-radius: var(--borderRadius);
             overflow-y: auto;
-            padding: 1em 1.5em;
         }
         blockquote {
             max-width: var(--widthBody);
-            margin-bottom: ~'calc(var(--noteMediaMarginBottom) * 2)';
+            margin-bottom: var(--noteMediaMarginBottom);
             margin-right: auto;
             margin-left: auto;
-            margin-top: ~'calc(var(--noteMediaMarginTop) * 2)';
+            margin-top: var(--noteMediaMarginTop);
             position: relative;
 
             p {
@@ -257,19 +236,19 @@ article {
                 &::before, &::after {
                     font-family: var(--mainFontFamily);
                     position: absolute;
-                    font-size: 5em;
+                    font-size: 8rem;
                     line-height: 0;
                     color: var(--actionColor);
                 }
                 &::before {
                     content: '\201C';
-                    left: 0;
-                    top: var(--noteMediaMarginTop);
+                    left: -10px;
+                    top: 3.5rem;
                 }
                 &::after {
                     content: '\201D';
-                    bottom: ~'calc(var(--noteMediaMarginBottom) * -1)';
-                    right: 0;                    
+                    bottom: -1.625rem;
+                    right: 10px;                 
                 }
             }
         }
@@ -376,11 +355,20 @@ article {
                 line-height: var(--smallLineHeight);
                 display: block;
             }
-            p {
+            h2 {
+                font-family: var(--mainFontFamily);
                 font-size: var(--mainFontSize);
                 line-height: var(--mainLineHeight);
+                font-weight: normal;
+                
                 margin-bottom: 8px;
                 margin-top: 8px;
+
+                a {
+                    font-family: var(--mainFontFamily);
+                    font-size: var(--mainFontSize);
+                    line-height: var(--mainLineHeight);
+                }
             }
             .tags {
                 margin-bottom: 0;
