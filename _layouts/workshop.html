@@ -2,24 +2,11 @@
 {% include banner.html %}
 
 <main class="main" role="main">
-    <article class="article">
+    <article class="article space-in-bottom-kilo-xs">
         <time>{{ page.date | russian_date }}</time>
         <h1>{{ page.title }}</h1>
-        {{ content | hyphenate | extlinks }}
+        {{ content | extlinks }}
     </article>
-    <nav class="row row-between-xs row-middle-xs space-auto-h-xs space-in-v-kilo-xs wrapper bloglinks">
-        <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs previous">
-            {% if page.previous.url %}
-                <a href="{{ page.previous.url }}">&lsaquo; {{ page.previous.title }}</a><br>
-            {% endif %}
-        </span>
-    
-        <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs next">
-            {% if page.next.url %}
-                <a href="{{ page.next.url }}">{{ page.next.title }} &rsaquo;</a>
-            {% endif %}
-        </span>
-    </nav>
 </main>
 
 {% include footer.html %}

@@ -23,8 +23,8 @@ module Jekyll
 			"""
 				<figure class=\"video#{@class}\">
 					<div id=\"#{@video}\" class=\"youtube\">
-						<div class=\"play\"></div>
 						#{@thumbnail}
+						<div class=\"play\"></div>
 						<noscript><div class=\"playing\"><iframe frameborder=\"0\" src=\"https://www.youtube.com/embed/#{@video}?autoplay=0&amp;autohide=1\"></iframe></div></noscript>
 					</div>
 				</figure>

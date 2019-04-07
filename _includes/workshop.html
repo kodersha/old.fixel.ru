@@ -2,9 +2,9 @@
     <section class="space-in-top-micro-xs space-in-top-zero-md col-xs-12 col-sm-6 content">
         <time>{{ workshop.date | russian_date }}</time>
         {% if workshop.clickable == false %}
-            <p>{{ workshop.title }}</p>
+            <h2>{{ workshop.title }}</h2>
         {% else %}
-            <p><a href="{{ workshop.url | prepend: site.baseurl }}">{{ workshop.title }}</a></p>
+            <h2><a href="{{ workshop.url | prepend: site.baseurl }}">{{ workshop.title }}</a></h2>
         {% endif %}
         <div class="row row-middle-xs">
             {% if workshop.tags.size > 0 %}

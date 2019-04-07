@@ -19,6 +19,7 @@ gem "minima"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "jekyll-redirect-from"
   gem "jekyll-auto-image"
   gem "jekyll-typogrify"
   gem "jekyll-paginate"

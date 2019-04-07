@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
-    backports (3.12.0)
+    backports (3.13.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
     em-websocket (0.5.1)
@@ -12,7 +12,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.10.0)
     forwardable-extended (2.6.0)
-    github-markup (3.0.3)
+    github-markup (3.0.4)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -44,6 +44,8 @@ GEM
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.15.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.6.0)
@@ -90,7 +92,7 @@ GEM
     ruby_dep (1.5.0)
     rubypants (0.7.0)
     safe_yaml (1.0.5)
-    sass (3.7.3)
+    sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -129,6 +131,7 @@ DEPENDENCIES
   jekyll-extlinks
   jekyll-feed
   jekyll-paginate
+  jekyll-redirect-from
   jekyll-sitemap
   jekyll-typogrify
   jgd
