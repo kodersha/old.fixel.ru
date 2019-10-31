@@ -44,7 +44,7 @@ body:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("/blog/assets/images/noise.png");
+    background: url("/blog/blog/assets/images/noise.png");
     pointer-events: none;
 }
 .noise-moving {
