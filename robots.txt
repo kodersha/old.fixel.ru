@@ -4,4 +4,4 @@
 User-agent: *
 Disallow: 
 Host: fixel.ru
-Sitemap: https://fixel.ru/sitemap.xml
+Sitemap: https://sashatravkina.github.io/blog/sitemap.xml

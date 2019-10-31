@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Блог Александры Травкиной</title>
-    <link>https://fixel.ru/</link>
+    <link>https://sashatravkina.github.io/blog/</link>
     <description>Блог о веб-дизайне, компьютерах и компьютерных играх</description>
     <language>ru</language>
-    <atom:link href="https://fixel.ru/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://sashatravkina.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
     <yandex:analytics id="40455205" type="Yandex"></yandex:analytics>
     
       <item turbo="true">
         <title>Стримлю игры</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/stream/</guid>
-        <link>https://fixel.ru/blog/stream/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/stream/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/stream/</link>
         <description>&lt;p&gt;Привет. Давно я не писала в блог. Но в целом, ничего существенного не происходило. Я выполняла заказы по веб-дизайну, читала различные художественные книги, играла в некоторые игры и всячески прокрастинировала.&lt;/p&gt;
 
 &lt;p&gt;Но пост, как можно догадаться из названия, не об этом.&lt;/p&gt;
@@ -34,8 +34,8 @@
     
       <item turbo="true">
         <title>Fallout 2 · Лучшие модификации для нестареющей классики</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/</guid>
-        <link>https://fixel.ru/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/fallout-2-luchshie-modifikacii-dlja-nestarejushhej-klassiki/</link>
         <description>&lt;p&gt;Вот уже в конце недели, 30 сентября, с момента выхода Fallout 2 пройдет без малого ровно двадцать лет. Но даже сейчас ее проработанность мира, насыщенность сюжета и вариативность прохождения сложно переоценить. Однако, если классическая вторая часть приключений на постядерных пустошах уже была пройдена вдоль и поперек, ее всегда можно разнообразить глобальными, сюжетными модами.&lt;/p&gt;
 
 &lt;h2 id=&quot;fallout-of-nevada&quot;&gt;Fallout of Nevada&lt;/h2&gt;
@@ -124,8 +124,8 @@
     
       <item turbo="true">
         <title>Graveyard Keeper · Не очень веселая ферма</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/graveyard-keeper/</guid>
-        <link>https://fixel.ru/blog/graveyard-keeper/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/graveyard-keeper/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/graveyard-keeper/</link>
         <description>&lt;p&gt;Волею несправедливой судьбы главный герой в одночасье оказывается в странном мире, лишь на первый взгляд похожем на наш. Там правят времена феодализма и алхимии, процветает земледелие и скотоводство, ведьм сжигают на костре силами святой инквизиции, а навыками чтения и письма владеет далеко не каждый.&lt;/p&gt;
 
 &lt;p&gt;Оказавшись вырванным из привычной жизни незадачливый главный герой поневоле становится смотрителем кладбища, приняв на себя все тяготы этой профессии вместо предыдущего, неизвестно куда исчезнувшего, смотрителя. А помогать в нелегком похоронном деле новому смотрителю будет говорящий череп по имени Гэрри страдающий хроническим алкоголизмом и чрезмерной словоохотливостью. Помимо черепа придется познакомится и с местным церковным епископом — своим косвенным начальством.&lt;/p&gt;
@@ -180,8 +180,8 @@
     
       <item turbo="true">
         <title>60 Parsecs! · Космический постапокалипсис</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/60-parsecs/</guid>
-        <link>https://fixel.ru/blog/60-parsecs/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/60-parsecs/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/60-parsecs/</link>
         <description>&lt;p&gt;Спустя три года после выхода «&lt;a href=&quot;/blog/60-seconds/&quot;&gt;60 seconds!&lt;/a&gt;», инди-студия Robot Gentleman наконец-то выпустила вторую часть приключенческого текстового квеста. Но на этот раз, группа выживших в ядерной войне оказывается не на Земле, а в глубоком космосе на борту единственно уцелевшего спасательного шаттла, за шестьдесят далеких парсек от родной планеты.&lt;/p&gt;
 
 &lt;p&gt;Как и в «60 seconds!» у вас есть лишь шестьдесят секунд на то, чтобы собрать необходимые для выживания припасы, некоторых членов команды, и успеть запрыгнуть в спасательный шаттл. Прихватив с собой запасы драгоценного консервированного супа вам и вашей команде предстоит выжить как можно дольше и, как знать, может быть вас спасут.&lt;/p&gt;
@@ -234,8 +234,8 @@
     
       <item turbo="true">
         <title>STAY</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/stay/</guid>
-        <link>https://fixel.ru/blog/stay/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/stay/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/stay/</link>
         <description>&lt;p&gt;Своего рода визуальная новелла, выполненная, как и положено современной инди игре, в весьма детальной пиксельной графике под аккомпанемент красивейшей музыки. В STAY вам предстоит взять на себя роль самого себя и попытаться помочь незнакомцу, оказавшемуся в плену неизвестного похитителя.&lt;/p&gt;
 
 &lt;p&gt;Главный герой, помимо Игрока, парень по имени Квинн, страдающий от одиночества, бессонницы, депрессии и суицидальных мыслей. В один из дней он, по обыкновению, ложиться спать в четыре утра, а просыпается от того, что в его спальню врывается неизвестный в маске. Квинн приходит в себя в одной пижаме, в классическом, для триллера с похищением, темном и сыром подвале. Непроглядную тьму рассеивает лишь слабый свет монитора старого компьютера, который оказывается подключен, посредством текстового чата, напрямую к незадачливому Игроку.&lt;/p&gt;
@@ -304,8 +304,8 @@
     
       <item turbo="true">
         <title>Графический планшет Xp-Pen Star G640</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/graficheskij-planshet-xp-pen-star-g640/</guid>
-        <link>https://fixel.ru/blog/graficheskij-planshet-xp-pen-star-g640/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/graficheskij-planshet-xp-pen-star-g640/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/graficheskij-planshet-xp-pen-star-g640/</link>
         <description>&lt;p&gt;Решила вспомнить свое увлечение рисованием и таки попытаться научиться рисовать, для чего мне понадобился хоть какой-нибудь графический планшет. Выбор пал на китайский Xp-Pen Star G640, который и был благополучно заказан на AliExpress, не покупать же Wacom в самом деле. Спустя две недели планшет пришел по почте.&lt;/p&gt;
 
 &lt;p&gt;Комплектация оказалась довольно незамысловата — сам графический планшет, кабель питания, безбатарейный и беспроводной стилус, двадцать сменных наконечников и зажим для их смены. Ко всему — буклет-инструкция и различные рекламные флаеры производителя.&lt;/p&gt;
@@ -342,8 +342,8 @@
     
       <item turbo="true">
         <title>Хакинтош на PC</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/hackintosh-na-pc/</guid>
-        <link>https://fixel.ru/blog/hackintosh-na-pc/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/hackintosh-na-pc/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/hackintosh-na-pc/</link>
         <description>&lt;p&gt;Расставшись со своим тормозящим &lt;a href=&quot;/blog/znakomstvo-s-mac/&quot;&gt;MacBook Air&lt;/a&gt; в пользу домашнего компьютера, я столкнулась с вопросом о том, какой операционной системой пользоваться вместо удобной и ставшей уже привычной OS X. Windows 10, пожалуй, подходит только для игр, а linux не слишком дружелюбна к пользователю. А потому, вместо покупки очередного яблочного девайса, было принято решение поставить hackintosh на свой свежесобранный PC. Первым опытом установки которого я и хотела бы поделиться, для себя и для вас.&lt;/p&gt;
 
 &lt;figure class=&quot;picture&quot;&gt;
@@ -710,8 +710,8 @@
     
       <item turbo="true">
         <title>Far Cry 5 · Сектантская жвачка</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/far-cry-5-sektantskaja-zhvachka/</guid>
-        <link>https://fixel.ru/blog/far-cry-5-sektantskaja-zhvachka/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/far-cry-5-sektantskaja-zhvachka/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/far-cry-5-sektantskaja-zhvachka/</link>
         <description>&lt;p&gt;Как ни странно, но пятая часть серии Far Cry стала единственной, которую мне удалось пройти до конца. И виной тому, пожалуй, не увлекательный и динамичный сюжет, а открытый мир — песочница, в которой можно провести ни один вечер любуясь пейзажами и отстреливаясь от индюков-убийц. На этом все достоинства Far Cry 5, к сожалению, заканчиваются.&lt;/p&gt;
 
 &lt;p&gt;Нововведением пятой части стало кооперативное прохождение и, как следствие, обезличивание главного героя. Если раньше мы играли за Аджая Гейла или Джейсона Броди — со своими целями, планами, чувствами и эмоциями, наблюдая за их постепенным становлением в качестве героев-освободителей, то здесь мы примеряем на себя роль безмолвного болванчика — Салаги, помощника шерифа. Вместе со своими коллегами мы отправляемся в американскую глубинку штата Монтана, округ Хоуп, дабы арестовать самого главного злодея, основателя террористической секты «Врата Эдема» — Иосифа Сида по прозвищу Отец. Но, как водится, всё идёт не по плану. Герои оказываются разобщены и взяты в плен, а Салага — единственный или единственная, в зависимости от выбора пола в начале игры, кому придётся разгребать всё это сектантское непотребство.&lt;/p&gt;
@@ -798,8 +798,8 @@
     
       <item turbo="true">
         <title>Перелёт OVB - DME - OVB или туда и обратно</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</guid>
-        <link>https://fixel.ru/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/pereljot-ovb-dme-ovb-ili-tyda-i-obratno/</link>
         <description>&lt;p&gt;Понадобилось слетать регулярным рейсом из Новосибирска в Москву, утренним туда и вечерним обратно. Этот перелёт стал для меня первым, ранее доводилось путешествовать только поездами. Собственно, для начала нужно было выбрать наиболее подходящего авиаперевозчика. Просмотрев в интернете одинаково печальные отзывы о российских лоукостерах, выбор пал на екатеринбургские «Уральские Авиалинии» как самую старшую из них с самым большим парком самолётов и общим соотношением цены к качеству. На официальном сайте были приобретены билеты в эконом класс по самому дешёвому тарифу. Утром, на такси, мы прибыли в аэропорт Толмачёво. К сожалению, я не взяла с собой зеркалку и фотографировать пришлось на  мыльный iPhone 6.&lt;/p&gt;
 
 &lt;figure class=&quot;picture&quot;&gt;
@@ -974,8 +974,8 @@
     
       <item turbo="true">
         <title>Сноски на полях в Эгее</title>
-        <guid isPermaLink="true">https://fixel.ru/blog/snoski-na-poljah-v-egee/</guid>
-        <link>https://fixel.ru/blog/snoski-na-poljah-v-egee/</link>
+        <guid isPermaLink="true">https://sashatravkina.github.io/blog/blog/snoski-na-poljah-v-egee/</guid>
+        <link>https://sashatravkina.github.io/blog/blog/snoski-na-poljah-v-egee/</link>
         <description>&lt;p&gt;Вновь из вопросов в телеграм «Как сделать сноски на полях в Эгее?». Добавим немного магии и стилей в css файл вашего шаблона.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1050px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
