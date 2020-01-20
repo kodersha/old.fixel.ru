@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Пишем свой шаблон для Эгеи</title>
+
+		<!--[ Meta ]-->
+			<!--[ Meta Global ]-->
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="robots" content="noindex">
+
+	<meta name="author" content="Александра Травкина">
+	<meta name="generator" content="Jekyll v3.8.5" />
+
+	<!--[ Meta Twitter ]-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="Fixel">
+	<meta name="twitter:creator" content="@sasha_travkina">
+	<meta name="twitter:title" content="Пишем свой шаблон для Эгеи &middot; Fixel">
+	<meta name="twitter:description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.
+
+">
+	<meta name="twitter:image" content="">
+
+	<!--[ Meta Og ]-->
+	<meta property="og:title" content="Пишем свой шаблон для Эгеи &middot; Fixel" />
+	<meta property="og:site_name" content="Fixel">	
+	<meta property="og:url" content="https://old.fixel.ru/blog/pishem-svoy-shablon-dlya-egei/">
+	<meta property="og:description" content="Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.
+
+"/>
+	<meta property="og:image" content="" />
+	<meta property="og:image:height" content="360">
+	<meta property="og:image:width" content="640">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru">
+
+	<!--[ Favicons ]-->
+	<link rel="icon" type="image/png" sizes="32x32" href="https://old.fixel.ru/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://old.fixel.ru/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://old.fixel.ru/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://old.fixel.ru/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://old.fixel.ru/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://old.fixel.ru/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://old.fixel.ru/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://old.fixel.ru/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://old.fixel.ru/apple-touch-icon-180x180.png">
+	<link rel="manifest" href="https://old.fixel.ru/manifest.json">
+	<link rel="mask-icon" href="https://old.fixel.ru/favicon.svg">
+
+	<!--[ Control ]-->
+	<meta name="yandex-verification" content="f96ef0e811161c03" />
+	<meta name="google-site-verification" content="Jsg0E4pNBManXIvFa392tyJVX2TK-cLaDt2zBf4xvm0" />
+
+	<!--[ Feed ]-->
+	<link rel="canonical" href="https://old.fixel.ru/blog/pishem-svoy-shablon-dlya-egei/">
+	<link rel="alternate" type="application/rss+xml" title="Fixel" href="https://old.fixel.ru/feed.xml" />
+		
+		<!--[ CSS ]-->
+		<link rel="stylesheet" type="text/css" href="https://old.fixel.ru/assets/style.css" />
+		<link rel="stylesheet" type="text/css" href="https://old.fixel.ru/assets/css/zoom.css" />
+		<link rel="stylesheet" type="text/css" href="https://old.fixel.ru/assets/css/fotorama.css" />
+		<link rel="stylesheet" type="text/css" href="https://old.fixel.ru/assets/css/settings.css" />
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+		<!--[ JS ]-->
+		<script type="text/javascript" src="https://old.fixel.ru/assets/js/jquery.js"></script>
+        <script type="text/javascript">base_url = "https://old.fixel.ru";</script>
+
+        <!--[ Schema ]-->
+		<script type="application/ld+json">
+
+	
+	
+	{  
+		"@context":"http://schema.org",
+		"@type":"BlogPosting",
+		"headline":"Пишем свой шаблон для Эгеи",
+		"genre":"",
+		"keywords":"Веб, Эгея, Гайды",
+		"wordCount":"1349",
+		"url":"https://old.fixel.ru/blog/pishem-svoy-shablon-dlya-egei/",
+		"datePublished":"2017-04-29",
+		"dateModified":"2017-04-29",
+		"author":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sashatravkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"publisher":{  
+			"@type":"Person",
+			"name":"Александра Травкина",
+			"sameAs":[  
+				"https://twitter.com/sasha_travkina",
+				"https://github.com/sashatravkina",
+				"https://t.me/sashatravkina"
+			]
+		},
+		"image":{  
+			"@type":"ImageObject",
+			"contentUrl":"",
+			"url":"https://old.fixel.ru/",
+			"height":"360",
+			"width":"640"
+		},
+		"mainEntityOfPage":{  
+			"@type":"WebPage",
+			"@id":"https://old.fixel.ru/"
+		},
+		"articleBody":"Написать свой шаблон для Эгеи не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые примеры.  Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» — ../themes/ghost.  Файл с каринкой-превьюшкой вашего шаблона должен называться preview@2x.png и находится в корне шаблона.  Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в себе:&amp;lt;?php return array (    'display_name' =&amp;gt; array (        'en' =&amp;gt; 'Ghost',        'ru' =&amp;gt; 'Призрак',    ),); ?&amp;gt;Называем свою тему для русской и английской версии для отображения в настройках сайта.Структура папок    ../themes/ghost/images — Папка с изображениями темы.    ../themes/ghost/js — Папка со скриптами.    ../themes/ghost/styles — Папка со стилями.    ../themes/ghost/templates — Файлы шаблона.Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути ../system/theme.ШаблоныТеперь стоит подробнее разобрать содержимое папки ../system/theme/templates стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила скриншоты.author-menu.tmpl.php — Меню автора.											comments-heading.tmpl.php — Заголовок списка комментариев с счетчиком их количества.											comments.tmpl.php — Список комментариев.											drafts.tmpl.php — Список черновиков.											form-comment.tmpl.php — Форма комментирования.											form-database.tmpl.php — Форма подключения к базе данных.											form-install.tmpl.php — Форма установки Эгеи.form-login.tmpl.php — Форма авторизации.											form-note-delete.tmpl.php — Форма удаления поста.											form-note-publish.tmpl.php — Кнопка публикации поста.											form-note.tmpl.php — Форма публикации поста.											form-password.tmpl.php — Форма смены админ-пароля.											form-preferences.tmpl.php — Форма общих настроек блога.											form-tag-delete.tmpl.php — Форма удаления тега.											form-tag.tmpl.php — Форма редактирования тега.											head.tmpl.php — Метатеги в head.heading.tmpl.php — Заголовки.											init-script.tmpl.php — Подключение дополнительных скриптов.layout.tmpl.php — Основная разметка шаблона внтури body.login-element.tmpl.php — Кнопка авторизации.											main.tmpl.php — Общая разметка, подключение скриптов.notes-list.tmpl.php — Список избранных постов.notes.tmpl.php — Шаблон поста. Заголовок, текст, дата, теги, ссылка на комментарии.pages-earlier.tmpl.php — Кнопка к постам «Ранее».											pages-later.tmpl.php — Кнопка к постам «Позднее».											pages.tmpl.php — Навигация между постами.											popular.tmpl.php — Блок популярных постов.											search.tmpl.php — Форма поиска и теги.											tags-menu.tmpl.php — Список избранных тегов.											tags.tmpl.php — Страница тегов.											user-blockture.tmpl.php — Аватар блога.											Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы ../system/theme/templates в папку templates вашего шаблона и уже там производите все изменения.Подключение частей шаблонаОфициальная документация по шаблонам Эгеи сообщает:  Шаблон может вызывать другие шаблоны для отображения конкретного фрагмента:_T () — вызывает шаблон по имени._T_FOR () — вызывает шаблон по имени, если в массиве $content есть ключ с таким именем._X () — вставляет дополнительный блок (не забывайте это использовать в своих шаблонах там, где это делают комплектные).Шаблон layout.tmpl.php «срабатывает» потому, что main.tmpl.php вызывает его для формирования тела страницы.Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл quote.tmpl.php в ../themes/ghost/templates со следующим несложным кодом:&amp;lt;div class=&quot;e2-quote&quot;&amp;gt;    &amp;lt;?php        $quotes[] = '        &amp;lt;p&amp;gt;Ибо здесь, похоже, мы не найдем ничего, кроме, как сказала бы Мильва, ремонтизма.&amp;lt;/p&amp;gt;        &amp;lt;span&amp;gt;Анджей Сапковский - Владычица Озера&amp;lt;/span&amp;gt;';        $quotes[] = '        &amp;lt;p&amp;gt;Цири громко чертыхнулась, повторив любимое выражение Весемира, значение которого было ей не вполне ясно. Потом добавила еще несколько слов, услышанных от Ярпена Зигрина, значение которых было для нее вообще полнейшей загадкой.&amp;lt;/p&amp;gt;        &amp;lt;span&amp;gt;Анджей Сапковский - Кровь Эльфов&amp;lt;/span&amp;gt;';        $quotes[] = '        &amp;lt;p&amp;gt;Весемир кивал, время от времени вставляя замечания, из которых следовало только то, что «в его времена» все было лучше, логичнее, приличнее и здоровее.&amp;lt;/p&amp;gt;        &amp;lt;span&amp;gt;Анджей Сапковский - Последнее Желание&amp;lt;/span&amp;gt;';        srand ((double) microtime() * 1000000);        $random_number = rand(0,count($quotes)-1);        echo ($quotes[$random_number]);    ?&amp;gt;&amp;lt;/div&amp;gt;Теперь достаточно открыть layout.tmpl.php и где-нибудь перед footer’ом добавить вывод шаблона quote.tmpl.php средством специального макроса.&amp;lt;?php _T ('quote') ?&amp;gt;Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим параметром:&amp;lt;?php if ($content['class'] == 'frontpage') { ?&amp;gt;    &amp;lt;?php _T ('quote') ?&amp;gt;&amp;lt;?php } ?&amp;gt;Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный layout.tmpl.php с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны сайта.Подключение собственных JS и CSSДля подключения JS и CSS в Эгее также существуют специальные макросы. Для наглядности откройте стандартный main.tmpl.php и посмотрите в конец файла, после закрывающегося тега body:&amp;lt;?php _CSS ('main') ?&amp;gt;&amp;lt;?php _JS ('main') ?&amp;gt;Здесь подхватываются ../js/main.js и ../styles/main.css из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью wow.js. Скачайте сам wow.js и положите в папку js вашего шаблона. Также скачайте animate.css и разместите в папке styles. Откройте main.tmpl.php и подключите их:&amp;lt;?php _CSS ('animate') ?&amp;gt;&amp;lt;?php _JS ('wow') ?&amp;gt;Далее в файл init-script.tmpl.php понадобится добавить следующий код с настройками wow.js:&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;    var wow = new WOW(        {            boxClass: 'wow',            animateClass: 'animated',            offset: 0,            mobile: true,            live: true,            callback: function(box) {            },            scrollContainer: null        }    );    wow.init();&amp;lt;/script&amp;gt;Теперь остается открыть шаблон notes.tmpl.php и к основному div’у поста (18 строка) добавить класс wow fadeIn, а в main.css добавить .wow { visibility: hidden; }. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и стили.Смотрите ещё: Кат в Эгее, Свои шрифты в Эгее и Сноски на полях в Эгее."
+	}
+
+
+</script>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+		
+	</head>
+
+	<body class="themplate-post space-out-h-zero-xs space-out-v-zero-xs space-in-h-mili-xs space-in-h-zero-lg m-scrollable-filter">
+<header class="space-in-v-mili-xs header" role="banner">
+    <div class="space-auto-h-xs logo">
+        <a href="/">
+            <img srcset="https://old.fixel.ru/assets/images/avatar_96x96.png 2x, https://old.fixel.ru/assets/images/avatar_192x192.png 4x" src="https://old.fixel.ru/assets/images/avatar_64x64.png" width="64" height="64" alt="Блог Александры Травкиной">
+        </a>
+    </div>
+</header>
+
+<main class="main" role="main">
+    <article class="article">
+        <time>29 апреля 2017</time>
+        <h1>Пишем свой шаблон для Эгеи</h1>
+        <p>Написать свой шаблон для <a href="http://blogengine.ru" rel="nofollow" target="_blank">Эгеи</a> не так сложно как может показаться на первый взгляд. Давайте разберем основные принципы построения шаблона используя некоторые простые&nbsp;примеры.</p>
+
+<ul>
+  <li>Пользовательские шаблоны находятся в папке ../themes вашего блога. Создадим в ней папку и назовем ее так, как хотим чтобы назывался наш шаблон. Например «ghost» —&nbsp;../themes/ghost.</li>
+  <li>Файл с каринкой-превьюшкой вашего шаблона должен называться preview@2x.png и находится в корне&nbsp;шаблона.</li>
+  <li>Информация о вашем шаблоне хранится в файле theme-info.php в корневой папке шаблона и содержит в&nbsp;себе:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">return</span> <span class="k">array</span> <span class="p">(</span>
+    <span class="s1">'display_name'</span> <span class="o">=&gt;</span> <span class="k">array</span> <span class="p">(</span>
+        <span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'Ghost'</span><span class="p">,</span>
+        <span class="s1">'ru'</span> <span class="o">=&gt;</span> <span class="s1">'Призрак'</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">);</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Называем свою тему для русской и английской версии для отображения в настройках&nbsp;сайта.</p>
+
+<h2 id="структура-папок">Структура&nbsp;папок</h2>
+
+<div class="block">
+    <p><mark>../themes/ghost/images</mark> — Папка с изображениями&nbsp;темы.</p>
+    <p><mark>../themes/ghost/js</mark> — Папка со&nbsp;скриптами.</p>
+    <p><mark>../themes/ghost/styles</mark> — Папка со&nbsp;стилями.</p>
+    <p><mark>../themes/ghost/templates</mark> — Файлы&nbsp;шаблона.</p>
+</div>
+
+<p>Если файлов в папках вашего шаблона нет, они будут браться из стандартной темы Эгеи, которая располагается по пути&nbsp;<code class="highlighter-rouge">../system/theme</code>.</p>
+
+<h2 id="шаблоны">Шаблоны</h2>
+
+<p>Теперь стоит подробнее разобрать содержимое папки <code class="highlighter-rouge">../system/theme/templates</code> стандартного шаблона Эгеи. Чтобы понять как выглядит тот или иной элемент шаблона я добавила&nbsp;скриншоты.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">author-menu.tmpl.php</code> — Меню&nbsp;автора.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/056.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">comments-heading.tmpl.php</code> — Заголовок списка комментариев с счетчиком их&nbsp;количества.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/057.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">comments.tmpl.php</code> — Список&nbsp;комментариев.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/058.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">drafts.tmpl.php</code> — Список&nbsp;черновиков.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/059.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-comment.tmpl.php</code> — Форма&nbsp;комментирования.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/060.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-database.tmpl.php</code> — Форма подключения к базе&nbsp;данных.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/061.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-install.tmpl.php</code> — Форма установки&nbsp;Эгеи.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-login.tmpl.php</code> — Форма&nbsp;авторизации.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/062.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-note-delete.tmpl.php</code> — Форма удаления&nbsp;поста.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/063.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-note-publish.tmpl.php</code> — Кнопка публикации&nbsp;поста.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/064.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-note.tmpl.php</code> — Форма публикации&nbsp;поста.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/065.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-password.tmpl.php</code> — Форма смены&nbsp;админ-пароля.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/066.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-preferences.tmpl.php</code> — Форма общих настроек&nbsp;блога.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/067.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-tag-delete.tmpl.php</code> — Форма удаления&nbsp;тега.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/068.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">form-tag.tmpl.php</code> — Форма редактирования&nbsp;тега.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/069.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">head.tmpl.php</code> — Метатеги в&nbsp;head.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">heading.tmpl.php</code> —&nbsp;Заголовки.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/070.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">init-script.tmpl.php</code> — Подключение дополнительных&nbsp;скриптов.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">layout.tmpl.php</code> — Основная разметка шаблона внтури&nbsp;body.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">login-element.tmpl.php</code> — Кнопка&nbsp;авторизации.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/071.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">main.tmpl.php</code> — Общая разметка, подключение&nbsp;скриптов.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">notes-list.tmpl.php</code> — Список избранных&nbsp;постов.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">notes.tmpl.php</code> — Шаблон поста. Заголовок, текст, дата, теги, ссылка на&nbsp;комментарии.</p>
+
+<hr>
+
+<p><code class="highlighter-rouge">pages-earlier.tmpl.php</code> — Кнопка к постам&nbsp;«Ранее».</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/072.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">pages-later.tmpl.php</code> — Кнопка к постам&nbsp;«Позднее».</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/073.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">pages.tmpl.php</code> — Навигация между&nbsp;постами.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/074.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">popular.tmpl.php</code> — Блок популярных&nbsp;постов.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/075.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">search.tmpl.php</code> — Форма поиска и&nbsp;теги.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/076.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">tags-menu.tmpl.php</code> — Список избранных&nbsp;тегов.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/077.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">tags.tmpl.php</code> — Страница&nbsp;тегов.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/078.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p><code class="highlighter-rouge">user-blockture.tmpl.php</code> — Аватар&nbsp;блога.</p>
+
+<figure class="picture position-left">
+				<img src="/blog/media/079.jpg" data-action="zoom">
+				
+			</figure>
+
+<hr>
+
+<p>Чтобы внести изменения в ту или иную часть шаблона скопируйте соответствующий файл из стандартной темы <code class="highlighter-rouge">../system/theme/templates</code> в папку <code class="highlighter-rouge">templates</code> вашего шаблона и уже там производите все&nbsp;изменения.</p>
+
+<h2 id="подключение-частей-шаблона">Подключение частей&nbsp;шаблона</h2>
+
+<p>Официальная <a href="https://docs.google.com/document/d/1yn7KCHq47oli7IH--skhymjjj2OSlXjcyGOxZ2ZEPeA/edit#heading=h.j2h2wr6xhlie" rel="nofollow" target="_blank">документация</a> по шаблонам Эгеи&nbsp;сообщает:</p>
+
+<blockquote>
+  <p>Шаблон может вызывать другие шаблоны для отображения конкретного&nbsp;фрагмента:
+_T () — вызывает шаблон по&nbsp;имени.
+_T_<span class="caps">FOR</span> () — вызывает шаблон по имени, если в массиве $content есть ключ с таким&nbsp;именем.
+_X () — вставляет дополнительный блок (не забывайте это использовать в своих шаблонах там, где это делают&nbsp;комплектные).
+Шаблон layout.tmpl.php «срабатывает» потому, что main.tmpl.php вызывает его для формирования тела&nbsp;страницы.</p>
+</blockquote>
+
+<p>Давайте разберем это на примере — добавим блок со случайной цитатой. Создадим файл <code class="highlighter-rouge">quote.tmpl.php</code> в <code class="highlighter-rouge">../themes/ghost/templates</code> со следующим несложным&nbsp;кодом:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"e2-quote"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php</span>
+        <span class="nv">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
+        &lt;p&gt;Ибо здесь, похоже, мы не найдем ничего, кроме, как сказала бы Мильва, ремонтизма.&lt;/p&gt;
+        &lt;span&gt;Анджей Сапковский - Владычица Озера&lt;/span&gt;'</span><span class="p">;</span>
+        <span class="nv">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
+        &lt;p&gt;Цири громко чертыхнулась, повторив любимое выражение Весемира, значение которого было ей не вполне ясно. Потом добавила еще несколько слов, услышанных от Ярпена Зигрина, значение которых было для нее вообще полнейшей загадкой.&lt;/p&gt;
+        &lt;span&gt;Анджей Сапковский - Кровь Эльфов&lt;/span&gt;'</span><span class="p">;</span>
+        <span class="nv">$quotes</span><span class="p">[]</span> <span class="o">=</span> <span class="s1">'
+        &lt;p&gt;Весемир кивал, время от времени вставляя замечания, из которых следовало только то, что «в его времена» все было лучше, логичнее, приличнее и здоровее.&lt;/p&gt;
+        &lt;span&gt;Анджей Сапковский - Последнее Желание&lt;/span&gt;'</span><span class="p">;</span>
+
+        <span class="nb">srand</span> <span class="p">((</span><span class="nx">double</span><span class="p">)</span> <span class="nb">microtime</span><span class="p">()</span> <span class="o">*</span> <span class="mi">1000000</span><span class="p">);</span>
+        <span class="nv">$random_number</span> <span class="o">=</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">count</span><span class="p">(</span><span class="nv">$quotes</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+        <span class="k">echo</span> <span class="p">(</span><span class="nv">$quotes</span><span class="p">[</span><span class="nv">$random_number</span><span class="p">]);</span>
+    <span class="cp">?&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Теперь достаточно открыть <code class="highlighter-rouge">layout.tmpl.php</code> и где-нибудь перед footer’ом добавить вывод шаблона <code class="highlighter-rouge">quote.tmpl.php</code> средством специального&nbsp;макроса.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Чтобы блок с случайными цитатами отображался только на главной странице оберните его соответствующим&nbsp;параметром:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$content</span><span class="p">[</span><span class="s1">'class'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'frontpage'</span><span class="p">)</span> <span class="p">{</span> <span class="cp">?&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="nx">_T</span> <span class="p">(</span><span class="s1">'quote'</span><span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Таким несложным способом вы можете добавлять новые блоки на страницы своего блога. По такому же принципу строятся все остальные страницы шаблона. Например если мы посмотрим стандартный <code class="highlighter-rouge">layout.tmpl.php</code> с 47 по 59 строку, то увидим как подхватываются почти все основные шаблоны&nbsp;сайта.</p>
+
+<h2 id="подключение-собственных-js-и-css">Подключение собственных <span class="caps">JS</span> и&nbsp;<span class="caps">CSS</span></h2>
+
+<p>Для подключения <span class="caps">JS</span> и <span class="caps">CSS</span> в Эгее также существуют специальные макросы. Для наглядности откройте стандартный <code class="highlighter-rouge">main.tmpl.php</code> и посмотрите в конец файла, после закрывающегося тега&nbsp;<code class="highlighter-rouge">body</code>:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'main'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Здесь подхватываются <code class="highlighter-rouge">../js/main.js</code> и <code class="highlighter-rouge">../styles/main.css</code> из папки вашего шаблона. Для примера, давайте добавим анимацию появления постов с помощью <a href="https://github.com/matthieua/WOW" rel="nofollow" target="_blank">wow.js</a>. Скачайте сам wow.js и положите в папку <code class="highlighter-rouge">js</code> вашего шаблона. Также скачайте <a href="https://github.com/daneden/animate.css" rel="nofollow" target="_blank">animate.css</a> и разместите в папке <code class="highlighter-rouge">styles</code>. Откройте <code class="highlighter-rouge">main.tmpl.php</code> и подключите&nbsp;их:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> <span class="nx">_CSS</span> <span class="p">(</span><span class="s1">'animate'</span><span class="p">)</span> <span class="cp">?&gt;</span>
+<span class="cp">&lt;?php</span> <span class="nx">_JS</span> <span class="p">(</span><span class="s1">'wow'</span><span class="p">)</span> <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Далее в файл <code class="highlighter-rouge">init-script.tmpl.php</code> понадобится добавить следующий код с настройками&nbsp;<code class="highlighter-rouge">wow.js</code>:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="kd">var</span> <span class="nx">wow</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WOW</span><span class="p">(</span>
+        <span class="p">{</span>
+            <span class="na">boxClass</span><span class="p">:</span> <span class="s1">'wow'</span><span class="p">,</span>
+            <span class="na">animateClass</span><span class="p">:</span> <span class="s1">'animated'</span><span class="p">,</span>
+            <span class="na">offset</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="na">mobile</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">live</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">callback</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">box</span><span class="p">)</span> <span class="p">{</span>
+            <span class="p">},</span>
+            <span class="na">scrollContainer</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">}</span>
+    <span class="p">);</span>
+    <span class="nx">wow</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>Теперь остается открыть шаблон <code class="highlighter-rouge">notes.tmpl.php</code> и к основному div’у поста (18 строка) добавить класс <code class="highlighter-rouge">wow fadeIn</code>, а в <code class="highlighter-rouge">main.css</code> добавить <code class="highlighter-rouge">.wow { visibility: hidden; }</code>. По аналогии с данным примером в ваш шаблон можно добавлять какие угодно скрипты и&nbsp;стили.</p>
+
+<p class="subtext">Смотрите ещё: <a href="/kat-v-egee">Кат в Эгее</a>, <a href="/svoi-shrifty-v-egee/">Свои шрифты в Эгее</a> и <a href="/snoski-na-poljah-v-egee/">Сноски на полях в Эгее</a>.</p>
+
+
+    </article>
+    <nav class="row row-between-xs row-middle-xs space-in-v-kilo-xs wrapper bloglinks">
+        <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs previous">
+            
+                <a href="/wallpaper-engine/">&lsaquo; Wallpaper Engine</a><br>
+            
+        </span>
+    
+        <span class="col-xs-4 space-in-v-nano-xs space-in-v-zero-xs space-in-h-zero-xs next">
+            
+                <a href="/what-remains-of-edith-finch/">What Remains of Edith Finch &rsaquo;</a>
+            
+        </span>
+    </nav>
+</main>
+
+		<!-- JS -->
+		<script src="https://old.fixel.ru/assets/js/jekyll-search.js"></script>
+		<script src="https://old.fixel.ru/assets/js/zoom.js"></script>
+		<script src="https://old.fixel.ru/assets/js/fotorama.js"></script>
+		<script src="https://old.fixel.ru/assets/js/template.js"></script>
+
+	</body>
+</html>
